@@ -263,8 +263,8 @@
 								<control type="image">
 									<posx>0</posx>
 									<posy>0</posy>
-									<width>4-col</width>
-									<height>4-col</height>
+									<width>276</width>
+									<height>276</height>
 									<aspectratio>stretch</aspectratio>
 									<texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
 									<bordertexture border="0">-</bordertexture>
@@ -273,8 +273,8 @@
 								
 								<control type="image">
 									<posx>0</posx>
-									<posy>208</posy>
-									<width>4-col</width>
+									<posy>196</posy>
+									<width>276</width>
 									<height>80</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>colors/black.png</texture>
@@ -284,8 +284,8 @@
 
 								<control type="label">
 									<posx>12</posx>
-									<posy>204</posy>
-									<width>4-col-gutter</width>
+									<posy>192</posy>
+									<width>252</width>
 									<font>smallStrong</font>
 									<textcolor>white</textcolor>
 									<shadowcolor>-</shadowcolor>
@@ -294,8 +294,8 @@
 								
 								<control type="label">
 									<posx>12</posx>
-									<posy>236</posy>
-									<width>4-col-gutter</width>
+									<posy>224</posy>
+									<width>252</width>
 									<font>itemTitle</font>
 									<textcolor>white</textcolor>
 									<shadowcolor>-</shadowcolor>
@@ -309,8 +309,8 @@
 								<control type="image">
 									<posx>0</posx>
 									<posy>0</posy>
-									<width>4-col</width>
-									<height>4-col</height>
+									<width>276</width>
+									<height>276</height>
 									<aspectratio>stretch</aspectratio>
 									<texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
 									<bordertexture border="0">-</bordertexture>
@@ -319,8 +319,8 @@
 								
 								<control type="image">
 									<posx>0</posx>
-									<posy>208</posy>
-									<width>4-col</width>
+									<posy>196</posy>
+									<width>276</width>
 									<height>80</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>colors/white.png</texture>
@@ -334,8 +334,8 @@
 
 								<control type="label">
 									<posx>12</posx>
-									<posy>204</posy>
-									<width>4-col-gutter</width>
+									<posy>192</posy>
+									<width>252</width>
 									<font>smallStrong</font>
 									<textcolor>black</textcolor>
 									<shadowcolor>-</shadowcolor>
@@ -344,8 +344,8 @@
 								
 								<control type="label">
 									<posx>12</posx>
-									<posy>236</posy>
-									<width>4-col-gutter</width>
+									<posy>224</posy>
+									<width>252</width>
 									<font>itemTitle</font>
 									<textcolor>black</textcolor>
 									<shadowcolor>-</shadowcolor>

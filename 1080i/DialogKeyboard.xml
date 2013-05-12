@@ -597,7 +597,7 @@
 						<onleft>80</onleft>
 						<onright>82</onright>
 						<onup>71</onup>
-						<ondown>8</ondown>
+						<ondown>305</ondown>
 						<texturenofocus>colors/keyboardLight.png</texturenofocus>
 						<texturefocus>colors/keyboardOverlay.png</texturefocus>
 						<textoffsetx>0</textoffsetx>
@@ -615,7 +615,7 @@
 						<onleft>81</onleft>
 						<onright>83</onright>
 						<onup>72</onup>
-						<ondown>8</ondown>
+						<ondown>306</ondown>
 						<texturenofocus>colors/keyboardLight.png</texturenofocus>
 						<texturefocus>colors/keyboardOverlay.png</texturefocus>
 						<textoffsetx>0</textoffsetx>
@@ -672,7 +672,7 @@
 						<width>4-col</width>
 						<height>1-col</height>
 						<label>20180</label>
-						<onleft>8</onleft>
+						<onleft>306</onleft>
 						<onright>85</onright>
 						<onup>303</onup>
 						<ondown>307</ondown>
@@ -784,7 +784,7 @@
 						<width>1-col</width>
 						<height>1-col</height>
 						<onleft>89</onleft>
-						<onright>8</onright>
+						<onright>305</onright>
 						<onup>80</onup>
 						<ondown>32</ondown>
 						<texturenofocus>colors/keyboardLight.png</texturenofocus>
@@ -808,10 +808,10 @@
 						<focusedcolor>selected</focusedcolor>
 						<textcolor>selected</textcolor>
 						<align>center</align>
-						<onleft>32</onleft>
+						<onleft>90</onleft>
 						<onright>306</onright>
-						<onup>8</onup>
-						<ondown>54</ondown>
+						<onup>81</onup>
+						<ondown>8</ondown>
 					</control>
 
 					<control type="button" id="306">
@@ -828,9 +828,9 @@
 						<textcolor>selected</textcolor>
 						<align>center</align>
 						<onleft>305</onleft>
-						<onright>307</onright>
-						<onup>8</onup>
-						<ondown>56</ondown>
+						<onright>304</onright>
+						<onup>82</onup>
+						<ondown>8</ondown>
 					</control>
 
 					
@@ -850,7 +850,7 @@
 						<texturefocus>colors/keyboardLight.png</texturefocus>
 						<label>1006</label>
 						<textoffsetx>0</textoffsetx>
-						<onleft>306</onleft>
+						<onleft>8</onleft>
 						<onright>32</onright>
 						<onup>304</onup>
 						<ondown>300</ondown>
@@ -874,7 +874,7 @@
 						<textcolor>selected</textcolor>
 						<align>center</align>
 						<onleft>307</onleft>
-						<onright>305</onright>
+						<onright>8</onright>
 						<onup>85</onup>
 						<ondown>48</ondown>
 						<font>buttonTitle</font>
@@ -887,9 +887,9 @@
 						<width>230</width>
 						<height>1-col</height>
 						<label>20181</label>
-						<onleft>90</onleft>
-						<onright>304</onright>
-						<onup>81</onup>
+						<onleft>32</onleft>
+						<onright>307</onright>
+						<onup>305</onup>
 						<ondown>305</ondown>
 						<texturenofocus>colors/keyboardLight.png</texturenofocus>
 						<texturefocus>colors/keyboardOverlay.png</texturefocus>
