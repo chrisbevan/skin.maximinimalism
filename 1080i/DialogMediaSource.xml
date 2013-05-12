@@ -1,0 +1,136 @@
+<window id="129">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<include>fadeInOut</include>
+
+	<controls>
+				
+		<!--background-->
+		<control type="image">
+			<include>dimensionsFullscreen</include>
+			<texture>colors/black.png</texture>
+			<colordiffuse>ffFFFFFF</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		
+		<control type="image">
+			<include>dimensionsFullscreen</include>
+			<texture>backgrounds/settings.jpg</texture>
+			<colordiffuse>66FFFFFF</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+		</control>
+
+		<control type="group">
+			
+			<posx>col-7-begin</posx>
+			<posy>row-4-begin</posy>
+			
+			<!--animations-->
+			<include>modalDialogInOut</include>
+			
+			<control type="label">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>12-col</width>
+				<font>pageTitle</font>
+				<label>Add a new media source</label>
+				<textcolor>white</textcolor>
+			</control>
+		
+			<!--horizontal rule-->
+			<control type="image">
+				<posx>0</posx>
+				<posy>1-row</posy>
+				<width>12-col</width>
+				<height>3</height>
+				<texture>colors/white.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+		
+			<!--controls-->
+			<control type="grouplist" id="9000">
+				<posx>0</posx>
+				<posy>2-row</posy>
+				<width>12-col</width>
+				<height>1-row</height>
+				<ondown>12</ondown>
+				<itemgap>24</itemgap>
+				<orientation>horizontal</orientation>
+							
+				<control type="button" id="11">
+					<description>Browse</description>
+					<label>Locate folder</label>
+					<font>buttonTitle</font>
+					<width>4-col</width>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textoffsety>12</textoffsety>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+				</control>
+											
+				<control type="button" id="18">
+					<visible>Control.IsEnabled(18)</visible>
+					<description>Set Content type</description>
+					<label>Set content</label>
+					<font>buttonTitle</font>
+					<width>4-col</width>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textoffsety>12</textoffsety>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+				</control>
+			</control>
+			
+			<!--path and media name-->
+			<control type="group">
+				<visible>control.isvisible(18)</visible>
+				
+				<!--media source name-->
+				<control type="label" id="0">
+					<description>Name Label</description>
+					<posx>0</posx>
+					<posy>4-row</posy>
+					<width>12-col</width>
+					<font>smallStrong</font>
+					<label>source title (select to edit)</label>
+				</control>
+
+				<control type="button" id="12">
+					<description>Name</description>
+					<posx>0</posx>
+					<posy>5-row</posy>
+					<label>-</label>
+					<align>left</align>
+					<onup>11</onup>
+					<onleft>9000</onleft>
+					<height>1-row</height>
+					<width>12-col</width>
+					<font>regular</font>
+					<textoffsetx>24</textoffsetx>
+					<textcolor>selected</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/keyboardLight.png</texturefocus>
+					<texturenofocus>colors/keyboardDark.png</texturenofocus>
+				</control>
+				
+			</control>
+					
+		</control>
+
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>DialogMediaSource.xml</label>
+		</control>
+
+	</controls>
+
+</window>

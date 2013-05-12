@@ -1,0 +1,26 @@
+﻿<window>
+	<defaultcontrol always="true">10</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	
+	<coordinates>
+		<posx>15</posx>
+		<posy>15</posy>
+	</coordinates>
+
+	<controls>
+
+		<control type="label">
+			<include>WindowID</include>
+			<label>StartUp.xml</label>
+		</control>
+
+		<control type="button" id="10">
+			<description>Startup Trigger</description>
+			<onfocus>ReplaceWindow(Home)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+		</control>
+
+	</controls>
+
+</window>

@@ -1,0 +1,85 @@
+﻿<window id="115">
+	<defaultcontrol always="true">901</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<visible>!Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
+	<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>	
+	
+	<controls>
+				
+		<control type="group">
+			<posx>col-1-begin</posx>
+			<posy>row-9-begin</posy>
+			
+			<!--background-->
+			<control type="image">
+				<posx>-96</posx>
+				<posy>-12</posy>
+				<width>fullscreenWidth</width>
+				<height>175</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>colors/black.png</texture>
+				<colordiffuse>99FFFFFF</colordiffuse>	
+			</control>
+			
+			<control type="label">
+				<posx>300</posx>
+				<posy>-12</posy>
+				<width>16-col-gutter</width>
+				<font>smallStrong</font>
+				<textcolor>white</textcolor>
+				<label>Playing $INFO[VideoPlayer.TVShowTitle]</label>
+				<shadowcolor>-</shadowcolor>
+			</control>
+			
+			<control type="label">
+				<posx>300</posx>
+				<posy>30</posy>
+				<width>16-col-gutter</width>
+				<font>pageTitle</font>
+				<textcolor>white</textcolor>
+				<label>$INFO[Player.Title]</label>
+				<shadowcolor>-</shadowcolor>
+				<scroll>true</scroll>
+			</control>
+						
+			<control type="progress">
+				<description>Progress Bar</description>
+				<posx>300</posx>
+				<posy>90</posy>
+				<width>16-col-gutter</width>				
+				<info>Player.Progress</info>
+			</control>
+			
+			<control type="label">
+				<posx>300</posx>
+				<posy>110</posy>
+				<width>24-col</width>
+				<font>smallStrong</font>
+				<textcolor>white</textcolor>
+				<label>$INFO[Player.Time]</label>
+				<shadowcolor>-</shadowcolor>
+			</control>
+			
+			<control type="label">
+				<posx>1428</posx>
+				<posy>110</posy>
+				<width>24-col</width>
+				<font>smallStrong</font>
+				<align>right</align>
+				<textcolor>white</textcolor>
+				<label>$INFO[Player.Duration]</label>
+				<shadowcolor>-</shadowcolor>
+			</control>
+
+		</control>
+		
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>DialogSeekbar.xml</label>
+		</control>
+		
+	</controls>
+	
+</window>

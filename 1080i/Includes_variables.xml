@@ -1,0 +1,65 @@
+<!--Skin variables-->
+<includes>
+	
+<!--set custom viewtypes for specific addons-->
+<variable name="videoViewType">
+	<value condition="Substring(Container.foldername,TVCatchup)">54</value>
+	<value>50</value>	
+</variable>
+
+<variable name="musicViewType">
+	<value>50</value>	
+</variable>
+
+<!--fanart selection-->
+<variable name="fanartType">
+	<value condition="Window.IsActive(videolibrary)">$INFO[Skin.String(videoFanartLocation)]</value>
+	<value condition="Window.IsActive(musiclibrary)">$INFO[Skin.String(musicFanartLocation)]</value>
+</variable>
+
+<!--folder titles-->
+<variable name="listTitle">
+	<value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),false) + isempty(container.foldername)"></value>
+	<value condition="Window.IsActive(musiclibrary) + SubString(skin.string(showRecentMusicItems),false) + isempty(container.foldername)"></value>
+	<value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true)">Movies and TVShows</value>
+	<value condition="Window.IsActive(musiclibrary) + SubString(skin.string(showRecentMusicItems),true)">Music Library</value>
+	<value condition="Substring(Container.folderpath,plugin)">$INFO[container.foldername]</value>
+	<value condition="Container.Content(movies)">Movies [COLOR accented]by $INFO[container.sortmethod][/COLOR]</value>
+	<value condition="Container.Content(livetv)">Digital TV</value>
+	<value condition="Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes)">TV Shows [COLOR accented]by $INFO[container.sortmethod][/COLOR]</value>
+	<value condition="Container.Content(addons)">Video Addons</value>
+	<value condition="!isEmpty(container.foldername)">$INFO[container.foldername]</value>
+</variable>
+
+<!--list view item detail / subheader-->	
+<variable name="itemDetail">
+	<value condition="Container.Content(movies)">$INFO[Listitem.Year] $INFO[ListItem.director]</value>	
+	<value condition="Container.Content(tvshows)">$INFO[ListItem.Property(TotalEpisodes)] Episodes</value>
+	<value condition="Container.Content(seasons)">$INFO[ListItem.Property(UnWatchedEpisodes)] Unwatched</value>
+	<value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
+</variable>
+
+<!--fullscreeninfo titles-->
+<variable name="nowPlayingTitle">
+	<value condition="!StringCompare(VideoPlayer.title,VideoPlayer.TVShowTitle)">$INFO[videoplayer.tvshowtitle] $INFO[videoplayer.title]</value>	
+	<value condition="StringCompare(VideoPlayer.title,VideoPlayer.TVShowTitle)">$INFO[videoplayer.title]</value>
+</variable>
+
+<!--custom addon handling-->
+<variable name="customVideoSourceAction">
+	<value condition="isempty(Skin.String(customVideoAddon1))">Skin.SetAddon(customVideoAddon1,xbmc.addon.video)</value>
+	<value condition="isempty(Skin.String(customVideoAddon2))">Skin.SetAddon(customVideoAddon2,xbmc.addon.video)</value>
+	<value condition="isempty(Skin.String(customVideoAddon3))">Skin.SetAddon(customVideoAddon3,xbmc.addon.video)</value>	
+	<value condition="isempty(Skin.String(customVideoAddon4))">Skin.SetAddon(customVideoAddon4,xbmc.addon.video)</value>
+	<value condition="isempty(Skin.String(customVideoAddon5))">Skin.SetAddon(customVideoAddon5,xbmc.addon.video)</value>		
+</variable>
+
+<variable name="customMusicSourceAction">
+	<value condition="isempty(Skin.String(customMusicAddon1))">Skin.SetAddon(customMusicAddon1,xbmc.addon.music)</value>
+	<value condition="isempty(Skin.String(customMusicAddon2))">Skin.SetAddon(customMusicAddon2,xbmc.addon.music)</value>
+	<value condition="isempty(Skin.String(customMusicAddon3))">Skin.SetAddon(customMusicAddon3,xbmc.addon.music)</value>	
+	<value condition="isempty(Skin.String(customMusicAddon4))">Skin.SetAddon(customMusicAddon4,xbmc.addon.music)</value>
+	<value condition="isempty(Skin.String(customMusicAddon5))">Skin.SetAddon(customMusicAddon5,xbmc.addon.music)</value>	
+</variable>
+
+</includes>

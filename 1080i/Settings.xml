@@ -1,0 +1,223 @@
+<window id="4">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	
+	<controls>
+		
+		<!--background-->
+		<control type="image">
+			<include>dimensionsFullscreen</include>
+			<texture>backgrounds/settings.jpg</texture>
+			<colordiffuse>66FFFFFF</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+		</control>
+							
+		<!--main menu-->
+		<control type="group">
+			
+			<posx>col-4-begin</posx>
+			<posy>row-4-begin</posy>
+			
+			<!--animations-->
+			<include>modalDialogInOut</include>
+														
+			<control type="label">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>8-col</width>
+				<font>pageTitle</font>
+				<label>[COLOR accented]Settings[/COLOR] Main menu</label>
+				<textcolor>white</textcolor>
+			</control>
+			
+			<!--horizontal rule-->
+			<control type="image">
+				<posx>0</posx>
+				<posy>1-row</posy>
+				<width>18-col</width>
+				<height>3</height>
+				<texture>colors/white.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<!--XBMC Instance Info-->
+			<control type="textbox">
+				<posx>0</posx>
+				<posy>64</posy>
+				<width>16-col</width>
+				<height>10-row</height>
+				<font>smallStrong</font>
+				<textcolor>unselected</textcolor>
+				<label>Build $INFO[System.BuildVersion] ($INFO[System.BuildDate]) $INFO[System.InternetState] on IP $INFO[Network.IPAddress]</label>
+			</control>
+			
+			<!--menu-->
+			<control type="Panel" id="9000">
+				<posx>0</posx>
+				<posy>2-row</posy>
+				<width>18-col</width>
+				<height>12-col</height>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+	
+				<itemlayout width="6-col" height="2-row">								
+					
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>96</width>
+						<height>96</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
+						<bordersize>0</bordersize>
+						<colordiffuse>ccFFFFFF</colordiffuse>
+					</control>
+			
+					<control type="label">
+						<posx>32</posx>
+						<posy>18</posy>
+						<width>326</width>
+						<font>symbolLarge</font>
+						<textcolor>unselected</textcolor>
+						<label>$INFO[ListItem.label2]</label>
+					</control>
+					
+					<control type="label">
+						<posx>108</posx>
+						<posy>5</posy>
+						<width>326</width>
+						<font>itemTitle</font>
+						<textcolor>unselected</textcolor>
+						<label>$INFO[ListItem.label]</label>
+					</control>
+			
+					<control type="label">
+						<posx>108</posx>
+						<posy>38</posy>
+						<width>326</width>
+						<font>smallStrong</font>
+						<textcolor>accented</textcolor>
+						<label>$INFO[listitem.property(label3)]</label>
+					</control>						
+				</itemlayout>
+
+				<focusedlayout width="6-col" height="2-row">			
+					
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>96</width>
+						<height>96</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
+						<!--animation-->
+						<include>listItemFocus</include>
+					</control>
+					
+					<control type="label">
+						<posx>32</posx>
+						<posy>18</posy>
+						<width>326</width>
+						<font>symbolLarge</font>
+						<textcolor>selected</textcolor>
+						<label>$INFO[ListItem.label2]</label>
+					</control>
+			
+					<control type="label">
+						<posx>108</posx>
+						<posy>5</posy>
+						<width>326</width>
+						<font>itemTitle</font>
+						<textcolor>selected</textcolor>
+						<label>$INFO[ListItem.label]</label>
+						<scroll>true</scroll>
+					</control>
+			
+					<control type="label">
+						<posx>108</posx>
+						<posy>38</posy>
+						<width>326</width>
+						<font>smallStrong</font>
+						<textcolor>selected</textcolor>
+						<label>$INFO[listitem.property(label3)]</label>
+					</control>
+				</focusedlayout>
+
+				<content>
+					<item id="1">
+						<description>Appearance</description>
+						<label>Appearance</label>
+						<label2></label2>
+						<property name="label3">Skin • Screensaver</property>
+						<onclick>activatewindow(AppearanceSettings)</onclick>
+					</item>
+					<item id="2">
+						<description>Videos</description>
+						<label>3</label>
+						<label2></label2>
+						<property name="label3">File lists • Subtitles</property>
+						<onclick>activatewindow(VideosSettings)</onclick>
+					</item>
+					<item id="9">
+                        <label>PVR</label>
+						<label2></label2>
+						<property name="label3">Live TV • EPG</property>
+                        <onclick>ActivateWindow(PVRSettings)</onclick>
+                    </item>
+					<item id="3">
+						<description>Music</description>
+						<label>2</label>
+						<label2></label2>
+						<property name="label3">File lists • Audio CDs</property>
+						<onclick>activatewindow(MusicSettings)</onclick>
+					</item>
+					<item id="4">
+						<description>Addons</description>
+						<label>24001</label>
+						<label2></label2>
+						<property name="label3">System extensions</property>
+						<onclick>activatewindow(AddonBrowser)</onclick>
+					</item>
+					<item id="5">
+						<description>Pictures</description>
+						<label>1</label>
+						<label2></label2>
+						<property name="label3">File lists • Slideshows</property>
+						<onclick>activatewindow(PicturesSettings)</onclick>
+					</item>
+					<item id="6">
+						<description>Weather</description>
+						<label>8</label>
+						<label2></label2>
+						<property name="label3">Locations • Services</property>
+						<onclick>activatewindow(WeatherSettings)</onclick>
+					</item>
+					<item id="7">
+						<description>Services</description>
+						<label>14036</label>
+						<label2></label2>
+						<property name="label3">Networking • Airplay</property>
+						<onclick>activatewindow(ServiceSettings)</onclick>
+					</item>
+					<item id="8">
+						<description>System</description>
+						<label>13000</label>
+						<label2></label2>
+						<property name="label3">Input devices • Power saving</property>
+						<onclick>activatewindow(SystemSettings)</onclick>
+					</item>
+				</content>
+			</control>
+		</control>
+		
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>WindowID</include>
+			<label>Settings.xml</label>
+		</control>
+
+	</controls>
+
+</window>

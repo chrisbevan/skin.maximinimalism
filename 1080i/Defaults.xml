@@ -1,0 +1,192 @@
+<includes>
+
+	<default type="label">
+		<posx>0</posx>
+		<posy>0</posy>
+		<label>-</label>
+		<height>57</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<textoffsetx>0</textoffsetx>
+		<font>regular</font>
+		<textcolor>selected</textcolor>
+		<focusedcolor>selected</focusedcolor>
+		<selectedcolor>selected</selectedcolor>
+		<disabledcolor>disabled</disabledcolor>
+		<shadowcolor>77111111</shadowcolor>
+	</default>
+	
+	<default type="textbox">
+		<label>-</label>
+		<font>regular</font>
+		<textcolor>selected</textcolor>
+	</default>
+
+	<default type="fadelabel">
+		<posx>0</posx>
+		<posy>0</posy>
+		<height>57</height>
+		<label>-</label>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>regular</font>
+		<textcolor>unselected</textcolor>
+		<textoffsetx>0</textoffsetx>
+		<focusedcolor>selected</focusedcolor>
+		<selectedcolor>selected</selectedcolor>
+		<disabledcolor>disabled</disabledcolor>
+		<scrollout>false</scrollout>
+		<pauseatend>2000</pauseatend>
+	</default>
+
+	<default type="image">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>-</width>
+		<height>-</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<texture>-</texture>
+	</default>
+
+	<default type="button">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>4-col</width>
+		<height>1-row</height>
+		<font>small</font>
+		<aligny>center</aligny>
+		<align>left</align>
+		<textoffsetx>0</textoffsetx>
+		<focusedcolor>black</focusedcolor>
+		<textcolor>unselected</textcolor>
+		<disabledcolor>accented</disabledcolor>
+		<pulseonselect>false</pulseonselect>
+	</default>
+	
+	<default type="togglebutton">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>2-col</width>
+		<height>57</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<textoffsetx>0</textoffsetx>
+		<label>-</label>
+		<texturefocus>-</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<font>itemTitle</font>
+		<textcolor>unselected</textcolor>
+		<focusedcolor>selected</focusedcolor>
+		<disabledcolor>unselected</disabledcolor>
+		<pulseonselect>false</pulseonselect>
+		<colordiffuse>ffFFFFFF</colordiffuse>
+	</default>
+	
+	<default type="radiobutton">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>-</width>
+		<height>57</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>itemTitle</font>
+		<label>-</label>
+		<textoffsetx>0</textoffsetx>
+		<textcolor>unselected</textcolor>
+		<focusedcolor>selected</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
+		<radiowidth>20</radiowidth>
+		<radioheight>20</radioheight>
+		<textureradiofocus>UIControls/radio-button-fo.png</textureradiofocus>
+		<textureradionofocus>UIControls/radio-button-nf.png</textureradionofocus>
+		<pulseonselect>false</pulseonselect>
+	</default>
+	
+	<default type="spincontrolex">
+		<height>57</height>
+		<label>-</label>
+		<font>itemTitle</font>
+		<spinwidth>30</spinwidth>
+        <spinheight>30</spinheight>
+		<textureup>UIControls/arrow-up-nf.png</textureup>
+		<texturedown>UIControls/arrow-down-nf.png</texturedown>
+		<textureupfocus>UIControls/arrow-up-fo.png</textureupfocus>
+		<texturedownfocus>UIControls/arrow-down-fo.png</texturedownfocus>		
+		<textcolor>unselected</textcolor>
+		<textoffsetx>0</textoffsetx>
+		<focusedcolor>selected</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
+		<align>left</align>
+		<aligny>center</aligny>
+		<reverse>yes</reverse>
+		<pulseonselect>false</pulseonselect>
+	</default>
+
+	<default type="spincontrol">
+		<height>57</height>
+		<spinwidth>43</spinwidth>
+		<spinheight>60</spinheight>
+		<textureup>UIControls/arrow-up-nf.png</textureup>
+		<texturedown>UIControls/arrow-down-nf.png</texturedown>
+		<textureupfocus>UIControls/arrow-up-fo.png</textureupfocus>
+		<texturedownfocus>UIControls/arrow-down-fo.png</texturedownfocus>
+		<font>itemTitle</font>
+		<textcolor>unselected</textcolor>
+		<focusedcolor>selected</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
+		<align>left</align>
+		<aligny>center</aligny>
+		<reverse>yes</reverse>
+		<pulseonselect>false</pulseonselect>
+	</default>
+
+	<!--used in audio settings etc-->
+	<default type="sliderex">
+		<posx>0</posx>
+		<posy>0</posy>
+		<height>57</height>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<sliderwidth>4-col</sliderwidth>
+		<sliderheight>24</sliderheight>
+		<texturesliderbar>other_textures/OSD/slider_bg.png</texturesliderbar>
+		<textureslidernib>colors/white.png</textureslidernib>
+		<textureslidernibfocus>colors/white.png</textureslidernibfocus>
+		<font>itemTitle</font>
+		<textcolor>unselected</textcolor>
+		<focusedcolor>selected</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
+		<textoffsetx>0</textoffsetx>
+		<textoffsety>0</textoffsety>
+	</default>
+
+	<default type="progress">
+		<height>12</height>
+		<texturebg border="0">-</texturebg>
+		<midtexture border="10">colors/white.png</midtexture>
+		<righttexture>-</righttexture>
+		<overlaytexture>-</overlaytexture>
+	</default>
+
+	<default type="slider">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>360</width>
+		<height>23</height>
+		<texturefocus>-</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
+		<textureslidernib border="2">other_textures/OSD/SliderNibNF.png</textureslidernib>
+		<textureslidernibfocus border="2">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
+	</default>
+
+	<default type="scrollbar">
+		<width>12</width>
+		<texturesliderbackground>colors/black.png</texturesliderbackground>
+		<texturesliderbarfocus>colors/white.png</texturesliderbarfocus>
+		<showonepage>false</showonepage>
+		<orientation>vertical</orientation>
+	</default>
+
+</includes>

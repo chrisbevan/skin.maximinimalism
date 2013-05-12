@@ -1,0 +1,137 @@
+<window id="132">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<!--background-->
+		<control type="image">
+			<include>dimensionsFullscreen</include>
+			<texture>colors/black.png</texture>
+			<colordiffuse>ffFFFFFF</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		
+		<control type="image">
+			<include>dimensionsFullscreen</include>
+			<texture>backgrounds/settings.jpg</texture>
+			<colordiffuse>66FFFFFF</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		
+		<control type="group">
+			
+			<posx>col-7-begin</posx>
+			<posy>row-4-begin</posy>
+			
+			<!--animations-->
+			<include>modalDialogInOut</include>
+
+			<control type="label" id="20">
+				<description>Page title Label</description>
+				<posx>0</posx>
+				<font>pageTitle</font>
+				<width>12-col</width>
+				<label>Set Media Content</label>
+			</control>
+			
+			<!--horizontal rule-->
+			<control type="image">
+				<posx>0</posx>
+				<posy>1-row</posy>
+				<width>12-col</width>
+				<height>3</height>
+				<texture>colors/white.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<control type="spincontrolex" id="3">
+				<description>Directory Content</description>
+				<posx>0</posx>
+				<posy>2-row</posy>
+				<width>12-col</width>
+				<font>-</font>
+				<label>-</label>
+				<align>left</align>
+				<ondown>6</ondown>
+			</control>
+
+			<control type="label">
+				<description>Content Picker label</description>
+				<posx>0</posx>
+				<posy>2-row</posy>
+				<width>12-col</width>
+				<label>$INFO[Control.GetLabel(3)]</label>
+				<font>itemTitle</font>
+			</control>
+			
+			<!--specific media type settings-->
+			<control type="button" id="6">
+				<description>Settings</description>
+				<posx>0</posx>
+				<posy>3-row</posy>
+				<label>Content type settings</label>					
+				<font>itemTitle</font>
+				<width>12-col</width>
+				<align>left</align>
+				<textcolor>unselected</textcolor>
+				<focusedcolor>selected</focusedcolor>
+				<onup>3</onup>
+				<ondown>5</ondown>
+			</control>
+			
+			<!--misc options-->
+			<control type="grouplist" id="5">
+				<description>Control Area</description>
+				<posx>0</posx>
+				<posy>4-row</posy>
+				<width>12-col</width>
+				<height>6-row</height>
+				<itemgap>0</itemgap>
+				<onup>6</onup>
+				<ondown>28</ondown>
+				<onright>9000</onright>
+				<orientation>vertical</orientation>
+			</control>
+
+			<control type="button" id="7">
+				<description>default</description>
+				<align>left</align>
+			</control>
+
+			<control type="radiobutton" id="8">
+				<description>radioButton</description>
+				<align>left</align>
+			</control>
+			
+			<!--OK button-->
+			<control type="button" id="28">
+				<description>Ok</description>
+				<posx>0</posx>
+				<posy>9-row</posy>
+				<label>Finished</label>					
+				<font>buttonTitle</font>
+				<width>4-col</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<textoffsety>12</textoffsety>
+				<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+				<texturefocus>UIControls/buttonFO.png</texturefocus>
+				<textcolor>white</textcolor>
+				<focusedcolor>black</focusedcolor>
+				<onup>5</onup>
+			</control>
+			
+		</control>
+
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>DialogContentSettings.xml</label>
+		</control>
+
+	</controls>
+
+</window>

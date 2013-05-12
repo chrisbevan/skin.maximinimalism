@@ -1,0 +1,40 @@
+<includes>
+	
+	<include name="fadeInOut">
+		<animation type="windowOpen">
+			<effect type="fade" start="0" end="100" time="300" />
+		</animation>
+		<animation type="windowClose">
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>
+	</include>
+	
+	<!--ken burnsey style effect for fanart images-->
+	<include name="kenBurnsey">
+		<animation type="Conditional" condition="true" loop="true">	
+			<effect type="fade" start="0" end="100" time="2000" />
+			<effect type="zoom" center="auto" start="150" end="100" time="15000" />
+			<effect type="fade" start="100" end="0" delay="14000" time="1000" />
+		</animation>
+	</include>
+	
+	<!--modal dialog handling-->
+	<include name="modalDialogInOut">	
+		<animation type="Windowopen">
+            <effect type="fade" start="0" end="100" time="300" />
+			<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="400" />
+		</animation>
+		
+		<animation type="Windowclose">
+			<effect type="fade" start="100" end="0" time="300" />
+			<effect type="slide" start="0" end="-1920" tween="cubic" easing="out" time="400" />
+		</animation>
+	</include>
+	
+	<include name="modalDialogContentShift">
+		<animation type="Conditional" condition="controlgroup(61).hasfocus">
+			<effect type="slide" start="0,0" end="5-col,0" time="200" tween="sine" easing="in" reversible="false"  />
+		</animation>
+	</include>
+		
+</includes>

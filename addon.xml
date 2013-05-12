@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.maximinimalism" version="0.1" name="Maximinimalism" provider-name="theDeadman">
+	<requires>
+		<import addon="xbmc.gui" version="4.0.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" defaultresolution="1080i"></extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>A skin for XBMC from theDeadman</summary>
+		<description>A skin based on a theme of absolute minimalism</description>
+		<platform>all</platform>
+	</extension>
+</addon>

@@ -1,0 +1,164 @@
+<window type="dialog" id="142">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<include>fadeInOut</include>
+
+	<controls>
+						
+		<control type="group">
+												
+			<!--background-->
+			<control type="group">
+				<posx>0</posx>
+				<posy>0</posy>							
+											
+				<!--overlay-->
+				<control type="image">
+					<posx>col-13-begin</posx>
+					<posy>0</posy>
+					<width>13-col-gutter</width>
+					<height>fullscreenHeight</height>
+					<texture>colors/black.png</texture>
+					<colordiffuse>AAffffff</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					<!--animations-->
+					<animation effect="slide" start="500,0" delay="500" tween="back" easing="out" time="300">WindowOpen</animation>
+				</control>
+														
+			</control>
+		
+			<!--title info-->
+			<control type="group">	
+		
+				<posx>col-14-begin</posx>
+				<posy>row-2-begin</posy>
+				
+				<!--animations-->
+				<animation effect="fade" start="0" end="100" delay="900" time="300">WindowOpen</animation>
+												
+				<!--content description-->
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>11-col</width>
+					<font>smallStrong</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.genre]</label>
+					<scroll>false</scroll>
+				</control>
+				
+				<control type="textbox" id="20">
+					<posx>0</posx>
+					<posy>1-row</posy>
+					<width>11-col</width>
+					<height>185</height>
+					<font>largeStrong</font>
+					<textcolor>white</textcolor>
+					<label>[UPPERCASE]$INFO[Videoplayer.title][/UPPERCASE]</label>
+					<scroll>false</scroll>
+				</control>
+									
+				<!--synopsis-->
+				<control type="textbox">
+					<posx>0</posx>
+					<posy>5-row</posy>
+					<font>regular</font>
+					<width>11-col</width>
+					<textcolor>white</textcolor>
+					<height>295</height>
+					<label>$INFO[videoplayer.plot]</label>
+					<autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
+				</control>
+																		
+			</control>
+			
+			<!--dialog controls-->
+			<control type="group">
+			
+				<posx>col-14-begin</posx>
+				<posy>995</posy>
+				
+				<!--animations-->
+				<animation effect="slide" start="0,100" time="200" delay="1100">WindowOpen</animation>
+											
+				<!--controls-->	
+				<control type="grouplist" id="9000">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>11-col</width>
+					<height>1-row</height>
+					<orientation>horizontal</orientation>
+					<onleft>8</onleft>
+					<itemgap>46</itemgap>
+					
+					<control type="button" id="3">
+						<description>Aspect ratio</description>
+						<label>Aspect</label>
+						<width>2-col</width>
+						<height>37</height>
+						<font>buttonTitle</font>
+						<align>center</align>
+						<focusedcolor>black</focusedcolor>
+						<textcolor>white</textcolor>
+						<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+						<texturefocus>UIControls/buttonFO.png</texturefocus>
+						<onclick>action(AspectRatio)</onclick>
+					</control>
+
+					<control type="button" id="4">
+						<description>Audio settings</description>
+						<label>Audio</label>
+						<width>2-col</width>
+						<height>37</height>
+						<font>buttonTitle</font>
+						<align>center</align>
+						<focusedcolor>black</focusedcolor>
+						<textcolor>white</textcolor>
+						<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+						<texturefocus>UIControls/buttonFO.png</texturefocus>
+						<onclick>ActivateWindow(124)</onclick>
+					</control>
+
+					<control type="button" id="5">
+						<description>Video settings</description>
+						<label>Video</label>
+						<width>2-col</width>
+						<height>37</height>
+						<font>buttonTitle</font>
+						<align>center</align>
+						<focusedcolor>black</focusedcolor>
+						<textcolor>white</textcolor>
+						<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+						<texturefocus>UIControls/buttonFO.png</texturefocus>
+						<onclick>ActivateWindow(123)</onclick>
+					</control>
+
+					<control type="button" id="6">
+						<description>Get subtitles script</description>
+						<label>Subtitles</label>
+						<width>3-col</width>
+						<height>37</height>
+						<font>buttonTitle</font>
+						<align>center</align>
+						<focusedcolor>black</focusedcolor>
+						<textcolor>white</textcolor>
+						<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+						<texturefocus>UIControls/buttonFO.png</texturefocus>
+						<onclick>Close</onclick>
+						<onclick>XBMC.RunScript($INFO[Skin.String(SubtitlesPath)])</onclick>
+					</control>
+
+				</control>
+			
+			</control>
+		</control>
+				
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>DialogFullscreenInfo.xml</label>
+		</control>
+
+	</controls>
+
+</window>

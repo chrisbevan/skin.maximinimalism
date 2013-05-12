@@ -1,0 +1,298 @@
+<window id="2003">
+	<defaultcontrol always="true">8</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	
+	<controls>
+		
+		<!--further info available-->
+		<control type="group">
+			<visible>container.content(movies) | container.content(tvshows) | container.content(episodes)</visible>
+			<include>globalBackground</include>
+			<include>fadeInOut</include>
+									
+			<!--fanart / coverart if available-->
+			<control type="group">
+				<posx>0</posx>
+				<posy>0</posy>
+					
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<include>dimensionsFullscreen</include>
+					<texture>colors/black.png</texture>
+					<colordiffuse>ffffffff</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
+												
+				<!--fanart-->
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<include>dimensionsFullscreen</include>
+					<aspectratio align="center" aligny="top">stretch</aspectratio>			
+					<texture fallback="colors/black.png">$INFO[Listitem.art(fanart)]</texture>
+				</control>
+							
+				<!--vignette-->
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<include>dimensionsFullscreen</include>
+					<texture>vignette.png</texture>
+					<colordiffuse>ffffffff</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				
+				<!--overlay-->
+				<control type="image">
+					<posx>col-13-begin</posx>
+					<posy>0</posy>
+					<width>13-col-gutter</width>
+					<height>fullscreenHeight</height>
+					<texture>colors/black.png</texture>
+					<colordiffuse>AAffffff</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					<!--animations-->
+					<animation effect="slide" start="500,0" delay="500" tween="back" easing="out" time="300">WindowOpen</animation>
+				</control>
+														
+			</control>
+		
+			<!--title info-->
+			<control type="group">	
+		
+				<posx>col-14-begin</posx>
+				<posy>row-2-begin</posy>
+				
+				<!--animations-->
+				<animation effect="fade" start="0" end="100" delay="900" time="300">WindowOpen</animation>
+												
+				<!--content description-->
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>11-col</width>
+					<font>smallStrong</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.genre]</label>
+					<scroll>false</scroll>
+				</control>
+				
+				<control type="textbox" id="20">
+					<posx>0</posx>
+					<posy>1-row</posy>
+					<width>11-col</width>
+					<height>185</height>
+					<font>largeStrong</font>
+					<textcolor>white</textcolor>
+					<label>[UPPERCASE]$INFO[ListItem.label][/UPPERCASE]</label>
+					<scroll>false</scroll>
+				</control>
+									
+				<!--synopsis-->
+				<control type="textbox">
+					<posx>0</posx>
+					<posy>5-row</posy>
+					<font>regular</font>
+					<width>11-col</width>
+					<textcolor>white</textcolor>
+					<height>295</height>
+					<label>$INFO[ListItem.plot]</label>
+					<autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
+				</control>
+				
+				<!--cast and crew-->
+				<control type="panel" id="50">
+					<posx>0</posx>
+					<posy>11-row</posy>
+					<width>12-col</width>
+					<height>4-row</height>				
+					<scrolltime>200</scrolltime>
+					<orientation>vertical</orientation>
+				
+					<itemlayout height="2-row" width="6-col">
+					
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>96</width>
+							<height>96</height>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+							<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+							<bordersize>0</bordersize>
+						</control>
+					
+						<control type="textbox">
+							<posx>108</posx>
+							<posy>8</posy>
+							<width>4-col</width>
+							<height>2-row</height>
+							<font>smallStrong</font>
+							<textcolor>selected</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					
+					</itemlayout>
+				
+					<focusedlayout height="1-row" width="6-col">
+					
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>96</width>
+							<height>96</height>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+							<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+							<bordersize>0</bordersize>
+						</control>
+					
+						<control type="textbox">
+							<posx>108</posx>
+							<posy>8</posy>
+							<width>4-col</width>
+							<height>2-row</height>
+							<font>smallStrong</font>
+							<textcolor>selected</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					
+					</focusedlayout>
+				</control>
+														
+			</control>
+			
+			<!--dialog controls-->
+			<control type="group">
+			
+				<posx>col-14-begin</posx>
+				<posy>995</posy>
+				
+				<!--animations-->
+				<animation effect="slide" start="0,100" time="200" delay="1100">WindowOpen</animation>
+											
+				<!--controls-->	
+				<control type="grouplist" id="9000">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>11-col</width>
+					<height>1-row</height>
+					<orientation>horizontal</orientation>
+					<onleft>8</onleft>
+					<itemgap>72</itemgap>
+					
+					<control type="button" id="8">
+						<description>Play</description>
+						<label>Play Title</label>
+						<posx>col-1-begin</posx>
+						<posy>10</posy>
+						<width>3-col</width>
+						<height>37</height>
+						<font>buttonTitle</font>
+						<align>center</align>
+						<focusedcolor>black</focusedcolor>
+						<textcolor>white</textcolor>
+						<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+						<texturefocus>UIControls/buttonFO.png</texturefocus>
+						<onright>9000</onright>
+					</control>
+					
+					<control type="button" id="6">
+						<description>Refresh</description>
+						<label>Change Title</label>
+						<width>3-col</width>
+						<height>37</height>
+						<font>buttonTitle</font>
+						<align>center</align>
+						<focusedcolor>black</focusedcolor>
+						<textcolor>white</textcolor>
+						<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+						<texturefocus>UIControls/buttonFO.png</texturefocus>
+					</control>
+
+					<control type="button" id="10">
+						<description>Choose Art</description>
+						<label>Get Art</label>
+						<width>3-col</width>
+						<height>37</height>
+						<font>buttonTitle</font>
+						<align>center</align>
+						<focusedcolor>black</focusedcolor>
+						<textcolor>white</textcolor>
+						<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+						<texturefocus>UIControls/buttonFO.png</texturefocus>
+					</control>
+
+				</control>
+			
+			</control>
+			
+			<!--no info available-->
+			<control type="group">
+				<visible>!container.content(movies) + !container.content(tvshows) + !container.content(episodes)</visible>
+
+				<control type="group">
+					<posx>0</posx>
+					<posy>368</posy>
+
+					<!--animations-->
+					<include>modalDialogInOut</include>
+
+					<!--text-->
+					<control type="group" id="9000">
+						<posx>col-9-begin</posx>
+						<posy>24</posy>
+
+						<control type="label">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>8-col-gutter</width>
+							<textcolor>white</textcolor>
+							<font>sectionTitle</font>
+							<label>No info available</label>
+						</control>
+
+						<control type="textbox">
+							<posx>0</posx>
+							<posy>1-row</posy>
+							<width>8-col-gutter</width>
+							<height>2-row</height>
+							<font>regular</font>
+							<textcolor>white</textcolor>
+							<label>No further information for this title.</label>
+						</control>
+
+						<control type="button">
+							<description>Ok</description>
+							<label>OK</label>
+							<font>buttonTitle</font>
+							<posx>0</posx>
+							<posy>4-row</posy>
+							<width>4-col-gutter</width>	
+							<aligny>top</aligny>
+							<textoffsety>12</textoffsety>
+							<align>center</align>
+							<texturenofocus>UIControls/buttonFO.png</texturenofocus>
+							<texturefocus>UIControls/buttonFO.png</texturefocus>
+							<textcolor>black</textcolor>
+							<focusedcolor>black</focusedcolor>
+							<onclick>PreviousMenu</onclick>
+						</control>
+
+					</control>
+
+				</control>
+
+			</control>
+											
+		</control>
+	
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>DialogVideoInfo.xml</label>
+		</control>
+
+	</controls>
+
+</window>

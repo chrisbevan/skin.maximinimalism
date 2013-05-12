@@ -1,0 +1,151 @@
+<window>
+	<defaultcontrol always="true">32</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		
+		<include>globalBackground</include>
+		<include>fadeInOut</include>	
+				
+		<!--PVR View Menu-->
+		<control type="group">
+			<posx>col-1-begin</posx>
+			<posy>row-2-begin</posy>
+			
+			<include>dateTime</include>
+			
+			<control type="grouplist" id="9000">
+				<posx>0</posx>
+				<posy>190</posy>
+				<width>3-col</width>
+				<height>10-row</height>
+				<onleft>9000</onleft>
+				<onright>50</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				
+				<control type="button" id="32">
+					<description>TV Channels</description>
+					<label>TV</label>
+					<height>37</height>
+					<font>menuTitle</font>
+					<align>left</align>
+					<focusedcolor>white</focusedcolor>
+					<textcolor>unselected</textcolor>
+				</control>
+				
+				<control type="button" id="33">
+					<description>Radio Channels</description>
+					<label>Radio</label>
+					<height>37</height>
+					<font>menuTitle</font>
+					<align>left</align>
+					<focusedcolor>white</focusedcolor>
+					<textcolor>unselected</textcolor>
+				</control>
+				
+				<control type="button" id="31">
+					<description>TV Guide</description>
+					<label>$LOCALIZE[19222]: $LOCALIZE[19030]</label>
+					<height>37</height>
+					<font>menuTitle</font>
+					<align>left</align>
+					<focusedcolor>white</focusedcolor>
+					<textcolor>unselected</textcolor>
+				</control>
+								
+				<control type="button" id="34">
+					<description>Recordings</description>
+					<label>19163</label>
+					<height>37</height>
+					<font>menuTitle</font>
+					<align>left</align>
+					<focusedcolor>white</focusedcolor>
+					<textcolor>unselected</textcolor>
+				</control>
+				
+				<control type="button" id="35">
+					<description>Timers</description>
+					<label>19040</label>
+					<height>37</height>
+					<font>menuTitle</font>
+					<align>left</align>
+					<focusedcolor>white</focusedcolor>
+					<textcolor>unselected</textcolor>
+				</control>
+				
+			</control>
+		</control>
+		
+		<!--titles-->
+		<control type="group">
+			<posx>col-4-begin</posx>
+			<posy>row-2-begin</posy>
+			
+			<!--animations-->
+			<animation type="windowopen">
+				<effect type="fade" start="0" end="100" time="600" reversible="false"  />
+				<effect type="slide" start="300,0" end="0,0" tween="cubic" easing="out" time="400" />
+			</animation>
+			
+			<control type="label">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>14-col</width>
+				<font>pageTitle</font>
+				<label>Live TV</label>
+				<textcolor>white</textcolor>
+			</control>
+			
+			<control type="label">
+				<posx>0</posx>
+				<posy>45</posy>
+				<width>14-col</width>
+				<font>regular</font>
+				<label>$INFO[Pvr.BackendChannels] Channels</label>
+				<textcolor>white</textcolor>
+			</control>
+		
+		</control>
+		
+		<!--content listing-->
+		<control type="group" id="50">
+			<posx>col-4-begin</posx>
+			<posy>row-5-begin</posy>
+			
+			<!--animations-->
+			<animation type="windowopen">
+				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
+				<effect type="fade" start="0" delay="200" end="100" time="600" />
+			</animation>
+						
+			<include>EPGTimelineView</include>--> <!-- view id = 10 -->
+			<include>LiveTVRadioChannelView</include> <!-- view id = 11 -->
+			<include>LiveTVRecordingsView</include> <!-- view id = 13 -->
+			<include>LiveTVTimersView</include> <!-- view id = 14 -->
+		
+		</control>
+		
+		<!--page scrollbar-->
+		<control type="group" id="8000">
+			<visible>Control.IsVisible(60)</visible>
+			
+			<animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
+			
+			<control type="scrollbar" id="60">
+				<posx>108r</posx>
+				<posy>row-5-begin</posy>
+				<height>9-row</height>
+				<onleft>50</onleft>
+			</control>
+						
+		</control>
+		
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>MyPVR.xml</label>
+		</control>
+
+	</controls>
+</window>

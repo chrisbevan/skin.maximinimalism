@@ -1,0 +1,176 @@
+<window id="10140">
+	<defaultcontrol always="true">9</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+		
+		<!--background-->
+		<include>fanartSlides</include>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>dimensionsFullscreen</include>
+			<texture>colors/black.png</texture>
+			<colordiffuse>ccffffff</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+		</control>
+			
+		<!--configuration options-->
+		<control type="group">
+
+			<posx>col-3-begin</posx>
+			<posy>row-4-begin</posy>
+			
+			<!--animations-->
+			<include>modalDialogInOut</include>
+									
+			<!--content provider title / info-->
+			<control type="label">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>12-col</width>
+				<font>pageTitle</font>
+				<label>$INFO[ListItem.Property(Addon.Name)] [COLOR accented]Configuration[/COLOR]</label>
+				<textcolor>selected</textcolor>
+			</control>
+			
+			<!--horizontal rule-->
+			<control type="image">
+				<posx>0</posx>
+				<posy>1-row</posy>
+				<width>20-col</width>
+				<height>3</height>
+				<texture>colors/white.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<!--subnav-->
+			<control type="grouplist" id="9">
+				<posx>0</posx>
+				<posy>122</posy>
+				<width>4-col-gutter</width>
+				<height>11-row</height>
+				<itemgap>0</itemgap>
+				<onleft>9001</onleft>
+				<onright>2</onright>
+			</control>			
+						
+			<!--options area-->
+			<control type="grouplist" id="2">
+				<description>control area</description>
+				<posx>4-col</posx>
+				<posy>2-row</posy>
+				<width>12-col</width>
+				<height>10-row</height>
+				<onup>2</onup>
+				<ondown>2</ondown>
+				<onleft>9</onleft>
+				<onright>9001</onright>
+			</control>
+			
+			<!--ok, cancel etc buttons-->
+			<control type="grouplist" id="9001">
+				<posx>17-col</posx>
+				<posy>2-row</posy>
+				<height>12-row</height>
+				<onright>2</onright>
+				<onup>9</onup>
+				<ondown>9</ondown>
+
+				<control type="button" id="10">
+					<description>OK Button</description>
+					<width>3-col</width>
+					<label>186</label>
+					<align>left</align>
+					<height>43</height>
+					<font>menuTitle</font>
+					<textcolor>unselected</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<onleft>2</onleft>
+				</control>
+
+				<control type="button" id="11">
+					<description>Cancel Button</description>
+					<width>3-col</width>
+					<label>222</label>
+					<align>left</align>
+					<height>43</height>
+					<font>menuTitle</font>
+					<textcolor>unselected</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<onleft>2</onleft>
+				</control>
+
+				<control type="button" id="12">
+					<description>Defaults Button</description>
+					<width>3-col</width>
+					<label>409</label>
+					<align>left</align>
+					<height>43</height>
+					<font>menuTitle</font>
+					<textcolor>unselected</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<onleft>2</onleft>
+				</control>
+
+			</control>
+
+			<control type="button" id="13">
+				<description>Default Category Button</description>
+				<width>4-col</width>
+				<align>left</align>
+				<height>43</height>
+				<font>menuTitle</font>
+				<textcolor>unselected</textcolor>
+				<focusedcolor>white</focusedcolor>
+			</control>
+
+			<control type="button" id="3">
+				<description>Default Button</description>
+				<align>left</align>
+				<font>itemTitle</font>
+				<textcolor>unselected</textcolor>
+				<focusedcolor>white</focusedcolor>
+			</control>
+
+			<control type="radiobutton" id="4">
+				<description>Default RadioButton</description>
+				<align>left</align>
+			</control>
+
+			<control type="spincontrolex" id="5">
+				<description>Default spincontrolex</description>
+				<reverse>yes</reverse>
+				<align>left</align>
+			</control>
+
+			<control type="label" id="7">
+				<label>-</label>
+				<textcolor>unselected</textcolor>
+			</control>
+
+			<control type="image" id="6">
+				<description>Default Separator</description>
+				<height>-3</height>
+				<texture>-</texture>
+			</control>
+
+			<control type="sliderex" id="8">
+				<description>Default Slider</description>
+				<width>969</width>
+			</control>
+
+		</control>
+		
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>DialogAddonSettings.xml</label>
+		</control>
+		
+
+	</controls>
+
+</window>

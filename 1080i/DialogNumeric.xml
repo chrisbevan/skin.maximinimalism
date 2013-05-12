@@ -1,0 +1,319 @@
+<window id="109">
+	<defaultcontrol always="true">21</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<coordinates>
+		<origin x="750" y="270" />
+	</coordinates>
+
+	<controls>
+
+		<control type="image">
+			<posx>-750</posx>
+			<posy>-270</posy>
+			<width>1920</width>
+			<height>1080</height>
+			<texture border="2">colors/black.png</texture>
+		</control>
+
+		<control type="image">
+			<posx>-30</posx>
+			<posy>-30</posy>
+			<width>480</width>
+			<height>639</height>
+			<texture border="22">colors/black.png</texture>
+		</control>
+
+		<control type="label">
+			<posy>-60</posy>
+			<include>DialogID</include>
+			<label>DialogNumeric.xml</label>
+		</control>
+
+		<control type="label" id="1">
+			<description>dialog Heading</description>
+			<posx>15</posx>
+			<width>390</width>
+			<font>regular</font>
+			<shadowcolor>black</shadowcolor>
+			<align>center</align>
+		</control>
+
+		<control type="image">
+			<posx>15</posx>
+			<posy>87</posy>
+			<width>390</width>
+			<height>75</height>
+			<aspectratio>stretch</aspectratio>
+			<texture border="20">other_textures/KeyboardEditArea.png</texture>
+		</control>
+
+		<control type="label" id="4">
+			<description>Edit Text</description>
+			<posx>23</posx>
+			<posy>87</posy>
+			<width>375</width>
+			<height>75</height>
+			<align>center</align>
+		</control>
+
+		<control type="group">
+			<posx>30</posx>
+			<posy>195</posy>
+
+			<control type="button" id="11">
+				<description>1 button</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<texturenofocus border="25,25,5,5">other_textures/KeyboardCornerTopNF.png</texturenofocus>
+				<texturefocus border="25,25,5,5">other_textures/KeyboardCornerTop.png</texturefocus>
+				<label>12311</label>
+				<focusedcolor>black</focusedcolor>
+				<onleft>23</onleft>
+				<onright>12</onright>
+				<onup>20</onup>
+				<ondown>14</ondown>
+			</control>
+
+			<control type="button" id="12">
+				<description>2 button</description>
+				<posx>90</posx>
+				<posy>0</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
+				<label>12312</label>
+				<focusedcolor>black</focusedcolor>
+				<onleft>11</onleft>
+				<onright>13</onright>
+				<onup>10</onup>
+				<ondown>15</ondown>
+			</control>
+
+			<control type="button" id="13">
+				<description>3 button</description>
+				<posx>180</posx>
+				<posy>0</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
+				<label>12313</label>
+				<focusedcolor>black</focusedcolor>
+				<onleft>12</onleft>
+				<onright>23</onright>
+				<onup>22</onup>
+				<ondown>16</ondown>
+			</control>
+
+			<control type="button" id="23">
+				<description>Backspace button</description>
+				<posx>270</posx>
+				<posy>0</posy>
+				<width>90</width>
+				<height>180</height>
+				<align>center</align>
+				<texturenofocus flipx="true" border="5,25,25,5">other_textures/KeyboardCornerTopNF.png</texturenofocus>
+				<texturefocus flipx="true" border="5,35,25,5">other_textures/KeyboardCornerTop.png</texturefocus>
+				<textwidth>180</textwidth>
+				<label>20181</label>
+				<focusedcolor>black</focusedcolor>
+				<angle>270</angle>
+				<onleft>13</onleft>
+				<onright>11</onright>
+				<onup>21</onup>
+				<ondown>21</ondown>
+			</control>
+
+			<control type="button" id="14">
+				<description>4 button</description>
+				<posx>0</posx>
+				<posy>90</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
+				<label>12314</label>
+				<focusedcolor>black</focusedcolor>
+				<onleft>23</onleft>
+				<onright>15</onright>
+				<onup>11</onup>
+				<ondown>17</ondown>
+			</control>
+
+			<control type="button" id="15">
+				<description>5 button</description>
+				<posx>90</posx>
+				<posy>90</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
+				<label>12315</label>
+				<focusedcolor>black</focusedcolor>
+				<onleft>14</onleft>
+				<onright>16</onright>
+				<onup>12</onup>
+				<ondown>18</ondown>
+			</control>
+
+			<control type="button" id="16">
+				<description>6 button</description>
+				<posx>180</posx>
+				<posy>90</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
+				<label>12316</label>
+				<focusedcolor>black</focusedcolor>
+				<onleft>15</onleft>
+				<onright>23</onright>
+				<onup>13</onup>
+				<ondown>19</ondown>
+			</control>
+
+			<control type="button" id="17">
+				<description>7 button</description>
+				<posx>0</posx>
+				<posy>180</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
+				<label>12317</label>
+				<focusedcolor>black</focusedcolor>
+				<onleft>21</onleft>
+				<onright>18</onright>
+				<onup>14</onup>
+				<ondown>20</ondown>
+			</control>
+
+			<control type="button" id="18">
+				<description>8 button</description>
+				<posx>90</posx>
+				<posy>180</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
+				<label>12318</label>
+				<focusedcolor>black</focusedcolor>
+				<onleft>17</onleft>
+				<onright>19</onright>
+				<onup>15</onup>
+				<ondown>10</ondown>
+			</control>
+
+			<control type="button" id="19">
+				<description>9 button</description>
+				<posx>180</posx>
+				<posy>180</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
+				<label>12319</label>
+				<focusedcolor>black</focusedcolor>
+				<onleft>18</onleft>
+				<onright>21</onright>
+				<onup>16</onup>
+				<ondown>22</ondown>
+			</control>
+
+			<control type="button" id="21">
+				<description>Done button</description>
+				<posx>270</posx>
+				<posy>180</posy>
+				<width>90</width>
+				<height>180</height>
+				<align>center</align>
+				<texturenofocus flipx="true" border="5,5,25,25">other_textures/KeyboardCornerBottomNF.png</texturenofocus>
+				<texturefocus flipx="true" border="5,30,25,25">other_textures/KeyboardCornerBottom.png</texturefocus>
+				<textwidth>180</textwidth>
+				<label>20177</label>
+				<focusedcolor>black</focusedcolor>
+				<angle>270</angle>
+				<onleft>19</onleft>
+				<onright>17</onright>
+				<onup>23</onup>
+				<ondown>23</ondown>
+			</control>
+
+			<control type="button" id="20">
+				<description>prev button</description>
+				<posx>0</posx>
+				<posy>270</posy>
+				<width>90</width>
+				<height>90</height>
+				<label>&lt;</label>
+				<focusedcolor>black</focusedcolor>
+				<align>center</align>
+				<texturenofocus border="25,5,25,5">other_textures/KeyboardCornerBottomNF.png</texturenofocus>
+				<texturefocus border="25,5,25,5">other_textures/KeyboardCornerBottom.png</texturefocus>
+				<onleft>21</onleft>
+				<onright>10</onright>
+				<onup>17</onup>
+				<ondown>11</ondown>
+			</control>
+
+			<control type="button" id="10">
+				<description>0 button</description>
+				<posx>90</posx>
+				<posy>270</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
+				<label>12310</label>
+				<focusedcolor>black</focusedcolor>
+				<onleft>20</onleft>
+				<onright>22</onright>
+				<onup>18</onup>
+				<ondown>12</ondown>
+			</control>
+
+			<control type="button" id="22">
+				<description>next button</description>
+				<posx>180</posx>
+				<posy>270</posy>
+				<width>90</width>
+				<height>90</height>
+				<label>&gt;</label>
+				<focusedcolor>black</focusedcolor>
+				<align>center</align>
+				<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
+				<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
+				<onleft>10</onleft>
+				<onright>21</onright>
+				<onup>19</onup>
+				<ondown>13</ondown>
+			</control>
+
+		</control>
+
+		<control type="image">
+			<posx>-750</posx>
+			<posy>-270</posy>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>debuggrid1080.png</texture>
+			<visible>Skin.HasSetting(DebugGrid)</visible>
+		</control>
+
+	</controls>
+
+</window>

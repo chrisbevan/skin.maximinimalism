@@ -1,0 +1,83 @@
+<!--power menu-->
+<window type="buttonMenu" id="111">
+	<defaultcontrol always="true">3115</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<include>fadeInOut</include>
+
+	<controls>
+		
+		<include>modalDialog</include>
+		
+		<control type="group">
+			<posx>col-7-begin</posx>
+			<posy>row-1-begin</posy>
+			
+			<!--animations-->
+			<include>modalDialogInOut</include>
+				
+			<control type="grouplist" id="3110">
+				<posx>-24</posx>
+				<posy>8-row</posy>
+				<orientation>horizontal</orientation>
+				<width>fullscreenWidth</width>
+				<itemgap>24</itemgap>
+
+				<control type="button" id="3115">
+					<description>Shutdown</description>
+					<font>buttonTitle</font>
+					<width>4-col</width>
+					<label>Shutdown</label>
+					<onclick>ShutDown()</onclick>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textoffsety>12</textoffsety>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+				</control>
+
+				<control type="button" id="3116">
+					<description>Suspend xbmc</description>
+					<font>buttonTitle</font>
+					<width>4-col</width>
+					<label>Sleep</label>
+					<onclick>XBMC.Suspend()</onclick>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textoffsety>12</textoffsety>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+				</control>
+
+				<control type="button" id="3117">
+					<description>Reboot button</description>
+					<font>buttonTitle</font>
+					<width>4-col</width>
+					<label>Reboot</label>
+					<onclick>XBMC.Reset()</onclick>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textoffsety>12</textoffsety>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+				</control>
+
+			</control>
+			
+		</control>
+
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>DialogButtonMenu.xml</label>
+		</control>
+
+	</controls>
+
+</window>

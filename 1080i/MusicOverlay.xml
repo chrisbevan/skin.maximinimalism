@@ -1,0 +1,46 @@
+<window id="2903">
+	<defaultcontrol always="true">2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<control type="group">
+			<posx>30</posx>
+			<posy>1011</posy>
+
+			<control type="group">
+
+				<visible>!Window.IsActive(visualisation) + !Window.IsActive(karaoke)</visible>
+
+				<control type="image">
+					<posx>-30</posx>
+					<posy>0</posy>
+					<width>1920</width>
+					<height>102</height>
+					<texture border="22">colors/black.png</texture>
+				</control>
+
+				<control type="label">
+					<posy>-30</posy>
+					<include>DialogID</include>
+					<label>MusicOverlay.xml</label>
+				</control>
+
+				<control type="label">
+					<description>Now Playing Info</description>
+					<posx>15</posx>
+					<posy>9</posy>
+					<width>1830</width>
+					<label>$INFO[MusicPlayer.Title,[COLOR=Blue]$LOCALIZE[13350] [/COLOR],]$INFO[MusicPlayer.Artist, - ,]</label>
+					<scroll>true</scroll>
+				</control>
+
+			</control>
+
+		</control>
+
+		<include>Debug_Grid</include>
+
+	</controls>
+
+</window>

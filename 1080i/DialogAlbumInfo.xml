@@ -1,0 +1,181 @@
+<window id="2001">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<!--fanart / coverart if available-->
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+				
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<include>dimensionsFullscreen</include>
+				<texture>colors/black.png</texture>
+				<colordiffuse>aaffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+																							
+		</control>
+		
+		<control type="group">
+			<posx>col-1-begin</posx>
+			<posy>row-1-begin</posy>
+
+			<control type="label">
+				<description>Title</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>12-col</width>
+				<font>pageTitle</font>
+				<label>$INFO[ListItem.Album]</label>
+				<scroll>true</scroll>
+				<visible>Container.Content(Albums)</visible>
+			</control>
+
+			<control type="label">
+				<description>Title</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>12-col</width>
+				<font>pageTitle</font>
+				<label>$INFO[ListItem.Artist]</label>
+				<scroll>true</scroll>
+				<visible>Container.Content(Artists)</visible>
+			</control>
+
+			<control type="textbox" id="4">
+				<description>Review</description>
+				<posx>0</posx>
+				<posy>2-row</posy>
+				<width>12-col</width>
+				<height>6-row</height>
+			</control>
+
+			<control type="list" id="50">
+				<description>Tracks</description>
+				<posx>435</posx>
+				<posy>306</posy>
+				<width>870</width>
+				<height>483</height>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<orientation>vertical</orientation>
+				<scrolltime>200</scrolltime>
+
+				<itemlayout height="69">
+
+					<control type="image">
+						<width>870</width>
+						<height>66</height>
+						<texture border="2">colors/black.png</texture>
+					</control>
+
+					<control type="label">
+						<posx>30</posx>
+						<width>810</width>
+						<info>ListItem.Label</info>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="69">
+
+					<control type="image">
+						<width>870</width>
+						<height>66</height>
+						<texture border="5">colors/white.png</texture>
+						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(50)">Conditional</animation>
+					</control>
+
+					<control type="label">
+						<posx>30</posx>
+						<width>810</width>
+						<info>ListItem.Label</info>
+					</control>
+
+				</focusedlayout>
+
+			</control>
+
+			<!--dialog controls-->
+			<control type="grouplist" id="9000">
+				<posx>0</posx>
+				<posy>10-row</posy>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<itemgap>24</itemgap>
+				<orientation>horizontal</orientation>
+
+				<control type="button" id="5">
+					<description>Tracks</description>
+					<label>206</label>
+					<width>3-col</width>
+					<height>37</height>
+					<font>buttonTitle</font>
+					<align>center</align>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>white</textcolor>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+				</control>
+
+				<control type="button" id="6">
+					<description>Refresh button</description>
+					<label>184</label>
+					<width>3-col</width>
+					<height>37</height>
+					<font>buttonTitle</font>
+					<align>center</align>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>white</textcolor>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+				</control>
+
+				<control type="button" id="10">
+					<description>Get Thumb</description>
+					<label>13405</label>
+					<width>3-col</width>
+					<height>37</height>
+					<font>buttonTitle</font>
+					<align>center</align>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>white</textcolor>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+				</control>
+
+				<control type="button" id="12">
+					<description>Get Fanart</description>
+					<label>20413</label>
+					<width>3-col</width>
+					<height>37</height>
+					<font>buttonTitle</font>
+					<align>center</align>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>white</textcolor>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+				</control>
+
+			</control>
+
+		</control>
+
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>DialogAlbumInfo.xml</label>
+		</control>
+
+	</controls>
+
+</window>

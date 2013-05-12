@@ -1,0 +1,178 @@
+<window id="146">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+
+	<controls>
+				
+		<include>globalBackground</include>
+		
+		<!--fanart / coverart if available-->
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+						
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<include>dimensionsFullscreen</include>
+				<texture>colors/black.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<include>dimensionsFullscreen</include>
+				<texture>$INFO[ListItem.art(fanart)]</texture>
+				<colordiffuse>33ffffff</colordiffuse>
+				<aspectratio aligny="top">scale</aspectratio>
+			</control>
+													
+		</control>
+							
+		<!--About this addon-->		
+		<control type="group">
+			<posx>col-1-begin</posx>
+			<posy>row-1-begin</posy>
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>4-row</posy>
+				<width>6-col</width>
+				<height>6-col</height>
+				<aspectratio>stretch</aspectratio>
+				<texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
+				<!--animations-->
+				<animation effect="slide" start="-300,0" time="200" delay="400">WindowOpen</animation>
+			</control>
+			
+			<control type="group">
+				<!--animations-->
+				<animation effect="fade" start="0" end="100" time="300" delay="500">WindowOpen</animation>
+				
+				<control type="label">
+					<description>Addon Title</description>
+					<posx>7-col</posx>
+					<posy>4-row</posy>
+					<width>12-col-gutter</width>
+					<font>smallStrong</font>
+					<label>[B][COLOR accented]$INFO[ListItem.Property(Addon.Status)] Addons |[/COLOR] $INFO[ListItem.Property(Addon.Type)][/B]</label>
+				</control>
+			
+				<control type="label">
+					<description>Addon Title</description>
+					<posx>7-col</posx>
+					<posy>5-row</posy>
+					<width>12-col-gutter</width>
+					<font>dialogTitle</font>
+					<label>$INFO[ListItem.Property(Addon.Name)]</label>
+				</control>
+			
+				<control type="label">
+					<posx>7-col</posx>
+					<posy>6-row</posy>
+					<width>12-col-gutter</width>
+					<font>regularStrong</font>
+					<label>By $INFO[ListItem.Property(Addon.Creator)] • Version $INFO[ListItem.Property(Addon.Version)] </label>
+				</control>
+			
+				<control type="textbox" id="400">
+					<posx>7-col</posx>
+					<posy>7-row</posy>
+					<font>regular</font>
+					<width>13-col</width>
+					<height>355</height>
+					<label>$INFO[ListItem.Property(Addon.Description)]</label>
+					<autoscroll delay="5000" time="1000" repeat="10000"></autoscroll>
+				</control>
+			</control>
+						
+		</control>
+		
+		<!--dialog controls-->	
+		<control type="group">
+			<visible>!Window.IsVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
+			
+			<posx>0</posx>
+			<posy>995</posy>
+			
+			<!--animations-->
+			<animation effect="slide" start="0,100" time="200" delay="300">WindowOpen</animation>
+								
+			<control type="grouplist" id="9000">
+				<posx>col-1-begin</posx>
+				<posy>10</posy>
+				<width>24-col</width>
+				<height>63</height>
+				<itemgap>24</itemgap>
+				<orientation>horizontal</orientation>
+				
+				<control type="button" id="6">
+					<description>Install / Uninstall addon</description>
+					<width>3-col</width>
+					<label>24022</label>
+					<font>buttonTitle</font>
+					<height>37</height>
+					<align>center</align>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>white</textcolor>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+				</control>
+				
+				<control type="button" id="8">
+					<visible>Control.IsEnabled(8)</visible>
+					<description>Update Addon button</description>
+					<width>3-col</width>
+					<label>24069</label>
+					<font>buttonTitle</font>
+					<height>37</height>
+					<align>center</align>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>white</textcolor>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+				</control>
+								
+				<control type="button" id="7">
+					<visible>Control.IsEnabled(7)</visible>
+					<description>Disable Addon button</description>
+					<width>3-col</width>
+					<font>buttonTitle</font>
+					<height>37</height>
+					<align>center</align>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>white</textcolor>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+				</control>
+				
+				<control type="button" id="9">
+					<visible>Control.IsEnabled(9)</visible>
+					<description>Addon Settings</description>
+					<width>3-col</width>
+					<label>Configure</label>
+					<font>buttonTitle</font>
+					<height>37</height>
+					<align>center</align>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>white</textcolor>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+				</control>
+								
+				
+			</control>
+		</control>
+			
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>DialogAddonInfo.xml</label>
+		</control>
+
+	</controls>
+
+</window>

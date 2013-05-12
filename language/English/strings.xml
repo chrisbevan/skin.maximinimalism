@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<strings>
+
+  <string id="31000">Finishes at</string>
+  <string id="31001">Files Mode</string>
+  <string id="31002">PROGRAMS</string>
+  <string id="31003">VIDEOS</string>
+  <string id="31004">MUSIC</string>
+  <string id="31005">PICTURES</string>
+  <string id="31006">MOVIES</string>
+  <string id="31007">TV SHOWS</string>
+  <string id="31008">FAVOURITES</string>
+  <string id="31009">PROFILES</string>
+  <string id="31010">WEATHER</string>
+  <string id="31011">FILE MANAGER</string>
+  <string id="31012">SETTINGS</string>
+  <string id="31013">SHUTDOWN</string>
+  <string id="31014">PLAY DISC</string>
+  <string id="31015">Player Controls</string>
+  <string id="31016">Background Visuals</string>
+  <string id="31017">Lyrics/Subtitles</string>
+  <string id="31018">Current Selected</string>
+  <string id="31019">Open playlist</string>
+  <string id="31020">Save playlist</string>
+  <string id="31021">Close playlist</string>
+  <string id="31022">System music files</string>
+  <string id="31023">Disable Background Visualiser</string>
+  <string id="31024">Disable Background Video</string>
+  <string id="31025">Change default Lyrics script</string>
+  <string id="31026">Change default Subtitles script</string>
+  <string id="31027">Items</string>
+  <string id="31028">Page</string>
+  <string id="31029">Current playlist</string>
+  <string id="31030">Memory Used</string>
+  <string id="31031">Karaoke Song Selector</string>
+  <string id="31032">Visualization Presets</string>
+  <string id="31033">Debug</string>
+  <string id="31034">Enable Debug Grid</string>
+  <string id="31035">Disable Debug Info</string>
+  <string id="31036">Rewind</string>
+  <string id="31037">Pause</string>
+  <string id="31038">Stop</string>
+  <string id="31039">Fast Forward</string>
+  <string id="31040">Visualisation Presets</string>
+  <string id="31041">DVD Menu</string>
+</strings>

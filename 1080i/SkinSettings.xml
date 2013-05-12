@@ -1,0 +1,177 @@
+<window id="56">
+	<defaultcontrol always="true">200</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<!--background-->
+		<include>fanartSlides</include>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>dimensionsFullscreen</include>
+			<texture>colors/black.png</texture>
+			<colordiffuse>ccffffff</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+		</control>
+
+		<control type="group">
+			
+			<posx>col-7-begin</posx>
+			<posy>row-4-begin</posy>
+			
+			<!--animations-->
+			<include>modalDialogInOut</include>
+			
+			<control type="label">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>8-col</width>
+				<font>pageTitle</font>
+				<label>[COLOR accented]Settings[/COLOR] Misc settings</label>
+				<textcolor>white</textcolor>
+			</control>
+			
+			<!--horizontal rule-->
+			<control type="image">
+				<posx>0</posx>
+				<posy>1-row</posy>
+				<width>12-col</width>
+				<height>3</height>
+				<texture>colors/white.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>			
+			
+			<!--options-->
+			<control type="grouplist" id="200">
+				<posx>0</posx>
+				<posy>2-row</posy>
+				<width>12-col</width>
+				<height>10-row</height>
+				<orientation>vertical</orientation>
+				
+				<control type="button" id="302">
+					<description>Default Button</description>
+					<width>12-col</width>
+					<align>left</align>
+					<label>Set Subtitles Script</label>
+					<font>itemTitle</font>
+					<textcolor>unselected</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<onclick>Skin.SetAddon(SubtitlePath,xbmc.python.subtitles)</onclick>
+				</control>
+				
+				<control type="button" id="1">
+					<width>12-col</width>
+					<align>left</align>
+					<label>Set Video Fanart location</label>
+					<font>itemTitle</font>
+					<textcolor>unselected</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<onclick>Skin.SetPath(videoFanartLocation)</onclick>
+				</control>
+				
+				<control type="button" id="2">
+					<width>12-col</width>
+					<align>left</align>
+					<label>Set Music Fanart location</label>
+					<font>itemTitle</font>
+					<textcolor>unselected</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<onclick>Skin.SetPath(musicFanartLocation)</onclick>
+				</control>
+				
+				<control type="button" id="3">
+					<width>12-col</width>
+					<align>left</align>
+					<label>Set Game Fanart location</label>
+					<font>itemTitle</font>
+					<textcolor>unselected</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<onclick>Skin.SetPath(gameFanartLocation)</onclick>
+				</control>
+				
+				<control type="radiobutton" id="501">
+					<description>Enable Debug Grid</description>
+					<width>12-col</width>
+					<align>left</align>
+					<label>31034</label>
+					<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
+					<onclick>XBMC.ReloadSkin()</onclick>
+					<selected>Skin.HasSetting(DebugGrid)</selected>
+				</control>
+
+				<control type="radiobutton" id="502">
+					<description>Disable Debug Info</description>
+					<width>12-col</width>
+					<align>left</align>
+					<label>31035</label>
+					<onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
+					<selected>Skin.HasSetting(HideDebugInfo)</selected>
+				</control>	
+			</control>
+			
+			<!--labels-->
+			<control type="label" id="403">
+				<posx>12-col</posx>
+				<posy>2-row</posy>
+				<width>6-col</width>
+				<align>right</align>
+				<font>itemTitle</font>
+				<label>$INFO[Skin.String(SubtitlesPath)]</label>
+				<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
+			</control>
+
+			<control type="label" id="404">
+				<posx>12-col</posx>
+				<posy>2-row</posy>
+				<width>6-col</width>
+				<align>right</align>
+				<label>XBMC Subtitles</label>
+				<font>itemTitle</font>
+				<visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
+			</control>
+
+			<control type="label">
+				<posx>12-col</posx>
+				<posy>3-row</posy>
+				<width>6-col</width>
+				<align>right</align>
+				<font>itemTitle</font>
+				<label>$INFO[Skin.String(videoFanartLocation)]</label>
+				<visible>!IsEmpty(Skin.String(videoFanartLocation))</visible>
+			</control>
+			
+			<control type="label">
+				<posx>12-col</posx>
+				<posy>4-row</posy>
+				<width>6-col</width>
+				<align>right</align>
+				<font>itemTitle</font>
+				<label>$INFO[Skin.String(musicFanartLocation)]</label>
+				<visible>!IsEmpty(Skin.String(musicFanartLocation))</visible>
+			</control>
+			
+			<control type="label">
+				<posx>12-col</posx>
+				<posy>5-row</posy>
+				<width>6-col</width>
+				<align>right</align>
+				<font>itemTitle</font>
+				<label>$INFO[Skin.String(gameFanartLocation)]</label>
+				<visible>!IsEmpty(Skin.String(gameFanartLocation))</visible>
+			</control>
+
+		</control>
+		
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>CustomSettings.xml</label>
+		</control>
+
+	</controls>
+
+</window>

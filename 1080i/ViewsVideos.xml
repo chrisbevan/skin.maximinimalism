@@ -1,0 +1,406 @@
+<includes>
+	
+	<!--simple text list 1 row-->
+	<include name="viewVideoList">
+		<control type="group">			
+			<posx>0</posx>
+			<posy>3-row</posy>
+																		
+			<control type="panel" id="50">
+				<visible>!container.content(episodes) + !Substring(Container.foldername,4od)</visible>
+				<posx>0</posx>
+				<posy>4</posy>
+				<width>12-col</width>
+				<height>12-row</height>
+				<onleft>9000</onleft>
+				<onright>60</onright>
+				<ondown>50</ondown>
+				<onup>50</onup>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime tween="sine" easing="inout">300</scrolltime>
+												
+				<itemlayout width="12-col" height="1-row">								
+									
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>12-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
+						<bordersize>0</bordersize>
+						<colordiffuse>99FFFFFF</colordiffuse>
+					</control>
+					
+					<control type="image">
+						<posx>4</posx>
+						<posy>4</posy>
+						<width>48</width>
+						<height>48</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+					</control>
+			
+					<control type="label">
+						<posx>1-col</posx>
+						<posy>0</posy>
+						<width>7-col-gutter</width>
+						<font>itemTitle</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+			
+					<control type="label">
+						<posx>12-col-gutter</posx>
+						<posy>17</posy>
+						<width>4-col-gutter</width>
+						<font>smallStrong</font>
+						<align>right</align>
+						<height>24</height>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$VAR[itemDetail]</label>
+					</control>	
+										
+				</itemlayout>
+
+				<focusedlayout width="12-col" height="1-row">
+																		
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>12-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
+						<bordersize>0</bordersize>
+						<colordiffuse>FFFFFFFF</colordiffuse>
+						<!--animations-->
+						<animation type="Focus" condition="Container(50).OnNext | Container(50).OnPrevious" reversible="false">
+				            <effect type="fade" start="50" end="100" time="300" />
+				        </animation>
+					</control>
+															
+					<control type="image">
+						<posx>4</posx>
+						<posy>4</posy>
+						<width>48</width>
+						<height>48</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+					</control>
+			
+					<control type="label">
+						<posx>1-col</posx>
+						<posy>0</posy>
+						<width>7-col-gutter</width>
+						<font>itemTitle</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+								
+					<control type="label">
+						<posx>12-col-gutter</posx>
+						<posy>17</posy>
+						<width>4-col-gutter</width>
+						<font>smallStrong</font>
+						<align>right</align>
+						<height>24</height>
+						<textcolor>black</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$VAR[itemDetail]</label>
+					</control>
+					
+				</focusedlayout>
+			</control>
+		</control>
+	</include>
+	
+	<!--episodes-->
+	<include name="viewEpisodes">
+		<control type="group">			
+			<visible>container.content(episodes) | Substring(Container.folderpath,plugin)</visible>
+			<posx>0</posx>
+			<posy>3-row</posy>
+																					
+			<!--episode list-->
+			<control type="panel" id="52">
+				<posx>0</posx>
+				<posy>4</posy>
+				<width>21-col</width>
+				<height>12-row</height>
+				<onleft>9000</onleft>
+				<onright>60</onright>
+				<pagecontrol>60</pagecontrol>
+								
+				<itemlayout width="21-col" height="1-row">
+										
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>21-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
+						<bordersize>0</bordersize>
+						<colordiffuse>99FFFFFF</colordiffuse>
+					</control>
+					
+					<control type="image">
+						<posx>3</posx>
+						<posy>4</posy>
+						<width>48</width>
+						<height>48</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
+					</control>
+					
+					<control type="label">
+						<posx>60</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<font>itemTitle</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>false</scroll>
+					</control>
+					
+					<control type="label">
+						<visible>!isempty(ListItem.duration)</visible>
+						<posx>20-col</posx>
+						<posy>0</posy>
+						<width>3-col</width>
+						<font>itemTitle</font>
+						<textcolor>white</textcolor>
+						<align>right</align>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.duration] mins</label>
+						<scroll>false</scroll>
+					</control>
+																				
+					<control type="label">
+						<visible>!isempty(ListItem.playcount)</visible>
+						<posx>36r</posx>
+						<posy>1</posy>
+						<width>40</width>
+						<font>symbol</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label></label>
+					</control>
+					
+				</itemlayout>
+
+				<focusedlayout width="21-col" height="1-row">
+					
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>21-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
+						<bordersize>0</bordersize>
+						<colordiffuse>FFFFFFFF</colordiffuse>
+						<!--animations-->
+						<animation type="Focus" condition="Container(52).OnNext | Container(52).OnPrevious" reversible="false">
+				            <effect type="fade" start="50" end="100" time="300" />
+				        </animation>
+					</control>
+					
+					<control type="image">
+						<posx>3</posx>
+						<posy>4</posy>
+						<width>48</width>
+						<height>48</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
+					</control>
+					
+					<control type="label">
+						<posx>60</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<font>itemTitle</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>false</scroll>
+					</control>
+					
+					<control type="label">
+						<visible>!isempty(ListItem.duration)</visible>
+						<posx>20-col</posx>
+						<posy>0</posy>
+						<width>3-col</width>
+						<font>itemTitle</font>
+						<textcolor>black</textcolor>
+						<align>right</align>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.duration] mins</label>
+						<scroll>false</scroll>
+					</control>
+											
+					<control type="label">
+						<visible>!isempty(ListItem.playcount)</visible>
+						<posx>36r</posx>
+						<posy>1</posy>
+						<width>40</width>
+						<font>symbol</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label></label>
+					</control>
+			
+				</focusedlayout>
+			</control>
+		</control>
+	</include>
+	
+	<!--TVCatchup optimised text list-->
+	<include name="viewListTVCatchup">
+		<control type="group">
+			<posx>0</posx>
+			<posy>3-row</posy>
+		
+			<control type="panel" id="54">
+				<visible>!container.content(episodes)</visible>
+				<posx>0</posx>
+				<posy>4</posy>
+				<width>20-col</width>
+				<height>12-row</height>
+				<onleft>9000</onleft>
+				<onright>60</onright>
+				<ondown>54</ondown>
+				<onup>54</onup>
+				<focusposition>4</focusposition>
+				<movement>4</movement>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime tween="sine" easing="inout">300</scrolltime>
+								
+				<itemlayout width="20-col" height="1-row">
+																								
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>20-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
+						<bordersize>0</bordersize>
+						<colordiffuse>99FFFFFF</colordiffuse>
+					</control>
+					
+					<control type="image">
+						<posx>3</posx>
+						<posy>4</posy>
+						<width>48</width>
+						<height>48</height>
+						<aspectratio>scale</aspectratio>
+						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+					</control>
+					
+					<control type="label">
+						<posx>60</posx>
+						<posy>0</posy>
+						<width>3-col-gutter</width>
+						<font>itemTitle</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.director]</label>
+						<scroll>false</scroll>
+					</control>
+					
+					<control type="label">
+						<posx>4-col</posx>
+						<posy>0</posy>
+						<width>7-col</width>
+						<font>itemTitle</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.label]</label>
+						<scroll>false</scroll>
+					</control>
+			
+					<control type="label">
+						<posx>12-col</posx>
+						<posy>0</posy>
+						<width>7-col</width>
+						<font>itemTitle</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.genre]</label>
+						<scroll>false</scroll>
+					</control>
+																								
+				</itemlayout>
+
+				<focusedlayout width="20-col" height="1-row">
+														
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>20-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
+						<bordersize>0</bordersize>
+						<colordiffuse>FFFFFFFF</colordiffuse>
+						<!--animations-->
+						<animation type="Focus" condition="Container(54).OnNext | Container(54).OnPrevious" reversible="false">
+				            <effect type="fade" start="50" end="100" time="300" />
+				        </animation>
+					</control>
+										
+					<control type="image">
+						<posx>3</posx>
+						<posy>4</posy>
+						<width>48</width>
+						<height>48</height>
+						<aspectratio>scale</aspectratio>
+						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+					</control>
+					
+					<control type="label">
+						<posx>60</posx>
+						<posy>0</posy>
+						<width>3-col-gutter</width>
+						<font>itemTitle</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.director]</label>
+						<scroll>false</scroll>
+					</control>
+					
+					<control type="label">
+						<posx>4-col</posx>
+						<posy>0</posy>
+						<width>7-col</width>
+						<font>itemTitle</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.label]</label>
+						<scroll>false</scroll>
+					</control>
+					
+					<control type="label">
+						<posx>12-col</posx>
+						<posy>0</posy>
+						<width>7-col</width>
+						<font>itemTitle</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.genre]</label>
+						<scroll>false</scroll>
+					</control>
+					
+				</focusedlayout>
+
+			</control>
+		</control>
+	</include>
+		
+</includes>

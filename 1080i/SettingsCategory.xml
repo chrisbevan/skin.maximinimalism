@@ -1,0 +1,125 @@
+<window id="12">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+			
+		<!--background-->
+		<control type="image">
+			<include>dimensionsFullscreen</include>
+			<texture>backgrounds/settings.jpg</texture>
+			<colordiffuse>66FFFFFF</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+		</control>
+				
+		<!--placeholder label for current setting group title-->
+		<control type="label" id="2">
+			<visible>false</visible>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>8-col</width>
+			<font>regular</font>
+			<label>-</label>
+			<textcolor>unselected</textcolor>
+		</control>
+			
+		<!--Settings category-->
+		<control type="group" id="9001">
+	
+			<posx>col-5-begin</posx>
+			<posy>row-4-begin</posy>
+		
+			<!--animations-->
+			<include>modalDialogInOut</include>
+		
+			<control type="label">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>8-col</width>
+				<font>pageTitle</font>
+				<label>Settings [COLOR accented]$INFO[control.getlabel(2)][/COLOR]</label>
+				<textcolor>white</textcolor>
+			</control>
+			
+			<!--horizontal rule-->
+			<control type="image">
+				<posx>0</posx>
+				<posy>1-row</posy>
+				<width>16-col</width>
+				<height>3</height>
+				<texture>colors/white.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<!--Category submenu-->		
+			<control type="grouplist" id="3">
+				<posx>0</posx>
+				<posy>122</posy>
+				<width>4-col-gutter</width>
+				<height>14-row</height>
+				<onleft>9000</onleft>
+				<onright>5</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<orientation>vertical</orientation>
+			</control>
+					
+			<!--options-->			
+			<control type="grouplist" id="5">
+				<posx>4-col</posx>
+				<posy>2-row</posy>
+				<width>12-col</width>
+				<height>10-row</height>
+				<onleft>3</onleft>
+				<onright>3</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<orientation>vertical</orientation>
+			</control>
+
+			<control type="button" id="7">
+				<description>Default Button</description>
+				<align>left</align>
+				<font>itemTitle</font>
+				<textcolor>unselected</textcolor>
+				<focusedcolor>white</focusedcolor>
+			</control>
+
+			<control type="radiobutton" id="8">
+				<description>Default Radio Button</description>
+				<align>left</align>
+				<font>itemTitle</font>
+				<textcolor>unselected</textcolor>
+				<focusedcolor>white</focusedcolor>
+			</control>
+
+			<control type="spincontrolex" id="9">
+				<description>Default Spin Control</description>
+				<align>left</align>
+				<font>itemTitle</font>
+				<textcolor>unselected</textcolor>
+				<focusedcolor>white</focusedcolor>
+			</control>
+
+			<!--subcat menu buttons-->
+			<control type="button" id="10">
+				<description>Default Category Button</description>
+				<align>left</align>
+				<height>43</height>
+				<font>menuTitle</font>
+				<textcolor>unselected</textcolor>
+				<focusedcolor>white</focusedcolor>
+			</control>
+		</control>
+
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>WindowID</include>
+			<label>SettingsCategory.xml</label>
+		</control>
+
+	</controls>
+
+</window>

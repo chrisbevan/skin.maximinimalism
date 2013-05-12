@@ -1,0 +1,830 @@
+<window id="6">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<onload>Container.SetViewMode($VAR[videoViewType])</onload>
+
+	<controls>
+		
+		<include>fadeInOut</include>
+
+		<!--page container group-->
+		<control type="group">
+			
+			<include>globalBackground</include>
+			
+			<!--shift page for certain modal dialogs-->
+			<include>modalDialogContentShift</include>
+
+			<!--content provider-->		
+			<control type="group">
+
+				<posx>0</posx>
+				<posy>0</posy>
+
+				<!--main menu-->
+				<control type="group">
+
+					<posx>col-1-begin</posx>
+					<posy>row-2-begin</posy>
+
+					<include>dateTime</include>
+
+					<control type="list" id="9000">
+						<posx>0</posx>
+						<posy>180</posy>
+						<width>3-col</width>
+						<height>12-row</height>
+						<orientation>vertical</orientation>
+						<onleft>61</onleft>
+						<onright>9999</onright>
+						<ondown>9000</ondown>
+
+						<itemlayout width="4-col" height="43">
+
+							<control type="label">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>3-col</width>
+								<font>menuTitle</font>
+								<info>ListItem.Label</info>
+								<textcolor>unselected</textcolor>
+							</control>
+
+						</itemlayout>
+
+						<focusedlayout width="4-col" height="43">
+							
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>3-col-gutter</width>
+								<height>37</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>UICon/black.png</texture>
+							</control>
+							
+							<control type="label">
+								<visible>Control.HasFocus(9000)</visible>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>3-col</width>
+								<font>menuTitle</font>
+								<label>$INFO[ListItem.Label]</label>
+								<textcolor>selected</textcolor>	
+							</control>
+
+								<control type="label">
+									<visible>!Control.HasFocus(9000)</visible>
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>3-col</width>
+									<font>menuTitle</font>
+									<label>$INFO[ListItem.Label]</label>
+									<textcolor>unselected</textcolor>	
+								</control>
+								
+						</focusedlayout>
+
+						<content>
+							<item id="1">
+								<label>Latest</label>
+								<label2></label2>
+								<onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
+							</item>
+
+							<item id="2">
+								<label>Live TV</label>
+								<label2></label2>
+								<onclick>ActivateWindow(pvr)</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+							</item>
+							<item id="3">
+								<label>Movies</label>
+								<label2></label2>
+								<onclick>ActivateWindow(videos,movietitles,return)</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+							</item>
+
+							<item id="4">
+								<label>TV Shows</label>
+								<label2></label2>
+								<onclick>ActivateWindow(Videos,tvshowtitles,return)</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+							</item>
+
+							<item id="5">
+								<label>Playlists</label>
+								<label2></label2>
+								<onclick>ActivateWindow(Videos,playlists,return)</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+							</item>
+
+							<!--custom video addons-->
+							<item id="6">
+								<visible>!isempty(Skin.String(customVideoAddon1))</visible>
+								<label>$INFO[system.addontitle(Skin.String(customVideoAddon1))]</label>
+								<onclick>RunAddon($INFO[Skin.String(customVideoAddon1)])</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>Control.SetFocus(9000,5)</onclick>
+							</item>
+
+							<item id="7">
+								<visible>!isempty(Skin.String(customVideoAddon2))</visible>
+								<label>$INFO[system.addontitle(Skin.String(customVideoAddon2))]</label>
+								<onclick>RunAddon($INFO[Skin.String(customVideoAddon2)])</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>Control.SetFocus(9000,6)</onclick>
+							</item>
+
+							<item id="8">
+								<visible>!isempty(Skin.String(customVideoAddon3))</visible>
+								<label>$INFO[system.addontitle(Skin.String(customVideoAddon3))]</label>
+								<onclick>RunAddon($INFO[Skin.String(customVideoAddon3)])</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>Control.SetFocus(9000,7)</onclick>
+							</item>
+
+							<item id="9">
+								<visible>!isempty(Skin.String(customVideoAddon4))</visible>
+								<label>$INFO[system.addontitle(Skin.String(customVideoAddon4))]</label>
+								<onclick>RunAddon($INFO[Skin.String(customVideoAddon4)])</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>Control.SetFocus(9000,8)</onclick>
+							</item>
+
+							<item id="10">
+								<visible>!isempty(Skin.String(customVideoAddon5))</visible>
+								<label>$INFO[system.addontitle(Skin.String(customVideoAddon5))]</label>
+								<onclick>RunAddon($INFO[Skin.String(customVideoAddon5)])</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>Control.SetFocus(9000,9)</onclick>
+							</item>
+
+							<!--final bits and bobs-->							
+							<item id="21">
+								<label>All Addons</label>
+								<onclick>ActivateWindow(Videos,addons,return)</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+							</item>
+
+							<item id="22">
+								<label>Files</label>
+								<onclick>ActivateWindow(Videos,files,return)</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+							</item>
+							
+						</content>
+
+					</control>						
+				</control>
+
+				<!--Folder titles-->
+				<control type="group">
+					<posx>col-4-begin</posx>
+					<posy>row-2-begin</posy>
+
+					<!--animations-->
+					<animation type="windowopen">
+						<effect type="fade" start="0" end="100" time="600" reversible="false"  />
+						<effect type="slide" start="300,0" end="0,0" tween="cubic" easing="out" time="400" />
+					</animation>
+					
+					<!--source title-->
+					<control type="label">
+						<visible>IntegerGreaterThan(container.Numitems,0)</visible>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<font>pageTitle</font>
+						<label>$VAR[listTitle]</label>
+						<textcolor>white</textcolor>
+					</control>
+
+					<control type="label">
+						<visible>SubString(skin.string(showRecentVideoItems),false) + isempty(container.foldername)</visible>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<font>pageTitle</font>
+						<label>Movies and TVShows</label>
+						<textcolor>white</textcolor>
+					</control>
+
+					<!--source subtitle-->
+					<control type="label">
+						<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),false)</visible>
+						<posx>0</posx>
+						<posy>45</posy>
+						<width>24-col</width>
+						<font>regular</font>
+						<label>$INFO[container.Numitems,, titles]</label>
+						<textcolor>white</textcolor>
+					</control>
+
+					<control type="label">
+						<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),true)</visible>
+						<posx>0</posx>
+						<posy>45</posy>
+						<width>24-col</width>
+						<font>regular</font>
+						<label>Latest content</label>
+						<textcolor>white</textcolor>
+					</control>
+
+					<!--seasons / episodes only-->
+					<control type="label">
+						<visible>container.content(seasons) | container.content(episodes)</visible>
+						<posx>21-col</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<align>right</align>
+						<font>pageTitle</font>
+						<label>$INFO[ListItem.tvshowTitle]</label>
+						<textcolor>white</textcolor>
+					</control>
+
+					<control type="label">
+						<visible>container.content(seasons)</visible>
+						<posx>21-col</posx>
+						<posy>45</posy>
+						<width>14-col</width>
+						<align>right</align>
+						<font>regular</font>
+						<label>$INFO[ListItem.genre] </label>
+						<textcolor>white</textcolor>
+					</control>
+
+					<control type="label">
+						<visible>container.content(episodes)</visible>
+						<posx>21-col</posx>
+						<posy>45</posy>
+						<width>14-col</width>
+						<align>right</align>
+						<font>regular</font>
+						<label>$INFO[ListItem.season,Season ,] </label>
+						<textcolor>white</textcolor>
+					</control>
+
+				</control>
+
+				<!--Main content listing-->
+				<control type="group" id="9999">
+					<posx>col-4-begin</posx>
+					<posy>row-2-begin</posy>
+
+					<animation type="windowopen">
+						<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
+						<effect type="fade" start="0" delay="200" end="100" time="600" />
+					</animation>
+					
+					<!--recent items-->
+					<control type="group">
+						<visible>SubString(skin.string(showRecentVideoItems),true)</visible>
+						<posx>0</posx>
+						<posy>183</posy>
+						<onleft>9000</onleft>
+						
+						<!--content-->	
+						<control type="panel" id="9998">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>21-col</width>
+							<height>12-row</height>
+							<onleft>9000</onleft>
+
+							<itemlayout width="7-col" height="297">
+
+								<control type="image">
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>7-col-gutter</width>
+									<height>270</height>
+									<aspectratio>stretch</aspectratio>
+									<texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+									<bordertexture border="0">-</bordertexture>
+									<colordiffuse>ffFFFFFF</colordiffuse>
+								</control>
+								
+								<control type="image">
+									<posx>0</posx>
+									<posy>216</posy>
+									<width>7-col-gutter</width>
+									<height>1-row</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>colors/black.png</texture>
+									<bordersize>0</bordersize>
+									<colordiffuse>99FFFFFF</colordiffuse>
+								</control>
+
+								<control type="label">
+									<posx>12</posx>
+									<posy>216</posy>
+									<width>6-col</width>
+									<font>itemTitle</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>-</shadowcolor>
+									<label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
+								</control>
+
+							</itemlayout>
+
+							<focusedlayout width="7-col" height="297">
+
+								<control type="image">
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>7-col-gutter</width>
+									<height>270</height>
+									<aspectratio>stretch</aspectratio>
+									<texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+									<colordiffuse>ffFFFFFF</colordiffuse>
+								</control>
+								
+								<control type="image">
+									<posx>0</posx>
+									<posy>216</posy>
+									<width>7-col-gutter</width>
+									<height>1-row</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>colors/white.png</texture>
+									<bordersize>0</bordersize>
+									<colordiffuse>ffFFFFFF</colordiffuse>
+									<!--animations-->
+									<animation type="Focus" condition="Container(9998).OnNext | Container(9998).OnPrevious" reversible="false">
+							            <effect type="fade" start="50" end="100" time="300" />
+							        </animation>
+								</control>
+
+								<control type="label">
+									<posx>12</posx>
+									<posy>216</posy>
+									<width>6-col</width>
+									<font>itemTitle</font>
+									<textcolor>black</textcolor>
+									<shadowcolor>-</shadowcolor>
+									<label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
+								</control>
+								
+							</focusedlayout>
+
+							<content>
+								<item id="1">
+									<label>$INFO[Window(Home).Property(LatestMovie.1.Title)]</label>
+									<thumb>$INFO[Window(Home).Property(LatestMovie.1.fanart)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.1.Path)])</onclick>
+								</item>
+								<item id="2">
+									<label>$INFO[Window(Home).Property(LatestMovie.2.Title)]</label>
+									<thumb>$INFO[Window(Home).Property(LatestMovie.2.fanart)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.2.Path)])</onclick>
+								</item>
+								<item id="3">
+									<label>$INFO[Window(Home).Property(LatestMovie.3.Title)]</label>
+									<thumb>$INFO[Window(Home).Property(LatestMovie.3.fanart)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.3.Path)])</onclick>
+								</item>
+								<item id="4">
+									<label>$INFO[Window(Home).Property(LatestMovie.4.Title)]</label>
+									<thumb>$INFO[Window(Home).Property(LatestMovie.4.fanart)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.4.Path)])</onclick>
+								</item>
+								<item id="5">
+									<label>$INFO[Window(Home).Property(LatestMovie.5.Title)]</label>
+									<thumb>$INFO[Window(Home).Property(LatestMovie.5.fanart)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.5.Path)])</onclick>
+								</item>
+								<item id="6">
+									<label>$INFO[Window(Home).Property(LatestMovie.6.Title)]</label>
+									<thumb>$INFO[Window(Home).Property(LatestMovie.6.fanart)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.6.Path)])</onclick>
+								</item>
+								<item id="7">
+									<label>$INFO[Window(Home).Property(LatestMovie.7.Title)]</label>
+									<thumb>$INFO[Window(Home).Property(LatestMovie.7.fanart)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.7.Path)])</onclick>
+								</item>
+								<item id="8">
+									<label>$INFO[Window(Home).Property(LatestMovie.8.Title)]</label>
+									<thumb>$INFO[Window(Home).Property(LatestMovie.8.fanart)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.8.Path)])</onclick>
+								</item>
+
+								<!--tv shows-->
+								<item id="9">
+									<label>$INFO[Window(Home).Property(LatestEpisode.1.showTitle)]</label>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.1.EpisodeNo)]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestEpisode.1.thumb)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
+								</item>
+								<item id="10">
+									<label>$INFO[Window(Home).Property(LatestEpisode.2.showTitle)]</label>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.2.EpisodeNo)]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestEpisode.2.thumb)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
+								</item>
+								<item id="11">
+									<label>$INFO[Window(Home).Property(LatestEpisode.3.showTitle)]</label>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.3.EpisodeNo)]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestEpisode.3.thumb)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
+								</item>
+								<item id="12">
+									<label>$INFO[Window(Home).Property(LatestEpisode.4.showTitle)]</label>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.4.EpisodeNo)]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestEpisode.4.thumb)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.4.Path)])</onclick>
+								</item>
+								<item id="13">
+									<label>$INFO[Window(Home).Property(LatestEpisode.5.showTitle)]</label>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.5.EpisodeNo)]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestEpisode.5.thumb)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
+								</item>
+								<item id="14">
+									<label>$INFO[Window(Home).Property(LatestEpisode.6.showTitle)]</label>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.6.EpisodeNo)]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestEpisode.6.thumb)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.6.Path)])</onclick>
+								</item>
+								<item id="15">
+									<label>$INFO[Window(Home).Property(LatestEpisode.7.showTitle)]</label>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.7.EpisodeNo)]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestEpisode.7.thumb)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.7.Path)])</onclick>
+								</item>
+								
+							</content>
+
+						</control>
+
+					</control>
+
+					<!--source content-->
+					<control type="group">						
+						<visible>SubString(skin.string(showRecentVideoItems),false)</visible>
+						<include>viewVideoList</include>
+						<include>viewEpisodes</include>
+						<include>viewListTVCatchup</include>
+					</control>
+					
+					<!--focussed item detail-->
+					<control type="group">
+						<posx>13-col</posx>
+												
+						<!--content is movies / tvshows / seasons: show larger thumbnail-->
+						<control type="group">
+							<visible>container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
+							<posx>36</posx>
+							<posy>4-row</posy>
+	
+							<control type="image">
+								<visible>!Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentVideoItems),false) + !isempty(listitem.art(poster))</visible>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>6-col</width>
+								<height>10-row</height>
+								<aspectratio align="left" aligny="top">scale</aspectratio>			
+								<texture fallback="colors/black.png">$INFO[Listitem.art(poster)]</texture>
+								<bordertexture border="0">colors/white.png</bordertexture>
+								<bordersize>6</bordersize>
+								<fadetime>200</fadetime>
+							</control>
+						</control>
+						
+						<!--content is video addons: show addon description-->
+						<control type="group">
+							<visible>container.content(addons) + control.hasfocus(50) + !SubString(listitem.label,Get More)</visible>
+							<posx>1-col</posx>
+							<posy>4-row</posy>
+														
+							<!--animations-->
+							<animation type="Conditional" condition="control.hasfocus(50)">	
+								<effect type="slide" start="300,0" tween="cubic" easing="out" time="300" />
+							</animation>			
+							
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>6-col</width>
+								<height>243</height>
+								<aspectratio align="left" aligny="center">scale</aspectratio>			
+								<texture fallback="colors/black.png">$INFO[Listitem.icon]</texture>
+								<bordertexture border="0">colors/white.png</bordertexture>
+								<bordersize>6</bordersize>
+								<fadetime>200</fadetime>
+							</control>						
+							
+							<control type="label">
+								<posx>0</posx>
+								<posy>5-row</posy>
+								<width>6-col</width>
+								<font>pageTitle</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>-</shadowcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							
+							<control type="textbox">
+								<posx>0</posx>
+								<posy>352</posy>
+								<font>small</font>
+								<width>6-col</width>
+								<height>210</height>
+								<label>$INFO[ListItem.Property(Addon.Description)]</label>
+								<autoscroll delay="5000" time="1000" repeat="10000"></autoscroll>
+							</control>
+							
+						</control>
+						
+					</control>
+				</control>
+
+				<!--page scrollbar-->
+				<control type="group" id="8000">
+					<visible>Control.IsVisible(60)</visible>
+					
+					<animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
+
+					<control type="scrollbar" id="60">
+						<posx>108r</posx>
+						<posy>row-5-begin</posy>
+						<height>12-row</height>
+						<onleft>9999</onleft>
+					</control>
+
+				</control>
+
+				<!--Sort / misc labels (footer)-->
+				<control type="group">
+					<posx>col-4-begin</posx>
+					<posy>row-18-begin</posy>
+
+					<control type="grouplist" id="9998">
+						<posx>0</posx>
+						<posy>-28</posy>
+						<width>24-col</width>
+						<height>1-row</height>
+						<itemgap>0</itemgap>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>9999</onup>
+						<ondown>9999</ondown>
+						<orientation>horizontal</orientation>
+
+						<control type="label">
+							<width min="30" max="200">auto</width>
+							<font>symbol</font>
+							<textcolor>white</textcolor>
+							<label></label>
+						</control>
+
+						<control type="label">
+							<width>3-col</width>
+							<font>buttonTitle</font>
+							<textcolor>white</textcolor>
+							<label>Page $INFO[container.currentpage] of $INFO[container.numpages]</label>
+						</control>
+
+						<control type="label">
+							<visible>!isempty(ListItem.videocodec)</visible>
+							<width min="30" max="200">auto</width>
+							<font>symbol</font>
+							<textcolor>white</textcolor>
+							<label></label>
+						</control>
+
+						<control type="label">
+							<visible>!isempty(ListItem.videocodec)</visible>
+							<width>2-col</width>
+							<font>buttonTitle</font>
+							<textcolor>white</textcolor>
+							<label>$INFO[ListItem.videocodec]</label>
+						</control>
+
+						<control type="label">
+							<visible>!isempty(ListItem.FileName)</visible>
+							<width min="30" max="200">auto</width>
+							<font>symbol</font>
+							<textcolor>white</textcolor>
+							<label></label>
+						</control>
+
+						<control type="label">
+							<visible>!isempty(ListItem.FileName)</visible>
+							<width>12-col</width>
+							<font>buttonTitle</font>
+							<textcolor>white</textcolor>
+							<label>$INFO[ListItem.FileName]</label>
+						</control>
+
+						<!--debugging-->						
+						<control type="label">
+							<visible>false</visible>
+							<width>3-col</width>
+							<font>buttonTitle</font>
+							<label>$INFO[skin.string(showRecentVideoItems)]</label>
+							<textcolor>white</textcolor>
+						</control>
+
+					</control>
+				</control>
+			</control>
+		</control>
+
+		<!--sorting and misc controls-->
+		<control type="group" id="61">
+
+			<!--animations-->
+			<animation type="Conditional" condition="!controlgroup(61).hasfocus">
+				<effect type="fade" start="100" end="0" time="0" />
+			</animation>
+
+			<animation type="Conditional" condition="controlgroup(61).hasfocus">
+				<effect type="fade" start="0" end="100" delay="200" time="300" />
+			</animation>
+			
+			<!--background-->
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>5-col</width>
+				<height>fullscreenHeight</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>colors/white.png</texture>
+				<bordersize>0</bordersize>
+			</control>
+			
+			<!--titles-->
+			<control type="group">
+				<posx>col-1-begin</posx>
+				<posy>row-2-begin</posy>
+						
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>14-col</width>
+					<font>pageTitle</font>
+					<label>Videos</label>
+					<textcolor>black</textcolor>
+					<shadowcolor>-</shadowcolor>
+				</control>
+				
+				<control type="label">
+					<posx>0</posx>
+					<posy>45</posy>
+					<width>24-col</width>
+					<font>regular</font>
+					<label>Options</label>
+					<textcolor>black</textcolor>
+					<shadowcolor>-</shadowcolor>
+				</control>
+			</control>
+			
+			<!--menu-->
+			<control type="list" id="62">
+				<posx>82</posx>
+				<posy>274</posy>
+				<width>4-col</width>
+				<height>10-row</height>
+				<itemgap>0</itemgap>
+				<onright>9000</onright>
+				<ondown>63</ondown>
+
+				<itemlayout width="4-col" height="43">
+
+					<control type="label">
+						<posx>14</posx>
+						<posy>0</posy>
+						<width>4-col-gutter</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<label>$INFO[ListItem.label]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout width="4-col" height="43">
+
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>4-col-gutter</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<label>[ $INFO[ListItem.label] ]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+				</focusedlayout>
+
+				<content>
+					<item id="1">
+						<label>Change Sort</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>Container.NextSortMethod(9999)</onclick>
+					</item>
+					<item id="2">
+						<label>Refresh Library</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>UpdateLibrary(video)</onclick>
+						<onclick>Notification("Video Library","Scanning for new Content")</onclick>
+					</item>
+					<item id="3">
+						<visible>isempty(Skin.String(customVideoAddon1)) | isempty(Skin.String(customVideoAddon2)) | isempty(Skin.String(customVideoAddon3)) | isempty(Skin.String(customVideoAddon4)) | isempty(Skin.String(customVideoAddon5))</visible>
+						<label>Add Menu Item</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>$VAR[customVideoSourceAction]</onclick>
+					</item>
+					<item id="4">
+						<label>Add source</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>activateWindow(mediasource)</onclick>
+					</item>
+				</content>
+
+			</control>
+
+			<!--custom addon removal-->
+			<control type="grouplist" id="63">
+				<posx>col-1-begin</posx>
+				<posy>496</posy>
+				<width>4-col</width>
+				<height>10-row</height>
+				<itemgap>0</itemgap>
+				<onright>9000</onright>
+				<onup>62</onup>
+
+				<control type="button" id="102">
+					<visible>!isempty(Skin.String(customVideoAddon1))</visible>
+					<label>Remove Menu Item ›</label>
+					<width>4-col</width>
+					<height>43</height>
+					<font>smallStrong</font>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>unselected</textcolor>
+					<onclick>Skin.Reset(customVideoAddon1)</onclick>
+				</control>
+
+				<control type="button" id="103">
+					<visible>!isempty(Skin.String(customVideoAddon2))</visible>
+					<label>Remove Menu Item ›</label>
+					<width>4-col</width>
+					<height>43</height>
+					<font>smallStrong</font>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>unselected</textcolor>
+					<onclick>Skin.Reset(customVideoAddon2)</onclick>
+				</control>
+
+				<control type="button" id="104">
+					<visible>!isempty(Skin.String(customVideoAddon3))</visible>
+					<label>Remove Menu Item ›</label>
+					<width>4-col</width>
+					<height>43</height>
+					<font>smallStrong</font>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>unselected</textcolor>
+					<onclick>Skin.Reset(customVideoAddon3)</onclick>
+				</control>
+
+				<control type="button" id="105">
+					<visible>!isempty(Skin.String(customVideoAddon4))</visible>
+					<label>Remove Menu Item ›</label>
+					<width>4-col</width>
+					<height>43</height>
+					<font>smallStrong</font>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>unselected</textcolor>
+					<onclick>Skin.Reset(customVideoAddon4)</onclick>
+				</control>
+
+				<control type="button" id="106">
+					<visible>!isempty(Skin.String(customVideoAddon5))</visible>
+					<label>Remove Menu Item ›</label>
+					<width>4-col</width>
+					<height>43</height>
+					<font>smallStrong</font>
+					<focusedcolor>black</focusedcolor>
+					<textcolor>unselected</textcolor>
+					<onclick>Skin.Reset(customVideoAddon5)</onclick>
+				</control>
+
+			</control>
+
+		</control>
+
+		<!--debugging-->
+		<include>Debug_Grid</include>
+		<control type="label">
+			<include>WindowID</include>
+			<label>MyVideoNav.xml</label>
+		</control>
+
+	</controls>
+
+</window>
