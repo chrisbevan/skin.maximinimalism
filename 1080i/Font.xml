@@ -89,6 +89,14 @@
 				<style>uppercase</style>
 			</font>
 			
+			<font>
+				<name>smallMedium</name>
+				<filename>sourceSansPro/regular.ttf</filename>
+				<size>22</size>
+				<linespacing>1.0</linespacing>
+				<style>uppercase</style>
+			</font>
+			
 		<!--element specific-->
 		<font>
 			<name>pageTitle</name>

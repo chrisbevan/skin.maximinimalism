@@ -27,7 +27,17 @@
 				<width>16-col-gutter</width>
 				<font>smallStrong</font>
 				<textcolor>white</textcolor>
-				<label>Playing $INFO[VideoPlayer.TVShowTitle]</label>
+				<label>Playing</label>
+				<shadowcolor>-</shadowcolor>
+			</control>
+			
+			<control type="label">
+				<posx>395</posx>
+				<posy>-13</posy>
+				<width>16-col-gutter</width>
+				<font>smallMedium</font>
+				<textcolor>white</textcolor>
+				<label>$INFO[VideoPlayer.TVShowTitle]</label>
 				<shadowcolor>-</shadowcolor>
 			</control>
 			

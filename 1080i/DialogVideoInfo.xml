@@ -1,5 +1,5 @@
 <window id="2003">
-	<defaultcontrol always="true">8</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	
 	<controls>
@@ -82,7 +82,7 @@
 					<posx>0</posx>
 					<posy>1-row</posy>
 					<width>11-col</width>
-					<height>185</height>
+					<height>135</height>
 					<font>largeStrong</font>
 					<textcolor>white</textcolor>
 					<label>[UPPERCASE]$INFO[ListItem.label][/UPPERCASE]</label>
@@ -92,7 +92,7 @@
 				<!--synopsis-->
 				<control type="textbox">
 					<posx>0</posx>
-					<posy>5-row</posy>
+					<posy>4-row</posy>
 					<font>regular</font>
 					<width>11-col</width>
 					<textcolor>white</textcolor>
@@ -104,7 +104,7 @@
 				<!--cast and crew-->
 				<control type="panel" id="50">
 					<posx>0</posx>
-					<posy>11-row</posy>
+					<posy>10-row</posy>
 					<width>12-col</width>
 					<height>4-row</height>				
 					<scrolltime>200</scrolltime>
@@ -165,65 +165,96 @@
 			<control type="group">
 			
 				<posx>col-14-begin</posx>
-				<posy>995</posy>
+				<posy>row-17-begin</posy>
 				
 				<!--animations-->
 				<animation effect="slide" start="0,100" time="200" delay="1100">WindowOpen</animation>
-											
-				<!--controls-->	
-				<control type="grouplist" id="9000">
-					<posx>0</posx>
-					<posy>10</posy>
-					<width>11-col</width>
+			
+				<control type="image">
+					<posx>-72</posx>
+					<posy>-12</posy>
+					<width>13-col-gutter</width>
 					<height>1-row</height>
+					<texture>colors/white.png</texture>
+					<colordiffuse>ffffffff</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				
+				<control type="list" id="9000">
+					<posx>0</posx>
+					<posy>-10</posy>
+					<width>10-col</width>
+					<height>1-row</height>
+					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<onleft>8</onleft>
-					<itemgap>72</itemgap>
-					
-					<control type="button" id="8">
-						<description>Play</description>
-						<label>Play Title</label>
-						<posx>col-1-begin</posx>
-						<posy>10</posy>
-						<width>3-col</width>
-						<height>37</height>
-						<font>buttonTitle</font>
-						<align>center</align>
-						<focusedcolor>black</focusedcolor>
-						<textcolor>white</textcolor>
-						<texturenofocus>UIControls/buttonNF.png</texturenofocus>
-						<texturefocus>UIControls/buttonFO.png</texturefocus>
-						<onright>9000</onright>
-					</control>
-					
-					<control type="button" id="6">
-						<description>Refresh</description>
-						<label>Change Title</label>
-						<width>3-col</width>
-						<height>37</height>
-						<font>buttonTitle</font>
-						<align>center</align>
-						<focusedcolor>black</focusedcolor>
-						<textcolor>white</textcolor>
-						<texturenofocus>UIControls/buttonNF.png</texturenofocus>
-						<texturefocus>UIControls/buttonFO.png</texturefocus>
-					</control>
 
-					<control type="button" id="10">
-						<description>Choose Art</description>
-						<label>Get Art</label>
-						<width>3-col</width>
-						<height>37</height>
-						<font>buttonTitle</font>
-						<align>center</align>
-						<focusedcolor>black</focusedcolor>
-						<textcolor>white</textcolor>
-						<texturenofocus>UIControls/buttonNF.png</texturenofocus>
-						<texturefocus>UIControls/buttonFO.png</texturefocus>
-					</control>
+					<itemlayout width="3-col" height="43">
+
+						<control type="label">
+							<posx>14</posx>
+							<posy>0</posy>
+							<width>3-col</width>
+							<font>menuTitle</font>
+							<textcolor>black</textcolor>
+							<label>$INFO[ListItem.label]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
+
+					</itemlayout>
+
+					<focusedlayout width="3-col" height="43">
+
+						<control type="label">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>3-col</width>
+							<font>menuTitle</font>
+							<textcolor>black</textcolor>
+							<label>[ $INFO[ListItem.label] ]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
+
+					</focusedlayout>
+
+					<content>
+						<item id="1">
+							<label>Play Title</label>
+							<thumb>-</thumb>
+							<onclick>SendClick(8)</onclick>
+						</item>
+						<item id="2">
+							<label>Change Title</label>
+							<thumb>-</thumb>
+							<onclick>SendClick(6)</onclick>
+						</item>
+						<item id="3">
+							<label>Choose Art</label>
+							<thumb>-</thumb>
+							<onclick>SendClick(10)</onclick>
+						</item>
+					</content>
 
 				</control>
+			</control>
 			
+			<!--buttons-->
+			<control type="group">
+				<visible>false</visible>
+				
+				<control type="button" id="8">
+					<description>Play</description>
+					<label>Play Title</label>
+				</control>
+				
+				<control type="button" id="6">
+					<description>Refresh</description>
+					<label>Change Title</label>
+				</control>
+
+				<control type="button" id="10">
+					<description>Choose Art</description>
+					<label>Get Art</label>
+				</control>
 			</control>
 			
 			<!--no info available-->
