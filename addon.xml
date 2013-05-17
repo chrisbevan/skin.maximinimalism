@@ -6,7 +6,7 @@
 	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" defaultresolution="1080i"></extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>A skin for XBMC from theDeadman</summary>
-		<description>A skin based on a theme of absolute minimalism</description>
+		<description>Sometimes less is more.</description>
 		<platform>all</platform>
 	</extension>
 </addon>
