@@ -125,7 +125,7 @@
 			<posy>3-row</posy>
 																		
 			<control type="panel" id="53">
-				<visible>container.content(artists)</visible>
+				<visible>container.content(artists) | container.content(genres)</visible>
 				<posx>0</posx>
 				<posy>4</posy>
 				<width>21-col</width>
@@ -219,7 +219,7 @@
 			<posy>3-row</posy>
 																		
 			<control type="panel" id="55">
-				<visible>container.content(genres) | container.content(albums)</visible>
+				<visible>container.content(albums)</visible>
 				<posx>0</posx>
 				<posy>4</posy>
 				<width>21-col</width>

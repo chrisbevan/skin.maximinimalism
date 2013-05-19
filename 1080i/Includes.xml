@@ -88,14 +88,13 @@
 				<posx>0</posx>
    				<posy>0</posy>
    				<include>dimensionsFullscreen</include>
-   				<imagepath>$INFO[Skin.String(fanartLocation)]</imagepath>
+   				<imagepath>$INFO[Skin.String(videoFanartLocation)]</imagepath>
 				<timeperimage>15000</timeperimage>
-				<fadetime>1000</fadetime>
-				<pauseatend>10000</pauseatend>
+				<fadetime>0</fadetime>
+				<pauseatend>0</pauseatend>
 				<randomize>true</randomize>
 				<aspectratio>stretch</aspectratio>
 				<colordiffuse>99ffffff</colordiffuse>
-					
 			</control>
 		</control>
 		

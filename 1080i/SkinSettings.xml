@@ -50,6 +50,7 @@
 				<width>12-col</width>
 				<height>10-row</height>
 				<orientation>vertical</orientation>
+				<itemgap>0</itemgap>
 				
 				<control type="button" id="302">
 					<description>Default Button</description>
@@ -65,7 +66,7 @@
 				<control type="button" id="1">
 					<width>12-col</width>
 					<align>left</align>
-					<label>Set Video Fanart location</label>
+					<label>Set Movie Fanart location</label>
 					<font>itemTitle</font>
 					<textcolor>unselected</textcolor>
 					<focusedcolor>white</focusedcolor>
@@ -75,6 +76,16 @@
 				<control type="button" id="2">
 					<width>12-col</width>
 					<align>left</align>
+					<label>Set TV Show Fanart location</label>
+					<font>itemTitle</font>
+					<textcolor>unselected</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<onclick>Skin.SetPath(tvshowFanartLocation)</onclick>
+				</control>
+				
+				<control type="button" id="3">
+					<width>12-col</width>
+					<align>left</align>
 					<label>Set Music Fanart location</label>
 					<font>itemTitle</font>
 					<textcolor>unselected</textcolor>
@@ -82,7 +93,7 @@
 					<onclick>Skin.SetPath(musicFanartLocation)</onclick>
 				</control>
 				
-				<control type="button" id="3">
+				<control type="button" id="4">
 					<width>12-col</width>
 					<align>left</align>
 					<label>Set Game Fanart location</label>
@@ -149,13 +160,23 @@
 				<width>6-col</width>
 				<align>right</align>
 				<font>itemTitle</font>
+				<label>$INFO[Skin.String(tvshowFanartLocation)]</label>
+				<visible>!IsEmpty(Skin.String(tvshowFanartLocation))</visible>
+			</control>
+			
+			<control type="label">
+				<posx>12-col</posx>
+				<posy>5-row</posy>
+				<width>6-col</width>
+				<align>right</align>
+				<font>itemTitle</font>
 				<label>$INFO[Skin.String(musicFanartLocation)]</label>
 				<visible>!IsEmpty(Skin.String(musicFanartLocation))</visible>
 			</control>
 			
 			<control type="label">
 				<posx>12-col</posx>
-				<posy>5-row</posy>
+				<posy>6-row</posy>
 				<width>6-col</width>
 				<align>right</align>
 				<font>itemTitle</font>

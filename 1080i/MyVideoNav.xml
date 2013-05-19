@@ -2,6 +2,7 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<onload>Container.SetViewMode($VAR[videoViewType])</onload>
+	<onload>PlayerControl(stop)</onload>
 
 	<controls>
 		

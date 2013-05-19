@@ -13,6 +13,7 @@
 
 <!--fanart selection-->
 <variable name="fanartType">
+	<value condition="Window.IsActive(videolibrary) + container.content(tvshows)">$INFO[Skin.String(tvshowFanartLocation)]</value>
 	<value condition="Window.IsActive(videolibrary)">$INFO[Skin.String(videoFanartLocation)]</value>
 	<value condition="Window.IsActive(musiclibrary)">$INFO[Skin.String(musicFanartLocation)]</value>
 </variable>

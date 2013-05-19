@@ -75,7 +75,7 @@
 			<control type="group">
 			
 				<posx>col-14-begin</posx>
-				<posy>row-17-begin</posy>
+				<posy>row-18-begin</posy>
 				
 				<!--animations-->
 				<animation effect="slide" start="0,100" time="200" delay="1100">WindowOpen</animation>
