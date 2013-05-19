@@ -1,5 +1,5 @@
 <window id="2003">
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="true">8000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	
 	<controls>
@@ -180,7 +180,7 @@
 					<aspectratio>stretch</aspectratio>
 				</control>
 				
-				<control type="list" id="9000">
+				<control type="list" id="8000">
 					<posx>0</posx>
 					<posy>-10</posy>
 					<width>10-col</width>

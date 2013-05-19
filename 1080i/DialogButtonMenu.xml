@@ -1,6 +1,6 @@
 <!--power menu-->
 <window type="buttonMenu" id="111">
-	<defaultcontrol always="true">3115</defaultcontrol>
+	<defaultcontrol always="true">8000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<include>fadeInOut</include>
 
@@ -9,66 +9,80 @@
 		<include>modalDialog</include>
 		
 		<control type="group">
-			<posx>col-7-begin</posx>
-			<posy>row-1-begin</posy>
+			<posx>0</posx>
+			<posy>row-9-begin</posy>
 			
 			<!--animations-->
 			<include>modalDialogInOut</include>
-				
-			<control type="grouplist" id="3110">
-				<posx>-24</posx>
-				<posy>8-row</posy>
-				<orientation>horizontal</orientation>
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>-12</posy>
 				<width>fullscreenWidth</width>
-				<itemgap>24</itemgap>
+				<height>1-row</height>
+				<texture>colors/white.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+				
+			<control type="list" id="8000">
+				<posx>col-1-begin</posx>
+				<posy>-10</posy>
+				<width>24-col</width>
+				<height>1-row</height>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
 
-				<control type="button" id="3115">
-					<description>Shutdown</description>
-					<font>buttonTitle</font>
-					<width>4-col</width>
-					<label>Shutdown</label>
-					<onclick>ShutDown()</onclick>
-					<align>center</align>
-					<aligny>top</aligny>
-					<textoffsety>12</textoffsety>
-					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
-					<texturefocus>UIControls/buttonFO.png</texturefocus>
-					<textcolor>white</textcolor>
-					<focusedcolor>black</focusedcolor>
-				</control>
+				<itemlayout width="4-col" height="43">
 
-				<control type="button" id="3116">
-					<description>Suspend xbmc</description>
-					<font>buttonTitle</font>
-					<width>4-col</width>
-					<label>Sleep</label>
-					<onclick>XBMC.Suspend()</onclick>
-					<align>center</align>
-					<aligny>top</aligny>
-					<textoffsety>12</textoffsety>
-					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
-					<texturefocus>UIControls/buttonFO.png</texturefocus>
-					<textcolor>white</textcolor>
-					<focusedcolor>black</focusedcolor>
-				</control>
+					<control type="label">
+						<posx>125</posx>
+						<posy>0</posy>
+						<width>4-col</width>
+						<align>center</align>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<label>$INFO[ListItem.label]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
 
-				<control type="button" id="3117">
-					<description>Reboot button</description>
-					<font>buttonTitle</font>
-					<width>4-col</width>
-					<label>Reboot</label>
-					<onclick>XBMC.Reset()</onclick>
-					<align>center</align>
-					<aligny>top</aligny>
-					<textoffsety>12</textoffsety>
-					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
-					<texturefocus>UIControls/buttonFO.png</texturefocus>
-					<textcolor>white</textcolor>
-					<focusedcolor>black</focusedcolor>
-				</control>
+				</itemlayout>
+
+				<focusedlayout width="4-col" height="43">
+
+					<control type="label">
+						<posx>125</posx>
+						<posy>0</posy>
+						<width>4-col</width>
+						<align>center</align>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<label>[ $INFO[ListItem.label] ]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+				</focusedlayout>
+
+				<content>
+					<item id="1">
+						<label>13016</label>
+						<thumb>-</thumb>
+						<onclick>ShutDown()</onclick>
+					</item>
+					<item id="2">
+						<label>13011</label>
+						<thumb>-</thumb>
+						<onclick>XBMC.Suspend()</onclick>
+					</item>
+					<item id="3">
+						<label>13013</label>
+						<thumb>-</thumb>
+						<onclick>XBMC.Reset()</onclick>
+					</item>
+				</content>
 
 			</control>
-			
+					
 		</control>
 
 		<!--debugging-->

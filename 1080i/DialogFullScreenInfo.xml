@@ -1,5 +1,5 @@
 <window type="dialog" id="142">
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="true">8000</defaultcontrol>
 	<include>fadeInOut</include>
 
 	<controls>
@@ -90,7 +90,7 @@
 					<aspectratio>stretch</aspectratio>
 				</control>
 				
-				<control type="list" id="9000">
+				<control type="list" id="8000">
 					<posx>0</posx>
 					<posy>-10</posy>
 					<width>10-col</width>

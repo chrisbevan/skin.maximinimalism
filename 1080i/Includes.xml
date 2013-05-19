@@ -34,7 +34,7 @@
 		<control type="group">			
 					
 			<control type="multiimage">
-				<visible>!container.content(seasons) + [Container(9999).HasFiles | Container(9999).HasFolders]</visible>
+				<visible>!container.content(seasons) + !container.content(songs) + [Container(9999).HasFiles | Container(9999).HasFolders]</visible>
 				<posx>0</posx>
    				<posy>0</posy>
    				<include>dimensionsFullscreen</include>
@@ -50,7 +50,7 @@
 			</control>
 			
 			<control type="image">
-				<visible>container.content(seasons)</visible>
+				<visible>container.content(seasons) | container.content(songs)</visible>
 				<include>dimensionsFullscreen</include>
 				<texture>$INFO[listitem.art(fanart)]</texture>
 				<colordiffuse>6affffff</colordiffuse>

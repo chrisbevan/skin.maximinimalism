@@ -28,6 +28,7 @@
 	<value condition="Container.Content(livetv)">Digital TV</value>
 	<value condition="Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes)">TV Shows [COLOR accented]by $INFO[container.sortmethod][/COLOR]</value>
 	<value condition="Container.Content(addons)">Video Addons</value>
+	<value condition="Container.Content(songs)">$INFO[listitem.album] [COLOR accented]$INFO[listitem.artist][/COLOR]</value>
 	<value condition="!isEmpty(container.foldername)">$INFO[container.foldername]</value>
 </variable>
 

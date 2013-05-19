@@ -1,5 +1,5 @@
 <window id="146">
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="true">8000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 
 	<controls>
@@ -39,8 +39,8 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>4-row</posy>
-				<width>6-col</width>
-				<height>6-col</height>
+				<width>7-col</width>
+				<height>7-col</height>
 				<aspectratio>stretch</aspectratio>
 				<texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
 				<!--animations-->
@@ -48,12 +48,14 @@
 			</control>
 			
 			<control type="group">
+				<posx>8-col</posx>
+				
 				<!--animations-->
 				<animation effect="fade" start="0" end="100" time="300" delay="500">WindowOpen</animation>
 				
 				<control type="label">
 					<description>Addon Title</description>
-					<posx>7-col</posx>
+					<posx>0</posx>
 					<posy>4-row</posy>
 					<width>12-col-gutter</width>
 					<font>smallStrong</font>
@@ -62,7 +64,7 @@
 			
 				<control type="label">
 					<description>Addon Title</description>
-					<posx>7-col</posx>
+					<posx>0</posx>
 					<posy>5-row</posy>
 					<width>12-col-gutter</width>
 					<font>dialogTitle</font>
@@ -70,7 +72,7 @@
 				</control>
 			
 				<control type="label">
-					<posx>7-col</posx>
+					<posx>0</posx>
 					<posy>6-row</posy>
 					<width>12-col-gutter</width>
 					<font>regularStrong</font>
@@ -78,11 +80,11 @@
 				</control>
 			
 				<control type="textbox" id="400">
-					<posx>7-col</posx>
+					<posx>0</posx>
 					<posy>7-row</posy>
 					<font>regular</font>
 					<width>13-col</width>
-					<height>355</height>
+					<height>340</height>
 					<label>$INFO[ListItem.Property(Addon.Description)]</label>
 					<autoscroll delay="5000" time="1000" repeat="10000"></autoscroll>
 				</control>
@@ -95,74 +97,109 @@
 			<visible>!Window.IsVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
 			
 			<posx>0</posx>
-			<posy>995</posy>
+			<posy>938</posy>
 			
 			<!--animations-->
 			<animation effect="slide" start="0,100" time="200" delay="300">WindowOpen</animation>
 								
-			<control type="grouplist" id="9000">
-				<posx>col-1-begin</posx>
-				<posy>10</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>fullscreenWidth</width>
+				<height>1-row</height>
+				<texture>colors/white.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<control type="list" id="8000">
+				<posx>col-9-begin</posx>
+				<posy>2</posy>
 				<width>24-col</width>
-				<height>63</height>
-				<itemgap>24</itemgap>
+				<height>1-row</height>
+				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				
-				<control type="button" id="6">
-					<description>Install / Uninstall addon</description>
-					<width>3-col</width>
-					<label>24022</label>
-					<font>buttonTitle</font>
-					<height>37</height>
-					<align>center</align>
-					<focusedcolor>black</focusedcolor>
-					<textcolor>white</textcolor>
-					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
-					<texturefocus>UIControls/buttonFO.png</texturefocus>
-				</control>
-				
-				<control type="button" id="8">
-					<visible>Control.IsEnabled(8)</visible>
-					<description>Update Addon button</description>
-					<width>3-col</width>
-					<label>24069</label>
-					<font>buttonTitle</font>
-					<height>37</height>
-					<align>center</align>
-					<focusedcolor>black</focusedcolor>
-					<textcolor>white</textcolor>
-					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
-					<texturefocus>UIControls/buttonFO.png</texturefocus>
-				</control>
-								
-				<control type="button" id="7">
-					<visible>Control.IsEnabled(7)</visible>
-					<description>Disable Addon button</description>
-					<width>3-col</width>
-					<font>buttonTitle</font>
-					<height>37</height>
-					<align>center</align>
-					<focusedcolor>black</focusedcolor>
-					<textcolor>white</textcolor>
-					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
-					<texturefocus>UIControls/buttonFO.png</texturefocus>
-				</control>
-				
-				<control type="button" id="9">
-					<visible>Control.IsEnabled(9)</visible>
-					<description>Addon Settings</description>
-					<width>3-col</width>
-					<label>Configure</label>
-					<font>buttonTitle</font>
-					<height>37</height>
-					<align>center</align>
-					<focusedcolor>black</focusedcolor>
-					<textcolor>white</textcolor>
-					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
-					<texturefocus>UIControls/buttonFO.png</texturefocus>
-				</control>
-								
-				
+
+				<itemlayout width="3-col" height="43">
+
+					<control type="label">
+						<posx>75</posx>
+						<posy>0</posy>
+						<width>3-col</width>
+						<align>center</align>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<label>$INFO[ListItem.label]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout width="3-col" height="43">
+
+					<control type="label">
+						<posx>75</posx>
+						<posy>0</posy>
+						<width>3-col</width>
+						<align>center</align>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<label>[ $INFO[ListItem.label] ]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+				</focusedlayout>
+
+				<content>
+					<item id="1">
+						<label>$INFO[Control.GetLabel(6)]</label>
+						<thumb>-</thumb>
+						<onclick>SendClick(6)</onclick>
+					</item>
+					<item id="2">
+						<visible>Control.IsEnabled(8)</visible>
+						<label>$INFO[Control.GetLabel(8)]</label>
+						<thumb>-</thumb>
+						<onclick>SendClick(8)</onclick>
+					</item>
+					<item id="3">
+						<visible>Control.IsEnabled(7)</visible>
+						<label>$INFO[Control.GetLabel(7)]</label>
+						<thumb>-</thumb>
+						<onclick>SendClick(7)</onclick>
+					</item>
+					<item id="4">
+						<visible>Control.IsEnabled(9)</visible>
+						<label>$INFO[Control.GetLabel(9)]</label>
+						<thumb>-</thumb>
+						<onclick>SendClick(9)</onclick>
+					</item>
+				</content>
+
+			</control>
+		</control>
+		
+		<!--buttons-->
+		<control type="group">
+			<visible>false</visible>
+			
+			<control type="button" id="6">
+				<description>Install / Uninstall addon</description>
+				<label>24022</label>
+			</control>
+			
+			<control type="button" id="8">
+				<description>Update Addon button</description>
+				<label>24069</label>
+			</control>
+							
+			<control type="button" id="7">
+				<description>Disable Addon button</description>
+			</control>
+			
+			<control type="button" id="9">
+				<description>Addon Settings</description>
+				<label>Configure</label>
 			</control>
 		</control>
 			

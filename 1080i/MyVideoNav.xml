@@ -53,16 +53,7 @@
 						</itemlayout>
 
 						<focusedlayout width="4-col" height="43">
-							
-							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>3-col-gutter</width>
-								<height>37</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>UICon/black.png</texture>
-							</control>
-							
+														
 							<control type="label">
 								<visible>Control.HasFocus(9000)</visible>
 								<posx>0</posx>
@@ -217,7 +208,7 @@
 						<posy>45</posy>
 						<width>24-col</width>
 						<font>regular</font>
-						<label>$INFO[container.Numitems,, titles]</label>
+						<label>$INFO[container.Numitems,, title(s)]</label>
 						<textcolor>white</textcolor>
 					</control>
 
@@ -250,7 +241,7 @@
 						<width>14-col</width>
 						<align>right</align>
 						<font>regular</font>
-						<label>$INFO[ListItem.genre] </label>
+						<label>$INFO[ListItem.genre]</label>
 						<textcolor>white</textcolor>
 					</control>
 
@@ -261,7 +252,7 @@
 						<width>14-col</width>
 						<align>right</align>
 						<font>regular</font>
-						<label>$INFO[ListItem.season,Season ,] </label>
+						<label>$INFO[ListItem.season,Season ,]</label>
 						<textcolor>white</textcolor>
 					</control>
 
