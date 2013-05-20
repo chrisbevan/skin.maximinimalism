@@ -298,7 +298,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>colors/white.png</texture>
 						<bordersize>0</bordersize>
-						<colordiffuse>aaFFFFFF</colordiffuse>
+						<colordiffuse>FFFFFFFF</colordiffuse>
 						<!--animations-->
 						<animation type="Focus" condition="Container(9998).OnNext | Container(9998).OnPrevious" reversible="false">
 				            <effect type="fade" start="50" end="100" time="300" />

@@ -1,6 +1,8 @@
 <window id="0">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<onload>PlayerControl(stop)</onload>
+	
 	<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 		
 	<controls>
