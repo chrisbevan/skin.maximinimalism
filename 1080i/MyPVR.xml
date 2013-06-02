@@ -1,6 +1,8 @@
 <window>
 	<defaultcontrol always="true">32</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<onload>PlayerControl(stop)</onload>
+	
 	<controls>
 		
 		<include>globalBackground</include>
@@ -34,6 +36,7 @@
 				</control>
 				
 				<control type="button" id="33">
+					<visible>false</visible>
 					<description>Radio Channels</description>
 					<label>Radio</label>
 					<height>37</height>

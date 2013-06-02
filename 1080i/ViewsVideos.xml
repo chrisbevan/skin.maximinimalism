@@ -6,8 +6,84 @@
 			<posx>0</posx>
 			<posy>3-row</posy>
 																		
+			<!--focussed item detail-->
+			<control type="group">
+				<posx>13-col</posx>
+										
+				<!--content is movies / tvshows / seasons: show larger thumbnail-->
+				<control type="group">
+					<visible>container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
+					<posx>36</posx>
+					<posy>6</posy>
+					
+					<!--animations-->
+					<animation type="windowopen">
+						<effect type="slide" start="300,0" end="0,0" tween="cubic" easing="out" time="400" delay="500" />
+					</animation>
+					
+					<control type="image">
+						<visible>!Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentVideoItems),false) + !isempty(listitem.art(poster))</visible>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>6-col</width>
+						<height>10-row</height>
+						<aspectratio align="left" aligny="top">scale</aspectratio>			
+						<texture fallback="colors/black.png">$INFO[Listitem.art(poster)]</texture>
+						<bordertexture border="0">colors/white.png</bordertexture>
+						<bordersize>6</bordersize>
+						<fadetime>200</fadetime>
+					</control>
+				</control>
+				
+				<!--content is video addons: show addon description-->
+				<control type="group">
+					<visible>container.content(addons) + control.hasfocus(50) + !SubString(listitem.label,Get More)</visible>
+					<posx>1-col</posx>
+					<posy>6</posy>
+												
+					<!--animations-->
+					<animation type="Conditional" condition="control.hasfocus(50)">	
+						<effect type="slide" start="300,0" tween="cubic" easing="out" time="300" />
+					</animation>			
+					
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>6-col</width>
+						<height>243</height>
+						<aspectratio align="left" aligny="center">scale</aspectratio>			
+						<texture fallback="colors/black.png">$INFO[Listitem.icon]</texture>
+						<bordertexture border="0">colors/white.png</bordertexture>
+						<bordersize>6</bordersize>
+						<fadetime>200</fadetime>
+					</control>						
+					
+					<control type="label">
+						<posx>0</posx>
+						<posy>5-row</posy>
+						<width>6-col</width>
+						<font>pageTitle</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					
+					<control type="textbox">
+						<posx>0</posx>
+						<posy>352</posy>
+						<font>small</font>
+						<width>6-col</width>
+						<height>210</height>
+						<label>$INFO[ListItem.Property(Addon.Description)]</label>
+						<autoscroll delay="5000" time="1000" repeat="10000"></autoscroll>
+					</control>
+					
+				</control>
+				
+			</control>
+			
 			<control type="panel" id="50">
-				<visible>!container.content(episodes) + !Substring(Container.foldername,4od)</visible>
+				<visible>!container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
 				<posx>0</posx>
 				<posy>4</posy>
 				<width>12-col</width>
@@ -97,6 +173,7 @@
 						<width>7-col-gutter</width>
 						<font>itemTitle</font>
 						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -109,6 +186,7 @@
 						<align>right</align>
 						<height>24</height>
 						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$VAR[itemDetail]</label>
 					</control>
@@ -125,22 +203,81 @@
 			<posx>0</posx>
 			<posy>3-row</posy>
 																					
+			<!--season thumb and info-->
+			<control type="group">
+				
+				<visible>!Substring(Container.folderpath,plugin)</visible>
+				
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>5-col</width>
+					<height>5-col</height>
+					<aspectratio>scale</aspectratio>
+					<texture fallback="colors/offblack.png">$INFO[Container.SeasonThumb]</texture>
+					<bordertexture border="0">colors/white.png</bordertexture>
+					<bordersize>6</bordersize>
+					<fadetime>500</fadetime>
+				</control>
+				
+				<control type="label">
+					<posx>0</posx>
+					<posy>354</posy>
+					<width>5-col</width>
+					<font>smallStrong</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>-</shadowcolor>
+					<label fallback="Unknown Genre">$INFO[ListItem.season,Season ,]</label>
+				</control>
+				
+				<control type="label">
+					<posx>0</posx>
+					<posy>386</posy>
+					<width>5-col</width>
+					<font>regularStrong</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>-</shadowcolor>
+					<label fallback="Unknown Year">$INFO[ListItem.tvshowTitle,,]</label>
+				</control>
+				
+			</control>
+			
+			<!--Addon thumb-->
+			<control type="group">
+				
+				<visible>Substring(Container.folderpath,plugin) + !Substring(Container.foldername,TVCatchup)</visible>
+				
+				<control type="image">
+					<visible>IntegerGreaterThan(container.Numitems,0)</visible>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>5-col</width>
+					<height>5-col</height>
+					<aspectratio>scale</aspectratio>
+					<texture fallback="colors/offblack.png">$INFO[Container.FolderThumb]</texture>
+					<bordertexture border="0">colors/white.png</bordertexture>
+					<bordersize>6</bordersize>
+					<fadetime>500</fadetime>
+				</control>
+								
+			</control>
+			
 			<!--episode list-->
 			<control type="panel" id="52">
-				<posx>0</posx>
+				<posx>6-col</posx>
 				<posy>4</posy>
-				<width>21-col</width>
+				<width>14-col</width>
 				<height>12-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<pagecontrol>60</pagecontrol>
 								
-				<itemlayout width="21-col" height="1-row">
+				<itemlayout width="14-col" height="1-row">
 										
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>21-col</width>
+						<width>14-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
@@ -160,7 +297,7 @@
 					<control type="label">
 						<posx>60</posx>
 						<posy>0</posy>
-						<width>14-col</width>
+						<width>9-col</width>
 						<font>itemTitle</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
@@ -170,7 +307,7 @@
 					
 					<control type="label">
 						<visible>!isempty(ListItem.duration)</visible>
-						<posx>20-col</posx>
+						<posx>13-col</posx>
 						<posy>0</posy>
 						<width>3-col</width>
 						<font>itemTitle</font>
@@ -194,12 +331,12 @@
 					
 				</itemlayout>
 
-				<focusedlayout width="21-col" height="1-row">
+				<focusedlayout width="14-col" height="1-row">
 					
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>21-col</width>
+						<width>14-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
@@ -223,9 +360,10 @@
 					<control type="label">
 						<posx>60</posx>
 						<posy>0</posy>
-						<width>14-col</width>
+						<width>9-col</width>
 						<font>itemTitle</font>
 						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<scroll>false</scroll>
@@ -233,11 +371,12 @@
 					
 					<control type="label">
 						<visible>!isempty(ListItem.duration)</visible>
-						<posx>20-col</posx>
+						<posx>13-col</posx>
 						<posy>0</posy>
 						<width>3-col</width>
 						<font>itemTitle</font>
 						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
 						<align>right</align>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.duration] mins</label>
@@ -251,6 +390,7 @@
 						<width>40</width>
 						<font>symbol</font>
 						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
 						<shadowcolor>-</shadowcolor>
 						<label></label>
 					</control>
@@ -370,6 +510,7 @@
 						<width>3-col-gutter</width>
 						<font>itemTitle</font>
 						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.director]</label>
 						<scroll>false</scroll>
@@ -381,6 +522,7 @@
 						<width>7-col</width>
 						<font>itemTitle</font>
 						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.label]</label>
 						<scroll>false</scroll>
@@ -392,6 +534,7 @@
 						<width>7-col</width>
 						<font>itemTitle</font>
 						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.genre]</label>
 						<scroll>false</scroll>

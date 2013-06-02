@@ -16,6 +16,7 @@
 	<value condition="Window.IsActive(videolibrary) + container.content(tvshows)">$INFO[Skin.String(tvshowFanartLocation)]</value>
 	<value condition="Window.IsActive(videolibrary)">$INFO[Skin.String(videoFanartLocation)]</value>
 	<value condition="Window.IsActive(musiclibrary)">$INFO[Skin.String(musicFanartLocation)]</value>
+	<value condition="Window.IsActive(pvr)">$INFO[Skin.String(tvshowFanartLocation)]</value>
 </variable>
 
 <!--folder titles-->

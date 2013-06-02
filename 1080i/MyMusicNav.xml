@@ -406,7 +406,6 @@
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.10.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.10.Path)])</onclick>
 								</item>
-								
 								<item id="11">
 									<label>$INFO[Window(Home).Property(LatestAlbum.11.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestAlbum.11.Artist)]</label2>

@@ -85,9 +85,10 @@
 							</item>
 
 							<item id="2">
+								<visible>System.GetBool(pvrmanager.enabled)</visible>
 								<label>Live TV</label>
 								<label2></label2>
-								<onclick>ActivateWindow(pvr)</onclick>
+								<onclick>ActivateWindow(pvr,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
 							<item id="3">
@@ -220,40 +221,6 @@
 						<width>24-col</width>
 						<font>regular</font>
 						<label>Latest content</label>
-						<textcolor>white</textcolor>
-					</control>
-
-					<!--seasons / episodes only-->
-					<control type="label">
-						<visible>container.content(seasons) | container.content(episodes)</visible>
-						<posx>21-col</posx>
-						<posy>0</posy>
-						<width>14-col</width>
-						<align>right</align>
-						<font>pageTitle</font>
-						<label>$INFO[ListItem.tvshowTitle]</label>
-						<textcolor>white</textcolor>
-					</control>
-
-					<control type="label">
-						<visible>container.content(seasons)</visible>
-						<posx>21-col</posx>
-						<posy>45</posy>
-						<width>14-col</width>
-						<align>right</align>
-						<font>regular</font>
-						<label>$INFO[ListItem.genre]</label>
-						<textcolor>white</textcolor>
-					</control>
-
-					<control type="label">
-						<visible>container.content(episodes)</visible>
-						<posx>21-col</posx>
-						<posy>45</posy>
-						<width>14-col</width>
-						<align>right</align>
-						<font>regular</font>
-						<label>$INFO[ListItem.season,Season ,]</label>
 						<textcolor>white</textcolor>
 					</control>
 
@@ -459,76 +426,6 @@
 						<include>viewListTVCatchup</include>
 					</control>
 					
-					<!--focussed item detail-->
-					<control type="group">
-						<posx>13-col</posx>
-												
-						<!--content is movies / tvshows / seasons: show larger thumbnail-->
-						<control type="group">
-							<visible>container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
-							<posx>36</posx>
-							<posy>4-row</posy>
-	
-							<control type="image">
-								<visible>!Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentVideoItems),false) + !isempty(listitem.art(poster))</visible>
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>6-col</width>
-								<height>10-row</height>
-								<aspectratio align="left" aligny="top">scale</aspectratio>			
-								<texture fallback="colors/black.png">$INFO[Listitem.art(poster)]</texture>
-								<bordertexture border="0">colors/white.png</bordertexture>
-								<bordersize>6</bordersize>
-								<fadetime>200</fadetime>
-							</control>
-						</control>
-						
-						<!--content is video addons: show addon description-->
-						<control type="group">
-							<visible>container.content(addons) + control.hasfocus(50) + !SubString(listitem.label,Get More)</visible>
-							<posx>1-col</posx>
-							<posy>4-row</posy>
-														
-							<!--animations-->
-							<animation type="Conditional" condition="control.hasfocus(50)">	
-								<effect type="slide" start="300,0" tween="cubic" easing="out" time="300" />
-							</animation>			
-							
-							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>6-col</width>
-								<height>243</height>
-								<aspectratio align="left" aligny="center">scale</aspectratio>			
-								<texture fallback="colors/black.png">$INFO[Listitem.icon]</texture>
-								<bordertexture border="0">colors/white.png</bordertexture>
-								<bordersize>6</bordersize>
-								<fadetime>200</fadetime>
-							</control>						
-							
-							<control type="label">
-								<posx>0</posx>
-								<posy>5-row</posy>
-								<width>6-col</width>
-								<font>pageTitle</font>
-								<textcolor>white</textcolor>
-								<shadowcolor>-</shadowcolor>
-								<label>$INFO[ListItem.Label]</label>
-							</control>
-							
-							<control type="textbox">
-								<posx>0</posx>
-								<posy>352</posy>
-								<font>small</font>
-								<width>6-col</width>
-								<height>210</height>
-								<label>$INFO[ListItem.Property(Addon.Description)]</label>
-								<autoscroll delay="5000" time="1000" repeat="10000"></autoscroll>
-							</control>
-							
-						</control>
-						
-					</control>
 				</control>
 
 				<!--page scrollbar-->

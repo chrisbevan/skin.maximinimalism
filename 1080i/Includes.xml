@@ -34,7 +34,7 @@
 		<control type="group">			
 					
 			<control type="multiimage">
-				<visible>!container.content(seasons) + !container.content(songs) + [Container(9999).HasFiles | Container(9999).HasFolders]</visible>
+				<visible>!container.content(seasons) + !container.content(songs) + [!container.content(episodes) | Substring(Container.folderpath,plugin)] + [Container(9999).HasFiles | Container(9999).HasFolders]</visible>
 				<posx>0</posx>
    				<posy>0</posy>
    				<include>dimensionsFullscreen</include>
@@ -45,12 +45,12 @@
 				<randomize>true</randomize>
 				<aspectratio>stretch</aspectratio>
 				<colordiffuse>6affffff</colordiffuse>
-				<animation effect="fade" start="0" end="100" time="500" delay="500">windowopen</animation>
-				<animation effect="fade" start="100" end="0" time="500" delay="0">windowclose</animation>
+				<animation effect="fade" start="0" end="100" time="600" delay="400">windowopen</animation>
+				<animation effect="fade" start="100" end="0" time="300" delay="0">windowclose</animation>
 			</control>
 			
 			<control type="image">
-				<visible>container.content(seasons) | container.content(songs)</visible>
+				<visible>container.content(seasons) | container.content(songs) | container.content(episodes)</visible>
 				<include>dimensionsFullscreen</include>
 				<texture>$INFO[listitem.art(fanart)]</texture>
 				<colordiffuse>6affffff</colordiffuse>

@@ -151,11 +151,6 @@
 				</focusedlayout>
 
 				<content>
-					<item id="1">
-						<label>Tracks</label>
-						<thumb>-</thumb>
-						<onclick>SendClick(5)</onclick>
-					</item>
 					<item id="2">
 						<label>Title</label>
 						<thumb>-</thumb>
@@ -180,11 +175,6 @@
 		<control type="group">
 			<visible>false</visible>
 			
-			<control type="button" id="5">
-				<description>Tracks</description>
-				<label>206</label>
-			</control>
-
 			<control type="button" id="6">
 				<description>Refresh button</description>
 				<label>184</label>
