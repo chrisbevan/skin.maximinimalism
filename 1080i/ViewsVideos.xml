@@ -254,7 +254,7 @@
 					<width>5-col</width>
 					<height>5-col</height>
 					<aspectratio>scale</aspectratio>
-					<texture fallback="colors/offblack.png">$INFO[Container.FolderThumb]</texture>
+					<texture fallback="colors/offblack.png">$INFO[System.AddonIcon($INFO[skin.string(activeAddon)])]</texture>
 					<bordertexture border="0">colors/white.png</bordertexture>
 					<bordersize>6</bordersize>
 					<fadetime>500</fadetime>

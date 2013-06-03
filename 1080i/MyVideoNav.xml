@@ -126,6 +126,8 @@
 								<label>$INFO[system.addontitle(Skin.String(customVideoAddon2))]</label>
 								<onclick>RunAddon($INFO[Skin.String(customVideoAddon2)])</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>Skin.SetString(activeAddon,$INFO[Skin.String(customVideoAddon2)])</onclick>
+								<onclick>reloadskin()</onclick>
 								<onclick>Control.SetFocus(9000,6)</onclick>
 							</item>
 
@@ -134,6 +136,8 @@
 								<label>$INFO[system.addontitle(Skin.String(customVideoAddon3))]</label>
 								<onclick>RunAddon($INFO[Skin.String(customVideoAddon3)])</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>Skin.SetString(activeAddon,$INFO[Skin.String(customVideoAddon3)])</onclick>
+								<onclick>reloadskin()</onclick>
 								<onclick>Control.SetFocus(9000,7)</onclick>
 							</item>
 
@@ -142,6 +146,8 @@
 								<label>$INFO[system.addontitle(Skin.String(customVideoAddon4))]</label>
 								<onclick>RunAddon($INFO[Skin.String(customVideoAddon4)])</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>Skin.SetString(activeAddon,$INFO[Skin.String(customVideoAddon4)])</onclick>
+								<onclick>reloadskin()</onclick>
 								<onclick>Control.SetFocus(9000,8)</onclick>
 							</item>
 
@@ -150,6 +156,8 @@
 								<label>$INFO[system.addontitle(Skin.String(customVideoAddon5))]</label>
 								<onclick>RunAddon($INFO[Skin.String(customVideoAddon5)])</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>Skin.SetString(activeAddon,$INFO[Skin.String(customVideoAddon5)])</onclick>
+								<onclick>reloadskin()</onclick>
 								<onclick>Control.SetFocus(9000,9)</onclick>
 							</item>
 
@@ -509,9 +517,9 @@
 						<!--debugging-->						
 						<control type="label">
 							<visible>false</visible>
-							<width>3-col</width>
+							<width>8-col</width>
 							<font>buttonTitle</font>
-							<label>$INFO[skin.string(showRecentVideoItems)]</label>
+							<label>$INFO[Skin.String(activeAddon)]</label>
 							<textcolor>white</textcolor>
 						</control>
 
