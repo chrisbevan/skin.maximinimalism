@@ -1,8 +1,7 @@
 ﻿<window id="115">
 	<defaultcontrol always="true">901</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<visible>!Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
-	<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>	
+	<visible>!Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>	
 	
 	<controls>
 				
@@ -14,13 +13,18 @@
 			<animation type="Windowopen">
 				<effect type="fade" start="0" end="100" time="300" />
 				<effect type="rotatex" start="90,0" end="0,0" center="540,0" tween="cubic" easing="out" time="400" />
+			</animation>
+			
+			<animation type="Windowclose">
+				<effect type="fade" start="100" end="0" time="300" />
+				<effect type="rotatex" start="0,0" end="-90,0" center="540,0" tween="cubic" easing="out" time="400" />
 			</animation>			
 			
 			<!--background-->
 			<control type="image">
-				<posx>-96</posx>
+				<posx>-200</posx>
 				<posy>-12</posy>
-				<width>fullscreenWidth</width>
+				<width>2500</width>
 				<height>175</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>colors/black.png</texture>

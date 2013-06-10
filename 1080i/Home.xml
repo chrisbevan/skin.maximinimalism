@@ -119,33 +119,33 @@
 			
 				<content>
 					<item>
-						<label>Watch</label>
+						<label>31000</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>ActivateWindow(videolibrary)</onclick>
 						<onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
 					</item>
 					<item>
-						<label>Listen</label>
+						<label>31001</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>ActivateWindow(musiclibrary)</onclick>
 						<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
 					</item>
 					<item>
-						<label>Play</label>
+						<label>31002</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>ActivateWindow(videolibrary)</onclick>
 					</item>
 					<item>
-						<label>Settings</label>
+						<label>31003</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>ActivateWindow(settings)</onclick>
 					</item>
 					<item>
-						<label>Power</label>
+						<label>31004</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>ActivateWindow(ShutdownMenu)</onclick>

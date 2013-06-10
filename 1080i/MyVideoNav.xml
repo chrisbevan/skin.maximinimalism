@@ -3,7 +3,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<onload>Container.SetViewMode($VAR[videoViewType])</onload>
 	<onload>PlayerControl(stop)</onload>
-
+	
 	<controls>
 		
 		<include>fadeInOut</include>
@@ -79,34 +79,34 @@
 
 						<content>
 							<item id="1">
-								<label>Latest</label>
+								<label>31005</label>
 								<label2></label2>
 								<onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
 							</item>
 
 							<item id="2">
 								<visible>System.GetBool(pvrmanager.enabled)</visible>
-								<label>Live TV</label>
+								<label>31006</label>
 								<label2></label2>
 								<onclick>ActivateWindow(pvr,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
 							<item id="3">
-								<label>Movies</label>
+								<label>31007</label>
 								<label2></label2>
 								<onclick>ActivateWindow(videos,movietitles,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
 
 							<item id="4">
-								<label>TV Shows</label>
+								<label>31008</label>
 								<label2></label2>
 								<onclick>ActivateWindow(Videos,tvshowtitles,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
 
 							<item id="5">
-								<label>Playlists</label>
+								<label>31009</label>
 								<label2></label2>
 								<onclick>ActivateWindow(Videos,playlists,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -126,8 +126,6 @@
 								<label>$INFO[system.addontitle(Skin.String(customVideoAddon2))]</label>
 								<onclick>RunAddon($INFO[Skin.String(customVideoAddon2)])</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Skin.SetString(activeAddon,$INFO[Skin.String(customVideoAddon2)])</onclick>
-								<onclick>reloadskin()</onclick>
 								<onclick>Control.SetFocus(9000,6)</onclick>
 							</item>
 
@@ -136,8 +134,6 @@
 								<label>$INFO[system.addontitle(Skin.String(customVideoAddon3))]</label>
 								<onclick>RunAddon($INFO[Skin.String(customVideoAddon3)])</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Skin.SetString(activeAddon,$INFO[Skin.String(customVideoAddon3)])</onclick>
-								<onclick>reloadskin()</onclick>
 								<onclick>Control.SetFocus(9000,7)</onclick>
 							</item>
 
@@ -146,8 +142,6 @@
 								<label>$INFO[system.addontitle(Skin.String(customVideoAddon4))]</label>
 								<onclick>RunAddon($INFO[Skin.String(customVideoAddon4)])</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Skin.SetString(activeAddon,$INFO[Skin.String(customVideoAddon4)])</onclick>
-								<onclick>reloadskin()</onclick>
 								<onclick>Control.SetFocus(9000,8)</onclick>
 							</item>
 
@@ -156,20 +150,18 @@
 								<label>$INFO[system.addontitle(Skin.String(customVideoAddon5))]</label>
 								<onclick>RunAddon($INFO[Skin.String(customVideoAddon5)])</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Skin.SetString(activeAddon,$INFO[Skin.String(customVideoAddon5)])</onclick>
-								<onclick>reloadskin()</onclick>
 								<onclick>Control.SetFocus(9000,9)</onclick>
 							</item>
 
 							<!--final bits and bobs-->							
 							<item id="21">
-								<label>All Addons</label>
+								<label>31010</label>
 								<onclick>ActivateWindow(Videos,addons,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
 
 							<item id="22">
-								<label>Files</label>
+								<label>31011</label>
 								<onclick>ActivateWindow(Videos,files,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
@@ -207,10 +199,10 @@
 						<posy>0</posy>
 						<width>14-col</width>
 						<font>pageTitle</font>
-						<label>Movies and TVShows</label>
+						<label>31012</label>
 						<textcolor>white</textcolor>
 					</control>
-
+					
 					<!--source subtitle-->
 					<control type="label">
 						<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),false)</visible>
@@ -218,7 +210,7 @@
 						<posy>45</posy>
 						<width>24-col</width>
 						<font>regular</font>
-						<label>$INFO[container.Numitems,, title(s)]</label>
+						<label>$INFO[container.Numitems,, $LOCALIZE[31014]]</label>
 						<textcolor>white</textcolor>
 					</control>
 
@@ -228,7 +220,7 @@
 						<posy>45</posy>
 						<width>24-col</width>
 						<font>regular</font>
-						<label>Latest content</label>
+						<label>31013</label>
 						<textcolor>white</textcolor>
 					</control>
 
@@ -430,6 +422,7 @@
 					<control type="group">						
 						<visible>SubString(skin.string(showRecentVideoItems),false)</visible>
 						<include>viewVideoList</include>
+						<include>viewSeasons</include>
 						<include>viewEpisodes</include>
 						<include>viewListTVCatchup</include>
 					</control>
@@ -479,7 +472,7 @@
 							<width>3-col</width>
 							<font>buttonTitle</font>
 							<textcolor>white</textcolor>
-							<label>Page $INFO[container.currentpage] of $INFO[container.numpages]</label>
+							<label>$LOCALIZE[31038] $INFO[container.currentpage] / $INFO[container.numpages]</label>
 						</control>
 
 						<control type="label">
@@ -519,7 +512,7 @@
 							<visible>false</visible>
 							<width>8-col</width>
 							<font>buttonTitle</font>
-							<label>$INFO[Skin.String(activeAddon)]</label>
+							<label>$INFO[container.folderpath]</label>
 							<textcolor>white</textcolor>
 						</control>
 
@@ -561,7 +554,7 @@
 					<posy>0</posy>
 					<width>14-col</width>
 					<font>pageTitle</font>
-					<label>Videos</label>
+					<label>31016</label>
 					<textcolor>black</textcolor>
 					<shadowcolor>-</shadowcolor>
 				</control>
@@ -571,7 +564,7 @@
 					<posy>45</posy>
 					<width>24-col</width>
 					<font>regular</font>
-					<label>Options</label>
+					<label>31017</label>
 					<textcolor>black</textcolor>
 					<shadowcolor>-</shadowcolor>
 				</control>
@@ -617,13 +610,13 @@
 
 				<content>
 					<item id="1">
-						<label>Change Sort</label>
+						<label>31023</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>Container.NextSortMethod(9999)</onclick>
 					</item>
 					<item id="2">
-						<label>Refresh Library</label>
+						<label>31036</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>UpdateLibrary(video)</onclick>
@@ -631,13 +624,13 @@
 					</item>
 					<item id="3">
 						<visible>isempty(Skin.String(customVideoAddon1)) | isempty(Skin.String(customVideoAddon2)) | isempty(Skin.String(customVideoAddon3)) | isempty(Skin.String(customVideoAddon4)) | isempty(Skin.String(customVideoAddon5))</visible>
-						<label>Add Menu Item</label>
+						<label>31041</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>$VAR[customVideoSourceAction]</onclick>
 					</item>
 					<item id="4">
-						<label>Add source</label>
+						<label>31040</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>activateWindow(mediasource)</onclick>
@@ -658,7 +651,7 @@
 
 				<control type="button" id="102">
 					<visible>!isempty(Skin.String(customVideoAddon1))</visible>
-					<label>Remove Menu Item ›</label>
+					<label>31039</label>
 					<width>4-col</width>
 					<height>43</height>
 					<font>smallStrong</font>
@@ -669,7 +662,7 @@
 
 				<control type="button" id="103">
 					<visible>!isempty(Skin.String(customVideoAddon2))</visible>
-					<label>Remove Menu Item ›</label>
+					<label>31039</label>
 					<width>4-col</width>
 					<height>43</height>
 					<font>smallStrong</font>
@@ -680,7 +673,7 @@
 
 				<control type="button" id="104">
 					<visible>!isempty(Skin.String(customVideoAddon3))</visible>
-					<label>Remove Menu Item ›</label>
+					<label>31039</label>
 					<width>4-col</width>
 					<height>43</height>
 					<font>smallStrong</font>
@@ -691,7 +684,7 @@
 
 				<control type="button" id="105">
 					<visible>!isempty(Skin.String(customVideoAddon4))</visible>
-					<label>Remove Menu Item ›</label>
+					<label>31039</label>
 					<width>4-col</width>
 					<height>43</height>
 					<font>smallStrong</font>
@@ -702,7 +695,7 @@
 
 				<control type="button" id="106">
 					<visible>!isempty(Skin.String(customVideoAddon5))</visible>
-					<label>Remove Menu Item ›</label>
+					<label>31039</label>
 					<width>4-col</width>
 					<height>43</height>
 					<font>smallStrong</font>

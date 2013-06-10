@@ -78,33 +78,33 @@
 
 						<content>
 							<item id="1">
-								<label>Latest</label>
+								<label>31005</label>
 								<label2></label2>
 								<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
 							</item>
 
 							<item id="2">
-								<label>Artists</label>
+								<label>31037</label>
 								<label2></label2>
 								<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 							<item id="3">
-								<label>Albums</label>
+								<label>31033</label>
 								<label2></label2>
 								<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 
 							<item id="4">
-								<label>Genres</label>
+								<label>31050</label>
 								<label2></label2>
 								<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 
 							<item id="5">
-								<label>Playlists</label>
+								<label>31009</label>
 								<label2></label2>
 								<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
@@ -153,13 +153,13 @@
 
 							<!--final bits and bobs-->							
 							<item id="21">
-								<label>All Addons</label>
+								<label>31010</label>
 								<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 
 							<item id="22">
-								<label>Files</label>
+								<label>31011</label>
 								<onclick>ActivateWindow(MusicLibrary,root)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
@@ -197,7 +197,7 @@
 						<posy>0</posy>
 						<width>14-col</width>
 						<font>pageTitle</font>
-						<label>Artists and Albums</label>
+						<label>31051</label>
 						<textcolor>white</textcolor>
 					</control>
 
@@ -208,7 +208,7 @@
 						<posy>45</posy>
 						<width>24-col</width>
 						<font>regular</font>
-						<label>$INFO[container.Numitems,, title(s)]</label>
+						<label>$INFO[container.Numitems,, $LOCALIZE[31014]]</label>
 						<textcolor>white</textcolor>
 					</control>
 
@@ -218,7 +218,7 @@
 						<posy>45</posy>
 						<width>24-col</width>
 						<font>regular</font>
-						<label>Latest content</label>
+						<label>31013</label>
 						<textcolor>white</textcolor>
 					</control>
 
@@ -567,7 +567,7 @@
 							<width>3-col</width>
 							<font>buttonTitle</font>
 							<textcolor>white</textcolor>
-							<label>Page $INFO[container.currentpage] of $INFO[container.numpages]</label>
+							<label>$LOCALIZE[31038] $INFO[container.currentpage] / $INFO[container.numpages]</label>
 						</control>
 
 						<control type="label">
@@ -649,7 +649,7 @@
 					<posy>0</posy>
 					<width>14-col</width>
 					<font>pageTitle</font>
-					<label>Music</label>
+					<label>31052</label>
 					<textcolor>black</textcolor>
 					<shadowcolor>-</shadowcolor>
 				</control>
@@ -659,7 +659,7 @@
 					<posy>45</posy>
 					<width>24-col</width>
 					<font>regular</font>
-					<label>Options</label>
+					<label>31017</label>
 					<textcolor>black</textcolor>
 					<shadowcolor>-</shadowcolor>
 				</control>
@@ -705,26 +705,26 @@
 
 				<content>
 					<item id="1">
-						<label>Change Sort</label>
+						<label>31023</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>Container.NextSortMethod(9999)</onclick>
 					</item>
 					<item id="2">
-						<label>Refresh Library</label>
+						<label>31036</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>UpdateLibrary(video)</onclick>
 					</item>
 					<item id="3">
 						<visible>isempty(Skin.String(customMusicAddon1)) | isempty(Skin.String(customMusicAddon2)) | isempty(Skin.String(customMusicAddon3)) | isempty(Skin.String(customMusicAddon4)) | isempty(Skin.String(customMusicAddon5))</visible>
-						<label>Add Menu Item</label>
+						<label>31041</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>$VAR[customMusicSourceAction]</onclick>
 					</item>
 					<item id="4">
-						<label>Add source</label>
+						<label>31040</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>activateWindow(mediasource)</onclick>
@@ -745,7 +745,7 @@
 
 				<control type="button" id="102">
 					<visible>!isempty(Skin.String(customMusicAddon1))</visible>
-					<label>Remove Menu Item ›</label>
+					<label>31039</label>
 					<width>4-col</width>
 					<height>43</height>
 					<font>smallStrong</font>
@@ -756,7 +756,7 @@
 
 				<control type="button" id="103">
 					<visible>!isempty(Skin.String(customMusicAddon2))</visible>
-					<label>Remove Menu Item ›</label>
+					<label>31039</label>
 					<width>4-col</width>
 					<height>43</height>
 					<font>smallStrong</font>
@@ -767,7 +767,7 @@
 
 				<control type="button" id="104">
 					<visible>!isempty(Skin.String(customMusicAddon3))</visible>
-					<label>Remove Menu Item ›</label>
+					<label>31039</label>
 					<width>4-col</width>
 					<height>43</height>
 					<font>smallStrong</font>
@@ -778,7 +778,7 @@
 
 				<control type="button" id="105">
 					<visible>!isempty(Skin.String(customMusicAddon4))</visible>
-					<label>Remove Menu Item ›</label>
+					<label>31039</label>
 					<width>4-col</width>
 					<height>43</height>
 					<font>smallStrong</font>
@@ -789,7 +789,7 @@
 
 				<control type="button" id="106">
 					<visible>!isempty(Skin.String(customMusicAddon5))</visible>
-					<label>Remove Menu Item ›</label>
+					<label>31039</label>
 					<width>4-col</width>
 					<height>43</height>
 					<font>smallStrong</font>
@@ -839,7 +839,7 @@
 				<description>Files</description>
 				<width>330</width>
 				<align>left</align>
-				<label>31001</label>
+				<label>Files</label>
 				<onclick>SetFocus(50)</onclick>
 			</control>
 

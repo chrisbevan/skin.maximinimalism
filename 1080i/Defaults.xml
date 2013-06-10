@@ -150,7 +150,7 @@
 		<texturefocus>-</texturefocus>
 		<sliderwidth>4-col</sliderwidth>
 		<sliderheight>24</sliderheight>
-		<texturesliderbar>other_textures/OSD/slider_bg.png</texturesliderbar>
+		<texturesliderbar>UIControls/slider_bg.png</texturesliderbar>
 		<textureslidernib>colors/white.png</textureslidernib>
 		<textureslidernibfocus>colors/white.png</textureslidernibfocus>
 		<font>itemTitle</font>
@@ -176,9 +176,9 @@
 		<height>23</height>
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
-		<textureslidernib border="2">other_textures/OSD/SliderNibNF.png</textureslidernib>
-		<textureslidernibfocus border="2">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
+		<texturesliderbar>UIControls/slider_bg_2.png</texturesliderbar>
+		<textureslidernib border="2">UIControls/SliderNibNF.png</textureslidernib>
+		<textureslidernibfocus border="2">UIControls/SliderNibFO.png</textureslidernibfocus>
 	</default>
 
 	<default type="scrollbar">

@@ -1,39 +1,35 @@
 <window id="2006">
 	<defaultcontrol always="true">-</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<allowoverlay>yes</allowoverlay>
 
 	<controls>
 
+		<!--
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
 			<include>dimensionsFullscreen</include>
 		</control>
-
-		<control type="label">
-			<include>DialogID</include>
-			<label>MusicVisualisation.xml</label>
-		</control>
+	-->
+		
 
 		<control type="group">
-			<visible>Player.ShowInfo + ![Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)]</visible>
 
 			<control type="image">
 				<description>Music cover image</description>
-				<posx>45</posx>
-				<posy>45</posy>
+				<posx>col-1-begin</posx>
+				<posy>row-1-begin</posy>
 				<width>360</width>
 				<height>360</height>
 				<fadetime>200</fadetime>
 				<texture background="true">$INFO[MusicPlayer.cover]</texture>
 				<aspectratio  align="left" aligny="top">keep</aspectratio>
-				<bordertexture border="5">other_textures/ButtonFo.png</bordertexture>
 				<bordersize>12</bordersize>
 			</control>
 
 			<control type="label">
-				<posx>45</posx>
-				<posy>915</posy>
-				<width>1320</width>
+				<posx>col-1-begin</posx>
+				<posy>row-7-begin</posy>
+				<width>8-col</width>
 				<label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Artist, - ]</label>
 				<align>left</align>
 				<font>regular</font>
@@ -41,9 +37,9 @@
 			</control>
 
 			<control type="label">
-				<posx>45</posx>
-				<posy>966</posy>
-				<width>1320</width>
+				<posx>col-1-begin</posx>
+				<posy>row-8-begin</posy>
+				<width>8-col</width>
 				<label>$INFO[MusicPlayer.Title]</label>
 				<scroll>true</scroll>
 				<align>left</align>
@@ -52,41 +48,32 @@
 			</control>
 
 			<control type="label">
-				<description>Track Count</description>
-				<posx>1875</posx>
-				<posy>915</posy>
-				<width>450</width>
-				<label>$INFO[MusicPlayer.PlaylistPosition,[COLOR=blue]$LOCALIZE[554]:[/COLOR] ]$INFO[MusicPlayer.PlaylistLength, / ]</label>
-				<align>right</align>
-				<font>regular</font>
-				<shadowcolor>black</shadowcolor>
-				<visible>MusicPlayer.ChapterCount</visible>
-				<animation effect="slide" end="0,51" condition="!MusicPlayer.Content(Episodes) + !MusicPlayer.Content(MusicVideos)">Conditional</animation>
-			</control>
-
-			<control type="label">
 				<description>Player Times</description>
-				<posx>1875</posx>
-				<posy>966</posy>
-				<width>750</width>
+				<posx>col-1-begin</posx>
+				<posy>row-9-begin</posy>
+				<width>8-col</width>
 				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-				<align>right</align>
 				<font>regular</font>
 				<shadowcolor>black</shadowcolor>
 			</control>
 
 			<control type="progress">
 				<description>Progressbar</description>
-				<posx>45</posx>
-				<posy>45r</posy>
-				<width>1830</width>
+				<posx>col-1-begin</posx>
+				<posy>row-11-begin</posy>
+				<width>8-col</width>
 				<height>21</height>
 				<info>Player.Progress</info>
 			</control>
 
 		</control>
 
+		<!--debugging-->
 		<include>Debug_Grid</include>
+		<control type="label">
+			<include>DialogID</include>
+			<label>MusicVisualisation.xml</label>
+		</control>
 
 	</controls>
 
