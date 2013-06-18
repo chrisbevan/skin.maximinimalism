@@ -26,7 +26,7 @@
 				<posy>0</posy>
 				<width>8-col</width>
 				<font>pageTitle</font>
-				<label>[COLOR accented]Settings[/COLOR] Main menu</label>
+				<label>[COLOR accented]$LOCALIZE[5][/COLOR] $LOCALIZE[31058]</label>
 				<textcolor>white</textcolor>
 			</control>
 			
@@ -49,7 +49,7 @@
 				<height>10-row</height>
 				<font>smallStrong</font>
 				<textcolor>unselected</textcolor>
-				<label>Build $INFO[System.BuildVersion] ($INFO[System.BuildDate]) $INFO[System.InternetState] on IP $INFO[Network.IPAddress]</label>
+				<label>$LOCALIZE[31059] $INFO[System.BuildVersion] ($INFO[System.BuildDate]) $INFO[System.InternetState] on IP $INFO[Network.IPAddress]</label>
 			</control>
 			
 			<!--menu-->
@@ -147,7 +147,7 @@
 				<content>
 					<item id="1">
 						<description>Appearance</description>
-						<label>Appearance</label>
+						<label>480</label>
 						<label2></label2>
 						<property name="label3">Skin • Screensaver</property>
 						<onclick>activatewindow(AppearanceSettings)</onclick>
@@ -160,7 +160,7 @@
 						<onclick>activatewindow(VideosSettings)</onclick>
 					</item>
 					<item id="9">
-                        <label>PVR</label>
+                        <label>31060</label>
 						<label2></label2>
 						<property name="label3">Live TV • EPG</property>
                         <onclick>ActivateWindow(PVRSettings)</onclick>

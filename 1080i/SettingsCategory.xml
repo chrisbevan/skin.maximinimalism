@@ -37,7 +37,7 @@
 				<posy>0</posy>
 				<width>8-col</width>
 				<font>pageTitle</font>
-				<label>Settings [COLOR accented]$INFO[control.getlabel(2)][/COLOR]</label>
+				<label>$LOCALIZE[5] [COLOR accented]$INFO[control.getlabel(2)][/COLOR]</label>
 				<textcolor>white</textcolor>
 			</control>
 			

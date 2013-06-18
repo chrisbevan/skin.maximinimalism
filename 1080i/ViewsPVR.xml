@@ -23,7 +23,7 @@
 				<pagecontrol>60</pagecontrol>
 				<focusposition>4</focusposition>
 				<movement>4</movement>
-				<scrolltime tween="sine" easing="inout">300</scrolltime>
+				<scrolltime tween="sine" easing="inout">200</scrolltime>
 				
 				<itemlayout height="1-row" width="20-col">
 										
@@ -290,10 +290,6 @@
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
 						<bordersize>0</bordersize>
 						<colordiffuse>FFFFFFFF</colordiffuse>
-						<!--animations-->
-						<animation type="Focus" condition="Container(13).OnNext | Container(13).OnPrevious" reversible="false">
-				            <effect type="fade" start="50" end="100" time="300" />
-				        </animation>
 					</control>
 					
 					<control type="label">
@@ -465,10 +461,6 @@
 						<texture border="0">colors/white.png</texture>
 						<bordersize>0</bordersize>
 						<colordiffuse>FFFFFFFF</colordiffuse>
-						<!--animations-->
-						<animation type="Focus" condition="Container(10).OnNext | Container(10).OnPrevious" reversible="false">
-				            <effect type="fade" start="50" end="100" time="300" />
-				        </animation>
 					</control>
 					
 					<control type="label" id="1">

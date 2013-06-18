@@ -17,7 +17,7 @@
 				<ondown>50</ondown>
 				<onup>50</onup>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime tween="sine" easing="inout">300</scrolltime>
+				<scrolltime tween="sine" easing="inout">200</scrolltime>
 												
 				<itemlayout width="12-col" height="1-row">								
 									
@@ -76,10 +76,6 @@
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
 						<bordersize>0</bordersize>
 						<colordiffuse>FFFFFFFF</colordiffuse>
-						<!--animations-->
-						<animation type="Focus" condition="Container(50).OnNext | Container(50).OnPrevious" reversible="false">
-				            <effect type="fade" start="50" end="100" time="300" />
-				        </animation>
 					</control>
 															
 					<control type="image">
@@ -135,7 +131,7 @@
 				<ondown>53</ondown>
 				<onup>53</onup>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime tween="sine" easing="inout">300</scrolltime>
+				<scrolltime tween="sine" easing="inout">200</scrolltime>
 												
 				<itemlayout width="7-col" height="1-row">								
 									
@@ -182,10 +178,6 @@
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
 						<bordersize>0</bordersize>
 						<colordiffuse>FFFFFFFF</colordiffuse>
-						<!--animations-->
-						<animation type="Focus" condition="Container(50).OnNext | Container(50).OnPrevious" reversible="false">
-				            <effect type="fade" start="50" end="100" time="300" />
-				        </animation>
 					</control>
 															
 					<control type="image">
@@ -229,7 +221,7 @@
 				<ondown>53</ondown>
 				<onup>53</onup>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime tween="sine" easing="inout">300</scrolltime>
+				<scrolltime tween="sine" easing="inout">200</scrolltime>
 												
 				<itemlayout width="300" height="300">								
 									
@@ -299,10 +291,6 @@
 						<texture>colors/white.png</texture>
 						<bordersize>0</bordersize>
 						<colordiffuse>FFFFFFFF</colordiffuse>
-						<!--animations-->
-						<animation type="Focus" condition="Container(9998).OnNext | Container(9998).OnPrevious" reversible="false">
-				            <effect type="fade" start="50" end="100" time="300" />
-				        </animation>
 					</control>
 
 					<control type="label">
@@ -347,8 +335,6 @@
 					<height>5-col</height>
 					<aspectratio>stretch</aspectratio>
 					<texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
-					<bordertexture border="0">colors/white.png</bordertexture>
-					<bordersize>6</bordersize>
 					<fadetime>500</fadetime>
 				</control>
 				
@@ -386,7 +372,7 @@
 				<ondown>53</ondown>
 				<onup>53</onup>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime tween="sine" easing="inout">300</scrolltime>
+				<scrolltime tween="sine" easing="inout">200</scrolltime>
 												
 				<itemlayout width="14-col" height="1-row">								
 									
@@ -466,10 +452,6 @@
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
 						<bordersize>0</bordersize>
 						<colordiffuse>FFFFFFFF</colordiffuse>
-						<!--animations-->
-						<animation type="Focus" condition="Container(50).OnNext | Container(50).OnPrevious" reversible="false">
-				            <effect type="fade" start="50" end="100" time="300" />
-				        </animation>
 					</control>
 															
 					<control type="image">

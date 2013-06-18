@@ -11,56 +11,84 @@
 		</control>
 	-->
 		
+		<!--fanart-->
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>dimensionsFullscreen</include>
+			<fadetime>200</fadetime>
+			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+			<aspectratio  align="left" aligny="top">stretch</aspectratio>
+			<include>kenBurnsey</include>
+		</control>
+		
+		<!--vignette-->
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>dimensionsFullscreen</include>
+			<texture>vignette.png</texture>
+			<colordiffuse>ffffffff</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		
 
 		<control type="group">
+			<posx>col-1-begin</posx>
+			<posy>row-12-begin</posy>
 
 			<control type="image">
 				<description>Music cover image</description>
-				<posx>col-1-begin</posx>
-				<posy>row-1-begin</posy>
-				<width>360</width>
-				<height>360</height>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>6-col-gutter</width>
+				<height>6-col-gutter</height>
 				<fadetime>200</fadetime>
 				<texture background="true">$INFO[MusicPlayer.cover]</texture>
 				<aspectratio  align="left" aligny="top">keep</aspectratio>
-				<bordersize>12</bordersize>
 			</control>
 
 			<control type="label">
-				<posx>col-1-begin</posx>
-				<posy>row-7-begin</posy>
+				<posx>6-col</posx>
+				<posy>46</posy>
 				<width>8-col</width>
-				<label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Artist, - ]</label>
+				<label>$INFO[MusicPlayer.Artist]</label>
 				<align>left</align>
-				<font>regular</font>
-				<shadowcolor>black</shadowcolor>
+				<font>large</font>
 			</control>
 
 			<control type="label">
-				<posx>col-1-begin</posx>
-				<posy>row-8-begin</posy>
+				<posx>6-col</posx>
+				<posy>2-row</posy>
 				<width>8-col</width>
-				<label>$INFO[MusicPlayer.Title]</label>
+				<label>$INFO[MusicPlayer.TrackNumber,,.] $INFO[MusicPlayer.Title]</label>
 				<scroll>true</scroll>
 				<align>left</align>
-				<font>regular</font>
-				<shadowcolor>black</shadowcolor>
+				<font>dialogTitle</font>
+			</control>
+			
+			<control type="label">
+				<posx>6-col</posx>
+				<posy>3-row</posy>
+				<width>8-col</width>
+				<label>$INFO[MusicPlayer.Album] $INFO[MusicPlayer.year,• ,]</label>
+				<align>left</align>
+				<font>smallStrong</font>
 			</control>
 
 			<control type="label">
 				<description>Player Times</description>
-				<posx>col-1-begin</posx>
-				<posy>row-9-begin</posy>
+				<posx>6-col</posx>
+				<posy>4-row</posy>
 				<width>8-col</width>
 				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-				<font>regular</font>
-				<shadowcolor>black</shadowcolor>
+				<font>small</font>
 			</control>
 
 			<control type="progress">
 				<description>Progressbar</description>
-				<posx>col-1-begin</posx>
-				<posy>row-11-begin</posy>
+				<posx>6-col</posx>
+				<posy>5-row</posy>
 				<width>8-col</width>
 				<height>21</height>
 				<info>Player.Progress</info>

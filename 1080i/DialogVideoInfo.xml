@@ -95,8 +95,6 @@
 					<height>297</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-					<bordertexture border="0">colors/white.png</bordertexture>
-					<bordersize>3</bordersize>
 				</control>
 									
 				<!--synopsis-->

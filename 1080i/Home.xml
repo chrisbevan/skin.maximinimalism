@@ -139,7 +139,7 @@
 						<onclick>ActivateWindow(videolibrary)</onclick>
 					</item>
 					<item>
-						<label>31003</label>
+						<label>5</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>ActivateWindow(settings)</onclick>

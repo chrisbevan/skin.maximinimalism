@@ -92,21 +92,21 @@
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
 							<item id="3">
-								<label>31007</label>
+								<label>342</label>
 								<label2></label2>
 								<onclick>ActivateWindow(videos,movietitles,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
 
 							<item id="4">
-								<label>31008</label>
+								<label>20343</label>
 								<label2></label2>
 								<onclick>ActivateWindow(Videos,tvshowtitles,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
 
 							<item id="5">
-								<label>31009</label>
+								<label>136</label>
 								<label2></label2>
 								<onclick>ActivateWindow(Videos,playlists,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -161,7 +161,7 @@
 							</item>
 
 							<item id="22">
-								<label>31011</label>
+								<label>1214</label>
 								<onclick>ActivateWindow(Videos,files,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
@@ -554,7 +554,7 @@
 					<posy>0</posy>
 					<width>14-col</width>
 					<font>pageTitle</font>
-					<label>31016</label>
+					<label>10006</label>
 					<textcolor>black</textcolor>
 					<shadowcolor>-</shadowcolor>
 				</control>
@@ -564,7 +564,7 @@
 					<posy>45</posy>
 					<width>24-col</width>
 					<font>regular</font>
-					<label>31017</label>
+					<label>33063</label>
 					<textcolor>black</textcolor>
 					<shadowcolor>-</shadowcolor>
 				</control>

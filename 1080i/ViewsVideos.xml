@@ -29,8 +29,6 @@
 						<height>10-row</height>
 						<aspectratio align="left" aligny="top">scale</aspectratio>			
 						<texture fallback="colors/black.png">$INFO[Listitem.art(poster)]</texture>
-						<bordertexture border="0">colors/white.png</bordertexture>
-						<bordersize>6</bordersize>
 						<fadetime>200</fadetime>
 					</control>
 				</control>
@@ -107,10 +105,6 @@
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
 						<bordersize>0</bordersize>
 						<colordiffuse>FFFFFFFF</colordiffuse>
-						<!--animations-->
-						<animation type="Focus" condition="Container(50).OnNext | Container(50).OnPrevious" reversible="false">
-				            <effect type="fade" start="50" end="100" time="300" />
-				        </animation>
 					</control>
 															
 					<control type="image">
@@ -170,14 +164,12 @@
 					<height>6-col</height>
 					<aspectratio>scale</aspectratio>
 					<texture fallback="colors/offblack.png">$INFO[ListItem.Art(tvshow.poster)]</texture>
-					<bordertexture border="0">colors/white.png</bordertexture>
-					<bordersize>6</bordersize>
 					<fadetime>500</fadetime>
 				</control>
 				
 				<control type="label">
 					<posx>0</posx>
-					<posy>426</posy>
+					<posy>430</posy>
 					<width>5-col</width>
 					<font>smallStrong</font>
 					<textcolor>white</textcolor>
@@ -187,13 +179,13 @@
 				
 				<control type="textbox">
 					<posx>0</posx>
-					<posy>460</posy>
+					<posy>468</posy>
 					<width>5-col</width>
 					<height>2-row</height>
 					<font>regularStrong</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>-</shadowcolor>
-					<label fallback="Unknown Year">$INFO[ListItem.tvshowTitle,,]</label>
+					<label>[UPPERCASE]$INFO[ListItem.tvshowTitle,,][/UPPERCASE]</label>
 				</control>
 				
 			</control>
@@ -280,10 +272,6 @@
 						<bordersize>0</bordersize>
 						<texture>colors/white.png</texture>
 						<colordiffuse>ffFFFFFF</colordiffuse>
-						<!--animations-->
-						<animation type="Focus" condition="Container(9998).OnNext | Container(9998).OnPrevious" reversible="false">
-				            <effect type="fade" start="50" end="100" time="300" />
-				        </animation>
 					</control>
 
 					<control type="label">
@@ -331,14 +319,12 @@
 					<height>6-col</height>
 					<aspectratio>scale</aspectratio>
 					<texture fallback="colors/offblack.png">$INFO[ListItem.Art(tvshow.poster)]</texture>
-					<bordertexture border="0">colors/white.png</bordertexture>
-					<bordersize>6</bordersize>
 					<fadetime>500</fadetime>
 				</control>
 				
 				<control type="label">
 					<posx>0</posx>
-					<posy>426</posy>
+					<posy>430</posy>
 					<width>5-col</width>
 					<font>smallStrong</font>
 					<textcolor>white</textcolor>
@@ -348,13 +334,13 @@
 				
 				<control type="textbox">
 					<posx>0</posx>
-					<posy>460</posy>
+					<posy>468</posy>
 					<width>5-col</width>
 					<height>2-row</height>
 					<font>regularStrong</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>-</shadowcolor>
-					<label fallback="Unknown Year">$INFO[ListItem.tvshowTitle,,]</label>
+					<label>[UPPERCASE]$INFO[ListItem.tvshowTitle,,][/UPPERCASE]</label>
 				</control>
 				
 			</control>
@@ -373,7 +359,7 @@
 					<aspectratio>scale</aspectratio>
 					<texture fallback="colors/offblack.png">colors/black.png</texture>
 					<bordertexture border="0">colors/white.png</bordertexture>
-					<bordersize>6</bordersize>
+					<bordersize>3</bordersize>
 					<fadetime>500</fadetime>
 				</control>
 											
@@ -459,10 +445,6 @@
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
 						<bordersize>0</bordersize>
 						<colordiffuse>FFFFFFFF</colordiffuse>
-						<!--animations-->
-						<animation type="Focus" condition="Container(52).OnNext | Container(52).OnPrevious" reversible="false">
-				            <effect type="fade" start="50" end="100" time="300" />
-				        </animation>
 					</control>
 					
 					<control type="image">
@@ -606,10 +588,6 @@
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
 						<bordersize>0</bordersize>
 						<colordiffuse>FFFFFFFF</colordiffuse>
-						<!--animations-->
-						<animation type="Focus" condition="Container(54).OnNext | Container(54).OnPrevious" reversible="false">
-				            <effect type="fade" start="50" end="100" time="300" />
-				        </animation>
 					</control>
 										
 					<control type="image">

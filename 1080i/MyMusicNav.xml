@@ -84,27 +84,27 @@
 							</item>
 
 							<item id="2">
-								<label>31037</label>
+								<label>133</label>
 								<label2></label2>
 								<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 							<item id="3">
-								<label>31033</label>
+								<label>132</label>
 								<label2></label2>
 								<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 
 							<item id="4">
-								<label>31050</label>
+								<label>135</label>
 								<label2></label2>
 								<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 
 							<item id="5">
-								<label>31009</label>
+								<label>136</label>
 								<label2></label2>
 								<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
@@ -159,7 +159,7 @@
 							</item>
 
 							<item id="22">
-								<label>31011</label>
+								<label>1214</label>
 								<onclick>ActivateWindow(MusicLibrary,root)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
@@ -406,36 +406,6 @@
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.10.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.10.Path)])</onclick>
 								</item>
-								<item id="11">
-									<label>$INFO[Window(Home).Property(LatestAlbum.11.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.11.Artist)]</label2>
-									<thumb>$INFO[Window(Home).Property(LatestAlbum.11.thumb)]</thumb>
-									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.11.Path)])</onclick>
-								</item>
-								<item id="12">
-									<label>$INFO[Window(Home).Property(LatestAlbum.12.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.12.Artist)]</label2>
-									<thumb>$INFO[Window(Home).Property(LatestAlbum.12.thumb)]</thumb>
-									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.12.Path)])</onclick>
-								</item>
-								<item id="13">
-									<label>$INFO[Window(Home).Property(LatestAlbum.13.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.13.Artist)]</label2>
-									<thumb>$INFO[Window(Home).Property(LatestAlbum.13.thumb)]</thumb>
-									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.13.Path)])</onclick>
-								</item>
-								<item id="14">
-									<label>$INFO[Window(Home).Property(LatestAlbum.14.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.14.Artist)]</label2>
-									<thumb>$INFO[Window(Home).Property(LatestAlbum.14.thumb)]</thumb>
-									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.14.Path)])</onclick>
-								</item>
-								<item id="15">
-									<label>$INFO[Window(Home).Property(LatestAlbum.15.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.15.Artist)]</label2>
-									<thumb>$INFO[Window(Home).Property(LatestAlbum.15.thumb)]</thumb>
-									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.15.Path)])</onclick>
-								</item>
 						
 							</content>
 
@@ -471,7 +441,7 @@
 								<aspectratio align="left" aligny="top">scale</aspectratio>			
 								<texture fallback="colors/black.png">$INFO[Listitem.icon]</texture>
 								<bordertexture border="0">colors/white.png</bordertexture>
-								<bordersize>6</bordersize>
+								<bordersize>3</bordersize>
 								<fadetime>200</fadetime>
 							</control>
 						</control>
@@ -495,7 +465,7 @@
 								<aspectratio align="left" aligny="center">scale</aspectratio>			
 								<texture fallback="colors/black.png">$INFO[Listitem.icon]</texture>
 								<bordertexture border="0">colors/white.png</bordertexture>
-								<bordersize>6</bordersize>
+								<bordersize>3</bordersize>
 								<fadetime>200</fadetime>
 							</control>						
 							
@@ -649,7 +619,7 @@
 					<posy>0</posy>
 					<width>14-col</width>
 					<font>pageTitle</font>
-					<label>31052</label>
+					<label>249</label>
 					<textcolor>black</textcolor>
 					<shadowcolor>-</shadowcolor>
 				</control>
@@ -659,7 +629,7 @@
 					<posy>45</posy>
 					<width>24-col</width>
 					<font>regular</font>
-					<label>31017</label>
+					<label>33063</label>
 					<textcolor>black</textcolor>
 					<shadowcolor>-</shadowcolor>
 				</control>
