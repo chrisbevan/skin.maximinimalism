@@ -1,24 +1,32 @@
 <window id="2006">
 	<defaultcontrol always="true">-</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<onload>RunScript(script.artistslideshow)</onload>
 
 	<controls>
-
-		<!--
-		<control type="visualisation" id="2">
-			<description>visualisation</description>
-			<include>dimensionsFullscreen</include>
-		</control>
-	-->
 		
 		<!--fanart-->
 		<control type="image">
+			<visible>isempty(Window(Visualisation).Property(ArtistSlideshow))</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<include>dimensionsFullscreen</include>
 			<fadetime>200</fadetime>
 			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 			<aspectratio  align="left" aligny="top">stretch</aspectratio>
+			<include>kenBurnsey</include>
+		</control>
+	
+		<control type="multiimage">
+			<visible>!isempty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+		    <posx>0</posx>
+		    <posy>0</posy>
+		    <include>dimensionsFullscreen</include>
+		    <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+		    <aspectratio>keep</aspectratio>
+		    <timeperimage>10000</timeperimage>
+		    <fadetime>1000</fadetime>
+		    <randomize>true</randomize>
 			<include>kenBurnsey</include>
 		</control>
 		
@@ -32,7 +40,6 @@
 			<aspectratio>stretch</aspectratio>
 		</control>
 		
-
 		<control type="group">
 			<posx>col-1-begin</posx>
 			<posy>row-12-begin</posy>
@@ -54,7 +61,7 @@
 				<width>8-col</width>
 				<label>$INFO[MusicPlayer.Artist]</label>
 				<align>left</align>
-				<font>large</font>
+				<font>dialogTitle</font>
 			</control>
 
 			<control type="label">
@@ -64,7 +71,7 @@
 				<label>$INFO[MusicPlayer.TrackNumber,,.] $INFO[MusicPlayer.Title]</label>
 				<scroll>true</scroll>
 				<align>left</align>
-				<font>dialogTitle</font>
+				<font>large</font>
 			</control>
 			
 			<control type="label">
@@ -79,16 +86,16 @@
 			<control type="label">
 				<description>Player Times</description>
 				<posx>6-col</posx>
-				<posy>4-row</posy>
+				<posy>200</posy>
 				<width>8-col</width>
-				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-				<font>small</font>
+				<label>[B]$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ][/B]</label>
+				<font>smallStrong</font>
 			</control>
 
 			<control type="progress">
 				<description>Progressbar</description>
 				<posx>6-col</posx>
-				<posy>5-row</posy>
+				<posy>248</posy>
 				<width>8-col</width>
 				<height>21</height>
 				<info>Player.Progress</info>

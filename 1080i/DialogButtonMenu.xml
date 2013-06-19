@@ -33,13 +33,13 @@
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 
-				<itemlayout width="4-col" height="43">
+				<itemlayout width="4-col-gutter" height="43">
 
 					<control type="label">
-						<posx>125</posx>
+						<posx>233</posx>
 						<posy>0</posy>
-						<width>4-col</width>
-						<align>center</align>
+						<width>4-col-gutter</width>
+						<align>right</align>
 						<font>menuTitle</font>
 						<textcolor>black</textcolor>
 						<label>$INFO[ListItem.label]</label>
@@ -48,13 +48,13 @@
 
 				</itemlayout>
 
-				<focusedlayout width="4-col" height="43">
+				<focusedlayout width="4-col-gutter" height="43">
 
 					<control type="label">
-						<posx>125</posx>
+						<posx>246</posx>
 						<posy>0</posy>
-						<width>4-col</width>
-						<align>center</align>
+						<width>4-col-gutter</width>
+						<align>right</align>
 						<font>menuTitle</font>
 						<textcolor>black</textcolor>
 						<label>[ $INFO[ListItem.label] ]</label>

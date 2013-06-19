@@ -81,7 +81,9 @@
 			<aspectratio>stretch</aspectratio>
 		</control>
 				
-		<control type="group">				
+		<control type="group">
+			<include>kenBurnsey</include>				
+			
 			<control type="multiimage">
 				<posx>0</posx>
    				<posy>0</posy>
@@ -93,7 +95,6 @@
 				<randomize>true</randomize>
 				<aspectratio>stretch</aspectratio>
 				<colordiffuse>99ffffff</colordiffuse>
-				<include>kenBurnsey</include>	
 			</control>
 			
 			<control type="image">

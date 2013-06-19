@@ -74,7 +74,7 @@
 					<width>18-col</width>
 					<font>smallStrong</font>
 					<textcolor>white</textcolor>
-					<label>$INFO[ListItem.genre] $INFO[ListItem.year,• ,] $INFO[ListItem.director,• ,]</label>
+					<label>$INFO[ListItem.genre,, •] [B]$INFO[ListItem.year,,][/B] $INFO[ListItem.director,• ,]</label>
 					<scroll>false</scroll>
 				</control>
 				
@@ -116,16 +116,16 @@
 			<control type="group">
 				<visible>true</visible>
 			
-				<posx>col-13-begin</posx>
+				<posx>0</posx>
 				<posy>row-13-begin</posy>
 				
 				<!--animations-->
 				<animation effect="fade" start="0" end="100" delay="1200" time="300">WindowOpen</animation>
 			
 				<control type="image">
-					<posx>-72</posx>
+					<posx>0</posx>
 					<posy>-12</posy>
-					<width>10-col</width>
+					<width>fullscreenWidth</width>
 					<height>1-row</height>
 					<texture>colors/white.png</texture>
 					<colordiffuse>ffffffff</colordiffuse>
@@ -133,7 +133,7 @@
 				</control>
 				
 				<control type="list" id="8000">
-					<posx>0</posx>
+					<posx>col-4-begin</posx>
 					<posy>-10</posy>
 					<width>10-col</width>
 					<height>1-row</height>
@@ -143,9 +143,10 @@
 					<itemlayout width="3-col" height="43">
 
 						<control type="label">
-							<posx>14</posx>
+							<posx>73</posx>
 							<posy>0</posy>
 							<width>3-col</width>
+							<align>center</align>
 							<font>menuTitle</font>
 							<textcolor>black</textcolor>
 							<label>$INFO[ListItem.label]</label>
@@ -157,9 +158,10 @@
 					<focusedlayout width="3-col" height="43">
 
 						<control type="label">
-							<posx>1</posx>
+							<posx>73</posx>
 							<posy>0</posy>
 							<width>3-col</width>
+							<align>center</align>
 							<font>menuTitle</font>
 							<textcolor>black</textcolor>
 							<label>[ $INFO[ListItem.label] ]</label>
@@ -191,21 +193,18 @@
 			
 			<!--buttons-->
 			<control type="group">
-				<visible>false</visible>
+				<visible>true</visible>
 				
 				<control type="button" id="8">
 					<description>Play</description>
-					<label>Play Title</label>
 				</control>
 				
 				<control type="button" id="6">
 					<description>Refresh</description>
-					<label>Change Title</label>
 				</control>
 
 				<control type="button" id="10">
 					<description>Choose Art</description>
-					<label>Get Art</label>
 				</control>
 			</control>
 			
