@@ -264,9 +264,9 @@
 								
 								<control type="image">
 									<posx>0</posx>
-									<posy>196</posy>
+									<posy>219</posy>
 									<width>276</width>
-									<height>80</height>
+									<height>1-row</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>colors/black.png</texture>
 									<bordersize>0</bordersize>
@@ -275,22 +275,22 @@
 
 								<control type="label">
 									<posx>12</posx>
-									<posy>192</posy>
+									<posy>208</posy>
+									<width>252</width>
+									<font>smallStrong</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>-</shadowcolor>
+									<label>[B]$INFO[ListItem.Label][/B]</label>
+								</control>
+								
+								<control type="label">
+									<posx>12</posx>
+									<posy>232</posy>
 									<width>252</width>
 									<font>smallStrong</font>
 									<textcolor>white</textcolor>
 									<shadowcolor>-</shadowcolor>
 									<label>$INFO[ListItem.Label2]</label>
-								</control>
-								
-								<control type="label">
-									<posx>12</posx>
-									<posy>224</posy>
-									<width>252</width>
-									<font>itemTitle</font>
-									<textcolor>white</textcolor>
-									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Label]</label>
 								</control>
 
 							</itemlayout>
@@ -310,9 +310,9 @@
 								
 								<control type="image">
 									<posx>0</posx>
-									<posy>196</posy>
+									<posy>219</posy>
 									<width>276</width>
-									<height>80</height>
+									<height>1-row</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>colors/white.png</texture>
 									<bordersize>0</bordersize>
@@ -325,22 +325,22 @@
 
 								<control type="label">
 									<posx>12</posx>
-									<posy>192</posy>
+									<posy>208</posy>
+									<width>252</width>
+									<font>smallStrong</font>
+									<textcolor>black</textcolor>
+									<shadowcolor>-</shadowcolor>
+									<label>[B]$INFO[ListItem.Label][/B]</label>
+								</control>
+								
+								<control type="label">
+									<posx>12</posx>
+									<posy>232</posy>
 									<width>252</width>
 									<font>smallStrong</font>
 									<textcolor>black</textcolor>
 									<shadowcolor>-</shadowcolor>
 									<label>$INFO[ListItem.Label2]</label>
-								</control>
-								
-								<control type="label">
-									<posx>12</posx>
-									<posy>224</posy>
-									<width>252</width>
-									<font>itemTitle</font>
-									<textcolor>black</textcolor>
-									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Label]</label>
 								</control>
 							
 							</focusedlayout>
@@ -348,61 +348,61 @@
 							<content>
 								<item id="1">
 									<label>$INFO[Window(Home).Property(LatestAlbum.1.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.1.Artist)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestAlbum.1.Artist)] $INFO[Window(Home).Property(LatestAlbum.1.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.1.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.1.Path)])</onclick>
 								</item>
 								<item id="2">
 									<label>$INFO[Window(Home).Property(LatestAlbum.2.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.2.Artist)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestAlbum.2.Artist)] $INFO[Window(Home).Property(LatestAlbum.2.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.2.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.2.Path)])</onclick>
 								</item>
 								<item id="3">
 									<label>$INFO[Window(Home).Property(LatestAlbum.3.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.3.Artist)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestAlbum.3.Artist)] $INFO[Window(Home).Property(LatestAlbum.3.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.3.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.3.Path)])</onclick>
 								</item>
 								<item id="4">
 									<label>$INFO[Window(Home).Property(LatestAlbum.4.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.4.Artist)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestAlbum.4.Artist)] $INFO[Window(Home).Property(LatestAlbum.4.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.4.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.4.Path)])</onclick>
 								</item>
 								<item id="5">
 									<label>$INFO[Window(Home).Property(LatestAlbum.5.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.5.Artist)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestAlbum.5.Artist)] $INFO[Window(Home).Property(LatestAlbum.5.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.5.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.5.Path)])</onclick>
 								</item>
 								<item id="6">
 									<label>$INFO[Window(Home).Property(LatestAlbum.6.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.6.Artist)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestAlbum.6.Artist)] $INFO[Window(Home).Property(LatestAlbum.6.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.6.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.6.Path)])</onclick>
 								</item>
 								<item id="7">
 									<label>$INFO[Window(Home).Property(LatestAlbum.7.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.7.Artist)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestAlbum.7.Artist)] $INFO[Window(Home).Property(LatestAlbum.7.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.7.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.7.Path)])</onclick>
 								</item>
 								<item id="8">
 									<label>$INFO[Window(Home).Property(LatestAlbum.8.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.8.Artist)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestAlbum.8.Artist)] $INFO[Window(Home).Property(LatestAlbum.8.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.8.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.8.Path)])</onclick>
 								</item>
 								<item id="9">
 									<label>$INFO[Window(Home).Property(LatestAlbum.9.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.9.Artist)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestAlbum.9.Artist)] $INFO[Window(Home).Property(LatestAlbum.9.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.9.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.9.Path)])</onclick>
 								</item>
 								<item id="10">
 									<label>$INFO[Window(Home).Property(LatestAlbum.10.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestAlbum.10.Artist)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestAlbum.10.Artist)] $INFO[Window(Home).Property(LatestAlbum.10.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.10.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.10.Path)])</onclick>
 								</item>

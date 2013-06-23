@@ -27,7 +27,7 @@
 						<posy>0</posy>
 						<width>6-col</width>
 						<height>10-row</height>
-						<aspectratio align="left" aligny="top">scale</aspectratio>			
+						<aspectratio align="left" aligny="top">stretch</aspectratio>			
 						<texture fallback="colors/black.png">$INFO[Listitem.art(poster)]</texture>
 						<fadetime>200</fadetime>
 					</control>

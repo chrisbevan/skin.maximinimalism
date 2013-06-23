@@ -247,18 +247,18 @@
 						<control type="panel" id="9998">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>21-col</width>
+							<width>22-col</width>
 							<height>12-row</height>
 							<onleft>9000</onleft>
 
-							<itemlayout width="7-col" height="297">
+							<itemlayout width="387" height="4-row">
 
 								<control type="image">
 									<posx>0</posx>
 									<posy>0</posy>
-									<width>7-col-gutter</width>
-									<height>270</height>
-									<aspectratio>stretch</aspectratio>
+									<width>363</width>
+									<height>204</height>
+									<aspectratio>scale</aspectratio>
 									<texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
 									<bordertexture border="0">-</bordertexture>
 									<colordiffuse>ffFFFFFF</colordiffuse>
@@ -266,8 +266,8 @@
 								
 								<control type="image">
 									<posx>0</posx>
-									<posy>216</posy>
-									<width>7-col-gutter</width>
+									<posy>148</posy>
+									<width>363</width>
 									<height>1-row</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>colors/black.png</texture>
@@ -277,32 +277,42 @@
 
 								<control type="label">
 									<posx>12</posx>
-									<posy>216</posy>
-									<width>6-col</width>
-									<font>itemTitle</font>
+									<posy>138</posy>
+									<width>4-col</width>
+									<font>smallStrong</font>
 									<textcolor>white</textcolor>
 									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
+									<label>[B]$INFO[ListItem.Label][/B]</label>
+								</control>
+								
+								<control type="label">
+									<posx>12</posx>
+									<posy>162</posy>
+									<width>4-col</width>
+									<font>smallStrong</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>-</shadowcolor>
+									<label>$INFO[ListItem.Label2]</label>
 								</control>
 
 							</itemlayout>
 
-							<focusedlayout width="7-col" height="297">
+							<focusedlayout width="387" height="4-row">
 
 								<control type="image">
 									<posx>0</posx>
 									<posy>0</posy>
-									<width>7-col-gutter</width>
-									<height>270</height>
-									<aspectratio>stretch</aspectratio>
+									<width>363</width>
+									<height>204</height>
+									<aspectratio>scale</aspectratio>
 									<texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
 									<colordiffuse>ffFFFFFF</colordiffuse>
 								</control>
 								
 								<control type="image">
 									<posx>0</posx>
-									<posy>216</posy>
-									<width>7-col-gutter</width>
+									<posy>148</posy>
+									<width>363</width>
 									<height>1-row</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>colors/white.png</texture>
@@ -316,12 +326,22 @@
 
 								<control type="label">
 									<posx>12</posx>
-									<posy>216</posy>
-									<width>6-col</width>
-									<font>itemTitle</font>
+									<posy>138</posy>
+									<width>4-col</width>
+									<font>smallStrong</font>
 									<textcolor>black</textcolor>
 									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
+									<label>[B]$INFO[ListItem.Label][/B]</label>
+								</control>
+								
+								<control type="label">
+									<posx>12</posx>
+									<posy>162</posy>
+									<width>4-col</width>
+									<font>smallStrong</font>
+									<textcolor>black</textcolor>
+									<shadowcolor>-</shadowcolor>
+									<label>$INFO[ListItem.Label2]</label>
 								</control>
 								
 							</focusedlayout>
@@ -329,40 +349,79 @@
 							<content>
 								<item id="1">
 									<label>$INFO[Window(Home).Property(LatestMovie.1.Title)]</label>
+									<label2>$INFO[Window(Home).Property(LatestMovie.1.Year),, •] $INFO[Window(Home).Property(LatestMovie.1.Runningtime),, mins]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestMovie.1.fanart)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.1.Path)])</onclick>
 								</item>
 								<item id="2">
 									<label>$INFO[Window(Home).Property(LatestMovie.2.Title)]</label>
+									<label2>$INFO[Window(Home).Property(LatestMovie.2.Year),, •] $INFO[Window(Home).Property(LatestMovie.2.Runningtime),, mins]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestMovie.2.fanart)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.2.Path)])</onclick>
 								</item>
 								<item id="3">
 									<label>$INFO[Window(Home).Property(LatestMovie.3.Title)]</label>
+									<label2>$INFO[Window(Home).Property(LatestMovie.3.Year),, •] $INFO[Window(Home).Property(LatestMovie.3.Runningtime),, mins]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestMovie.3.fanart)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.3.Path)])</onclick>
 								</item>
+								<item id="4">
+									<label>$INFO[Window(Home).Property(LatestMovie.4.Title)]</label>
+									<label2>$INFO[Window(Home).Property(LatestMovie.4.Year),, •] $INFO[Window(Home).Property(LatestMovie.4.Runningtime),, mins]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestMovie.4.fanart)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.4.Path)])</onclick>
+								</item>
+								<item id="5">
+									<label>$INFO[Window(Home).Property(LatestMovie.5.Title)]</label>
+									<label2>$INFO[Window(Home).Property(LatestMovie.5.Year),, •] $INFO[Window(Home).Property(LatestMovie.5.Runningtime),, mins]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestMovie.5.fanart)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.5.Path)])</onclick>
+								</item>
+								<item id="6">
+									<label>$INFO[Window(Home).Property(LatestMovie.6.Title)]</label>
+									<label2>$INFO[Window(Home).Property(LatestMovie.6.Year),, •] $INFO[Window(Home).Property(LatestMovie.6.Runningtime),, mins]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestMovie.6.fanart)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.6.Path)])</onclick>
+								</item>
 								
 								<!--tv shows-->
-								<item id="9">
+								<item id="10">
 									<label>$INFO[Window(Home).Property(LatestEpisode.1.showTitle)]</label>
-									<label2>$INFO[Window(Home).Property(LatestEpisode.1.EpisodeNo)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.1.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.1.EpisodeNumber),Episode ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.1.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
 								</item>
-								<item id="10">
+								<item id="11">
 									<label>$INFO[Window(Home).Property(LatestEpisode.2.showTitle)]</label>
-									<label2>$INFO[Window(Home).Property(LatestEpisode.2.EpisodeNo)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.2.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.2.EpisodeNumber),Episode ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.2.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
 								</item>
-								<item id="11">
+								<item id="12">
 									<label>$INFO[Window(Home).Property(LatestEpisode.3.showTitle)]</label>
-									<label2>$INFO[Window(Home).Property(LatestEpisode.3.EpisodeNo)]</label2>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.3.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.3.EpisodeNumber),Episode ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.3.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
 								</item>
-															
+								<item id="13">
+									<label>$INFO[Window(Home).Property(LatestEpisode.4.showTitle)]</label>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.4.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.4.EpisodeNumber),Episode ,]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestEpisode.4.thumb)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.4.Path)])</onclick>
+								</item>
+								<item id="14">
+									<label>$INFO[Window(Home).Property(LatestEpisode.5.showTitle)]</label>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.5.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.5.EpisodeNumber),Episode ,]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestEpisode.5.thumb)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
+								</item>
+								<item id="15">
+									<label>$INFO[Window(Home).Property(LatestEpisode.6.showTitle)]</label>
+									<label2>$INFO[Window(Home).Property(LatestEpisode.6.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.6.EpisodeNumber),Episode ,]</label2>
+									<thumb>$INFO[Window(Home).Property(LatestEpisode.6.thumb)]</thumb>
+									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.6.Path)])</onclick>
+								</item>
+																															
 							</content>
 
 						</control>
