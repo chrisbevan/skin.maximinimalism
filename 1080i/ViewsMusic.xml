@@ -251,17 +251,17 @@
 						<posx>12</posx>
 						<posy>208</posy>
 						<width>252</width>
-						<font>smallStrong</font>
+						<font>smallStrong2</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
-						<label>[B]$INFO[ListItem.Label2][/B]</label>
+						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					
 					<control type="label">
 						<posx>12</posx>
 						<posy>232</posy>
 						<width>252</width>
-						<font>smallStrong</font>
+						<font>smallMedium</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Label] $INFO[ListItem.Year,• ,]</label>
@@ -297,17 +297,17 @@
 						<posx>12</posx>
 						<posy>208</posy>
 						<width>252</width>
-						<font>smallStrong</font>
+						<font>smallStrong2</font>
 						<textcolor>black</textcolor>
 						<shadowcolor>-</shadowcolor>
-						<label>[B]$INFO[ListItem.Label2][/B]</label>
+						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					
 					<control type="label">
 						<posx>12</posx>
 						<posy>232</posy>
 						<width>252</width>
-						<font>smallStrong</font>
+						<font>smallMedium</font>
 						<textcolor>black</textcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Label] $INFO[ListItem.Year,• ,]</label>
