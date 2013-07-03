@@ -1,0 +1,31 @@
+Version 1.4.8 Fix a handling issue for Frodo
+Version 1.4.7 Added messaging service
+Version 1.4.6 Sorted issue with Insportive and removed DVD Player dependancy for RPi users
+Version 1.4.5 Fixed error with Eden.
+Version 1.4.3 Fixed error being caused by TMI and finished auto-update.
+Version 1.4.2 Fixed error with Channel Thumbnails and added synopsis data.
+Version 1.4.1 Added "Next" data and set up some of the Media Lables like Genre. Added version checker that will alert of new versions. Added the ability to "Switch Off" channels so they no longer show in the channel list.
+
+Version 1.3.6 Updated Video Playback to work with updated video streams on TVC, also added quality selection.
+Version 1.3.4 Fixed folder creation bug (I hope) and added some error checking.
+Version 1.3.3 Debug version.
+Version 1.3.2 Fixed Listings error where off line channels were causing issues with the channel next to them.
+Version 1.3.1 Major rewrite to simplify client code by moving to server-side code.
+
+Version 1.2.8 Inital Dharma compatable release.
+
+Version 1.2.1 Bug fixes and tweaks ready for full release.
+Version 1.2.0 New build with API interface for playback of streams within XBMC.
+
+Version 1.1.4 Move Plugin to new host 'plugins.tvcatchup.com/~xbmc'
+Version 1.1.3 TVC Logo on all Dialogues added.
+Version 1.1.2 Zip archive handling and Remove function added.
+Version 1.1.1 File list added.
+Version 1.1.0 New Split Library Format with automatic file download system.
+
+Version 1.0.5 Added launch code for Mac,
+Version 1.0.4 Added Login through Plugin Settings and Updated channel listings.
+Version 1.0.3 Fixed links due to page changes.
+Version 1.0.2 Adjusted the Windows URL former to be more like the Linux one.
+Version 1.0.1 Fixed some bugs relating to running the plugin under Linux.
+Version 1.0.0 Initial Release.

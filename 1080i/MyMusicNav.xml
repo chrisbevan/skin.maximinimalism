@@ -84,12 +84,14 @@
 							</item>
 
 							<item id="2">
+								<visible>Library.HasContent(Music)</visible>
 								<label>133</label>
 								<label2></label2>
 								<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 							<item id="3">
+								<visible>Library.HasContent(Music)</visible>
 								<label>132</label>
 								<label2></label2>
 								<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
@@ -97,6 +99,7 @@
 							</item>
 
 							<item id="4">
+								<visible>Library.HasContent(Music)</visible>
 								<label>135</label>
 								<label2></label2>
 								<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
@@ -241,8 +244,21 @@
 						<posy>183</posy>
 						<onleft>9000</onleft>
 						
+						<!--no recent items-->
+						<control type="label">
+							<visible>isEmpty(Window(Home).Property(LatestAlbum.1.Title))</visible>
+							<posx>1-col</posx>
+							<posy>4-row</posy>
+							<width>21-col</width>
+							<font>veryLarge</font>
+							<textcolor>22FFFFFF</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>31007</label>
+						</control>
+						
 						<!--content-->	
 						<control type="panel" id="9998">
+							<visible>!isEmpty(Window(Home).Property(LatestAlbum.1.Title))</visible>
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>21-col</width>
@@ -353,54 +369,63 @@
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.1.Path)])</onclick>
 								</item>
 								<item id="2">
+									<visible>!isempty(Window(Home).Property(LatestAlbum.2.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestAlbum.2.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestAlbum.2.Artist)] $INFO[Window(Home).Property(LatestAlbum.2.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.2.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.2.Path)])</onclick>
 								</item>
 								<item id="3">
+									<visible>!isempty(Window(Home).Property(LatestAlbum.3.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestAlbum.3.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestAlbum.3.Artist)] $INFO[Window(Home).Property(LatestAlbum.3.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.3.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.3.Path)])</onclick>
 								</item>
 								<item id="4">
+									<visible>!isempty(Window(Home).Property(LatestAlbum.4.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestAlbum.4.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestAlbum.4.Artist)] $INFO[Window(Home).Property(LatestAlbum.4.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.4.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.4.Path)])</onclick>
 								</item>
 								<item id="5">
+									<visible>!isempty(Window(Home).Property(LatestAlbum.5.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestAlbum.5.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestAlbum.5.Artist)] $INFO[Window(Home).Property(LatestAlbum.5.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.5.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.5.Path)])</onclick>
 								</item>
 								<item id="6">
+									<visible>!isempty(Window(Home).Property(LatestAlbum.6.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestAlbum.6.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestAlbum.6.Artist)] $INFO[Window(Home).Property(LatestAlbum.6.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.6.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.6.Path)])</onclick>
 								</item>
 								<item id="7">
+									<visible>!isempty(Window(Home).Property(LatestAlbum.7.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestAlbum.7.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestAlbum.7.Artist)] $INFO[Window(Home).Property(LatestAlbum.7.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.7.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.7.Path)])</onclick>
 								</item>
 								<item id="8">
+									<visible>!isempty(Window(Home).Property(LatestAlbum.8.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestAlbum.8.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestAlbum.8.Artist)] $INFO[Window(Home).Property(LatestAlbum.8.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.8.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.8.Path)])</onclick>
 								</item>
 								<item id="9">
+									<visible>!isempty(Window(Home).Property(LatestAlbum.9.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestAlbum.9.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestAlbum.9.Artist)] $INFO[Window(Home).Property(LatestAlbum.9.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.9.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.9.Path)])</onclick>
 								</item>
 								<item id="10">
+									<visible>!isempty(Window(Home).Property(LatestAlbum.10.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestAlbum.10.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestAlbum.10.Artist)] $INFO[Window(Home).Property(LatestAlbum.10.Year),• ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestAlbum.10.thumb)]</thumb>

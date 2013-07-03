@@ -1,0 +1,254 @@
+1. PREAMBLE
+
+This website is open to eligible members of the public, to enable them to watch live television using the internet.
+
+Membership is free.
+
+Use of this website is perfectly lawful provided that members abide by the terms of service, the full details of which are shown below.
+
+By using this website, members agree to be bound by these terms and conditions detailed hereunder.
+2. DEFINITIONS
+
+"Accessories" shall mean any additional software application that modifies the use of the downloadable Assistant that facilitates or makes available additional functionality which may be provided by this website or by independent third parties over whom this website has no control.
+
+"Assistant" shall mean any software application provided at time of signup or subsequently, which can be downloaded from the Site, which enables registered Users to use this website for additional purposes to be specified at the time of launching such facilities.
+
+"Content" shall mean all data that is provided directly or indirectly to the user, including but not limited to images, sounds, text, multimedia applications such as e.g. video and audio, software and any other applications including all software used within the site itself and any updates, releases or developments thereof.
+
+"EULA" shall mean End User License Agreement, as amended from time to time, whether issued by this site at the present or any subsequent time or by any affiliate or content provider.
+
+"ISP" shall mean internet, telecommunications, cable or other network service providers, as used by User in order to access the Internet and use the Services provided by this site.
+
+"Licence" means any licence, authority or permit lawfully held by any user, or otherwise required to be held by any User, for the reception of television signals.
+
+"Recording" this website does not record or copy any material, neither is it permitted to do so, although members may at some stage be provided access to utilities that may allow them to record content in their domestic premises, for personal and private use. Such a facility is permitted under the "home copying exemption" detailed in Section 70 of the Copyright Designs and Patents Act 1988
+
+"Residence" means the territory/country in which the User resides and in which the User is situated at the time of accessing this website.
+
+"Services" shall mean (a) the Site and/or the Assistant an/or any Accessories and (b) the services provided through the Site and/or the Assistant an/or any Accessories and (c) all Content made available through the Site and/or the Assistant an/or any Accessories r, as amended, expanded, modified or reduced from time to time.
+
+"Streaming" means access to live content simultaneous to it is being broadcast.
+
+"Site" shall mean TVCatchup.com, any other webpage therein or any other website or webpage determined by TVCatchup.com. "Territory" is the country or countries in which the User is lawfully entitled to use the Services by virtue of Residence or Licence.
+
+"Terms of Service" shall mean General Terms and Conditions of Use, as amended from time to time and as detailed below.
+
+"TVCatchup" shall mean TVCatchup, TVCatchup.com and all associated and affiliated websites, domains and businesses owned, managed and controlled by TVCatchup Ltd, 81 Oxford Street, London, W1D 2EU or their successors, partners, agents, consultants, staff, advisors, suppliers, associates, affiliates or any other party involved in the site or the business relating to the site.
+
+"Member" is a private person of legal age and/or with sufficient legal capacity to conclude agreements, who has read, understood and accepted the EULA and Terms of Service and who will use the Services for private use only in the area in which the broadcast being watched is intended to be viewed, subject to the EULA and Terms of Service.
+
+"Member ID" are identifiers specific to the User including but not limited to User's e-mail address, User names, passwords etc. that are required to access certain parts of the Site and/or to use the Services. TVCatchup may amend, modify, expand or reduce the User ID conditions at any time.
+3. SCOPE OF SERVICE AND ACCEPTANCE OF TERMS
+
+TVCatchup provides an online TV streaming service to users for personal, private and domestic use only, to qualified members who may only access the website from the area from within which the broadcast was intended to be viewed and strictly subject to the Terms and Conditions set out within.
+
+By indicating their acceptance of the EULA and Terms of Service, members confirm that they are of legal age and meet all legal conditions to commit themselves to these Terms of Service, that they have read, understood and agree to these Terms of Service, that they will abide by such terms and will indemnify TVCatchup in respect of any failure on their part for failure to do so.
+
+These Terms of Service may be modified, extended or replaced at any time, and notice will be given of such changes in the forum at such times. It is the member's responsibility to make themselves aware of such changes by visiting the forums regularly.
+4. USER'S OBLIGATIONS
+
+4.1 Membership application
+
+Users are required to provide accurate and complete information upon application for membership of this website, and are limited to one account per member.
+
+4.2 User identification
+
+Members agree to keep their membership details confidential and to only use his or her personal Member ID when logging in and using the Services and not communicate this to others.
+
+4.3 Compliance with legal and other restrictions
+
+Members are solely responsible for any and all activities carried out using their computer, including the need to take adequate precautions to safeguard against trojans, spyware, malware, viruses, and other threats to their security and that of any network to which they are connected.
+
+Members are responsible the use of their computers and access to the services provided, including access by minors whether under their control or otherwise, or those of a particular disposition with regard to access to broadcast content
+
+Members undertake to refrain from any act or omission that would be contrary to the laws of the country in which they are accessing this website.
+
+As use of this website is free to members, reasonable fair use conditions may from time to time be applied to those using the service unreasonably or in such a way as to compromise the enjoyment of the site by others.
+
+It is the sole responsibility of each individual member to abide by these terms and any other contractual provisions or general terms of his or her ISP.
+
+Members will not engage in any illegal, unacceptable or unauthorized use or access to third party property such as e.g. computers, hardware, networks, software and data and each User will refrain from any action which damages or could damage, compromise or destroy third party property such as e.g. computers, hardware, networks, software or data or which circumvents, interferes with or otherwise hinders or hampers the functionality or the use of the Services.
+
+It is the member's sole responsibility to establish whether the use they put to the service provided require authorization or registration with any third party, whether any fees or licences for the receipt of TV programs or other broadcasting formats apply or whether any copyright royalties are due. Each User acknowledges and agrees that he or she will diligently and expediently comply with such obligations at all times, and continue to do so for so long as they shall continue to use the Service
+
+Members are required to respect and uphold all rights and intellectual property of those whose content is or may be made available using the services provided, which are provided for personal, private and domestic use of the individual member only and provided he or she is situated within the area for which the broadcast concerned is intended.
+
+4.4 Private and Personal use only
+
+Members shall only use the Services for his/her own private, personal and domestic purposes. Members shall in particular not make the Services available and accessible to third parties, e.g. to an open group of people by exposure or display of the Services in public areas, including but not limited to cinemas, theatres, exhibitions, show rooms, hotels, bars, clubs, pubs, restaurants, or other public spaces. The receipt or further transmission of content and the use of the services in such areas is illegal and violates third party rights including but not limited to copyrights and public performance licences.
+
+Members acknowledge that the Services may only be used if the legal and technical conditions are fulfilled. It is each members; sole responsibility to make sure that his or her computer, IT systems, software and components fulfill the system requirements in order to be able to use the Services and that the contract between the User and his or her ISP permit the use of the Services, in particular regarding bandwidth use.
+
+Members are solely responsible for the costs of accessing/using the services provided.
+
+Members may not link to URLs, use i-frames (or "in page viewers"), access content unless through the browser interface or an approved application or otherwise misue the service.
+
+4.5 Respect for copy-righted material
+
+Members acknowledges that all Content made available in relation with the services provided by this site are subject to copyright and are for private, personal, domestic and instantaneous viewing at the time of receipt. Members may not temporarily or permanently store or copy any of the Content on its hard disk unless in accordance with Section 70 of the Copyright Designs and Patents Act ("the personal timeshifting exception") using the provided facilities, or on any other data carriers nor may User otherwise make the services and content available to third parties, e.g. by modifying, circumventing or removing any Digital Rights Management (DRM) functions and procedures, by selling, leasing, sublicensing, distributing, broadcasting, transmitting, modifying, translating or otherwise amending the services including conversions of content into other formats etc.
+
+Members may not decompile, reverse engineer, disassemble or otherwise intend to make any software used in combination with the Services or available at any time on this website, including the source code, available to third parties, unless where categorically permitted by other agreements.
+
+Members may not provide links to this site, nor use this site either embedded within another site ("I-Frames") neither may they use or distribute URLS to allow others to do so.
+
+Members further acknowledge and agrees that also other third party data published on the TVCatchup website or otherwise made available in combination with the Services may also be copyright protected or otherwise protected by intellectual property rights and members undertake that he or she will not copy or otherwise use such data without the rights holder's consent or otherwise complying with the relevant law (e.g. Section 70 of the Copyright, Designs and Patents Act)
+
+4.6 Legal restrictions on use of the services
+
+The use of services and in particular the content accessed may be restricted to persons and audiences who meet certain requirements such as being of legal age as provided by local laws etc. Each member is individually and solely responsible for the use he or she may make of the site, for their choices of viewing and for the suitability of that content for viewing.
+
+In particular, members shall pay particular regard to the protection of minors under their supervision, and shall not permit unsupervised access and take all reasonable steps to protect minors and those with any vulnerability or susceptibility from viewing content unsuited to them.
+
+TVCatchup accepts no responsibility or liability for any action, neglect, omission or oversight of the member or of any third party in this respect.
+
+4.7 Territorial limitations
+
+User undertakes only to use the Services in the country in which he or she Resides and in the area in which the broadcast was intended to be viewed. Members acknowledge that the availability of certain TV channels may vary if using the services in a different country to that of the country of their personal residence.
+
+4.8 Duty to protect User's computer & networks
+
+Members acknowledge that the internet is an unregulated medium, resulting in a risk to all computers attached or connected to it. It is the members responsibility to protect his or her computer and associated IT systems, equipment on which the Services are used and his or her software against unauthorized access, bugs, viruses, worms, spyware, adware, malware, trojan horses etc. User has to refrain from any and all activities that may endanger the operability and security of the Services and/or of networks, especially where such are the property of or are used by others (which should always be with their consent).
+
+4.9 Members duty to advise
+
+Members undertake to immediately inform TVCatchup of any defects, disruptions or non-availability of Services which it gains knowledge of and, in particular, of any use of the services that are illegal or in breach of the EULA and/or the Terms of Service on the part of the member (e.g. hackers, abuse of site terms and conditions, linking, etc.).
+
+4.10 User generated content
+
+Where user generated content may be permitted and reproduced or accessible via this website, the originating user is held exclusively responsible for the contents of such, whether used on the website, in forums, in articles, blogs or reports. TVCatchup does not accept responsibility for such content, whether written, visual or otherwise, and does not moderate, view, regulate or control such contributions save in response to a specific complaint. The user is therefore held responsible for such content, including copyright in any original work, intellectual property, third party rights or whether the contents of such material are inflammatory, racist, promote unlawful or indecent activity or are discriminatory with regard to age, race, gender, colour, religion, sexual orientation, political view or could in any way be construed as offensive by any party.
+
+4.11 Obligation to hold TVCatchup harmless
+
+Members shall hold TVCatchup, its parent companies, affiliates, subsidiaries, officers, directors, employees, agents, suppliers, staff, admin, moderators or auxiliary persons harmless from any claims of third parties filed against any or all of the aforementioned parties, arising out of the violation of any of the terms of service and actions of users.
+5. COSTS FOR THE USE OF THE SERVICES
+
+5.1 Cost of services
+
+The use of the Services is completely free of charge for the User.
+
+TVCatchup reserves the right to modify or alter its revenue model at any time.
+
+5.2 Internet and other usage costs
+
+Each user is responsible for their own costs of use including, but not limited to, computing resources, network costs, internet access, ISP charges, and those of any telecommunications intermediary involved in the process of making services available.
+6. INTELLECTUAL PROPERTY
+
+6.1 TVCatchup intellectual property
+
+TVCatchup is pending registration as a trademark in various countries and some or all of the technology is subject to Patent Application in the UK and elsewhere. Any use requires the previous written consent of TVCatchup
+
+The software developed by TVCatchup and all data and information displayed on the website or any material so provided is copyright protected or otherwise protected by intellectual property rights and may not be used without the consent of TVCatchup
+
+6.2 User copyrights
+
+TVCatchup may operate forums, chat rooms, blogs and the like on its Site. TVCatchup does not claim ownership of such content provided by the Members. Notwithstanding, by contributing to such formats, members confirm that he or she are the owners of such content and that it complies with all applicable legal provisions and the Terms of Service.
+
+Members grant TVCatchup a world-wide, non-exclusive, sub licensable, transferable and royalty-free license to use, copy, distribute, transmit, process, modify, publicly display and perform or otherwise use such content in any media format, inter alia for promotional or advertisement purposes or for the improvement and further development of the Services. Members acknowledge and agree that his or her content may have to be modified in order to conform and adapt to technical or other requirements.
+
+Further, by posting any content on the site, or submitting any content to the site, members acknowledge and agree that any of the content provided is not confidential and that TVCatchup may use such content for the afore mentioned purposes without entitlement of compensation to members or liability of TVCatchup. This provision does not apply to personal information which is subject to the data protection provisions as established in these Terms of Service, except to the extent members themselves make such personal information publicly available to third parties by way of the use of services, the site or otherwise.
+
+6.3 Content Copyrights
+
+Nothing shown, contained or referred to within or on this site shall be deemed to infer any claim to ownership of any copyrights or intellectual property in any of the content displayed or available to members.
+
+All rights, copyrights and intellectual property are owned by their respective broadcasters and/or producers, and such ownership of all intellectual property belonging to others is duly acknowledged.
+
+Any marks, logos, get-ups or brand identifiers are used solely to identify the channels carried by TVCatchup.
+7. ADVERTISING
+
+7.1 Advertisements in combination with the content
+
+When using the services, advertisements may be visible and audible on the TV channels displayed. User acknowledges and accepts that TVCatchup is neither responsible nor liable for the content of such advertisements nor for the compliance of such advertisement with applicable laws.
+
+7.2 Channel switch ads and other advertisement
+
+Before tuning into each TV channel, advertisement may be visible on members' screen for a certain period of time. TVCatchup may also use other means of advertisement such as banners, links, interactive and virtual advertisement, split screens etc. Members agree to being exposed to advertisements in general and targeted advertisements in particular.
+
+Users acknowledge and agrees that TVCatchup is neither responsible nor liable for the content of such advertisement nor for the compliance with applicable laws.
+8. DATA PROTECTION
+
+User is aware that the use of the internet can never be 100% secure and that there are certain inherent risks for the protection of personal data. TVCatchup shall exercise reasonable diligence to protect personal data but it cannot guarantee or warrant that data provided by the User to TVCatchup is safe and protected from unauthorized third party access and no liability is accepted in this respect.
+
+When subscribing to or using the services, certain personal data may be collected and processed in accordance with established European standards of data protection. Collected personal data includes or may include in the future, name and address, age, gender, income, education, hobbies and preferences and IP address.
+
+Members acknowledge and agree that TVCatchup, by way of setting cookies, may collect data on usage of the Services by User such as IP address, TV channels and advertisements viewed, duration of a session and page views on the TVCatchup website. Such data is not necessarily retained, neither is it necessarily retained within the country in which the individual member resides.
+
+By way of simplified explanation, cookies are small packages of data stored on User's computer and memorized by the member's browser. Such Cookies usually take the form of a short line of text. Cookies allow faster navigation on websites, allow a personalized access of User in accordance with preferences and needs and prevent misuse of TVCatchup website. Members may at all times erase cookies from their computer by using the respective functions of the browser. Members acknowledge and accept that the removal of cookies may have an impact on the performance of the services. Notwithstanding the disabling of the cookies, members' may remain traceable through use of their individual membership details (such as username and password).
+
+By subscribing to the services members acknowledge and agree that the aforementioned personal data is collected and processed for general information purposes, for marketing purposes of TVCatchup, its parent companies, affiliates and subsidiaries and for the improvement of services (e.g. for the improvement of services which conform to each member's preferences and needs and for the customization of targeted ad campaigns).
+
+TVCatchup is entitled to transfer such data in an anonymous format to its parent companies, affiliates, subsidiaries and to third parties for market research purposes and for measuring the usage of the Services and of the advertisements displayed (channel switch ads, banners, links etc.) and the page views generated on the TVCatchup website. Members acknowledge and confirm that for the purposes described above TVCatchup may transfer and export the data to parties which are located in foreign countries even if such country does not offer the same level of data protection as that in which the member may be resident. Additionally, members acknowledge and confirm that TVCatchup may make such personal data available to state authorities in the event of illegal activities, violations of the EULA and/or the Terms of Service or in case public security is at risk. Such personal data is stored by TVCatchup in accordance with and for the duration established in the provisions of data protection provisions established within the EU and it may be deleted by TVCatchup in accordance with such provisions, subject to compulsory legal provisions or orders from national authorities such as courts requiring TVCatchup to store and maintain such personal data at the disposal of the authorities.
+
+Members may at all times request access to the personal data collected and if inaccurate they may request that such collected personal data is corrected, that the collection of personal data is blocked or that the collected personal data is erased, subject to legal provisions or orders from state authorities such as courts requiring TVCatchup to store and maintain such personal data at the disposal of the authorities.
+
+The above notwithstanding, nothing contained within these terms and conditions shall be construed as indication or confirmation that any personally material, data or record is or may be kept that may or could personally identify any specific user, their location, or any aspect of their activity using their membership account with this site.
+9. DISCLAIMER REGARDING REPRESENTATIONS AND WARRANTIES
+
+Members acknowledge and confirm and the use of the services is at the member's sole discretion and risk and that they employ suitable and up to date virus checking software
+
+9.1 Disclaimer regarding the right and title to the services provided
+
+TVCatchup does not represent, warrant or claim, whether expressly or implied that it has any or all right and title to the services or that any specific service that is or may be provided tdo not necessarily violate third party rights.
+
+9.2 Disclaimer regarding the quality of the services provided
+
+The Services including the software provided by TVCatchup or by suppliers authorized by TVCatchup or made available by third parties is provided "as is". TVCatchup makes no express, implied or statutory representations, warranties or claims with regard to the quality, availability or performance of the Services or lawfulness as to use.
+
+In particular, but not limited to the following examples, TVCatchup does not represent, warrant or claim that the Services are up to date, merchantable, state of the art, accurate, legal, secure, reliable and free of defects, errors, bugs, spam, viruses, worms, Trojan horses, spyware, adware, malware, unauthorized third party access (e.g. hacking) or that they are appropriate for the purposes of User. TVCatchup does not represent, warrant or claim that any defects, errors etc. or any other disadvantages of the Services will be corrected. Further, TVCatchup does neither represent, warrant nor claim the continuous and uninterrupted accessibility and availability of the services, neither the timely provision of the services nor the error-free transmission of both services and content without loss of data packages etc.
+
+9.3 Disclaimer regarding content
+
+TVCatchup does not represent, warrant or claim, whether expressly or implied that the content or other third party content provided via the services such as TV programs, advertisement etc. is accurate, complete, factual legal and that it does not infringe any third party rights. TVCatchup does not warrant or assume responsibility for any product, application or service advertised or offered by a third party in combination with the use of the services or displayed on the site or otherwise made available for access.
+
+TVCatchup is not liable for any violation of legal provisions or for damages of third party rights which result from the misuse of the member's personal details provided for the purpose of login.
+10. LIMITATION OF LIABILITY
+
+10.1 Waiver
+
+TVCATCHUP REFUTES ANY LIABILITY IN CONNECTION WITH THE SERVICES TO THE EXTENT LEGALLY PERMISSIBLE. LIABILITY FOR INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION ANY LOSS OF DATA, SERVICE INTERRUPTION, COMPUTER OR NETWORK FAILURE, LOSS OF PROFITS, GOODWILL OR OTHER NON MATERIAL DAMAGES) ARISING OUT OF THE USE OF THE SERVICE, FOR NEGLIGENCE, FOR AUXILIARY PERSONS AND FORCE MAJEURE IS FULLY WAIVED.
+
+IN NO EVENT SHALL TVCATCHUP, ITS AFFILIATES, PARENT COMPANIES AND THEIR AFFILIATES, ITS SUBSIDIARIES, OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, SUPPLIERS OR AUXILIARY PERSONS BE LIABLE FOR ANY OF THE AFOREMENTIONED EVENTS OR FOR THE INABILITY TO USE THE SERVICE, INCLUDING ANY DAMAGES RESULTING FROM THE USE OF THE SERVICE, EVEN IF TVCATCHUP HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. FURTHER, TVCATCHUP SHALL IN NO EVENT BE LIABLE FOR ANY DAMAGES ARISING FROM THE UNLAWFUL USE OF THE SERVICE OR FROM USE WHICH IS NON-COMPLIANT WITH THE EULA AND/OR THE TERMS OF SERVICE
+
+TVCATCHUP SHALL NOT BE LIABLE FOR ANY ACTIONS, NEGLECTS OR OMMISSIONS OF THE USER WHICH ARE CONTRARY TO THE APPLICABLE LAWS, THE EULA, TERMS OF SERVICE AND ANY OTHER APPLICABLE PROVISIONS OR FOR ANY USE OUTSIDE OF THE TERRITORY.
+
+TVCATCHUP SHALL NOT BE LIABLE FOR ANY CONTENT AS DEFINED ABOVE, FOR ANY ADVERTISEMENTS OR FOR ANY THIRD PARTY CONTENT TRANSMITTED BY WAY OF THE SERVICES OR OTHERWISE MADE AVAILABLE ON ITS WEBSITE ETC.
+
+THE RIGHT OF USER TO SEEK RELIEF OR REMEDY WITH REGARD TO THE SERVICES IS LIMITED TO UNINSTALLING ANY DOWNLOADED AND TO CEASING THE USE OF THE SERVICE. NOTWITHSTANDING THE ABOVE, TVCATCHUP MAY CHOOSE AT ITS OWN AND ABSOLUTE DISCRETION, TO PROVIDE USER WITH A SERVICES THAT IS FREE FROM DEFECTS.
+
+10.2 Prescription
+
+Any claims in respect of TVCatchup must be notified at the time of such claim allegedly arising, or as soon as reasonably practicable thereafter, in writing, addressed in the first instance by email to the contact details provided in the "Contact Us" section of this website.
+11. TERM OF USE OF SERVICES AND CESSATION OF USE
+
+11.1 Duration
+
+The right to use the Services is granted as from the date on which member accepts the Terms of Service and first accesses the website. Such right is granted for an unlimited period of time, subject to the compliance of applicable law and the EULA and/ or the Terms of Service by each member.
+
+11.2 Cessation
+
+Members may cease the use of the Service at all times, in which case they are required to permanently remove any software they may have downloaded for use in combination with any of the services provided.
+
+TVCatchup may at any time discontinue the provision of the Services or of part of it without having to notify members, without having to give any reason for the cessation of the Services to members and without giving right to any claim for compensation to members. Upon notice of cessation by TVCatchup, members must immediately cease all use of the Services and completely erase all copies of any relevant software in User's possession or control.
+
+TVCatchup will not be liable for any damages caused by cessation of the Services.
+12. GENERAL PROVISIONS
+
+12.1 Non Transferability
+
+Members may not assign or transfer any rights or obligations arising out of these Terms of Service to any third party. TVCatchup may assign any rights and obligations arising out of these terms of service including the provision of certain or all services or parts of it without the consent of the members concerned.
+
+12.2 Modifications, alterations and amendments
+
+TVCatchup reserves the right to modify and to amend these terms of service at all times and at its sole discretion without having to notify members of any such modifications or amendments. The actual and legally binding version of the terms of service is published on the Site and is valid as of the date of its publication. It is the member's sole responsibility to consult the Site from time to time, to take notice of any amendments and to abide by such amendments.
+
+12.3 Severability
+
+Should any provision of these terms of service be deemed invalid, void or unenforceable all other aspects of the terms of service shall remain in force. In such event the invalid, void or unenforceable provision shall be replaced by a valid or enforceable provision which best reflects the commercial purpose of the invalid, void or unenforceable provision. The same shall apply in the event of a contractual omission.
+
+12.4 Language
+
+The original version of these Terms of Service has been drafted in English. In the event of inconsistency or discrepancy between different language versions, the English version shall prevail.
+13. APPLICABLE LAW
+
+This agreement shall be governed by and construed in accordance with the substantive laws of the country of incorporation, the United Kingdom. User hereby consents to and irrevocably submits to the exclusive jurisdiction of the UK courts. Not withstanding the above, TVCatchup may, at its own election, choose to bring any action against members in the courts of the country in which the member is domiciled.
+TVCatchup Ltd, 81 Oxford Street, London, W1D 2EU 

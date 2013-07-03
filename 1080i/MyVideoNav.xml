@@ -92,6 +92,7 @@
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
 							<item id="3">
+								<visible>Library.HasContent(Movies)</visible>
 								<label>342</label>
 								<label2></label2>
 								<onclick>ActivateWindow(videos,movietitles,return)</onclick>
@@ -99,6 +100,7 @@
 							</item>
 
 							<item id="4">
+								<visible>Library.HasContent(TVShows)</visible>
 								<label>20343</label>
 								<label2></label2>
 								<onclick>ActivateWindow(Videos,tvshowtitles,return)</onclick>
@@ -243,8 +245,21 @@
 						<posy>183</posy>
 						<onleft>9000</onleft>
 						
+						<!--no recent items-->
+						<control type="label">
+							<visible>isEmpty(Window(Home).Property(LatestMovie.1.Title))</visible>
+							<posx>1-col</posx>
+							<posy>4-row</posy>
+							<width>21-col</width>
+							<font>veryLarge</font>
+							<textcolor>22FFFFFF</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>31007</label>
+						</control>
+						
 						<!--content-->	
 						<control type="panel" id="9998">
+							<visible>!isEmpty(Window(Home).Property(LatestMovie.1.Title))</visible>
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>22-col</width>
@@ -354,30 +369,35 @@
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.1.Path)])</onclick>
 								</item>
 								<item id="2">
+									<visible>!isempty(Window(Home).Property(LatestMovie.2.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestMovie.2.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestMovie.2.Year),, •] $INFO[Window(Home).Property(LatestMovie.2.Runningtime),, mins]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestMovie.2.fanart)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.2.Path)])</onclick>
 								</item>
 								<item id="3">
+									<visible>!isempty(Window(Home).Property(LatestMovie.3.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestMovie.3.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestMovie.3.Year),, •] $INFO[Window(Home).Property(LatestMovie.3.Runningtime),, mins]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestMovie.3.fanart)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.3.Path)])</onclick>
 								</item>
 								<item id="4">
+									<visible>!isempty(Window(Home).Property(LatestMovie.4.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestMovie.4.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestMovie.4.Year),, •] $INFO[Window(Home).Property(LatestMovie.4.Runningtime),, mins]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestMovie.4.fanart)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.4.Path)])</onclick>
 								</item>
 								<item id="5">
+									<visible>!isempty(Window(Home).Property(LatestMovie.5.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestMovie.5.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestMovie.5.Year),, •] $INFO[Window(Home).Property(LatestMovie.5.Runningtime),, mins]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestMovie.5.fanart)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.5.Path)])</onclick>
 								</item>
 								<item id="6">
+									<visible>!isempty(Window(Home).Property(LatestMovie.6.Title))</visible>
 									<label>$INFO[Window(Home).Property(LatestMovie.6.Title)]</label>
 									<label2>$INFO[Window(Home).Property(LatestMovie.6.Year),, •] $INFO[Window(Home).Property(LatestMovie.6.Runningtime),, mins]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestMovie.6.fanart)]</thumb>
@@ -386,36 +406,42 @@
 								
 								<!--tv shows-->
 								<item id="10">
+									<visible>!isempty(Window(Home).Property(LatestEpisode.1.showTitle))</visible>
 									<label>$INFO[Window(Home).Property(LatestEpisode.1.showTitle)]</label>
 									<label2>$INFO[Window(Home).Property(LatestEpisode.1.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.1.EpisodeNumber),Episode ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.1.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
 								</item>
 								<item id="11">
+									<visible>!isempty(Window(Home).Property(LatestEpisode.2.showTitle))</visible>
 									<label>$INFO[Window(Home).Property(LatestEpisode.2.showTitle)]</label>
 									<label2>$INFO[Window(Home).Property(LatestEpisode.2.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.2.EpisodeNumber),Episode ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.2.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
 								</item>
 								<item id="12">
+									<visible>!isempty(Window(Home).Property(LatestEpisode.3.showTitle))</visible>
 									<label>$INFO[Window(Home).Property(LatestEpisode.3.showTitle)]</label>
 									<label2>$INFO[Window(Home).Property(LatestEpisode.3.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.3.EpisodeNumber),Episode ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.3.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
 								</item>
 								<item id="13">
+									<visible>!isempty(Window(Home).Property(LatestEpisode.4.showTitle))</visible>
 									<label>$INFO[Window(Home).Property(LatestEpisode.4.showTitle)]</label>
 									<label2>$INFO[Window(Home).Property(LatestEpisode.4.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.4.EpisodeNumber),Episode ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.4.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.4.Path)])</onclick>
 								</item>
 								<item id="14">
+									<visible>!isempty(Window(Home).Property(LatestEpisode.5.showTitle))</visible>
 									<label>$INFO[Window(Home).Property(LatestEpisode.5.showTitle)]</label>
 									<label2>$INFO[Window(Home).Property(LatestEpisode.5.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.5.EpisodeNumber),Episode ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.5.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
 								</item>
 								<item id="15">
+									<visible>!isempty(Window(Home).Property(LatestEpisode.6.showTitle))</visible>
 									<label>$INFO[Window(Home).Property(LatestEpisode.6.showTitle)]</label>
 									<label2>$INFO[Window(Home).Property(LatestEpisode.6.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.6.EpisodeNumber),Episode ,]</label2>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.6.thumb)]</thumb>

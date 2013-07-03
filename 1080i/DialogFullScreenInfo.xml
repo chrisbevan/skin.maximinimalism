@@ -49,7 +49,7 @@
 						<width>18-col</width>
 						<font>smallStrong</font>
 						<textcolor>white</textcolor>
-						<label>$INFO[videoplayer.genre]</label>
+						<label>[B]$INFO[System.Time][/B] • Ends $INFO[Player.FinishTime]</label>
 						<scroll>false</scroll>
 					</control>
 				
