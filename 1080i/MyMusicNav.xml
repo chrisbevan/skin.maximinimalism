@@ -44,7 +44,7 @@
 							<control type="label">
 								<posx>0</posx>
 								<posy>0</posy>
-								<width>3-col</width>
+								<width>3-col-gutter</width>
 								<font>menuTitle</font>
 								<info>ListItem.Label</info>
 								<textcolor>unselected</textcolor>
@@ -58,7 +58,7 @@
 								<visible>Control.HasFocus(9000)</visible>
 								<posx>0</posx>
 								<posy>0</posy>
-								<width>3-col</width>
+								<width>3-col-gutter</width>
 								<font>menuTitle</font>
 								<label>$INFO[ListItem.Label]</label>
 								<textcolor>selected</textcolor>	
@@ -68,7 +68,7 @@
 									<visible>!Control.HasFocus(9000)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
-									<width>3-col</width>
+									<width>3-col-gutter</width>
 									<font>menuTitle</font>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>unselected</textcolor>	
@@ -447,76 +447,6 @@
 						<include>viewMusicGrid</include>
 					</control>
 					
-					<!--focussed item detail-->
-					<control type="group">
-						<posx>13-col</posx>
-												
-						<!--content is movies / tvshows / seasons: show larger thumbnail-->
-						<control type="group">
-							<visible>container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
-							<posx>36</posx>
-							<posy>4-row</posy>
-	
-							<control type="image">
-								<visible>!Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentMusicItems),false)</visible>
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>6-col</width>
-								<height>10-row</height>
-								<aspectratio align="left" aligny="top">scale</aspectratio>			
-								<texture fallback="colors/black.png">$INFO[Listitem.icon]</texture>
-								<bordertexture border="0">colors/white.png</bordertexture>
-								<bordersize>3</bordersize>
-								<fadetime>200</fadetime>
-							</control>
-						</control>
-						
-						<!--content is video addons: show addon description-->
-						<control type="group">
-							<visible>container.content(addons) + control.hasfocus(50) + !SubString(listitem.label,Get More)</visible>
-							<posx>1-col</posx>
-							<posy>4-row</posy>
-														
-							<!--animations-->
-							<animation type="Conditional" condition="control.hasfocus(50)">	
-								<effect type="slide" start="300,0" tween="cubic" easing="out" time="300" />
-							</animation>			
-							
-							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>6-col</width>
-								<height>243</height>
-								<aspectratio align="left" aligny="center">scale</aspectratio>			
-								<texture fallback="colors/black.png">$INFO[Listitem.icon]</texture>
-								<bordertexture border="0">colors/white.png</bordertexture>
-								<bordersize>3</bordersize>
-								<fadetime>200</fadetime>
-							</control>						
-							
-							<control type="label">
-								<posx>0</posx>
-								<posy>5-row</posy>
-								<width>6-col</width>
-								<font>pageTitle</font>
-								<textcolor>white</textcolor>
-								<shadowcolor>-</shadowcolor>
-								<label>$INFO[ListItem.Label]</label>
-							</control>
-							
-							<control type="textbox">
-								<posx>0</posx>
-								<posy>352</posy>
-								<font>small</font>
-								<width>6-col</width>
-								<height>210</height>
-								<label>$INFO[ListItem.Property(Addon.Description)]</label>
-								<autoscroll delay="5000" time="1000" repeat="10000"></autoscroll>
-							</control>
-							
-						</control>
-						
-					</control>
 				</control>
 
 				<!--page scrollbar-->
@@ -539,7 +469,7 @@
 					<posx>col-4-begin</posx>
 					<posy>row-18-begin</posy>
 
-					<control type="grouplist" id="9998">
+					<control type="grouplist">
 						<posx>0</posx>
 						<posy>-28</posy>
 						<width>24-col</width>
@@ -701,26 +631,22 @@
 				<content>
 					<item id="1">
 						<label>31023</label>
-						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>Container.NextSortMethod(9999)</onclick>
 					</item>
 					<item id="2">
 						<label>31036</label>
-						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>UpdateLibrary(video)</onclick>
 					</item>
 					<item id="3">
 						<visible>isempty(Skin.String(customMusicAddon1)) | isempty(Skin.String(customMusicAddon2)) | isempty(Skin.String(customMusicAddon3)) | isempty(Skin.String(customMusicAddon4)) | isempty(Skin.String(customMusicAddon5))</visible>
 						<label>31041</label>
-						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>$VAR[customMusicSourceAction]</onclick>
 					</item>
 					<item id="4">
 						<label>31040</label>
-						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>activateWindow(mediasource)</onclick>
 					</item>
@@ -730,7 +656,12 @@
 
 			<!--custom addon removal-->
 			<control type="grouplist" id="63">
-				<posx>col-1-begin</posx>
+				<posx>410</posx>
+				
+				<!--no additions active-->
+				<include condition="!Library.HasContent(Music)">noOffset</include>
+				
+				
 				<posy>496</posy>
 				<width>4-col</width>
 				<height>10-row</height>
@@ -740,55 +671,55 @@
 
 				<control type="button" id="102">
 					<visible>!isempty(Skin.String(customMusicAddon1))</visible>
-					<label>31039</label>
+					<label>></label>
 					<width>4-col</width>
 					<height>43</height>
-					<font>smallStrong</font>
-					<focusedcolor>black</focusedcolor>
+					<font>symbol</font>
+					<focusedcolor>white</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon1)</onclick>
 				</control>
 
 				<control type="button" id="103">
 					<visible>!isempty(Skin.String(customMusicAddon2))</visible>
-					<label>31039</label>
+					<label>></label>
 					<width>4-col</width>
 					<height>43</height>
-					<font>smallStrong</font>
-					<focusedcolor>black</focusedcolor>
+					<font>symbol</font>
+					<focusedcolor>white</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon2)</onclick>
 				</control>
 
 				<control type="button" id="104">
 					<visible>!isempty(Skin.String(customMusicAddon3))</visible>
-					<label>31039</label>
+					<label>></label>
 					<width>4-col</width>
 					<height>43</height>
-					<font>smallStrong</font>
-					<focusedcolor>black</focusedcolor>
+					<font>symbol</font>
+					<focusedcolor>white</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon3)</onclick>
 				</control>
 
 				<control type="button" id="105">
 					<visible>!isempty(Skin.String(customMusicAddon4))</visible>
-					<label>31039</label>
+					<label>></label>
 					<width>4-col</width>
 					<height>43</height>
-					<font>smallStrong</font>
-					<focusedcolor>black</focusedcolor>
+					<font>symbol</font>
+					<focusedcolor>white</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon4)</onclick>
 				</control>
 
 				<control type="button" id="106">
 					<visible>!isempty(Skin.String(customMusicAddon5))</visible>
-					<label>31039</label>
+					<label>></label>
 					<width>4-col</width>
 					<height>43</height>
-					<font>smallStrong</font>
-					<focusedcolor>black</focusedcolor>
+					<font>symbol</font>
+					<focusedcolor>white</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon5)</onclick>
 				</control>

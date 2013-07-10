@@ -2,6 +2,11 @@
 	
 	<!--simple text list 1 row-->
 	<include name="viewVideoList">
+		
+		<animation type="windowclose">
+			<effect type="fade" start="100" delay="0" end="0" time="200" />
+		</animation>
+		
 		<control type="group">			
 			<posx>0</posx>
 			<posy>3-row</posy>
@@ -147,10 +152,17 @@
 	
 	<!--seasons-->
 	<include name="viewSeasons">
+				
 		<control type="group">			
 			<visible>container.content(seasons)</visible>
 			<posx>0</posx>
 			<posy>3-row</posy>
+			
+			<!--animations-->
+			<animation type="visible">
+				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
+				<effect type="fade" start="0" delay="200" end="100" time="600" />
+			</animation>
 			
 			<!--tvshow thumb and info-->
 			<control type="group">
@@ -306,11 +318,18 @@
 			<visible>container.content(episodes) | Substring(Container.folderpath,plugin)</visible>
 			<posx>0</posx>
 			<posy>3-row</posy>
+			
+			<!--animations-->
+			<animation type="visible">
+				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
+				<effect type="fade" start="0" delay="200" end="100" time="600" />
+			</animation>
 																					
 			<!--season thumb and info-->
 			<control type="group">
-				
 				<visible>!Substring(Container.folderpath,plugin)</visible>
+				
+				
 				
 				<control type="image">
 					<posx>0</posx>
@@ -499,6 +518,11 @@
 	
 	<!--TVCatchup optimised text list-->
 	<include name="viewListTVCatchup">
+		
+		<animation type="windowclose">
+			<effect type="fade" start="100" delay="0" end="0" time="200" />
+		</animation>
+		
 		<control type="group">
 			<posx>0</posx>
 			<posy>3-row</posy>

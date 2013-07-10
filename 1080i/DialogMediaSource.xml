@@ -4,6 +4,65 @@
 	<include>fadeInOut</include>
 
 	<controls>
+		
+		<!--misc controls-->
+		<control type="label" id="2">
+			<description>header label</description>
+			<posx>col-1-begin</posx>
+			<posy>row-1-begin</posy>
+			<width>8-col</width>
+			<font>regular</font>
+			<label>$LOCALIZE[13406]</label>
+			<textcolor>selected</textcolor>
+		</control>
+		
+		<control type="list" id="10">
+			<posx>col-1-begin</posx>
+			<posy>row-1-begin</posy>
+			<width>8-col</width>
+			<height>8-col</height>
+			<scrolltime>200</scrolltime>
+			<itemlayout height="45">
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>490</width>
+					<font>regular</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="45">
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>490</width>
+					<font>regular</font>
+					<selectedcolor>white</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+		
+		<control type="button" id="19">
+			<description>Cancel Button</description>
+			<posx>210</posx>
+			<posy>0</posy>
+			<width>200</width>
+			<height>40</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<texturenofocus border="5">button-nofocus.png</texturenofocus>
+			<texturefocus border="5">button-focus.png</texturefocus>
+			<label>222</label>
+			<font>font12_title</font>
+			<onup>12</onup>
+			<onleft>18</onleft>
+			<onright>18</onright>
+			<ondown>10</ondown>
+		</control>
+	
 				
 		<!--background-->
 		<control type="image">
@@ -71,11 +130,34 @@
 					<textcolor>white</textcolor>
 					<focusedcolor>black</focusedcolor>
 				</control>
+				
+				<control type="button" id="13">
+					<description>Add Path Button</description>
+					<width>4-col</width>
+					<label>15019</label>
+					<font>buttonTitle</font>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textoffsety>12</textoffsety>
+				</control>
+				
+				<control type="button" id="14">
+					<description>Remove Path Button</description>
+					<width>4-col</width>
+					<label>1210</label>
+					<font>buttonTitle</font>
+					<texturenofocus>UIControls/buttonNF.png</texturenofocus>
+					<texturefocus>UIControls/buttonFO.png</texturefocus>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textoffsety>12</textoffsety>
+				</control>
 											
 				<control type="button" id="18">
-					<visible>Control.IsEnabled(18)</visible>
-					<description>Set Content type</description>
-					<label>Set content</label>
+					<description>OK</description>
+					<label>186</label>
 					<font>buttonTitle</font>
 					<width>4-col</width>
 					<align>center</align>
@@ -90,10 +172,9 @@
 			
 			<!--path and media name-->
 			<control type="group">
-				<visible>control.isvisible(18)</visible>
 				
 				<!--media source name-->
-				<control type="label" id="0">
+				<control type="label">
 					<description>Name Label</description>
 					<posx>0</posx>
 					<posy>4-row</posy>

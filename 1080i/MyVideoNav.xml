@@ -45,7 +45,7 @@
 							<control type="label">
 								<posx>0</posx>
 								<posy>0</posy>
-								<width>3-col</width>
+								<width>3-col-gutter</width>
 								<font>menuTitle</font>
 								<info>ListItem.Label</info>
 								<textcolor>unselected</textcolor>
@@ -59,7 +59,7 @@
 								<visible>Control.HasFocus(9000)</visible>
 								<posx>0</posx>
 								<posy>0</posy>
-								<width>3-col</width>
+								<width>3-col-gutter</width>
 								<font>menuTitle</font>
 								<label>$INFO[ListItem.Label]</label>
 								<textcolor>selected</textcolor>	
@@ -69,7 +69,7 @@
 									<visible>!Control.HasFocus(9000)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
-									<width>3-col</width>
+									<width>3-col-gutter</width>
 									<font>menuTitle</font>
 									<label>$INFO[ListItem.Label]</label>
 									<textcolor>unselected</textcolor>	
@@ -91,6 +91,7 @@
 								<onclick>ActivateWindow(pvr,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
+																					
 							<item id="3">
 								<visible>Library.HasContent(Movies)</visible>
 								<label>342</label>
@@ -106,7 +107,7 @@
 								<onclick>ActivateWindow(Videos,tvshowtitles,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
-
+					
 							<item id="5">
 								<label>136</label>
 								<label2></label2>
@@ -184,6 +185,10 @@
 						<effect type="slide" start="300,0" end="0,0" tween="cubic" easing="out" time="400" />
 					</animation>
 					
+					<animation type="windowclose">
+						<effect type="fade" start="100" delay="400" end="0" time="200" />
+					</animation>
+										
 					<!--source title-->
 					<control type="label">
 						<visible>IntegerGreaterThan(container.Numitems,0)</visible>
@@ -237,7 +242,7 @@
 						<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
 						<effect type="fade" start="0" delay="200" end="100" time="600" />
 					</animation>
-					
+										
 					<!--recent items-->
 					<control type="group">
 						<visible>SubString(skin.string(showRecentVideoItems),true)</visible>
@@ -245,6 +250,11 @@
 						<posy>183</posy>
 						<onleft>9000</onleft>
 						
+						<animation type="visible">
+							<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
+							<effect type="fade" start="0" delay="200" end="100" time="600" />
+						</animation>
+												
 						<!--no recent items-->
 						<control type="label">
 							<visible>isEmpty(Window(Home).Property(LatestMovie.1.Title))</visible>
@@ -455,7 +465,11 @@
 					</control>
 
 					<!--source content-->
-					<control type="group">						
+					<control type="group">
+						<animation type="hidden">
+							<effect type="fade" start="100" delay="0" end="0" time="500" />
+						</animation>
+																		
 						<visible>SubString(skin.string(showRecentVideoItems),false)</visible>
 						<include>viewVideoList</include>
 						<include>viewSeasons</include>
@@ -485,7 +499,7 @@
 					<posx>col-4-begin</posx>
 					<posy>row-18-begin</posy>
 
-					<control type="grouplist" id="9998">
+					<control type="grouplist">
 						<posx>0</posx>
 						<posy>-28</posy>
 						<width>24-col</width>
@@ -647,13 +661,11 @@
 				<content>
 					<item id="1">
 						<label>31023</label>
-						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>Container.NextSortMethod(9999)</onclick>
 					</item>
 					<item id="2">
 						<label>31036</label>
-						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>UpdateLibrary(video)</onclick>
 						<onclick>Notification("Video Library","Scanning for new Content")</onclick>
@@ -661,13 +673,11 @@
 					<item id="3">
 						<visible>isempty(Skin.String(customVideoAddon1)) | isempty(Skin.String(customVideoAddon2)) | isempty(Skin.String(customVideoAddon3)) | isempty(Skin.String(customVideoAddon4)) | isempty(Skin.String(customVideoAddon5))</visible>
 						<label>31041</label>
-						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>$VAR[customVideoSourceAction]</onclick>
 					</item>
 					<item id="4">
 						<label>31040</label>
-						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>activateWindow(mediasource)</onclick>
 					</item>
@@ -677,8 +687,19 @@
 
 			<!--custom addon removal-->
 			<control type="grouplist" id="63">
-				<posx>col-1-begin</posx>
-				<posy>496</posy>
+				<posx>410</posx>
+				<!--no additions active-->
+				<include condition="!System.GetBool(pvrmanager.enabled) + !Library.HasContent(Movies) + !Library.HasContent(TVShows)">noOffset</include>
+		
+				<!--ALL additions active-->
+				<include condition="System.GetBool(pvrmanager.enabled) + Library.HasContent(Movies) + Library.HasContent(TVShows)">offset3</include>
+												
+				<!--one addition active-->
+				<include condition="[System.GetBool(pvrmanager.enabled) + !Library.HasContent(Movies) + !Library.HasContent(TVShows)] | [!System.GetBool(pvrmanager.enabled) + Library.HasContent(Movies) + !Library.HasContent(TVShows)] | [!System.GetBool(pvrmanager.enabled) + !Library.HasContent(Movies) + Library.HasContent(TVShows)]">offset1</include>
+					
+				<!--two additions active-->
+				<include>offset2</include>
+				
 				<width>4-col</width>
 				<height>10-row</height>
 				<itemgap>0</itemgap>
@@ -687,55 +708,55 @@
 
 				<control type="button" id="102">
 					<visible>!isempty(Skin.String(customVideoAddon1))</visible>
-					<label>31039</label>
+					<label></label>
 					<width>4-col</width>
 					<height>43</height>
-					<font>smallStrong</font>
-					<focusedcolor>black</focusedcolor>
+					<font>symbol</font>
+					<focusedcolor>white</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customVideoAddon1)</onclick>
 				</control>
 
 				<control type="button" id="103">
 					<visible>!isempty(Skin.String(customVideoAddon2))</visible>
-					<label>31039</label>
+					<label></label>
 					<width>4-col</width>
 					<height>43</height>
-					<font>smallStrong</font>
-					<focusedcolor>black</focusedcolor>
+					<font>symbol</font>
+					<focusedcolor>white</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customVideoAddon2)</onclick>
 				</control>
 
 				<control type="button" id="104">
 					<visible>!isempty(Skin.String(customVideoAddon3))</visible>
-					<label>31039</label>
+					<label></label>
 					<width>4-col</width>
 					<height>43</height>
-					<font>smallStrong</font>
-					<focusedcolor>black</focusedcolor>
+					<font>symbol</font>
+					<focusedcolor>white</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customVideoAddon3)</onclick>
 				</control>
 
 				<control type="button" id="105">
 					<visible>!isempty(Skin.String(customVideoAddon4))</visible>
-					<label>31039</label>
+					<label></label>
 					<width>4-col</width>
 					<height>43</height>
-					<font>smallStrong</font>
-					<focusedcolor>black</focusedcolor>
+					<font>symbol</font>
+					<focusedcolor>white</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customVideoAddon4)</onclick>
 				</control>
 
 				<control type="button" id="106">
 					<visible>!isempty(Skin.String(customVideoAddon5))</visible>
-					<label>31039</label>
+					<label></label>
 					<width>4-col</width>
 					<height>43</height>
-					<font>smallStrong</font>
-					<focusedcolor>black</focusedcolor>
+					<font>symbol</font>
+					<focusedcolor>white</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customVideoAddon5)</onclick>
 				</control>

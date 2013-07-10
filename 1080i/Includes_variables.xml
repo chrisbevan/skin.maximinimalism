@@ -30,6 +30,7 @@
 	<value condition="Container.Content(livetv)">31006</value>
 	<value condition="Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes)">$LOCALIZE[20343] [COLOR accented]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
 	<value condition="Container.Content(addons)">$LOCALIZE[31055]</value>
+	<value condition="Container.Content(albums)">$LOCALIZE[31037] [COLOR accented]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
 	<value condition="Container.Content(songs)">$INFO[listitem.album] [COLOR accented]$INFO[listitem.artist][/COLOR]</value>
 	<value condition="!isEmpty(container.foldername)">$INFO[container.foldername]</value>
 </variable>
@@ -58,11 +59,11 @@
 </variable>
 
 <variable name="customMusicSourceAction">
-	<value condition="isempty(Skin.String(customMusicAddon1))">Skin.SetAddon(customMusicAddon1,xbmc.addon.music)</value>
-	<value condition="isempty(Skin.String(customMusicAddon2))">Skin.SetAddon(customMusicAddon2,xbmc.addon.music)</value>
-	<value condition="isempty(Skin.String(customMusicAddon3))">Skin.SetAddon(customMusicAddon3,xbmc.addon.music)</value>	
-	<value condition="isempty(Skin.String(customMusicAddon4))">Skin.SetAddon(customMusicAddon4,xbmc.addon.music)</value>
-	<value condition="isempty(Skin.String(customMusicAddon5))">Skin.SetAddon(customMusicAddon5,xbmc.addon.music)</value>	
+	<value condition="isempty(Skin.String(customMusicAddon1))">Skin.SetAddon(customMusicAddon1,xbmc.addon.audio)</value>
+	<value condition="isempty(Skin.String(customMusicAddon2))">Skin.SetAddon(customMusicAddon2,xbmc.addon.audio)</value>
+	<value condition="isempty(Skin.String(customMusicAddon3))">Skin.SetAddon(customMusicAddon3,xbmc.addon.audio)</value>	
+	<value condition="isempty(Skin.String(customMusicAddon4))">Skin.SetAddon(customMusicAddon4,xbmc.addon.audio)</value>
+	<value condition="isempty(Skin.String(customMusicAddon5))">Skin.SetAddon(customMusicAddon5,xbmc.addon.audio)</value>	
 </variable>
 
 </includes>

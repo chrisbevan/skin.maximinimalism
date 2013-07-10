@@ -174,17 +174,17 @@
 						<item id="1">
 							<label>Play Title</label>
 							<thumb>-</thumb>
-							<onclick>SendClick(8)</onclick>
+							<onclick>sendclick(2003,8)</onclick>
 						</item>
 						<item id="2">
 							<label>Change Title</label>
 							<thumb>-</thumb>
-							<onclick>SendClick(6)</onclick>
+							<onclick>SendClick(2003,6)</onclick>
 						</item>
 						<item id="3">
 							<label>Choose Art</label>
 							<thumb>-</thumb>
-							<onclick>SendClick(10)</onclick>
+							<onclick>SendClick(2003,10)</onclick>
 						</item>
 					</content>
 
@@ -193,7 +193,7 @@
 			
 			<!--buttons-->
 			<control type="group">
-				<visible>true</visible>
+				<visible>false</visible>
 				
 				<control type="button" id="8">
 					<description>Play</description>
@@ -207,65 +207,7 @@
 					<description>Choose Art</description>
 				</control>
 			</control>
-			
-			<!--no info available-->
-			<control type="group">
-				<visible>!container.content(movies) + !container.content(tvshows) + !container.content(episodes)</visible>
-
-				<control type="group">
-					<posx>0</posx>
-					<posy>368</posy>
-
-					<!--animations-->
-					<include>modalDialogInOut</include>
-
-					<!--text-->
-					<control type="group" id="9000">
-						<posx>col-9-begin</posx>
-						<posy>24</posy>
-
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>8-col-gutter</width>
-							<textcolor>white</textcolor>
-							<font>sectionTitle</font>
-							<label>No info available</label>
-						</control>
-
-						<control type="textbox">
-							<posx>0</posx>
-							<posy>1-row</posy>
-							<width>8-col-gutter</width>
-							<height>2-row</height>
-							<font>regular</font>
-							<textcolor>white</textcolor>
-							<label>No further information for this title.</label>
-						</control>
-
-						<control type="button">
-							<description>Ok</description>
-							<label>OK</label>
-							<font>buttonTitle</font>
-							<posx>0</posx>
-							<posy>4-row</posy>
-							<width>4-col-gutter</width>	
-							<aligny>top</aligny>
-							<textoffsety>12</textoffsety>
-							<align>center</align>
-							<texturenofocus>UIControls/buttonFO.png</texturenofocus>
-							<texturefocus>UIControls/buttonFO.png</texturefocus>
-							<textcolor>black</textcolor>
-							<focusedcolor>black</focusedcolor>
-							<onclick>PreviousMenu</onclick>
-						</control>
-
-					</control>
-
-				</control>
-
-			</control>
-											
+													
 		</control>
 	
 		<!--debugging-->

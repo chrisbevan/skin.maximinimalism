@@ -5,10 +5,16 @@
 	<controls>
 			
 		<!--background-->
+		<include>fanartSlides</include>
+							
+		<!--overlay-->
 		<control type="image">
-			<include>dimensionsFullscreen</include>
-			<texture>backgrounds/settings.jpg</texture>
-			<colordiffuse>66FFFFFF</colordiffuse>
+			<posx>0</posx>
+			<posy>3-row</posy>
+			<width>fullscreenWidth</width>
+			<height>13-row</height>
+			<texture>colors/black.png</texture>
+			<colordiffuse>aaffffff</colordiffuse>
 			<aspectratio>stretch</aspectratio>
 		</control>
 	

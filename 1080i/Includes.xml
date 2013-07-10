@@ -45,8 +45,8 @@
 				<randomize>true</randomize>
 				<aspectratio>stretch</aspectratio>
 				<colordiffuse>6affffff</colordiffuse>
-				<animation effect="fade" start="0" end="100" time="600" delay="400">windowopen</animation>
-				<animation effect="fade" start="100" end="0" time="300" delay="0">windowclose</animation>
+				<animation effect="fade" start="0" end="100" time="600" delay="300">windowopen</animation>
+				<animation effect="fade" start="100" end="0" time="400" delay="200">windowclose</animation>
 			</control>
 			
 			<control type="image">
@@ -164,6 +164,23 @@
 			<colordiffuse>77FFFFFF</colordiffuse>
 			<visible>Skin.HasSetting(DebugGrid)</visible>
 		</control>
+	</include>
+	
+	<!--hacky alignment for addons in myvideonav / mymusicnav-->	
+	<include name="noOffset">
+		<posy>368</posy>
+	</include>
+	
+	<include name="offset1">
+		<posy>410</posy>
+	</include>
+	
+	<include name="offset2">
+		<posy>454</posy>
+	</include>
+	
+	<include name="offset3">
+		<posy>496</posy>
 	</include>
 	
 </includes>
