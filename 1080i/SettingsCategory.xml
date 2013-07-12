@@ -6,18 +6,7 @@
 			
 		<!--background-->
 		<include>fanartSlides</include>
-							
-		<!--overlay-->
-		<control type="image">
-			<posx>0</posx>
-			<posy>3-row</posy>
-			<width>fullscreenWidth</width>
-			<height>13-row</height>
-			<texture>colors/black.png</texture>
-			<colordiffuse>aaffffff</colordiffuse>
-			<aspectratio>stretch</aspectratio>
-		</control>
-				
+										
 		<!--placeholder label for current setting group title-->
 		<control type="label" id="2">
 			<visible>false</visible>
@@ -33,29 +22,29 @@
 		<control type="group" id="9001">
 	
 			<posx>col-5-begin</posx>
-			<posy>row-4-begin</posy>
+			<posy>row-3-begin</posy>
 		
 			<!--animations-->
-			<include>modalDialogInOut</include>
+			<include>modalDialogInOutVertical</include>
+			
+			<!--overlay-->
+			<control type="image">
+				<posx>-384</posx>
+				<posy>102</posy>
+				<width>fullscreenWidth</width>
+				<height>10-row</height>
+				<texture>colors/black.png</texture>
+				<colordiffuse>88ffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
 		
 			<control type="label">
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>50</posy>
 				<width>8-col</width>
 				<font>pageTitle</font>
 				<label>$LOCALIZE[5] [COLOR accented]$INFO[control.getlabel(2)][/COLOR]</label>
 				<textcolor>white</textcolor>
-			</control>
-			
-			<!--horizontal rule-->
-			<control type="image">
-				<posx>0</posx>
-				<posy>1-row</posy>
-				<width>16-col</width>
-				<height>1</height>
-				<texture>colors/white.png</texture>
-				<colordiffuse>ffffffff</colordiffuse>
-				<aspectratio>stretch</aspectratio>
 			</control>
 			
 			<!--Category submenu-->		

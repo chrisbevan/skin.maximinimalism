@@ -2,15 +2,11 @@
 	
 	<!--simple text list 1 row-->
 	<include name="viewVideoList">
-		
-		<animation type="windowclose">
-			<effect type="fade" start="100" delay="0" end="0" time="200" />
-		</animation>
-		
+				
 		<control type="group">			
 			<posx>0</posx>
 			<posy>3-row</posy>
-																		
+																					
 			<!--focussed item detail-->
 			<control type="group">
 				<posx>13-col</posx>
@@ -21,11 +17,19 @@
 					<posx>36</posx>
 					<posy>12</posy>
 					
-					<!--animations-->
 					<animation type="windowopen">
-						<effect type="slide" start="300,0" end="0,0" tween="cubic" easing="out" time="400" delay="500" />
+			            <effect type="fade" start="0" end="100" time="300" delay="300" />
+						<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="400" delay="300"/>
 					</animation>
-					
+					<animation type="windowclose">
+			            <effect type="fade" start="100" end="0" time="300" delay="300" />
+						<effect type="slide" start="0" end="3-col" tween="cubic" easing="out" time="400" delay="300"/>
+					</animation>
+					<animation type="visible">
+			            <effect type="fade" start="0" end="100" time="300" delay="300" />
+						<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="400" delay="300"/>
+					</animation>					
+										
 					<control type="image">
 						<visible>!Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentVideoItems),false) + !isempty(listitem.art(poster))</visible>
 						<posx>0</posx>
@@ -42,6 +46,15 @@
 			
 			<control type="panel" id="50">
 				<visible>!container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin)</visible>
+				
+				<animation type="windowopen">
+		            <effect type="fade" start="0" end="100" time="300" />
+					<effect type="slide" start="6-col" end="0" tween="cubic" easing="out" time="400" />
+				</animation>
+				<animation type="windowclose">
+		            <effect type="fade" start="100" end="0" time="200" />
+				</animation>				
+											
 				<posx>0</posx>
 				<posy>4</posy>
 				<width>12-col</width>
@@ -52,7 +65,7 @@
 				<onup>50</onup>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="sine" easing="inout">300</scrolltime>
-												
+																
 				<itemlayout width="12-col" height="1-row">								
 									
 					<control type="image">
@@ -158,10 +171,9 @@
 			<posx>0</posx>
 			<posy>3-row</posy>
 			
-			<!--animations-->
 			<animation type="visible">
-				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
-				<effect type="fade" start="0" delay="200" end="100" time="600" />
+	            <effect type="fade" start="0" end="100" time="300" />
+				<effect type="slide" start="6-col" end="0" tween="cubic" easing="out" time="400" />
 			</animation>
 			
 			<!--tvshow thumb and info-->
@@ -171,7 +183,7 @@
 				
 				<control type="image">
 					<posx>0</posx>
-					<posy>0</posy>
+					<posy>3</posy>
 					<width>5-col</width>
 					<height>6-col</height>
 					<aspectratio>scale</aspectratio>
@@ -318,22 +330,14 @@
 			<visible>container.content(episodes) | Substring(Container.folderpath,plugin)</visible>
 			<posx>0</posx>
 			<posy>3-row</posy>
-			
-			<!--animations-->
-			<animation type="visible">
-				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
-				<effect type="fade" start="0" delay="200" end="100" time="600" />
-			</animation>
-																					
+																								
 			<!--season thumb and info-->
 			<control type="group">
 				<visible>!Substring(Container.folderpath,plugin)</visible>
-				
-				
-				
+
 				<control type="image">
 					<posx>0</posx>
-					<posy>0</posy>
+					<posy>3</posy>
 					<width>5-col</width>
 					<height>6-col</height>
 					<aspectratio>scale</aspectratio>
@@ -366,7 +370,7 @@
 			
 			<!--Addon thumb-->
 			<control type="group">
-				
+								
 				<visible>Substring(Container.folderpath,plugin) + !Substring(Container.foldername,TVCatchup)</visible>
 				
 				<control type="image">
@@ -391,7 +395,7 @@
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<pagecontrol>60</pagecontrol>
-								
+												
 				<itemlayout width="14-col" height="1-row">
 										
 					<control type="image">
@@ -518,11 +522,7 @@
 	
 	<!--TVCatchup optimised text list-->
 	<include name="viewListTVCatchup">
-		
-		<animation type="windowclose">
-			<effect type="fade" start="100" delay="0" end="0" time="200" />
-		</animation>
-		
+			
 		<control type="group">
 			<posx>0</posx>
 			<posy>3-row</posy>

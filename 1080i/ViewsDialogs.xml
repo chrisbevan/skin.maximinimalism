@@ -1,9 +1,7 @@
 <includes>
 
-	<include name="View_51_List">
+	<include name="viewDialogList">
 	
-		<description>List View (id=51)</description>
-
 		<!--list-->		
 		<control type="group">
 			

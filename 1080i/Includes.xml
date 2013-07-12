@@ -29,9 +29,23 @@
 	</include>
 	
 	<!--Global background-->
-	<include name="globalBackground">		
+	<include name="globalBackground">
 
-		<control type="group">			
+		<control type="group">	
+			
+			<animation type="windowopen" reversible="false">
+	            <effect type="fade" start="0" end="100" time="500" />
+			</animation>
+			<animation type="Windowclose">
+	            <effect type="fade" start="100" end="0" time="300" />
+			</animation>
+			
+			<control type="image">
+				<include>dimensionsFullscreen</include>
+				<texture>colors/black.png</texture>
+				<colordiffuse>ffFFFFFF</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>	
 					
 			<control type="multiimage">
 				<visible>!container.content(seasons) + !container.content(songs) + [!container.content(episodes) | Substring(Container.folderpath,plugin)] + [Container(9999).HasFiles | Container(9999).HasFolders]</visible>
@@ -39,23 +53,43 @@
    				<posy>0</posy>
    				<include>dimensionsFullscreen</include>
    				<imagepath>$VAR[fanartType]</imagepath>
-				<timeperimage>30000</timeperimage>
-				<fadetime>1000</fadetime>
+				<timeperimage>60000</timeperimage>
+				<fadetime>0</fadetime>
 				<pauseatend>10000</pauseatend>
 				<randomize>true</randomize>
 				<aspectratio>stretch</aspectratio>
 				<colordiffuse>6affffff</colordiffuse>
-				<animation effect="fade" start="0" end="100" time="600" delay="300">windowopen</animation>
-				<animation effect="fade" start="100" end="0" time="400" delay="200">windowclose</animation>
+				<animation type="windowopen" reversible="false">
+		            <effect type="fade" start="0" end="100" time="500" delay="400" />
+				</animation>
+				<animation type="visible" reversible="false">
+		            <effect type="fade" start="0" end="100" time="500" delay="400" />
+				</animation>
+				<animation type="Windowclose">
+		            <effect type="fade" start="100" end="0" time="300" />
+				</animation>
 			</control>
 			
-			<control type="image">
+			<control type="group">
 				<visible>container.content(seasons) | container.content(songs) | container.content(episodes)</visible>
-				<include>dimensionsFullscreen</include>
-				<texture>$INFO[listitem.art(fanart)]</texture>
-				<colordiffuse>6affffff</colordiffuse>
-				<aspectratio>stretch</aspectratio>
-				<fadetime>300</fadetime>
+				
+				<animation type="visible" reversible="false">
+		            <effect type="fade" start="0" end="100" time="500" delay="400"/>
+				</animation>
+				
+				<control type="image">
+					<include>dimensionsFullscreen</include>
+					<texture>colors/black.png</texture>
+					<colordiffuse>ffFFFFFF</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				
+				<control type="image">
+					<include>dimensionsFullscreen</include>
+					<texture>$INFO[listitem.art(fanart)]</texture>
+					<colordiffuse>6affffff</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
 			</control>
 								
 			<control type="image">
@@ -69,7 +103,7 @@
 						
 	</include>
 	
-	<!--fanart slideshow (homescreen)-->
+	<!--fanart slideshow-->
 	<include name="fanartSlides">
 			
 		<control type="image">

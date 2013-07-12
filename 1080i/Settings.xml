@@ -6,58 +6,36 @@
 		
 		<!--background-->
 		<include>fanartSlides</include>
-							
-		<!--overlay-->
-		<control type="image">
-			<posx>0</posx>
-			<posy>3-row</posy>
-			<width>fullscreenWidth</width>
-			<height>9-row</height>
-			<texture>colors/black.png</texture>
-			<colordiffuse>aaffffff</colordiffuse>
-			<aspectratio>stretch</aspectratio>
-		</control>
 		
 		<!--main menu-->
 		<control type="group">
 			
 			<posx>col-4-begin</posx>
-			<posy>row-4-begin</posy>
+			<posy>row-5-begin</posy>
+			
+			<!--overlay-->
+			<control type="image">
+				<posx>-312</posx>
+				<posy>104</posy>
+				<width>fullscreenWidth</width>
+				<height>6-row</height>
+				<texture>colors/black.png</texture>
+				<colordiffuse>88ffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
 			
 			<!--animations-->
-			<include>modalDialogInOut</include>
+			<include>modalDialogInOutVertical</include>
 														
 			<control type="label">
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>50</posy>
 				<width>8-col</width>
 				<font>pageTitle</font>
 				<label>[COLOR accented]$LOCALIZE[5][/COLOR] $LOCALIZE[31058]</label>
 				<textcolor>white</textcolor>
 			</control>
-			
-			<!--horizontal rule-->
-			<control type="image">
-				<posx>0</posx>
-				<posy>1-row</posy>
-				<width>18-col</width>
-				<height>1</height>
-				<texture>colors/white.png</texture>
-				<colordiffuse>ffffffff</colordiffuse>
-				<aspectratio>stretch</aspectratio>
-			</control>
-			
-			<!--XBMC Instance Info-->
-			<control type="textbox">
-				<posx>0</posx>
-				<posy>64</posy>
-				<width>16-col</width>
-				<height>10-row</height>
-				<font>smallStrong</font>
-				<textcolor>unselected</textcolor>
-				<label>$LOCALIZE[31059] $INFO[System.BuildVersion] ($INFO[System.BuildDate]) $INFO[System.InternetState] on IP $INFO[Network.IPAddress]</label>
-			</control>
-			
+									
 			<!--menu-->
 			<control type="Panel" id="9000">
 				<posx>0</posx>

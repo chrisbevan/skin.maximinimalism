@@ -6,50 +6,55 @@
 			
 		<!--background-->
 		<include>fanartSlides</include>
-							
-		<!--overlay-->
-		<control type="image">
-			<posx>0</posx>
-			<posy>3-row</posy>
-			<width>fullscreenWidth</width>
-			<height>13-row</height>
-			<texture>colors/black.png</texture>
-			<colordiffuse>aaffffff</colordiffuse>
-			<aspectratio>stretch</aspectratio>
-		</control>
-	
+								
 		<!--page title / info-->	
 		<control type="group" id="9001">
 			<posx>col-7-begin</posx>
-			<posy>row-4-begin</posy>
+			<posy>row-3-begin</posy>
 			
 			<!--animations-->
-			<include>modalDialogInOut</include>
+			<include>modalDialogInOutVertical</include>
+			
+			<!--overlay-->
+			<control type="image">
+				<posx>-528</posx>
+				<posy>102</posy>
+				<width>fullscreenWidth</width>
+				<height>11-row</height>
+				<texture>colors/black.png</texture>
+				<colordiffuse>88ffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
 			
 			<!--content provider title / info-->
 			<control type="label">
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>50</posy>
 				<width>8-col</width>
 				<font>pageTitle</font>
 				<label>[COLOR accented]XBMC[/COLOR] Addons</label>
 				<textcolor>white</textcolor>
 			</control>
-			
-			<!--horizontal rule-->
-			<control type="image">
-				<posx>0</posx>
-				<posy>1-row</posy>
-				<width>12-col</width>
-				<height>3</height>
-				<texture>colors/white.png</texture>
-				<colordiffuse>ffffffff</colordiffuse>
-				<aspectratio>stretch</aspectratio>
-			</control>
-												
-			<control type="group">
+															
+			<!--content listing-->
+			<control type="group" id="9999"> 
 				<posy>2-row</posy>
-				<include>View_51_List</include>
+				<include>viewDialogList</include>
+			</control>
+			
+			<!--page scrollbar-->
+			<control type="group" id="8000">
+				<visible>Control.IsVisible(60)</visible>
+				
+				<animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
+				
+				<control type="scrollbar" id="60">
+					<posx>col-12-begin</posx>
+					<posy>2-row</posy>
+					<height>10-row</height>
+					<onleft>9999</onleft>
+				</control>
+
 			</control>
 		</control>
 
