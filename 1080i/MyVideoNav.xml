@@ -29,6 +29,15 @@
 					<posy>row-2-begin</posy>
 
 					<include>dateTime</include>
+					
+					<animation type="conditional" condition="window.Next(0)">
+			            <effect type="fade" start="100" end="0" time="300" delay="300" />
+						<effect type="slide" start="0" end="-216" tween="cubic" easing="out" time="400" delay="300"/>
+					</animation>
+					<animation type="conditional" condition="window.Previous(0)">
+			            <effect type="fade" start="0" end="100" time="300" />
+						<effect type="slide" start="-216" end="0" tween="cubic" easing="out" time="400" />
+					</animation>
 
 					<control type="list" id="9000">
 						<posx>0</posx>
@@ -235,7 +244,6 @@
 					<posx>col-4-begin</posx>
 					<posy>row-2-begin</posy>
 					
-															
 					<!--recent items-->
 					<control type="group">
 						<visible>SubString(skin.string(showRecentVideoItems),true)</visible>

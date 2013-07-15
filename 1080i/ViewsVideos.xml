@@ -6,7 +6,7 @@
 		<control type="group">			
 			<posx>0</posx>
 			<posy>3-row</posy>
-																					
+																								
 			<!--focussed item detail-->
 			<control type="group">
 				<posx>13-col</posx>
@@ -53,7 +53,7 @@
 				</animation>
 				<animation type="windowclose">
 		            <effect type="fade" start="100" end="0" time="200" />
-				</animation>				
+				</animation>			
 											
 				<posx>0</posx>
 				<posy>4</posy>
@@ -166,7 +166,7 @@
 	<!--seasons-->
 	<include name="viewSeasons">
 				
-		<control type="group">			
+		<control type="group" id="5000">			
 			<visible>container.content(seasons)</visible>
 			<posx>0</posx>
 			<posy>3-row</posy>
