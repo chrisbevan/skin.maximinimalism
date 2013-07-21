@@ -221,6 +221,7 @@
 				<ondown>53</ondown>
 				<onup>53</onup>
 				<pagecontrol>60</pagecontrol>
+				<preloaditems>2</preloaditems>
 				<scrolltime tween="sine" easing="inout">200</scrolltime>
 												
 				<itemlayout width="300" height="300">								
@@ -238,9 +239,19 @@
 					
 					<control type="image">
 						<posx>0</posx>
-						<posy>219</posy>
+						<posy>0</posy>
 						<width>276</width>
-						<height>1-row</height>
+						<height>276</height>
+						<texture>backgrounds/vignette.png</texture>
+						<colordiffuse>ccffffff</colordiffuse>
+						<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+						<posx>0</posx>
+						<posy>193</posy>
+						<width>276</width>
+						<height>69</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>colors/black.png</texture>
 						<bordersize>0</bordersize>
@@ -249,24 +260,24 @@
 
 					<control type="label">
 						<posx>12</posx>
-						<posy>208</posy>
+						<posy>187</posy>
 						<width>252</width>
-						<font>smallStrong2</font>
+						<font>itemTitle</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 					
 					<control type="label">
 						<posx>12</posx>
-						<posy>232</posy>
+						<posy>217</posy>
 						<width>252</width>
 						<font>smallMedium</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.Label] $INFO[ListItem.Year,• ,]</label>
+						<label>$INFO[ListItem.artist] $INFO[ListItem.Year,• ,]</label>
 					</control>
-										
+															
 				</itemlayout>
 
 				<focusedlayout width="300" height="300">
@@ -284,33 +295,44 @@
 					
 					<control type="image">
 						<posx>0</posx>
-						<posy>219</posy>
+						<posy>0</posy>
 						<width>276</width>
-						<height>1-row</height>
+						<height>276</height>
+						<texture>backgrounds/vignette.png</texture>
+						<colordiffuse>ffffffff</colordiffuse>
+						<aspectratio>stretch</aspectratio>
+						<animation effect="fade" start="0" end="100" time="500" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+						<posx>0</posx>
+						<posy>193</posy>
+						<width>276</width>
+						<height>69</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>colors/white.png</texture>
 						<bordersize>0</bordersize>
-						<colordiffuse>FFFFFFFF</colordiffuse>
+						<colordiffuse>ffFFFFFF</colordiffuse>
 					</control>
 
 					<control type="label">
 						<posx>12</posx>
-						<posy>208</posy>
+						<posy>187</posy>
 						<width>252</width>
-						<font>smallStrong2</font>
+						<font>itemTitle</font>
 						<textcolor>black</textcolor>
 						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.Label2]</label>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 					
 					<control type="label">
 						<posx>12</posx>
-						<posy>232</posy>
+						<posy>217</posy>
 						<width>252</width>
 						<font>smallMedium</font>
 						<textcolor>black</textcolor>
 						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.Label] $INFO[ListItem.Year,• ,]</label>
+						<label>$INFO[ListItem.artist] $INFO[ListItem.Year,• ,]</label>
 					</control>
 					
 				</focusedlayout>
@@ -324,6 +346,14 @@
 			<visible>container.content(songs)</visible>
 			<posx>0</posx>
 			<posy>3-row</posy>
+			
+			<animation type="visible">
+	            <effect type="fade" start="0" end="100" time="300" />
+				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="400" />
+			</animation>
+			<animation type="hidden">
+	            <effect type="fade" start="100" end="0" time="200" />
+			</animation>
 																		
 			<!--album thumb and info-->
 			<control type="group">

@@ -53,8 +53,8 @@
    				<posy>0</posy>
    				<include>dimensionsFullscreen</include>
    				<imagepath>$VAR[fanartType]</imagepath>
-				<timeperimage>60000</timeperimage>
-				<fadetime>0</fadetime>
+				<timeperimage>20000</timeperimage>
+				<fadetime>2000</fadetime>
 				<pauseatend>10000</pauseatend>
 				<randomize>true</randomize>
 				<aspectratio>stretch</aspectratio>
@@ -124,7 +124,7 @@
    				<include>dimensionsFullscreen</include>
    				<imagepath>$INFO[Skin.String(videoFanartLocation)]</imagepath>
 				<timeperimage>15000</timeperimage>
-				<fadetime>0</fadetime>
+				<fadetime>1000</fadetime>
 				<pauseatend>0</pauseatend>
 				<randomize>true</randomize>
 				<aspectratio>stretch</aspectratio>

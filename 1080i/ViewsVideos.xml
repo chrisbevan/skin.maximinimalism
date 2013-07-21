@@ -6,7 +6,7 @@
 		<control type="group">			
 			<posx>0</posx>
 			<posy>3-row</posy>
-																								
+																											
 			<!--focussed item detail-->
 			<control type="group">
 				<posx>13-col</posx>
@@ -49,11 +49,11 @@
 				
 				<animation type="windowopen">
 		            <effect type="fade" start="0" end="100" time="300" />
-					<effect type="slide" start="6-col" end="0" tween="cubic" easing="out" time="400" />
+					<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="400" />
 				</animation>
 				<animation type="windowclose">
 		            <effect type="fade" start="100" end="0" time="200" />
-				</animation>			
+				</animation>		
 											
 				<posx>0</posx>
 				<posy>4</posy>
@@ -166,66 +166,31 @@
 	<!--seasons-->
 	<include name="viewSeasons">
 				
-		<control type="group" id="5000">			
+		<control type="group">			
 			<visible>container.content(seasons)</visible>
 			<posx>0</posx>
 			<posy>3-row</posy>
 			
 			<animation type="visible">
 	            <effect type="fade" start="0" end="100" time="300" />
-				<effect type="slide" start="6-col" end="0" tween="cubic" easing="out" time="400" />
 			</animation>
-			
-			<!--tvshow thumb and info-->
-			<control type="group">
-				
-				<visible>!Substring(Container.folderpath,plugin)</visible>
-				
-				<control type="image">
-					<posx>0</posx>
-					<posy>3</posy>
-					<width>5-col</width>
-					<height>6-col</height>
-					<aspectratio>scale</aspectratio>
-					<texture fallback="colors/offblack.png">$INFO[ListItem.Art(tvshow.poster)]</texture>
-					<fadetime>500</fadetime>
-				</control>
-				
-				<control type="label">
-					<posx>0</posx>
-					<posy>430</posy>
-					<width>5-col</width>
-					<font>smallStrong</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>-</shadowcolor>
-					<label fallback="Unknown Genre">$INFO[listitem.genre,,]</label>
-				</control>
-				
-				<control type="textbox">
-					<posx>0</posx>
-					<posy>468</posy>
-					<width>5-col</width>
-					<height>2-row</height>
-					<font>regularStrong</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>-</shadowcolor>
-					<label>[UPPERCASE]$INFO[ListItem.tvshowTitle,,][/UPPERCASE]</label>
-				</control>
-				
-			</control>
-			
+			<animation type="hidden">
+	            <effect type="fade" start="100" end="0" time="300" />
+			</animation>
+						
 			<!--content-->
 			<control type="panel" id="59">
 				<visible>!container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
-				<posx>6-col</posx>
+				<posx>0</posx>
 				<posy>4</posy>
-				<width>15-col</width>
+				<width>21-col</width>
 				<height>12-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<ondown>50</ondown>
 				<onup>50</onup>
 				<pagecontrol>60</pagecontrol>
+				<preloaditems>2</preloaditems>
 				<scrolltime tween="sine" easing="inout">300</scrolltime>
 												
 				<itemlayout width="3-col" height="297">
@@ -243,9 +208,9 @@
 					
 					<control type="image">
 						<posx>0</posx>
-						<posy>189</posy>
+						<posy>213</posy>
 						<width>3-col-gutter</width>
-						<height>81</height>
+						<height>1-row</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>colors/black.png</texture>
 						<bordersize>0</bordersize>
@@ -254,9 +219,9 @@
 
 					<control type="label">
 						<posx>12</posx>
-						<posy>187</posy>
-						<width>3-col-gutter</width>
-						<font>itemTitle</font>
+						<posy>202</posy>
+						<width>4-col</width>
+						<font>smallStrong2</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Label]</label>
@@ -264,14 +229,14 @@
 					
 					<control type="label">
 						<posx>12</posx>
-						<posy>220</posy>
-						<width>3-col-gutter</width>
-						<font>smallStrong</font>
+						<posy>226</posy>
+						<width>4-col</width>
+						<font>smallMedium</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$VAR[itemdetail]</label>
 					</control>
-
+					
 				</itemlayout>
 
 				<focusedlayout width="3-col" height="297">
@@ -289,20 +254,20 @@
 					
 					<control type="image">
 						<posx>0</posx>
-						<posy>189</posy>
+						<posy>213</posy>
 						<width>3-col-gutter</width>
-						<height>81</height>
+						<height>1-row</height>
 						<aspectratio>stretch</aspectratio>
-						<bordersize>0</bordersize>
 						<texture>colors/white.png</texture>
+						<bordersize>0</bordersize>
 						<colordiffuse>ffFFFFFF</colordiffuse>
 					</control>
 
 					<control type="label">
 						<posx>12</posx>
-						<posy>187</posy>
-						<width>3-col-gutter</width>
-						<font>itemTitle</font>
+						<posy>202</posy>
+						<width>4-col</width>
+						<font>smallStrong2</font>
 						<textcolor>black</textcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Label]</label>
@@ -310,9 +275,9 @@
 					
 					<control type="label">
 						<posx>12</posx>
-						<posy>220</posy>
-						<width>3-col-gutter</width>
-						<font>smallStrong</font>
+						<posy>226</posy>
+						<width>4-col</width>
+						<font>smallMedium</font>
 						<textcolor>black</textcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$VAR[itemdetail]</label>
@@ -327,14 +292,22 @@
 	<!--episodes-->
 	<include name="viewEpisodes">
 		<control type="group">			
-			<visible>container.content(episodes) | Substring(Container.folderpath,plugin)</visible>
+			<visible>[container.content(episodes) | Substring(Container.folderpath,plugin)] + !Substring(Container.foldername,TVCatchup)</visible>
 			<posx>0</posx>
 			<posy>3-row</posy>
-																								
+			
+			<animation type="visible">
+	            <effect type="fade" start="0" end="100" time="300" />
+				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="400" />
+			</animation>
+			<animation type="hidden">
+	            <effect type="fade" start="100" end="0" time="200" />
+			</animation>
+																														
 			<!--season thumb and info-->
 			<control type="group">
 				<visible>!Substring(Container.folderpath,plugin)</visible>
-
+				
 				<control type="image">
 					<posx>0</posx>
 					<posy>3</posy>
@@ -380,10 +353,13 @@
 					<width>5-col</width>
 					<height>5-col</height>
 					<aspectratio>scale</aspectratio>
-					<texture fallback="colors/offblack.png">$INFO[fanart.image]</texture>
+					<texture>$INFO[listitem.icon]</texture>
+					<bordertexture border="8">colors/white.png</bordertexture>
+					<bordersize>5</bordersize>
 					<fadetime>500</fadetime>
+					<colordiffuse>ffFFFFFF</colordiffuse>
 				</control>
-											
+															
 			</control>
 			
 			<!--episode list-->
@@ -395,7 +371,7 @@
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<pagecontrol>60</pagecontrol>
-												
+																
 				<itemlayout width="14-col" height="1-row">
 										
 					<control type="image">
@@ -526,6 +502,14 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>3-row</posy>
+			
+			<animation type="windowopen">
+	            <effect type="fade" start="0" end="100" time="300" />
+				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="400" />
+			</animation>
+			<animation type="windowclose">
+	            <effect type="fade" start="100" end="0" time="200" />
+			</animation>
 		
 			<control type="panel" id="54">
 				<visible>!container.content(episodes)</visible>
