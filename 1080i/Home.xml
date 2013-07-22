@@ -134,7 +134,7 @@
 					</item>
 					<item>
 						<label>31002</label>
-						<label2></label2>
+						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>ActivateWindow(programs)</onclick>
 					</item>

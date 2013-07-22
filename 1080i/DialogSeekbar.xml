@@ -47,7 +47,7 @@
 				<width>16-col-gutter</width>
 				<font>smallMedium</font>
 				<textcolor>white</textcolor>
-				<label>$INFO[VideoPlayer.TVShowTitle]</label>
+				<label>[UPPERCASE]$INFO[VideoPlayer.TVShowTitle][/UPPERCASE]</label>
 				<shadowcolor>-</shadowcolor>
 			</control>
 			

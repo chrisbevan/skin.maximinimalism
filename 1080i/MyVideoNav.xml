@@ -270,8 +270,7 @@
 							<preloaditems>2</preloaditems>
 							
 							<animation type="windowopen">
-					            <effect type="fade" start="0" end="100" time="300" delay="500" />
-								<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="400" delay="500"/>
+					            <include>listSlideIn</include>
 							</animation>
 
 							<itemlayout width="387" height="4-row">
@@ -305,7 +304,7 @@
 									<aspectratio>stretch</aspectratio>
 									<texture>colors/black.png</texture>
 									<bordersize>0</bordersize>
-									<colordiffuse>99FFFFFF</colordiffuse>
+									<colordiffuse>ccFFFFFF</colordiffuse>
 								</control>
 
 								<control type="label">
@@ -516,7 +515,7 @@
 
 					<control type="grouplist">
 						<posx>0</posx>
-						<posy>6</posy>
+						<posy>-24</posy>
 						<width>24-col</width>
 						<height>1-row</height>
 						<itemgap>0</itemgap>

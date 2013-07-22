@@ -247,8 +247,7 @@
 					<posy>row-2-begin</posy>
 
 					<animation type="windowopen">
-			            <effect type="fade" start="0" end="100" time="300" delay="500" />
-						<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="400" delay="500"/>
+			            <include>listSlideIn</include>
 					</animation>
 					<animation type="windowclose">
 			            <effect type="fade" start="100" end="0" time="300" delay="300" />
@@ -313,7 +312,7 @@
 									<aspectratio>stretch</aspectratio>
 									<texture>colors/black.png</texture>
 									<bordersize>0</bordersize>
-									<colordiffuse>99FFFFFF</colordiffuse>
+									<colordiffuse>ccFFFFFF</colordiffuse>
 								</control>
 
 								<control type="label">
@@ -509,7 +508,7 @@
 
 					<control type="grouplist">
 						<posx>0</posx>
-						<posy>6</posy>
+						<posy>-24</posy>
 						<width>24-col</width>
 						<height>1-row</height>
 						<itemgap>0</itemgap>
@@ -770,93 +769,6 @@
 			</control>
 
 		</control>
-
-		<!--
-		<control type="grouplist" id="9000">
-			<posx>15</posx>
-			<posy>210</posy>
-			<width>330</width>
-			<height>900</height>
-			<itemgap>3</itemgap>
-			<onleft>50</onleft>
-			<onright>50</onright>
-			<onup>9000</onup>
-			<ondown>9000</ondown>
-			<orientation>vertical</orientation>
-			
-			<control type="button" id="2">
-				<description>View</description>
-				<width>330</width>
-				<align>left</align>
-			</control>
-
-			<control type="button" id="3">
-				<description>Sort</description>
-				<width>330</width>
-				<align>left</align>
-			</control>
-
-			<control type="togglebutton" id="4">
-				<description>Ascending</description>
-				<width>330</width>
-				<align>left</align>
-				<label>584</label>
-				<altlabel>585</altlabel>
-			</control>
-
-			<control type="button" id="5">
-				<description>Files</description>
-				<width>330</width>
-				<align>left</align>
-				<label>Files</label>
-				<onclick>SetFocus(50)</onclick>
-			</control>
-
-			<control type="button" id="8">
-				<description>Search</description>
-				<width>330</width>
-				<align>left</align>
-				<label>137</label>
-			</control>
-
-			<control type="radiobutton" id="16">
-				<description>PartyMode</description>
-				<width>330</width>
-				<align>left</align>
-				<label>589</label>
-			</control>
-
-			<control type="button" id="21">
-				<description>Activate Filter</description>
-				<width>330</width>
-				<align>left</align>
-				<label>587</label>
-				<onclick>SendClick(musiclibrary,19)</onclick>
-				<onclick>SetFocus(22)</onclick>
-				<visible>IsEmpty(Window.Property(filter))</visible>
-			</control>
-
-			<control type="button" id="22">
-				<description>Show Filter Label</description>
-				<width>330</width>
-				<align>left</align>
-				<label>$LOCALIZE[587] - $INFO[Window.Property(filter)]</label>
-				<onclick>SendClick(musiclibrary,19)</onclick>
-				<onclick>SetFocus(21)</onclick>
-				<visible>!IsEmpty(Window.Property(filter))</visible>
-			</control>
-
-			<control type="button" id="98">
-				<description>Open Player Controls</description>
-				<width>330</width>
-				<align>left</align>
-				<label>31015</label>
-				<onclick>ActivateWindow(playercontrols)</onclick>
-				<visible>Player.HasMedia</visible>
-			</control>
-
-		</control>
-		-->
 
 		<!--debugging-->
 		<include>Debug_Grid</include>
