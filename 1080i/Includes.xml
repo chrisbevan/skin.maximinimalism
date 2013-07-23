@@ -31,7 +31,7 @@
 	<!--Global background-->
 	<include name="globalBackground">
 
-		<control type="group">	
+		<control type="group">
 			
 			<animation type="windowopen" reversible="false">
 	            <effect type="fade" start="0" end="100" time="500" />

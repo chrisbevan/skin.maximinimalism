@@ -59,7 +59,7 @@
 						<width>15-col-gutter</width>
 						<font>largeStrong</font>
 						<textcolor>white</textcolor>
-						<label>[UPPERCASE]$INFO[Videoplayer.title][/UPPERCASE]</label>
+						<label>$INFO[Videoplayer.title]</label>
 						<scroll>false</scroll>
 					</control>
 				
