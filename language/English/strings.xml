@@ -12,7 +12,7 @@
 	<string id="31006">Live TV</string>
 	<string id="31007">Library Empty</string>
 	<string id="31008">Sort Direction</string>
-	<string id="31009"></string>
+	<string id="31009">No plot info available</string>
 	<string id="31010">All Addons</string>
 	<string id="31011"></string>
 	<string id="31012">Movies and TVShows</string>
@@ -43,6 +43,20 @@
 	<string id="31058">Main Menu</string>
 	<string id="31059">Build</string>
 	<string id="31060">PVR</string>
+	<string id="31061">Skin</string>
+	<string id="31062">Screensaver</string>
+	<string id="31063">File Lists</string>
+	<string id="31064">Subtitles</string>
+	<string id="31065">EPG</string>
+	<string id="31066">Audio CDs</string>
+	<string id="31067">System extensions</string>
+	<string id="31068">Slideshows</string>
+	<string id="31069">Locations</string>
+	<string id="31070">Services</string>
+	<string id="31071">Networking</string>
+	<string id="31072">Airplay</string>
+	<string id="31073">Input devices</string>
+	<string id="31074">Power saving</string>
 	
 	
 	<string id="31018">Current Selected</string>

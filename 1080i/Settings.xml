@@ -133,62 +133,62 @@
 						<description>Appearance</description>
 						<label>480</label>
 						<label2></label2>
-						<property name="label3">Skin • Screensaver</property>
+						<property name="label3">$LOCALIZE[31061] • $LOCALIZE[31062]</property>
 						<onclick>activatewindow(AppearanceSettings)</onclick>
 					</item>
 					<item id="2">
 						<description>Videos</description>
 						<label>3</label>
 						<label2></label2>
-						<property name="label3">File lists • Subtitles</property>
+						<property name="label3">$LOCALIZE[31063] • $LOCALIZE[31064]</property>
 						<onclick>activatewindow(VideosSettings)</onclick>
 					</item>
 					<item id="9">
                         <label>31060</label>
 						<label2></label2>
-						<property name="label3">Live TV • EPG</property>
+						<property name="label3">$LOCALIZE[31006] • $LOCALIZE[31065]</property>
                         <onclick>ActivateWindow(PVRSettings)</onclick>
                     </item>
 					<item id="3">
 						<description>Music</description>
 						<label>2</label>
 						<label2></label2>
-						<property name="label3">File lists • Audio CDs</property>
+						<property name="label3">$LOCALIZE[31063] • $LOCALIZE[31066]</property>
 						<onclick>activatewindow(MusicSettings)</onclick>
 					</item>
 					<item id="4">
 						<description>Addons</description>
 						<label>24001</label>
 						<label2></label2>
-						<property name="label3">System extensions</property>
+						<property name="label3">$LOCALIZE[31067]</property>
 						<onclick>activatewindow(AddonBrowser)</onclick>
 					</item>
 					<item id="5">
 						<description>Pictures</description>
 						<label>1</label>
 						<label2></label2>
-						<property name="label3">File lists • Slideshows</property>
+						<property name="label3">$LOCALIZE[31063] • $LOCALIZE[31068]</property>
 						<onclick>activatewindow(PicturesSettings)</onclick>
 					</item>
 					<item id="6">
 						<description>Weather</description>
 						<label>8</label>
 						<label2></label2>
-						<property name="label3">Locations • Services</property>
+						<property name="label3">$LOCALIZE[31069] • $LOCALIZE[31070]</property>
 						<onclick>activatewindow(WeatherSettings)</onclick>
 					</item>
 					<item id="7">
 						<description>Services</description>
 						<label>14036</label>
 						<label2></label2>
-						<property name="label3">Networking • Airplay</property>
+						<property name="label3">$LOCALIZE[31071] • $LOCALIZE[31072]</property>
 						<onclick>activatewindow(ServiceSettings)</onclick>
 					</item>
 					<item id="8">
 						<description>System</description>
 						<label>13000</label>
 						<label2></label2>
-						<property name="label3">Input devices • Power saving</property>
+						<property name="label3">$LOCALIZE[31073] • $LOCALIZE[31074]</property>
 						<onclick>activatewindow(SystemSettings)</onclick>
 					</item>
 				</content>
