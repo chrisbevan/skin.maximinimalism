@@ -635,8 +635,8 @@
 			</control>
 			
 			<!--menu-->
-			<control type="list" id="62">
-				<posx>82</posx>
+			<control type="panel" id="62">
+				<posx>40</posx>
 				<posy>274</posy>
 				<width>4-col</width>
 				<height>10-row</height>
@@ -644,24 +644,44 @@
 				<onright>9000</onright>
 				<ondown>63</ondown>
 
-				<itemlayout width="4-col" height="43">
+				<itemlayout width="5-col" height="43">
 
 					<control type="label">
-						<posx>14</posx>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>36</width>
+						<font>symbol</font>
+						<textcolor>black</textcolor>
+						<label>$INFO[ListItem.label2]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+					
+					<control type="label">
+						<posx>50</posx>
 						<posy>0</posy>
 						<width>4-col-gutter</width>
 						<font>menuTitle</font>
 						<textcolor>black</textcolor>
-						<label>$INFO[ListItem.label]</label>
+						<label> $INFO[ListItem.label] </label>
 						<shadowcolor>-</shadowcolor>
 					</control>
 
 				</itemlayout>
 
-				<focusedlayout width="4-col" height="43">
+				<focusedlayout width="5-col" height="43">
 
 					<control type="label">
 						<posx>0</posx>
+						<posy>0</posy>
+						<width>36</width>
+						<font>symbol</font>
+						<textcolor>black</textcolor>
+						<label>$INFO[ListItem.label2]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+					
+					<control type="label">
+						<posx>41</posx>
 						<posy>0</posy>
 						<width>4-col-gutter</width>
 						<font>menuTitle</font>
@@ -675,16 +695,19 @@
 				<content>
 					<item id="1">
 						<label>31023</label>
+						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>Container.NextSortMethod(9999)</onclick>
 					</item>
 					<item id="2">
 						<label>31008</label>
+						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>Container.sortDirection(9999)</onclick>
 					</item>
 					<item id="3">
 						<label>31036</label>
+						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>UpdateLibrary(video)</onclick>
 						<onclick>Notification("Video Library","Scanning for new Content")</onclick>
@@ -692,18 +715,26 @@
 					<item id="4">
 						<visible>isempty(Skin.String(customVideoAddon1)) | isempty(Skin.String(customVideoAddon2)) | isempty(Skin.String(customVideoAddon3)) | isempty(Skin.String(customVideoAddon4)) | isempty(Skin.String(customVideoAddon5))</visible>
 						<label>31041</label>
+						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>$VAR[customVideoSourceAction]</onclick>
 					</item>
 					<item id="5">
 						<label>31040</label>
+						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>activateWindow(mediasource)</onclick>
+					</item>
+					<item id="6">
+						<label>31003</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>ActivateWindow(programs)</onclick>
 					</item>
 				</content>
 
 			</control>
-
+			
 			<!--custom addon removal-->
 			<control type="grouplist" id="63">
 				<posx>410</posx>
@@ -724,6 +755,7 @@
 				<itemgap>0</itemgap>
 				<onright>9000</onright>
 				<onup>62</onup>
+				<ondown>64</ondown>
 
 				<control type="button" id="102">
 					<visible>!isempty(Skin.String(customVideoAddon1))</visible>

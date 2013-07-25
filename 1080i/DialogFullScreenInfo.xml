@@ -23,7 +23,7 @@
 						<colordiffuse>ccffffff</colordiffuse>
 						<aspectratio>stretch</aspectratio>
 						<!--animations-->
-						<animation effect="slide" start="1920,0" end="0" delay="300" time="200">WindowOpen</animation>
+						<animation effect="slide" start="0,200" end="0" delay="300" time="200">WindowOpen</animation>
 					</control>
 														
 				</control>
@@ -39,7 +39,7 @@
 					<!--content description-->
 					<control type="label">
 						<posx>0</posx>
-						<posy>18</posy>
+						<posy>12</posy>
 						<width>3-col</width>
 						<font>largeStrong</font>
 						<textcolor>white</textcolor>
@@ -49,7 +49,7 @@
 				
 					<control type="label" id="20">
 						<posx>3-col</posx>
-						<posy>4</posy>
+						<posy>0</posy>
 						<width>20-col</width>
 						<font>regularStrong</font>
 						<textcolor>white</textcolor>
@@ -59,11 +59,13 @@
 					
 					<control type="label">
 						<posx>3-col</posx>
-						<posy>34</posy>
+						<posy>50</posy>
 						<width>17-col-gutter</width>
-						<font>smallMedium</font>
+						<height>30</height>
+						<font>small</font>
 						<textcolor>white</textcolor>
 						<label fallback="31009">$INFO[Videoplayer.plot]</label>
+						<wrapmultiline>true</wrapmultiline>
 						<scroll>true</scroll>
 					</control>
 																															
@@ -158,7 +160,7 @@
 						<width>4-col</width>
 						<font>menutitle</font>
 						<textcolor>black</textcolor>
-						<label>[B]$INFO[Videoplayer.time] / $INFO[Videoplayer.duration][/B]</label>
+						<label>$INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
 						<scroll>false</scroll>
 						<shadowcolor>-</shadowcolor>
 					</control>
