@@ -23,7 +23,7 @@
 						<colordiffuse>ccffffff</colordiffuse>
 						<aspectratio>stretch</aspectratio>
 						<!--animations-->
-						<animation effect="slide" start="0,200" end="0" delay="300" time="200">WindowOpen</animation>
+						<animation effect="slide" start="0,200" end="0" delay="300" time="200" tween="sine">WindowOpen</animation>
 					</control>
 														
 				</control>
@@ -155,7 +155,19 @@
 					</control>
 					
 					<control type="label">
-						<posx>col-21-begin</posx>
+						<posx>1598</posx>
+						<posy>-13</posy>
+						<width>4-col</width>
+						<font>symbolLarge</font>
+						<textcolor>black</textcolor>
+						<label></label>
+						<align>right</align>
+						<scroll>false</scroll>
+						<shadowcolor>-</shadowcolor>
+					</control>
+					
+					<control type="label">
+						<posx>col-22-begin</posx>
 						<posy>-10</posy>
 						<width>4-col</width>
 						<font>menutitle</font>
