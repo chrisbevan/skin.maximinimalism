@@ -21,7 +21,7 @@
 
 				<posx>0</posx>
 				<posy>0</posy>
-
+									
 				<!--main menu-->
 				<control type="group">
 					
@@ -636,7 +636,7 @@
 			
 			<!--menu-->
 			<control type="panel" id="62">
-				<posx>40</posx>
+				<posx>24</posx>
 				<posy>274</posy>
 				<width>4-col</width>
 				<height>10-row</height>
@@ -648,17 +648,17 @@
 
 					<control type="image">
 						<posx>6</posx>
-						<posy>13</posy>
-						<width>28</width>
-						<height>28</height>
+						<posy>10</posy>
+						<width>35</width>
+						<height>35</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>colors/black.png</texture>
+						<texture diffuse="masks/circle.png" border="0">colors/black.png</texture>
 						<bordersize>0</bordersize>
 					</control>
 					
 					<control type="label">
-						<posx>10</posx>
-						<posy>-2</posy>
+						<posx>13</posx>
+						<posy>-1</posy>
 						<width>36</width>
 						<font>symbol</font>
 						<textcolor>white</textcolor>
@@ -667,7 +667,7 @@
 					</control>
 					
 					<control type="label">
-						<posx>49</posx>
+						<posx>66</posx>
 						<posy>0</posy>
 						<width>4-col-gutter</width>
 						<font>menuTitle</font>
@@ -682,17 +682,17 @@
 
 					<control type="image">
 						<posx>6</posx>
-						<posy>13</posy>
-						<width>28</width>
-						<height>28</height>
+						<posy>10</posy>
+						<width>35</width>
+						<height>35</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>colors/black.png</texture>
+						<texture diffuse="masks/circle.png" border="0">colors/black.png</texture>
 						<bordersize>0</bordersize>
 					</control>
 					
 					<control type="label">
-						<posx>10</posx>
-						<posy>-2</posy>
+						<posx>13</posx>
+						<posy>-1</posy>
 						<width>36</width>
 						<font>symbol</font>
 						<textcolor>white</textcolor>
@@ -701,7 +701,7 @@
 					</control>
 					
 					<control type="label">
-						<posx>40</posx>
+						<posx>57</posx>
 						<posy>0</posy>
 						<width>4-col-gutter</width>
 						<font>menuTitle</font>
@@ -735,13 +735,13 @@
 					<item id="4">
 						<visible>isempty(Skin.String(customVideoAddon1)) | isempty(Skin.String(customVideoAddon2)) | isempty(Skin.String(customVideoAddon3)) | isempty(Skin.String(customVideoAddon4)) | isempty(Skin.String(customVideoAddon5))</visible>
 						<label>31041</label>
-						<label2></label2>
+						<label2>+</label2>
 						<thumb>-</thumb>
 						<onclick>$VAR[customVideoSourceAction]</onclick>
 					</item>
 					<item id="5">
 						<label>31040</label>
-						<label2></label2>
+						<label2>+</label2>
 						<thumb>-</thumb>
 						<onclick>activateWindow(mediasource)</onclick>
 					</item>

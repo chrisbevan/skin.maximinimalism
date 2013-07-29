@@ -27,7 +27,7 @@
 				
 				<control type="button" id="32">
 					<description>TV Channels</description>
-					<label>TV</label>
+					<label>31011</label>
 					<height>37</height>
 					<font>menuTitle</font>
 					<align>left</align>
@@ -38,7 +38,7 @@
 				<control type="button" id="33">
 					<visible>false</visible>
 					<description>Radio Channels</description>
-					<label>Radio</label>
+					<label>31016</label>
 					<height>37</height>
 					<font>menuTitle</font>
 					<align>left</align>
@@ -95,7 +95,7 @@
 				<posy>0</posy>
 				<width>14-col</width>
 				<font>pageTitle</font>
-				<label>Live TV</label>
+				<label>31006</label>
 				<textcolor>white</textcolor>
 			</control>
 			
@@ -104,7 +104,7 @@
 				<posy>45</posy>
 				<width>14-col</width>
 				<font>regular</font>
-				<label>$INFO[Pvr.BackendChannels] Channels</label>
+				<label>$INFO[Pvr.BackendChannels] $LOCALIZE[31017]</label>
 				<textcolor>white</textcolor>
 			</control>
 		

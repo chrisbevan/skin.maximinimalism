@@ -172,17 +172,17 @@
 
 					<content>
 						<item id="1">
-							<label>Play Title</label>
+							<label>31075</label>
 							<thumb>-</thumb>
 							<onclick>sendclick(2003,8)</onclick>
 						</item>
 						<item id="2">
-							<label>Change Title</label>
+							<label>31076</label>
 							<thumb>-</thumb>
 							<onclick>SendClick(2003,6)</onclick>
 						</item>
 						<item id="3">
-							<label>Choose Art</label>
+							<label>31077</label>
 							<thumb>-</thumb>
 							<onclick>SendClick(2003,10)</onclick>
 						</item>

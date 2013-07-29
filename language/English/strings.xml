@@ -14,12 +14,12 @@
 	<string id="31008">Sort Direction</string>
 	<string id="31009">No plot info available</string>
 	<string id="31010">All Addons</string>
-	<string id="31011"></string>
+	<string id="31011">TV Channels</string>
 	<string id="31012">Movies and TVShows</string>
 	<string id="31013">Latest content</string>
 	<string id="31014">title(s)</string>
-	<string id="31016"></string>
-	<string id="31017"></string>
+	<string id="31016">Radio</string>
+	<string id="31017">Channels</string>
 	<string id="31023">Change Sort</string>
 	<string id="31036">Refresh Library</string>
 	<string id="31041">Add Menu Item</string>
@@ -57,6 +57,11 @@
 	<string id="31072">Airplay</string>
 	<string id="31073">Input devices</string>
 	<string id="31074">Power saving</string>
+	
+	<!--dialogs-->
+	<string id="31075">Play Title</string>
+	<string id="31076">Change Title</string>
+	<string id="31077">Choose Art</string>
 	
 	
 	<string id="31018">Current Selected</string>
