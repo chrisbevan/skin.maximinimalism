@@ -76,7 +76,7 @@
 					<posy>6-row</posy>
 					<width>12-col-gutter</width>
 					<font>regularStrong</font>
-					<label>By $INFO[ListItem.Property(Addon.Creator)] • Version $INFO[ListItem.Property(Addon.Version)] </label>
+					<label>$LOCALIZE[31081] $INFO[ListItem.Property(Addon.Creator)] • $LOCALIZE[31082] $INFO[ListItem.Property(Addon.Version)]</label>
 				</control>
 			
 				<control type="textbox" id="400">
@@ -199,7 +199,7 @@
 			
 			<control type="button" id="9">
 				<description>Addon Settings</description>
-				<label>Configure</label>
+				<label>31083</label>
 			</control>
 		</control>
 			

@@ -32,7 +32,7 @@
 				<posx>-384</posx>
 				<posy>102</posy>
 				<width>fullscreenWidth</width>
-				<height>10-row</height>
+				<height>11-row</height>
 				<texture>colors/black.png</texture>
 				<colordiffuse>88ffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
@@ -96,7 +96,7 @@
 				<textcolor>unselected</textcolor>
 				<focusedcolor>white</focusedcolor>
 			</control>
-
+			
 			<!--subcat menu buttons-->
 			<control type="button" id="10">
 				<description>Default Category Button</description>

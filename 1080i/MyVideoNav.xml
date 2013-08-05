@@ -21,6 +21,41 @@
 
 				<posx>0</posx>
 				<posy>0</posy>
+				
+				<!--left menu indicator-->
+				<control type="group">
+					<posx>0</posx>
+					<posy>514</posy>
+					
+					<animation type="conditional" condition="window.Next(0)">
+			            <effect type="fade" start="100" end="0" time="300" delay="300" />
+						<effect type="slide" start="0" end="-216" tween="cubic" easing="out" time="400" delay="300"/>
+					</animation>
+					
+					<animation type="Conditional" condition="Control.HasFocus(9000)">
+						<effect type="fade" start="0" end="100" delay="200" time="300" />
+					</animation>
+					
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>18</width>
+						<height>1-row</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>colors/white.png</texture>
+						<bordersize>0</bordersize>
+					</control>
+				
+					<control type="label">
+						<posx>1</posx>
+						<posy>0</posy>
+						<width>3-col-gutter</width>
+						<font>symbolSmall</font>
+						<label></label>
+						<textcolor>black</textcolor>
+						<shadowcolor>-</shadowcolor>
+					</control>
+				</control>
 									
 				<!--main menu-->
 				<control type="group">
@@ -34,7 +69,7 @@
 			            <effect type="fade" start="100" end="0" time="300" delay="300" />
 						<effect type="slide" start="0" end="-216" tween="cubic" easing="out" time="400" delay="300"/>
 					</animation>
-					
+									
 					<control type="list" id="9000">
 						<posx>0</posx>
 						<posy>180</posy>
@@ -265,7 +300,7 @@
 							<posx>0</posx>
 							<posy>-12</posy>
 							<width>22-col</width>
-							<height>12-row</height>
+							<height>13-row</height>
 							<onleft>9000</onleft>
 							<preloaditems>2</preloaditems>
 							
@@ -273,13 +308,13 @@
 					            <include>listSlideIn</include>
 							</animation>
 
-							<itemlayout width="387" height="4-row">
+							<itemlayout width="387" height="354">
 
 								<control type="image">
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>363</width>
-									<height>204</height>
+									<height>272</height>
 									<aspectratio>scale</aspectratio>
 									<texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
 									<bordertexture border="0">-</bordertexture>
@@ -290,52 +325,57 @@
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>363</width>
-									<height>204</height>
+									<height>272</height>
 									<texture>backgrounds/vignette.png</texture>
 									<colordiffuse>ccffffff</colordiffuse>
 									<aspectratio>stretch</aspectratio>
 								</control>
 								
-								<control type="image">
+								<control type="group">
 									<posx>0</posx>
-									<posy>126</posy>
-									<width>363</width>
-									<height>69</height>
-									<aspectratio>stretch</aspectratio>
-									<texture>colors/black.png</texture>
-									<bordersize>0</bordersize>
-									<colordiffuse>ccFFFFFF</colordiffuse>
-								</control>
-
-								<control type="label">
-									<posx>12</posx>
-									<posy>120</posy>
-									<width>4-col</width>
-									<font>itemTitle</font>
-									<textcolor>white</textcolor>
-									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Label]</label>
-								</control>
+									<posy>272</posy>
+									
+									<control type="image">
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>363</width>
+										<height>1-row</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>colors/black.png</texture>
+										<bordersize>0</bordersize>
+										<colordiffuse>ccFFFFFF</colordiffuse>
+									</control>
 								
-								<control type="label">
-									<posx>12</posx>
-									<posy>150</posy>
-									<width>4-col</width>
-									<font>smallMedium</font>
-									<textcolor>white</textcolor>
-									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Label2]</label>
+									<control type="label">
+										<posx>12</posx>
+										<posy>-12</posy>
+										<width>4-col</width>
+										<font>smallMedium</font>
+										<textcolor>white</textcolor>
+										<shadowcolor>-</shadowcolor>
+										<label>[B]$INFO[ListItem.Label][/B]</label>
+									</control>
+								
+									<control type="label">
+										<posx>12</posx>
+										<posy>12</posy>
+										<width>4-col</width>
+										<font>smallMedium</font>
+										<textcolor>white</textcolor>
+										<shadowcolor>-</shadowcolor>
+										<label>$INFO[ListItem.Label2]</label>
+									</control>
 								</control>
 
 							</itemlayout>
 
-							<focusedlayout width="387" height="4-row">
+							<focusedlayout width="387" height="354">
 
 								<control type="image">
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>363</width>
-									<height>204</height>
+									<height>272</height>
 									<aspectratio>scale</aspectratio>
 									<texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
 									<colordiffuse>ffFFFFFF</colordiffuse>
@@ -345,42 +385,47 @@
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>363</width>
-									<height>204</height>
+									<height>272</height>
 									<texture>backgrounds/vignette.png</texture>
 									<colordiffuse>ffffffff</colordiffuse>
 									<aspectratio>stretch</aspectratio>
 									<animation effect="fade" start="0" end="100" time="500" reversible="false">focus</animation>
 								</control>
 								
-								<control type="image">
+								<control type="group">
 									<posx>0</posx>
-									<posy>126</posy>
-									<width>363</width>
-									<height>69</height>
-									<aspectratio>stretch</aspectratio>
-									<texture>colors/white.png</texture>
-									<bordersize>0</bordersize>
-									<colordiffuse>ffFFFFFF</colordiffuse>
-								</control>
-
-								<control type="label">
-									<posx>12</posx>
-									<posy>120</posy>
-									<width>4-col</width>
-									<font>itemTitle</font>
-									<textcolor>black</textcolor>
-									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Label]</label>
-								</control>
+									<posy>272</posy>
+									
+									<control type="image">
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>363</width>
+										<height>1-row</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>colors/white.png</texture>
+										<bordersize>0</bordersize>
+										<colordiffuse>ffFFFFFF</colordiffuse>
+									</control>
 								
-								<control type="label">
-									<posx>12</posx>
-									<posy>150</posy>
-									<width>4-col</width>
-									<font>smallMedium</font>
-									<textcolor>black</textcolor>
-									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Label2]</label>
+									<control type="label">
+										<posx>12</posx>
+										<posy>-12</posy>
+										<width>4-col</width>
+										<font>smallMedium</font>
+										<textcolor>black</textcolor>
+										<shadowcolor>-</shadowcolor>
+										<label>[B]$INFO[ListItem.Label][/B]</label>
+									</control>
+								
+									<control type="label">
+										<posx>12</posx>
+										<posy>12</posy>
+										<width>4-col</width>
+										<font>smallMedium</font>
+										<textcolor>black</textcolor>
+										<shadowcolor>-</shadowcolor>
+										<label>$INFO[ListItem.Label2]</label>
+									</control>
 								</control>
 								
 							</focusedlayout>
@@ -413,20 +458,6 @@
 									<thumb>$INFO[Window(Home).Property(LatestMovie.4.fanart)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.4.Path)])</onclick>
 								</item>
-								<item id="5">
-									<visible>!isempty(Window(Home).Property(LatestMovie.5.Title))</visible>
-									<label>$INFO[Window(Home).Property(LatestMovie.5.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestMovie.5.Year),, •] $INFO[Window(Home).Property(LatestMovie.5.Runningtime),, mins]</label2>
-									<thumb>$INFO[Window(Home).Property(LatestMovie.5.fanart)]</thumb>
-									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.5.Path)])</onclick>
-								</item>
-								<item id="6">
-									<visible>!isempty(Window(Home).Property(LatestMovie.6.Title))</visible>
-									<label>$INFO[Window(Home).Property(LatestMovie.6.Title)]</label>
-									<label2>$INFO[Window(Home).Property(LatestMovie.6.Year),, •] $INFO[Window(Home).Property(LatestMovie.6.Runningtime),, mins]</label2>
-									<thumb>$INFO[Window(Home).Property(LatestMovie.6.fanart)]</thumb>
-									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.6.Path)])</onclick>
-								</item>
 								
 								<!--tv shows-->
 								<item id="10">
@@ -457,21 +488,7 @@
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.4.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.4.Path)])</onclick>
 								</item>
-								<item id="14">
-									<visible>!isempty(Window(Home).Property(LatestEpisode.5.showTitle))</visible>
-									<label>$INFO[Window(Home).Property(LatestEpisode.5.showTitle)]</label>
-									<label2>$INFO[Window(Home).Property(LatestEpisode.5.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.5.EpisodeNumber),Episode ,]</label2>
-									<thumb>$INFO[Window(Home).Property(LatestEpisode.5.thumb)]</thumb>
-									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
-								</item>
-								<item id="15">
-									<visible>!isempty(Window(Home).Property(LatestEpisode.6.showTitle))</visible>
-									<label>$INFO[Window(Home).Property(LatestEpisode.6.showTitle)]</label>
-									<label2>$INFO[Window(Home).Property(LatestEpisode.6.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.6.EpisodeNumber),Episode ,]</label2>
-									<thumb>$INFO[Window(Home).Property(LatestEpisode.6.thumb)]</thumb>
-									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.6.Path)])</onclick>
-								</item>
-																															
+																																							
 							</content>
 
 						</control>
@@ -607,7 +624,7 @@
 				<texture>colors/white.png</texture>
 				<bordersize>0</bordersize>
 			</control>
-			
+						
 			<!--titles-->
 			<control type="group">
 				<posx>col-1-begin</posx>
@@ -636,7 +653,7 @@
 			
 			<!--menu-->
 			<control type="panel" id="62">
-				<posx>24</posx>
+				<posx>82</posx>
 				<posy>274</posy>
 				<width>4-col</width>
 				<height>10-row</height>
@@ -644,64 +661,24 @@
 				<onright>9000</onright>
 				<ondown>63</ondown>
 
-				<itemlayout width="5-col" height="43">
+				<itemlayout width="4-col" height="43">
 
-					<control type="image">
-						<posx>6</posx>
-						<posy>10</posy>
-						<width>35</width>
-						<height>35</height>
-						<aspectratio>stretch</aspectratio>
-						<texture diffuse="masks/circle.png" border="0">colors/black.png</texture>
-						<bordersize>0</bordersize>
-					</control>
-					
 					<control type="label">
-						<posx>13</posx>
-						<posy>-1</posy>
-						<width>36</width>
-						<font>symbol</font>
-						<textcolor>white</textcolor>
-						<label>$INFO[ListItem.label2]</label>
-						<shadowcolor>-</shadowcolor>
-					</control>
-					
-					<control type="label">
-						<posx>66</posx>
+						<posx>14</posx>
 						<posy>0</posy>
 						<width>4-col-gutter</width>
 						<font>menuTitle</font>
 						<textcolor>black</textcolor>
-						<label> $INFO[ListItem.label] </label>
+						<label>$INFO[ListItem.label]</label>
 						<shadowcolor>-</shadowcolor>
 					</control>
 
 				</itemlayout>
 
-				<focusedlayout width="5-col" height="43">
-
-					<control type="image">
-						<posx>6</posx>
-						<posy>10</posy>
-						<width>35</width>
-						<height>35</height>
-						<aspectratio>stretch</aspectratio>
-						<texture diffuse="masks/circle.png" border="0">colors/black.png</texture>
-						<bordersize>0</bordersize>
-					</control>
+				<focusedlayout width="4-col" height="43">
 					
 					<control type="label">
-						<posx>13</posx>
-						<posy>-1</posy>
-						<width>36</width>
-						<font>symbol</font>
-						<textcolor>white</textcolor>
-						<label>$INFO[ListItem.label2]</label>
-						<shadowcolor>-</shadowcolor>
-					</control>
-					
-					<control type="label">
-						<posx>57</posx>
+						<posx>0</posx>
 						<posy>0</posy>
 						<width>4-col-gutter</width>
 						<font>menuTitle</font>

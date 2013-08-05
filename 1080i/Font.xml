@@ -163,6 +163,13 @@
 				</font>
 				
 				<font>
+					<name>symbolSmall</name>
+					<filename>symbol.ttf</filename>
+					<size>14</size>
+					<style></style>	
+				</font>
+				
+				<font>
 					<name>symbolLarge</name>
 					<filename>symbol.ttf</filename>
 					<size>36</size>

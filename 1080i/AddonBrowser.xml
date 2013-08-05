@@ -30,7 +30,7 @@
 				<width>8-col</width>
 				<font>pageTitle</font>
 				<textcolor>white</textcolor>
-				<label>[COLOR accented]XBMC[/COLOR] Addons</label>
+				<label>[COLOR accented]$LOCALIZE[31079][/COLOR] $LOCALIZE[31080]</label>
 			</control>
 			
 			<!--horizontal rule-->

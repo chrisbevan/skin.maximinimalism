@@ -30,7 +30,7 @@
 				<posy>0</posy>
 				<width>12-col</width>
 				<font>pageTitle</font>
-				<label>$INFO[ListItem.Property(Addon.Name)] [COLOR accented]Configuration[/COLOR]</label>
+				<label>$INFO[ListItem.Property(Addon.Name)] [COLOR accented]$LOCALIZE[31084][/COLOR]</label>
 				<textcolor>selected</textcolor>
 			</control>
 			
