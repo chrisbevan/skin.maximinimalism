@@ -301,9 +301,10 @@
 	            <effect type="fade" start="100" end="0" time="200" />
 			</animation>
 																														
-			<!--season thumb and info-->
+			<!--season thumb and info (LEGACY)-->
 			<control type="group">
 				<visible>!Substring(Container.folderpath,plugin)</visible>
+				<visible>false</visible>
 				
 				<control type="image">
 					<posx>0</posx>
@@ -322,7 +323,7 @@
 					<font>smallStrong</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>-</shadowcolor>
-					<label fallback="Unknown Genre">$INFO[ListItem.season,Season ,]</label>
+					<label fallback="Unknown season">$INFO[ListItem.season,Season ,]</label>
 				</control>
 				
 				<control type="textbox">
@@ -334,6 +335,43 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>-</shadowcolor>
 					<label>[UPPERCASE]$INFO[ListItem.tvshowTitle,,][/UPPERCASE]</label>
+				</control>
+				
+			</control>
+			
+			<!--episode synopsis & thumb-->
+			<control type="group">
+				<visible>!Substring(Container.folderpath,plugin)</visible>
+				
+				<control type="image">
+					<posx>0</posx>
+					<posy>8</posy>
+					<width>5-col</width>
+					<height>203</height>
+					<aspectratio>scale</aspectratio>
+					<texture fallback="colors/offblack.png">$INFO[ListItem.thumb]</texture>
+					<fadetime>500</fadetime>
+				</control>
+				
+				<control type="label">
+					<posx>0</posx>
+					<posy>4-row</posy>
+					<width>5-col</width>
+					<font>itemTitle</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.label]</label>
+				</control>
+				
+				<control type="textbox">
+					<posx>0</posx>
+					<posy>282</posy>
+					<width>5-col</width>
+					<height>6-row</height>
+					<font>small</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>77111111</shadowcolor>
+					<label fallback="No plot details available">$INFO[ListItem.plot]</label>
+					<autoscroll delay="3000" time="1000" repeat="10000"></autoscroll>
 				</control>
 				
 			</control>

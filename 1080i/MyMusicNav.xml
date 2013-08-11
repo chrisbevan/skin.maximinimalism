@@ -24,7 +24,7 @@
 				<!--left menu indicator-->
 				<control type="group">
 					<posx>0</posx>
-					<posy>514</posy>
+					<posy>2-row</posy>
 					
 					<animation type="conditional" condition="window.Next(0)">
 			            <effect type="fade" start="100" end="0" time="300" delay="300" />

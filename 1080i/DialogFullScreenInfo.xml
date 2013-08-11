@@ -43,7 +43,7 @@
 						<width>3-col</width>
 						<font>largeStrong</font>
 						<textcolor>white</textcolor>
-						<label>[B]$INFO[System.Time][/B]</label>
+						<label>[B]$INFO[System.Time(hh:mm)][/B]</label>
 						<scroll>false</scroll>
 					</control>
 				
@@ -65,8 +65,8 @@
 						<font>small</font>
 						<textcolor>white</textcolor>
 						<label fallback="31009">$INFO[Videoplayer.plot]</label>
-						<wrapmultiline>true</wrapmultiline>
 						<scroll>true</scroll>
+						<scrollspeed>50</scrollspeed>
 					</control>
 																															
 				</control>
