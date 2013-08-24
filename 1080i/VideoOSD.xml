@@ -131,22 +131,22 @@
 						</focusedlayout>
 
 						<content>
-							<item id="1">
+							<item id="8001">
 								<label>Aspect</label>
 								<thumb>-</thumb>
 								<onclick>action(AspectRatio)</onclick>
 							</item>
-							<item id="2">
+							<item id="8002">
 								<label>Audio</label>
 								<thumb>-</thumb>
 								<onclick>ActivateWindow(124)</onclick>
 							</item>
-							<item id="3">
+							<item id="8003">
 								<label>Video</label>
 								<thumb>-</thumb>
 								<onclick>ActivateWindow(123)</onclick>
 							</item>
-							<item id="4">
+							<item id="8004">
 								<label>Subtitles</label>
 								<thumb>-</thumb>
 								<onclick>Close</onclick>
@@ -187,7 +187,7 @@
 		<include>Debug_Grid</include>
 		<control type="label">
 			<include>DialogID</include>
-			<label>DialogFullscreenInfo.xml</label>
+			<label>VideoOSD.xml</label>
 		</control>
 
 	</controls>
