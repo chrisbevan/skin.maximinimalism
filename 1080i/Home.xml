@@ -2,6 +2,7 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<onload>PlayerControl(stop)</onload>
+	<!--<onload>Skin.ResetSettings()</onload>-->
 	<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 	<animation effect="fade" start="0" end="100" time="1000" reversible="true">WindowOpen</animation>
 		

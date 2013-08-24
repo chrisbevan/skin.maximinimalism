@@ -1,0 +1,11 @@
+[B]0.1.1[/B]
+- Now playing info now available directly from OK button
+- Movie listing tweak (now shows year and resolution)
+- Video addon listing layout adjustment
+- Exit, suspend, hibernate options added to shutdown menu
+- Custom menu shortcut upgrade: Now accepts playlists
+- Custom menu shortcut count increased to 8 per video / music
+
+[B]0.1.0[/B]
+
+- Initial Commit

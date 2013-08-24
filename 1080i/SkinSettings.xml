@@ -57,16 +57,18 @@
 					<width>12-col</width>
 					<align>left</align>
 					<label>Set Subtitles Script</label>
+					<label2>$INFO[Skin.String(SubtitlesPath)]</label2>
 					<font>itemTitle</font>
 					<textcolor>unselected</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<onclick>Skin.SetAddon(SubtitlePath,xbmc.python.subtitles)</onclick>
+					<onclick>Skin.SetAddon(SubtitlesPath,xbmc.python.subtitles)</onclick>
 				</control>
 				
 				<control type="button" id="1">
 					<width>12-col</width>
 					<align>left</align>
 					<label>Set Movie Fanart location</label>
+					<label2>$INFO[Skin.String(videoFanartLocation)]</label2>
 					<font>itemTitle</font>
 					<textcolor>unselected</textcolor>
 					<focusedcolor>white</focusedcolor>
@@ -77,6 +79,7 @@
 					<width>12-col</width>
 					<align>left</align>
 					<label>Set TV Show Fanart location</label>
+					<label2>$INFO[Skin.String(tvshowFanartLocation)]</label2>
 					<font>itemTitle</font>
 					<textcolor>unselected</textcolor>
 					<focusedcolor>white</focusedcolor>
@@ -87,6 +90,7 @@
 					<width>12-col</width>
 					<align>left</align>
 					<label>Set Music Fanart location</label>
+					<label2>$INFO[Skin.String(musicFanartLocation)]</label2>
 					<font>itemTitle</font>
 					<textcolor>unselected</textcolor>
 					<focusedcolor>white</focusedcolor>
@@ -97,6 +101,7 @@
 					<width>12-col</width>
 					<align>left</align>
 					<label>Set Game Fanart location</label>
+					<label2>$INFO[Skin.String(gameFanartLocation)]</label2>
 					<font>itemTitle</font>
 					<textcolor>unselected</textcolor>
 					<focusedcolor>white</focusedcolor>
@@ -121,67 +126,6 @@
 					<onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
 					<selected>Skin.HasSetting(HideDebugInfo)</selected>
 				</control>	
-			</control>
-			
-			<!--labels-->
-			<control type="label" id="403">
-				<posx>12-col</posx>
-				<posy>2-row</posy>
-				<width>6-col</width>
-				<align>right</align>
-				<font>itemTitle</font>
-				<label>$INFO[Skin.String(SubtitlesPath)]</label>
-				<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
-			</control>
-
-			<control type="label" id="404">
-				<posx>12-col</posx>
-				<posy>2-row</posy>
-				<width>6-col</width>
-				<align>right</align>
-				<label>XBMC Subtitles</label>
-				<font>itemTitle</font>
-				<visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
-			</control>
-
-			<control type="label">
-				<posx>12-col</posx>
-				<posy>3-row</posy>
-				<width>6-col</width>
-				<align>right</align>
-				<font>itemTitle</font>
-				<label>$INFO[Skin.String(videoFanartLocation)]</label>
-				<visible>!IsEmpty(Skin.String(videoFanartLocation))</visible>
-			</control>
-			
-			<control type="label">
-				<posx>12-col</posx>
-				<posy>4-row</posy>
-				<width>6-col</width>
-				<align>right</align>
-				<font>itemTitle</font>
-				<label>$INFO[Skin.String(tvshowFanartLocation)]</label>
-				<visible>!IsEmpty(Skin.String(tvshowFanartLocation))</visible>
-			</control>
-			
-			<control type="label">
-				<posx>12-col</posx>
-				<posy>5-row</posy>
-				<width>6-col</width>
-				<align>right</align>
-				<font>itemTitle</font>
-				<label>$INFO[Skin.String(musicFanartLocation)]</label>
-				<visible>!IsEmpty(Skin.String(musicFanartLocation))</visible>
-			</control>
-			
-			<control type="label">
-				<posx>12-col</posx>
-				<posy>6-row</posy>
-				<width>6-col</width>
-				<align>right</align>
-				<font>itemTitle</font>
-				<label>$INFO[Skin.String(gameFanartLocation)]</label>
-				<visible>!IsEmpty(Skin.String(gameFanartLocation))</visible>
 			</control>
 
 		</control>

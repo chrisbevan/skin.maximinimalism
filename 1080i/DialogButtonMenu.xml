@@ -66,18 +66,33 @@
 				<content>
 					<item id="1">
 						<label>13016</label>
+						<visible>System.CanPowerDown</visible>
 						<thumb>-</thumb>
-						<onclick>ShutDown()</onclick>
+						<onclick>xbmc.powerdown()</onclick>
 					</item>
 					<item id="2">
 						<label>13011</label>
+						<visible>System.CanSuspend</visible>
 						<thumb>-</thumb>
 						<onclick>XBMC.Suspend()</onclick>
 					</item>
 					<item id="3">
+						<label>13010</label>
+						<visible>System.CanHibernate</visible>
+						<thumb>-</thumb>
+						<onclick>XBMC.Hibernate()</onclick>
+					</item>
+					<item id="4">
 						<label>13013</label>
 						<thumb>-</thumb>
 						<onclick>XBMC.Reset()</onclick>
+					</item>
+					<item id="5">
+						<description>Exit to desktop</description>
+						<visible>System.ShowExitButton</visible>
+						<label>13012</label>
+						<thumb>-</thumb>
+						<onclick>XBMC.Quit()</onclick>
 					</item>
 				</content>
 

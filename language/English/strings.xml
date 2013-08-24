@@ -22,7 +22,7 @@
 	<string id="31017">Channels</string>
 	<string id="31023">Change Sort</string>
 	<string id="31036">Refresh Library</string>
-	<string id="31041">Add Menu Item</string>
+	<string id="31041">Add Shortcut</string>
 	<string id="31040">Add source</string>
 	<string id="31039">Remove menu item -</string>
 	<string id="31038">Page</string>
@@ -69,7 +69,15 @@
 	<string id="31082">Version</string>
 	<string id="31083">Configure</string>
 	<string id="31084">Configuration</string>
-	
+	<string id="31085">Video Addon</string>
+	<string id="31086">Music Addon</string>
+	<string id="31087">Folder</string>
+	<string id="31088">Set Path</string>
+	<string id="31089">File Browser</string>
+	<string id="31090">Set Name</string>
+	<string id="31091">Video Playlist</string>
+	<string id="31092">Music Playlist</string>
+	<string id="31093">Favourite</string>	
 	
 	<string id="31018">Current Selected</string>
 	<string id="31019">Open playlist</string>
