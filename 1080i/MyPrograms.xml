@@ -97,6 +97,7 @@
 					<!--source content-->
 					<control type="group">						
 						<include>viewVideoList</include>
+						<include>viewGridList</include>
 					</control>
 					
 				</control>
