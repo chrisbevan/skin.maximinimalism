@@ -6,12 +6,6 @@
 			
 		<!--background-->
 		<include>fanartSlides</include>
-		<control type="image">
-			<include>dimensionsFullscreen</include>
-			<texture>colors/black.png</texture>
-			<colordiffuse>99ffffff</colordiffuse>
-			<aspectratio>stretch</aspectratio>
-		</control>
 							
 		<!--placeholder label for current setting group title-->
 		<control type="label" id="2">
@@ -35,25 +29,48 @@
 			<include>modalDialogInOutVertical</include>
 			-->
 			
-			<control type="label">
-				<posx>0</posx>
-				<posy>1-row</posy>
-				<width>8-col</width>
-				<font>pageTitle</font>
-				<label>$LOCALIZE[5] [COLOR accented]$INFO[control.getlabel(2)][/COLOR]</label>
-				<textcolor>white</textcolor>
-			</control>
-			
 			<control type="image">
 				<posx>-384</posx>
-				<posy>2-row</posy>
+				<posy>44</posy>
 				<width>fullscreenWidth</width>
-				<height>579</height>
-				<texture>colors/offblack.png</texture>
+				<height>1-row</height>
+				<texture>colors/white.png</texture>
 				<colordiffuse>ffffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			
+			<control type="image">
+				<posx>-3</posx>
+				<posy>44</posy>
+				<width>1155</width>
+				<height>1-row</height>
+				<texture>colors/white.png</texture>
+				<bordertexture border="0">colors/black.png</bordertexture>
+				<bordersize>3,0,0,0</bordersize>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<control type="label">
+				<posx>12</posx>
+				<posy>47</posy>
+				<width>8-col</width>
+				<font>pageTitle</font>
+				<label>$LOCALIZE[5] $INFO[control.getlabel(2)]</label>
+				<textcolor>black</textcolor>
+				<shadowcolor>-</shadowcolor>
+			</control>
+			
+			<control type="image">
+				<posx>-384</posx>
+				<posy>118</posy>
+				<width>fullscreenWidth</width>
+				<height>629</height>
+				<texture>colors/black.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<colordiffuse>99ffffff</colordiffuse>
+			</control>
+						
 			<!--Category submenu-->		
 			<control type="grouplist" id="3">
 				<posx>0</posx>
@@ -89,10 +106,8 @@
 				<font>itemTitle</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>black</focusedcolor>
-				<texturenofocus>colors/black.png</texturenofocus>
 				<texturefocus>colors/white.png</texturefocus>
 				<textoffsetx>12</textoffsetx>
-				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>
 
 			<control type="radiobutton" id="8">
@@ -102,10 +117,8 @@
 				<font>itemTitle</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>black</focusedcolor>
-				<texturenofocus>colors/black.png</texturenofocus>
 				<texturefocus>colors/white.png</texturefocus>
 				<textoffsetx>12</textoffsetx>
-				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>
 
 			<control type="spincontrolex" id="9">
@@ -115,24 +128,22 @@
 				<font>itemTitle</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>black</focusedcolor>
-				<texturenofocus>colors/black.png</texturenofocus>
 				<texturefocus>colors/white.png</texturefocus>
 				<textoffsetx>12</textoffsetx>
-				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>
 			
 			<!--subcat menu buttons-->
 			<control type="button" id="10">
 				<description>Default Category Button</description>
 				<align>left</align>
+				<aligny>top</aligny>
 				<height>54</height>
 				<font>menuTitle</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>black</focusedcolor>
-				<texturenofocus>colors/black.png</texturenofocus>
 				<texturefocus>colors/white.png</texturefocus>
 				<textoffsetx>12</textoffsetx>
-				<colordiffuse>99FFFFFF</colordiffuse>
+				<textoffsety>8</textoffsety>
 			</control>
 		</control>
 
