@@ -6,7 +6,13 @@
 			
 		<!--background-->
 		<include>fanartSlides</include>
-										
+		<control type="image">
+			<include>dimensionsFullscreen</include>
+			<texture>colors/black.png</texture>
+			<colordiffuse>99ffffff</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+		</control>
+							
 		<!--placeholder label for current setting group title-->
 		<control type="label" id="2">
 			<visible>false</visible>
@@ -25,33 +31,35 @@
 			<posy>row-3-begin</posy>
 		
 			<!--animations-->
+			<!--
 			<include>modalDialogInOutVertical</include>
+			-->
 			
-			<!--overlay-->
-			<control type="image">
-				<posx>-384</posx>
-				<posy>102</posy>
-				<width>fullscreenWidth</width>
-				<height>11-row</height>
-				<texture>colors/black.png</texture>
-				<colordiffuse>88ffffff</colordiffuse>
-				<aspectratio>stretch</aspectratio>
-			</control>
-		
 			<control type="label">
 				<posx>0</posx>
-				<posy>50</posy>
+				<posy>1-row</posy>
 				<width>8-col</width>
 				<font>pageTitle</font>
 				<label>$LOCALIZE[5] [COLOR accented]$INFO[control.getlabel(2)][/COLOR]</label>
 				<textcolor>white</textcolor>
 			</control>
 			
+			<control type="image">
+				<posx>-384</posx>
+				<posy>2-row</posy>
+				<width>fullscreenWidth</width>
+				<height>579</height>
+				<texture>colors/offblack.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
 			<!--Category submenu-->		
 			<control type="grouplist" id="3">
 				<posx>0</posx>
-				<posy>122</posy>
-				<width>4-col-gutter</width>
+				<posy>120</posy>
+				<width>285</width>
+				<itemgap>3</itemgap>
 				<height>14-row</height>
 				<onleft>9000</onleft>
 				<onright>5</onright>
@@ -63,48 +71,68 @@
 			<!--options-->			
 			<control type="grouplist" id="5">
 				<posx>4-col</posx>
-				<posy>2-row</posy>
+				<posy>120</posy>
 				<width>12-col</width>
-				<height>10-row</height>
+				<height>11-row</height>
 				<onleft>3</onleft>
 				<onright>3</onright>
 				<onup>5</onup>
 				<ondown>5</ondown>
 				<orientation>vertical</orientation>
+				<itemgap>3</itemgap>
 			</control>
 
 			<control type="button" id="7">
 				<description>Default Button</description>
 				<align>left</align>
+				<height>54</height>
 				<font>itemTitle</font>
-				<textcolor>unselected</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<textcolor>white</textcolor>
+				<focusedcolor>black</focusedcolor>
+				<texturenofocus>colors/black.png</texturenofocus>
+				<texturefocus>colors/white.png</texturefocus>
+				<textoffsetx>12</textoffsetx>
+				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>
 
 			<control type="radiobutton" id="8">
 				<description>Default Radio Button</description>
 				<align>left</align>
+				<height>54</height>
 				<font>itemTitle</font>
-				<textcolor>unselected</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<textcolor>white</textcolor>
+				<focusedcolor>black</focusedcolor>
+				<texturenofocus>colors/black.png</texturenofocus>
+				<texturefocus>colors/white.png</texturefocus>
+				<textoffsetx>12</textoffsetx>
+				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>
 
 			<control type="spincontrolex" id="9">
 				<description>Default Spin Control</description>
 				<align>left</align>
+				<height>54</height>
 				<font>itemTitle</font>
-				<textcolor>unselected</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<textcolor>white</textcolor>
+				<focusedcolor>black</focusedcolor>
+				<texturenofocus>colors/black.png</texturenofocus>
+				<texturefocus>colors/white.png</texturefocus>
+				<textoffsetx>12</textoffsetx>
+				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>
 			
 			<!--subcat menu buttons-->
 			<control type="button" id="10">
 				<description>Default Category Button</description>
 				<align>left</align>
-				<height>43</height>
+				<height>54</height>
 				<font>menuTitle</font>
-				<textcolor>unselected</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<textcolor>white</textcolor>
+				<focusedcolor>black</focusedcolor>
+				<texturenofocus>colors/black.png</texturenofocus>
+				<texturefocus>colors/white.png</texturefocus>
+				<textoffsetx>12</textoffsetx>
+				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>
 		</control>
 
