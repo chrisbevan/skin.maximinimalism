@@ -25,9 +25,7 @@
 			<posy>row-3-begin</posy>
 		
 			<!--animations-->
-			<!--
 			<include>modalDialogInOutVertical</include>
-			-->
 			
 			<control type="image">
 				<posx>-384</posx>
@@ -56,7 +54,7 @@
 				<posy>47</posy>
 				<width>8-col</width>
 				<font>pageTitle</font>
-				<label>$LOCALIZE[5] $INFO[control.getlabel(2)]</label>
+				<label>$LOCALIZE[5]              $INFO[control.getlabel(2)]</label>
 				<textcolor>black</textcolor>
 				<shadowcolor>-</shadowcolor>
 			</control>
@@ -75,7 +73,7 @@
 			<control type="grouplist" id="3">
 				<posx>0</posx>
 				<posy>120</posy>
-				<width>285</width>
+				<width>-</width>
 				<itemgap>3</itemgap>
 				<height>14-row</height>
 				<onleft>9000</onleft>
@@ -112,24 +110,10 @@
 
 			<control type="radiobutton" id="8">
 				<description>Default Radio Button</description>
-				<align>left</align>
-				<height>54</height>
-				<font>itemTitle</font>
-				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
-				<texturefocus>colors/white.png</texturefocus>
-				<textoffsetx>12</textoffsetx>
 			</control>
 
 			<control type="spincontrolex" id="9">
 				<description>Default Spin Control</description>
-				<align>left</align>
-				<height>54</height>
-				<font>itemTitle</font>
-				<textcolor>white</textcolor>
-				<focusedcolor>black</focusedcolor>
-				<texturefocus>colors/white.png</texturefocus>
-				<textoffsetx>12</textoffsetx>
 			</control>
 			
 			<!--subcat menu buttons-->

@@ -40,7 +40,7 @@
 	<string id="31057"></string>
 	
 	<!--settings-->
-	<string id="31058">Main Menu</string>
+	<string id="31058">Skin Settings</string>
 	<string id="31059">Build</string>
 	<string id="31060">PVR</string>
 	<string id="31061">Skin</string>
@@ -77,7 +77,12 @@
 	<string id="31090">Set Name</string>
 	<string id="31091">Video Playlist</string>
 	<string id="31092">Music Playlist</string>
-	<string id="31093">Favourite</string>	
+	<string id="31093">Favourite</string>
+	<string id="30194">Set Subtitles Script</string>
+	<string id="30195">Set Movie Fanart location</string>	
+	<string id="30196">Set TV Show Fanart location</string>	
+	<string id="30197">Set Game Fanart location</string>	
+	<string id="30198">Set Music Fanart location</string>	
 	
 	<string id="31018">Current Selected</string>
 	<string id="31019">Open playlist</string>

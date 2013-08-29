@@ -87,40 +87,61 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>-</width>
-		<height>57</height>
+		<height>54</height>
+		
 		<align>left</align>
 		<aligny>center</aligny>
+		<textoffsetx>12</textoffsetx>
+		<textoffsety>0</textoffsety>
+		
 		<font>itemTitle</font>
 		<label>-</label>
-		<textoffsetx>0</textoffsetx>
-		<textcolor>unselected</textcolor>
-		<focusedcolor>selected</focusedcolor>
+		
+		<textcolor>white</textcolor>
+		<focusedcolor>black</focusedcolor>
 		<disabledcolor>disabled</disabledcolor>
-		<radiowidth>20</radiowidth>
-		<radioheight>20</radioheight>
-		<textureradiofocus>UIControls/radio-button-fo.png</textureradiofocus>
+		
+		<radiowidth>76</radiowidth>
+		<radioheight>76</radioheight>
+		<radioposx></radioposx>
+		<radioposy></radioposy>
+		
+		<texturefocus>colors/white.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+	    <textureradiofocus>UIControls/radio-button-fo.png</textureradiofocus>
 		<textureradionofocus>UIControls/radio-button-nf.png</textureradionofocus>
+			
 		<pulseonselect>false</pulseonselect>
+		<colordiffuse>FFFFFFFF</colordiffuse>
 	</default>
 	
 	<default type="spincontrolex">
-		<height>57</height>
-		<label>-</label>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>-</width>
+		<height>54</height>
+		
+		<align>left</align>
+		<aligny>center</aligny>
+		<textoffsetx>12</textoffsetx>
+		
 		<font>itemTitle</font>
-		<spinwidth>30</spinwidth>
-        <spinheight>30</spinheight>
+		<label>-</label>
+	
+		<textcolor>white</textcolor>
+		<focusedcolor>black</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
+		
+		<spinwidth>36</spinwidth>
+		<spinheight>36</spinheight>
+		
+		<texturefocus>colors/white.png</texturefocus>
 		<textureup>UIControls/arrow-up-nf.png</textureup>
 		<texturedown>UIControls/arrow-down-nf.png</texturedown>
 		<textureupfocus>UIControls/arrow-up-fo.png</textureupfocus>
 		<texturedownfocus>UIControls/arrow-down-fo.png</texturedownfocus>		
-		<textcolor>unselected</textcolor>
-		<textoffsetx>0</textoffsetx>
-		<focusedcolor>selected</focusedcolor>
-		<disabledcolor>disabled</disabledcolor>
-		<align>left</align>
-		<aligny>center</aligny>
-		<reverse>yes</reverse>
-		<pulseonselect>false</pulseonselect>
+	
+		<pulseonselect>false</pulseonselect>	
 	</default>
 
 	<default type="spincontrol">
