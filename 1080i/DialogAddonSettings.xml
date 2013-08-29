@@ -6,143 +6,173 @@
 		
 		<!--background-->
 		<include>fanartSlides</include>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<include>dimensionsFullscreen</include>
-			<texture>colors/black.png</texture>
-			<colordiffuse>ccffffff</colordiffuse>
-			<aspectratio>stretch</aspectratio>
-		</control>
 			
 		<!--configuration options-->
 		<control type="group">
 
 			<posx>col-3-begin</posx>
-			<posy>row-4-begin</posy>
+			<posy>row-3-begin</posy>
 			
 			<!--animations-->
-			<include>modalDialogInOut</include>
+			<include>modalDialogInOutVertical</include>
 									
 			<!--content provider title / info-->
-			<control type="label">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>12-col</width>
-				<font>pageTitle</font>
-				<label>$INFO[ListItem.Property(Addon.Name)] [COLOR accented]$LOCALIZE[31084][/COLOR]</label>
-				<textcolor>selected</textcolor>
-			</control>
-			
-			<!--horizontal rule-->
 			<control type="image">
-				<posx>0</posx>
-				<posy>1-row</posy>
-				<width>20-col</width>
-				<height>3</height>
+				<posx>-240</posx>
+				<posy>44</posy>
+				<width>fullscreenWidth</width>
+				<height>1-row</height>
 				<texture>colors/white.png</texture>
 				<colordiffuse>ffffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			
+			<control type="image">
+				<posx>-3</posx>
+				<posy>44</posy>
+				<width>1155</width>
+				<height>1-row</height>
+				<texture>colors/white.png</texture>
+				<bordertexture border="0">colors/black.png</bordertexture>
+				<bordersize>3,0,0,0</bordersize>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<control type="label">
+				<posx>12</posx>
+				<posy>47</posy>
+				<width>16-col</width>
+				<font>pageTitle</font>
+				<label>$LOCALIZE[5]              $INFO[ListItem.Property(Addon.Name)]</label>
+				<textcolor>black</textcolor>
+				<shadowcolor>-</shadowcolor>
+			</control>
+			
+			<control type="image">
+				<posx>-240</posx>
+				<posy>118</posy>
+				<width>fullscreenWidth</width>
+				<height>629</height>
+				<texture>colors/black.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<colordiffuse>99ffffff</colordiffuse>
+			</control>
+						
 			<!--subnav-->
 			<control type="grouplist" id="9">
 				<posx>0</posx>
-				<posy>122</posy>
-				<width>4-col-gutter</width>
-				<height>11-row</height>
-				<itemgap>0</itemgap>
-				<onleft>9001</onleft>
+				<posy>120</posy>
+				<width>-</width>
+				<itemgap>3</itemgap>
+				<height>14-row</height>
+				<onleft>9000</onleft>
 				<onright>2</onright>
+				<orientation>vertical</orientation>
 			</control>			
 						
 			<!--options area-->
 			<control type="grouplist" id="2">
-				<description>control area</description>
 				<posx>4-col</posx>
-				<posy>2-row</posy>
+				<posy>120</posy>
 				<width>12-col</width>
-				<height>10-row</height>
-				<onup>2</onup>
-				<ondown>2</ondown>
+				<height>11-row</height>
 				<onleft>9</onleft>
 				<onright>9001</onright>
+				<orientation>vertical</orientation>
+				<itemgap>3</itemgap>
 			</control>
 			
 			<!--ok, cancel etc buttons-->
 			<control type="grouplist" id="9001">
 				<posx>17-col</posx>
-				<posy>2-row</posy>
-				<height>12-row</height>
-				<onright>2</onright>
-				<onup>9</onup>
-				<ondown>9</ondown>
-
+				<posy>120</posy>
+				<width>-</width>
+				<itemgap>3</itemgap>
+				<height>14-row</height>
+				<onleft>2</onleft>
+				<orientation>vertical</orientation>
+				
 				<control type="button" id="10">
 					<description>OK Button</description>
-					<width>3-col</width>
+					<width>7-col</width>
 					<label>186</label>
 					<align>left</align>
-					<height>43</height>
+					<aligny>top</aligny>
+					<height>54</height>
 					<font>menuTitle</font>
-					<textcolor>unselected</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<onleft>2</onleft>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus>colors/white.png</texturefocus>
+					<texturenofocus>colors/black.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+					<textoffsety>8</textoffsety>
 				</control>
 
 				<control type="button" id="11">
 					<description>Cancel Button</description>
-					<width>3-col</width>
+					<width>7-col</width>
 					<label>222</label>
 					<align>left</align>
-					<height>43</height>
+					<aligny>top</aligny>
+					<height>54</height>
 					<font>menuTitle</font>
-					<textcolor>unselected</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<onleft>2</onleft>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus>colors/white.png</texturefocus>
+					<texturenofocus>colors/black.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+					<textoffsety>8</textoffsety>
 				</control>
 
 				<control type="button" id="12">
 					<description>Defaults Button</description>
-					<width>3-col</width>
+					<width>7-col</width>
 					<label>409</label>
 					<align>left</align>
-					<height>43</height>
+					<aligny>top</aligny>
+					<height>54</height>
 					<font>menuTitle</font>
-					<textcolor>unselected</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<onleft>2</onleft>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus>colors/white.png</texturefocus>
+					<texturenofocus>colors/black.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+					<textoffsety>8</textoffsety>
 				</control>
 
 			</control>
 
 			<control type="button" id="13">
 				<description>Default Category Button</description>
-				<width>4-col</width>
 				<align>left</align>
-				<height>43</height>
+				<aligny>top</aligny>
+				<height>54</height>
 				<font>menuTitle</font>
-				<textcolor>unselected</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<textcolor>white</textcolor>
+				<focusedcolor>black</focusedcolor>
+				<texturefocus>colors/white.png</texturefocus>
+				<textoffsetx>12</textoffsetx>
+				<textoffsety>8</textoffsety>
 			</control>
 
 			<control type="button" id="3">
 				<description>Default Button</description>
 				<align>left</align>
+				<height>54</height>
 				<font>itemTitle</font>
-				<textcolor>unselected</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<textcolor>white</textcolor>
+				<focusedcolor>black</focusedcolor>
+				<texturefocus>colors/white.png</texturefocus>
+				<textoffsetx>12</textoffsetx>
 			</control>
 
 			<control type="radiobutton" id="4">
 				<description>Default RadioButton</description>
-				<align>left</align>
 			</control>
 
 			<control type="spincontrolex" id="5">
 				<description>Default spincontrolex</description>
-				<reverse>yes</reverse>
-				<align>left</align>
 			</control>
 
 			<control type="label" id="7">
@@ -152,13 +182,10 @@
 
 			<control type="image" id="6">
 				<description>Default Separator</description>
-				<height>-3</height>
-				<texture>-</texture>
 			</control>
 
 			<control type="sliderex" id="8">
 				<description>Default Slider</description>
-				<width>969</width>
 			</control>
 
 		</control>
@@ -169,7 +196,6 @@
 			<include>DialogID</include>
 			<label>DialogAddonSettings.xml</label>
 		</control>
-		
 
 	</controls>
 
