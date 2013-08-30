@@ -83,6 +83,25 @@
 				<itemgap>3</itemgap>
 			</control>
 			
+			<!--more options available indicator-->
+			<!--
+			<control type="label">
+				<visible>IntegerGreaterThan(Container(2).NumItems,10)</visible>
+				<posx>16-col</posx>
+				<posy>12-row</posy>
+				<width>1-col</width>
+				<font>symbol</font>
+				<align>center</align>
+				<label></label>
+				<textcolor>white</textcolor>
+				<shadowcolor>-</shadowcolor>
+				<animation type="Conditional" condition="true" loop="true">	
+					<effect type="fade" start="0" end="100" time="1000" />
+					<effect type="fade" start="100" end="0" delay="1000" time="1000" />
+				</animation>
+			</control>
+		-->
+			
 			<!--ok, cancel etc buttons-->
 			<control type="grouplist" id="9001">
 				<posx>17-col</posx>

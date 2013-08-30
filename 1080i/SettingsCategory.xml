@@ -96,7 +96,7 @@
 				<orientation>vertical</orientation>
 				<itemgap>3</itemgap>
 			</control>
-
+			
 			<control type="button" id="7">
 				<description>Default Button</description>
 				<align>left</align>
