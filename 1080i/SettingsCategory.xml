@@ -105,6 +105,7 @@
 				<textcolor>white</textcolor>
 				<focusedcolor>black</focusedcolor>
 				<texturefocus>colors/white.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
 				<textoffsetx>12</textoffsetx>
 			</control>
 
