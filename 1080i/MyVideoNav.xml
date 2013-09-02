@@ -791,12 +791,14 @@
 						<onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
 						<onclick>ActivateWindow(5000)</onclick>
 					</item>
+					<!--
 					<item id="5">
 						<label>31040</label>
 						<label2>+</label2>
 						<thumb>-</thumb>
 						<onclick>activateWindow(mediasource)</onclick>
 					</item>
+				-->
 					<item id="6">
 						<label>31003</label>
 						<label2></label2>
