@@ -269,7 +269,7 @@
 						<textureradiofocus>-</textureradiofocus>
 						<textureradionofocus>-</textureradionofocus>
 						
-						<textureradioon>colors/white.png</textureradioon>
+						<textureradioon>-</textureradioon>
 						<radiowidth>24</radiowidth>
 						<radioheight>24</radioheight>
 						
@@ -483,7 +483,7 @@
 						<textureradiofocus>-</textureradiofocus>
 						<textureradionofocus>-</textureradionofocus>
 						
-						<textureradioon>colors/white.png</textureradioon>
+						<textureradioon>-</textureradioon>
 						<radiowidth>24</radiowidth>
 						<radioheight>24</radioheight>
 						
@@ -698,7 +698,7 @@
 						<textureradiofocus>-</textureradiofocus>
 						<textureradionofocus>-</textureradionofocus>
 						
-						<textureradioon>colors/white.png</textureradioon>
+						<textureradioon>-</textureradioon>
 						<radiowidth>24</radiowidth>
 						<radioheight>24</radioheight>
 						

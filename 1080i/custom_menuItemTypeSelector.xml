@@ -14,44 +14,56 @@
 			<posy>0</posy>
 			<include>dimensionsFullscreen</include>
 			<texture>colors/black.png</texture>
-			<colordiffuse>ffffffff</colordiffuse>
+			<colordiffuse>ccffffff</colordiffuse>
 			<aspectratio>stretch</aspectratio>
 		</control>
 					
 		<control type="group">
 			
 			<!--animations-->
-			<include>modalDialogInOut</include>
+			<include>modalDialogInOutVertical</include>
 						
 			<control type="group">
 		
 				<posx>col-9-begin</posx>
-				<posy>row-1-begin</posy>
+				<posy>row-5-begin</posy>
 						
-				<control type="label">
-					<posx>0</posx>
-					<posy>3-row</posy>
-					<width>8-col</width>
-					<font>pageTitle</font>
-					<textcolor>white</textcolor>
-					<label>31041</label>
-				</control>
-				
-				<!--horizontal rule-->
 				<control type="image">
-					<posx>0</posx>
-					<posy>4-row</posy>
-					<width>8-col</width>
-					<height>3</height>
+					<posx>-672</posx>
+					<posy>44</posy>
+					<width>fullscreenWidth</width>
+					<height>1-row</height>
 					<texture>colors/white.png</texture>
 					<colordiffuse>ffffffff</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 				</control>
-					
+
+				<control type="image">
+					<posx>-3</posx>
+					<posy>44</posy>
+					<width>1155</width>
+					<height>1-row</height>
+					<texture>colors/white.png</texture>
+					<bordertexture border="0">colors/black.png</bordertexture>
+					<bordersize>3,0,0,0</bordersize>
+					<colordiffuse>ffffffff</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
+
+				<control type="label">
+					<posx>12</posx>
+					<posy>47</posy>
+					<width>16-col</width>
+					<font>pageTitle</font>
+					<label>31041</label>
+					<textcolor>black</textcolor>
+					<shadowcolor>-</shadowcolor>
+				</control>
+									
 				<!--addon type switches x 3: video addon / playlist / folder / favourite-->	
 				<control type="grouplist" id="6000">
 					<posx>0</posx>
-					<posy>5-row</posy>
+					<posy>2-row</posy>
 					<width>8-col</width>
 					<height>10-row</height>
 					<orientation>vertical</orientation>
@@ -122,9 +134,13 @@
 					<control type="button" id="6007">
 			      		<description>Set path</description>
 						<width>8-col</width>
+						<height>54</height>
 						<font>itemTitle</font>
-						<textcolor>unselected</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<textcolor>white</textcolor>
+						<focusedcolor>black</focusedcolor>
+						<texturefocus>colors/white.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textoffsetx>12</textoffsetx>
 			            <label>31088</label>
 						<label2>$VAR[pendingAddonPath]</label2>
 			      		<onclick condition="stringcompare(skin.string(menuItemTypeFilter),video)">$VAR[customVideoSourceSetType]</onclick>
@@ -150,7 +166,7 @@
 								
 				<control type="grouplist" id="6020">
 					<posx>0</posx>
-					<posy>10-row</posy>
+					<posy>7-row</posy>
 					<width>8-col</width>
 					<height>1-row</height>
 					<orientation>horizontal</orientation>
