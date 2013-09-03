@@ -80,7 +80,7 @@
 			<size>30</size>
 			<linespacing>0.9</linespacing>
 		</font>
-		
+			
 			<font>
 				<name>smallStrong</name>
 				<filename>sourceSansPro/bold.ttf</filename>
@@ -137,6 +137,13 @@
 			<size>36</size>
 			<linespacing>1.0</linespacing>
 			<aspect>0.8</aspect>
+		</font>
+		
+		<font>
+			<name>itemTitleSmall</name>
+			<filename>sourceSansPro/bold.ttf</filename>
+			<size>30</size>
+			<linespacing>0.8</linespacing>
 		</font>
 		
 		<font>

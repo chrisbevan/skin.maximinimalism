@@ -163,6 +163,7 @@
 							<info>ListItem.Label</info>
 							<font>itemTitle</font>
 							<textcolor>black</textcolor>
+							<selectedcolor>black</selectedcolor>
 							<shadowcolor>-</shadowcolor>
 						</control>
 							
