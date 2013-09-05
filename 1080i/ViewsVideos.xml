@@ -127,15 +127,19 @@
 			            <include>listSlideIn</include>
 					</animation>					
 										
-					<control type="image">
+					<control type="group">
 						<visible>!Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentVideoItems),false) + !isempty(listitem.art(poster))</visible>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>6-col</width>
-						<height>635</height>
-						<aspectratio>scale</aspectratio>			
-						<texture background="true" fallback="colors/black.png">$INFO[Listitem.art(poster)]</texture>
-						<fadetime>200</fadetime>
+						
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>6-col</width>
+							<height>635</height>
+							<aspectratio scalediffuse="false">stretch</aspectratio>
+							<texture background="true" fallback="colors/offblack.png" diffuse="masks/poster.png" border="0">$INFO[Listitem.art(poster)]</texture>
+							<fadetime>200</fadetime>
+						</control>
+					
 					</control>
 				</control>
 								
@@ -310,59 +314,63 @@
 				<preloaditems>2</preloaditems>
 				<scrolltime tween="sine" easing="inout">300</scrolltime>
 												
-				<itemlayout width="3-col" height="297">
+				<itemlayout width="4-col" height="474">
 
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>3-col-gutter</width>
-						<height>270</height>
+						<width>4-col-gutter</width>
+						<height>388</height>
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture fallback="colors/black.png" border="0">$INFO[ListItem.thumb]</texture>
 						<bordertexture border="0">-</bordertexture>
 						<colordiffuse>ffFFFFFF</colordiffuse>
 					</control>
-					
-					<control type="image">
+										
+					<control type="group">
 						<posx>0</posx>
-						<posy>213</posy>
-						<width>3-col-gutter</width>
-						<height>1-row</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>colors/black.png</texture>
-						<bordersize>0</bordersize>
-						<colordiffuse>99FFFFFF</colordiffuse>
-					</control>
-
-					<control type="label">
-						<posx>12</posx>
-						<posy>202</posy>
-						<width>4-col</width>
-						<font>smallStrong2</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
+						<posy>388</posy>
+						
+						<control type="image">
+							<visible>false</visible>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>4-col-gutter</width>
+							<height>1-row</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>colors/black.png</texture>
+							<bordersize>0</bordersize>
+							<colordiffuse>ccFFFFFF</colordiffuse>
+						</control>
 					
-					<control type="label">
-						<posx>12</posx>
-						<posy>226</posy>
-						<width>4-col</width>
-						<font>smallMedium</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>-</shadowcolor>
-						<label>$VAR[itemdetail]</label>
+						<control type="label">
+							<posx>12</posx>
+							<posy>-8</posy>
+							<width>4-col-gutter</width>
+							<font>itemTitleSmall</font>
+							<textcolor>white</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					
+						<control type="label">
+							<posx>12</posx>
+							<posy>18</posy>
+							<width>4-col-gutter</width>
+							<font>smallMedium</font>
+							<textcolor>white</textcolor>
+							<label>$VAR[itemdetail]</label>
+						</control>
 					</control>
 					
 				</itemlayout>
 
-				<focusedlayout width="3-col" height="297">
+				<focusedlayout width="4-col" height="474">
 
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>3-col-gutter</width>
-						<height>270</height>
+						<width>4-col-gutter</width>
+						<height>388</height>
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture fallback="colors/black.png" border="0">$INFO[ListItem.thumb]</texture>
 						<bordertexture border="0">-</bordertexture>
@@ -371,35 +379,51 @@
 					
 					<control type="image">
 						<posx>0</posx>
-						<posy>213</posy>
-						<width>3-col-gutter</width>
-						<height>1-row</height>
+						<posy>0</posy>
+						<width>4-col-gutter</width>
+						<height>388</height>
+						<texture>backgrounds/vignette.png</texture>
+						<colordiffuse>ffffffff</colordiffuse>
 						<aspectratio>stretch</aspectratio>
-						<texture>colors/white.png</texture>
-						<bordersize>0</bordersize>
-						<colordiffuse>ffFFFFFF</colordiffuse>
-					</control>
-
-					<control type="label">
-						<posx>12</posx>
-						<posy>202</posy>
-						<width>4-col</width>
-						<font>smallStrong2</font>
-						<textcolor>black</textcolor>
-						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.Label]</label>
+						<animation effect="fade" start="0" end="100" time="500" reversible="false">focus</animation>
 					</control>
 					
-					<control type="label">
-						<posx>12</posx>
-						<posy>226</posy>
-						<width>4-col</width>
-						<font>smallMedium</font>
-						<textcolor>black</textcolor>
-						<shadowcolor>-</shadowcolor>
-						<label>$VAR[itemdetail]</label>
-					</control>
+					<control type="group">
+						<posx>0</posx>
+						<posy>388</posy>
+						
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>4-col-gutter</width>
+							<height>64</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>colors/white.png</texture>
+							<bordersize>0</bordersize>
+							<colordiffuse>ffFFFFFF</colordiffuse>
+						</control>
 					
+						<control type="label">
+							<posx>12</posx>
+							<posy>-8</posy>
+							<width>4-col-gutter</width>
+							<font>itemTitleSmall</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					
+						<control type="label">
+							<posx>12</posx>
+							<posy>18</posy>
+							<width>4-col-gutter</width>
+							<font>smallMedium</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$VAR[itemdetail]</label>
+						</control>
+					</control>
+										
 				</focusedlayout>
 			</control>
 			
@@ -419,117 +443,52 @@
 			<animation type="hidden">
 	            <effect type="fade" start="100" end="0" time="200" />
 			</animation>
-																														
-			<!--season thumb and info (LEGACY)-->
-			<control type="group">
-				<visible>!Substring(Container.folderpath,plugin)</visible>
-				<visible>false</visible>
-				
-				<control type="image">
-					<posx>0</posx>
-					<posy>3</posy>
-					<width>5-col</width>
-					<height>6-col</height>
-					<aspectratio>scale</aspectratio>
-					<texture fallback="colors/offblack.png">$INFO[ListItem.Art(tvshow.poster)]</texture>
-					<fadetime>500</fadetime>
-				</control>
-				
-				<control type="label">
-					<posx>0</posx>
-					<posy>430</posy>
-					<width>5-col</width>
-					<font>smallStrong</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>-</shadowcolor>
-					<label fallback="Unknown season">$INFO[ListItem.season,Season ,]</label>
-				</control>
-				
-				<control type="textbox">
-					<posx>0</posx>
-					<posy>468</posy>
-					<width>5-col</width>
-					<height>2-row</height>
-					<font>regularStrong</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>-</shadowcolor>
-					<label>[UPPERCASE]$INFO[ListItem.tvshowTitle,,][/UPPERCASE]</label>
-				</control>
-				
-			</control>
-			
+																																	
 			<!--episode synopsis & thumb-->
 			<control type="group">
-				<visible>!Substring(Container.folderpath,plugin)</visible>
-				
+								
 				<control type="image">
+					<visible>!Substring(Container.folderpath,plugin)</visible>	
 					<posx>0</posx>
 					<posy>8</posy>
-					<width>5-col</width>
-					<height>203</height>
-					<aspectratio>scale</aspectratio>
-					<texture fallback="colors/offblack.png">$INFO[ListItem.thumb]</texture>
-					<fadetime>1000</fadetime>
+					<width>6-col</width>
+					<height>635</height>
+					<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+					<texture diffuse="masks/poster.png" border="0">$INFO[ListItem.Art(tvshow.poster)]</texture>
+					<fadetime>200</fadetime>
 				</control>
-				
-				<control type="label">
-					<posx>0</posx>
-					<posy>4-row</posy>
-					<width>5-col</width>
-					<font>itemTitle</font>
-					<textcolor>white</textcolor>
-					<label>$INFO[ListItem.label]</label>
-				</control>
-				
-				<control type="textbox">
-					<posx>0</posx>
-					<posy>282</posy>
-					<width>5-col</width>
-					<height>6-row</height>
-					<font>small</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>77111111</shadowcolor>
-					<label fallback="No plot details available">$INFO[ListItem.plot]</label>
-					<autoscroll delay="3000" time="1000" repeat="10000"></autoscroll>
-				</control>
-				
-			</control>
-			
-			<!--Addon thumb-->
-			<control type="group">
-								
-				<visible>Substring(Container.folderpath,plugin) + !Substring(Container.foldername,TVCatchup)</visible>
 				
 				<control type="image">
-					<visible>IntegerGreaterThan(container.Numitems,0)</visible>
-					<posx>0</posx>
-					<posy>6</posy>
-					<width>5-col</width>
-					<height>5-col</height>
-					<aspectratio>scale</aspectratio>
-					<texture fallback="colors/black.png">$INFO[listitem.icon]</texture>
-					<fadetime>500</fadetime>
-					<colordiffuse>ffFFFFFF</colordiffuse>
+					<visible>Substring(Container.folderpath,plugin)</visible>	
+					<posx>13-col</posx>
+					<posy>8</posy>
+					<width>7-col</width>
+					<height>7-col</height>
+					<aspectratio aligny="top" align="center" scalediffuse="false">scale</aspectratio>
+					<texture diffuse="masks/poster.png" border="0">$INFO[ListItem.thumb]</texture>
+					<fadetime>200</fadetime>
 				</control>
-															
+				
 			</control>
-			
+						
 			<!--episode list-->
 			<control type="panel" id="52">
-				<posx>6-col</posx>
+				<include condition="!Substring(Container.folderpath,plugin)">offsetX</include>
+				<include condition="Substring(Container.folderpath,plugin)">noOffsetX</include>
+				<posx>0</posx>
 				<posy>4</posy>
-				<width>14-col</width>
+				<width>12-col</width>
 				<height>12-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<pagecontrol>60</pagecontrol>
 																
-				<itemlayout width="14-col" height="1-row">
+				<itemlayout width="12-col" height="1-row">
 										
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>14-col</width>
+						<width>12-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
@@ -549,7 +508,7 @@
 					<control type="label">
 						<posx>60</posx>
 						<posy>0</posy>
-						<width>9-col</width>
+						<width>8-col</width>
 						<font>itemTitle</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
@@ -559,17 +518,17 @@
 					
 					<control type="label">
 						<visible>!isempty(ListItem.duration)</visible>
-						<posx>13-col</posx>
+						<posx>11-col</posx>
 						<posy>0</posy>
 						<width>3-col</width>
-						<font>itemTitle</font>
+						<font>smallStrong</font>
 						<textcolor>white</textcolor>
 						<align>right</align>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.duration] mins</label>
 						<scroll>false</scroll>
 					</control>
-																				
+																									
 					<control type="label">
 						<visible>!isempty(ListItem.playcount)</visible>
 						<posx>36r</posx>
@@ -583,12 +542,12 @@
 					
 				</itemlayout>
 
-				<focusedlayout width="14-col" height="1-row">
+				<focusedlayout width="12-col" height="1-row">
 					
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>14-col</width>
+						<width>12-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
@@ -608,7 +567,7 @@
 					<control type="label">
 						<posx>60</posx>
 						<posy>0</posy>
-						<width>9-col</width>
+						<width>8-col</width>
 						<font>itemTitle</font>
 						<textcolor>black</textcolor>
 						<selectedcolor>black</selectedcolor>
@@ -619,10 +578,10 @@
 					
 					<control type="label">
 						<visible>!isempty(ListItem.duration)</visible>
-						<posx>13-col</posx>
+						<posx>11-col</posx>
 						<posy>0</posy>
 						<width>3-col</width>
-						<font>itemTitle</font>
+						<font>smallStrong</font>
 						<textcolor>black</textcolor>
 						<selectedcolor>black</selectedcolor>
 						<align>right</align>

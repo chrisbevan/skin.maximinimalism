@@ -6,47 +6,58 @@
 	<controls>
 									
 		<!--background-->
+		<include>fanartSlides</include>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
 			<include>dimensionsFullscreen</include>
 			<texture>colors/black.png</texture>
-			<colordiffuse>ffffffff</colordiffuse>
 			<aspectratio>stretch</aspectratio>
+			<colordiffuse>99ffffff</colordiffuse>
 		</control>
 				
 		<!--file list-->
 		<control type="group">
 		
 			<posx>col-5-begin</posx>
-			<posy>row-1-begin</posy>
+			<posy>row-3-begin</posy>
 			
 			<!--animations-->
-			<include>modalDialogInOut</include>
+			<include>modalDialogInOutVertical</include>
 				
-			<control type="label">
-				<posx>0</posx>
-				<posy>3-row</posy>
-				<width>8-col</width>
-				<font>pageTitle</font>
-				<textcolor>white</textcolor>
-				<label>31089</label>
-			</control>
-			
-			<!--horizontal rule-->
 			<control type="image">
-				<posx>0</posx>
-				<posy>4-row</posy>
-				<width>16-col</width>
-				<height>3</height>
+				<posx>-384</posx>
+				<posy>44</posy>
+				<width>fullscreenWidth</width>
+				<height>1-row</height>
 				<texture>colors/white.png</texture>
 				<colordiffuse>ffffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>
-		
-			<control type="list" id="450">
+
+			<control type="image">
+				<posx>-3</posx>
+				<posy>44</posy>
+				<width>1155</width>
+				<height>1-row</height>
+				<texture>colors/white.png</texture>
+				<bordertexture border="0">colors/black.png</bordertexture>
+				<bordersize>3,0,0,0</bordersize>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+
+			<control type="label">
+				<posx>12</posx>
+				<posy>47</posy>
+				<width>16-col</width>
+				<font>pageTitle</font>
+				<label>31089</label>
+				<textcolor>black</textcolor>
+				<shadowcolor>-</shadowcolor>
+			</control>
+					
+			<control type="panel" id="450">
 				<posx>0</posx>
-				<posy>5-row</posy>
+				<posy>122</posy>
 				<width>8-col</width>
 				<height>8-row</height>
 				<onright>9000</onright>
@@ -54,21 +65,22 @@
 				<itemlayout height="1-row" width="8-col">
 
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>48</width>
-						<height>48</height>						
-						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
+						<posx>1</posx>
+						<posy>4</posy>
+						<width>50</width>
+						<height>50</height>						
+						<aspectratio>scale</aspectratio>
+						<texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
 					</control>
-
+					
 					<control type="label">
 						<posx>60</posx>
-						<posy>-6</posy>
+						<posy>0</posy>
 						<width>8-col-gutter</width>
 						<info>ListItem.Label</info>
 						<font>itemTitle</font>
-						<textcolor>unselected</textcolor>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
 					</control>
 
 				</itemlayout>
@@ -77,22 +89,31 @@
 
 					<control type="image">
 						<posx>0</posx>
-						<posy>0</posy>
-						<width>48</width>
-						<height>48</height>						
-						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
-						<!--animation-->
-						<include>listItemFocus</include>
+						<posy>2</posy>
+						<width>12-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>colors/white.png</texture>
+					</control>
+					
+					<control type="image">
+						<posx>1</posx>
+						<posy>4</posy>
+						<width>50</width>
+						<height>50</height>						
+						<aspectratio>scale</aspectratio>
+						<texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
 					</control>
 
 					<control type="label">
 						<posx>60</posx>
-						<posy>-6</posy>
+						<posy>0</posy>
 						<width>8-col-gutter</width>
 						<info>ListItem.Label</info>
 						<font>itemTitle</font>
-						<textcolor>selected</textcolor>
+						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
+						<shadowcolor>-</shadowcolor>
 					</control>
 
 				</focusedlayout>
@@ -101,19 +122,19 @@
 		
 			<!--larger thumbnail-->	
 			<control type="image">
-				<posx>8-col</posx>
-				<posy>5-row</posy>
+				<posx>9-col</posx>
+				<posy>2-row</posy>
 				<width>4-col</width>
-				<height>6-col</height>
-				<aspectratio align="left" aligny="top">keep</aspectratio>			
-				<texture>$INFO[Listitem.icon]</texture>
-				<fadetime>400</fadetime>
+				<height>427</height>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<texture background="true" diffuse="masks/poster.png" border="0">$INFO[Listitem.icon]</texture>				
+				<fadetime>200</fadetime>
 			</control>
 			
 			<!--controls-->
 			<control type="grouplist" id="9000">
-				<posx>13-col</posx>
-				<posy>5-row</posy>
+				<posx>15-col</posx>
+				<posy>122-row</posy>
 				<width>24-col</width>
 				<height>4-row</height>
 				<itemgap>0</itemgap>
@@ -122,25 +143,35 @@
 				
 				<control type="button" id="413">
 					<description>OK</description>
-					<label>OK</label>
-					<width>3-col</width>
-					<height>37</height>
-					<font>menuTitle</font>
+					<label>186</label>
+					<width>7-col</width>
 					<align>left</align>
-					<focusedcolor>white</focusedcolor>
-					<textcolor>unselected</textcolor>
+					<aligny>top</aligny>
+					<height>54</height>
+					<font>menuTitle</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus>colors/white.png</texturefocus>
+					<texturenofocus>colors/black.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+					<textoffsety>8</textoffsety>
 				</control>
-								
+							
 				<control type="button" id="415">
 					<visible>Control.IsEnabled(415)</visible>
 					<description>New folder</description>
 					<label>New Folder</label>
-					<width>3-col</width>
-					<height>37</height>
-					<font>menuTitle</font>
+					<width>7-col</width>
 					<align>left</align>
-					<focusedcolor>white</focusedcolor>
-					<textcolor>unselected</textcolor>
+					<aligny>top</aligny>
+					<height>54</height>
+					<font>menuTitle</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus>colors/white.png</texturefocus>
+					<texturenofocus>colors/black.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+					<textoffsety>8</textoffsety>
 				</control>
 											
 			</control>

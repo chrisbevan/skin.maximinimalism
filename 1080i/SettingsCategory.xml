@@ -6,6 +6,12 @@
 			
 		<!--background-->
 		<include>fanartSlides</include>
+		<control type="image">
+			<include>dimensionsFullscreen</include>
+			<texture>colors/black.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<colordiffuse>99ffffff</colordiffuse>
+		</control>
 							
 		<!--placeholder label for current setting group title-->
 		<control type="label" id="2">
@@ -58,17 +64,7 @@
 				<textcolor>black</textcolor>
 				<shadowcolor>-</shadowcolor>
 			</control>
-			
-			<control type="image">
-				<posx>-384</posx>
-				<posy>118</posy>
-				<width>fullscreenWidth</width>
-				<height>629</height>
-				<texture>colors/black.png</texture>
-				<aspectratio>stretch</aspectratio>
-				<colordiffuse>99ffffff</colordiffuse>
-			</control>
-						
+									
 			<!--Category submenu-->		
 			<control type="grouplist" id="3">
 				<posx>0</posx>

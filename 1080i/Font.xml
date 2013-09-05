@@ -88,14 +88,7 @@
 				<linespacing>1.0</linespacing>
 				<style>uppercase</style>
 			</font>
-			
-			<font>
-				<name>smallStrong2</name>
-				<filename>sourceSansPro/black.ttf</filename>
-				<size>24</size>
-				<linespacing>1.0</linespacing>
-			</font>
-			
+					
 			<font>
 				<name>smallMedium</name>
 				<filename>sourceSansPro/semibold.ttf</filename>

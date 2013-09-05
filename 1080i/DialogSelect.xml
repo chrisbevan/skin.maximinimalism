@@ -7,6 +7,12 @@
 			
 		<!--background-->
 		<include>fanartSlides</include>
+		<control type="image">
+			<include>dimensionsFullscreen</include>
+			<texture>colors/black.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<colordiffuse>99ffffff</colordiffuse>
+		</control>
 					
 		<control type="group">
 			
@@ -92,17 +98,7 @@
 			
 				<posx>col-7-begin</posx>
 				<posy>row-5-begin</posy>
-				
-				<control type="image">
-					<posx>-528</posx>
-					<posy>8</posy>
-					<width>fullscreenWidth</width>
-					<height>629</height>
-					<texture>colors/black.png</texture>
-					<aspectratio>stretch</aspectratio>
-					<colordiffuse>99ffffff</colordiffuse>
-				</control>
-											
+															
 				<control type="list" id="6">
 					<posx>0</posx>
 					<posy>8</posy>

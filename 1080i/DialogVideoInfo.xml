@@ -94,7 +94,7 @@
 					<width>3-col</width>
 					<height>297</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+					<texture diffuse="masks/poster.png" border="0">$INFO[Listitem.thumb]</texture>
 				</control>
 									
 				<!--synopsis-->
