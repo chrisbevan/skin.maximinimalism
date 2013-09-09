@@ -14,7 +14,7 @@
 			<posy>0</posy>
 			<include>dimensionsFullscreen</include>
 			<texture>colors/black.png</texture>
-			<colordiffuse>ccffffff</colordiffuse>
+			<colordiffuse>ddffffff</colordiffuse>
 			<aspectratio>stretch</aspectratio>
 		</control>
 					
