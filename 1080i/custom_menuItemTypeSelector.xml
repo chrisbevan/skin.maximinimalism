@@ -26,7 +26,7 @@
 			<control type="group">
 		
 				<posx>col-9-begin</posx>
-				<posy>row-5-begin</posy>
+				<posy>row-4-begin</posy>
 						
 				<control type="image">
 					<posx>-672</posx>
@@ -68,7 +68,7 @@
 					<height>10-row</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
-					<ondown>6021</ondown>
+					<ondown>7000</ondown>
 					
 					<control type="radiobutton" id="6001">
 						<visible>stringcompare(skin.string(menuItemTypeFilter),video)</visible>
@@ -110,10 +110,10 @@
 						<selected>stringcompare(skin.string(menuItemType),audioPlaylist)</selected>
 					</control>
 					
-					<!--
+					
 					<control type="radiobutton" id="6005">
 						<description>Favourite</description>
-						<width>6-col</width>
+						<width>8-col</width>
 						<align>left</align>
 						<label>31093</label>
 						<onclick>Skin.SetString(menuItemType,favourite)</onclick>
@@ -122,16 +122,27 @@
 					
 					<control type="radiobutton" id="6006">
 						<description>Folder</description>
-						<width>6-col</width>
+						<width>8-col</width>
 						<align>left</align>
 						<label>31087</label>
 						<onclick>Skin.SetString(menuItemType,folder)</onclick>
 						<selected>stringcompare(skin.string(menuItemType),folder)</selected>
 					</control>
-					-->
 					
-					<!--name and path capture-->					
-					<control type="button" id="6007">
+				</control>
+								
+				<control type="grouplist" id="7000">
+					<posx>0</posx>
+					<posy>6-row</posy>
+					<width>8-col</width>
+					<height>10-row</height>
+					<orientation>vertical</orientation>
+					<itemgap>0</itemgap>
+					<onup>6006</onup>
+					<ondown>6021</ondown>					
+					
+					<!--name and path capture-->										
+					<control type="button" id="7001">
 			      		<description>Set path</description>
 						<width>8-col</width>
 						<height>54</height>
@@ -149,13 +160,17 @@
 						<onclick condition="stringcompare(skin.string(menuItemTypeFilter),audio)">$VAR[customMusicSourceAction]</onclick>
 					</control>
 					
-					<control type="button" id="6008">
+					<control type="button" id="7002">
 						<visible>!stringcompare(skin.string(menuItemType),videoAddon) + !stringcompare(skin.string(menuItemType),audioAddon)</visible>
 			      		<description>Set Name</description>
 						<width>8-col</width>
+						<height>54</height>
 						<font>itemTitle</font>
-						<textcolor>unselected</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<textcolor>white</textcolor>
+						<focusedcolor>black</focusedcolor>
+						<texturefocus>colors/white.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textoffsetx>12</textoffsetx>
 			            <label>31090</label>
 						<label2>$VAR[pendingAddonName]</label2>
 			      		<onclick condition="stringcompare(skin.string(menuItemTypeFilter),video)">$VAR[customVideoSourceSetName]</onclick>
@@ -166,11 +181,12 @@
 								
 				<control type="grouplist" id="6020">
 					<posx>0</posx>
-					<posy>7-row</posy>
+					<posy>9-row</posy>
 					<width>8-col</width>
 					<height>1-row</height>
 					<orientation>horizontal</orientation>
 					<itemgap>24</itemgap>
+					<onup>7000</onup>
 					
 					<control type="button" id="6021">				
 						<description>OK</description>
@@ -186,7 +202,6 @@
 						<texturefocus>UIControls/buttonFO.png</texturefocus>
 						<textcolor>white</textcolor>
 						<focusedcolor>black</focusedcolor>
-						<onup>6000</onup>
 						<onclick>dialog.close(5000)</onclick>
 					</control>
 					
@@ -204,7 +219,6 @@
 						<texturefocus>UIControls/buttonFO.png</texturefocus>
 						<textcolor>white</textcolor>
 						<focusedcolor>black</focusedcolor>
-						<onup>6000</onup>
 						<onclick>dialog.close(5000,true)</onclick>
 					</control>
 				</control>

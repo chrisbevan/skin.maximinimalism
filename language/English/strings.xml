@@ -29,7 +29,7 @@
 	
 	<!--mymusicnav-->
 	<string id="31037">Albums</string>
-	<string id="31033"></string>
+	<string id="31033">Home</string>
 	<string id="31050"></string>
 	<string id="31051">Artists and Albums</string>
 	<string id="31052"></string>
@@ -72,9 +72,9 @@
 	<string id="31085">Video Addon</string>
 	<string id="31086">Music Addon</string>
 	<string id="31087">Folder</string>
-	<string id="31088">Set Path</string>
+	<string id="31088">Choose Addon</string>
 	<string id="31089">File Browser</string>
-	<string id="31090">Set Name</string>
+	<string id="31090">Set Shortcut Name</string>
 	<string id="31091">Video Playlist</string>
 	<string id="31092">Music Playlist</string>
 	<string id="31093">Favourite</string>

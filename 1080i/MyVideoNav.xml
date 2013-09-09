@@ -83,6 +83,13 @@
 						</focusedlayout>
 
 						<content>
+							<item id="20">
+								<label>31033</label>
+								<label2></label2>
+								<onclick>ActivateWindow(home)</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+							</item>
+							
 							<item id="1">
 								<label>31005</label>
 								<label2></label2>
