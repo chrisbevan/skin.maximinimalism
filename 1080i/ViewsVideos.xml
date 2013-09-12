@@ -474,7 +474,7 @@
 			<!--episode list-->
 			<control type="panel" id="52">
 				<include condition="!Substring(Container.folderpath,plugin)">offsetX</include>
-				<include condition="Substring(Container.folderpath,plugin)">noOffsetX</include>
+				<include condition="Substring(Container.folderpath,plugin) + container.content(episodes)">noOffsetX</include>
 				<posx>0</posx>
 				<posy>4</posy>
 				<width>12-col</width>

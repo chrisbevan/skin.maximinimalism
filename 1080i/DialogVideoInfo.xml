@@ -6,6 +6,7 @@
 		
 		<!--background / fanart-->
 		<control type="image">
+			<visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<include>dimensionsFullscreen</include>
@@ -15,6 +16,17 @@
 		</control>
 		
 		<control type="image">
+			<visible>Substring(Container.folderpath,plugin) | container.content(episodes)</visible>
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>dimensionsFullscreen</include>
+			<texture>colors/black.png</texture>
+			<colordiffuse>ddffffff</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+		</control>		
+			
+		<control type="image">
+			<visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
 			<posx>0</posx>
 			<posy>0</posy>
 			<include>dimensionsFullscreen</include>
@@ -74,7 +86,7 @@
 					<posy>0</posy>
 					<width>11-col</width>
 					<align>left</align>
-					<font>pageTitle</font>
+					<font>dialogTitle</font>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.label]</label>
 				</control>
@@ -97,21 +109,116 @@
 					<width>18-col-gutter</width>
 					<align>left</align>
 					<textcolor>white</textcolor>
-					<height>140</height>
+					<height>174</height>
 					<label>[B]$INFO[ListItem.plot][/B]</label>
 					<autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
 				</control>
 			
-				<!--final details-->
-				<control type="label">
-					<posx>0</posx>
-					<posy>273</posy>
-					<width>18-col-gutter</width>
-					<align>left</align>
-					<font>smallStrong</font>
-					<textcolor>white</textcolor>
-					<label>[B][COLOR accented]$INFO[ListItem.duration,, mins]$VAR[itemResolution, • ]$INFO[listitem.filename, • ,][/COLOR][/B]</label>
-				</control>
+			</control>
+			
+			<!--dialog controls-->						
+			<control type="list" id="8000">
+				<posx>col-20-begin</posx>
+				<posy>row-8-begin</posy>
+				<width>8-col</width>
+				<height>4-row</height>
+				<itemgap>3</itemgap>
+				<orientation>vertical</orientation>
+
+				<itemlayout width="8-col" height="1-row">
+
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>8-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>colors/black.png</texture>
+					</control>
+
+					<control type="label">
+						<posx>24</posx>
+						<posy>0</posy>
+						<width>1-col</width>
+						<font>symbol</font>
+						<textcolor>white</textcolor>
+						<label>$INFO[ListItem.label2]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+					<control type="label">
+						<posx>1-col</posx>
+						<posy>2</posy>
+						<width>6-col</width>
+						<font>menuTitle</font>
+						<textcolor>white</textcolor>
+						<label>$INFO[ListItem.label]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout width="8-col" height="1-row">
+
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>8-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>colors/white.png</texture>
+					</control>
+
+					<control type="label">
+						<posx>24</posx>
+						<posy>0</posy>
+						<width>1-col</width>
+						<font>symbol</font>
+						<textcolor>black</textcolor>
+						<label>$INFO[ListItem.label2]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+					<control type="label">
+						<posx>1-col</posx>
+						<posy>2</posy>
+						<width>6-col</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<label>$INFO[ListItem.label]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+				</focusedlayout>
+
+				<content>
+					<item id="1">
+						<visible>!IsEmpty(ListItem.Trailer)</visible>
+						<label>20410</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>SendClick(2003,11)</onclick>
+					</item>
+					<item id="2">
+						<label>31075</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>sendclick(2003,8)</onclick>
+					</item>
+					<item id="3">
+						<label>31076</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>SendClick(2003,6)</onclick>
+					</item>
+					<item id="4">
+						<label>31077</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>SendClick(2003,10)</onclick>
+					</item>
+				</content>
+
 			</control>
 							
 		</control>
@@ -120,28 +227,19 @@
 		<control type="group">
 			<visible>Substring(Container.folderpath,plugin) | container.content(episodes)</visible>
 			
-			<!--overlay-->
-			<control type="image">
-				<posx>0</posx>
-				<posy>425</posy>
-				<width>fullscreenWidth</width>
-				<height>4-row</height>
-				<texture>colors/black.png</texture>
-				<colordiffuse>ddffffff</colordiffuse>
-				<aspectratio>stretch</aspectratio>
-			</control>
-			
+			<include>modalDialogInOutVertical</include>
+						
 			<!--thumbnail if available-->
 			<control type="group">
-				<posx>col-1-begin</posx>
-				<posy>row-8-begin</posy>
+				<posx>col-9-begin</posx>
+				<posy>row-3-begin</posy>
 
 				<!--cover-->			
 				<control type="image">
-					<posx>-24</posx>
-					<posy>-12</posy>
-					<width>6-col</width>
-					<height>243</height>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>8-col</width>
+					<height>324</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture background="true" fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
 					<fadetime>200</fadetime>
@@ -151,16 +249,16 @@
 						
 			<!--content-->
 			<control type="group">
-				<posx>col-7-begin</posx>
-				<posy>row-8-begin</posy>
+				<posx>col-9-begin</posx>
+				<posy>row-9-begin</posy>
 			
 				<!--title-->
 				<control type="label">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>12-col</width>
+					<width>8-col</width>
 					<align>left</align>
-					<font>dialogTitle</font>
+					<font>regularStrong</font>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.label]</label>
 				</control>
@@ -170,121 +268,108 @@
 					<posx>0</posx>
 					<posy>68</posy>
 					<font>small</font>
-					<width>12-col-gutter</width>
+					<width>8-col</width>
 					<align>left</align>
 					<textcolor>white</textcolor>
-					<height>140</height>
+					<height>238</height>
 					<label>[B]$INFO[ListItem.plot][/B]</label>
 					<autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
 				</control>
 				
+				<!--dialog controls-->						
+				<control type="list" id="8000">
+					<posx>0</posx>
+					<posy>6-row</posy>
+					<width>8-col</width>
+					<height>4-row</height>
+					<itemgap>3</itemgap>
+					<orientation>vertical</orientation>
+
+					<itemlayout width="8-col" height="1-row">
+
+						<control type="image">
+							<posx>0</posx>
+							<posy>2</posy>
+							<width>8-col</width>
+							<height>53</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>colors/black.png</texture>
+						</control>
+
+						<control type="label">
+							<posx>24</posx>
+							<posy>0</posy>
+							<width>1-col</width>
+							<font>symbol</font>
+							<textcolor>white</textcolor>
+							<label>$INFO[ListItem.label2]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
+
+						<control type="label">
+							<posx>1-col</posx>
+							<posy>2</posy>
+							<width>6-col</width>
+							<font>menuTitle</font>
+							<textcolor>white</textcolor>
+							<label>$INFO[ListItem.label]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
+
+					</itemlayout>
+
+					<focusedlayout width="8-col" height="1-row">
+
+						<control type="image">
+							<posx>0</posx>
+							<posy>2</posy>
+							<width>8-col</width>
+							<height>53</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>colors/white.png</texture>
+						</control>
+
+						<control type="label">
+							<posx>24</posx>
+							<posy>0</posy>
+							<width>1-col</width>
+							<font>symbol</font>
+							<textcolor>black</textcolor>
+							<label>$INFO[ListItem.label2]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
+
+						<control type="label">
+							<posx>1-col</posx>
+							<posy>2</posy>
+							<width>6-col</width>
+							<font>menuTitle</font>
+							<textcolor>black</textcolor>
+							<label>$INFO[ListItem.label]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
+
+					</focusedlayout>
+
+					<content>
+						<item id="1">
+							<label>31075</label>
+							<label2></label2>
+							<thumb>-</thumb>
+							<onclick>sendclick(2003,8)</onclick>
+						</item>
+						<item id="2">
+							<label>31076</label>
+							<label2></label2>
+							<thumb>-</thumb>
+							<onclick>SendClick(2003,6)</onclick>
+						</item>
+					</content>
+
+				</control>
+				
 			</control>
 			
-		</control>
-		
-		<!--dialog controls-->						
-		<control type="list" id="8000">
-			<posx>col-20-begin</posx>
-			<posy>row-8-begin</posy>
-			<width>8-col</width>
-			<height>4-row</height>
-			<itemgap>3</itemgap>
-			<orientation>vertical</orientation>
-
-			<itemlayout width="8-col" height="1-row">
-
-				<control type="image">
-					<posx>0</posx>
-					<posy>2</posy>
-					<width>8-col</width>
-					<height>53</height>
-					<aspectratio>stretch</aspectratio>
-					<texture>colors/black.png</texture>
-				</control>
-				
-				<control type="label">
-					<posx>24</posx>
-					<posy>0</posy>
-					<width>1-col</width>
-					<font>symbol</font>
-					<textcolor>white</textcolor>
-					<label>$INFO[ListItem.label2]</label>
-					<shadowcolor>-</shadowcolor>
-				</control>
-				
-				<control type="label">
-					<posx>1-col</posx>
-					<posy>2</posy>
-					<width>6-col</width>
-					<font>menuTitle</font>
-					<textcolor>white</textcolor>
-					<label>$INFO[ListItem.label]</label>
-					<shadowcolor>-</shadowcolor>
-				</control>
-
-			</itemlayout>
-
-			<focusedlayout width="8-col" height="1-row">
-				
-				<control type="image">
-					<posx>0</posx>
-					<posy>2</posy>
-					<width>8-col</width>
-					<height>53</height>
-					<aspectratio>stretch</aspectratio>
-					<texture>colors/white.png</texture>
-				</control>
-				
-				<control type="label">
-					<posx>24</posx>
-					<posy>0</posy>
-					<width>1-col</width>
-					<font>symbol</font>
-					<textcolor>black</textcolor>
-					<label>$INFO[ListItem.label2]</label>
-					<shadowcolor>-</shadowcolor>
-				</control>
-
-				<control type="label">
-					<posx>1-col</posx>
-					<posy>2</posy>
-					<width>6-col</width>
-					<font>menuTitle</font>
-					<textcolor>black</textcolor>
-					<label>$INFO[ListItem.label]</label>
-					<shadowcolor>-</shadowcolor>
-				</control>
-
-			</focusedlayout>
-
-			<content>
-				<item id="1">
-					<visible>!IsEmpty(ListItem.Trailer)</visible>
-					<label>20410</label>
-					<label2></label2>
-					<thumb>-</thumb>
-					<onclick>SendClick(2003,11)</onclick>
-				</item>
-				<item id="2">
-					<label>31075</label>
-					<label2></label2>
-					<thumb>-</thumb>
-					<onclick>sendclick(2003,8)</onclick>
-				</item>
-				<item id="3">
-					<label>31076</label>
-					<label2></label2>
-					<thumb>-</thumb>
-					<onclick>SendClick(2003,6)</onclick>
-				</item>
-				<item id="4">
-					<label>31077</label>
-					<label2></label2>
-					<thumb>-</thumb>
-					<onclick>SendClick(2003,10)</onclick>
-				</item>
-			</content>
-
 		</control>
 			
 		<!--buttons-->
