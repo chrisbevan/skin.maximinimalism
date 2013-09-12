@@ -16,7 +16,7 @@
 	<value condition="Window.IsActive(videolibrary) + container.content(tvshows)">$INFO[Skin.String(tvshowFanartLocation)]</value>
 	<value condition="Window.IsActive(videolibrary)">$INFO[Skin.String(videoFanartLocation)]</value>
 	<value condition="Window.IsActive(musiclibrary)">$INFO[Skin.String(musicFanartLocation)]</value>
-	<value condition="Window.IsActive(pvr)">$INFO[Skin.String(tvshowFanartLocation)]</value>
+	<value condition="Window.IsActive(pvr)">$INFO[Skin.String(videoFanartLocation)]</value>
 </variable>
 
 <!--folder titles-->
@@ -43,7 +43,7 @@
 	<value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
 </variable>
 
-<!--SD / HD value (thanks 'Black)-->
+<!--SD / HD value (thanks 'Black!)-->
 <variable name="itemResolution">
     <value condition="SubString(ListItem.FileNameAndPath,.3D.) | SubString(ListItem.FileNameAndPath,-3D.)">3D</value>
     <value condition="IntegerGreaterThan(ListItem.VideoResolution,719)">HD</value>
