@@ -212,13 +212,5 @@
 	<include name="offset4">
 		<posy>580</posy>
 	</include>
-	
-	<include name="offsetX">
-		<posx>7-col</posx>
-	</include>
-	
-	<include name="noOffsetX">
-		<posx>0</posx>
-	</include>
-	
+		
 </includes>

@@ -664,7 +664,7 @@
 							<visible>false</visible>
 							<width>8-col</width>
 							<font>buttonTitle</font>
-							<label>$INFO[skin.string(showRecentVideoItems)</label>
+							<label>$INFO[container.folderpath]</label>
 							<textcolor>white</textcolor>
 						</control>
 						

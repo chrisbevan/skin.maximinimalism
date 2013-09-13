@@ -1,3 +1,10 @@
+[B]0.1.2[/B]
+- General misc tidy up skin-wide
+- .DS Store entries removed
+- Dialog restyling and new UI controls added
+- Video info screen reworked
+- Misc bug fixes
+
 [B]0.1.1[/B]
 - Now playing info now available directly from OK button
 - Movie listing tweak (now shows year and resolution)
