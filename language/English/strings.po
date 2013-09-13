@@ -1,0 +1,403 @@
+# XBMC Media Center language file
+# Addon Name: Maximinimalism
+# Addon id: skin. maximinimalism
+# Addon Provider: thedeadman
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Skins\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+#home
+
+msgctxt "#31000"
+msgid "Watch"
+msgstr ""
+
+msgctxt "#31001"
+msgid "Listen"
+msgstr ""
+
+msgctxt "#31002"
+msgid "Play"
+msgstr ""
+
+msgctxt "#31003"
+msgid "Program Addons"
+msgstr ""
+
+msgctxt "#31004"
+msgid "Power"
+msgstr ""
+
+msgctxt "#31005"
+msgid "Latest"
+msgstr ""
+
+msgctxt "#31006"
+msgid "Live TV"
+msgstr ""
+
+
+#myvideonav
+
+msgctxt "#31007"
+msgid "Library Empty"
+msgstr ""
+
+msgctxt "#31008"
+msgid "Sort Direction"
+msgstr ""
+
+msgctxt "#31009"
+msgid "No plot info available"
+msgstr ""
+
+msgctxt "#31010"
+msgid "All Addons"
+msgstr ""
+
+msgctxt "#31011"
+msgid "TV Channels"
+msgstr ""
+
+msgctxt "#31012"
+msgid "Movies and TVShows"
+msgstr ""
+
+msgctxt "#31013"
+msgid "Latest content"
+msgstr ""
+
+msgctxt "#31014"
+msgid "title(s)"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Radio"
+msgstr ""
+
+msgctxt "#31017"
+msgid "Channels"
+msgstr ""
+
+msgctxt "#31023"
+msgid "Change Sort"
+msgstr ""
+
+msgctxt "#31033"
+msgid "Home"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Refresh Library"
+msgstr ""
+
+
+#mymusicnav
+
+msgctxt "#31037"
+msgid "Albums"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Page"
+msgstr ""
+
+msgctxt "#31039"
+msgid "Remove menu item -"
+msgstr ""
+
+msgctxt "#31040"
+msgid "Add source"
+msgstr "
+
+msgctxt "#31041"
+msgid "Add Shortcut"
+msgstr ""
+
+msgctxt "#31050"
+msgid ""
+msgstr ""
+
+msgctxt "#31051"
+msgid "Artists and Albums"
+msgstr ""
+
+msgctxt "#31052"
+msgid ""
+msgstr ""
+
+msgctxt "#31053"
+msgid "Music Library"
+msgstr ""
+
+msgctxt "#31054"
+msgid "by"
+msgstr ""
+
+msgctxt "#31056"
+msgid ""
+msgstr ""
+
+msgctxt "#31057"
+msgid ""
+msgstr ""
+
+
+#settings
+
+msgctxt "#31058"
+msgid "Skin Settings"
+msgstr ""
+
+msgctxt "#31059"
+msgid "Build"
+msgstr ""
+
+msgctxt "#31060"
+msgid "PVR"
+msgstr ""
+
+msgctxt "#31061"
+msgid "Skin"
+msgstr ""
+
+msgctxt "#31062"
+msgid "Screensaver"
+msgstr ""
+
+msgctxt "#31063"
+msgid "File Lists"
+msgstr ""
+
+msgctxt "#31064"
+msgid "Subtitles"
+msgstr ""
+
+msgctxt "#31065"
+msgid "EPG"
+msgstr ""
+
+msgctxt "#31066"
+msgid "Audio CDs"
+msgstr ""
+
+msgctxt "#31067"
+msgid "System extensions"
+msgstr ""
+
+msgctxt "#31068"
+msgid "Slideshows"
+msgstr ""
+
+msgctxt "#31069"
+msgid "Locations"
+msgstr ""
+
+msgctxt "#31070"
+msgid "Services"
+msgstr ""
+
+msgctxt "#31071"
+msgid "Networking"
+msgstr ""
+
+msgctxt "#31072"
+msgid "Airplay"
+msgstr ""
+
+msgctxt "#31073"
+msgid "Input devices"
+msgstr ""
+
+msgctxt "#31074"
+msgid "Power saving"
+msgstr ""
+
+
+#dialogs
+
+msgctxt "#31075"
+msgid "Play Title"
+msgstr ""
+
+msgctxt "#31076"
+msgid "Change Title<"
+msgstr ""
+
+msgctxt "#31077"
+msgid "Choose Art"
+msgstr ""
+
+msgctxt "#31078"
+msgid "PVR"
+msgstr ""
+
+msgctxt "#31079"
+msgid "XBMC"
+msgstr ""
+
+msgctxt "#31080"
+msgid "Addons"
+msgstr ""
+
+msgctxt "#31081"
+msgid "Author"
+msgstr ""
+
+msgctxt "#31082"
+msgid "Version"
+msgstr ""
+
+msgctxt "#31083"
+msgid "Configure"
+msgstr ""
+
+msgctxt "#31084"
+msgid "Configuration"
+msgstr ""
+
+msgctxt "#31085"
+msgid "Video Addon"
+msgstr ""
+
+msgctxt "#31086"
+msgid "Music Addon"
+msgstr ""
+
+msgctxt "#31087"
+msgid "Folder"
+msgstr ""
+
+msgctxt "#31088"
+msgid "Choose Addon"
+msgstr ""
+
+msgctxt "#31089"
+msgid "File Browser"
+msgstr ""
+
+msgctxt "#31090"
+msgid "Set Shortcut Name"
+msgstr ""
+
+msgctxt "#31091"
+msgid "Video Playlist"
+msgstr ""
+
+msgctxt "#31092"
+msgid "Music Playlist"
+msgstr ""
+
+msgctxt "#31093"
+msgid "Favourite"
+msgstr ""
+
+msgctxt "#31094"
+msgid "Subtitles Script:"
+msgstr ""
+
+msgctxt "#31095"
+msgid "Movie Fanart location: "
+msgstr ""
+
+msgctxt "#31096"
+msgid "TV Show Fanart location: "
+msgstr ""
+
+msgctxt "#31097"
+msgid "Game Fanart location: "
+msgstr ""
+
+msgctxt "#31098"
+msgid "Music Fanart location: "
+msgstr ""
+
+
+#
+msgctxt "#31018"
+msgid "Current Selected"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Open playlist"
+msgstr ""
+
+msgctxt "#31020"
+msgid "Save playlist"
+msgstr ""
+
+msgctxt "#31021"
+msgid "Close playlist"
+msgstr ""
+
+msgctxt "#31022"
+msgid "System music files"
+msgstr ""
+
+
+#
+msgctxt "#31024"
+msgid "Disable Background Video"
+msgstr ""
+
+msgctxt "#31025"
+msgid "Change default Lyrics script"
+msgstr ""
+
+msgctxt "#31026"
+msgid "Change default Subtitles script"
+msgstr ""
+
+msgctxt "#31027"
+msgid "Items"
+msgstr ""
+
+msgctxt "#31028"
+msgid "Page"
+msgstr ""
+
+msgctxt "#31029"
+msgid "Current playlist"
+msgstr ""
+
+msgctxt "#31030"
+msgid "Memory Used"
+msgstr ""
+
+msgctxt "#31031"
+msgid "Karaoke Song Selector"
+msgstr ""
+
+msgctxt "#31032"
+msgid "Visualization Presets"
+msgstr ""
+
+msgctxt "#31033"
+msgid "Debug"
+msgstr ""
+
+msgctxt "#31034"
+msgid "Enable Debug Grid"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Disable Debug Info"
+msgstr ""
+
+
+
+
+msgctxt "#31015"
+msgid "Player Controls"
+msgstr ""
