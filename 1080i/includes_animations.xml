@@ -10,16 +10,16 @@
 	</include>
 	
 	<include name="listSlideIn">
-		<effect type="fade" start="0" end="100" time="300" delay="500" />
+		<effect type="fade" start="0" end="100" time="300" delay="600" />
 		<effect type="slide" start="3-col" end="0" center="auto" tween="cubic" easing="out" time="400" delay="500"/>
 	</include>
 	
 	<!--ken burnsey style effect for fanart images-->
 	<include name="kenBurnsey">
-		<animation type="Conditional" condition="true" loop="true">	
+		<animation type="conditional" condition="true" loop="true">	
 			<effect type="fade" start="0" end="100" time="2000" />
 			<effect type="zoom" center="auto" start="130" end="100" time="15000" />
-			<effect type="fade" start="100" end="0" delay="14000" time="1000" />
+			<effect type="fade" start="100" end="0" time="1000" delay="14000" />
 		</animation>
 	</include>
 	
@@ -39,7 +39,7 @@
 	<include name="modalDialogInOutVertical">	
 		<animation type="Windowopen">
             <effect type="fade" start="0" end="100" time="300" />
-			<effect type="slide" start="0,-500" end="0" tween="cubic" easing="out" time="400" />
+			<effect type="slide" start="0,-200" end="0" tween="cubic" easing="out" time="400" />
 		</animation>
 		
 		<animation type="Windowclose">

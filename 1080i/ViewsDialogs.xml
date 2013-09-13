@@ -9,7 +9,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>14-col</width>
-				<height>10-row</height>
+				<height>11-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<ondown>51</ondown>
@@ -21,31 +21,32 @@
 				<itemlayout height="1-row" width="12-col">
 				
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>48</width>
-						<height>48</height>						
-						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
-					</control>
-
-					<control type="label">
-						<posx>60</posx>
-						<posy>-6</posy>
-						<width>8-col-gutter</width>
-						<info>ListItem.Label</info>
-						<font>itemTitle</font>
-						<textcolor>unselected</textcolor>
+						<posx>1</posx>
+						<posy>4</posy>
+						<width>50</width>
+						<height>50</height>						
+						<aspectratio>scale</aspectratio>
+						<texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
 					</control>
 					
 					<control type="label">
-						<posx>12-col</posx>
-						<posy>-6</posy>
+						<posx>60</posx>
+						<posy>0</posy>
+						<width>8-col-gutter</width>
+						<info>ListItem.Label</info>
+						<font>itemTitle</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+					</control>
+					
+					<control type="label">
+						<posx>12-col-gutter</posx>
+						<posy>2</posy>
 						<width>4-col</width>
 						<align>right</align>
 						<info>ListItem.Label2</info>
 						<font>itemTitle</font>
-						<textcolor>unselected</textcolor>
+						<textcolor>white</textcolor>
 					</control>
 				
 				</itemlayout>
@@ -54,32 +55,43 @@
 
 					<control type="image">
 						<posx>0</posx>
-						<posy>0</posy>
-						<width>48</width>
-						<height>48</height>						
-						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
-						<!--animation-->
-						<include>listItemFocus</include>
+						<posy>2</posy>
+						<width>12-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>colors/white.png</texture>
 					</control>
 					
+					<control type="image">
+						<posx>1</posx>
+						<posy>4</posy>
+						<width>50</width>
+						<height>50</height>						
+						<aspectratio>scale</aspectratio>
+						<texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
+					</control>
+
 					<control type="label">
 						<posx>60</posx>
-						<posy>-6</posy>
+						<posy>0</posy>
 						<width>8-col-gutter</width>
 						<info>ListItem.Label</info>
 						<font>itemTitle</font>
-						<textcolor>selected</textcolor>
+						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
+						<shadowcolor>-</shadowcolor>
 					</control>
 					
 					<control type="label">
-						<posx>12-col</posx>
-						<posy>-6</posy>
+						<posx>12-col-gutter</posx>
+						<posy>2</posy>
 						<width>4-col</width>
 						<align>right</align>
 						<info>ListItem.Label2</info>
 						<font>itemTitle</font>
-						<textcolor>selected</textcolor>
+						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
+						<shadowcolor>-</shadowcolor>
 					</control>
 									
 				</focusedlayout>

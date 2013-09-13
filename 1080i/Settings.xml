@@ -16,9 +16,9 @@
 			<!--overlay-->
 			<control type="image">
 				<posx>-312</posx>
-				<posy>104</posy>
+				<posy>118</posy>
 				<width>fullscreenWidth</width>
-				<height>6-row</height>
+				<height>328</height>
 				<texture>colors/black.png</texture>
 				<colordiffuse>88ffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
@@ -26,14 +26,37 @@
 			
 			<!--animations-->
 			<include>modalDialogInOutVertical</include>
-														
+																	
+			<control type="image">
+				<posx>-384</posx>
+				<posy>44</posy>
+				<width>fullscreenWidth</width>
+				<height>1-row</height>
+				<texture>colors/white.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<control type="image">
+				<posx>-3</posx>
+				<posy>44</posy>
+				<width>1155</width>
+				<height>1-row</height>
+				<texture>colors/white.png</texture>
+				<bordertexture border="0">colors/black.png</bordertexture>
+				<bordersize>3,0,0,0</bordersize>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
 			<control type="label">
-				<posx>0</posx>
-				<posy>50</posy>
+				<posx>12</posx>
+				<posy>47</posy>
 				<width>8-col</width>
 				<font>pageTitle</font>
-				<label>[COLOR accented]$LOCALIZE[5][/COLOR] $LOCALIZE[31058]</label>
-				<textcolor>white</textcolor>
+				<label>$LOCALIZE[5]</label>
+				<textcolor>black</textcolor>
+				<shadowcolor>-</shadowcolor>
 			</control>
 									
 			<!--menu-->
@@ -49,9 +72,9 @@
 					
 					<control type="image">
 						<posx>0</posx>
-						<posy>0</posy>
-						<width>96</width>
-						<height>96</height>
+						<posy>12</posy>
+						<width>72</width>
+						<height>72</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
 						<bordersize>0</bordersize>
@@ -59,7 +82,7 @@
 					</control>
 			
 					<control type="label">
-						<posx>32</posx>
+						<posx>18</posx>
 						<posy>18</posy>
 						<width>326</width>
 						<font>symbolLarge</font>
@@ -68,7 +91,7 @@
 					</control>
 					
 					<control type="label">
-						<posx>108</posx>
+						<posx>84</posx>
 						<posy>5</posy>
 						<width>326</width>
 						<font>itemTitle</font>
@@ -77,11 +100,11 @@
 					</control>
 			
 					<control type="label">
-						<posx>108</posx>
+						<posx>84</posx>
 						<posy>38</posy>
 						<width>326</width>
 						<font>smallStrong</font>
-						<textcolor>accented</textcolor>
+						<textcolor>unselected</textcolor>
 						<label>$INFO[listitem.property(label3)]</label>
 					</control>						
 				</itemlayout>
@@ -90,9 +113,9 @@
 					
 					<control type="image">
 						<posx>0</posx>
-						<posy>0</posy>
-						<width>96</width>
-						<height>96</height>
+						<posy>12</posy>
+						<width>72</width>
+						<height>72</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
 						<!--animation-->
@@ -100,7 +123,7 @@
 					</control>
 					
 					<control type="label">
-						<posx>32</posx>
+						<posx>18</posx>
 						<posy>18</posy>
 						<width>326</width>
 						<font>symbolLarge</font>
@@ -109,7 +132,7 @@
 					</control>
 			
 					<control type="label">
-						<posx>108</posx>
+						<posx>84</posx>
 						<posy>5</posy>
 						<width>326</width>
 						<font>itemTitle</font>
@@ -119,7 +142,7 @@
 					</control>
 			
 					<control type="label">
-						<posx>108</posx>
+						<posx>84</posx>
 						<posy>38</posy>
 						<width>326</width>
 						<font>smallStrong</font>

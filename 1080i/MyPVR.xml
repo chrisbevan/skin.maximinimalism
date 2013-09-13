@@ -2,6 +2,7 @@
 	<defaultcontrol always="false">32</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<onload>PlayerControl(stop)</onload>
+	<previouswindow>6</previouswindow>
 	
 	<controls>
 		

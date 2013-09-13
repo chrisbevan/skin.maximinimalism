@@ -265,6 +265,14 @@
 						<ondown>303</ondown>
 						<texturenofocus>colors/keyboardDark.png</texturenofocus>
 						<texturefocus>colors/keyboardLight.png</texturefocus>
+						
+						<textureradiofocus>-</textureradiofocus>
+						<textureradionofocus>-</textureradionofocus>
+						
+						<textureradioon>-</textureradioon>
+						<radiowidth>24</radiowidth>
+						<radioheight>24</radioheight>
+						
 						<radioposy>12</radioposy>
 						<radioposx>252</radioposx>
 						<focusedcolor>selected</focusedcolor>
@@ -471,6 +479,14 @@
 						<ondown>304</ondown>
 						<texturenofocus>colors/keyboardDark.png</texturenofocus>
 						<texturefocus>colors/keyboardLight.png</texturefocus>
+						
+						<textureradiofocus>-</textureradiofocus>
+						<textureradionofocus>-</textureradionofocus>
+						
+						<textureradioon>-</textureradioon>
+						<radiowidth>24</radiowidth>
+						<radioheight>24</radioheight>
+						
 						<radioposy>12</radioposy>
 						<radioposx>252</radioposx>
 						<textoffsetx>0</textoffsetx>
@@ -678,6 +694,14 @@
 						<ondown>307</ondown>
 						<texturenofocus>colors/keyboardDark.png</texturenofocus>
 						<texturefocus>colors/keyboardLight.png</texturefocus>
+						
+						<textureradiofocus>-</textureradiofocus>
+						<textureradionofocus>-</textureradionofocus>
+						
+						<textureradioon>-</textureradioon>
+						<radiowidth>24</radiowidth>
+						<radioheight>24</radioheight>
+						
 						<textoffsetx>0</textoffsetx>
 						<radioposy>12</radioposy>
 						<radioposx>252</radioposx>

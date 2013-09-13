@@ -29,7 +29,7 @@
 	
 	<!--mymusicnav-->
 	<string id="31037">Albums</string>
-	<string id="31033"></string>
+	<string id="31033">Home</string>
 	<string id="31050"></string>
 	<string id="31051">Artists and Albums</string>
 	<string id="31052"></string>
@@ -40,7 +40,7 @@
 	<string id="31057"></string>
 	
 	<!--settings-->
-	<string id="31058">Main Menu</string>
+	<string id="31058">Skin Settings</string>
 	<string id="31059">Build</string>
 	<string id="31060">PVR</string>
 	<string id="31061">Skin</string>
@@ -72,12 +72,17 @@
 	<string id="31085">Video Addon</string>
 	<string id="31086">Music Addon</string>
 	<string id="31087">Folder</string>
-	<string id="31088">Set Path</string>
+	<string id="31088">Choose Addon</string>
 	<string id="31089">File Browser</string>
-	<string id="31090">Set Name</string>
+	<string id="31090">Set Shortcut Name</string>
 	<string id="31091">Video Playlist</string>
 	<string id="31092">Music Playlist</string>
-	<string id="31093">Favourite</string>	
+	<string id="31093">Favourite</string>
+	<string id="30194">Set Subtitles Script</string>
+	<string id="30195">Set Movie Fanart location</string>	
+	<string id="30196">Set TV Show Fanart location</string>	
+	<string id="30197">Set Game Fanart location</string>	
+	<string id="30198">Set Music Fanart location</string>	
 	
 	<string id="31018">Current Selected</string>
 	<string id="31019">Open playlist</string>

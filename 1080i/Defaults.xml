@@ -68,7 +68,7 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>2-col</width>
-		<height>57</height>
+		<height>54</height>
 		<align>left</align>
 		<aligny>center</aligny>
 		<textoffsetx>0</textoffsetx>
@@ -87,57 +87,91 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>-</width>
-		<height>57</height>
+		<height>54</height>
+		
 		<align>left</align>
 		<aligny>center</aligny>
+		<textoffsetx>12</textoffsetx>
+		<textoffsety>0</textoffsety>
+		
 		<font>itemTitle</font>
 		<label>-</label>
-		<textoffsetx>0</textoffsetx>
-		<textcolor>unselected</textcolor>
-		<focusedcolor>selected</focusedcolor>
+		
+		<textcolor>white</textcolor>
+		<focusedcolor>black</focusedcolor>
 		<disabledcolor>disabled</disabledcolor>
-		<radiowidth>20</radiowidth>
-		<radioheight>20</radioheight>
-		<textureradiofocus>UIControls/radio-button-fo.png</textureradiofocus>
+		
+		<radiowidth>64</radiowidth>
+		<radioheight>64</radioheight>
+		<radioposx></radioposx>
+		<radioposy></radioposy>
+		
+		<texturefocus>colors/white.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+	    <textureradiofocus>UIControls/radio-button-fo.png</textureradiofocus>
 		<textureradionofocus>UIControls/radio-button-nf.png</textureradionofocus>
+			
 		<pulseonselect>false</pulseonselect>
+		<colordiffuse>FFFFFFFF</colordiffuse>
 	</default>
 	
 	<default type="spincontrolex">
-		<height>57</height>
-		<label>-</label>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>-</width>
+		<height>54</height>
+		
+		<align>left</align>
+		<aligny>center</aligny>
+		<textoffsetx>12</textoffsetx>
+		
 		<font>itemTitle</font>
+		<label>-</label>
+	
+		<textcolor>white</textcolor>
+		<focusedcolor>black</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
+		
 		<spinwidth>30</spinwidth>
-        <spinheight>30</spinheight>
+		<spinheight>30</spinheight>
+		
+		<texturefocus>colors/white.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
 		<textureup>UIControls/arrow-up-nf.png</textureup>
 		<texturedown>UIControls/arrow-down-nf.png</texturedown>
 		<textureupfocus>UIControls/arrow-up-fo.png</textureupfocus>
 		<texturedownfocus>UIControls/arrow-down-fo.png</texturedownfocus>		
-		<textcolor>unselected</textcolor>
-		<textoffsetx>0</textoffsetx>
-		<focusedcolor>selected</focusedcolor>
-		<disabledcolor>disabled</disabledcolor>
-		<align>left</align>
-		<aligny>center</aligny>
-		<reverse>yes</reverse>
-		<pulseonselect>false</pulseonselect>
+	
+		<pulseonselect>false</pulseonselect>	
 	</default>
 
 	<default type="spincontrol">
-		<height>57</height>
-		<spinwidth>43</spinwidth>
-		<spinheight>60</spinheight>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>-</width>
+		<height>54</height>
+		
+		<align>left</align>
+		<aligny>center</aligny>
+		<textoffsetx>12</textoffsetx>
+		
+		<font>itemTitle</font>
+		<label>-</label>
+	
+		<textcolor>white</textcolor>
+		<focusedcolor>black</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
+		
+		<spinwidth>36</spinwidth>
+		<spinheight>36</spinheight>
+		
+		<texturefocus>colors/white.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
 		<textureup>UIControls/arrow-up-nf.png</textureup>
 		<texturedown>UIControls/arrow-down-nf.png</texturedown>
 		<textureupfocus>UIControls/arrow-up-fo.png</textureupfocus>
-		<texturedownfocus>UIControls/arrow-down-fo.png</texturedownfocus>
-		<font>itemTitle</font>
-		<textcolor>unselected</textcolor>
-		<focusedcolor>selected</focusedcolor>
-		<disabledcolor>disabled</disabledcolor>
-		<align>left</align>
-		<aligny>center</aligny>
-		<reverse>yes</reverse>
+		<texturedownfocus>UIControls/arrow-down-fo.png</texturedownfocus>		
+	
 		<pulseonselect>false</pulseonselect>
 	</default>
 
@@ -145,20 +179,27 @@
 	<default type="sliderex">
 		<posx>0</posx>
 		<posy>0</posy>
-		<height>57</height>
+		<width>-</width>
+		<height>54</height>
+		
+		<font>itemTitle</font>
+		<textoffsetx>12</textoffsetx>
+		<textoffsety>0</textoffsety>
+		
+		<textcolor>white</textcolor>
+		<focusedcolor>black</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
+		
 		<texturenofocus>-</texturenofocus>
-		<texturefocus>-</texturefocus>
+		<texturefocus>colors/white.png</texturefocus>
+		
 		<sliderwidth>4-col</sliderwidth>
-		<sliderheight>24</sliderheight>
+		<sliderheight>32</sliderheight>
 		<texturesliderbar>UIControls/slider_bg.png</texturesliderbar>
 		<textureslidernib>colors/white.png</textureslidernib>
-		<textureslidernibfocus>colors/white.png</textureslidernibfocus>
-		<font>itemTitle</font>
-		<textcolor>unselected</textcolor>
-		<focusedcolor>selected</focusedcolor>
-		<disabledcolor>disabled</disabledcolor>
-		<textoffsetx>0</textoffsetx>
-		<textoffsety>0</textoffsety>
+		<textureslidernibfocus>colors/black.png</textureslidernibfocus>
+		<pulseonselect>false</pulseonselect>
+	
 	</default>
 
 	<default type="progress">
@@ -169,6 +210,7 @@
 		<overlaytexture>-</overlaytexture>
 	</default>
 
+	<!--
 	<default type="slider">
 		<posx>0</posx>
 		<posy>0</posy>
@@ -180,6 +222,7 @@
 		<textureslidernib border="2">UIControls/SliderNibNF.png</textureslidernib>
 		<textureslidernibfocus border="2">UIControls/SliderNibFO.png</textureslidernibfocus>
 	</default>
+	-->
 
 	<default type="scrollbar">
 		<width>12</width>

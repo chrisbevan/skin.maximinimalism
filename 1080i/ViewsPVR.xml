@@ -15,7 +15,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>20-col</width>
-				<height>9-row</height>
+				<height>12-row</height>
 				<onleft>32</onleft>
 				<onright>60</onright>
 				<onup>11</onup>
@@ -182,34 +182,7 @@
 					
 				</focusedlayout>
 			</control>
-			
-			<!--item detail-->
-			<control type="group">
-				<posx>0</posx>
-				<posy>10-row</posy>
-								
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>14-col</width>
-					<font>itemTitle</font>
-					<textcolor>white</textcolor>
-					<label>[B]$INFO[Container(11).ListItem.starttime] - $INFO[Container(11).ListItem.endtime] $INFO[Container(11).ListItem.Title][/B]</label>
-				</control>
-																
-				<control type="textbox">
-					<description>Plot</description>
-					<posx>0</posx>
-					<posy>1-row</posy>
-					<width>14-col</width>
-					<height>108</height>
-					<font>small</font>
-					<textcolor>white</textcolor>
-					<label>$INFO[Container(11).ListItem.Plot]</label>
-				</control>
-				
-			</control>
-			
+						
 		</control>
 	</include>
 
