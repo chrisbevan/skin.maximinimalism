@@ -65,8 +65,8 @@
 				<!--set path-->
 				<control type="label">
 					<description>path label</description>
-					<posx>0</posx>
-					<posy>4</posy>
+					<posx>12</posx>
+					<posy>8</posy>
 					<width>16-col</width>
 					<font>smallMedium</font>
 					<label>1021</label>
@@ -153,8 +153,8 @@
 				<!--name source-->
 				<control type="label">
 					<description>Name label</description>
-					<posx>0</posx>
-					<posy>342</posy>
+					<posx>12</posx>
+					<posy>350</posy>
 					<width>12-col</width>
 					<font>smallMedium</font>
 					<label>1022</label>

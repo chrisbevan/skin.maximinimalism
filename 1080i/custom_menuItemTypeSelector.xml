@@ -242,7 +242,7 @@
 		<include>Debug_Grid</include>
 		<control type="label">
 			<include>DialogID</include>
-			<label>DialogSelect.xml</label>
+			<label>custom_menuitemTypeSelector.xml</label>
 		</control>
 
 	</controls>

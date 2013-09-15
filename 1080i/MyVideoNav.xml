@@ -355,7 +355,7 @@
 																																			
 						<!--no recent items-->
 						<control type="label">
-							<visible>isEmpty(Window(Home).Property(LatestMovie.1.Title))</visible>
+							<visible>isEmpty(Window(Home).Property(LatestMovie.1.Title)) + isEmpty(Window(Home).Property(LatestEpisode.1.Title))</visible>
 							<posx>1-col</posx>
 							<posy>4-row</posy>
 							<width>21-col</width>

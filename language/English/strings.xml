@@ -72,7 +72,7 @@
 	<string id="31085">Video Addon</string>
 	<string id="31086">Music Addon</string>
 	<string id="31087">Folder</string>
-	<string id="31088">Choose Addon</string>
+	<string id="31088">Select Shortcut</string>
 	<string id="31089">File Browser</string>
 	<string id="31090">Set Shortcut Name</string>
 	<string id="31091">Video Playlist</string>
@@ -82,7 +82,11 @@
 	<string id="30195">Movie Fanart location: </string>	
 	<string id="30196">TV Show Fanart location: </string>	
 	<string id="30197">Game Fanart location: </string>	
-	<string id="30198">Music Fanart location: </string>	
+	<string id="30198">Music Fanart location: </string>
+	<string id="30199">Content Type</string>	
+	<string id="30200">Set Media Source Content</string>
+	<string id="30201">Specific Content type settings</string>	
+	<string id="30202">Content Scraper</string>	
 	
 	<string id="31018">Current Selected</string>
 	<string id="31019">Open playlist</string>

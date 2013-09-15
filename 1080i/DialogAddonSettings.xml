@@ -100,7 +100,7 @@
 			
 			<!--ok, cancel etc buttons-->
 			<control type="grouplist" id="9001">
-				<posx>17-col</posx>
+				<posx>18-col</posx>
 				<posy>120</posy>
 				<width>-</width>
 				<itemgap>3</itemgap>

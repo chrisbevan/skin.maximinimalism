@@ -59,7 +59,7 @@
 				<posx>0</posx>
 				<posy>122</posy>
 				<width>8-col</width>
-				<height>8-row</height>
+				<height>11-row</height>
 				<onright>9000</onright>
 
 				<itemlayout height="1-row" width="8-col">
