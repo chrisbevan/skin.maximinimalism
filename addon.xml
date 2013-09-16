@@ -3,7 +3,13 @@
 	<requires>
 		<import addon="xbmc.gui" version="4.0.0"/>
 	</requires>
-	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" defaultresolution="1080i"></extension>
+	<extension
+	    point="xbmc.gui.skin"
+	    defaultthemename="textures.xbt"
+	    debugging="false"
+	    effectslowdown="0.75">
+	    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>A skin for XBMC from theDeadman</summary>
 		<description>Maximinimalism is a lightweight, clean and simple XBMC experience that is designed for maximum usability and minimum fuss.</description>
