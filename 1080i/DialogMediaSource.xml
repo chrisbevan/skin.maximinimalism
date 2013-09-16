@@ -66,9 +66,9 @@
 				<control type="label">
 					<description>path label</description>
 					<posx>12</posx>
-					<posy>8</posy>
+					<posy>0</posy>
 					<width>16-col</width>
-					<font>smallMedium</font>
+					<font>itemTitle</font>
 					<label>1021</label>
 					<textcolor>white</textcolor>
 					<shadowcolor>-</shadowcolor>
@@ -154,19 +154,19 @@
 				<control type="label">
 					<description>Name label</description>
 					<posx>12</posx>
-					<posy>350</posy>
+					<posy>7-row</posy>
 					<width>12-col</width>
-					<font>smallMedium</font>
-					<label>1022</label>
+					<font>itemTitle</font>
+					<label>30204</label>
 					<textcolor>white</textcolor>
 					<shadowcolor>-</shadowcolor>
 				</control>
 				
 				<control type="button" id="12">
 					<description>Name Button</description>
-					<posx>0</posx>
+					<posx>3-col</posx>
 					<posy>7-row</posy>
-					<width>12-col</width>
+					<width>9-col</width>
 					<height>1-row</height>
 					<label>-</label>
 					<font>itemTitle</font>

@@ -86,7 +86,9 @@
 	<string id="30199">Content Type</string>	
 	<string id="30200">Set Media Source Content</string>
 	<string id="30201">Specific Content type settings</string>	
-	<string id="30202">Available Content Scrapers</string>	
+	<string id="30202">Available Content Scrapers</string>
+	<string id="30203">Sort Order</string>
+	<string id="30204">Source name:</string>	
 	
 	<string id="31018">Current Selected</string>
 	<string id="31019">Open playlist</string>

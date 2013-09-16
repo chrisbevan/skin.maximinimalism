@@ -97,67 +97,109 @@
 				</animation>
 			</control>
 		-->
-			
-			<!--ok, cancel etc buttons-->
-			<control type="grouplist" id="9001">
+		
+			<!--OK / Cancel-->
+			<control type="panel" id="9001">
 				<posx>18-col</posx>
-				<posy>120</posy>
-				<width>-</width>
+				<posy>2-row</posy>
+				<width>6-col</width>
+				<height>5-row</height>
 				<itemgap>3</itemgap>
-				<height>14-row</height>
-				<onleft>2</onleft>
 				<orientation>vertical</orientation>
-				
-				<control type="button" id="10">
-					<description>OK Button</description>
-					<width>7-col</width>
-					<label>186</label>
-					<align>left</align>
-					<aligny>top</aligny>
-					<height>54</height>
-					<font>menuTitle</font>
-					<textcolor>white</textcolor>
-					<focusedcolor>black</focusedcolor>
-					<texturefocus>colors/white.png</texturefocus>
-					<texturenofocus>colors/black.png</texturenofocus>
-					<textoffsetx>12</textoffsetx>
-					<textoffsety>8</textoffsety>
-				</control>
+				<onleft>2</onleft>
 
-				<control type="button" id="11">
-					<description>Cancel Button</description>
-					<width>7-col</width>
-					<label>222</label>
-					<align>left</align>
-					<aligny>top</aligny>
-					<height>54</height>
-					<font>menuTitle</font>
-					<textcolor>white</textcolor>
-					<focusedcolor>black</focusedcolor>
-					<texturefocus>colors/white.png</texturefocus>
-					<texturenofocus>colors/black.png</texturenofocus>
-					<textoffsetx>12</textoffsetx>
-					<textoffsety>8</textoffsety>
-				</control>
+				<itemlayout width="6-col" height="1-row">
 
-				<control type="button" id="12">
-					<description>Defaults Button</description>
-					<width>7-col</width>
-					<label>409</label>
-					<align>left</align>
-					<aligny>top</aligny>
-					<height>54</height>
-					<font>menuTitle</font>
-					<textcolor>white</textcolor>
-					<focusedcolor>black</focusedcolor>
-					<texturefocus>colors/white.png</texturefocus>
-					<texturenofocus>colors/black.png</texturenofocus>
-					<textoffsetx>12</textoffsetx>
-					<textoffsety>8</textoffsety>
-				</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>6-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>colors/black.png</texture>
+					</control>
+
+					<control type="label">
+						<posx>24</posx>
+						<posy>0</posy>
+						<width>1-col</width>
+						<font>symbol</font>
+						<textcolor>white</textcolor>
+						<label>$INFO[ListItem.label2]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+					<control type="label">
+						<posx>1-col</posx>
+						<posy>2</posy>
+						<width>6-col</width>
+						<font>menuTitle</font>
+						<textcolor>white</textcolor>
+						<label>$INFO[ListItem.label]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout width="6-col" height="1-row">
+
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>6-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>colors/white.png</texture>
+					</control>
+
+					<control type="label">
+						<posx>24</posx>
+						<posy>0</posy>
+						<width>1-col</width>
+						<font>symbol</font>
+						<textcolor>black</textcolor>
+						<label>$INFO[ListItem.label2]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+					<control type="label">
+						<posx>1-col</posx>
+						<posy>2</posy>
+						<width>6-col</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<label>$INFO[ListItem.label]</label>
+						<shadowcolor>-</shadowcolor>
+					</control>
+
+				</focusedlayout>
+
+				<content>
+					<item id="1">
+						<description>Ok Button</description>
+						<label>186</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>SendClick(10140,10)</onclick>
+					</item>
+					<item id="2">
+						<description>Cancel Button</description>
+						<label>222</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>SendClick(10140,11)</onclick>
+					</item>
+					<item id="3">
+						<description>Defaults Button</description>
+						<label>409</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>SendClick(10140,12)</onclick>
+					</item>
+				</content>
 
 			</control>
-
+			
 			<control type="button" id="13">
 				<description>Default Category Button</description>
 				<align>left</align>
@@ -201,6 +243,23 @@
 
 			<control type="sliderex" id="8">
 				<description>Default Slider</description>
+			</control>
+			
+			<!--ok, cancel etc buttons-->
+			<control type="group">	
+				<visible>false</visible>
+							
+				<control type="button" id="10">
+					<description>OK Button</description>
+				</control>
+
+				<control type="button" id="11">
+					<description>Cancel Button</description>
+				</control>
+
+				<control type="button" id="12">
+					<description>Defaults Button</description>
+				</control>
 			</control>
 
 		</control>

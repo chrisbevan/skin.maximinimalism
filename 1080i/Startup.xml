@@ -11,7 +11,7 @@
 
 		<control type="button" id="10">
 			<description>Startup Trigger</description>
-			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
+			<onfocus>ReplaceWindow(home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 		</control>
