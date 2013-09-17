@@ -89,7 +89,10 @@
 	<string id="30201">Specific Content type settings</string>	
 	<string id="30202">Available Content Scrapers</string>
 	<string id="30203">Sort Order</string>
-	<string id="30204">Source name:</string>	
+	<string id="30204">Source name:</string>
+	<string id="30205">Field:</string>	
+	<string id="30206">Operator:</string>	
+	<string id="30207">Create Folder</string>	
 	
 	<string id="31018">Current Selected</string>
 	<string id="31019">Open playlist</string>
