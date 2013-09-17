@@ -81,6 +81,18 @@
 						<onup>9000</onup>
 						<ondown>9000</ondown>
 
+						<control type="button" id="1">
+							<description>Back to videos</description>
+							<label>31015</label>
+							<height>37</height>
+							<font>menuTitle</font>
+							<align>left</align>
+							<focusedcolor>white</focusedcolor>
+							<textcolor>unselected</textcolor>
+							<onclick>ActivateWindowAndFocus(6,9000,0)</onclick>
+							<onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
+						</control>
+						
 						<control type="button" id="32">
 							<description>TV Channels</description>
 							<label>31011</label>
@@ -179,7 +191,7 @@
 						<effect type="fade" start="0" delay="200" end="100" time="600" />
 					</animation>
 
-					<include>EPGTimelineView</include>--> <!-- view id = 10 -->
+					<include>EPGTimelineView</include> <!-- view id = 10 -->
 					<include>LiveTVRadioChannelView</include> <!-- view id = 11 -->
 					<include>LiveTVRecordingsView</include> <!-- view id = 13 -->
 					<include>LiveTVTimersView</include> <!-- view id = 14 -->
@@ -193,7 +205,7 @@
 					<control type="scrollbar" id="60">
 						<posx>108r</posx>
 						<posy>row-5-begin</posy>
-						<height>9-row</height>
+						<height>12-row</height>
 						<onleft>50</onleft>
 					</control>
 
