@@ -259,12 +259,22 @@
 
 					<!--source subtitle-->
 					<control type="label">
-						<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentMusicItems),false)</visible>
+						<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentMusicItems),false) + !container.content(songs)</visible>
 						<posx>0</posx>
 						<posy>45</posy>
 						<width>24-col</width>
 						<font>regular</font>
 						<label>$INFO[container.Numitems,, $LOCALIZE[31014]]</label>
+						<textcolor>white</textcolor>
+					</control>
+					
+					<control type="label">
+						<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentMusicItems),false) + container.content(songs)</visible>
+						<posx>0</posx>
+						<posy>45</posy>
+						<width>24-col</width>
+						<font>regular</font>
+						<label>$INFO[container.Numitems,, $LOCALIZE[31049]]</label>
 						<textcolor>white</textcolor>
 					</control>
 

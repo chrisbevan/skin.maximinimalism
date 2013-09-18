@@ -1,6 +1,9 @@
 [B]0.1.3[/B]
 - Addon info dialog reworked
 - DialogTextviewer.xml added
+- Playlist dialogs added
+- System info screen added 
+- General misc tidy up and bug fixes skin-wide
 
 [B]0.1.2[/B]
 - General misc tidy up skin-wide

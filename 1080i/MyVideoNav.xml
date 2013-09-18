@@ -10,7 +10,7 @@
 
 		<!--page container group-->
 		<control type="group">
-			
+						
 			<include>globalBackground</include>
 			
 			<!--shift page for certain modal dialogs-->
@@ -669,6 +669,7 @@
 						</control>
 						
 					</control>
+														
 				</control>
 			</control>
 		</control>
