@@ -92,7 +92,10 @@
 	<string id="30204">Source name:</string>
 	<string id="30205">Field:</string>	
 	<string id="30206">Operator:</string>	
-	<string id="30207">Create Folder</string>	
+	<string id="30207">Create Folder</string>
+	<string id="30208">Memory</string>
+	<string id="30209">CPU</string>	
+	<string id="30210">Screen</string>	
 	
 	<string id="31018">Current Selected</string>
 	<string id="31019">Open playlist</string>

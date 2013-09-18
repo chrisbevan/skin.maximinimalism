@@ -8,7 +8,7 @@
 	<controls>
 			
 		<include>fanartSlides</include>	
-																			
+																					
 		<!--Date / time and weather-->
 		<control type="group">
 			<posx>col-1-begin</posx>
