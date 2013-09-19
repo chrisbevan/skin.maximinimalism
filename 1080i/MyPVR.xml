@@ -1,5 +1,5 @@
 <window>
-	<defaultcontrol always="false">32</defaultcontrol>
+	<defaultcontrol always="true">32</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<onload>PlayerControl(stop)</onload>
 	<onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
@@ -134,6 +134,7 @@
 							<textcolor>unselected</textcolor>
 						</control>
 
+						<!--
 						<control type="button" id="35">
 							<description>Timers</description>
 							<label>19040</label>
@@ -143,6 +144,7 @@
 							<focusedcolor>white</focusedcolor>
 							<textcolor>unselected</textcolor>
 						</control>
+						-->
 
 					</control>						
 				</control>

@@ -54,7 +54,7 @@
 				<width>8-col</width>
 				<align>left</align>
 				<textcolor>white</textcolor>
-				<height>238</height>
+				<height>340</height>
 				<label>[B]$INFO[ListItem.plot][/B]</label>
 				<autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
 			</control>
@@ -62,7 +62,7 @@
 			<!--View / record buttons-->
 			<control type="list" id="9000">
 				<posx>0</posx>
-				<posy>7-row</posy>
+				<posy>9-row</posy>
 				<width>8-col</width>
 				<height>4-row</height>
 				<itemgap>3</itemgap>
@@ -166,7 +166,6 @@
 			</control>
 		</control>
 
-		
 		<!--debugging-->
 		<include>Debug_Grid</include>
 		<control type="label">
