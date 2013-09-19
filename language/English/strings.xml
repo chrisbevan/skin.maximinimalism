@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <strings>
-	<!--home-->
 	<string id="31000">Watch</string>
 	<string id="31001">Listen</string>
 	<string id="31002">Play</string>	
 	<string id="31003">Program Addons</string>
 	<string id="31004">Power</string>
-	
-	<!--myvideonav-->
 	<string id="31005">Latest</string>
 	<string id="31006">Live TV</string>
 	<string id="31007">Library Empty</string>
@@ -21,16 +18,18 @@
 	<string id="31015">Videos home</string>
 	<string id="31016">Radio</string>
 	<string id="31017">Channels</string>
-	<string id="31023">Change Sort</string>
-	<string id="31036">Refresh Library</string>
-	<string id="31041">Add Shortcut</string>
-	<string id="31040">Add source</string>
-	<string id="31039">Remove menu item -</string>
-	<string id="31038">Page</string>
 	
-	<!--mymusicnav-->
-	<string id="31037">Albums</string>
+	<string id="31023">Change Sort</string>
+	
 	<string id="31033">Home</string>
+	
+	<string id="31036">Refresh Library</string>
+	<string id="31037">Albums</string>
+	<string id="31038">Page</string>
+	<string id="31039">Remove menu item -</string>
+	<string id="31040">Add source</string>
+	<string id="31041">Add Shortcut</string>
+			
 	<string id="31049">track(s)</string>
 	<string id="31050"></string>
 	<string id="31051">Artists and Albums</string>
@@ -40,8 +39,6 @@
 	<string id="31055">Addons</string>
 	<string id="31056"></string>
 	<string id="31057"></string>
-	
-	<!--settings-->
 	<string id="31058">Skin Settings</string>
 	<string id="31059">Build</string>
 	<string id="31060">PVR</string>
@@ -59,8 +56,6 @@
 	<string id="31072">Airplay</string>
 	<string id="31073">Input devices</string>
 	<string id="31074">Power saving</string>
-	
-	<!--dialogs-->
 	<string id="31075">Play Title</string>
 	<string id="31076">Change Title</string>
 	<string id="31077">Choose Art</string>
@@ -97,7 +92,11 @@
 	<string id="30208">Memory</string>
 	<string id="30209">CPU</string>	
 	<string id="30210">Screen</string>	
+	<string id="30211">Watch now</string>	
+	<string id="30212">Record</string>	
 	
+	
+	<!--misc to be reincorporated-->
 	<string id="31018">Current Selected</string>
 	<string id="31019">Open playlist</string>
 	<string id="31020">Save playlist</string>
