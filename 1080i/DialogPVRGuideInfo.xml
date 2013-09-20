@@ -28,54 +28,54 @@
 			
 			<include>modalDialogInOutVertical</include>
 					
+			<!--channel / duration-->
+			<control type="label">
+				<description>Channel name</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>8-col</width>
+				<font>itemTitleSmall</font>
+				<label>$INFO[ListItem.channelname]</label>
+			</control>
+			
 			<!--title-->
 			<control type="label">
 				<description>Programme title</description>
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>1-row</posy>
 				<width>8-col</width>
 				<align>left</align>
 				<font>regularStrong</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[ListItem.Title]</label>
 			</control>
-		
-			<!--channel / duration-->
-			<control type="label">
-				<description>Channel name</description>
-				<posx>0</posx>
-				<posy>36</posy>
-				<width>8-col</width>
-				<font>itemTitleSmall</font>
-				<label>$INFO[ListItem.channelname]</label>
-			</control>
 			
 			<control type="label">
 				<description>Channel name</description>
 				<posx>0</posx>
-				<posy>70</posy>
+				<posy>2-row</posy>
 				<width>8-col</width>
 				<font>itemTitleSmall</font>
-				<label>$INFO[ListItem.starttime] - $INFO[ListItem.endtime] • $INFO[ListItem.duration]</label>
+				<label>$INFO[ListItem.starttime] - $INFO[ListItem.endtime] Duration: $INFO[ListItem.duration]</label>
 			</control>
 			
 			<!--synopsis-->			
 			<control type="textbox">
 				<posx>0</posx>
-				<posy>136</posy>
+				<posy>178</posy>
 				<font>small</font>
 				<width>8-col</width>
 				<align>left</align>
 				<textcolor>white</textcolor>
 				<height>340</height>
-				<label>[B]$INFO[ListItem.plot][/B]</label>
+				<label>$INFO[ListItem.plot]</label>
 				<autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
 			</control>
 			
 			<!--View / record buttons-->
 			<control type="list" id="9000">
 				<posx>0</posx>
-				<posy>9-row</posy>
+				<posy>10-row</posy>
 				<width>8-col</width>
 				<height>4-row</height>
 				<itemgap>3</itemgap>

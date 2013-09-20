@@ -7,7 +7,7 @@
 			<visible>Control.IsVisible(11) | Control.IsVisible(12)</visible>
 			<!--animations-->
 			<animation type="visible">
-				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
+				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="600" />
 				<effect type="fade" start="0" delay="200" end="100" time="600" />
 			</animation>
 			
@@ -193,7 +193,7 @@
 			
 			<!--animations-->
 			<animation type="visible">
-				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
+				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="600" />
 				<effect type="fade" start="0" delay="200" end="100" time="600" />
 			</animation>
 
@@ -350,7 +350,7 @@
 			
 			<!--animations-->
 			<animation type="visible">
-				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
+				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="600" />
 				<effect type="fade" start="0" delay="200" end="100" time="600" />
 			</animation>
 
