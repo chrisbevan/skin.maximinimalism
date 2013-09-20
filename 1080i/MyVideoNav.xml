@@ -6,12 +6,15 @@
 	
 	<controls>
 		
-		<include>fadeInOut</include>
-
 		<!--page container group-->
 		<control type="group">
 						
 			<include>globalBackground</include>
+			
+			<!--window fader-->			
+			<animation type="conditional" condition="window.next(0) | window.next(mypvr)">
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
 			
 			<!--shift page for certain modal dialogs-->
 			<include>modalDialogContentShift</include>
@@ -29,12 +32,7 @@
 					<posy>row-2-begin</posy>
 
 					<include>dateTime</include>
-										
-					<animation type="conditional" condition="window.Next(0) + !controlgroup(61).hasfocus">
-			            <effect type="fade" start="100" end="0" time="300" delay="300" />
-						<effect type="slide" start="0" end="-216" tween="cubic" easing="out" time="400" delay="300"/>
-					</animation>
-									
+																			
 					<control type="list" id="9000">
 						<posx>0</posx>
 						<posy>180</posy>
@@ -222,14 +220,7 @@
 				<control type="group">
 					<posx>col-4-begin</posx>
 					<posy>row-2-begin</posy>
-					
-					<animation type="windowopen">
-						<effect type="fade" start="0" end="100" time="500" delay="300" />
-					</animation>
-					<animation type="windowclose">
-			            <effect type="fade" start="100" end="0" time="300" delay="300" />
-					</animation>
-										
+															
 					<!--source title-->
 					<control type="label">
 						<visible>IntegerGreaterThan(container.Numitems,0)</visible>
@@ -274,7 +265,7 @@
 					
 					<!--tvshow name and season details (TVShows only)-->
 					<control type="group">
-						<visible>[container.content(episodes) | container.content(seasons)] + !Substring(Container.folderpath,plugin)]</visible>
+						<visible>[container.content(episodes) | container.content(seasons)] + !Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentVideoItems),false)</visible>
 						
 						<control type="label">
 							<posx>21-col</posx>
@@ -367,7 +358,7 @@
 						
 						<!--content-->	
 						<control type="panel" id="9998">
-							<visible>!isEmpty(Window(Home).Property(LatestMovie.1.Title))</visible>
+							<visible>!isEmpty(Window(Home).Property(LatestMovie.1.Title)) + IntegerGreaterThan(container.Numitems,0)</visible>
 							<posx>0</posx>
 							<posy>-12</posy>
 							<width>22-col</width>
@@ -596,10 +587,6 @@
 				<control type="group">
 					<posx>col-4-begin</posx>
 					<posy>row-18-begin</posy>
-					
-					<animation type="conditional" condition="window.Next(0)">
-			            <effect type="fade" start="100" end="0" time="300" delay="300" />
-					</animation>
 
 					<control type="grouplist">
 						<posx>0</posx>

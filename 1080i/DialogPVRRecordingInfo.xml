@@ -9,18 +9,22 @@
 	<controls>
 				
 		<!--background-->
-		<control type="image">
-			<include>dimensionsFullscreen</include>
-			<texture>backgrounds/vignette.png</texture>
-			<colordiffuse>ffffffff</colordiffuse>
-			<aspectratio>stretch</aspectratio>
-		</control>
+		<control type="group">
+			<include>fadeInOut</include>
+			
+			<control type="image">
+				<include>dimensionsFullscreen</include>
+				<texture>backgrounds/vignette.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
 		
-		<control type="image">
-			<include>dimensionsFullscreen</include>
-			<texture>colors/black.png</texture>
-			<colordiffuse>ddFFFFFF</colordiffuse>
-			<aspectratio>stretch</aspectratio>
+			<control type="image">
+				<include>dimensionsFullscreen</include>
+				<texture>colors/black.png</texture>
+				<colordiffuse>ddFFFFFF</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
 		</control>
 		
 		<control type="group">
@@ -45,34 +49,34 @@
 			<control type="label">
 				<description>Channel name</description>
 				<posx>0</posx>
-				<posy>1-row</posy>
+				<posy>36</posy>
 				<width>8-col</width>
-				<font>smallMedium</font>
-				<label>[B]$INFO[ListItem.channelname][/B]</label>
+				<font>itemTitleSmall</font>
+				<label>$INFO[ListItem.channelname]</label>
 			</control>
 			
 			<control type="label">
-				<description>Date / start time / duration</description>
+				<description>Channel name</description>
 				<posx>0</posx>
-				<posy>2-row</posy>
+				<posy>70</posy>
 				<width>8-col</width>
-				<font>smallMedium</font>
-				<label>[B]$INFO[ListItem.startdate] @ $INFO[ListItem.starttime]          Duration $INFO[ListItem.duration][/B]</label>
+				<font>itemTitleSmall</font>
+				<label>$INFO[ListItem.startdate] • $INFO[ListItem.starttime] - $INFO[ListItem.endtime] • $INFO[ListItem.duration]</label>
 			</control>
 			
 			<!--synopsis-->			
 			<control type="textbox">
 				<posx>0</posx>
-				<posy>177</posy>
+				<posy>136</posy>
 				<font>small</font>
 				<width>8-col</width>
 				<align>left</align>
 				<textcolor>white</textcolor>
-				<height>308</height>
+				<height>340</height>
 				<label>[B]$INFO[ListItem.plot][/B]</label>
 				<autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
 			</control>
-						
+									
 		</control>
 	
 		<!--debugging-->

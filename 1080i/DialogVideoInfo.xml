@@ -96,9 +96,9 @@
 					<posy>1-row</posy>
 					<width>18-col-gutter</width>
 					<align>left</align>
-					<font>small</font>
+					<font>itemTitleSmall</font>
 					<textcolor>white</textcolor>
-					<label>[B][COLOR accented]$INFO[ListItem.year,,]$INFO[listitem.director, • Dir. ,]$INFO[listitem.genre, • ,][/COLOR][/B]</label>
+					<label>[B]$INFO[ListItem.year,,]$INFO[listitem.director, • Dir. ,]$INFO[listitem.genre, • ,][/B]</label>
 				</control>
 						
 				<!--synopsis-->			
@@ -359,6 +359,7 @@
 							<onclick>sendclick(2003,8)</onclick>
 						</item>
 						<item id="2">
+							<visible>!Substring(Container.folderpath,plugin)</visible>
 							<label>31076</label>
 							<label2></label2>
 							<thumb>-</thumb>

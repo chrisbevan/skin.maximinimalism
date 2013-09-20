@@ -5,13 +5,12 @@
 	<onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
 	
 	<controls>
-		
-		<include>fadeInOut</include>	
 				
 		<!--page container group-->
 		<control type="group">
 			
 			<include>globalBackground</include>
+			<include>fadeInOut</include>
 			
 			<!--shift page for certain modal dialogs-->
 			<include>modalDialogContentShift</include>

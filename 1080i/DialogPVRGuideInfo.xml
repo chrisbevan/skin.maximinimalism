@@ -4,18 +4,22 @@
 	<controls>
 		
 		<!--background-->
-		<control type="image">
-			<include>dimensionsFullscreen</include>
-			<texture>backgrounds/vignette.png</texture>
-			<colordiffuse>ffffffff</colordiffuse>
-			<aspectratio>stretch</aspectratio>
-		</control>
+		<control type="group">
+			<include>fadeInOut</include>
+			
+			<control type="image">
+				<include>dimensionsFullscreen</include>
+				<texture>backgrounds/vignette.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
 		
-		<control type="image">
-			<include>dimensionsFullscreen</include>
-			<texture>colors/black.png</texture>
-			<colordiffuse>ddFFFFFF</colordiffuse>
-			<aspectratio>stretch</aspectratio>
+			<control type="image">
+				<include>dimensionsFullscreen</include>
+				<texture>colors/black.png</texture>
+				<colordiffuse>ddFFFFFF</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
 		</control>
 			
 		<control type="group">
@@ -40,16 +44,25 @@
 			<control type="label">
 				<description>Channel name</description>
 				<posx>0</posx>
-				<posy>1-row</posy>
+				<posy>36</posy>
 				<width>8-col</width>
-				<font>smallMedium</font>
-				<label>[B]$INFO[ListItem.channelname]          $INFO[ListItem.starttime] - $INFO[ListItem.endtime]          $INFO[ListItem.duration][/B]</label>
+				<font>itemTitleSmall</font>
+				<label>$INFO[ListItem.channelname]</label>
+			</control>
+			
+			<control type="label">
+				<description>Channel name</description>
+				<posx>0</posx>
+				<posy>70</posy>
+				<width>8-col</width>
+				<font>itemTitleSmall</font>
+				<label>$INFO[ListItem.starttime] - $INFO[ListItem.endtime] • $INFO[ListItem.duration]</label>
 			</control>
 			
 			<!--synopsis-->			
 			<control type="textbox">
 				<posx>0</posx>
-				<posy>120</posy>
+				<posy>136</posy>
 				<font>small</font>
 				<width>8-col</width>
 				<align>left</align>
