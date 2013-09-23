@@ -305,6 +305,9 @@
 						<animation type="conditional" condition="window.Next(0)">
 				            <effect type="fade" start="100" end="0" time="300" delay="300" />
 						</animation>
+						<animation type="windowclose">
+				            <effect type="fade" start="100" end="0" time="300" />
+						</animation>
 						
 						<!--no recent items-->
 						<control type="label">

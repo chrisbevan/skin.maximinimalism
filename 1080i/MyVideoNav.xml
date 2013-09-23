@@ -335,10 +335,7 @@
 					
 					<!--recent items-->
 					<control type="group">
-						<animation type="conditional" condition="window.Next(0)">
-				            <effect type="fade" start="100" end="0" time="300" delay="300" />
-						</animation>
-												
+																
 						<visible>SubString(skin.string(showRecentVideoItems),true)</visible>
 						<posx>0</posx>
 						<posy>183</posy>
@@ -368,6 +365,10 @@
 							
 							<animation type="windowopen">
 					            <include>listSlideIn</include>
+							</animation>
+							
+							<animation type="windowclose">
+					            <effect type="fade" start="100" end="0" time="300" />
 							</animation>
 
 							<itemlayout width="387" height="354">
