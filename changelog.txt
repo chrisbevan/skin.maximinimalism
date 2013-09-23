@@ -2,7 +2,7 @@
 - Addon info dialog reworked
 - DialogTextviewer.xml added
 - Playlist dialogs added
-- System info screen added 
+- System info screen added (press UP on homescreen for now, location may change in future work)
 - PVR dialogs for recording info and guide info added
 - General misc tidy up and bug fixes skin-wide
 - Symbol font updated to latest version (as @ 20/09/13)
