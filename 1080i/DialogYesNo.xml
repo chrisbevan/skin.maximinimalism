@@ -44,7 +44,7 @@
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>9-col</width>
-					<font>sectionTitle</font>
+					<font>pageTitle</font>
 					<textcolor>white</textcolor>
 				</control>
 

@@ -1,6 +1,15 @@
+[B]0.1.3[/B]
+- Addon info dialog reworked
+- DialogTextviewer.xml added
+- Playlist dialogs added
+- System info screen added (press UP on homescreen for now, location may change in future work)
+- PVR dialogs for recording info and guide info added
+- General misc tidy up and bug fixes skin-wide
+- Symbol font updated to latest version (as @ 20/09/13)
+
 [B]0.1.2[/B]
 - General misc tidy up skin-wide
-- .DS Store entries removed
+- .DS Store entries removed from GIT repository
 - Dialog restyling and new UI controls added
 - Video info screen reworked
 - Misc bug fixes

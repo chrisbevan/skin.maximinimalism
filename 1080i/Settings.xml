@@ -30,7 +30,7 @@
 			<control type="image">
 				<posx>-384</posx>
 				<posy>44</posy>
-				<width>fullscreenWidth</width>
+				<width>2500</width>
 				<height>1-row</height>
 				<texture>colors/white.png</texture>
 				<colordiffuse>ffffffff</colordiffuse>

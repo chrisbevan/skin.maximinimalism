@@ -8,7 +8,7 @@
 	<controls>
 			
 		<include>fanartSlides</include>	
-																			
+																					
 		<!--Date / time and weather-->
 		<control type="group">
 			<posx>col-1-begin</posx>
@@ -63,7 +63,8 @@
 				<posy>0</posy>
 				<width>24-col</width>
 				<height>3-col</height>
-				<orientation>horizontal</orientation>	
+				<orientation>horizontal</orientation>
+				<onup>ActivateWindow(systeminfo)</onup>	
 
 				<itemlayout width="3-col" height="3-col">
 
@@ -154,7 +155,7 @@
 
 			</control>
 		</control>
-																
+																		
 		<!--debugging-->
 		<include>Debug_Grid</include>
 		<control type="label">

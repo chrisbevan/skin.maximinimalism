@@ -7,7 +7,7 @@
 			<visible>Control.IsVisible(11) | Control.IsVisible(12)</visible>
 			<!--animations-->
 			<animation type="visible">
-				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
+				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="600" />
 				<effect type="fade" start="0" delay="200" end="100" time="600" />
 			</animation>
 			
@@ -193,26 +193,26 @@
 			
 			<!--animations-->
 			<animation type="visible">
-				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
+				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="600" />
 				<effect type="fade" start="0" delay="200" end="100" time="600" />
 			</animation>
 
 			<control type="panel" id="13">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>12-col</width>
+				<width>20-col</width>
 				<height>12-row</height>
 				<onleft>34</onleft>
 				<onright>72</onright>
 				<onup>13</onup>
 				<ondown>13</ondown>
 			
-				<itemlayout height="1-row" width="12-col">
+				<itemlayout height="1-row" width="20-col">
 				
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>12-col</width>
+						<width>20-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
@@ -223,7 +223,7 @@
 					<control type="label">
 						<posx>36</posx>
 						<posy>0</posy>
-						<width>7-col</width>
+						<width>8-col-gutter</width>
 						<font>itemTitle</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
@@ -231,7 +231,17 @@
 					</control>
 					
 					<control type="label">
-						<posx>8-col</posx>
+						<posx>9-col</posx>
+						<posy>0</posy>
+						<width>4-col-gutter</width>
+						<font>itemTitle</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.ChannelName]</label>
+					</control>
+					
+					<control type="label">
+						<posx>13-col</posx>
 						<posy>0</posy>
 						<width>4-col-gutter</width>
 						<font>itemTitle</font>
@@ -239,15 +249,36 @@
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Date]</label>
 					</control>
+					
+					<control type="label">
+						<posx>17-col</posx>
+						<posy>0</posy>
+						<width>2-col</width>
+						<font>itemTitle</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.Duration]</label>
+					</control>
+					
+					<control type="label">
+						<visible>!isempty(ListItem.playcount)</visible>
+						<posx>36r</posx>
+						<posy>1</posy>
+						<width>40</width>
+						<font>symbol</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label></label>
+					</control>
 				
 				</itemlayout>
 				
-				<focusedlayout height="1-row" width="12-col">
+				<focusedlayout height="1-row" width="20-col">
 					
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>12-col</width>
+						<width>20-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
@@ -258,52 +289,57 @@
 					<control type="label">
 						<posx>36</posx>
 						<posy>0</posy>
-						<width>7-col</width>
+						<width>8-col-gutter</width>
 						<font>itemTitle</font>
 						<textcolor>black</textcolor>
-						<selectedcolor>black</selectedcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					
 					<control type="label">
-						<posx>8-col</posx>
+						<posx>9-col</posx>
 						<posy>0</posy>
 						<width>4-col-gutter</width>
 						<font>itemTitle</font>
 						<textcolor>black</textcolor>
-						<selectedcolor>black</selectedcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.ChannelName]</label>
+					</control>
+					
+					<control type="label">
+						<posx>13-col</posx>
+						<posy>0</posy>
+						<width>4-col-gutter</width>
+						<font>itemTitle</font>
+						<textcolor>black</textcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Date]</label>
 					</control>
 					
+					<control type="label">
+						<posx>17-col</posx>
+						<posy>0</posy>
+						<width>2-col</width>
+						<font>itemTitle</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.Duration]</label>
+					</control>
+					
+					<control type="label">
+						<visible>!isempty(ListItem.playcount)</visible>
+						<posx>36r</posx>
+						<posy>1</posy>
+						<width>40</width>
+						<font>symbol</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label></label>
+					</control>
+					
 				</focusedlayout>
 			</control>
-			
-			<control type="group">
-				<posx>13-col</posx>
-				<posy>0</posy>
-			
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>8-col</width>
-					<label>$INFO[Container(13).ListItem.Title]</label>
-					<font>pageTitle</font>
-					<textcolor>white</textcolor>
-				</control>
-				
-				<control type="textbox">
-					<posx>0</posx>
-					<posy>1-row</posy>
-					<width>8-col-gutter</width>
-					<height>175</height>
-					<font>small</font>
-					<textcolor>white</textcolor>
-					<label>$INFO[Container(13).ListItem.Plot]</label>
-				</control>
-				
-			</control>
+		
 		</control>
 	</include>
 
@@ -314,7 +350,7 @@
 			
 			<!--animations-->
 			<animation type="visible">
-				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
+				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="600" />
 				<effect type="fade" start="0" delay="200" end="100" time="600" />
 			</animation>
 
@@ -323,7 +359,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>20-col</width>
-				<height>9-row</height>
+				<height>11-row</height>
 				<timeblocks>40</timeblocks>
 				<rulerunit>6</rulerunit>
 				<onleft>31</onleft>
@@ -440,32 +476,7 @@
 				</focusedlayout>
 				
 			</control>
-			
-			<!--item info-->
-			<control type="group">
-				<posx>0</posx>
-				<posy>10-row</posy>
-
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>8-col-gutter</width>
-					<font>itemTitle</font>
-					<label>$INFO[listitem.starttime] - $INFO[listitem.endtime] $INFO[listitem.title]</label>
-					<textcolor>selected</textcolor>		
-				</control>
-
-				<control type="textbox">
-					<posx>0</posx>
-					<posy>1-row</posy>
-					<width>12-col</width>
-					<height>108</height>
-					<font>small</font>
-					<textcolor>selected</textcolor>
-					<label>$INFO[listitem.plot]</label>
-				</control>
-			</control>
-			
+						
 		</control>
 	</include>
 

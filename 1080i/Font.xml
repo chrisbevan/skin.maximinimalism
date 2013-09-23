@@ -105,16 +105,7 @@
 			<style>uppercase</style>
 			<aspect>0.8</aspect>
 		</font>
-		
-		<font>
-			<name>sectionTitle</name>
-			<filename>sourceSansPro/black.ttf</filename>
-			<size>48</size>
-			<linespacing>1.0</linespacing>
-			<style>uppercase</style>
-			<aspect>0.8</aspect>
-		</font>
-		
+				
 		<font>
 			<name>dialogTitle</name>
 			<filename>sourceSansPro/black.ttf</filename>

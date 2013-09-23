@@ -11,7 +11,7 @@
 		<control type="group">
 													
 			<posx>col-19-begin</posx>
-			<posy>row-2-begin</posy>
+			<posy>83</posy>
 			
 			<!--animations-->
 			<animation type="Windowclose">

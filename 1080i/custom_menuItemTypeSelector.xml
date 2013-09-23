@@ -109,36 +109,17 @@
 						<onclick>Skin.SetString(menuItemType,audioPlaylist)</onclick>
 						<selected>stringcompare(skin.string(menuItemType),audioPlaylist)</selected>
 					</control>
-					
-					
-					<control type="radiobutton" id="6005">
-						<description>Favourite</description>
-						<width>8-col</width>
-						<align>left</align>
-						<label>31093</label>
-						<onclick>Skin.SetString(menuItemType,favourite)</onclick>
-						<selected>stringcompare(skin.string(menuItemType),favourite)</selected>
-					</control>
-					
-					<control type="radiobutton" id="6006">
-						<description>Folder</description>
-						<width>8-col</width>
-						<align>left</align>
-						<label>31087</label>
-						<onclick>Skin.SetString(menuItemType,folder)</onclick>
-						<selected>stringcompare(skin.string(menuItemType),folder)</selected>
-					</control>
-					
+										
 				</control>
 								
 				<control type="grouplist" id="7000">
 					<posx>0</posx>
-					<posy>6-row</posy>
+					<posy>4-row</posy>
 					<width>8-col</width>
 					<height>10-row</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
-					<onup>6006</onup>
+					<onup>6004</onup>
 					<ondown>6021</ondown>					
 					
 					<!--name and path capture-->										
@@ -181,7 +162,7 @@
 								
 				<control type="grouplist" id="6020">
 					<posx>0</posx>
-					<posy>9-row</posy>
+					<posy>7-row</posy>
 					<width>8-col</width>
 					<height>1-row</height>
 					<orientation>horizontal</orientation>
@@ -242,7 +223,7 @@
 		<include>Debug_Grid</include>
 		<control type="label">
 			<include>DialogID</include>
-			<label>DialogSelect.xml</label>
+			<label>custom_menuitemTypeSelector.xml</label>
 		</control>
 
 	</controls>
