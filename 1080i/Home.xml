@@ -7,8 +7,44 @@
 		
 	<controls>
 			
-		<include>fanartSlides</include>	
+		<include>fanartSlides</include>
 																					
+		<!--system info indicator-->
+		<control type="group">
+			<posx>col-12-begin</posx>
+			<posy>12</posy>
+						
+			<control type="image">
+				<posx>4</posx>
+				<posy>4</posy>
+				<width>24</width>
+				<height>24</height>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<texture diffuse="masks/circle.png" border="0">colors/white.png</texture>
+			</control>
+
+			<control type="label">
+				<posx>5</posx>
+				<posy>-13</posy>
+				<width>3-col</width>
+				<align>left</align>
+				<font>symbolSmall</font>
+				<textcolor>black</textcolor>
+				<shadowcolor>-</shadowcolor>
+				<label>	</label>
+			</control>
+			
+			<control type="label">
+				<posx>36</posx>
+				<posy>-12</posy>
+				<width>3-col</width>
+				<align>left</align>
+				<font>smallMedium</font>
+				<textcolor>white</textcolor>
+				<label>30213</label>
+			</control>
+		</control>
+		
 		<!--Date / time and weather-->
 		<control type="group">
 			<posx>col-1-begin</posx>

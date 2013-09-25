@@ -94,9 +94,12 @@
 	<string id="30210">Screen</string>	
 	<string id="30211">Watch now</string>	
 	<string id="30212">Record</string>	
+	<string id="30213">System Info</string>	
 	
+	<string id="31034">Enable Debug Grid</string>
+	<string id="31035">Disable Debug Info</string>
 	
-	<!--misc to be reincorporated-->
+	<!--misc to be eventually reincorporated-->
 	<string id="31018">Current Selected</string>
 	<string id="31019">Open playlist</string>
 	<string id="31020">Save playlist</string>
@@ -113,14 +116,6 @@
 	<string id="31031">Karaoke Song Selector</string>
 	<string id="31032">Visualization Presets</string>
 	<string id="31033">Debug</string>
-	<string id="31034">Enable Debug Grid</string>
-	<string id="31035">Disable Debug Info</string>
-	
-	
-	
-	
-	
-	
 	
 	<string id="31015">Player Controls</string>
 </strings>
