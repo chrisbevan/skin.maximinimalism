@@ -1,5 +1,6 @@
 [B]0.1.4[/B]
 - Dialog added: DialogNetworkSetup.xml
+- Reworked: Music Now playing (musicvisualisation.xml) 
 - UI Controls: Visual modification to spin controls and radio buttons for better visibility
 - Misc animation adjustments
 - Addition of indicator on homescreen for access to system info screen

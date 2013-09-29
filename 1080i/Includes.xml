@@ -8,6 +8,7 @@
 	<include file="ViewsDialogs.xml" />
 	<include file="ViewsPVR.xml" />
 	<include file="ViewsMusic.xml" />
+	<include file="ViewsPictures.xml" />
 	
 	<!--modal dialogs-->
 	<include name="modalDialog">

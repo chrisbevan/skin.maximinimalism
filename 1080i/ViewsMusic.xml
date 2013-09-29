@@ -347,11 +347,11 @@
 			<visible>container.content(songs)</visible>
 			<posx>0</posx>
 			<posy>3-row</posy>
-			
+		
 			<animation type="visible">
-	            <effect type="fade" start="0" end="100" time="300" />
-				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="400" />
+	            <include>listSlideIn</include>
 			</animation>
+			
 			<animation type="hidden">
 	            <effect type="fade" start="100" end="0" time="200" />
 			</animation>
@@ -390,7 +390,21 @@
 				</control>
 				
 			</control>
+		</control>
+		
+		<control type="group">
+			<visible>container.content(songs)</visible>
+			<posx>0</posx>
+			<posy>3-row</posy>
 			
+			<animation type="visible">
+	            <effect type="fade" start="0" end="100" time="300" delay="700" />
+				<effect type="slide" start="3-col" end="0" center="auto" tween="cubic" easing="out" time="400" delay="700"/>
+			</animation>
+			<animation type="hidden">
+	            <effect type="fade" start="100" end="0" time="200" />
+			</animation>
+				
 			<!--song listing-->
 			<control type="panel" id="56">
 				<visible>container.content(songs)</visible>

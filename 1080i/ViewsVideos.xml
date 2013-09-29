@@ -292,11 +292,12 @@
 			<posx>0</posx>
 			<posy>3-row</posy>
 			
-			<animation type="visible">
-	            <effect type="fade" start="0" end="100" time="300" />
-			</animation>
 			<animation type="hidden">
 	            <effect type="fade" start="100" end="0" time="300" />
+			</animation>
+			
+			<animation type="visible">
+	            <include>listSlideIn</include>
 			</animation>
 						
 			<!--content-->
@@ -432,45 +433,53 @@
 	
 	<!--episodes-->
 	<include name="viewEpisodes">
+		<!--episode synopsis & thumb-->
+		<control type="group">
+			<posx>0</posx>
+			<posy>3-row</posy>
+			<visible>[container.content(episodes) | Substring(Container.folderpath,plugin)] + !Substring(Container.foldername,TVCatchup)</visible>
+							
+			<animation type="visible">
+	            <include>listSlideIn</include>
+			</animation>
+			
+			<control type="image">
+				<visible>!Substring(Container.folderpath,plugin)</visible>	
+				<posx>0</posx>
+				<posy>8</posy>
+				<width>6-col</width>
+				<height>635</height>
+				<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+				<texture diffuse="masks/poster.png" border="0">$INFO[ListItem.Art(tvshow.poster)]</texture>
+				<fadetime>200</fadetime>
+			</control>
+			
+			<control type="image">
+				<visible>Substring(Container.folderpath,plugin)</visible>	
+				<posx>13-col</posx>
+				<posy>8</posy>
+				<width>7-col</width>
+				<height>7-col</height>
+				<aspectratio aligny="top" align="center" scalediffuse="false">scale</aspectratio>
+				<texture diffuse="masks/poster.png" border="0">$INFO[ListItem.thumb]</texture>
+				<fadetime>200</fadetime>
+			</control>
+			
+		</control>
+		
 		<control type="group">			
 			<visible>[container.content(episodes) | Substring(Container.folderpath,plugin)] + !Substring(Container.foldername,TVCatchup)</visible>
 			<posx>0</posx>
 			<posy>3-row</posy>
 			
 			<animation type="visible">
-	            <include>listSlideIn</include>
+	            <effect type="fade" start="0" end="100" time="300" delay="700" />
+				<effect type="slide" start="3-col" end="0" center="auto" tween="cubic" easing="out" time="400" delay="700"/>
 			</animation>
 			<animation type="hidden">
 	            <effect type="fade" start="100" end="0" time="200" />
 			</animation>
-																																	
-			<!--episode synopsis & thumb-->
-			<control type="group">
-								
-				<control type="image">
-					<visible>!Substring(Container.folderpath,plugin)</visible>	
-					<posx>0</posx>
-					<posy>8</posy>
-					<width>6-col</width>
-					<height>635</height>
-					<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
-					<texture diffuse="masks/poster.png" border="0">$INFO[ListItem.Art(tvshow.poster)]</texture>
-					<fadetime>200</fadetime>
-				</control>
-				
-				<control type="image">
-					<visible>Substring(Container.folderpath,plugin)</visible>	
-					<posx>13-col</posx>
-					<posy>8</posy>
-					<width>7-col</width>
-					<height>7-col</height>
-					<aspectratio aligny="top" align="center" scalediffuse="false">scale</aspectratio>
-					<texture diffuse="masks/poster.png" border="0">$INFO[ListItem.thumb]</texture>
-					<fadetime>200</fadetime>
-				</control>
-				
-			</control>
-						
+																																							
 			<!--episode list-->
 			<control type="panel" id="52">
 				<visible>container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
