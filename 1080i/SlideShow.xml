@@ -13,24 +13,36 @@
 
 		<!--picture info-->
 		<control type="group">
-			<posx>col-20-begin</posx>
-			<posy>0</posy>
+			<posx>col-5-begin</posx>
+			<posy>row-1-begin</posy>
 
 			<!--background-->
 			<control type="image">
-				<width>7-col</width>
-				<height>fullscreenHeight</height>
+				<posx>0</posx>
+				<posy>2</posy>
+				<width>16-col</width>
+				<height>53</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>colors/black.png</texture>
+				<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
 				<bordersize>0</bordersize>
-				<colordiffuse>ccFFFFFF</colordiffuse>
+				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>
 			
 			<!--image tags-->
 			<control type="label">
-				<posx>1-col</posx>
-				<posy>row-1-begin</posy>
-				<width>4-col</width>
+				<posx>24</posx>
+				<posy>0</posy>
+				<width>2-col</width>
+				<font>itemTitle</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>-</shadowcolor>
+				<label>$INFO[Slideshow.SlideIndex]</label>
+			</control>
+			
+			<control type="label">
+				<posx>2-col</posx>
+				<posy>0</posy>
+				<width>10-col</width>
 				<font>itemTitle</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>-</shadowcolor>
@@ -38,8 +50,8 @@
 			</control>
 			
 			<control type="label">
-				<posx>1-col</posx>
-				<posy>row-2-begin</posy>
+				<posx>12-col</posx>
+				<posy>0</posy>
 				<width>4-col</width>
 				<font>itemTitleSmall</font>
 				<textcolor>white</textcolor>
@@ -47,18 +59,6 @@
 				<label>$INFO[Slideshow.Filedate]</label>
 			</control>
 			
-			<!--testing infolabels-->
-			<control type="textbox">
-				<posx>1-col</posx>
-				<posy>170</posy>
-				<width>4-col</width>
-				<height>11-row</height>
-				<font>smallMedium</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>-</shadowcolor>
-				<label>$INFO[Slideshow.Filedate]</label>
-			</control>
-
 		</control>
 
 		<!--debugging-->

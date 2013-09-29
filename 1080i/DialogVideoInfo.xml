@@ -57,7 +57,7 @@
 				<width>fullscreenWidth</width>
 				<height>7-row</height>
 				<texture>colors/black.png</texture>
-				<colordiffuse>ddffffff</colordiffuse>
+				<colordiffuse>99ffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			
