@@ -80,14 +80,7 @@
 								
 						</focusedlayout>
 
-						<content>
-							<item id="20">
-								<label>31033</label>
-								<label2></label2>
-								<onclick>ActivateWindow(home)</onclick>
-								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-							</item>
-							
+						<content>							
 							<item id="1">
 								<label>31005</label>
 								<label2></label2>
@@ -577,8 +570,8 @@
 
 					<control type="scrollbar" id="60">
 						<posx>108r</posx>
-						<posy>row-5-begin</posy>
-						<height>12-row</height>
+						<posy>274</posy>
+						<height>6-row</height>
 						<onleft>9999</onleft>
 					</control>
 
@@ -789,14 +782,6 @@
 						<onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
 						<onclick>ActivateWindow(5000)</onclick>
 					</item>
-					<!--
-					<item id="5">
-						<label>31040</label>
-						<label2>+</label2>
-						<thumb>-</thumb>
-						<onclick>activateWindow(mediasource)</onclick>
-					</item>
-				-->
 					<item id="6">
 						<label>31003</label>
 						<label2></label2>

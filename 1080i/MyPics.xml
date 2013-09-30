@@ -79,13 +79,7 @@
 								
 						</focusedlayout>
 
-						<content>
-							<item id="20">
-								<label>31033</label>
-								<label2></label2>
-								<onclick>ActivateWindow(home)</onclick>
-							</item>
-							
+						<content>							
 							<!--final bits and bobs-->							
 							<item id="21">
 								<label>31010</label>
@@ -162,8 +156,8 @@
 
 					<control type="scrollbar" id="60">
 						<posx>108r</posx>
-						<posy>row-5-begin</posy>
-						<height>12-row</height>
+						<posy>274</posy>
+						<height>6-row</height>
 						<onleft>9999</onleft>
 					</control>
 

@@ -1,3 +1,7 @@
+[B]0.5.0[/B]
+- Photo library: basic functionality implemented
+- Improvements to file browser and select dialogs (particularly for artwork selection and download)
+
 [B]0.1.4[/B]
 - Dialog added: DialogNetworkSetup.xml
 - Reworked: Music Now playing (musicvisualisation.xml) 

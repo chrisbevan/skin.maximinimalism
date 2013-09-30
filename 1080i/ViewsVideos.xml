@@ -107,13 +107,12 @@
 																											
 			<!--focussed item detail-->
 			<control type="group">
-				<posx>13-col</posx>
+				<posx>14-col</posx>
+				<posy>12</posy>
 										
 				<!--content is movies / tvshows / seasons: show larger thumbnail-->
 				<control type="group">
 					<visible>container.content(movies) | container.content(tvshows)</visible>
-					<posx>36</posx>
-					<posy>12</posy>
 					
 					<animation type="windowopen">
 			            <effect type="fade" start="0" end="100" time="300" delay="700" />
@@ -136,7 +135,7 @@
 							<width>6-col</width>
 							<height>635</height>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true" fallback="colors/offblack.png" diffuse="masks/poster.png" border="0">$INFO[Listitem.art(poster)]</texture>
+							<texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(poster)]</texture>
 							<fadetime>200</fadetime>
 						</control>
 					
@@ -157,7 +156,7 @@
 											
 				<posx>0</posx>
 				<posy>4</posy>
-				<width>12-col</width>
+				<width>13-col</width>
 				<height>12-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
@@ -166,12 +165,12 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="sine" easing="inout">300</scrolltime>
 																
-				<itemlayout width="12-col" height="1-row">								
+				<itemlayout width="13-col" height="1-row">								
 									
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>12-col</width>
+						<width>13-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
@@ -223,12 +222,12 @@
 										
 				</itemlayout>
 
-				<focusedlayout width="12-col" height="1-row">
+				<focusedlayout width="13-col" height="1-row">
 																		
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>12-col</width>
+						<width>13-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
@@ -456,12 +455,12 @@
 			
 			<control type="image">
 				<visible>Substring(Container.folderpath,plugin)</visible>	
-				<posx>13-col</posx>
+				<posx>14-col</posx>
 				<posy>8</posy>
-				<width>7-col</width>
-				<height>7-col</height>
+				<width>6-col</width>
+				<height>6-col</height>
 				<aspectratio aligny="top" align="center" scalediffuse="false">scale</aspectratio>
-				<texture diffuse="masks/poster.png" border="0">$INFO[ListItem.thumb]</texture>
+				<texture border="0">$INFO[ListItem.thumb]</texture>
 				<fadetime>200</fadetime>
 			</control>
 			
@@ -485,18 +484,18 @@
 				<visible>container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
 				<posx>7-col</posx>
 				<posy>4</posy>
-				<width>12-col</width>
+				<width>13-col</width>
 				<height>12-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<pagecontrol>60</pagecontrol>
 																
-				<itemlayout width="12-col" height="1-row">
+				<itemlayout width="13-col" height="1-row">
 										
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>12-col</width>
+						<width>13-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
@@ -550,12 +549,12 @@
 					
 				</itemlayout>
 
-				<focusedlayout width="12-col" height="1-row">
+				<focusedlayout width="13-col" height="1-row">
 					
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>12-col</width>
+						<width>13-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
@@ -618,18 +617,18 @@
 				<visible>Substring(Container.folderpath,plugin)</visible>
 				<posx>0</posx>
 				<posy>4</posy>
-				<width>12-col</width>
+				<width>13-col</width>
 				<height>12-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<pagecontrol>60</pagecontrol>
 																
-				<itemlayout width="12-col" height="1-row">
+				<itemlayout width="13-col" height="1-row">
 										
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>12-col</width>
+						<width>13-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
@@ -649,7 +648,7 @@
 					<control type="label">
 						<posx>60</posx>
 						<posy>0</posy>
-						<width>8-col</width>
+						<width>9-col</width>
 						<font>itemTitle</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
@@ -659,7 +658,7 @@
 					
 					<control type="label">
 						<visible>!isempty(ListItem.duration)</visible>
-						<posx>11-col</posx>
+						<posx>12-col</posx>
 						<posy>0</posy>
 						<width>3-col</width>
 						<font>smallStrong</font>
@@ -683,12 +682,12 @@
 					
 				</itemlayout>
 
-				<focusedlayout width="12-col" height="1-row">
+				<focusedlayout width="13-col" height="1-row">
 					
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>12-col</width>
+						<width>13-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
@@ -708,7 +707,7 @@
 					<control type="label">
 						<posx>60</posx>
 						<posy>0</posy>
-						<width>8-col</width>
+						<width>9-col</width>
 						<font>itemTitle</font>
 						<textcolor>black</textcolor>
 						<selectedcolor>black</selectedcolor>
@@ -719,7 +718,7 @@
 					
 					<control type="label">
 						<visible>!isempty(ListItem.duration)</visible>
-						<posx>11-col</posx>
+						<posx>12-col</posx>
 						<posy>0</posy>
 						<width>3-col</width>
 						<font>smallStrong</font>
