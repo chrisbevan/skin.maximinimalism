@@ -61,6 +61,7 @@
 					<textcolor>white</textcolor>
 					<label>›</label>
 					<animation effect="rotate" end="90" center="auto" time="0">windowopen</animation>
+					<animation effect="rotate" end="90" center="auto" time="0">windowclose</animation>
 				</control>
 
 				<control type="label">

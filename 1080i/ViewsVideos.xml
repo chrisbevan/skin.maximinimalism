@@ -449,7 +449,7 @@
 				<width>6-col</width>
 				<height>635</height>
 				<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
-				<texture diffuse="masks/poster.png" border="0">$INFO[ListItem.Art(tvshow.poster)]</texture>
+				<texture border="0">$INFO[ListItem.Art(tvshow.poster)]</texture>
 				<fadetime>200</fadetime>
 			</control>
 			
