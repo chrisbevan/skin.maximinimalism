@@ -186,7 +186,7 @@
 				<posx>14-col</posx>
 				<posy>2-row</posy>
 
-				<control type="list" id="8000">
+				<control type="panel" id="8000">
 					<posx>0</posx>
 					<posy>10</posy>
 					<width>6-col</width>
