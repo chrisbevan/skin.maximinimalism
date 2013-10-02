@@ -7,7 +7,7 @@
 			<posy>3-row</posy>
 																		
 			<control type="panel" id="51">
-				<visible>!container.content(artists) + !container.content(genres) + !container.content(albums) + !container.content(songs)</visible>
+				<visible>!container.content(artists) + !container.content(genres) + !container.content(albums) + !container.content(songs) + !container.content(addons)</visible>
 				<posx>0</posx>
 				<posy>4</posy>
 				<width>12-col</width>
@@ -121,7 +121,7 @@
 			<posy>3-row</posy>
 																		
 			<control type="panel" id="53">
-				<visible>container.content(artists) | container.content(genres)</visible>
+				<visible>container.content(artists) | container.content(genres) | container.content(addons)</visible>
 				<posx>0</posx>
 				<posy>4</posy>
 				<width>21-col</width>

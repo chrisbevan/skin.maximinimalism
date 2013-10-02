@@ -749,13 +749,6 @@
 						<onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
 						<onclick>ActivateWindow(5000)</onclick>
 					</item>
-					<!--
-					<item id="5">
-						<label>31040</label>
-						<thumb>-</thumb>
-						<onclick>activateWindow(mediasource)</onclick>
-					</item>
-					-->
 				</content>
 
 			</control>
