@@ -544,7 +544,7 @@
 					<control type="scrollbar" id="60">
 						<posx>108r</posx>
 						<posy>274</posy>
-						<height>6-row</height>
+						<height>11-row</height>
 						<onleft>9999</onleft>
 					</control>
 

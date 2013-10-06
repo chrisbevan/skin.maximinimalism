@@ -8,24 +8,23 @@
 
 		<control type="group">
 			<posx>col-1-begin</posx>
-			<posy>row-3-begin</posy>
+			<posy>row-1-begin</posy>
 			
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>12-col-gutter</width>
+				<posx>4-col</posx>
+				<posy>row-2-begin</posy>
+				<width>16-col</width>
 				<height>11-row</height>
 				<texture>$INFO[listitem.thumb]</texture>
 			</control>
 			
-
-			<control type="list" id="5">
-				<posx>12-col</posx>
-				<posy>0</posy>
-				<width>12-col</width>
-				<height>17-row</height>
+			<control type="panel" id="5">
+				<posx>0</posx>
+				<posy>14-row</posy>
+				<width>24-col</width>
+				<height>190</height>
 			
-				<itemlayout height="36">
+				<itemlayout width="12-col" height="36">
 
 					<control type="label">
 						<posx>0</posx>
@@ -36,7 +35,7 @@
 
 					<control type="label">
 						<posx>4-col</posx>
-						<width>8-col</width>
+						<width>8-col-gutter</width>
 						<align>left</align>
 						<info>ListItem.Label2</info>
 						<font>regular</font>
@@ -44,7 +43,7 @@
 
 				</itemlayout>
 
-				<focusedlayout height="36">
+				<focusedlayout width="12-col" height="36">
 
 					<control type="label">
 						<posx>0</posx>
@@ -55,7 +54,7 @@
 
 					<control type="label">
 						<posx>4-col</posx>
-						<width>8-col</width>
+						<width>8-col-gutter</width>
 						<align>left</align>
 						<info>ListItem.Label2</info>
 						<font>regular</font>

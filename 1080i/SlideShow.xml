@@ -14,7 +14,7 @@
 		<!--picture info-->
 		<control type="group">
 			<posx>col-5-begin</posx>
-			<posy>row-1-begin</posy>
+			<posy>row-17-begin</posy>
 
 			<!--background-->
 			<control type="image">
@@ -33,7 +33,7 @@
 				<posx>24</posx>
 				<posy>0</posy>
 				<width>2-col</width>
-				<font>itemTitle</font>
+				<font>smallStrong</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>-</shadowcolor>
 				<label>$INFO[Slideshow.SlideIndex]</label>
@@ -50,10 +50,10 @@
 			</control>
 			
 			<control type="label">
-				<posx>12-col</posx>
+				<posx>13-col</posx>
 				<posy>0</posy>
 				<width>4-col</width>
-				<font>itemTitleSmall</font>
+				<font>smallStrong</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>-</shadowcolor>
 				<label>$INFO[Slideshow.Filedate]</label>

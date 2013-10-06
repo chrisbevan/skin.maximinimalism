@@ -67,7 +67,7 @@
 				<control type="label">
 					<posx>36</posx>
 					<posy>-12</posy>
-					<width>3-col</width>
+					<width>4-col</width>
 					<align>left</align>
 					<font>smallMedium</font>
 					<textcolor>white</textcolor>

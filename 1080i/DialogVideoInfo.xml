@@ -96,7 +96,7 @@
 			
 				<control type="label">
 					<posx>0</posx>
-					<posy>1-row</posy>
+					<posy>60</posy>
 					<width>18-col-gutter</width>
 					<align>left</align>
 					<font>itemTitleSmall</font>
