@@ -1,6 +1,8 @@
 [B]0.5.0[/B]
-- Photo library: basic functionality implemented
+- Photo library: basic / limited functionality implemented. Accessed from homescreen.
 - Improvements to file browser and select dialogs (particularly for artwork selection and download)
+- Bug fix: Music addons. Some problems with activating music addons from shortcuts persist.
+- Various skin-wide tweaks and fixes
 
 [B]0.1.4[/B]
 - Dialog added: DialogNetworkSetup.xml
