@@ -1,3 +1,6 @@
+[B]0.5.1[/B]
+- 
+
 [B]0.5.0[/B]
 - Photo library: basic / limited functionality implemented. Accessed from homescreen.
 - Improvements to file browser and select dialogs (particularly for artwork selection and download)

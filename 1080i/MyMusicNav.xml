@@ -122,7 +122,7 @@
 							<item id="5">
 								<label>136</label>
 								<label2></label2>
-								<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
+								<onclick>ActivateWindow(MusicFiles,Playlists,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 
@@ -202,13 +202,13 @@
 							<!--final bits and bobs-->							
 							<item id="21">
 								<label>31010</label>
-								<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
+								<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 
 							<item id="22">
 								<label>1214</label>
-								<onclick>ActivateWindow(MusicLibrary,root)</onclick>
+								<onclick>ActivateWindow(MusicFiles,root)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 							
@@ -748,6 +748,12 @@
 						<thumb>-</thumb>
 						<onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
 						<onclick>ActivateWindow(5000)</onclick>
+					</item>
+					<item id="6">
+						<label>31003</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>ActivateWindow(programs)</onclick>
 					</item>
 				</content>
 

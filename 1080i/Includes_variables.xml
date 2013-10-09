@@ -15,11 +15,13 @@
 <variable name="fanartType">
 	<value condition="Window.IsActive(videolibrary)">$INFO[Skin.String(videoFanartLocation)]</value>
 	<value condition="Window.IsActive(musiclibrary)">$INFO[Skin.String(musicFanartLocation)]</value>
+	<value condition="Window.IsActive(musicfiles)">$INFO[Skin.String(musicFanartLocation)]</value>
 	<value condition="Window.IsActive(pvr)">$INFO[Skin.String(videoFanartLocation)]</value>
 </variable>
 
 <!--folder titles-->
 <variable name="listTitle">
+	<value condition="Window.IsActive(musicfiles)">Music Files</value>
 	<value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),false) + isempty(container.foldername)"></value>
 	<value condition="Window.IsActive(musiclibrary) + SubString(skin.string(showRecentMusicItems),false) + isempty(container.foldername)"></value>
 	<value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true)">$LOCALIZE[31012]</value>
