@@ -1,6 +1,7 @@
 <window id="501">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<onunload>Skin.SetString(showRecentMusicItems,true)</onunload>
 
 	<controls>
 
@@ -225,24 +226,35 @@
 					
 					<!--source title-->
 					<control type="label">
+						<visible>!container.content(addons) + !SubString(container.foldername,playlists)</visible>
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>18-col</width>
 						<font>pageTitle</font>
-						<label>$VAR[listTitle]</label>
+						<label>30214</label>
 						<textcolor>white</textcolor>
 					</control>
 
 					<control type="label">
-						<visible>SubString(skin.string(showRecentMusicItems),false) + isempty(container.foldername)</visible>
+						<visible>container.content(addons) + !SubString(container.foldername,playlists)</visible>
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>14-col</width>
 						<font>pageTitle</font>
-						<label>31051</label>
+						<label>31055</label>
 						<textcolor>white</textcolor>
 					</control>
-
+					
+					<control type="label">
+						<visible>SubString(container.foldername,playlists)</visible>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<font>pageTitle</font>
+						<label>Music Playlists</label>
+						<textcolor>white</textcolor>
+					</control>
+					
 					<!--source subtitle-->
 					<control type="label">
 						<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentMusicItems),false) + !container.content(songs)</visible>
@@ -316,8 +328,8 @@
 
 					<control type="scrollbar" id="60">
 						<posx>108r</posx>
-						<posy>274</posy>
-						<height>11-row</height>
+						<posy>276</posy>
+						<height>672</height>
 						<onleft>9999</onleft>
 					</control>
 
@@ -388,7 +400,7 @@
 
 						<!--debugging-->						
 						<control type="label">
-							<visible>false</visible>
+							<visible>true</visible>
 							<width>3-col</width>
 							<font>buttonTitle</font>
 							<label>$INFO[container.foldername]</label>

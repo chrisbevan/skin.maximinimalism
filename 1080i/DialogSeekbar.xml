@@ -57,7 +57,7 @@
 				<width>16-col-gutter</width>
 				<font>dialogTitle</font>
 				<textcolor>white</textcolor>
-				<label>$INFO[Player.Title]</label>
+				<label>[UPPERCASE]$INFO[Player.Title][/UPPERCASE]</label>
 				<shadowcolor>-</shadowcolor>
 				<scroll>true</scroll>
 			</control>

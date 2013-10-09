@@ -21,7 +21,6 @@
 
 <!--folder titles-->
 <variable name="listTitle">
-	<value condition="Window.IsActive(musicfiles)">Music Files</value>
 	<value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),false) + isempty(container.foldername)"></value>
 	<value condition="Window.IsActive(musiclibrary) + SubString(skin.string(showRecentMusicItems),false) + isempty(container.foldername)"></value>
 	<value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true)">$LOCALIZE[31012]</value>
