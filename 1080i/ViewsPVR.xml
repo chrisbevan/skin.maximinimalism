@@ -7,8 +7,7 @@
 			<visible>Control.IsVisible(11) | Control.IsVisible(12)</visible>
 			<!--animations-->
 			<animation type="visible">
-				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="600" />
-				<effect type="fade" start="0" delay="200" end="100" time="600" />
+				<include>listSlideIn</include>
 			</animation>
 			
 			<control type="panel" id="11">
@@ -65,7 +64,7 @@
 						<align>center</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.starttime]</label>
+						<label>[COLOR accented]$INFO[ListItem.starttime][/COLOR]</label>
 					</control>
 					
 					<control type="label">
@@ -86,7 +85,7 @@
 						<font>itemTitle</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.nextstarttime]</label>
+						<label>[COLOR accented]$INFO[ListItem.nextstarttime][/COLOR]</label>
 					</control>
 					
 					<control type="label">
@@ -193,8 +192,7 @@
 			
 			<!--animations-->
 			<animation type="visible">
-				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="600" />
-				<effect type="fade" start="0" delay="200" end="100" time="600" />
+				<include>listSlideIn</include>
 			</animation>
 
 			<control type="panel" id="13">
@@ -350,85 +348,40 @@
 			
 			<!--animations-->
 			<animation type="visible">
-				<effect type="slide" start="3-col" end="0" tween="cubic" easing="out" time="600" />
-				<effect type="fade" start="0" delay="200" end="100" time="600" />
+				<include>listSlideIn</include>
 			</animation>
-
+			
 			<control type="epggrid" id="10">
 				<description>EPG Grid</description>
 				<posx>0</posx>
-				<posy>0</posy>
-				<width>20-col</width>
+				<posy>2</posy>
+				<width>21-col</width>
 				<height>11-row</height>
 				<timeblocks>40</timeblocks>
 				<rulerunit>6</rulerunit>
-				<onleft>31</onleft>
-				<onright>31</onright>
-				<onup>10</onup>
-				<ondown>10</ondown>
+				<onleft>9000</onleft>
 				
-				<rulerlayout height="1-row" width="40">
+				<rulerlayout height="1-row" width="1-col">
 				
 					<control type="label" id="2">
-						<posx>0</posx>
+						<posx>12</posx>
 						<posy>0</posy>
 						<width>34</width>
 						<height>1-row</height>
-						<font>smallStrong</font>
-						<textcolor>selected</textcolor>
+						<font>itemTitleSmall</font>
+						<textcolor>accented</textcolor>
 						<selectedcolor>unselected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
-					
-					<!--horizontal rule-->
-					<control type="image">
-						<posx>0</posx>
-						<posy>52</posy>
-						<width>16-col</width>
-						<height>2</height>
-						<texture>colors/white.png</texture>
-						<colordiffuse>ffffffff</colordiffuse>
-						<aspectratio>stretch</aspectratio>
-					</control>
-					
+										
 				</rulerlayout>
 				
-				<channellayout height="1-row" width="280">
+				<channellayout height="1-row" width="4-col-gutter">
 															
-					<control type="label" id="1">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>3-col</width>
-						<font>itemTitle</font>
-						<textcolor>unselected</textcolor>
-						<selectedcolor>unselected</selectedcolor>
-						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.ChannelName]</label>
-					</control>
-					
-				</channellayout>
-				
-				<focusedchannellayout height="1-row" width="280">
-										
-					<control type="label" id="1">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>3-col</width>
-						<font>itemTitle</font>
-						<textcolor>selected</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.ChannelName]</label>
-					</control>
-					
-				</focusedchannellayout>
-				
-				<itemlayout height="1-row" width="40">
-										
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>20-col</width>
+						<width>4-col-gutter</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="0">colors/black.png</texture>
@@ -438,6 +391,60 @@
 					
 					<control type="label" id="1">
 						<posx>12</posx>
+						<posy>0</posy>
+						<width>3-col</width>
+						<font>itemTitle</font>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.ChannelName]</label>
+						<scroll>false</scroll>
+					</control>
+					
+				</channellayout>
+				
+				<focusedchannellayout height="1-row" width="280">
+										
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>4-col-gutter</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="0">colors/white.png</texture>
+						<bordersize>0</bordersize>
+						<colordiffuse>ffFFFFFF</colordiffuse>
+					</control>
+					
+					<control type="label" id="1">
+						<posx>12</posx>
+						<posy>0</posy>
+						<width>3-col</width>
+						<font>itemTitle</font>
+						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.ChannelName]</label>
+						<scroll>false</scroll>
+					</control>
+					
+				</focusedchannellayout>
+				
+				<itemlayout height="1-row" width="1-col">
+										
+					<control type="image">
+						<posx>12</posx>
+						<posy>2</posy>
+						<width>20-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="0">colors/black.png</texture>
+						<bordersize>0</bordersize>
+						<colordiffuse>ccFFFFFF</colordiffuse>
+					</control>
+					
+					<control type="label" id="1">
+						<posx>24</posx>
 						<posy>0</posy>
 						<width>30</width>
 						<font>itemTitle</font>
@@ -449,12 +456,12 @@
 										
 				</itemlayout>
 				
-				<focusedlayout height="1-row" width="40">
+				<focusedlayout height="1-row" width="1-col">
 					
 					<control type="image">
-						<posx>0</posx>
+						<posx>12</posx>
 						<posy>2</posy>
-						<width>6-col</width>
+						<width>8-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="0">colors/white.png</texture>
@@ -463,7 +470,7 @@
 					</control>
 					
 					<control type="label" id="1">
-						<posx>12</posx>
+						<posx>24</posx>
 						<posy>0</posy>
 						<width>6-col</width>
 						<font>itemTitle</font>
@@ -487,8 +494,7 @@
 			
 			<!--animations-->
 			<animation type="visible">
-				<effect type="slide" start="1920" end="0" tween="cubic" easing="out" time="600" />
-				<effect type="fade" start="0" delay="200" end="100" time="600" />
+				<include>listSlideIn</include>
 			</animation>
 
 			<control type="group">

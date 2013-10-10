@@ -12,7 +12,7 @@
 			<include>globalBackground</include>
 			
 			<!--window fader-->			
-			<animation type="conditional" condition="window.next(0) | window.next(mypvr)">
+			<animation type="conditional" condition="window.next(0) | window.next(mypvr) | window.next(1)">
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
 			
@@ -676,6 +676,10 @@
 				<effect type="slide" start="-456,0" end="0,0" time="200" tween="sine" easing="in" reversible="false"  />
 			</animation>
 			
+			<animation type="conditional" condition="window.next(1)">
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
+						
 			<!--background-->
 			<control type="image">
 				<posx>0</posx>
