@@ -53,7 +53,7 @@
 			
 			<control type="label">
 				<posx>300</posx>
-				<posy>30</posy>
+				<posy>31</posy>
 				<width>16-col-gutter</width>
 				<font>dialogTitle</font>
 				<textcolor>white</textcolor>

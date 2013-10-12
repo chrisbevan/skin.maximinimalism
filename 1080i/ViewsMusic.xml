@@ -311,7 +311,7 @@
 							<aspectratio>stretch</aspectratio>
 							<texture>colors/white.png</texture>
 							<bordersize>0</bordersize>
-							<colordiffuse>ffFFFFFF</colordiffuse>
+							<colordiffuse>77FFFFFF</colordiffuse>
 						</control>
 
 						<control type="label">

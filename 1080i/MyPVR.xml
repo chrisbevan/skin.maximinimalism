@@ -150,7 +150,7 @@
 						<posx>108r</posx>
 						<posy>276</posy>
 						<height>672</height>
-						<onleft>50</onleft>
+						<onleft>9999</onleft>
 					</control>
 
 				</control>
