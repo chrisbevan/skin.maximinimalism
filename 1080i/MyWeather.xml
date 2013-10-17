@@ -1,45 +1,72 @@
 <window id="2600">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-	<animation effect="fade" start="0" end="100" time="1000" reversible="true">WindowOpen</animation>
 
 	<controls>
 		
 		<!--background-->
 		<include>fanartSlides</include>	
-		<control type="image">
-			<include>dimensionsFullscreen</include>
-			<texture>colors/black.png</texture>
-			<colordiffuse>ccFFFFFF</colordiffuse>
-			<aspectratio>stretch</aspectratio>
-		</control>
 		
 		<control type="group">
 			<posx>col-1-begin</posx>
-			<posy>row-5-begin</posy>
+			<posy>row-4-begin</posy>
 			
-			<!--general info-->
-			<control type="group">				
-				<control type="label">
-					<description>weather location</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>24-col</width>
-					<align>center</align>
-					<font>veryLarge</font>
-					<textcolor>white</textcolor>
-					<label>$INFO[Window.Property(Location)]</label>
-				</control>
+			<!--animations-->
+			<include>modalDialogInOutVertical</include>
+			
+			<!--general info-->			
+			<control type="image">
+				<posx>-384</posx>
+				<posy>44</posy>
+				<width>2500</width>
+				<height>1-row</height>
+				<texture>colors/white.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<control type="image">
+				<posx>-3</posx>
+				<posy>44</posy>
+				<width>1155</width>
+				<height>1-row</height>
+				<texture>colors/white.png</texture>
+				<bordertexture border="0">colors/black.png</bordertexture>
+				<bordersize>3,0,0,0</bordersize>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<control type="label">
+				<posx>12</posx>
+				<posy>47</posy>
+				<width>8-col</width>
+				<font>pageTitle</font>
+				<label>$INFO[Window.Property(Location)]</label>
+				<textcolor>black</textcolor>
+				<shadowcolor>-</shadowcolor>
+			</control>
+			
+			<!--overlay-->
+			<control type="image">
+				<posx>-96</posx>
+				<posy>2-row</posy>
+				<width>fullscreenWidth</width>
+				<height>8-row</height>
+				<texture>colors/black.png</texture>
+				<colordiffuse>88ffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
 			</control>
 			
 			<!--panel begins-->
 			<control type="panel" id="9000">
 				<posx>0</posx>
-				<posy>3-row</posy>
+				<posy>2-row</posy>
 				<width>24-col</width>
 				<height>18-row</height>
 				<onup>activateWindow(home)</onup>
+				<onleft>sendclick(2600,3)</onleft>
+				<onright>sendclick(2600,3)</onright>
 												
 				<itemlayout width="5-col-gutter" height="6-col">								
 																																			

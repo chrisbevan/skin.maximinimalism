@@ -1,5 +1,6 @@
 [B]0.6.0[/B]
 - Weather screen added (press down on homescreen)
+- New skin option: Set and use custom global background
 - Various skin-wide tweaks and fixes
 - Music addons and file lists reworked. Should now work properly!
 
