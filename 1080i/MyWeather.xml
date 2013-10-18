@@ -1,5 +1,5 @@
 <window id="2600">
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="true">3</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
@@ -37,15 +37,31 @@
 				<aspectratio>stretch</aspectratio>
 			</control>
 			
-			<control type="label">
+			<!--location selector-->
+			<control type="spincontrolex" id="3">
+				<description>Location Select</description>
 				<posx>12</posx>
 				<posy>47</posy>
-				<width>8-col</width>
+				<label>-</label>
+				<label2>-</label2>
+				<font>pageTitle</font>
+				<textcolor>white</textcolor>
+				<width>1-col</width>
+				<align>right</align>
+				<onup>activateWindow(home)</onup>
+			</control>
+			
+			<!--location title-->
+			<control type="label">
+				<visible>true</visible>
+				<posx>84</posx>
+				<posy>47</posy>
+				<width>18-col</width>
 				<font>pageTitle</font>
 				<label>$INFO[Window.Property(Location)]</label>
 				<textcolor>black</textcolor>
 				<shadowcolor>-</shadowcolor>
-			</control>
+			</control>	
 			
 			<!--overlay-->
 			<control type="image">
@@ -64,9 +80,6 @@
 				<posy>2-row</posy>
 				<width>24-col</width>
 				<height>18-row</height>
-				<onup>activateWindow(home)</onup>
-				<onleft>sendclick(2600,3)</onleft>
-				<onright>sendclick(2600,3)</onright>
 												
 				<itemlayout width="5-col-gutter" height="6-col">								
 																																			
@@ -224,43 +237,6 @@
 				</content>
 			</control>
 			<!--panel ends-->
-		</control>
-
-		<!--dialog controls-->
-		<control type="grouplist" id="9000">
-			<visible>false</visible>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>330</width>
-			<height>900</height>
-			<itemgap>3</itemgap>
-			<onleft>-</onleft>
-			<onright>-</onright>
-			<onup>9000</onup>
-			<ondown>9000</ondown>
-			<orientation>vertical</orientation>
-
-			<control type="button" id="2">
-				<description>Refresh</description>
-				<label>184</label>
-				<width>330</width>
-				<align>left</align>
-			</control>
-
-			<control type="button" id="4">
-				<description>Settings</description>
-				<label>5</label>
-				<width>330</width>
-				<align>left</align>
-				<onclick>ActivateWindow(weathersettings)</onclick>
-			</control>
-
-			<control type="spincontrolex" id="3">
-				<description>Location Select</description>
-				<font>-</font>
-				<width>330</width>
-			</control>
-
 		</control>
 
 		<!--debugging-->
