@@ -1,8 +1,11 @@
 [B]0.6.0[/B]
-- Weather screen added (press down on homescreen)
-- New skin option: Set and use custom global background
+- 5 day weather screen added (press down on homescreen)
+- New skin option: Set and use a custom global background
 - Various skin-wide tweaks and fixes
 - Music addons and file lists reworked. Should now work properly!
+- Dialog 'DialogPVRTimerSettings.xml' added.
+- Dialog 'DialogPVRChannelManager.xml' added.
+- PVR Timer view implemented (first pass - not fully tested)
 
 [B]0.5.0[/B]
 - Photo library: basic / limited functionality implemented. Accessed from homescreen.

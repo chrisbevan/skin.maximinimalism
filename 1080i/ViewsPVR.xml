@@ -64,7 +64,7 @@
 						<align>center</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
-						<label>[COLOR accented]$INFO[ListItem.starttime][/COLOR]</label>
+						<label>$INFO[ListItem.starttime]</label>
 					</control>
 					
 					<control type="label">
@@ -85,7 +85,7 @@
 						<font>itemTitle</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>-</shadowcolor>
-						<label>[COLOR accented]$INFO[ListItem.nextstarttime][/COLOR]</label>
+						<label>$INFO[ListItem.nextstarttime]</label>
 					</control>
 					
 					<control type="label">
@@ -500,131 +500,123 @@
 			<control type="group">
 				<posx>0</posx>
 				<posy>0</posy>
-				
-				<control type="label">
-					<description>Channel header label</description>
+								
+				<control type="panel" id="14">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>220</width>
-					<font>smallStrong</font>
-					<textcolor>white</textcolor>
-					<label>19029</label>
-				</control>
-				
-				<control type="label">
-					<description>Title header label</description>
-					<posx>220</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<font>smallStrong</font>
-					<textcolor>white</textcolor>
-					<label>369</label>
-				</control>
-				
-				<control type="label">
-					<description>Schedule Time header label</description>
-					<posx>580</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<font>smallStrong</font>
-					<label>31501</label>
-				</control>
-				
-				<control type="label">
-					<description>Status header label</description>
-					<posx>940</posx>
-					<posy>0</posy>
-					<width>150</width>
-					<font>smallStrong</font>
-					<label>126</label>
-				</control>
-				
-				<control type="list" id="14">
-					<posx>0</posx>
-					<posy>55</posy>
 					<width>20-col</width>
 					<height>12-row</height>
+					<onleft>35</onleft>
+					<onright>60</onright>
 					<onup>14</onup>
 					<ondown>14</ondown>
-					<onleft>35</onleft>
-					<onright>73</onright>
 					
 					<itemlayout height="1-row">
 						
-						<control type="label">
-							<posx>50</posx>
-							<posy>0</posy>
-							<width>150</width>
-							<font>itemTitle</font>
-							<textcolor>unselected</textcolor>
-							<info>ListItem.ChannelName</info>
+						<control type="image">
+							<posx>0</posx>
+							<posy>2</posy>
+							<width>20-col</width>
+							<height>53</height>
+							<aspectratio>stretch</aspectratio>
+							<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
+							<bordersize>0</bordersize>
+							<colordiffuse>99FFFFFF</colordiffuse>
 						</control>
-						
+
 						<control type="label">
-							<posx>370</posx>
+							<posx>36</posx>
 							<posy>0</posy>
-							<width>290</width>
+							<width>8-col-gutter</width>
 							<font>itemTitle</font>
-							<textcolor>unselected</textcolor>
-							<info>ListItem.Label</info>
+							<textcolor>white</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
-						
+
 						<control type="label">
-							<posx>730</posx>
+							<posx>9-col</posx>
 							<posy>0</posy>
-							<width>400</width>
+							<width>4-col-gutter</width>
 							<font>itemTitle</font>
-							<textcolor>unselected</textcolor>
-							<info>ListItem.Date</info>
+							<textcolor>white</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
-						
+
 						<control type="label">
-							<posx>1018</posx>
+							<posx>13-col</posx>
 							<posy>0</posy>
-							<width>170</width>
+							<width>4-col-gutter</width>
 							<font>itemTitle</font>
-							<textcolor>unselected</textcolor>
-							<info>ListItem.Comment</info>
+							<textcolor>white</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$INFO[ListItem.Date]</label>
+						</control>
+
+						<control type="label">
+							<posx>17-col</posx>
+							<posy>0</posy>
+							<width>2-col</width>
+							<font>itemTitle</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$INFO[ListItem.Comment]</label>
 						</control>
 						
 					</itemlayout>
 					
-					<focusedlayout height="40">
+					<focusedlayout height="1-row">
 						
-						<control type="label">
-							<posx>50</posx>
-							<posy>0</posy>
-							<width>150</width>
-							<font>itemTitle</font>
-							<textcolor>selected</textcolor>
-							<info>ListItem.ChannelName</info>
+						<control type="image">
+							<posx>0</posx>
+							<posy>2</posy>
+							<width>20-col</width>
+							<height>53</height>
+							<aspectratio>stretch</aspectratio>
+							<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
+							<bordersize>0</bordersize>
+							<colordiffuse>FFFFFFFF</colordiffuse>
 						</control>
 						
 						<control type="label">
-							<posx>370</posx>
+							<posx>36</posx>
 							<posy>0</posy>
-							<width>290</width>
+							<width>8-col-gutter</width>
 							<font>itemTitle</font>
-							<textcolor>selected</textcolor>
-							<info>ListItem.Label</info>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
-						
+
 						<control type="label">
-							<posx>730</posx>
+							<posx>9-col</posx>
 							<posy>0</posy>
-							<width>400</width>
+							<width>4-col-gutter</width>
 							<font>itemTitle</font>
-							<textcolor>selected</textcolor>
-							<info>ListItem.Date</info>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
-						
+
 						<control type="label">
-							<posx>1018</posx>
+							<posx>13-col</posx>
 							<posy>0</posy>
-							<width>170</width>
+							<width>4-col-gutter</width>
 							<font>itemTitle</font>
-							<textcolor>selected</textcolor>
-							<info>ListItem.Comment</info>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$INFO[ListItem.Date]</label>
+						</control>
+
+						<control type="label">
+							<posx>17-col</posx>
+							<posy>0</posy>
+							<width>2-col</width>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$INFO[ListItem.Comment]</label>
 						</control>
 						
 					</focusedlayout>
