@@ -1,7 +1,7 @@
 <window id="502">
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="false">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<onload>Container.SetViewMode($VAR[MusicViewType])</onload>
+	<onload>Container.SetViewMode($VAR[musicViewType])</onload>
 
 	<controls>
 
@@ -559,6 +559,7 @@
 
 				<!--Sort / misc labels (footer)-->
 				<control type="group">
+					<visible>SubString(skin.string(showRecentMusicItems),false)</visible>
 					<posx>col-4-begin</posx>
 					<posy>row-18-begin</posy>
 					

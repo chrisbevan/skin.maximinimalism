@@ -1,5 +1,5 @@
 <window id="6">
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="false">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<onload>Container.SetViewMode($VAR[videoViewType])</onload>
 	<onload>PlayerControl(stop)</onload>
@@ -548,7 +548,7 @@
 									<visible>!isempty(Window(Home).Property(LatestEpisode.1.showTitle))</visible>
 									<label>$INFO[Window(Home).Property(LatestEpisode.1.showTitle)]</label>
 									<label2>$INFO[Window(Home).Property(LatestEpisode.1.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.1.EpisodeNumber),Episode ,]</label2>
-									<property name="contenttype"></property>
+									<property name="contenttype"></property>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.1.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
 								</item>
@@ -556,7 +556,7 @@
 									<visible>!isempty(Window(Home).Property(LatestEpisode.2.showTitle))</visible>
 									<label>$INFO[Window(Home).Property(LatestEpisode.2.showTitle)]</label>
 									<label2>$INFO[Window(Home).Property(LatestEpisode.2.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.2.EpisodeNumber),Episode ,]</label2>
-									<property name="contenttype"></property>
+									<property name="contenttype"></property>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.2.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
 								</item>
@@ -564,7 +564,7 @@
 									<visible>!isempty(Window(Home).Property(LatestEpisode.3.showTitle))</visible>
 									<label>$INFO[Window(Home).Property(LatestEpisode.3.showTitle)]</label>
 									<label2>$INFO[Window(Home).Property(LatestEpisode.3.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.3.EpisodeNumber),Episode ,]</label2>
-									<property name="contenttype"></property>
+									<property name="contenttype"></property>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.3.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
 								</item>
@@ -572,7 +572,7 @@
 									<visible>!isempty(Window(Home).Property(LatestEpisode.4.showTitle))</visible>
 									<label>$INFO[Window(Home).Property(LatestEpisode.4.showTitle)]</label>
 									<label2>$INFO[Window(Home).Property(LatestEpisode.4.EpisodeSeason),season , •] $INFO[Window(Home).Property(LatestEpisode.4.EpisodeNumber),Episode ,]</label2>
-									<property name="contenttype"></property>
+									<property name="contenttype"></property>
 									<thumb>$INFO[Window(Home).Property(LatestEpisode.4.thumb)]</thumb>
 									<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.4.Path)])</onclick>
 								</item>
@@ -612,6 +612,7 @@
 
 				<!--Sort / misc labels (footer)-->
 				<control type="group">
+					<visible>SubString(skin.string(showRecentVideoItems),false)</visible>
 					<posx>col-4-begin</posx>
 					<posy>row-18-begin</posy>
 
@@ -819,6 +820,23 @@
 						<onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
 						<onclick>ActivateWindow(5000)</onclick>
 					</item>
+				
+					<item id="5">
+						<visible>System.Setting(hidewatched)</visible>
+						<label>30221</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>sendClick(6,14)</onclick>
+					</item>
+					
+					<item id="5">
+						<visible>!System.Setting(hidewatched)</visible>
+						<label>30222</label>
+						<label2></label2>
+						<thumb>-</thumb>
+						<onclick>sendClick(6,14)</onclick>
+					</item>
+					
 					<item id="6">
 						<label>31003</label>
 						<label2></label2>

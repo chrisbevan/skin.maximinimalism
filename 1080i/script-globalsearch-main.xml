@@ -319,7 +319,7 @@
 									<width>1-col</width>
 									<font>symbolLarge</font>
 									<textcolor>white</textcolor>
-									<label></label>
+									<label></label>
 								</control>
 							
 								<control type="label">
@@ -387,7 +387,7 @@
 									<width>1-col</width>
 									<font>symbolLarge</font>
 									<textcolor>black</textcolor>
-									<label></label>
+									<label></label>
 									<shadowcolor>-</shadowcolor>
 								</control> 
 							
@@ -481,7 +481,7 @@
 									<width>1-col</width>
 									<font>symbolLarge</font>
 									<textcolor>white</textcolor>
-									<label></label>
+									<label></label>
 								</control>
 							
 								<control type="label">
@@ -549,7 +549,7 @@
 									<width>1-col</width>
 									<font>symbolLarge</font>
 									<textcolor>black</textcolor>
-									<label></label>
+									<label></label>
 									<shadowcolor>-</shadowcolor>
 								</control> 
 							
@@ -643,7 +643,7 @@
 									<width>1-col</width>
 									<font>symbolLarge</font>
 									<textcolor>white</textcolor>
-									<label></label>
+									<label></label>
 								</control>
 							
 								<control type="label">
@@ -711,7 +711,7 @@
 									<width>1-col</width>
 									<font>symbolLarge</font>
 									<textcolor>black</textcolor>
-									<label></label>
+									<label></label>
 									<shadowcolor>-</shadowcolor>
 								</control> 
 							
@@ -804,7 +804,7 @@
 									<width>1-col</width>
 									<font>symbolLarge</font>
 									<textcolor>white</textcolor>
-									<label></label>
+									<label></label>
 								</control>
 							
 								<control type="label">
@@ -872,7 +872,7 @@
 									<width>1-col</width>
 									<font>symbolLarge</font>
 									<textcolor>black</textcolor>
-									<label></label>
+									<label></label>
 									<shadowcolor>-</shadowcolor>
 								</control> 
 							

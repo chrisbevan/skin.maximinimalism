@@ -1,4 +1,9 @@
 [B]0.7.0[/B]
+- [NEW] Hide watched flag in video section (side menu toggle)
+- [NEW] Global search
+- [MODIFIED] Home screen layout tweaked
+- [FIXED] Incorrect letter case 'musicViewType' (thanks Wishie)
+- [FIXED] Footer information sometimes being shown incorrectly (myVideoNav, myMusicNav) Thanks Wishie.
 
 
 [B]0.6.0[/B]

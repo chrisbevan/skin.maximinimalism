@@ -109,6 +109,8 @@
 	<string id="30218">Weather</string>	
 	<string id="30219">Global background image: </string>
 	<string id="30220">Enable global background: </string>	
+	<string id="30221">Filter: Unwatched</string>
+	<string id="30222">Filter: show all</string>	
 
 	<string id="31034">Enable Debug Grid</string>
 	<string id="31035">Disable Debug Info</string>
