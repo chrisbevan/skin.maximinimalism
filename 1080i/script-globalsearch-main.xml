@@ -175,7 +175,7 @@
 									<width>252</width>
 									<font>smallMedium</font>
 									<textcolor>white</textcolor>
-									<label>$INFO[ListItem.Property(Year)]</label>
+									<label>$INFO[ListItem.Property(Year),, • ]$INFO[ListItem.Property(genre)]</label>
 								</control>
 							</control>
 
@@ -247,7 +247,7 @@
 									<font>smallMedium</font>
 									<textcolor>black</textcolor>
 									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Property(Year)]</label>
+									<label>$INFO[ListItem.Property(Year),, • ]$INFO[ListItem.Property(genre)]</label>
 									<shadowcolor>-</shadowcolor>
 								</control>
 							</control>
@@ -337,7 +337,7 @@
 									<width>252</width>
 									<font>smallMedium</font>
 									<textcolor>white</textcolor>
-									<label>$INFO[ListItem.Property(Year)]</label>
+									<label>$INFO[ListItem.Property(Year),, • ]$INFO[ListItem.Property(genre)]</label>
 								</control>
 							</control>
 
@@ -409,7 +409,7 @@
 									<font>smallMedium</font>
 									<textcolor>black</textcolor>
 									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Property(Year)]</label>
+									<label>$INFO[ListItem.Property(Year),, • ]$INFO[ListItem.Property(genre)]</label>
 									<shadowcolor>-</shadowcolor>
 								</control>
 							</control>
@@ -499,7 +499,7 @@
 									<width>252</width>
 									<font>smallMedium</font>
 									<textcolor>white</textcolor>
-									<label>$INFO[ListItem.Property(TvShowTitle)]</label>
+									<label>$INFO[ListItem.Property(TvShowTitle),, • ]$INFO[ListItem.Property(episode)]</label>
 								</control>
 							</control>
 
@@ -571,7 +571,7 @@
 									<font>smallMedium</font>
 									<textcolor>black</textcolor>
 									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Property(TvShowTitle)]</label>
+									<label>$INFO[ListItem.Property(TvShowTitle),, • ]$INFO[ListItem.Property(episode)]</label>
 									<shadowcolor>-</shadowcolor>
 								</control>
 							</control>
@@ -661,7 +661,7 @@
 									<width>252</width>
 									<font>smallMedium</font>
 									<textcolor>white</textcolor>
-									<label>$INFO[ListItem.Property(TvShowTitle)]</label>
+									<label>$INFO[ListItem.Property(TvShowTitle),, • ]$INFO[ListItem.Property(Season),s]$INFO[ListItem.Property(Episode),e]</label>
 								</control>
 							</control>
 							
@@ -733,7 +733,7 @@
 									<font>smallMedium</font>
 									<textcolor>black</textcolor>
 									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Property(TvShowTitle)]</label>
+									<label>$INFO[ListItem.Property(TvShowTitle),, • ]$INFO[ListItem.Property(Season),s]$INFO[ListItem.Property(Episode),e]</label>
 									<shadowcolor>-</shadowcolor>
 								</control>
 							</control>
@@ -984,7 +984,7 @@
 									<width>252</width>
 									<font>smallMedium</font>
 									<textcolor>white</textcolor>
-									<label>$INFO[ListItem.Property(Artist)]</label>
+									<label>$INFO[ListItem.property(artist_genre)]</label>
 								</control>
 							</control>
 							
@@ -1056,7 +1056,7 @@
 									<font>smallMedium</font>
 									<textcolor>black</textcolor>
 									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Property(Artist)]</label>
+									<label>$INFO[ListItem.property(artist_genre)]</label>
 									<shadowcolor>-</shadowcolor>
 								</control>
 							</control>
@@ -1307,7 +1307,7 @@
 									<width>252</width>
 									<font>smallMedium</font>
 									<textcolor>white</textcolor>
-									<label>$INFO[ListItem.Property(Artist)]</label>
+									<label>$INFO[ListItem.Property(Artist)] • $INFO[ListItem.Property(Album)]</label>
 								</control>
 							</control>
 				
@@ -1379,7 +1379,7 @@
 									<font>smallMedium</font>
 									<textcolor>black</textcolor>
 									<shadowcolor>-</shadowcolor>
-									<label>$INFO[ListItem.Property(Artist)]</label>
+									<label>$INFO[ListItem.Property(Artist)] • $INFO[ListItem.Property(Album)]</label>
 									<shadowcolor>-</shadowcolor>
 								</control>
 							</control>
