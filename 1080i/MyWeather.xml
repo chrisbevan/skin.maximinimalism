@@ -77,7 +77,7 @@
 			<!--panel begins-->
 			<control type="panel" id="9000">
 				<posx>0</posx>
-				<posy>2-row</posy>
+				<posy>130</posy>
 				<width>24-col</width>
 				<height>18-row</height>
 												
@@ -88,14 +88,14 @@
 						<posy>0</posy>
 						<width>3-col-gutter</width>
 						<height>3-col-gutter</height>
-						<aspectratio>keep</aspectratio>
+						<aspectratio aligny="center">keep</aspectratio>
 						<texture>$INFO[listitem.icon]</texture>
 						<colordiffuse>99FFFFFF</colordiffuse>
 					</control>
 					
 					<control type="label">
 						<posx>204</posx>
-						<posy>3-row</posy>
+						<posy>4-row</posy>
 						<width>6-col-gutter</width>
 						<align>center</align>
 						<font>largeStrong</font>
@@ -105,7 +105,7 @@
 				
 					<control type="textbox">
 						<posx>36</posx>
-						<posy>234</posy>
+						<posy>5-row</posy>
 						<width>5-col-gutter</width>
 						<height>2-row</height>
 						<align>center</align>
@@ -116,7 +116,7 @@
 					
 					<control type="textbox">
 						<posx>36</posx>
-						<posy>354</posy>
+						<posy>6-row</posy>
 						<width>5-col-gutter</width>
 						<height>1-row</height>
 						<align>center</align>
@@ -141,7 +141,7 @@
 					
 					<control type="label">
 						<posx>204</posx>
-						<posy>3-row</posy>
+						<posy>4-row</posy>
 						<width>6-col-gutter</width>
 						<align>center</align>
 						<font>largeStrong</font>
@@ -151,7 +151,7 @@
 				
 					<control type="textbox">
 						<posx>36</posx>
-						<posy>234</posy>
+						<posy>5-row</posy>
 						<width>5-col-gutter</width>
 						<height>2-row</height>
 						<align>center</align>
@@ -162,7 +162,7 @@
 					
 					<control type="textbox">
 						<posx>36</posx>
-						<posy>354</posy>
+						<posy>6-row</posy>
 						<width>5-col-gutter</width>
 						<height>1-row</height>
 						<align>center</align>

@@ -207,7 +207,7 @@
 							<item id="23">
 								<label>137</label>
 								<visible>System.HasAddon(script.globalsearch)</visible>
-								<onclick>RunScript(script.globalsearch,movies=true&tvshows=true&episodes=true&musicvideos=true)</onclick>
+								<onclick>RunScript(script.globalsearch,movies=true&tvshows=true&episodes=true)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
 							</item>
 							

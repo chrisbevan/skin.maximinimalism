@@ -215,7 +215,7 @@
 							<item id="23">
 								<label>137</label>
 								<visible>System.HasAddon(script.globalsearch)</visible>
-								<onclick>RunScript(script.globalsearch,artists=true&albums=true&songs=true)</onclick>
+								<onclick>RunScript(script.globalsearch,artists=true&albums=true)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
 							</item>
 							

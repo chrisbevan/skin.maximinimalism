@@ -461,7 +461,8 @@
 			<visible>[container.content(episodes) | Substring(Container.folderpath,plugin)] + !Substring(Container.foldername,TVCatchup)</visible>
 							
 			<animation type="visible">
-	            <include>listSlideIn</include>
+	            <effect type="fade" start="0" end="100" time="300" delay="1000" />
+				<effect type="slide" start="3-col" end="0" center="auto" tween="cubic" easing="out" time="400" delay="1000"/>
 			</animation>
 			
 			<control type="image">
@@ -479,9 +480,9 @@
 				<visible>Substring(Container.folderpath,plugin)</visible>	
 				<posx>14-col</posx>
 				<posy>8</posy>
-				<width>6-col</width>
-				<height>6-col</height>
-				<aspectratio aligny="top" align="center" scalediffuse="false">scale</aspectratio>
+				<width>7-col-gutter</width>
+				<height>270</height>
+				<aspectratio aligny="center" align="center" scalediffuse="false">scale</aspectratio>
 				<texture border="0">$INFO[ListItem.thumb]</texture>
 				<fadetime>200</fadetime>
 			</control>

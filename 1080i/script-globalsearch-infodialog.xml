@@ -553,6 +553,75 @@
 			</control>
 			
 		</control>
+		
+		<!--content is a Music album-->
+		<control type="group">
+			<visible>control.IsVisible(170)</visible>
+			
+			<posx>col-1-begin</posx>
+			<posy>row-9-begin</posy>
+			
+			<!--overlay-->
+			<control type="image">
+				<posx>-96</posx>
+				<posy>159</posy>
+				<width>fullscreenWidth</width>
+				<height>fullscreenHeight</height>
+				<texture>colors/black.png</texture>
+				<colordiffuse>aaffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<!--album cover-->
+			<control type="image">
+				<posx>0</posx>
+				<posy>-12</posy>
+				<width>8-col-gutter</width>
+				<height>8-col-gutter</height>
+				<texture>$INFO[container(100).listitem.thumb]</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<!--title and synopsis-->
+			<control type="group">
+				<posx>8-col</posx>
+				<posy>3-row</posy>
+				
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>12-col</width>
+					<font>dialogTitle</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[container(100).Listitem.label]</label>
+					<scroll>false</scroll>
+				</control>
+				
+				<control type="label">
+					<posx>0</posx>
+					<posy>1-row</posy>
+					<width>12-col</width>
+					<font>regularStrong</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[container(100).Listitem.property(artist)]$INFO[container(100).Listitem.property(year), • ,]$INFO[container(100).ListItem.Property(Album_Label), • ,]</label>
+					<scroll>false</scroll>
+				</control>
+				
+				<control type="textbox">
+					<posx>0</posx>
+					<posy>2-row</posy>
+					<font>small</font>
+					<width>16-col</width>
+					<textcolor>white</textcolor>
+					<height>238</height>
+					<label>[B]$INFO[container(100).ListItem.Property(Album_Description)][/B]</label>
+					<autoscroll delay="10000" repeat="10000"></autoscroll>
+				</control>
+				
+			</control>
+			
+		</control>
 				
 	</controls>
 </window>
