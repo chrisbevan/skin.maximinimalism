@@ -44,7 +44,7 @@
 						<width>14-col</width>
 						<font>pageTitle</font>
 						<label>Programs</label>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 					</control>
 			
 					<!--source subtitle-->
@@ -54,7 +54,7 @@
 						<width>24-col</width>
 						<font>regular</font>
 						<label>$INFO[container.Numitems,, Items]</label>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 					</control>
 
 				</control>
@@ -111,14 +111,14 @@
 						<control type="label">
 							<width min="30" max="200">auto</width>
 							<font>symbol</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label></label>
 						</control>
 
 						<control type="label">
 							<width>3-col</width>
 							<font>buttonTitle</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label>$LOCALIZE[31038] $INFO[container.currentpage] / $INFO[container.numpages]</label>
 						</control>
 

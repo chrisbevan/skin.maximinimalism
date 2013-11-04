@@ -20,7 +20,7 @@
 				<posy>-12</posy>
 				<width>fullscreenWidth</width>
 				<height>1-row</height>
-				<texture>colors/white.png</texture>
+				<texture>colors/selected.png</texture>
 				<colordiffuse>ffffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>

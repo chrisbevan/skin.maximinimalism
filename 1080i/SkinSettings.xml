@@ -26,7 +26,7 @@
 				<posy>44</posy>
 				<width>fullscreenWidth</width>
 				<height>1-row</height>
-				<texture>colors/white.png</texture>
+				<texture>colors/selected.png</texture>
 				<colordiffuse>ffffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>
@@ -36,7 +36,7 @@
 				<posy>44</posy>
 				<width>1155</width>
 				<height>1-row</height>
-				<texture>colors/white.png</texture>
+				<texture>colors/selected.png</texture>
 				<bordertexture border="0">colors/black.png</bordertexture>
 				<bordersize>3,0,0,0</bordersize>
 				<colordiffuse>ffffffff</colordiffuse>
@@ -75,9 +75,9 @@
 					<font>itemTitle</font>
 					<label>30194</label>
 					<label2>$INFO[Skin.String(SubtitlesPath)]</label2>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<focusedcolor>black</focusedcolor>
-					<texturefocus>colors/white.png</texturefocus>
+					<texturefocus>colors/selected.png</texturefocus>
 					<onclick>Skin.SetAddon(SubtitlesPath,xbmc.python.subtitles)</onclick>
 				</control>
 				
@@ -88,9 +88,9 @@
 					<align>left</align>
 					<textoffsetx>12</textoffsetx>
 					<font>itemTitle</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<focusedcolor>black</focusedcolor>
-					<texturefocus>colors/white.png</texturefocus>
+					<texturefocus>colors/selected.png</texturefocus>
 					<label>30219</label>
 					<label2>$INFO[Skin.String(globalBackground)]</label2>
 					<onclick>Skin.SetImage(globalBackground)</onclick>
@@ -104,9 +104,9 @@
 					<align>left</align>
 					<textoffsetx>12</textoffsetx>
 					<font>itemTitle</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<focusedcolor>black</focusedcolor>
-					<texturefocus>colors/white.png</texturefocus>
+					<texturefocus>colors/selected.png</texturefocus>
 					<label>30195</label>
 					<label2>$INFO[Skin.String(videoFanartLocation)]</label2>
 					<onclick>Skin.SetPath(videoFanartLocation)</onclick>
@@ -120,9 +120,9 @@
 					<align>left</align>
 					<textoffsetx>12</textoffsetx>
 					<font>itemTitle</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<focusedcolor>black</focusedcolor>
-					<texturefocus>colors/white.png</texturefocus>
+					<texturefocus>colors/selected.png</texturefocus>
 					<label>30196</label>
 					<label2>$INFO[Skin.String(tvshowFanartLocation)]</label2>
 					<onclick>Skin.SetPath(tvshowFanartLocation)</onclick>
@@ -136,9 +136,9 @@
 					<align>left</align>
 					<textoffsetx>12</textoffsetx>
 					<font>itemTitle</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<focusedcolor>black</focusedcolor>
-					<texturefocus>colors/white.png</texturefocus>
+					<texturefocus>colors/selected.png</texturefocus>
 					<label>30198</label>
 					<label2>$INFO[Skin.String(musicFanartLocation)]</label2>
 					<onclick>Skin.SetPath(musicFanartLocation)</onclick>
@@ -152,9 +152,9 @@
 					<align>left</align>
 					<textoffsetx>12</textoffsetx>
 					<font>itemTitle</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<focusedcolor>black</focusedcolor>
-					<texturefocus>colors/white.png</texturefocus>
+					<texturefocus>colors/selected.png</texturefocus>
 					<label>30197</label>
 					<label2>$INFO[Skin.String(gameFanartLocation)]</label2>
 					<onclick>Skin.SetPath(gameFanartLocation)</onclick>

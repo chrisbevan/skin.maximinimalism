@@ -20,7 +20,7 @@
 				<posy>44</posy>
 				<width>2500</width>
 				<height>1-row</height>
-				<texture>colors/white.png</texture>
+				<texture>colors/selected.png</texture>
 				<colordiffuse>ffffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>
@@ -30,7 +30,7 @@
 				<posy>44</posy>
 				<width>1155</width>
 				<height>1-row</height>
-				<texture>colors/white.png</texture>
+				<texture>colors/selected.png</texture>
 				<bordertexture border="0">colors/black.png</bordertexture>
 				<bordersize>3,0,0,0</bordersize>
 				<colordiffuse>ffffffff</colordiffuse>
@@ -45,7 +45,7 @@
 				<label>-</label>
 				<label2>-</label2>
 				<font>pageTitle</font>
-				<textcolor>white</textcolor>
+				<textcolor>selected</textcolor>
 				<width>1-col</width>
 				<align>right</align>
 				<onup>activateWindow(home)</onup>
@@ -99,7 +99,7 @@
 						<width>6-col-gutter</width>
 						<align>center</align>
 						<font>largeStrong</font>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				
@@ -110,7 +110,7 @@
 						<height>2-row</height>
 						<align>center</align>
 						<font>itemTitle</font>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 						<label>$INFO[ListItem.Property(Outlook)]</label>
 					</control>
 					
@@ -121,7 +121,7 @@
 						<height>1-row</height>
 						<align>center</align>
 						<font>itemTitleSmall</font>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 						<label>High [B]$INFO[ListItem.Property(HighTemp)] $INFO[ListItem.Property(TempUnits)][/B]  Low [B]$INFO[ListItem.Property(LowTemp)] $INFO[ListItem.Property(TempUnits)][/B]</label>
 					</control>
 																
@@ -145,7 +145,7 @@
 						<width>6-col-gutter</width>
 						<align>center</align>
 						<font>largeStrong</font>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				
@@ -156,7 +156,7 @@
 						<height>2-row</height>
 						<align>center</align>
 						<font>itemTitle</font>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 						<label>$INFO[ListItem.Property(Outlook)]</label>
 					</control>
 					
@@ -167,7 +167,7 @@
 						<height>1-row</height>
 						<align>center</align>
 						<font>itemTitleSmall</font>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 						<label>High [B]$INFO[ListItem.Property(HighTemp)] $INFO[ListItem.Property(TempUnits)][/B]  Low [B]$INFO[ListItem.Property(LowTemp)] $INFO[ListItem.Property(TempUnits)][/B]</label>
 					</control>
 					

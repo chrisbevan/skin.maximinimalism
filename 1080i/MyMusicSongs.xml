@@ -239,7 +239,7 @@
 						<width>18-col</width>
 						<font>pageTitle</font>
 						<label>30214</label>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 					</control>
 
 					<control type="label">
@@ -249,7 +249,7 @@
 						<width>14-col</width>
 						<font>pageTitle</font>
 						<label>31055</label>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 					</control>
 					
 					<control type="label">
@@ -259,7 +259,7 @@
 						<width>14-col</width>
 						<font>pageTitle</font>
 						<label>Music Playlists</label>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 					</control>
 					
 					<!--source subtitle-->
@@ -270,7 +270,7 @@
 						<width>24-col</width>
 						<font>regular</font>
 						<label>$INFO[container.Numitems,, $LOCALIZE[31014]]</label>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 					</control>
 					
 					<control type="label">
@@ -280,7 +280,7 @@
 						<width>24-col</width>
 						<font>regular</font>
 						<label>$INFO[container.Numitems,, $LOCALIZE[31049]]</label>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 					</control>
 
 					<control type="label">
@@ -290,7 +290,7 @@
 						<width>24-col</width>
 						<font>regular</font>
 						<label>31013</label>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 					</control>
 					
 					<control type="label">
@@ -300,7 +300,7 @@
 						<width>24-col</width>
 						<font>regular</font>
 						<label>31052</label>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 					</control>
 
 				</control>
@@ -364,14 +364,14 @@
 						<control type="label">
 							<width min="30" max="200">auto</width>
 							<font>symbol</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label></label>
 						</control>
 
 						<control type="label">
 							<width>3-col</width>
 							<font>buttonTitle</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label>$LOCALIZE[31038] $INFO[container.currentpage] / $INFO[container.numpages]</label>
 						</control>
 
@@ -379,7 +379,7 @@
 							<visible>!isempty(ListItem.audiocodec)</visible>
 							<width min="30" max="200">auto</width>
 							<font>symbol</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label></label>
 						</control>
 
@@ -387,7 +387,7 @@
 							<visible>!isempty(ListItem.audiocodec)</visible>
 							<width>2-col</width>
 							<font>buttonTitle</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label>$INFO[ListItem.audiocodec]</label>
 						</control>
 
@@ -395,7 +395,7 @@
 							<visible>!isempty(ListItem.FileName)</visible>
 							<width min="30" max="200">auto</width>
 							<font>symbol</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label></label>
 						</control>
 
@@ -403,7 +403,7 @@
 							<visible>!isempty(ListItem.FileName)</visible>
 							<width>12-col</width>
 							<font>buttonTitle</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label>$INFO[ListItem.FileName]</label>
 						</control>
 
@@ -413,7 +413,7 @@
 							<width>3-col</width>
 							<font>buttonTitle</font>
 							<label>$INFO[container.foldername]</label>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 						</control>
 
 					</control>
@@ -444,7 +444,7 @@
 				<width>col-5-begin</width>
 				<height>fullscreenHeight</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>colors/white.png</texture>
+				<texture>colors/selected.png</texture>
 				<bordersize>0</bordersize>
 			</control>
 			
@@ -455,7 +455,7 @@
 				<width>1-col-gutter</width>
 				<height>fullscreenHeight</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>colors/white.png</texture>
+				<texture>colors/selected.png</texture>
 				<bordersize>0</bordersize>
 				<colordiffuse>33ffffff</colordiffuse>
 			</control>
@@ -577,7 +577,7 @@
 					<width>4-col</width>
 					<height>43</height>
 					<font>symbol</font>
-					<focusedcolor>white</focusedcolor>
+					<focusedcolor>selected</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon1)</onclick>
 					<onclick>Skin.Reset(customVideoAddon1Type)</onclick>
@@ -590,7 +590,7 @@
 					<width>4-col</width>
 					<height>43</height>
 					<font>symbol</font>
-					<focusedcolor>white</focusedcolor>
+					<focusedcolor>selected</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon2)</onclick>
 					<onclick>Skin.Reset(customVideoAddon2Type)</onclick>
@@ -603,7 +603,7 @@
 					<width>4-col</width>
 					<height>43</height>
 					<font>symbol</font>
-					<focusedcolor>white</focusedcolor>
+					<focusedcolor>selected</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon3)</onclick>
 					<onclick>Skin.Reset(customVideoAddon3Type)</onclick>
@@ -616,7 +616,7 @@
 					<width>4-col</width>
 					<height>43</height>
 					<font>symbol</font>
-					<focusedcolor>white</focusedcolor>
+					<focusedcolor>selected</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon4)</onclick>
 					<onclick>Skin.Reset(customVideoAddon4Type)</onclick>
@@ -629,7 +629,7 @@
 					<width>4-col</width>
 					<height>43</height>
 					<font>symbol</font>
-					<focusedcolor>white</focusedcolor>
+					<focusedcolor>selected</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon5)</onclick>
 					<onclick>Skin.Reset(customVideoAddon5Type)</onclick>
@@ -642,7 +642,7 @@
 					<width>4-col</width>
 					<height>43</height>
 					<font>symbol</font>
-					<focusedcolor>white</focusedcolor>
+					<focusedcolor>selected</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon6)</onclick>
 					<onclick>Skin.Reset(customVideoAddon6Type)</onclick>
@@ -655,7 +655,7 @@
 					<width>4-col</width>
 					<height>43</height>
 					<font>symbol</font>
-					<focusedcolor>white</focusedcolor>
+					<focusedcolor>selected</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon7)</onclick>
 					<onclick>Skin.Reset(customVideoAddon7Type)</onclick>
@@ -668,7 +668,7 @@
 					<width>4-col</width>
 					<height>43</height>
 					<font>symbol</font>
-					<focusedcolor>white</focusedcolor>
+					<focusedcolor>selected</focusedcolor>
 					<textcolor>unselected</textcolor>
 					<onclick>Skin.Reset(customMusicAddon8)</onclick>
 					<onclick>Skin.Reset(customVideoAddon8Type)</onclick>

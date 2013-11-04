@@ -32,7 +32,7 @@
 				<posy>44</posy>
 				<width>2500</width>
 				<height>1-row</height>
-				<texture>colors/white.png</texture>
+				<texture>colors/selected.png</texture>
 				<colordiffuse>ffffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>
@@ -42,7 +42,7 @@
 				<posy>44</posy>
 				<width>1155</width>
 				<height>1-row</height>
-				<texture>colors/white.png</texture>
+				<texture>colors/selected.png</texture>
 				<bordertexture border="0">colors/black.png</bordertexture>
 				<bordersize>3,0,0,0</bordersize>
 				<colordiffuse>ffffffff</colordiffuse>

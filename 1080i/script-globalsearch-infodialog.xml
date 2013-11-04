@@ -131,7 +131,7 @@
 					<width>11-col</width>
 					<align>left</align>
 					<font>dialogTitle</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<label>$INFO[Container(100).ListItem.Label]</label>
 				</control>
 			
@@ -141,7 +141,7 @@
 					<width>18-col-gutter</width>
 					<align>left</align>
 					<font>itemTitleSmall</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<label>[B]$INFO[Container(100).ListItem.property(year),,]$INFO[Container(100).listitem.property(director), • Dir. ,]$INFO[Container(100).listitem.property(genre), • ,][/B]</label>
 				</control>
 						
@@ -152,7 +152,7 @@
 					<font>small</font>
 					<width>18-col-gutter</width>
 					<align>left</align>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<height>174</height>
 					<label>[B]$INFO[Container(100).ListItem.property(plot)][/B]</label>
 					<autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
@@ -185,7 +185,7 @@
 						<posy>0</posy>
 						<width>1-col</width>
 						<font>symbol</font>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 						<label>$INFO[ListItem.label2]</label>
 						<shadowcolor>-</shadowcolor>
 					</control>
@@ -195,7 +195,7 @@
 						<posy>2</posy>
 						<width>6-col</width>
 						<font>menuTitle</font>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 						<label>$INFO[ListItem.label]</label>
 						<shadowcolor>-</shadowcolor>
 					</control>
@@ -210,7 +210,7 @@
 						<width>8-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>colors/white.png</texture>
+						<texture>colors/selected.png</texture>
 					</control>
 
 					<control type="label">
@@ -290,7 +290,7 @@
 					<width>12-col</width>
 					<align>left</align>
 					<font>regularStrong</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<label>$INFO[container(100).ListItem.label]</label>
 				</control>
 								
@@ -301,7 +301,7 @@
 					<font>small</font>
 					<width>12-col</width>
 					<align>left</align>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<height>206</height>
 					<label>[B]$INFO[container(100).ListItem.property(plot)][/B]</label>
 					<autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
@@ -332,7 +332,7 @@
 							<posy>0</posy>
 							<width>1-col</width>
 							<font>symbol</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label>$INFO[ListItem.label2]</label>
 							<shadowcolor>-</shadowcolor>
 						</control>
@@ -342,7 +342,7 @@
 							<posy>2</posy>
 							<width>5-col</width>
 							<font>menuTitle</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label>$INFO[ListItem.label]</label>
 							<shadowcolor>-</shadowcolor>
 						</control>
@@ -357,7 +357,7 @@
 							<width>6-col</width>
 							<height>53</height>
 							<aspectratio>stretch</aspectratio>
-							<texture>colors/white.png</texture>
+							<texture>colors/selected.png</texture>
 						</control>
 
 						<control type="label">
@@ -427,7 +427,7 @@
 					<posy>0</posy>
 					<width>7-col</width>
 					<font>smallStrong</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<label>$INFO[container(100).ListItem.property(Artist_Genre)]</label>
 					<scroll>false</scroll>
 				</control>
@@ -438,7 +438,7 @@
 					<width>7-col</width>
 					<height>135</height>
 					<font>largeStrong</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<label>[UPPERCASE]$INFO[container(100).ListItem.label][/UPPERCASE]</label>
 					<scroll>false</scroll>
 				</control>
@@ -449,7 +449,7 @@
 					<posy>4-row</posy>
 					<font>small</font>
 					<width>7-col</width>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<label>[B]$INFO[container(100).listitem.property(Artist_Description)][/B]</label>
 					<height>540</height>
 					<autoscroll delay="10000" repeat="10000"></autoscroll>
@@ -490,7 +490,7 @@
 							<posy>0</posy>
 							<width>1-col</width>
 							<font>symbol</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label>$INFO[ListItem.label2]</label>
 							<shadowcolor>-</shadowcolor>
 						</control>
@@ -500,7 +500,7 @@
 							<posy>2</posy>
 							<width>6-col</width>
 							<font>menuTitle</font>
-							<textcolor>white</textcolor>
+							<textcolor>selected</textcolor>
 							<label>$INFO[ListItem.label]</label>
 							<shadowcolor>-</shadowcolor>
 						</control>
@@ -515,7 +515,7 @@
 							<width>7-col</width>
 							<height>53</height>
 							<aspectratio>stretch</aspectratio>
-							<texture>colors/white.png</texture>
+							<texture>colors/selected.png</texture>
 						</control>
 
 						<control type="label">
@@ -593,7 +593,7 @@
 					<posy>0</posy>
 					<width>12-col</width>
 					<font>dialogTitle</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<label>$INFO[container(100).Listitem.label]</label>
 					<scroll>false</scroll>
 				</control>
@@ -603,7 +603,7 @@
 					<posy>1-row</posy>
 					<width>12-col</width>
 					<font>regularStrong</font>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<label>$INFO[container(100).Listitem.property(artist)]$INFO[container(100).Listitem.property(year), • ,]$INFO[container(100).ListItem.Property(Album_Label), • ,]</label>
 					<scroll>false</scroll>
 				</control>
@@ -613,7 +613,7 @@
 					<posy>2-row</posy>
 					<font>small</font>
 					<width>16-col</width>
-					<textcolor>white</textcolor>
+					<textcolor>selected</textcolor>
 					<height>238</height>
 					<label>[B]$INFO[container(100).ListItem.Property(Album_Description)][/B]</label>
 					<autoscroll delay="10000" repeat="10000"></autoscroll>

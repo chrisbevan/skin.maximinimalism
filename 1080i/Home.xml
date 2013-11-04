@@ -58,7 +58,7 @@
 				<width>24-col</width>
 				<align>center</align>
 				<font>smallMedium</font>
-				<textcolor>white</textcolor>
+				<textcolor>selected</textcolor>
 				<label>[B]↑[/B] $LOCALIZE[30213]      [B]↓[/B] $LOCALIZE[30218]</label>
 			</control>
 							
@@ -100,7 +100,7 @@
 						<width>3-col</width>
 						<height>3-col</height>
 						<font>symbolVeryLarge</font>
-						<textcolor>white</textcolor>
+						<textcolor>selected</textcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.label2]</label>
 					</control>
@@ -115,7 +115,7 @@
 						<width>2-col</width>
 						<height>2-col</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture diffuse="masks/circle.png" border="0">colors/white.png</texture>
+						<texture diffuse="masks/circle.png" border="0">colors/selected.png</texture>
 						<bordersize>0</bordersize>
 						<colordiffuse>ccFFFFFF</colordiffuse>
 					</control>
