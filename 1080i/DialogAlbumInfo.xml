@@ -1,6 +1,7 @@
 <window id="2001">
 	<defaultcontrol always="true">8000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<include>fadeInOut</include>
 
 	<controls>
 

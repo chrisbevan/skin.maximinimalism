@@ -142,7 +142,7 @@
 								<width>363</width>
 								<height>269</height>
 								<texture>backgrounds/vignette.png</texture>
-								<colordiffuse>ccffffff</colordiffuse>
+								<colordiffuse>ffffffff</colordiffuse>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							
@@ -189,7 +189,7 @@
 								<height>269</height>
 								<aspectratio>scale</aspectratio>
 								<texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-								<colordiffuse>ffFFFFFF</colordiffuse>
+								<colordiffuse>ffffffff</colordiffuse>
 							</control>
 							
 							<control type="image">
@@ -304,7 +304,7 @@
 								<width>363</width>
 								<height>269</height>
 								<texture>backgrounds/vignette.png</texture>
-								<colordiffuse>ccffffff</colordiffuse>
+								<colordiffuse>ffffffff</colordiffuse>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							
@@ -466,7 +466,7 @@
 								<width>363</width>
 								<height>269</height>
 								<texture>backgrounds/vignette.png</texture>
-								<colordiffuse>ccffffff</colordiffuse>
+								<colordiffuse>ffffffff</colordiffuse>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							
@@ -628,7 +628,7 @@
 								<width>363</width>
 								<height>269</height>
 								<texture>backgrounds/vignette.png</texture>
-								<colordiffuse>ccffffff</colordiffuse>
+								<colordiffuse>ffffffff</colordiffuse>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							
@@ -789,7 +789,7 @@
 								<width>363</width>
 								<height>269</height>
 								<texture>backgrounds/vignette.png</texture>
-								<colordiffuse>ccffffff</colordiffuse>
+								<colordiffuse>ffffffff</colordiffuse>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							
@@ -951,7 +951,7 @@
 								<width>363</width>
 								<height>269</height>
 								<texture>backgrounds/vignette.png</texture>
-								<colordiffuse>ccffffff</colordiffuse>
+								<colordiffuse>ffffffff</colordiffuse>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							
@@ -1113,7 +1113,7 @@
 								<width>363</width>
 								<height>269</height>
 								<texture>backgrounds/vignette.png</texture>
-								<colordiffuse>ccffffff</colordiffuse>
+								<colordiffuse>ffffffff</colordiffuse>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							
@@ -1274,7 +1274,7 @@
 								<width>363</width>
 								<height>269</height>
 								<texture>backgrounds/vignette.png</texture>
-								<colordiffuse>ccffffff</colordiffuse>
+								<colordiffuse>ffffffff</colordiffuse>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							

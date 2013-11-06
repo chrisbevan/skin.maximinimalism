@@ -212,6 +212,12 @@
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 							
+							<item id="24">
+								<label>1036</label>
+								<onclick>ActivateWindow(favourites)</onclick>
+								<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
+							</item>
+							
 							<item id="23">
 								<label>137</label>
 								<visible>System.HasAddon(script.globalsearch)</visible>
@@ -350,6 +356,16 @@
 									<texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
 									<bordertexture border="0">-</bordertexture>
 									<colordiffuse>ffFFFFFF</colordiffuse>
+								</control>
+								
+								<control type="image">
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>276</width>
+									<height>273</height>
+									<texture>backgrounds/vignette.png</texture>
+									<colordiffuse>ddffffff</colordiffuse>
+									<aspectratio>stretch</aspectratio>
 								</control>
 																
 								<control type="group">

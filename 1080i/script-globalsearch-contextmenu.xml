@@ -1,5 +1,7 @@
-<window>	
+<window>
+	<onload>action(back)</onload>
+	
     <controls>
-    	<!-- Removed: redundant -->
+		<!--removed: redundant-->
     </controls>
 </window>

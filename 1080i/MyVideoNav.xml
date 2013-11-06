@@ -204,6 +204,12 @@
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 							</item>
 							
+							<item id="24">
+								<label>1036</label>
+								<onclick>ActivateWindow(favourites)</onclick>
+								<onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
+							</item>
+							
 							<item id="23">
 								<label>137</label>
 								<visible>System.HasAddon(script.globalsearch)</visible>
@@ -399,7 +405,7 @@
 									<width>363</width>
 									<height>269</height>
 									<texture>backgrounds/vignette.png</texture>
-									<colordiffuse>ccffffff</colordiffuse>
+									<colordiffuse>ffffffff</colordiffuse>
 									<aspectratio>stretch</aspectratio>
 								</control>
 								
