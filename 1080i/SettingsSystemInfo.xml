@@ -8,7 +8,7 @@
 	<controls>
 		
 		<!--background-->
-		<include>fanartSlides</include>
+		<include>globalBackground</include>
 		
 		<control type="group">
 			<posx>col-1-begin</posx>

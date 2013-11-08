@@ -5,7 +5,7 @@
 	<controls>
 		
 		<!--background-->
-		<include>fanartSlides</include>
+		<include>globalBackground</include>
 		
 		<!--main menu-->
 		<control type="group">

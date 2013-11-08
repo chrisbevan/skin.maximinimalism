@@ -7,7 +7,7 @@
 		
 	<controls>
 		
-		<include>fanartSlides</include>
+		<include>globalBackground</include>
 																							
 		<!--Date / time and weather-->
 		<control type="group">

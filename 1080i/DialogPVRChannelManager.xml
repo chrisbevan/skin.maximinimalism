@@ -16,7 +16,7 @@
 			<aspectratio>stretch</aspectratio>
 			<colordiffuse>ffffffff</colordiffuse>
 		</control>
-		<include>fanartSlides</include>
+		<include>globalBackground</include>
 		<control type="image">
 			<include>dimensionsFullscreen</include>
 			<texture>colors/black.png</texture>

@@ -32,6 +32,16 @@
 				<textcolor>selected</textcolor>
 				<label>1036</label>
 			</control>
+			
+			<control type="label">
+				<visible>!IntegerGreaterThan(Container(450).NumItems,0)</visible>
+				<posx>0</posx>
+				<posy>45</posy>
+				<width>8-col</width>
+				<label>30223</label>
+				<font>regular</font>
+				<textcolor>selected</textcolor>
+			</control>
 
 			<control type="panel" id="450">
 				<posx>0</posx>
