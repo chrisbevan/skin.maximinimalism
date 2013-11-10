@@ -289,7 +289,7 @@
 					<posy>0</posy>
 					<width>12-col</width>
 					<align>left</align>
-					<font>regularStrong</font>
+					<font>medium</font>
 					<textcolor>selected</textcolor>
 					<label>$INFO[container(100).ListItem.label]</label>
 				</control>

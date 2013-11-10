@@ -113,6 +113,8 @@
 	<string id="30222">Filter: show all</string>	
 	<string id="30223">No items found</string>	
 	<string id="30224">Reset global background to default</string>	
+	<string id="30225">Volume Muted</string>	
+
 
 	<string id="31034">Enable Debug Grid</string>
 	<string id="31035">Disable Debug Info</string>

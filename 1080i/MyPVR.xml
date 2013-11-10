@@ -1,5 +1,5 @@
 <window>
-	<defaultcontrol always="false">32</defaultcontrol>
+	<defaultcontrol always="true">32</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<onload>PlayerControl(stop)</onload>
 	<onunload>Skin.SetString(showRecentVideoItems,true)</onunload>

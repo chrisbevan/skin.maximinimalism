@@ -1,5 +1,5 @@
 <window id="501">
-	<defaultcontrol always="false">9000</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<onunload>Skin.SetString(showRecentMusicItems,true)</onunload>
 
@@ -212,6 +212,12 @@
 								<label>1214</label>
 								<onclick>ActivateWindow(MusicFiles,root)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
+							</item>
+							
+							<item id="24">
+								<label>1036</label>
+								<onclick>ActivateWindow(favourites)</onclick>
+								<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
 							</item>
 							
 							<item id="23">

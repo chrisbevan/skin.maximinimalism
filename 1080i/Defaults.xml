@@ -210,20 +210,6 @@
 		<overlaytexture>-</overlaytexture>
 	</default>
 
-	<!--
-	<default type="slider">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>360</width>
-		<height>23</height>
-		<texturefocus>-</texturefocus>
-		<texturenofocus>-</texturenofocus>
-		<texturesliderbar>UIControls/slider_bg_2.png</texturesliderbar>
-		<textureslidernib border="2">UIControls/SliderNibNF.png</textureslidernib>
-		<textureslidernibfocus border="2">UIControls/SliderNibFO.png</textureslidernibfocus>
-	</default>
-	-->
-
 	<default type="scrollbar">
 		<width>12</width>
 		<texturesliderbackground>colors/black.png</texturesliderbackground>

@@ -1,5 +1,5 @@
 <window id="6">
-	<defaultcontrol always="false">9000</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<onload>Container.SetViewMode($VAR[videoViewType])</onload>
 	<onload>PlayerControl(stop)</onload>
