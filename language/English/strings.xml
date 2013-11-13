@@ -114,15 +114,15 @@
 	<string id="30223">No items found</string>	
 	<string id="30224">Reset global background to default</string>	
 	<string id="30225">Volume Muted</string>	
-
+	<string id="30226">Add Group</string>	
+	<string id="30227">Rename Group</string>
+	<string id="30228">Delete Group</string>	
 
 	<string id="31034">Enable Debug Grid</string>
 	<string id="31035">Disable Debug Info</string>
 
 	<!--misc to be eventually reincorporated-->
 	<string id="31018">Current Selected</string>
-	
-	
 	
 	<string id="31024">Disable Background Video</string>
 	<string id="31025">Change default Lyrics script</string>

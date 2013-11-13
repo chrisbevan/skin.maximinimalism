@@ -12,7 +12,7 @@
 			<include>globalBackground</include>
 			
 			<!--window fader-->			
-			<animation type="conditional" condition="window.next(0) | window.next(mypvr) | window.next(1)">
+			<animation type="conditional" condition="window.next(0) | window.next(1)">
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
 			

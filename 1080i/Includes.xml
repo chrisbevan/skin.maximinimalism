@@ -16,7 +16,7 @@
 		<control type="image">
 			<include>dimensionsFullscreen</include>
 			<texture>colors/black.png</texture>
-			<colordiffuse>ccFFFFFF</colordiffuse>
+			<colordiffuse>eeFFFFFF</colordiffuse>
 			<aspectratio>stretch</aspectratio>
 		</control>
 		
