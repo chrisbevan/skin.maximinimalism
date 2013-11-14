@@ -117,8 +117,13 @@
 						<posy>45</posy>
 						<width>14-col</width>
 						<font>regular</font>
-						<label>$INFO[Pvr.BackendChannels] $LOCALIZE[31017]</label>
+						<label>$INFO[control.getlabel(30),, • ]$INFO[Pvr.BackendChannels] $LOCALIZE[31017]</label>
 						<textcolor>selected</textcolor>
+					</control>
+					
+					<control type="label" id="30">
+						<description>Empty so we can pass the values up one level</description>
+						<visible>False</visible>
 					</control>
 					
 				</control>
