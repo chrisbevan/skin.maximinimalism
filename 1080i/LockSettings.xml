@@ -4,43 +4,69 @@
 
 	<controls>
 
-		<include>modalDialog</include>
+		<!--background-->
+		<include>globalBackground</include>
+		<control type="image">
+			<include>dimensionsFullscreen</include>
+			<texture>colors/black.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<colordiffuse>99ffffff</colordiffuse>
+		</control>
 
 		<control type="group">
-			<posx>510</posx>
-			<posy>210</posy>
+			<posx>col-5-begin</posx>
+			<posy>row-3-begin</posy>
+
+			<!--animations-->
+			<include>modalDialogInOutVertical</include>
 
 			<control type="image">
-				<posx>-30</posx>
-				<posy>-30</posy>
-				<width>960</width>
-				<height>744</height>
-				<texture border="22">colors/black.png</texture>
+				<posx>-384</posx>
+				<posy>44</posy>
+				<width>fullscreenWidth</width>
+				<height>1-row</height>
+				<texture>colors/selected.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+
+			<control type="image">
+				<posx>-3</posx>
+				<posy>44</posy>
+				<width>1155</width>
+				<height>1-row</height>
+				<texture>colors/selected.png</texture>
+				<bordertexture border="0">colors/black.png</bordertexture>
+				<bordersize>3,0,0,0</bordersize>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
 			</control>
 
 			<control type="label">
-				<description>Header Label</description>
-				<posx>15</posx>
-				<width>840</width>
+				<posx>12</posx>
+				<posy>47</posy>
+				<width>16-col</width>
+				<font>pageTitle</font>
 				<label>20043</label>
-				<font>regular</font>
-				<shadowcolor>black</shadowcolor>
-				<align>center</align>
+				<textcolor>black</textcolor>
+				<shadowcolor>-</shadowcolor>
 			</control>
 
-			<control type="grouplist" id="5">
-				<description>Control Area</description>
-				<posx>15</posx>
-				<posy>132</posy>
-				<height>411</height>
-				<width>870</width>
-				<itemgap>3</itemgap>
-				<orientation>vertical</orientation>
-				<onleft>28</onleft>
-				<onright>28</onright>
-				<onup>28</onup>
-				<ondown>28</ondown>
-			</control>
+				<!--control area-->
+				<control type="grouplist" id="5">				
+					<posx>0</posx>
+					<posy>120</posy>
+					<width>-</width>
+					<itemgap>3</itemgap>
+					<height>14-row</height>
+					<onleft>28</onleft>
+					<onright>28</onright>
+					<onup>28</onup>
+					<ondown>28</ondown>
+					<orientation>vertical</orientation>	
+				</control>
+
+
 
 			<control type="button" id="7">
 				<description>button</description>

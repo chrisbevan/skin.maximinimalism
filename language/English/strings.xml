@@ -117,7 +117,9 @@
 	<string id="30226">Add Group</string>	
 	<string id="30227">Rename Group</string>
 	<string id="30228">Delete Group</string>
-	<string id="30229">Current Scraper:</string>	
+	<string id="30229">Current Scraper:</string>
+	<string id="30330">Profile Settings</string>
+	<string id="30331">Available Profiles</string>	
 
 	<string id="31034">Enable Debug Grid</string>
 	<string id="31035">Disable Debug Info</string>

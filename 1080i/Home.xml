@@ -152,7 +152,8 @@
 						<label>31002</label>
 						<label2></label2>
 						<thumb>-</thumb>
-						<onclick>ActivateWindow(pictures)</onclick>
+						<!--<onclick>ActivateWindow(pictures)</onclick>-->
+						<onclick>ActivateWindow(34)</onclick>
 					</item>
 					<item>
 						<label>5</label>
