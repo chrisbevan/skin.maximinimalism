@@ -119,7 +119,11 @@
 	<string id="30228">Delete Group</string>
 	<string id="30229">Current Scraper:</string>
 	<string id="30330">Profile Settings</string>
-	<string id="30331">Available Profiles</string>	
+	<string id="30331">Edit Profiles</string>	
+	<string id="30332">Login options</string>	
+	<string id="30333">Users</string>
+	<string id="30334">Active profile</string>
+	<string id="30335">Log out</string>	
 
 	<string id="31034">Enable Debug Grid</string>
 	<string id="31035">Disable Debug Info</string>

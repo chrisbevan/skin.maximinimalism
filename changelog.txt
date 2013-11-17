@@ -2,6 +2,7 @@
 - [NEW] Hide watched flag in video section (side menu toggle)
 - [NEW] Global search (split across video and music)
 - [NEW] Favourites browser
+- [NEW] User profiles
 - [MODIFIED] Home screen layout tweaked
 - [FIXED] Incorrect letter cases 'musicViewType' amongst a couple of others (thanks Wishie)
 - [FIXED] Footer information sometimes being shown incorrectly (myVideoNav, myMusicNav) Thanks Wishie.

@@ -94,6 +94,13 @@
 						<thumb>-</thumb>
 						<onclick>XBMC.Quit()</onclick>
 					</item>
+					<item id="6">
+						<description>LogOff</description>
+						<label>30335</label>
+						<thumb>-</thumb>
+						<onclick>System.LogOff</onclick>
+					</item>
+	
 				</content>
 
 			</control>

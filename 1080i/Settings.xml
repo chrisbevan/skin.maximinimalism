@@ -11,14 +11,14 @@
 		<control type="group">
 			
 			<posx>col-4-begin</posx>
-			<posy>row-5-begin</posy>
+			<posy>row-4-begin</posy>
 			
 			<!--overlay-->
 			<control type="image">
 				<posx>-312</posx>
 				<posy>118</posy>
 				<width>fullscreenWidth</width>
-				<height>328</height>
+				<height>430</height>
 				<texture>colors/black.png</texture>
 				<colordiffuse>88ffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
@@ -213,6 +213,13 @@
 						<label2></label2>
 						<property name="label3">$LOCALIZE[31073] • $LOCALIZE[31074]</property>
 						<onclick>activatewindow(SystemSettings)</onclick>
+					</item>
+					<item id="9">
+						<description>Profiles</description>
+						<label>13200</label>
+						<label2></label2>
+						<property name="label3">$LOCALIZE[30332] • $LOCALIZE[30333]</property>
+						<onclick>activatewindow(34)</onclick>
 					</item>
 				</content>
 			</control>
