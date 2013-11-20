@@ -220,13 +220,6 @@
 								<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
 							</item>
 							
-							<item id="23">
-								<label>137</label>
-								<visible>System.HasAddon(script.globalsearch)</visible>
-								<onclick>RunScript(script.globalsearch,artists=true&albums=true&songs=true)</onclick>
-								<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
-							</item>
-							
 						</content>
 
 					</control>						
@@ -493,76 +486,96 @@
 			</control>
 			
 			<!--menu-->
-			<control type="list" id="62">
+			<control type="grouplist" id="62">
 				<posx>82</posx>
-				<posy>274</posy>
-				<width>4-col</width>
+				<posy>282</posy>
+				<width>302</width>
 				<height>10-row</height>
 				<itemgap>0</itemgap>
 				<onright>9000</onright>
 				<ondown>63</ondown>
-
-				<itemlayout width="4-col" height="43">
-
-					<control type="label">
-						<posx>14</posx>
-						<posy>0</posy>
-						<width>4-col-gutter</width>
-						<font>menuTitle</font>
-						<textcolor>black</textcolor>
-						<label>$INFO[ListItem.label]</label>
-						<shadowcolor>-</shadowcolor>
-					</control>
-
-				</itemlayout>
-
-				<focusedlayout width="4-col" height="43">
-					
-					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>4-col-gutter</width>
-						<font>menuTitle</font>
-						<textcolor>black</textcolor>
-						<label>[ $INFO[ListItem.label] ]</label>
-						<shadowcolor>-</shadowcolor>
-					</control>
-
-				</focusedlayout>
-
-				<content>
-					<item id="1">
-						<label>31023</label>
-						<thumb>-</thumb>
-						<onclick>Container.NextSortMethod(9999)</onclick>
-					</item>
-					<item id="2">
-						<label>31008</label>
-						<thumb>-</thumb>
-						<onclick>Container.sortDirection(9999)</onclick>
-					</item>
-					<item id="3">
-						<label>31036</label>
-						<thumb>-</thumb>
-						<onclick>UpdateLibrary(video)</onclick>
-					</item>
-					<item id="4">
-						<visible>isempty(Skin.String(customMusicAddon1)) | isempty(Skin.String(customMusicAddon2)) | isempty(Skin.String(customMusicAddon3)) | isempty(Skin.String(customMusicAddon4)) | isempty(Skin.String(customMusicAddon5)) | isempty(Skin.String(customMusicAddon6)) | isempty(Skin.String(customMusicAddon7)) | isempty(Skin.String(customMusicAddon8))</visible>
-						<label>31041</label>
-						<thumb>-</thumb>
-						<onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
-						<onclick>ActivateWindow(5000)</onclick>
-					</item>
-					<item id="6">
-						<label>31003</label>
-						<label2></label2>
-						<thumb>-</thumb>
-						<onclick>ActivateWindow(programs)</onclick>
-					</item>
-				</content>
-
+				
+				<control type="button" id="101">
+					<description>Search</description>
+					<visible>System.HasAddon(script.globalsearch)</visible>
+					<label>137</label>
+					<align>left</align>
+					<height>54</height>
+					<width>4-col</width>
+					<font>menuTitle</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/black.png</texturefocus>
+					<texturenofocus>colors/unselected.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+					<onclick>RunScript(script.globalsearch,artists=true&albums=true)</onclick>
+					<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
+				</control>
+				
+				<control type="button" id="3">
+					<description>Sort by button</description>
+					<label>103</label>
+					<align>left</align>
+					<height>54</height>
+					<width>4-col</width>
+					<font>menuTitle</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/black.png</texturefocus>
+					<texturenofocus>colors/unselected.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+				</control>
+				
+				<control type="togglebutton" id="4">
+					<description>Sort asc</description>
+					<label>30336</label>
+					<altlabel>30337</altlabel>
+					<align>left</align>
+					<height>54</height>
+					<width>4-col</width>
+					<font>menuTitle</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/black.png</texturefocus>
+					<alttexturefocus>colors/black.png</alttexturefocus>
+					<texturenofocus>colors/unselected.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+				</control>
+								
+				<control type="button" id="102">
+					<visible>isempty(Skin.String(customMusicAddon1)) | isempty(Skin.String(customMusicAddon2)) | isempty(Skin.String(customMusicAddon3)) | isempty(Skin.String(customMusicAddon4)) | isempty(Skin.String(customMusicAddon5)) | isempty(Skin.String(customMusicAddon6)) | isempty(Skin.String(customMusicAddon7)) | isempty(Skin.String(customMusicAddon8))</visible>
+					<label>31041</label>
+					<align>left</align>
+					<height>54</height>
+					<width>4-col</width>
+					<font>menuTitle</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/black.png</texturefocus>
+					<alttexturefocus>colors/black.png</alttexturefocus>
+					<texturenofocus>colors/unselected.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+					<onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
+					<onclick>ActivateWindow(5000)</onclick>
+				</control>
+				
+				<control type="button" id="103">
+					<description>Programs menu</description>
+					<label>31003</label>
+					<align>left</align>
+					<height>54</height>
+					<width>4-col</width>
+					<font>menuTitle</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/black.png</texturefocus>
+					<texturenofocus>colors/unselected.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+					<onclick>ActivateWindow(programs)</onclick>
+				</control>
+				
 			</control>
-
+			
 			<!--custom addon removal-->
 			<control type="grouplist" id="63">
 				<posx>394</posx>

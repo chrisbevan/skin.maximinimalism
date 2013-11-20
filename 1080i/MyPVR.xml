@@ -259,65 +259,44 @@
 			</control>
 			
 			<!--menu-->
-			<control type="panel" id="62">
+			<control type="grouplist" id="62">
 				<posx>82</posx>
-				<posy>274</posy>
-				<width>4-col</width>
+				<posy>282</posy>
+				<width>302</width>
 				<height>10-row</height>
 				<itemgap>0</itemgap>
 				<onright>9000</onright>
 				<ondown>63</ondown>
-
-				<itemlayout width="4-col" height="43">
-
-					<control type="label">
-						<posx>14</posx>
-						<posy>0</posy>
-						<width>4-col-gutter</width>
-						<font>menuTitle</font>
-						<textcolor>black</textcolor>
-						<label>$INFO[ListItem.label]</label>
-						<shadowcolor>-</shadowcolor>
-					</control>
-
-				</itemlayout>
-
-				<focusedlayout width="4-col" height="43">
-					
-					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>4-col-gutter</width>
-						<font>menuTitle</font>
-						<textcolor>black</textcolor>
-						<label>[ $INFO[ListItem.label] ]</label>
-						<shadowcolor>-</shadowcolor>
-					</control>
-
-				</focusedlayout>
-
-				<content>
-					<item id="1">
-						<label>31023</label>
-						<label2></label2>
-						<thumb>-</thumb>
-						<onclick>Container.NextSortMethod(9999)</onclick>
-					</item>
-					<item id="2">
-						<label>31008</label>
-						<label2></label2>
-						<thumb>-</thumb>
-						<onclick>Container.sortDirection(9999)</onclick>
-					</item>
-					
-					<item id="6">
-						<label>31003</label>
-						<label2></label2>
-						<thumb>-</thumb>
-						<onclick>ActivateWindow(programs)</onclick>
-					</item>
-				</content>
-
+								
+				<control type="button" id="36">
+					<description>Search</description>
+					<label>137</label>
+					<align>left</align>
+					<height>54</height>
+					<width>4-col</width>
+					<font>menuTitle</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/black.png</texturefocus>
+					<texturenofocus>colors/unselected.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+				</control>
+												
+				<control type="button" id="103">
+					<description>Programs menu</description>
+					<label>31003</label>
+					<align>left</align>
+					<height>54</height>
+					<width>4-col</width>
+					<font>menuTitle</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/black.png</texturefocus>
+					<texturenofocus>colors/unselected.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+					<onclick>ActivateWindow(programs)</onclick>
+				</control>
+				
 			</control>
 				
 		</control>

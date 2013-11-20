@@ -118,8 +118,6 @@
 						<height>72</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
-						<!--animation-->
-						<include>listItemFocus</include>
 					</control>
 					
 					<control type="label">
