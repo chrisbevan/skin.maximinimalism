@@ -302,16 +302,8 @@
 				
 				<control type="button" id="3">
 					<description>Sort by button</description>
+					<include>menuButtonInverted</include>
 					<label>103</label>
-					<align>left</align>
-					<height>54</height>
-					<width>4-col</width>
-					<font>menuTitle</font>
-					<textcolor>black</textcolor>
-					<focusedcolor>selected</focusedcolor>
-					<texturefocus>colors/black.png</texturefocus>
-					<texturenofocus>colors/unselected.png</texturenofocus>
-					<textoffsetx>12</textoffsetx>
 				</control>
 				
 				<control type="togglebutton" id="4">
@@ -333,17 +325,9 @@
 				
 				<control type="button" id="1">
 					<description>Programs menu</description>
+					<include>menuButtonInverted</include>
 					<label>31003</label>
-					<align>left</align>
-					<height>54</height>
-					<width>4-col</width>
-					<font>menuTitle</font>
-					<textcolor>black</textcolor>
-					<focusedcolor>selected</focusedcolor>
-					<texturefocus>colors/black.png</texturefocus>
-					<texturenofocus>colors/unselected.png</texturenofocus>
-					<textoffsetx>12</textoffsetx>
-					<onclick>ActivateWindow(programs)</onclick>
+					<onclick>ActivateWindow(programs,addons)</onclick>
 				</control>
 				
 			</control>

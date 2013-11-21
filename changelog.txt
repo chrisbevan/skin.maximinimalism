@@ -4,6 +4,7 @@
 - [NEW] Favourites browser
 - [NEW] User profiles
 - [MODIFIED] Home screen layout tweaked
+- [MODIFIED] Hidden side menu revised
 - [FIXED] Incorrect letter cases 'musicViewType' amongst a couple of others (thanks Wishie)
 - [FIXED] Footer information sometimes being shown incorrectly (myVideoNav, myMusicNav) Thanks Wishie.
 - [FIXED] Global background not working in music file lists

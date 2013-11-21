@@ -766,32 +766,16 @@
 				<control type="button" id="101">
 					<description>Search</description>
 					<visible>System.HasAddon(script.globalsearch)</visible>
+					<include>menuButtonInverted</include>
 					<label>137</label>
-					<align>left</align>
-					<height>54</height>
-					<width>4-col</width>
-					<font>menuTitle</font>
-					<textcolor>black</textcolor>
-					<focusedcolor>selected</focusedcolor>
-					<texturefocus>colors/black.png</texturefocus>
-					<texturenofocus>colors/unselected.png</texturenofocus>
-					<textoffsetx>12</textoffsetx>
 					<onclick>RunScript(script.globalsearch,movies=true&tvshows=true&episodes=true)</onclick>
 					<onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
 				</control>
 				
 				<control type="button" id="3">
 					<description>Sort by button</description>
+					<include>menuButtonInverted</include>
 					<label>103</label>
-					<align>left</align>
-					<height>54</height>
-					<width>4-col</width>
-					<font>menuTitle</font>
-					<textcolor>black</textcolor>
-					<focusedcolor>selected</focusedcolor>
-					<texturefocus>colors/black.png</texturefocus>
-					<texturenofocus>colors/unselected.png</texturenofocus>
-					<textoffsetx>12</textoffsetx>
 				</control>
 				
 				<control type="togglebutton" id="4">
@@ -824,34 +808,17 @@
 				
 				<control type="button" id="102">
 					<visible>isempty(Skin.String(customVideoAddon1)) | isempty(Skin.String(customVideoAddon2)) | isempty(Skin.String(customVideoAddon3)) | isempty(Skin.String(customVideoAddon4)) | isempty(Skin.String(customVideoAddon5)) | isempty(Skin.String(customVideoAddon6)) | isempty(Skin.String(customVideoAddon7)) | isempty(Skin.String(customVideoAddon8))</visible>
+					<include>menuButtonInverted</include>
 					<label>31041</label>
-					<align>left</align>
-					<height>54</height>
-					<width>4-col</width>
-					<font>menuTitle</font>
-					<textcolor>black</textcolor>
-					<focusedcolor>selected</focusedcolor>
-					<texturefocus>colors/black.png</texturefocus>
-					<alttexturefocus>colors/black.png</alttexturefocus>
-					<texturenofocus>colors/unselected.png</texturenofocus>
-					<textoffsetx>12</textoffsetx>
 					<onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
 					<onclick>ActivateWindow(5000)</onclick>
 				</control>
 				
 				<control type="button" id="103">
 					<description>Programs menu</description>
+					<include>menuButtonInverted</include>
 					<label>31003</label>
-					<align>left</align>
-					<height>54</height>
-					<width>4-col</width>
-					<font>menuTitle</font>
-					<textcolor>black</textcolor>
-					<focusedcolor>selected</focusedcolor>
-					<texturefocus>colors/black.png</texturefocus>
-					<texturenofocus>colors/unselected.png</texturenofocus>
-					<textoffsetx>12</textoffsetx>
-					<onclick>ActivateWindow(programs)</onclick>
+					<onclick>ActivateWindow(programs,addons)</onclick>
 				</control>
 				
 			</control>
