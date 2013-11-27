@@ -67,7 +67,7 @@
 				<posy>120</posy>
 				<width>-</width>
 				<itemgap>3</itemgap>
-				<height>14-row</height>
+				<height>11-row</height>
 				<onleft>9000</onleft>
 				<onright>2</onright>
 				<orientation>vertical</orientation>

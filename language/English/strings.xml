@@ -110,7 +110,7 @@
 	<string id="30219">Global background image: </string>
 	<string id="30220">Enable global fanart background: </string>	
 	<string id="30221">Hide Watched</string>
-	<string id="30222"></string>	
+	<string id="30222">Transfer</string>	
 	<string id="30223">No items found</string>	
 	<string id="30224">Reset global background to default</string>	
 	<string id="30225">Volume Muted</string>	
@@ -125,7 +125,8 @@
 	<string id="30334">Active profile</string>
 	<string id="30335">Log out</string>	
 	<string id="30336">Order: Ascending</string>
-	<string id="30337">Order: Descending</string>	
+	<string id="30337">Order: Descending</string>
+	<string id="30338">Copy files</string>	
 
 	<string id="31034">Enable Debug Grid</string>
 	<string id="31035">Disable Debug Info</string>

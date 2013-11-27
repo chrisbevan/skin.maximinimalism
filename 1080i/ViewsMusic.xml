@@ -121,7 +121,7 @@
 			<posy>3-row</posy>
 																		
 			<control type="panel" id="53">
-				<visible>container.content(artists) | container.content(genres) | container.content(addons)</visible>
+				<visible>container.content(artists) | container.content(genres)</visible>
 				<posx>0</posx>
 				<posy>4</posy>
 				<width>21-col</width>
@@ -211,7 +211,7 @@
 			<posy>3-row</posy>
 																		
 			<control type="panel" id="55">
-				<visible>container.content(albums)</visible>
+				<visible>container.content(albums) | container.content(addons)</visible>
 				<posx>-12</posx>
 				<posy>4</posy>
 				<width>21-col</width>
@@ -279,6 +279,16 @@
 							<textcolor>selected</textcolor>
 							<label>$INFO[ListItem.artist] $INFO[ListItem.Year,• ,]</label>
 						</control>
+						
+						<control type="label">
+							<visible>container.content(addons)</visible>
+							<posx>12</posx>
+							<posy>18</posy>
+							<width>252</width>
+							<font>smallMedium</font>
+							<textcolor>selected</textcolor>
+							<label>$INFO[ListItem.Property(Addon.summary)]</label>
+						</control>
 
 					</control>
 																				
@@ -341,6 +351,17 @@
 							<textcolor>black</textcolor>
 							<shadowcolor>-</shadowcolor>
 							<label>$INFO[ListItem.artist] $INFO[ListItem.Year,• ,]</label>
+						</control>
+						
+						<control type="label">
+							<visible>container.content(addons)</visible>
+							<posx>12</posx>
+							<posy>18</posy>
+							<width>252</width>
+							<font>smallMedium</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$INFO[ListItem.Property(Addon.summary)]</label>
 						</control>
 						
 					</control>

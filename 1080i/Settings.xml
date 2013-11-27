@@ -219,6 +219,13 @@
 						<property name="label3">$LOCALIZE[30332] • $LOCALIZE[30333]</property>
 						<onclick>activatewindow(34)</onclick>
 					</item>
+					<item id="10">
+						<description>File Manager</description>
+						<label>10003</label>
+						<label2></label2>
+						<property name="label3">$LOCALIZE[30222] • $LOCALIZE[30338]</property>
+						<onclick>activatewindow(3)</onclick>
+					</item>
 				</content>
 			</control>
 		</control>

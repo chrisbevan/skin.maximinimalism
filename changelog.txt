@@ -1,5 +1,9 @@
 [B]0.8.0[/B]
--
+- [MODIFIED] Default background revised to something a bit more lively
+- [MODIFIED] Addons view revised to grid-based layout
+- [MODIFIED] DialogYesNo.xml button order reversed (thanks MoneyMaker)
+- [NEW] File manager
+- Various skinwide tweaks
 
 [B]0.7.0[/B]
 - [NEW] Hide watched flag in video section (side menu toggle)
