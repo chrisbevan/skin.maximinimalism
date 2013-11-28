@@ -4,6 +4,7 @@
 - [MODIFIED] DialogYesNo.xml button order reversed (thanks MoneyMaker)
 - [NEW] File manager
 - [NEW] Media Filter (video)
+- [MODIFIED] Recent items (video / music) now uses skin widgets addon
 - Various skinwide tweaks
 
 [B]0.7.0[/B]

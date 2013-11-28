@@ -56,7 +56,7 @@
 				<posy>2-row</posy>
 				<width>12-col</width>
 				<font>itemTitleSmall</font>
-				<label>[B]$INFO[ListItem.starttime] - $INFO[ListItem.endtime]                 Duration: $INFO[ListItem.duration][/B]</label>
+				<label>[B]$INFO[ListItem.starttime] - $INFO[ListItem.endtime] • Duration: $INFO[ListItem.duration][/B]</label>
 			</control>
 			
 			<!--synopsis-->			

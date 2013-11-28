@@ -164,6 +164,7 @@
 					<itemgap>3</itemgap>
 					<orientation>vertical</orientation>
 					<onleft>3</onleft>
+					<onleft>6</onleft>
 
 					<itemlayout width="6-col" height="1-row">
 
@@ -264,7 +265,7 @@
 			<!--addon selection etc-->
 			<control type="group">
 			
-				<posx>col-4-begin</posx>
+				<posx>col-2-begin</posx>
 				<posy>row-4-begin</posy>
 															
 				<control type="panel" id="6">
@@ -273,7 +274,7 @@
 					<width>18-col</width>
 					<height>11-row</height>
 					<onleft>5</onleft>
-					<onright>5</onright>
+					<onright>9001</onright>
 					<onup>6</onup>
 					<ondown>6</ondown>
 
