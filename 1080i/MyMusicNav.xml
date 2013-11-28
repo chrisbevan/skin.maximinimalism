@@ -761,6 +761,7 @@
 					<description>Programs menu</description>
 					<include>menuButtonInverted</include>
 					<label>31003</label>
+					<onclick>right</onclick>
 					<onclick>ActivateWindow(programs,addons)</onclick>
 				</control>
 				

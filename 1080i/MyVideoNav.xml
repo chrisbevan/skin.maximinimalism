@@ -789,6 +789,21 @@
 					<texturefocus>colors/black.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
+				
+				<control type="radiobutton" id="20">
+					<description>Filter</description>
+					<visible>Container.CanFilterAdvanced</visible>					
+					<label>587</label>
+					<height>54</height>
+					<width>4-col</width>
+					<font>menuTitle</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/black.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onclick>right</onclick>
+					<onclick>Filter</onclick>
+				</control>
 
 				<control type="button" id="102">
 					<visible>isempty(Skin.String(customVideoAddon1)) | isempty(Skin.String(customVideoAddon2)) | isempty(Skin.String(customVideoAddon3)) | isempty(Skin.String(customVideoAddon4)) | isempty(Skin.String(customVideoAddon5)) | isempty(Skin.String(customVideoAddon6)) | isempty(Skin.String(customVideoAddon7)) | isempty(Skin.String(customVideoAddon8))</visible>
@@ -802,6 +817,7 @@
 					<description>Programs menu</description>
 					<include>menuButtonInverted</include>
 					<label>31003</label>
+					<onclick>right</onclick>
 					<onclick>ActivateWindow(programs,addons)</onclick>
 				</control>
 

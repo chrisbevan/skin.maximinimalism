@@ -3,6 +3,7 @@
 - [MODIFIED] Addons view revised to grid-based layout
 - [MODIFIED] DialogYesNo.xml button order reversed (thanks MoneyMaker)
 - [NEW] File manager
+- [NEW] Media Filter (video)
 - Various skinwide tweaks
 
 [B]0.7.0[/B]
