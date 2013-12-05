@@ -215,7 +215,7 @@
 						<onclick>SendClick(2003,6)</onclick>
 					</item>
 					<item id="4">
-						<label>31077</label>
+						<label>13511</label>
 						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>SendClick(2003,10)</onclick>
@@ -229,15 +229,39 @@
 		<!--content is tvshow episode or content is from a plugin-->
 		<control type="group">
 			<visible>Substring(Container.folderpath,plugin) | container.content(episodes)</visible>
-			
-			<include>modalDialogInOutVertical</include>
-						
+											
 			<!--thumbnail if available-->
 			<control type="group">
 				<posx>col-7-begin</posx>
-				<posy>row-2-begin</posy>
-
-				<!--cover-->			
+				<posy>row-1-begin</posy>
+				
+				<!--animation-->
+				<animation type="Windowopen">
+					<effect type="slide" start="0,-200" end="0" tween="sine" easing="out" time="300" />
+				</animation>
+								
+				<!--background-->
+				<control type="image">
+					<posx>-528</posx>
+					<posy>-69</posy>
+					<width>fullscreenWidth</width>
+					<height>10-row</height>
+					<texture>colors/black.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>ffffffff</colordiffuse>
+				</control>
+				
+				<!--fanart if available-->
+				<control type="image">
+					<posx>-528</posx>
+					<posy>-580</posy>
+					<width>fullscreenWidth</width>
+					<height>fullscreenHeight</height>
+					<texture>$INFO[listitem.art(fanart)]</texture>
+					<colordiffuse>99ffffff</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				
 				<control type="image">
 					<posx>0</posx>
 					<posy>-12</posy>
@@ -245,7 +269,6 @@
 					<height>486</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture background="true" fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
-					<fadetime>200</fadetime>
 				</control>
 
 			</control>
@@ -253,8 +276,24 @@
 			<!--content-->
 			<control type="group">
 				<posx>col-7-begin</posx>
-				<posy>row-11-begin</posy>
+				<posy>row-10-begin</posy>
+				
+				<!--animation-->
+				<animation type="Windowopen">
+					<effect type="slide" start="0,200" end="0" tween="sine" easing="out" time="300" />
+				</animation>
 			
+				<!--background-->
+				<control type="image">
+					<posx>-528</posx>
+					<posy>-12</posy>
+					<width>fullscreenWidth</width>
+					<height>10-row</height>
+					<texture>colors/black.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>ffffffff</colordiffuse>
+				</control>
+				
 				<!--titles-->
 				<control type="label">
 					<posx>0</posx>
@@ -263,9 +302,10 @@
 					<align>left</align>
 					<font>itemTitleSmall</font>
 					<textcolor>selected</textcolor>
-					<label fallback="Synopsis">$INFO[listitem.tvshowtitle,, • ]$INFO[listitem.season,Season]$INFO[listitem.duration, • , mins]</label>
+					<shadowcolor>-</shadowcolor>
+					<label fallback="30340">$INFO[listitem.tvshowtitle,, • ]$INFO[listitem.season,Season]$INFO[listitem.duration, • , mins]</label>
 				</control>
-				
+								
 				<control type="label">
 					<description>Episode title</description>
 					<posx>0</posx>
@@ -274,6 +314,7 @@
 					<align>left</align>
 					<font>medium</font>
 					<textcolor>selected</textcolor>
+					<shadowcolor>-</shadowcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 								
@@ -285,7 +326,8 @@
 					<width>12-col</width>
 					<align>left</align>
 					<textcolor>selected</textcolor>
-					<height>174</height>
+					<shadowcolor>-</shadowcolor>
+					<height>208</height>
 					<label>[B]$INFO[ListItem.plot][/B]</label>
 					<autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
 				</control>
@@ -293,7 +335,7 @@
 				<!--dialog controls-->						
 				<control type="list" id="8000">
 					<posx>0</posx>
-					<posy>330</posy>
+					<posy>386</posy>
 					<width>12-col</width>
 					<height>1-row</height>
 					<itemgap>3</itemgap>

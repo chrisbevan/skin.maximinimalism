@@ -59,7 +59,7 @@
 				<align>center</align>
 				<font>smallMedium</font>
 				<textcolor>selected</textcolor>
-				<label>[B]↑[/B] $LOCALIZE[30213]      [B]↓[/B] $LOCALIZE[30218]</label>
+				<label>[B]↑[/B] $LOCALIZE[10511]      [B]↓[/B] $LOCALIZE[24027]</label>
 			</control>
 							
 		</control>

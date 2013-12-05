@@ -38,7 +38,7 @@
 	
 	<value condition="Window.IsActive(pvr) + [Control.IsVisible(11) | Control.IsVisible(12)]">$LOCALIZE[31006] [COLOR accented]$LOCALIZE[30215][/COLOR]</value>
 	<value condition="Window.IsActive(pvr) + [Control.IsVisible(11) | Control.IsVisible(10)]">$LOCALIZE[31006] [COLOR accented]$LOCALIZE[30216][/COLOR]</value>
-	<value condition="Window.IsActive(pvr) + [Control.IsVisible(11) | Control.IsVisible(13)]">$LOCALIZE[31006] [COLOR accented]$LOCALIZE[30217][/COLOR]</value>
+	<value condition="Window.IsActive(pvr) + [Control.IsVisible(11) | Control.IsVisible(13)]">$LOCALIZE[31006] [COLOR accented]$LOCALIZE[19163][/COLOR]</value>
 	
 	<value condition="!isEmpty(container.foldername)">$INFO[container.foldername]</value>
 </variable>
@@ -53,9 +53,9 @@
 
 <!--SD / HD value (thanks 'Black!)-->
 <variable name="itemResolution">
-    <value condition="SubString(ListItem.FileNameAndPath,.3D.) | SubString(ListItem.FileNameAndPath,-3D.)">3D</value>
-    <value condition="IntegerGreaterThan(ListItem.VideoResolution,719)">HD</value>
-    <value condition="!IsEmpty(ListItem.VideoResolution)">SD</value>
+    <value condition="SubString(ListItem.FileNameAndPath,.3D.) | SubString(ListItem.FileNameAndPath,-3D.)">$LOCALIZE[30359]</value>
+    <value condition="IntegerGreaterThan(ListItem.VideoResolution,719)">$LOCALIZE[30357]</value>
+    <value condition="!IsEmpty(ListItem.VideoResolution)">$LOCALIZE[30358]</value>
 </variable>
 
 <!--fullscreeninfo titles-->

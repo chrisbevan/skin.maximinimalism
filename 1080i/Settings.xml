@@ -152,14 +152,14 @@
 						<description>Appearance</description>
 						<label>480</label>
 						<label2></label2>
-						<property name="label3">$LOCALIZE[31061] • $LOCALIZE[31062]</property>
+						<property name="label3">$LOCALIZE[31061] • $LOCALIZE[24008]</property>
 						<onclick>activatewindow(AppearanceSettings)</onclick>
 					</item>
 					<item id="2">
 						<description>Videos</description>
 						<label>3</label>
 						<label2></label2>
-						<property name="label3">$LOCALIZE[31063] • $LOCALIZE[31064]</property>
+						<property name="label3">$LOCALIZE[31063] • $LOCALIZE[24012]</property>
 						<onclick>activatewindow(VideosSettings)</onclick>
 					</item>
 					<item id="9">
@@ -193,21 +193,21 @@
 						<description>Weather</description>
 						<label>8</label>
 						<label2></label2>
-						<property name="label3">$LOCALIZE[31069] • $LOCALIZE[31070]</property>
+						<property name="label3">$LOCALIZE[31069] • $LOCALIZE[14036]</property>
 						<onclick>activatewindow(WeatherSettings)</onclick>
 					</item>
 					<item id="7">
 						<description>Services</description>
 						<label>14036</label>
 						<label2></label2>
-						<property name="label3">$LOCALIZE[31071] • $LOCALIZE[31072]</property>
+						<property name="label3">$LOCALIZE[31071] • $LOCALIZE[1273]</property>
 						<onclick>activatewindow(ServiceSettings)</onclick>
 					</item>
 					<item id="8">
 						<description>System</description>
 						<label>13000</label>
 						<label2></label2>
-						<property name="label3">$LOCALIZE[31073] • $LOCALIZE[31074]</property>
+						<property name="label3">$LOCALIZE[14094] • $LOCALIZE[14095]</property>
 						<onclick>activatewindow(SystemSettings)</onclick>
 					</item>
 					<item id="9">

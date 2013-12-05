@@ -1,10 +1,13 @@
 [B]0.8.0[/B]
-- [MODIFIED] Default background revised to something a bit more lively
+- [MODIFIED] Default background revised to something a bit more subtle
 - [MODIFIED] Addons view revised to grid-based layout
 - [MODIFIED] DialogYesNo.xml button order reversed (thanks MoneyMaker)
 - [NEW] File manager
 - [NEW] Media Filter (video)
+- [NEW] DialogPVRGuideSearch.xml
 - [MODIFIED] Recent items (video / music) now uses skin widgets addon
+- [MODIFIED] PVR menu integrated into main video menu
+- [UPDATED] Preparation for Beta release: Strings localised and generally cleaned up
 - Various skinwide tweaks
 
 [B]0.7.0[/B]

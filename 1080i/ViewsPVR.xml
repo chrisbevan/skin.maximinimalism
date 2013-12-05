@@ -15,7 +15,7 @@
 				<posy>0</posy>
 				<width>20-col</width>
 				<height>12-row</height>
-				<onleft>32</onleft>
+				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>11</onup>
 				<ondown>11</ondown>
@@ -495,7 +495,7 @@
 					<posy>0</posy>
 					<width>20-col</width>
 					<height>12-row</height>
-					<onleft>35</onleft>
+					<onleft>9000</onleft>
 					<onright>60</onright>
 					<onup>14</onup>
 					<ondown>14</ondown>
