@@ -8,6 +8,7 @@
 - [MODIFIED] Recent items (video / music) now uses skin widgets addon
 - [MODIFIED] PVR menu integrated into main video menu
 - [UPDATED] Preparation for Beta release: Strings localised and generally cleaned up
+- [MODIFIED] Refresh library button moved to sidebar. Gotham and Frodo implementations tentatively supported (i.e. please test!)
 - Various skinwide tweaks
 
 [B]0.7.0[/B]

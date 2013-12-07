@@ -203,12 +203,9 @@
 			<control type="panel" id="50">
 				<visible>!container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
 				
-				<animation type="windowopen">
-		            <include>listSlideIn</include>
-				</animation>
 				<animation type="windowclose">
 		            <effect type="fade" start="100" end="0" time="200" />
-				</animation>		
+				</animation>
 											
 				<posx>0</posx>
 				<posy>4</posy>
@@ -511,10 +508,10 @@
 			
 			<control type="image">
 				<visible>Substring(Container.folderpath,plugin)</visible>	
-				<posx>14-col</posx>
+				<posx>12-col</posx>
 				<posy>8</posy>
-				<width>7-col-gutter</width>
-				<height>270</height>
+				<width>9-col-gutter</width>
+				<height>351</height>
 				<aspectratio aligny="center" align="center" scalediffuse="false">scale</aspectratio>
 				<texture border="0">$INFO[ListItem.thumb]</texture>
 				<fadetime>200</fadetime>
@@ -677,18 +674,18 @@
 				<visible>Substring(Container.folderpath,plugin)</visible>
 				<posx>0</posx>
 				<posy>4</posy>
-				<width>13-col</width>
+				<width>11-col</width>
 				<height>12-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<pagecontrol>60</pagecontrol>
 																
-				<itemlayout width="13-col" height="1-row">
+				<itemlayout width="11-col" height="1-row">
 										
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>13-col</width>
+						<width>11-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
@@ -715,20 +712,7 @@
 						<label>$INFO[ListItem.Label]</label>
 						<scroll>false</scroll>
 					</control>
-					
-					<control type="label">
-						<visible>!isempty(ListItem.duration)</visible>
-						<posx>12-col</posx>
-						<posy>0</posy>
-						<width>3-col</width>
-						<font>smallStrong</font>
-						<textcolor>selected</textcolor>
-						<align>right</align>
-						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.duration] mins</label>
-						<scroll>false</scroll>
-					</control>
-																									
+																														
 					<control type="label">
 						<visible>!isempty(ListItem.playcount)</visible>
 						<posx>36r</posx>
@@ -742,12 +726,12 @@
 					
 				</itemlayout>
 
-				<focusedlayout width="13-col" height="1-row">
+				<focusedlayout width="11-col" height="1-row">
 					
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
-						<width>13-col</width>
+						<width>11-col</width>
 						<height>53</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
@@ -775,21 +759,7 @@
 						<label>$INFO[ListItem.Label]</label>
 						<scroll>false</scroll>
 					</control>
-					
-					<control type="label">
-						<visible>!isempty(ListItem.duration)</visible>
-						<posx>12-col</posx>
-						<posy>0</posy>
-						<width>3-col</width>
-						<font>smallStrong</font>
-						<textcolor>black</textcolor>
-						<selectedcolor>black</selectedcolor>
-						<align>right</align>
-						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.duration] mins</label>
-						<scroll>false</scroll>
-					</control>
-											
+								
 					<control type="label">
 						<visible>!isempty(ListItem.playcount)</visible>
 						<posx>36r</posx>

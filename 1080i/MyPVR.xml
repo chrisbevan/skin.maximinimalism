@@ -102,7 +102,7 @@
 								<label>30339</label>
 								<label2></label2>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>ActivateWindowAndFocus(pvr, 31,0, 9999,1)</onclick>
+								<onclick>ActivateWindowAndFocus(pvr, 31,0, 10,1)</onclick>
 							</item>
 
 							<item id="4">
@@ -119,6 +119,7 @@
 								<label2></label2>
 								<onclick>ActivateWindow(videos,movietitles,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>setfocus(50)</onclick>
 							</item>
 
 							<item id="6">
@@ -127,7 +128,7 @@
 								<label2></label2>
 								<onclick>ActivateWindow(Videos,tvshowtitles,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>setfocus(9500)</onclick>
+								<onclick>setfocus(50)</onclick>
 							</item>
 
 							<item id="7">
@@ -135,7 +136,7 @@
 								<label2></label2>
 								<onclick>ActivateWindow(Videos,playlists,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>setfocus(9500)</onclick>
+								<onclick>setfocus(50)</onclick>
 							</item>
 
 							<!--custom video addons-->
@@ -145,7 +146,7 @@
 								<onclick condition="StringCompare(Skin.String(customVideoAddon1Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon1)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon1Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon1)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Control.SetFocus(9500)</onclick>
+								<onclick>Control.SetFocus(52)</onclick>
 							</item>
 
 							<item id="9">
@@ -154,7 +155,7 @@
 								<onclick condition="StringCompare(Skin.String(customVideoAddon2Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon2)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon2Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon2)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Control.SetFocus(9500)</onclick>
+								<onclick>Control.SetFocus(52)</onclick>
 							</item>
 
 							<item id="10">
@@ -163,7 +164,7 @@
 								<onclick condition="StringCompare(Skin.String(customVideoAddon3Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon3)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon3Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon3)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Control.SetFocus(9500)</onclick>
+								<onclick>Control.SetFocus(52)</onclick>
 							</item>
 
 							<item id="11">
@@ -172,7 +173,7 @@
 								<onclick condition="StringCompare(Skin.String(customVideoAddon4Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon4)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon4Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon4)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Control.SetFocus(9500)</onclick>
+								<onclick>Control.SetFocus(52)</onclick>
 							</item>
 
 							<item id="12">
@@ -181,7 +182,7 @@
 								<onclick condition="StringCompare(Skin.String(customVideoAddon5Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon5)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon5Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon5)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Control.SetFocus(9500)</onclick>
+								<onclick>Control.SetFocus(52)</onclick>
 							</item>
 
 							<item id="13">
@@ -190,7 +191,7 @@
 								<onclick condition="StringCompare(Skin.String(customVideoAddon6Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon6)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon6Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon6)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Control.SetFocus(9500)</onclick>
+								<onclick>Control.SetFocus(52)</onclick>
 							</item>
 
 							<item id="14">
@@ -199,7 +200,7 @@
 								<onclick condition="StringCompare(Skin.String(customVideoAddon7Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon7)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon7Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon7)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Control.SetFocus(9500)</onclick>
+								<onclick>Control.SetFocus(52)</onclick>
 							</item>
 
 							<item id="15">
@@ -208,7 +209,7 @@
 								<onclick condition="StringCompare(Skin.String(customVideoAddon8Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon8)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon8Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon8)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>Control.SetFocus(9500)</onclick>
+								<onclick>Control.SetFocus(52)</onclick>
 							</item>
 
 							<!--final bits and bobs-->                                                        
@@ -457,7 +458,7 @@
 					<textoffsetx>12</textoffsetx>
 				</control>
 
-				<control type="radiobutton" id="20">
+				<control type="radiobutton" id="101">
 					<description>Filter</description>
 					<visible>Container.CanFilterAdvanced</visible>					
 					<label>587</label>
@@ -486,8 +487,39 @@
 					<onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
 					<onclick>ActivateWindow(5000)</onclick>
 				</control>
-
+				
+				<!-- Refresh library (Gotham only) -->
+				<control type="radiobutton" id="20">
+					<visible>SubString(System.BuildVersion,13,left)</visible>
+					<description>Refresh Library</description>
+					<label>653</label>
+					<height>54</height>
+					<width>4-col</width>
+					<font>menuTitle</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/black.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+				</control>
+				
+				<!--refresh library (Frodo)-->
 				<control type="button" id="103">
+					<visible>SubString(System.BuildVersion,12,left)</visible>
+					<height>54</height>
+					<width>4-col</width>
+					<font>menuTitle</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/black.png</texturefocus>
+					<texturenofocus>colors/unselected.png</texturenofocus>
+					<textoffsetx>12</textoffsetx>
+					<label>653</label>
+					<onclick>UpdateLibrary(video)</onclick>
+					<onclick>Notification(Updating Library,Searching for new content)</onclick>
+					<onclick>right</onclick>
+				</control>
+						
+				<control type="button" id="104">
 					<description>Programs menu</description>
 					<height>54</height>
 					<width>4-col</width>
@@ -502,7 +534,7 @@
 					<onclick>ActivateWindow(programs,addons,return)</onclick>
 				</control>
 
-				<control type="button" id="104">
+				<control type="button" id="105">
 					<description>Files menu</description>
 					<height>54</height>
 					<width>4-col</width>

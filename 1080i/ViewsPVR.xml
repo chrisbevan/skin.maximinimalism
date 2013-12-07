@@ -1,15 +1,15 @@
 <includes>
-	
+
 	<!--tv / radio channels view-->
 	<include name="LiveTVRadioChannelView">
 		<control type="group">
-			
+
 			<visible>Control.IsVisible(11) | Control.IsVisible(12)</visible>
 			<!--animations-->
 			<animation type="visible">
 				<include>listSlideIn</include>
 			</animation>
-			
+
 			<control type="panel" id="11">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -23,9 +23,9 @@
 				<focusposition>4</focusposition>
 				<movement>4</movement>
 				<scrolltime tween="sine" easing="inout">200</scrolltime>
-				
+
 				<itemlayout height="1-row" width="20-col">
-										
+
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
@@ -36,7 +36,7 @@
 						<bordersize>0</bordersize>
 						<colordiffuse>99FFFFFF</colordiffuse>
 					</control>
-					
+
 					<control type="image">
 						<posx>4</posx>
 						<posy>4</posy>
@@ -45,7 +45,7 @@
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
 					</control>
-					
+
 					<control type="label">
 						<posx>1-col</posx>
 						<posy>0</posy>
@@ -55,7 +55,7 @@
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
-					
+
 					<control type="label">
 						<posx>5-col</posx>
 						<posy>0</posy>
@@ -65,7 +65,7 @@
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.starttime]</label>
 					</control>
-					
+
 					<control type="label">
 						<posx>444</posx>
 						<posy>0</posy>
@@ -75,7 +75,7 @@
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
-										
+
 					<control type="label">
 						<posx>12-col</posx>
 						<posy>0</posy>
@@ -85,7 +85,7 @@
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.nextstarttime]</label>
 					</control>
-					
+
 					<control type="label">
 						<posx>948</posx>
 						<posy>0</posy>
@@ -95,11 +95,11 @@
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.nextTitle]</label>
 					</control>
-					
+
 				</itemlayout>
-				
+
 				<focusedlayout height="1-row" width="20-col">
-					
+
 					<control type="image">
 						<posx>0</posx>
 						<posy>2</posy>
@@ -110,7 +110,7 @@
 						<bordersize>0</bordersize>
 						<colordiffuse>FFFFFFFF</colordiffuse>
 					</control>
-					
+
 					<control type="image">
 						<posx>4</posx>
 						<posy>4</posy>
@@ -119,7 +119,7 @@
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
 					</control>
-					
+
 					<control type="label">
 						<posx>1-col</posx>
 						<posy>0</posy>
@@ -130,7 +130,7 @@
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
-					
+
 					<control type="label">
 						<posx>5-col</posx>
 						<posy>0</posy>
@@ -141,7 +141,7 @@
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.starttime]</label>
 					</control>
-					
+
 					<control type="label">
 						<posx>444</posx>
 						<posy>0</posy>
@@ -152,7 +152,7 @@
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
-										
+
 					<control type="label">
 						<posx>12-col</posx>
 						<posy>0</posy>
@@ -163,7 +163,7 @@
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.nextstarttime]</label>
 					</control>
-					
+
 					<control type="label">
 						<posx>948</posx>
 						<posy>0</posy>
@@ -174,10 +174,10 @@
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.nextTitle]</label>
 					</control>
-					
+
 				</focusedlayout>
 			</control>
-						
+
 		</control>
 	</include>
 
@@ -185,7 +185,7 @@
 		<control type="group">
 			<description>Recordings group</description>
 			<visible>Control.IsVisible(13)</visible>
-			
+
 			<!--animations-->
 			<animation type="visible">
 				<include>listSlideIn</include>
@@ -240,7 +240,7 @@
 							<bordersize>0</bordersize>
 							<colordiffuse>77FFFFFF</colordiffuse>
 						</control>
-						
+
 						<control type="label">
 							<posx>12</posx>
 							<posy>-8</posy>
@@ -326,7 +326,7 @@
 				</focusedlayout>
 
 			</control>
-		
+
 		</control>
 	</include>
 
@@ -334,52 +334,76 @@
 		<control type="group">
 			<description>TV Guide Timeline</description>
 			<visible>Control.IsVisible(10)</visible>
-			
+
 			<!--animations-->
 			<animation type="visible">
 				<include>listSlideIn</include>
 			</animation>
-			
+
 			<control type="epggrid" id="10">
 				<description>EPG Grid</description>
 				<posx>0</posx>
-				<posy>2</posy>
+				<posy>-56</posy>
 				<width>21-col</width>
 				<height>11-row</height>
-				<timeblocks>20</timeblocks>
+				<timeblocks>40</timeblocks>
 				<rulerunit>6</rulerunit>
 				<onleft>9000</onleft>
-				
+
 				<rulerlayout height="1-row" width="1-col">
-				
+
 					<control type="label" id="2">
-						<posx>12</posx>
-						<posy>0</posy>
-						<width>2-col</width>
+						<visible>SubString(ListItem.Label,:)</visible>
+						<posx>24</posx>
+						<posy>8</posy>
+						<width>34</width>
 						<height>1-row</height>
-						<font>itemTitleSmall</font>
-						<textcolor>accented</textcolor>
+						<font>smallMedium</font>
+						<textcolor>selected</textcolor>
 						<selectedcolor>unselected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
-										
+
 				</rulerlayout>
-				
+
 				<channellayout height="1-row" width="4-col-gutter">
-															
-					<control type="image">
-						<posx>0</posx>
-						<posy>2</posy>
-						<width>4-col-gutter</width>
-						<height>53</height>
-						<aspectratio>stretch</aspectratio>
-						<texture border="0">colors/black.png</texture>
-						<bordersize>0</bordersize>
-						<colordiffuse>99FFFFFF</colordiffuse>
-					</control>
 					
+					<control type="image">
+						<posx>4</posx>
+						<posy>4</posy>
+						<width>48</width>
+						<height>48</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+					</control>
+
 					<control type="label" id="1">
-						<posx>12</posx>
+						<posx>1-col</posx>
+						<posy>0</posy>
+						<width>3-col</width>
+						<font>itemTitle</font>
+						<textcolor>accented</textcolor>
+						<selectedcolor>accented</selectedcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.ChannelName]</label>
+						<scroll>false</scroll>
+					</control>
+
+				</channellayout>
+
+				<focusedchannellayout height="1-row" width="280">
+					
+					<control type="image">
+						<posx>4</posx>
+						<posy>4</posy>
+						<width>48</width>
+						<height>48</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+					</control>
+
+					<control type="label" id="1">
+						<posx>1-col</posx>
 						<posy>0</posy>
 						<width>3-col</width>
 						<font>itemTitle</font>
@@ -389,38 +413,11 @@
 						<label>$INFO[ListItem.ChannelName]</label>
 						<scroll>false</scroll>
 					</control>
-					
-				</channellayout>
-				
-				<focusedchannellayout height="1-row" width="280">
-										
-					<control type="image">
-						<posx>0</posx>
-						<posy>2</posy>
-						<width>4-col-gutter</width>
-						<height>53</height>
-						<aspectratio>stretch</aspectratio>
-						<texture border="0">colors/selected.png</texture>
-						<bordersize>0</bordersize>
-						<colordiffuse>ffFFFFFF</colordiffuse>
-					</control>
-					
-					<control type="label" id="1">
-						<posx>12</posx>
-						<posy>0</posy>
-						<width>3-col</width>
-						<font>itemTitle</font>
-						<textcolor>black</textcolor>
-						<selectedcolor>black</selectedcolor>
-						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.ChannelName]</label>
-						<scroll>false</scroll>
-					</control>
-					
+
 				</focusedchannellayout>
-				
+
 				<itemlayout height="1-row" width="1-col">
-										
+
 					<control type="image">
 						<posx>12</posx>
 						<posy>2</posy>
@@ -431,7 +428,7 @@
 						<bordersize>0</bordersize>
 						<colordiffuse>ccFFFFFF</colordiffuse>
 					</control>
-					
+
 					<control type="label" id="1">
 						<posx>24</posx>
 						<posy>0</posy>
@@ -442,11 +439,11 @@
 						<shadowcolor>-</shadowcolor>
 						<info>ListItem.Label</info>
 					</control>
-										
+
 				</itemlayout>
-				
+
 				<focusedlayout height="1-row" width="1-col">
-					
+
 					<control type="image">
 						<posx>12</posx>
 						<posy>2</posy>
@@ -457,7 +454,7 @@
 						<bordersize>0</bordersize>
 						<colordiffuse>FFFFFFFF</colordiffuse>
 					</control>
-					
+
 					<control type="label" id="1">
 						<posx>24</posx>
 						<posy>0</posy>
@@ -468,11 +465,40 @@
 						<shadowcolor>-</shadowcolor>
 						<info>ListItem.Label</info>
 					</control>
-					
+
 				</focusedlayout>
+
+			</control>
+			
+			<!--focussed item-->
+			<control type="group">
+				<posx>4-col</posx>
+				<posy>603</posy>
+				
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>12-col-gutter</width>
+					<font>itemTitle</font>
+					<textcolor>selected</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<shadowcolor>-</shadowcolor>
+					<label>$INFO[ListItem.starttime,, - ]$INFO[ListItem.endtime,,: ]$INFO[ListItem.Label]</label>
+				</control>
+				
+				<control type="label">
+					<posx>0</posx>
+					<posy>36</posy>
+					<width>17-col-gutter</width>
+					<font>small</font>
+					<textcolor>selected</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<shadowcolor>-</shadowcolor>
+					<label>[B]$INFO[ListItem.plot][/B]</label>
+				</control>
 				
 			</control>
-						
+
 		</control>
 	</include>
 
@@ -480,7 +506,7 @@
 		<control type="group">
 			<description>Timers group</description>
 			<visible>Control.IsVisible(14)</visible>
-			
+
 			<!--animations-->
 			<animation type="visible">
 				<include>listSlideIn</include>
@@ -489,7 +515,7 @@
 			<control type="group">
 				<posx>0</posx>
 				<posy>0</posy>
-								
+
 				<control type="panel" id="14">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -499,9 +525,9 @@
 					<onright>60</onright>
 					<onup>14</onup>
 					<ondown>14</ondown>
-					
+
 					<itemlayout height="1-row">
-						
+
 						<control type="image">
 							<posx>0</posx>
 							<posy>2</posy>
@@ -552,11 +578,11 @@
 							<shadowcolor>-</shadowcolor>
 							<label>$INFO[ListItem.Comment]</label>
 						</control>
-						
+
 					</itemlayout>
-					
+
 					<focusedlayout height="1-row">
-						
+
 						<control type="image">
 							<posx>0</posx>
 							<posy>2</posy>
@@ -567,7 +593,7 @@
 							<bordersize>0</bordersize>
 							<colordiffuse>FFFFFFFF</colordiffuse>
 						</control>
-						
+
 						<control type="label">
 							<posx>36</posx>
 							<posy>0</posy>
@@ -607,10 +633,10 @@
 							<shadowcolor>-</shadowcolor>
 							<label>$INFO[ListItem.Comment]</label>
 						</control>
-						
+
 					</focusedlayout>
 				</control>
-				
+
 				<control type="label">
 					<description>Next timer date</description>
 					<posx>55</posx>
@@ -622,7 +648,7 @@
 					<visible>PVR.HasTimer</visible>
 				</control>
 			</control>
-			
+
 		</control>
 	</include>
 </includes>
