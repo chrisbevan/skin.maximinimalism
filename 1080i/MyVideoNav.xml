@@ -1,9 +1,10 @@
 <window id="6">
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="false">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<onload>Container.SetViewMode($VAR[videoViewType])</onload>
+	<onload condition="substring(skin.string(showRecentVideoItems),false)">setFocus($VAR[videoViewFocus])</onload>
 	<onload>PlayerControl(stop)</onload>
-	<onload condition="control.isvisible(50) + SubString(skin.string(showRecentVideoItems),false)">control.setfocus(50,1)</onload>
+	<onload condition="window.previous(0)">setfocus(9000)</onload>
 
 	<controls>
 
@@ -117,7 +118,7 @@
 								<label>342</label>
 								<label2></label2>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>ActivateWindow(videos,movietitles,return)</onclick>
+								<onclick>ReplaceWindow(videos,movietitles,return)</onclick>
 							</item>
 
 							<item id="6">
@@ -125,14 +126,14 @@
 								<label>20343</label>
 								<label2></label2>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-								<onclick>ActivateWindow(videos,tvshowtitles,return)</onclick>								
+								<onclick>ReplaceWindow(videos,tvshowtitles,return)</onclick>								
 							</item>
 
 							<item id="7">
 								<label>136</label>
 								<label2></label2>
-								<onclick>ActivateWindow(Videos,playlists,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>ActivateWindow(Videos,playlists,return)</onclick>
 							</item>
 
 							<!--custom video addons-->
@@ -211,15 +212,15 @@
 							<!--final bits and bobs-->                                                        
 							<item id="16">
 								<label>31010</label>
-								<onclick>ActivateWindow(Videos,addons,return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+								<onclick>ReplaceWindow(Videos,addons,return)</onclick>
 								<onclick>Control.SetFocus(9500)</onclick>
 							</item>
 
 							<item id="17">
 								<label>1036</label>
-								<onclick>ActivateWindow(favourites)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
+								<onclick>ReplaceWindow(favourites,return)</onclick>
 								<onclick>Control.SetFocus(9500)</onclick>
 							</item>
 
@@ -679,7 +680,7 @@
 							<visible>false</visible>
 							<width>8-col</width>
 							<font>buttonTitle</font>
-							<label>$INFO[container.folderpath]</label>
+							<label>$INFO[container.foldername]</label>
 							<textcolor>selected</textcolor>
 						</control>
 

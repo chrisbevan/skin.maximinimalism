@@ -250,18 +250,7 @@
 					<aspectratio>stretch</aspectratio>
 					<colordiffuse>ffffffff</colordiffuse>
 				</control>
-				
-				<!--fanart if available-->
-				<control type="image">
-					<posx>-528</posx>
-					<posy>-580</posy>
-					<width>fullscreenWidth</width>
-					<height>fullscreenHeight</height>
-					<texture>$INFO[listitem.art(fanart)]</texture>
-					<colordiffuse>99ffffff</colordiffuse>
-					<aspectratio>stretch</aspectratio>
-				</control>
-				
+							
 				<control type="image">
 					<posx>0</posx>
 					<posy>-12</posy>
