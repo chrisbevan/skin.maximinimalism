@@ -429,8 +429,8 @@
 					<onclick>activateWindow(pvrguidesearch)</onclick>
 				</control>
 
-				<control type="button" id="3">
-					<description>Sort by button</description>
+				<control type="button" id="100">
+					<description>Change Channel Group</description>
 					<height>54</height>
 					<width>4-col</width>
 					<font>menuTitle</font>
@@ -439,23 +439,8 @@
 					<texturefocus>colors/black.png</texturefocus>
 					<texturenofocus>colors/unselected.png</texturenofocus>
 					<textoffsetx>12</textoffsetx>
-					<label>103</label>
-				</control>
-
-				<control type="togglebutton" id="4">
-					<description>Sort asc</description>
-					<label>30336</label>
-					<altlabel>30337</altlabel>
-					<align>left</align>
-					<height>54</height>
-					<width>4-col</width>
-					<font>menuTitle</font>
-					<textcolor>black</textcolor>
-					<focusedcolor>selected</focusedcolor>
-					<texturefocus>colors/black.png</texturefocus>
-					<alttexturefocus>colors/black.png</alttexturefocus>
-					<texturenofocus>colors/unselected.png</texturenofocus>
-					<textoffsetx>12</textoffsetx>
+					<label>$LOCALIZE[30212]  ◀ ▶</label>
+					<onclick>sendclick(32)</onclick>
 				</control>
 
 				<control type="radiobutton" id="101">

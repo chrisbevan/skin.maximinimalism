@@ -3,7 +3,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<onload>Container.SetViewMode($VAR[videoViewType])</onload>
 	<onload condition="substring(skin.string(showRecentVideoItems),false)">setFocus($VAR[videoViewFocus])</onload>
-	<onload>PlayerControl(stop)</onload>
+	<onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
 	<onload condition="window.previous(0)">setfocus(9000)</onload>
 
 	<controls>

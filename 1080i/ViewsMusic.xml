@@ -93,6 +93,7 @@
 						<width>7-col-gutter</width>
 						<font>itemTitle</font>
 						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -105,6 +106,7 @@
 						<align>right</align>
 						<height>24</height>
 						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$VAR[itemDetail]</label>
 					</control>
