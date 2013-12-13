@@ -94,20 +94,20 @@
 				</control>
 			
 				<control type="list" id="8000">
-					<posx>col-4-begin</posx>
+					<posx>258</posx>
 					<posy>-10</posy>
-					<width>10-col</width>
+					<width>14-col</width>
 					<height>1-row</height>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 
-					<itemlayout width="150" height="43">
+					<itemlayout width="3-col-gutter" height="43">
 
 						<control type="label">
 							<posx>55</posx>
 							<posy>0</posy>
-							<width>150</width>
-							<align>center</align>
+							<width>3-col-gutter</width>
+							<align>left</align>
 							<font>menuTitle</font>
 							<textcolor>black</textcolor>
 							<label>$INFO[ListItem.label]</label>
@@ -116,13 +116,13 @@
 
 					</itemlayout>
 
-					<focusedlayout width="150" height="43">
+					<focusedlayout width="3-col-gutter" height="43">
 
 						<control type="label">
-							<posx>55</posx>
+							<posx>42</posx>
 							<posy>0</posy>
-							<width>150</width>
-							<align>center</align>
+							<width>3-col-gutter</width>
+							<align>left</align>
 							<font>menuTitle</font>
 							<textcolor>black</textcolor>
 							<label>[ $INFO[ListItem.label] ]</label>
@@ -152,6 +152,11 @@
 							<thumb>-</thumb>
 							<onclick>Close</onclick>
 							<onclick>XBMC.RunScript($INFO[Skin.String(SubtitlesPath)])</onclick>
+						</item>
+						<item id="5">
+							<label>298</label>
+							<thumb>-</thumb>
+							<onclick>ActivateWindow(125)</onclick>
 						</item>
 					</content>
 
