@@ -23,7 +23,7 @@
 		<control type="group">
 
 			<posx>col-3-begin</posx>
-			<posy>row-3-begin</posy>
+			<posy>row-2-begin</posy>
 			
 			<!--animations-->
 			<include>modalDialogInOutVertical</include>

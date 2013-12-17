@@ -24,10 +24,10 @@
 	<string id="30215">Now and Next</string>	
 	<string id="30216">Programme Guide</string>	
 	<string id="30217">Return</string>
-		
+	<string id="30218">Service</string>
 	<string id="30219">Global background image: </string>
 	<string id="30220">Enable global fanart background: </string>	
-
+	<string id="30221">Subtitles search</string>	
 	<string id="30222">Transfer</string>	
 	<string id="30223">No items found</string>	
 	<string id="30224">Reset global background to default</string>	
@@ -145,6 +145,5 @@
 	
 	<string id="31027">Items</string>
 	<string id="31028">Page</string>
-	<string id="31015">Player Controls</string>
 	
 </strings>

@@ -84,6 +84,13 @@
 						</focusedlayout>
 
 						<content>
+							<item id="25">
+								<visible>System.HasMediaDVD</visible>
+								<label>341</label>
+								<label2></label2>
+								<onclick>XBMC.PlayDVD()</onclick>
+							</item>
+							
 							<item id="1">
 								<label>31005</label>
 								<label2></label2>
@@ -816,6 +823,7 @@
 				<!--no additions active-->
 				<include condition="!Library.HasContent(Music)">noOffset</include>
 				<include condition="Library.HasContent(Music)">offset4</include>
+				<include condition="System.HasMediaDVD + Library.HasContent(Music)">offset5</include>
 
 				<width>4-col</width>
 				<height>10-row</height>

@@ -83,6 +83,13 @@
 						</focusedlayout>
 
 						<content>                                                        
+							<item id="18">
+								<visible>System.HasMediaDVD</visible>
+								<label>341</label>
+								<label2></label2>
+								<onclick>XBMC.PlayDVD()</onclick>
+							</item>
+							
 							<item id="1">
 								<label>31005</label>
 								<label2></label2>
@@ -925,6 +932,9 @@
 				<!--ALL additions active-->
 				<include condition="System.GetBool(pvrmanager.enabled) + Library.HasContent(Movies) + Library.HasContent(TVShows)">offset5</include>
 
+				<!--ALL additions active AND optical disc is available-->
+				<include condition="System.HasMediaDVD + System.GetBool(pvrmanager.enabled) + Library.HasContent(Movies) + Library.HasContent(TVShows)">offset6</include>
+				
 				<!--one addition active-->
 				<include condition="[System.GetBool(pvrmanager.enabled) + !Library.HasContent(Movies) + !Library.HasContent(TVShows)] | [!System.GetBool(pvrmanager.enabled) + Library.HasContent(Movies) + !Library.HasContent(TVShows)] | [!System.GetBool(pvrmanager.enabled) + !Library.HasContent(Movies) + Library.HasContent(TVShows)]">offset3</include>
 

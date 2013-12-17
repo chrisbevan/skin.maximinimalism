@@ -200,5 +200,9 @@
 	<include name="offset5">
 		<posy>582</posy>
 	</include>
+	
+	<include name="offset6">
+		<posy>626</posy>
+	</include>
 			
 </includes>

@@ -374,7 +374,7 @@
 						<posy>0</posy>
 						<width>4-col-gutter</width>
 						<height>385</height>
-						<aspectratio aligny="top">stretch</aspectratio>
+						<aspectratio aligny="top">scale</aspectratio>
 						<texture fallback="colors/black.png" border="0">$INFO[ListItem.thumb]</texture>
 						<bordertexture border="0">-</bordertexture>
 						<colordiffuse>ffFFFFFF</colordiffuse>
@@ -423,7 +423,7 @@
 						<posy>0</posy>
 						<width>4-col-gutter</width>
 						<height>385</height>
-						<aspectratio aligny="top">stretch</aspectratio>
+						<aspectratio aligny="top">scale</aspectratio>
 						<texture fallback="colors/black.png" border="0">$INFO[ListItem.thumb]</texture>
 						<bordertexture border="0">-</bordertexture>
 						<colordiffuse>ffFFFFFF</colordiffuse>

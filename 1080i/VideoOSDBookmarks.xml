@@ -132,7 +132,7 @@
 					<item id="1">
 						<description>Create Bookmark button</description>
 						<label>294</label>
-						<label2></label2>
+						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>SendClick(125,2)</onclick>
 					</item>
@@ -140,7 +140,7 @@
 					<item id="2">
 						<description>Clear Bookmark button</description>
 						<label>296</label>
-						<label2></label2>
+						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>SendClick(125,3)</onclick>
 					</item>	
@@ -149,7 +149,7 @@
 						<description>Clear Bookmark button (episodes)</description>
 						<visible>videoplayer.content(episodes)</visible>
 						<label>20406</label>
-						<label2></label2>
+						<label2></label2>
 						<thumb>-</thumb>
 						<onclick>SendClick(125,4)</onclick>
 					</item>
