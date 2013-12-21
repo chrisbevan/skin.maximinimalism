@@ -192,40 +192,47 @@
 
 					<content>
 						<item id="1">
+							<label>30345</label>
+							<label2></label2>
+							<thumb>-</thumb>
+							<onclick>RunAddon($INFO[ListItem.Property(Addon.id)])</onclick>
+							<onclick>action(back)</onclick>
+						</item>						
+						<item id="2">
 							<label>$INFO[Control.GetLabel(6)]</label>
 							<label2></label2>
 							<thumb>-</thumb>
 							<onclick>SendClick(6)</onclick>
 						</item>
-						<item id="2">
+						<item id="3">
 							<visible>Control.IsEnabled(8)</visible>
 							<label>$INFO[Control.GetLabel(8)]</label>
 							<label2></label2>
 							<thumb>-</thumb>
 							<onclick>SendClick(8)</onclick>
 						</item>
-						<item id="6">
+						<item id="4">
 							<visible>Control.IsEnabled(11)</visible>
 							<label>$INFO[Control.GetLabel(11)]</label>
 							<label2></label2>
 							<thumb>-</thumb>
 							<onclick>SendClick(11)</onclick>
 						</item>
-						<item id="3">
+						<item id="5">
 							<visible>Control.IsEnabled(7)</visible>
 							<label>$INFO[Control.GetLabel(7)]</label>
 							<label2></label2>
 							<thumb>-</thumb>
 							<onclick>SendClick(7)</onclick>
 						</item>
-						<item id="4">
+						<item id="6">
 							<visible>Control.IsEnabled(9)</visible>
 							<label>$INFO[Control.GetLabel(9)]</label>
 							<label2></label2>
 							<thumb>-</thumb>
 							<onclick>SendClick(9)</onclick>
 						</item>
-						<item id="5">
+						<item id="7">
 							<visible>Control.IsEnabled(10)</visible>
 							<label>$INFO[Control.GetLabel(10)]</label>
 							<label2></label2>

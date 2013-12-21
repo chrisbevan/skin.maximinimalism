@@ -1,7 +1,6 @@
 [B]0.9.0[/B]
 - [NEW] Video bookmarks (videoOSDBookmarks.xml)
-- [NEW] Subtitles search reskinned. Tentative Gotham support.
-
+- [NEW] Subtitles search reskinned. Tentative Gotham support added.
 
 [B]0.8.0[/B]
 - [MODIFIED] Default background revised
