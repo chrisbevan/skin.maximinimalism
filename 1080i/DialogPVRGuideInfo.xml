@@ -41,6 +41,7 @@
 				<font>medium</font>
 				<textcolor>selected</textcolor>
 				<label>$INFO[ListItem.Title]</label>
+				<scroll>true</scroll>
 			</control>
 			
 			<control type="label">

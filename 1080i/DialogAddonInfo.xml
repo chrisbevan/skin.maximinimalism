@@ -192,6 +192,7 @@
 
 					<content>
 						<item id="1">
+							<visible>!stringcompare(ListItem.Property(Addon.status), )</visible>
 							<label>30345</label>
 							<label2></label2>
 							<thumb>-</thumb>

@@ -122,10 +122,10 @@
 			
 			<!--dialog controls-->						
 			<control type="list" id="8000">
-				<posx>col-20-begin</posx>
-				<posy>row-8-begin</posy>
+				<posx>col-22-begin</posx>
+				<posy>row-7-begin</posy>
 				<width>8-col</width>
-				<height>4-row</height>
+				<height>5-row</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 
@@ -300,6 +300,7 @@
 					<font>itemTitleSmall</font>
 					<textcolor>selected</textcolor>
 					<shadowcolor>-</shadowcolor>
+					<scroll>true</scroll>
 					<label fallback="30340">$INFO[listitem.tvshowtitle,, • ]$INFO[listitem.season,Season]$INFO[listitem.duration, • , mins]</label>
 				</control>
 								
@@ -444,6 +445,15 @@
 				<include>dimensionsFullscreen</include>
 				<texture>colors/black.png</texture>
 				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<include>dimensionsFullscreen</include>
+				<texture>$INFO[listitem.art(fanart)]</texture>
+				<colordiffuse>33ffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			

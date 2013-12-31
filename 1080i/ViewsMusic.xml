@@ -343,6 +343,7 @@
 							<textcolor>black</textcolor>
 							<shadowcolor>-</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
+							<scroll>true</scroll>
 						</control>
 
 						<control type="label">
