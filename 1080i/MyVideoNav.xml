@@ -543,21 +543,21 @@
 									<label>$INFO[Window(Home).Property(RecentMovie.2.Title)]</label>
 									<label2>$INFO[Window(Home).Property(RecentMovie.2.Year),, •] $INFO[Window(Home).Property(RecentMovie.2.Runtime),, mins]</label2>
 									<thumb>$INFO[Window(Home).Property(RecentMovie.2.art(fanart))]</thumb>
-									<onclick>$INFO[Window(Home).Property(RecentMovie.1.Play)]</onclick>
+									<onclick>$INFO[Window(Home).Property(RecentMovie.2.Play)]</onclick>
 								</item>
 								<item id="3">
 									<visible>!isempty(Window(Home).Property(RecentMovie.3.Title))</visible>
 									<label>$INFO[Window(Home).Property(RecentMovie.3.Title)]</label>
 									<label2>$INFO[Window(Home).Property(RecentMovie.3.Year),, •] $INFO[Window(Home).Property(RecentMovie.3.Runtime),, mins]</label2>
 									<thumb>$INFO[Window(Home).Property(RecentMovie.3.art(fanart))]</thumb>
-									<onclick>$INFO[Window(Home).Property(RecentMovie.1.Play)]</onclick>
+									<onclick>$INFO[Window(Home).Property(RecentMovie.3.Play)]</onclick>
 								</item>
 								<item id="4">
 									<visible>!isempty(Window(Home).Property(RecentMovie.4.Title))</visible>
 									<label>$INFO[Window(Home).Property(RecentMovie.4.Title)]</label>
 									<label2>$INFO[Window(Home).Property(RecentMovie.4.Year),, •] $INFO[Window(Home).Property(RecentMovie.4.Runtime),, mins]</label2>
 									<thumb>$INFO[Window(Home).Property(RecentMovie.4.art(fanart))]</thumb>
-									<onclick>$INFO[Window(Home).Property(RecentMovie.1.Play)]</onclick>
+									<onclick>$INFO[Window(Home).Property(RecentMovie.4.Play)]</onclick>
 								</item>
 
 								<!--tv shows-->
@@ -740,7 +740,7 @@
 					<height>fullscreenHeight</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>colors/selected.png</texture>
-					<colordiffuse>eeffffff</colordiffuse>
+					<colordiffuse>ffffffff</colordiffuse>
 					<bordersize>0</bordersize>
 				</control>
 				

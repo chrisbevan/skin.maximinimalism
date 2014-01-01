@@ -5,11 +5,11 @@
 	<onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
 
 	<controls>
+		
+		<include>globalBackground</include>
 
 		<!--page container group-->
 		<control type="group">
-
-			<include>globalBackground</include>
 
 			<!--window fader-->			
 			<animation type="conditional" condition="window.next(0) | window.next(1)">
@@ -420,7 +420,7 @@
 					<height>fullscreenHeight</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>colors/selected.png</texture>
-					<colordiffuse>eeffffff</colordiffuse>
+					<colordiffuse>ffffffff</colordiffuse>
 					<bordersize>0</bordersize>
 				</control>
 				
