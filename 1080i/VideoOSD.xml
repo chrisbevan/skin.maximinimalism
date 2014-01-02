@@ -64,7 +64,7 @@
 				<control type="label">
 					<posx>3-col</posx>
 					<posy>50</posy>
-					<width>17-col-gutter</width>
+					<width>21-col-gutter</width>
 					<height>30</height>
 					<font>small</font>
 					<textcolor>selected</textcolor>
