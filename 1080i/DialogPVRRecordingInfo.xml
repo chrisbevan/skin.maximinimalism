@@ -77,7 +77,8 @@
 					<posy>1-row</posy>
 					<width>12-col</width>
 					<align>left</align>
-					<font>medium</font>
+					<font>mediumStrong</font>
+					<scroll>true</scroll>
 					<textcolor>selected</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>

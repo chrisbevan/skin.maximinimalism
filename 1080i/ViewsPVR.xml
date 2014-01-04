@@ -244,7 +244,7 @@
 						<control type="label">
 							<posx>12</posx>
 							<posy>-8</posy>
-							<width>252</width>
+							<width>350</width>
 							<font>itemTitleSmall</font>
 							<textcolor>selected</textcolor>
 							<label>$INFO[ListItem.Label]</label>
@@ -304,12 +304,13 @@
 						<control type="label">
 							<posx>12</posx>
 							<posy>-8</posy>
-							<width>252</width>
+							<width>350</width>
 							<font>itemTitleSmall</font>
 							<textcolor>black</textcolor>
 							<shadowcolor>-</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>-</shadowcolor>
+							<scroll>true</scroll>
 						</control>
 
 						<control type="label">

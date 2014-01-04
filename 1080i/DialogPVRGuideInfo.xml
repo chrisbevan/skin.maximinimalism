@@ -35,10 +35,10 @@
 			<control type="label">
 				<description>Programme title</description>
 				<posx>0</posx>
-				<posy>51</posy>
+				<posy>53</posy>
 				<width>12-col</width>
 				<align>left</align>
-				<font>medium</font>
+				<font>mediumStrong</font>
 				<textcolor>selected</textcolor>
 				<label>$INFO[ListItem.Title]</label>
 				<scroll>true</scroll>
@@ -50,7 +50,7 @@
 				<posy>2-row</posy>
 				<width>12-col</width>
 				<font>itemTitleSmall</font>
-				<label>[B]$INFO[ListItem.starttime] - $INFO[ListItem.endtime] • Duration: $INFO[ListItem.duration][/B]</label>
+				<label>[B]$INFO[ListItem.starttime] - $INFO[ListItem.endtime] ($INFO[ListItem.duration])[/B]</label>
 			</control>
 			
 			<!--synopsis-->			

@@ -39,8 +39,7 @@
 						<width>3-col</width>
 						<height>12-row</height>
 						<orientation>vertical</orientation>
-						<onleft condition="!StringCompare(container(9000).listitem.label2,activeAddon)">62</onleft>
-						<onleft condition="StringCompare(container(9000).listitem.label2,activeAddon)">63</onleft>
+						<onleft>62</onleft>
 						<onright>9999</onright>
 
 						<itemlayout width="4-col" height="43">
@@ -150,7 +149,6 @@
 							<item id="8">
 								<visible>!isempty(Skin.String(customVideoAddon1))</visible>
 								<label>$VAR[customVideoAddon1Title]</label>
-								<label2>activeAddon</label2>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon1Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon1)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon1Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon1)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -160,7 +158,6 @@
 							<item id="9">
 								<visible>!isempty(Skin.String(customVideoAddon2))</visible>
 								<label>$VAR[customVideoAddon2Title]</label>
-								<label2>activeAddon</label2>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon2Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon2)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon2Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon2)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -170,7 +167,6 @@
 							<item id="10">
 								<visible>!isempty(Skin.String(customVideoAddon3))</visible>
 								<label>$VAR[customVideoAddon3Title]</label>
-								<label2>activeAddon</label2>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon3Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon3)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon3Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon3)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -180,7 +176,6 @@
 							<item id="11">
 								<visible>!isempty(Skin.String(customVideoAddon4))</visible>
 								<label>$VAR[customVideoAddon4Title]</label>
-								<label2>activeAddon</label2>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon4Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon4)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon4Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon4)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -190,7 +185,6 @@
 							<item id="12">
 								<visible>!isempty(Skin.String(customVideoAddon5))</visible>
 								<label>$VAR[customVideoAddon5Title]</label>
-								<label2>activeAddon</label2>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon5Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon5)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon5Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon5)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -200,7 +194,6 @@
 							<item id="13">
 								<visible>!isempty(Skin.String(customVideoAddon6))</visible>
 								<label>$VAR[customVideoAddon6Title]</label>
-								<label2>activeAddon</label2>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon6Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon6)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon6Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon6)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -210,7 +203,6 @@
 							<item id="14">
 								<visible>!isempty(Skin.String(customVideoAddon7))</visible>
 								<label>$VAR[customVideoAddon7Title]</label>
-								<label2>activeAddon</label2>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon7Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon7)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon7Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon7)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -220,7 +212,6 @@
 							<item id="15">
 								<visible>!isempty(Skin.String(customVideoAddon8))</visible>
 								<label>$VAR[customVideoAddon8Title]</label>
-								<label2>activeAddon</label2>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon8Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon8)])</onclick>
 								<onclick condition="StringCompare(Skin.String(customVideoAddon8Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon8)],return)</onclick>
 								<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -340,9 +331,17 @@
 						
 						<control type="label">
 							<visible>System.Setting(hidewatched)</visible>
+							<width>30</width>
+							<font>symbol</font>
+							<textcolor>selected</textcolor>
+							<label></label>
+						</control>
+						
+						<control type="label">
+							<visible>System.Setting(hidewatched)</visible>
 							<width>4-col</width>
 							<font>buttonTitle</font>
-							<label>[$LOCALIZE[30346]]</label>
+							<label>$LOCALIZE[30346]</label>
 							<textcolor>selected</textcolor>
 						</control>
 
@@ -565,146 +564,6 @@
 
 		</control>
 		
-		<!--custom addon removal-->
-		<control type="grouplist" id="63">
-			<posx>54</posx>
-
-			<!--animations-->
-			<animation type="Conditional" condition="!controlgroup(63).hasfocus">
-				<effect type="fade" start="100" end="0" time="0" tween="sine" easing="in" reversible="false"  />
-			</animation>
-
-			<animation type="Conditional" condition="controlgroup(63).hasfocus">
-				<effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" reversible="false"  />
-			</animation>
-
-			<!--no additions active-->
-			<include condition="!System.GetBool(pvrmanager.enabled) + !Library.HasContent(Movies) + !Library.HasContent(TVShows)">noOffset</include>
-
-			<!--ALL additions active-->
-			<include condition="System.GetBool(pvrmanager.enabled) + Library.HasContent(Movies) + Library.HasContent(TVShows)">offset5</include>
-
-			<!--ALL additions active AND optical disc is available-->
-			<include condition="System.HasMediaDVD + System.GetBool(pvrmanager.enabled) + Library.HasContent(Movies) + Library.HasContent(TVShows)">offset6</include>
-
-			<!--one addition active-->
-			<include condition="[System.GetBool(pvrmanager.enabled) + !Library.HasContent(Movies) + !Library.HasContent(TVShows)] | [!System.GetBool(pvrmanager.enabled) + Library.HasContent(Movies) + !Library.HasContent(TVShows)] | [!System.GetBool(pvrmanager.enabled) + !Library.HasContent(Movies) + Library.HasContent(TVShows)]">offset3</include>
-
-			<!--two additions active-->
-			<include>offset4</include>
-
-			<width>4-col</width>
-			<height>10-row</height>
-			<itemgap>0</itemgap>
-			<onright>9000</onright>
-			<onleft>62</onleft>
-
-			<control type="button" id="201">
-				<visible>!isempty(Skin.String(customVideoAddon1))</visible>
-				<label></label>
-				<width>4-col</width>
-				<height>43</height>
-				<font>symbol</font>
-				<focusedcolor>selected</focusedcolor>
-				<textcolor>unselected</textcolor>
-				<onclick>Skin.Reset(customVideoAddon1)</onclick>
-				<onclick>Skin.Reset(customVideoAddon1Type)</onclick>
-				<onclick>Skin.Reset(customVideoAddon1Name)</onclick>
-			</control>
-
-			<control type="button" id="202">
-				<visible>!isempty(Skin.String(customVideoAddon2))</visible>
-				<label></label>
-				<width>4-col</width>
-				<height>43</height>
-				<font>symbol</font>
-				<focusedcolor>selected</focusedcolor>
-				<textcolor>unselected</textcolor>
-				<onclick>Skin.Reset(customVideoAddon2)</onclick>
-				<onclick>Skin.Reset(customVideoAddon2Type)</onclick>
-				<onclick>Skin.Reset(customVideoAddon2Name)</onclick>
-			</control>
-
-			<control type="button" id="203">
-				<visible>!isempty(Skin.String(customVideoAddon3))</visible>
-				<label></label>
-				<width>4-col</width>
-				<height>43</height>
-				<font>symbol</font>
-				<focusedcolor>selected</focusedcolor>
-				<textcolor>unselected</textcolor>
-				<onclick>Skin.Reset(customVideoAddon3)</onclick>
-				<onclick>Skin.Reset(customVideoAddon3Type)</onclick>
-				<onclick>Skin.Reset(customVideoAddon3Name)</onclick>
-			</control>
-
-			<control type="button" id="204">
-				<visible>!isempty(Skin.String(customVideoAddon4))</visible>
-				<label></label>
-				<width>4-col</width>
-				<height>43</height>
-				<font>symbol</font>
-				<focusedcolor>selected</focusedcolor>
-				<textcolor>unselected</textcolor>
-				<onclick>Skin.Reset(customVideoAddon4)</onclick>
-				<onclick>Skin.Reset(customVideoAddon4Type)</onclick>
-				<onclick>Skin.Reset(customVideoAddon4Name)</onclick>
-			</control>
-
-			<control type="button" id="205">
-				<visible>!isempty(Skin.String(customVideoAddon5))</visible>
-				<label></label>
-				<width>4-col</width>
-				<height>43</height>
-				<font>symbol</font>
-				<focusedcolor>selected</focusedcolor>
-				<textcolor>unselected</textcolor>
-				<onclick>Skin.Reset(customVideoAddon5)</onclick>
-				<onclick>Skin.Reset(customVideoAddon5Type)</onclick>
-				<onclick>Skin.Reset(customVideoAddon5Name)</onclick>
-			</control>
-
-			<control type="button" id="206">
-				<visible>!isempty(Skin.String(customVideoAddon6))</visible>
-				<label></label>
-				<width>4-col</width>
-				<height>43</height>
-				<font>symbol</font>
-				<focusedcolor>selected</focusedcolor>
-				<textcolor>unselected</textcolor>
-				<onclick>Skin.Reset(customVideoAddon6)</onclick>
-				<onclick>Skin.Reset(customVideoAddon6Type)</onclick>
-				<onclick>Skin.Reset(customVideoAddon6Name)</onclick>
-			</control>
-
-			<control type="button" id="207">
-				<visible>!isempty(Skin.String(customVideoAddon7))</visible>
-				<label></label>
-				<width>4-col</width>
-				<height>43</height>
-				<font>symbol</font>
-				<focusedcolor>selected</focusedcolor>
-				<textcolor>unselected</textcolor>
-				<onclick>Skin.Reset(customVideoAddon7)</onclick>
-				<onclick>Skin.Reset(customVideoAddon7Type)</onclick>
-				<onclick>Skin.Reset(customVideoAddon7Name)</onclick>
-			</control>
-
-			<control type="button" id="208">
-				<visible>!isempty(Skin.String(customVideoAddon8))</visible>
-				<label></label>
-				<width>4-col</width>
-				<height>43</height>
-				<font>symbol</font>
-				<focusedcolor>selected</focusedcolor>
-				<textcolor>unselected</textcolor>
-				<onclick>Skin.Reset(customVideoAddon8)</onclick>
-				<onclick>Skin.Reset(customVideoAddon8Type)</onclick>
-				<onclick>Skin.Reset(customVideoAddon8Name)</onclick>
-			</control>
-
-		</control>
-
 		<!--PVR options buttons (hidden)-->
 		<control type="group">
 			<visible>false</visible>

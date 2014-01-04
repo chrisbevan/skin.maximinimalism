@@ -14,7 +14,7 @@
 			<posy>0</posy>
 			<include>dimensionsFullscreen</include>
 			<texture>colors/black.png</texture>
-			<colordiffuse>ddffffff</colordiffuse>
+			<colordiffuse>eeffffff</colordiffuse>
 			<aspectratio>stretch</aspectratio>
 		</control>
 					
@@ -25,11 +25,11 @@
 						
 			<control type="group">
 		
-				<posx>col-9-begin</posx>
-				<posy>row-4-begin</posy>
+				<posx>col-2-begin</posx>
+				<posy>row-2-begin</posy>
 						
 				<control type="image">
-					<posx>-672</posx>
+					<posx>-168</posx>
 					<posy>44</posy>
 					<width>fullscreenWidth</width>
 					<height>1-row</height>
@@ -69,6 +69,7 @@
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
 					<ondown>7000</ondown>
+					<onright>5000</onright>
 					
 					<control type="radiobutton" id="6001">
 						<visible>stringcompare(skin.string(menuItemTypeFilter),video)</visible>
@@ -159,6 +160,126 @@
 					</control>
 										
 				</control>
+				
+				<!--remove option for current video addons -->
+				<control type="panel" id="5000">
+					<posx>9-col</posx>
+					<posy>2-row</posy>
+					<width>8-col</width>
+					<height>12-row</height>
+					<orientation>vertical</orientation>
+					<ondown>7000</ondown>
+					<onleft>6000</onleft>
+						
+					<itemlayout width="4-col" height="1-row">
+
+						<control type="label">
+							<posx>12</posx>
+							<posy>0</posy>
+							<width>4-col-gutter</width>
+							<font>itemTitle</font>
+							<info>ListItem.Label</info>
+							<textcolor>selected</textcolor>
+						</control>
+
+					</itemlayout>
+
+					<focusedlayout width="4-col" height="1-row">
+
+						<control type="image">
+							<posx>0</posx>
+							<posy>2</posy>
+							<width>4-col</width>
+							<height>53</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>colors/selected.png</texture>
+							<bordersize>0</bordersize>
+							<colordiffuse>FFFFFFFF</colordiffuse>
+						</control>
+						
+						<control type="label">
+							<posx>12</posx>
+							<posy>0</posy>
+							<width>4-col-gutter</width>
+							<font>itemTitle</font>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>        
+						</control>
+
+					</focusedlayout>
+
+					<content>                                                        
+						
+						<!--custom video addons-->
+						<item id="8">
+							<visible>!isempty(Skin.String(customVideoAddon1))</visible>
+							<label>$VAR[customVideoAddon1Title]</label>
+							<onclick>Skin.Reset(customVideoAddon1)</onclick>
+							<onclick>Skin.Reset(customVideoAddon1Type)</onclick>
+							<onclick>Skin.Reset(customVideoAddon1Name)</onclick>
+						</item>
+
+						<item id="9">
+							<visible>!isempty(Skin.String(customVideoAddon2))</visible>
+							<label>$VAR[customVideoAddon2Title]</label>
+							<onclick>Skin.Reset(customVideoAddon2)</onclick>
+							<onclick>Skin.Reset(customVideoAddon2Type)</onclick>
+							<onclick>Skin.Reset(customVideoAddon2Name)</onclick>
+						</item>
+
+						<item id="10">
+							<visible>!isempty(Skin.String(customVideoAddon3))</visible>
+							<label>$VAR[customVideoAddon3Title]</label>
+							<onclick>Skin.Reset(customVideoAddon3)</onclick>
+							<onclick>Skin.Reset(customVideoAddon3Type)</onclick>
+							<onclick>Skin.Reset(customVideoAddon3Name)</onclick>
+						</item>
+
+						<item id="11">
+							<visible>!isempty(Skin.String(customVideoAddon4))</visible>
+							<label>$VAR[customVideoAddon4Title]</label>
+							<onclick>Skin.Reset(customVideoAddon4)</onclick>
+							<onclick>Skin.Reset(customVideoAddon4Type)</onclick>
+							<onclick>Skin.Reset(customVideoAddon4Name)</onclick>
+						</item>
+
+						<item id="12">
+							<visible>!isempty(Skin.String(customVideoAddon5))</visible>
+							<label>$VAR[customVideoAddon5Title]</label>
+							<onclick>Skin.Reset(customVideoAddon5)</onclick>
+							<onclick>Skin.Reset(customVideoAddon5Type)</onclick>
+							<onclick>Skin.Reset(customVideoAddon5Name)</onclick>
+						</item>
+
+						<item id="13">
+							<visible>!isempty(Skin.String(customVideoAddon6))</visible>
+							<label>$VAR[customVideoAddon6Title]</label>
+							<onclick>Skin.Reset(customVideoAddon6)</onclick>
+							<onclick>Skin.Reset(customVideoAddon6Type)</onclick>
+							<onclick>Skin.Reset(customVideoAddon6Name)</onclick>
+						</item>
+
+						<item id="14">
+							<visible>!isempty(Skin.String(customVideoAddon7))</visible>
+							<label>$VAR[customVideoAddon7Title]</label>
+							<onclick>Skin.Reset(customVideoAddon7)</onclick>
+							<onclick>Skin.Reset(customVideoAddon7Type)</onclick>
+							<onclick>Skin.Reset(customVideoAddon7Name)</onclick>
+						</item>
+
+						<item id="15">
+							<visible>!isempty(Skin.String(customVideoAddon8))</visible>
+							<label>$VAR[customVideoAddon8Title]</label>
+							<onclick>Skin.Reset(customVideoAddon8)</onclick>
+							<onclick>Skin.Reset(customVideoAddon8Type)</onclick>
+							<onclick>Skin.Reset(customVideoAddon8Name)</onclick>
+						</item>
+
+					</content>
+
+				</control>
+				
 				
 				<!--Yes / No-->
 				<control type="panel" id="6021">

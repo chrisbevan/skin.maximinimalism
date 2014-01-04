@@ -46,13 +46,13 @@
 	<string id="30337">Order: Descending</string>
 	<string id="30338">Copy files</string>	
 	<string id="30339">TV Guide</string>	
-	<string id="30340">Synopsis</string>
+	<string id="30340">Title details</string>
 	<string id="30341">Unknown season</string>
 	<string id="30342">Unknown genre</string>
 	<string id="30343">Unknown year</string>
 	<string id="30344">Aspect</string>
 	<string id="30345">Launch addon</string>
-	<string id="30346">Hide Watched Active</string>
+	<string id="30346">Unwatched titles only</string>
 
 	<string id="30348">Playing</string>
 
@@ -96,9 +96,8 @@
 	<string id="31036">Refresh Library</string>
 	<string id="31037">Albums</string>
 	<string id="31038">Page</string>
-	<string id="31039">Remove menu item -</string>
 	
-	<string id="31041">Add Shortcut</string>
+	<string id="31041">Menu Shortcuts</string>
 			
 	<string id="31049">track(s)</string>
 	<string id="31050">shot(s)</string>
