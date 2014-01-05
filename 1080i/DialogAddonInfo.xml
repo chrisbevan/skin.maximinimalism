@@ -120,7 +120,7 @@
 					<posx>0</posx>
 					<posy>12</posy>
 					<width>5-col</width>
-					<height>5-row</height>
+					<height>6-row</height>
 					<itemgap>3</itemgap>
 					<orientation>vertical</orientation>
 
@@ -192,7 +192,7 @@
 
 					<content>
 						<item id="1">
-							<visible>!stringcompare(ListItem.Property(Addon.status), )</visible>
+							<visible>!substring(ListItem.Property(Addon.path),http,Left)</visible>
 							<label>30345</label>
 							<label2></label2>
 							<thumb>-</thumb>

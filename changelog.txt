@@ -1,7 +1,9 @@
 [B]0.9.0[/B]
 - [NEW] Video bookmarks (videoOSDBookmarks.xml)
-- [MODIFIED] options menu reworked
-- [NEW] Subtitles search reskinned. Tentative Gotham support added.
+- [MODIFIED] library view options menu reworked
+- [MODIFIED] custom menu item selection and deletion system revised
+- [NEW] Tentative Gotham support for subtitles added.
+- Various miscellaneous tweaks and tidying up
 
 [B]0.8.0[/B]
 - [MODIFIED] Default background revised

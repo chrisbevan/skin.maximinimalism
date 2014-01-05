@@ -35,7 +35,7 @@
 			<control type="label">
 				<description>Programme title</description>
 				<posx>0</posx>
-				<posy>53</posy>
+				<posy>58</posy>
 				<width>12-col</width>
 				<align>left</align>
 				<font>mediumStrong</font>
@@ -47,7 +47,7 @@
 			<control type="label">
 				<description>Channel name</description>
 				<posx>0</posx>
-				<posy>2-row</posy>
+				<posy>118</posy>
 				<width>12-col</width>
 				<font>itemTitleSmall</font>
 				<label>[B]$INFO[ListItem.starttime] - $INFO[ListItem.endtime] ($INFO[ListItem.duration])[/B]</label>

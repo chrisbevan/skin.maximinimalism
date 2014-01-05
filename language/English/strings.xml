@@ -130,14 +130,14 @@
 	
 	<string id="31082">Version</string>
 
-	<string id="31085">Video Addon</string>
-	<string id="31086">Music Addon</string>
+	<string id="31085">Add Video Addon</string>
+	<string id="31086">Add Music Addon</string>
 	
 	<string id="31088">Select Shortcut</string>
 	<string id="31089">File Browser</string>
 	<string id="31090">Set Shortcut Name</string>
-	<string id="31091">Video Playlist</string>
-	<string id="31092">Music Playlist</string>
+	<string id="31091">Add Video Playlist</string>
+	<string id="31092">Add Music Playlist</string>
 	<string id="31093">Favourite</string>
 
 	<!--misc to be eventually reincorporated-->
