@@ -724,12 +724,12 @@
 				
 				<animation type="Conditional" condition="controlgroup(62).hasfocus">
 		            <effect type="fade" start="0" end="100" time="300" />
-					<effect type="slide" start="-200" end="0" tween="sine" easing="out" time="400" />
+					<effect type="slide" start="-100" end="0" tween="sine" easing="out" time="400" />
 				</animation>
 				
-				<animation type="Conditional" condition="!controlgroup(62).hasfocus">
-		            <effect type="fade" start="100" end="0" time="300" />
-					<effect type="slide" start="0" end="-200" tween="sine" easing="out" time="400" />
+				<animation type="Conditional" condition="!controlgroup(62).hasfocus | Window.IsActive(5000)">
+					<effect type="fade" start="100" end="0" time="300" />
+					<effect type="slide" start="0" end="-100" tween="sine" easing="out" time="400" />
 				</animation>
 				
 				<control type="image">
@@ -817,7 +817,6 @@
 					</control>
 
 					<control type="button" id="102">
-						<visible>isempty(Skin.String(customVideoAddon1)) | isempty(Skin.String(customVideoAddon2)) | isempty(Skin.String(customVideoAddon3)) | isempty(Skin.String(customVideoAddon4)) | isempty(Skin.String(customVideoAddon5)) | isempty(Skin.String(customVideoAddon6)) | isempty(Skin.String(customVideoAddon7)) | isempty(Skin.String(customVideoAddon8))</visible>
 						<height>54</height>
 						<width>4-col</width>
 						<font>menuTitle</font>

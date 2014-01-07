@@ -467,17 +467,7 @@
 				<textcolor>selected</textcolor>
 				<label>$INFO[ListItem.label] [COLOR accented]$LOCALIZE[30213][/COLOR]</label>
 			</control>
-			
-			<control type="label">
-				<posx>col-1-begin</posx>
-				<posy>197</posy>
-				<width>24-col</width>
-				<align>left</align>
-				<font>regular</font>
-				<textcolor>selected</textcolor>
-				<label>$INFO[listitem.studio,, • ]$INFO[ListItem.year]</label>
-			</control>
-			
+					
 			<control type="panel" id="50">
 				<posx>col-1-begin</posx>
 				<posy>5-row</posy>

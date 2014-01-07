@@ -5,14 +5,23 @@
 	<onload>Skin.SetString(currentAddonSourceSlot,$VAR[customAddonSourceSlot])</onload>
 	<onload condition="stringcompare(skin.string(menuItemTypeFilter),video)">Skin.SetString(menuItemType,videoAddon)</onload>
 	<onload condition="stringcompare(skin.string(menuItemTypeFilter),audio)">Skin.SetString(menuItemType,audioAddon)</onload>
-    
+
 	<controls>
 											
 		<control type="group">
-	
 			<posx>col-1-begin</posx>
 			<posy>111</posy>
 			
+			<animation type="windowopen">
+				<effect type="fade" start="0" end="100" time="300" />
+	 			<effect type="slide" start="-100" end="0" tween="sine" easing="out" time="400" />
+			</animation>
+			
+			<animation type="windowclose">
+	            <effect type="fade" start="100" end="0" time="300" />
+				<effect type="slide" start="0" end="-100" tween="sine" easing="out" time="400" />
+			</animation>
+						
 			<!--titles-->
 			<control type="image">
 				<posx>-96</posx>
@@ -25,11 +34,23 @@
 			</control>
 			
 			<control type="label">
+				<visible>stringcompare(skin.string(menuItemTypeFilter),video)</visible>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>14-col</width>
 				<font>pageTitle</font>
 				<label>10006</label>
+				<textcolor>black</textcolor>
+				<shadowcolor>-</shadowcolor>
+			</control>
+			
+			<control type="label">
+				<visible>stringcompare(skin.string(menuItemTypeFilter),audio)</visible>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>14-col</width>
+				<font>pageTitle</font>
+				<label>249</label>
 				<textcolor>black</textcolor>
 				<shadowcolor>-</shadowcolor>
 			</control>
@@ -39,20 +60,21 @@
 				<posy>45</posy>
 				<width>24-col</width>
 				<font>regular</font>
-				<label>33063</label>
+				<label>31039</label>
 				<textcolor>black</textcolor>
 				<shadowcolor>-</shadowcolor>
 			</control>
 														
 			<!--set shortcut-->	
-			<control type="grouplist" id="6000">
+			<control type="grouplist" id="6000">			
 				<posx>-12</posx>
 				<posy>188</posy>
 				<width>4-col</width>
 				<height>2-row</height>
 				<itemgap>0</itemgap>
 				<ondown>5000</ondown>
-				
+				<onright>dialog.close(5000)</onright>
+								
 				<!--select a video addon-->
 				<control type="button" id="6001">
 					<visible>stringcompare(skin.string(menuItemTypeFilter),video)</visible>
@@ -69,7 +91,6 @@
 					<onclick>Skin.SetString(menuItemType,videoAddon)</onclick>
 					<onclick>$VAR[customVideoSourceSetType]</onclick>
 					<onclick>$VAR[customVideoSourceAction]</onclick>
-					<onclick>dialog.close(5000)</onclick>
 				</control>
 				
 				<!--select an audio addon-->
@@ -88,7 +109,6 @@
 					<onclick>Skin.SetString(menuItemType,audioAddon)</onclick>
 					<onclick>$VAR[customMusicSourceSetType]</onclick>
 					<onclick>$VAR[customMusicSourceAction]</onclick>
-					<onclick>dialog.close(5000)</onclick>
 				</control>
 
 				<!--select a video playlist-->
@@ -108,7 +128,6 @@
 					<onclick>$VAR[customVideoSourceSetType]</onclick>
 					<onclick>$VAR[customVideoSourceAction]</onclick>
 					<onclick>$VAR[customVideoSourceSetName]</onclick>
-					<onclick>dialog.close(5000)</onclick>
 				</control>
 				
 				<!--select an audio playlist-->
@@ -128,19 +147,19 @@
 					<onclick>$VAR[customMusicSourceSetType]</onclick>
 					<onclick>$VAR[customMusicSourceAction]</onclick>
 					<onclick>$VAR[customMusicSourceSetName]</onclick>
-					<onclick>dialog.close(5000)</onclick>
 				</control>
 									
 			</control>
 											
-			<!--current shortcut listing (onclick = remove)-->
+			<!--current shortcut listing (onclick = remove)-->			
 			<control type="panel" id="5000">
 				<posx>-12</posx>
-				<posy>6-row</posy>
+				<posy>7-row</posy>
 				<width>4-col</width>
 				<height>8-row</height>
 				<orientation>vertical</orientation>
 				<onup>6000</onup>
+				<onright>dialog.close(5000)</onright>
 					
 				<itemlayout width="4-col" height="1-row">
 
