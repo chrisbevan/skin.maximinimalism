@@ -261,7 +261,7 @@
 							
 				<control type="image">
 					<posx>0</posx>
-					<posy>-12</posy>
+					<posy>12</posy>
 					<width>12-col</width>
 					<height>486</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -301,7 +301,7 @@
 					<textcolor>selected</textcolor>
 					<shadowcolor>-</shadowcolor>
 					<scroll>true</scroll>
-					<label fallback="30340">$INFO[listitem.tvshowtitle,, • ]$INFO[listitem.season,Season]$INFO[listitem.duration, • , mins]</label>
+					<label>$INFO[listitem.tvshowtitle,, • ]$INFO[listitem.season,Season]$INFO[listitem.duration, • , mins]</label>
 				</control>
 								
 				<control type="label">

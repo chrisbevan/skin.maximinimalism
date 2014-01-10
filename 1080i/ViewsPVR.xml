@@ -347,7 +347,7 @@
 				<posy>-56</posy>
 				<width>21-col</width>
 				<height>11-row</height>
-				<timeblocks>20</timeblocks>
+				<timeblocks>30</timeblocks>
 				<rulerunit>6</rulerunit>
 				<onleft>9000</onleft>
 
@@ -474,7 +474,7 @@
 			
 			<!--focussed item-->
 			<control type="group">
-				<posx>4-col</posx>
+				<posx>0</posx>
 				<posy>603</posy>
 				
 				<control type="label">
@@ -491,7 +491,7 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>36</posy>
-					<width>17-col-gutter</width>
+					<width>21-col-gutter</width>
 					<font>small</font>
 					<textcolor>selected</textcolor>
 					<selectedcolor>selected</selectedcolor>

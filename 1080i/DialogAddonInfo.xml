@@ -33,14 +33,14 @@
 							
 		<!--About this addon-->		
 		<control type="group">
-			<posx>col-1-begin</posx>
+			<posx>col-5-begin</posx>
 			<posy>row-2-begin</posy>
 			
 			<!--animations-->
 			<include>modalDialogInOutVertical</include>
 			
 			<control type="image">
-				<posx>-96</posx>
+				<posx>-384</posx>
 				<posy>44</posy>
 				<width>fullscreenWidth</width>
 				<height>1-row</height>
@@ -85,7 +85,7 @@
 					<description>Addon Title</description>
 					<posx>0</posx>
 					<posy>3-row</posy>
-					<width>13-col-gutter</width>
+					<width>10-col-gutter</width>
 					<font>dialogTitle</font>
 					<label>$INFO[ListItem.Property(Addon.Name)]</label>
 				</control>
@@ -93,16 +93,16 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>4-row</posy>
-					<width>13-col-gutter</width>
+					<width>10-col-gutter</width>
 					<font>regularStrong</font>
-					<label>$LOCALIZE[21863] $INFO[ListItem.Property(Addon.Creator)] • $LOCALIZE[31082] $INFO[ListItem.Property(Addon.Version)]</label>
+					<label>$INFO[ListItem.Property(Addon.Creator)] • $LOCALIZE[31082] $INFO[ListItem.Property(Addon.Version)]</label>
 				</control>
 			
 				<control type="textbox" id="400">
 					<posx>0</posx>
 					<posy>5-row</posy>
 					<font>small</font>
-					<width>13-col-gutter</width>
+					<width>10-col-gutter</width>
 					<height>340</height>
 					<label>[B]$INFO[ListItem.Property(Addon.Description)][/B]</label>
 					<autoscroll delay="5000" time="1000" repeat="10000"></autoscroll>
@@ -118,7 +118,7 @@
 
 				<control type="list" id="8000">
 					<posx>0</posx>
-					<posy>12</posy>
+					<posy>0</posy>
 					<width>5-col</width>
 					<height>6-row</height>
 					<itemgap>3</itemgap>
