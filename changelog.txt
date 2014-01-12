@@ -3,6 +3,7 @@
 - [MODIFIED] library view options menu reworked
 - [MODIFIED] custom menu item selection / deletion system revised
 - [NEW] Tentative Gotham support for subtitles added.
+- [MODIFIED] Various PVR views and dialogs.
 - Various miscellaneous tweaks and tidying up
 
 [B]0.8.0[/B]

@@ -106,38 +106,38 @@
 								<visible>Library.HasContent(Music)</visible>
 								<label>133</label>
 								<label2></label2>
-								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 								<onclick>ReplaceWindow(MusicLibrary,Artists,return)</onclick>
+								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 							<item id="3">
 								<visible>Library.HasContent(Music)</visible>
 								<label>132</label>
 								<label2></label2>
-								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 								<onclick>ReplaceWindow(MusicLibrary,Albums,return)</onclick>
+								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 
 							<item id="4">
 								<visible>Library.HasContent(Music)</visible>
 								<label>135</label>
 								<label2></label2>
-								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 								<onclick>ReplaceWindow(MusicLibrary,Genres,return)</onclick>
+								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 
 							<item id="23">
 								<visible>Library.HasContent(Music)</visible>
 								<label>271</label>
 								<label2></label2>
-								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 								<onclick>ReplaceWindow(MusicLibrary,Top100,return)</onclick>
+								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 							</item>
 
 							<item id="5">
 								<label>136</label>
 								<label2></label2>
-								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 								<onclick>ActivateWindow(MusicFiles,Playlists,return)</onclick>
+								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 								<onclick>setFocus(9500)</onclick>
 							</item>
 
@@ -217,8 +217,8 @@
 							<!--final bits and bobs-->							
 							<item id="21">
 								<label>31010</label>
-								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 								<onclick>ReplaceWindow(MusicFiles,Addons,return)</onclick>
+								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 								<onclick>setfocus(9500)</onclick>	
 							</item>
 

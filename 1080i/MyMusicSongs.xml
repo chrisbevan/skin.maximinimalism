@@ -215,8 +215,8 @@
 							<!--final bits and bobs-->							
 							<item id="21">
 								<label>31010</label>
-								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 								<onclick>ReplaceWindow(MusicFiles,Addons,return)</onclick>
+								<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 								<onclick>setfocus(9500)</onclick>	
 							</item>
 

@@ -19,7 +19,7 @@
 			<posx>col-7-begin</posx>
 			<posy>row-4-begin</posy>
 			
-			<include>modalDialogInOutVertical</include>
+			<include>modalDialogInOut</include>
 					
 			<!--channel / duration-->
 			<control type="label">

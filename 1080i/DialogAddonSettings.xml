@@ -75,7 +75,7 @@
 			<control type="grouplist" id="2">
 				<posx>4-col</posx>
 				<posy>120</posy>
-				<width>12-col</width>
+				<width>12-col-gutter</width>
 				<height>11-row</height>
 				<onleft>9</onleft>
 				<onright>9001</onright>
