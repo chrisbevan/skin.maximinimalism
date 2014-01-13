@@ -392,12 +392,12 @@
 
 			<control type="epggrid" id="10">
 				<description>EPG Grid</description>
-				<posx>0</posx>
+				<posx>-12</posx>
 				<posy>-56</posy>
 				<width>21-col</width>
 				<height>11-row</height>
-				<timeblocks>30</timeblocks>
-				<rulerunit>6</rulerunit>
+				<timeblocks>40</timeblocks>
+				<rulerunit>12</rulerunit>
 				<onleft>9000</onleft>
 
 				<rulerlayout height="1-row" width="1-col">
@@ -419,29 +419,15 @@
 				<channellayout height="1-row" width="4-col-gutter">
 					
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
-						<width>48</width>
-						<height>48</height>
-						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>4-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="24,0,24,0">UIControls/listitemNF.png</texture>
+						<bordersize>0</bordersize>
+						<colordiffuse>99FFFFFF</colordiffuse>
 					</control>
-
-					<control type="label" id="1">
-						<posx>1-col</posx>
-						<posy>0</posy>
-						<width>3-col</width>
-						<font>itemTitle</font>
-						<textcolor>accented</textcolor>
-						<selectedcolor>accented</selectedcolor>
-						<shadowcolor>-</shadowcolor>
-						<label>$INFO[ListItem.ChannelName]</label>
-						<scroll>false</scroll>
-					</control>
-
-				</channellayout>
-
-				<focusedchannellayout height="1-row" width="280">
 					
 					<control type="image">
 						<posx>4</posx>
@@ -453,12 +439,48 @@
 					</control>
 
 					<control type="label" id="1">
-						<posx>1-col</posx>
+						<posx>60</posx>
 						<posy>0</posy>
-						<width>3-col</width>
+						<width>3-col-gutter</width>
 						<font>itemTitle</font>
 						<textcolor>selected</textcolor>
 						<selectedcolor>selected</selectedcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[ListItem.ChannelName]</label>
+						<scroll>false</scroll>
+					</control>
+
+				</channellayout>
+
+				<focusedchannellayout height="1-row" width="280">
+					
+					<control type="image">
+						<posx>0</posx>
+						<posy>2</posy>
+						<width>4-col</width>
+						<height>53</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="24,0,24,0">UIControls/listitemFO.png</texture>
+						<bordersize>0</bordersize>
+						<colordiffuse>ffFFFFFF</colordiffuse>
+					</control>
+					
+					<control type="image">
+						<posx>4</posx>
+						<posy>4</posy>
+						<width>48</width>
+						<height>48</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+					</control>
+
+					<control type="label" id="1">
+						<posx>60</posx>
+						<posy>0</posy>
+						<width>3-col-gutter</width>
+						<font>itemTitle</font>
+						<textcolor>black</textcolor>
+						<selectedcolor>black</selectedcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$INFO[ListItem.ChannelName]</label>
 						<scroll>false</scroll>

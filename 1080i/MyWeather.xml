@@ -72,7 +72,7 @@
 				<aspectratio>stretch</aspectratio>
 			</control>
 			
-			<!--panel begins-->
+			<!--content begins-->
 			<control type="panel" id="9000">
 				<posx>0</posx>
 				<posy>130</posy>
