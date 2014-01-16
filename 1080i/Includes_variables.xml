@@ -18,6 +18,19 @@
 		<value condition="container.content(artists) | container.content(genres)">53</value>
 		<value>9500</value>	
 	</variable>
+	
+	<variable name="seekSpeed">
+		<value condition="Player.Forwarding2x">FF 2x</value>
+		<value condition="Player.Forwarding4x">FF 4x</value>
+		<value condition="Player.Forwarding8x">FF 8x</value>
+		<value condition="Player.Forwarding16x">FF 16x</value>
+		<value condition="Player.Forwarding32x">FF 32x</value>
+		<value condition="Player.Rewinding2x">RW 2x</value>
+		<value condition="Player.Rewinding4x">RW 4x</value>
+		<value condition="Player.Rewinding8x">RW 8x</value>
+		<value condition="Player.Rewinding16x">RW 16x</value>
+		<value condition="Player.Rewinding32x">RW 32x</value>
+	</variable>
 
 	<!--fanart selection-->
 	<variable name="fanartType">

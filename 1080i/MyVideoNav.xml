@@ -767,9 +767,9 @@
 				<!--menu-->
 				<control type="grouplist" id="62">
 					<posx>-12</posx>
-					<posy>188</posy>
+					<posy>166</posy>
 					<width>4-col</width>
-					<height>10-row</height>
+					<height>11-row</height>
 					<itemgap>0</itemgap>
 					<onright>9000</onright>
 					
@@ -817,8 +817,38 @@
 						<texturenofocus>colors/unselected.png</texturenofocus>
 						<textoffsetx>12</textoffsetx>
 					</control>
+					
+					<control type="button" id="100">
+						<description>Change Channel Group (placeholder)</description>
+						<enable>false</enable>
+						<height>54</height>
+						<width>4-col</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<focusedcolor>selected</focusedcolor>
+						<texturefocus>colors/black.png</texturefocus>
+						<texturenofocus>colors/unselected.png</texturenofocus>
+						<textoffsetx>12</textoffsetx>
+						<label>$LOCALIZE[30212]  ◀ ▶</label>
+						<onclick>sendclick(32)</onclick>
+					</control>
+					
+					<control type="button" id="101">
+						<description>Timers / scheduler (PVR)</description>
+						<height>54</height>
+						<width>4-col</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<focusedcolor>selected</focusedcolor>
+						<texturefocus>colors/black.png</texturefocus>
+						<texturenofocus>colors/unselected.png</texturenofocus>
+						<textoffsetx>12</textoffsetx>
+						<label>30347</label>
+						<onclick>ActivateWindowAndFocus(pvr, 35,0, 9999,1)</onclick>
+					</control>
 
 					<control type="button" id="102">
+						<description>Menu shortcuts</description>
 						<height>54</height>
 						<width>4-col</width>
 						<font>menuTitle</font>
@@ -832,7 +862,7 @@
 						<onclick>ActivateWindow(5000)</onclick>
 					</control>
 
-					<control type="button" id="104">
+					<control type="button" id="103">
 						<description>Programs menu</description>
 						<height>54</height>
 						<width>4-col</width>
@@ -847,7 +877,7 @@
 						<onclick>ActivateWindow(programs,addons,return)</onclick>
 					</control>
 
-					<control type="button" id="105">
+					<control type="button" id="104">
 						<description>Files menu</description>
 						<height>54</height>
 						<width>4-col</width>
@@ -863,35 +893,6 @@
 						<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 					</control>
 					
-					<control type="radiobutton" id="14">
-						<description>Watched Toggle</description>
-						<label>20367</label>
-						<height>54</height>
-						<width>4-col</width>
-						<font>menuTitle</font>
-						<textcolor>black</textcolor>
-						<focusedcolor>selected</focusedcolor>
-						<textoffsetx>12</textoffsetx>
-						<texturefocus>colors/black.png</texturefocus>
-						<texturenofocus>colors/unselected.png</texturenofocus>
-					</control>
-
-					<control type="radiobutton" id="101">
-						<description>Filter</description>
-						<visible>Container.CanFilterAdvanced</visible>					
-						<label>587</label>
-						<height>54</height>
-						<width>4-col</width>
-						<font>menuTitle</font>
-						<textoffsetx>12</textoffsetx>
-						<textcolor>black</textcolor>
-						<focusedcolor>selected</focusedcolor>
-						<texturefocus>colors/black.png</texturefocus>
-						<texturenofocus>colors/unselected.png</texturenofocus>
-						<onclick>right</onclick>
-						<onclick>Filter</onclick>
-					</control>
-
 					<!-- Refresh library (Gotham only) -->
 					<control type="radiobutton" id="20">
 						<visible>SubString(System.BuildVersion,13,left)</visible>
@@ -907,7 +908,7 @@
 					</control>
 
 					<!--refresh library (Frodo)-->
-					<control type="button" id="103">
+					<control type="button" id="105">
 						<visible>SubString(System.BuildVersion,12,left)</visible>
 						<height>54</height>
 						<width>4-col</width>
@@ -922,6 +923,36 @@
 						<onclick>Notification(Updating Library,Searching for new content)</onclick>
 						<onclick>right</onclick>
 					</control>
+					
+					<control type="radiobutton" id="14">
+						<description>Watched Toggle</description>
+						<label>20367</label>
+						<height>54</height>
+						<width>4-col</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<focusedcolor>selected</focusedcolor>
+						<textoffsetx>12</textoffsetx>
+						<texturefocus>colors/black.png</texturefocus>
+						<texturenofocus>colors/unselected.png</texturenofocus>
+					</control>
+					
+					<control type="radiobutton" id="106">
+						<description>Filter</description>
+						<enable>Container.CanFilterAdvanced</enable>					
+						<label>587</label>
+						<height>54</height>
+						<width>4-col</width>
+						<font>menuTitle</font>
+						<textoffsetx>12</textoffsetx>
+						<textcolor>black</textcolor>
+						<focusedcolor>selected</focusedcolor>
+						<texturefocus>colors/black.png</texturefocus>
+						<texturenofocus>colors/unselected.png</texturenofocus>
+						<onclick>right</onclick>
+						<onclick>Filter</onclick>
+					</control>
+					
 
 				</control>
 				

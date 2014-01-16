@@ -1,10 +1,10 @@
 [B]0.9.0[/B]
 - [NEW] Video bookmarks (videoOSDBookmarks.xml)
-- [MODIFIED] library view options menu reworked
+- [MODIFIED] Sidebar options menu reworked
 - [MODIFIED] custom menu item selection / deletion system revised
 - [NEW] Tentative Gotham support for subtitles added.
-- [MODIFIED] Various PVR views and dialogs.
-- Various miscellaneous tweaks, fixes and general tidying up
+- [MODIFIED] PVR views and dialogs.
+- Numerous miscellaneous tweaks, fixes and general tidying up
 
 [B]0.8.0[/B]
 - [MODIFIED] Default background revised

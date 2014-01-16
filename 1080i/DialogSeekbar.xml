@@ -90,7 +90,26 @@
 				<label>$INFO[Player.Duration]</label>
 				<shadowcolor>-</shadowcolor>
 			</control>
-
+			
+		</control>
+		
+		<!--ff / rw speed indicators-->
+		<control type="group">
+			<posx>col-1-begin</posx>
+			<posy>row-15-begin</posy>
+		
+			<control type="label">
+				<visible>Player.Rewinding | Player.Forwarding</visible>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>24-col</width>
+				<align>center</align>
+				<font>veryLarge</font>
+				<textcolor>11ffffff</textcolor>
+				<label>$VAR[seekSpeed]</label>
+				<shadowcolor>-</shadowcolor>
+			</control>
+			
 		</control>
 		
 		<!--debugging-->

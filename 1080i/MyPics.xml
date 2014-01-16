@@ -298,7 +298,7 @@
 				<!--menu-->
 				<control type="grouplist" id="62">
 					<posx>-12</posx>
-					<posy>188</posy>
+					<posy>166</posy>
 					<width>4-col</width>
 					<height>10-row</height>
 					<itemgap>0</itemgap>
