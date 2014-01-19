@@ -242,119 +242,123 @@
 				<control type="group">
 					<posx>col-4-begin</posx>
 					<posy>row-2-begin</posy>
-
-					<!--source title-->
-					<control type="label" id="5678">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>14-col</width>
-						<font>pageTitle</font>
-						<label>$VAR[listTitle]</label>
-						<textcolor>selected</textcolor>
-					</control>
-
-					<control type="label">
-						<visible>SubString(skin.string(showRecentVideoItems),false) + isempty(container.foldername)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>14-col</width>
-						<font>pageTitle</font>
-						<label>31012</label>
-						<textcolor>selected</textcolor>
-					</control>
-
-					<!--source subtitle-->
-					<control type="label">
-						<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),false)</visible>
-						<posx>0</posx>
-						<posy>45</posy>
-						<width>auto</width>
-						<font>regular</font>
-						<label>$INFO[container.Numitems,, $LOCALIZE[31014]] </label>
-						<textcolor>selected</textcolor>
-					</control>
-
-					<control type="label">
-						<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),true)</visible>
-						<posx>0</posx>
-						<posy>45</posy>
-						<width>auto</width>
-						<font>regular</font>
-						<label>31013</label>
-						<textcolor>selected</textcolor>
-					</control>
-
-					<control type="label">
-						<visible>!IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),false)</visible>
-						<posx>0</posx>
-						<posy>45</posy>
-						<width>auto</width>
-						<font>regular</font>
-						<label>31052</label>
-						<textcolor>selected</textcolor>
-					</control>
 					
-					<!--tvshow name and season details (TVShows only)-->
 					<control type="group">
-						<visible>[container.content(episodes) | container.content(seasons)] + !Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentVideoItems),false)</visible>
-
-						<control type="label">
-							<posx>21-col</posx>
+						<visible>Control.IsVisible(9999)</visible>
+						
+						<!--source title-->
+						<control type="label" id="5678">
+							<posx>0</posx>
 							<posy>0</posy>
-							<width>8-col</width>
+							<width>14-col</width>
 							<font>pageTitle</font>
-							<align>right</align>
-							<label>$INFO[listitem.tvshowTitle]</label>
+							<label>$VAR[listTitle]</label>
 							<textcolor>selected</textcolor>
 						</control>
 
 						<control type="label">
-							<visible>container.content(episodes)</visible>
-							<posx>21-col</posx>
-							<posy>45</posy>
-							<width>24-col</width>
-							<font>regular</font>
-							<align>right</align>
-							<label fallback="30341">$INFO[ListItem.season,Season ,]</label>
-							<textcolor>selected</textcolor>
-						</control>
-
-						<control type="label">
-							<visible>container.content(seasons)</visible>
-							<posx>21-col</posx>
-							<posy>45</posy>
-							<width>24-col</width>
-							<font>regular</font>
-							<align>right</align>
-							<label fallback="30342">$INFO[ListItem.genre]</label>
-							<textcolor>selected</textcolor>
-						</control>
-					</control>
-
-					<!--addons-->
-					<control type="group">
-						<visible>container.content(episodes) + Substring(Container.folderpath,plugin)</visible>
-
-						<control type="label">
-							<posx>21-col</posx>
+							<visible>SubString(skin.string(showRecentVideoItems),false) + isempty(container.foldername)</visible>
+							<posx>0</posx>
 							<posy>0</posy>
-							<width>8-col</width>
+							<width>14-col</width>
 							<font>pageTitle</font>
-							<align>right</align>
-							<label>$INFO[listitem.tvshowtitle]</label>
+							<label>31012</label>
+							<textcolor>selected</textcolor>
+						</control>
+
+						<!--source subtitle-->
+						<control type="label">
+							<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),false)</visible>
+							<posx>0</posx>
+							<posy>45</posy>
+							<width>auto</width>
+							<font>regular</font>
+							<label>$INFO[container.Numitems,, $LOCALIZE[31014]] </label>
 							<textcolor>selected</textcolor>
 						</control>
 
 						<control type="label">
-							<posx>21-col</posx>
+							<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),true)</visible>
+							<posx>0</posx>
 							<posy>45</posy>
-							<width>24-col</width>
+							<width>auto</width>
 							<font>regular</font>
-							<align>right</align>
-							<label>$INFO[ListItem.season,Season ,]</label>
+							<label>31013</label>
 							<textcolor>selected</textcolor>
 						</control>
 
+						<control type="label">
+							<visible>!IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),false)</visible>
+							<posx>0</posx>
+							<posy>45</posy>
+							<width>auto</width>
+							<font>regular</font>
+							<label>31052</label>
+							<textcolor>selected</textcolor>
+						</control>
+					
+						<!--tvshow name and season details (TVShows only)-->
+						<control type="group">
+							<visible>[container.content(episodes) | container.content(seasons)] + !Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentVideoItems),false)</visible>
+
+							<control type="label">
+								<posx>21-col</posx>
+								<posy>0</posy>
+								<width>8-col</width>
+								<font>pageTitle</font>
+								<align>right</align>
+								<label>$INFO[listitem.tvshowTitle]</label>
+								<textcolor>selected</textcolor>
+							</control>
+
+							<control type="label">
+								<visible>container.content(episodes)</visible>
+								<posx>21-col</posx>
+								<posy>45</posy>
+								<width>24-col</width>
+								<font>regular</font>
+								<align>right</align>
+								<label fallback="30341">$INFO[ListItem.season,Season ,]</label>
+								<textcolor>selected</textcolor>
+							</control>
+
+							<control type="label">
+								<visible>container.content(seasons)</visible>
+								<posx>21-col</posx>
+								<posy>45</posy>
+								<width>24-col</width>
+								<font>regular</font>
+								<align>right</align>
+								<label fallback="30342">$INFO[ListItem.genre]</label>
+								<textcolor>selected</textcolor>
+							</control>
+						</control>
+
+						<!--addons-->
+						<control type="group">
+							<visible>container.content(episodes) + Substring(Container.folderpath,plugin)</visible>
+
+							<control type="label">
+								<posx>21-col</posx>
+								<posy>0</posy>
+								<width>8-col</width>
+								<font>pageTitle</font>
+								<align>right</align>
+								<label>$INFO[listitem.tvshowtitle]</label>
+								<textcolor>selected</textcolor>
+							</control>
+
+							<control type="label">
+								<posx>21-col</posx>
+								<posy>45</posy>
+								<width>24-col</width>
+								<font>regular</font>
+								<align>right</align>
+								<label>$INFO[ListItem.season,Season ,]</label>
+								<textcolor>selected</textcolor>
+							</control>
+
+						</control>
 					</control>
 
 				</control>
