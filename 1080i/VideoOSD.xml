@@ -1,6 +1,5 @@
 <window id="2901">
-	<!--Duplicate of DialogFullscreenInfo.xml-->
-	
+
 	<defaultcontrol always="true">8000</defaultcontrol>
 	<include>fadeInOut</include>
 
@@ -136,7 +135,7 @@
 						<item id="1">
 							<label>30344</label>
 							<thumb>-</thumb>
-							<onclick>action(AspectRatio)</onclick>
+							<onclick>action(aspectratio)</onclick>
 						</item>
 						<item id="2">
 							<label>292</label>
