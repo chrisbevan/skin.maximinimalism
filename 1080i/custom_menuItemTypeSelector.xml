@@ -91,6 +91,8 @@
 					<onclick>Skin.SetString(menuItemType,videoAddon)</onclick>
 					<onclick>$VAR[customVideoSourceSetType]</onclick>
 					<onclick>$VAR[customVideoSourceAction]</onclick>
+					<onclick>Skin.Reset(menuItemType)</onclick>
+					<onclick>Skin.SetString(currentAddonSourceSlot,$VAR[customAddonSourceSlot])</onclick>
 				</control>
 				
 				<!--select an audio addon-->
@@ -109,6 +111,8 @@
 					<onclick>Skin.SetString(menuItemType,audioAddon)</onclick>
 					<onclick>$VAR[customMusicSourceSetType]</onclick>
 					<onclick>$VAR[customMusicSourceAction]</onclick>
+					<onclick>Skin.Reset(menuItemType)</onclick>
+					<onclick>Skin.SetString(currentAddonSourceSlot,$VAR[customAddonSourceSlot])</onclick>
 				</control>
 
 				<!--select a video playlist-->
@@ -128,6 +132,8 @@
 					<onclick>$VAR[customVideoSourceSetType]</onclick>
 					<onclick>$VAR[customVideoSourceAction]</onclick>
 					<onclick>$VAR[customVideoSourceSetName]</onclick>
+					<onclick>Skin.Reset(menuItemType)</onclick>
+					<onclick>Skin.SetString(currentAddonSourceSlot,$VAR[customAddonSourceSlot])</onclick>
 				</control>
 				
 				<!--select an audio playlist-->
@@ -147,6 +153,8 @@
 					<onclick>$VAR[customMusicSourceSetType]</onclick>
 					<onclick>$VAR[customMusicSourceAction]</onclick>
 					<onclick>$VAR[customMusicSourceSetName]</onclick>
+					<onclick>Skin.Reset(menuItemType)</onclick>
+					<onclick>Skin.SetString(currentAddonSourceSlot,$VAR[customAddonSourceSlot])</onclick>
 				</control>
 									
 			</control>

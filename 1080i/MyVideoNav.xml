@@ -9,6 +9,27 @@
 	<controls>
 		
 		<include>globalBackground</include>
+		
+		<!--loading indicator-->
+		<control type="group">
+			<visible>!IntegerGreaterThan(container.numitems,0)</visible>
+			<posx>0</posx>
+			<posy>0</posy>
+			
+			<!--animations-->
+			<include>fadeInOut</include>
+
+			<control type="image">
+				<description>Busy animation</description>
+				<posx>12-col</posx>
+				<posy>row-8-begin</posy>
+				<width>3-col-gutter</width>
+				<height>3-col-gutter</height>
+				<texture>UIControls/busy.png</texture>
+				<aspectratio>keep</aspectratio>
+				<animation effect="rotate" start="0" end="-360" center="auto" time="1200" loop="true" condition="true">conditional</animation>
+			</control>
+		</control>
 
 		<!--page container group-->
 		<control type="group">
@@ -20,7 +41,7 @@
 
 			<!--shift page for certain modal dialogs-->
 			<include>modalDialogContentShift</include>
-
+			
 			<!--content provider-->                
 			<control type="group">
 
@@ -243,122 +264,99 @@
 					<posx>col-4-begin</posx>
 					<posy>row-2-begin</posy>
 					
-					<control type="group">
-						<visible>Control.IsVisible(9999)</visible>
-						
-						<!--source title-->
-						<control type="label" id="5678">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>14-col</width>
-							<font>pageTitle</font>
-							<label>$VAR[listTitle]</label>
-							<textcolor>selected</textcolor>
-						</control>
-
-						<control type="label">
-							<visible>SubString(skin.string(showRecentVideoItems),false) + isempty(container.foldername)</visible>
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>14-col</width>
-							<font>pageTitle</font>
-							<label>31012</label>
-							<textcolor>selected</textcolor>
-						</control>
-
-						<!--source subtitle-->
-						<control type="label">
-							<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),false)</visible>
-							<posx>0</posx>
-							<posy>45</posy>
-							<width>auto</width>
-							<font>regular</font>
-							<label>$INFO[container.Numitems,, $LOCALIZE[31014]] </label>
-							<textcolor>selected</textcolor>
-						</control>
-
-						<control type="label">
-							<visible>IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),true)</visible>
-							<posx>0</posx>
-							<posy>45</posy>
-							<width>auto</width>
-							<font>regular</font>
-							<label>31013</label>
-							<textcolor>selected</textcolor>
-						</control>
-
-						<control type="label">
-							<visible>!IntegerGreaterThan(container.Numitems,0) + SubString(skin.string(showRecentVideoItems),false)</visible>
-							<posx>0</posx>
-							<posy>45</posy>
-							<width>auto</width>
-							<font>regular</font>
-							<label>31052</label>
-							<textcolor>selected</textcolor>
-						</control>
+					<animation type="Conditional" condition="!IntegerGreaterThan(container.numitems,0)">
+						<effect type="fade" start="100" end="0" time="300" />
+					</animation>
 					
-						<!--tvshow name and season details (TVShows only)-->
-						<control type="group">
-							<visible>[container.content(episodes) | container.content(seasons)] + !Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentVideoItems),false)</visible>
+					<animation type="Conditional" condition="IntegerGreaterThan(container.numitems,0)">
+						<effect type="fade" start="0" end="100" time="300" />
+					</animation>
+																												
+					<!--source title-->
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<font>pageTitle</font>
+						<label>$VAR[listTitle]</label>
+						<textcolor>selected</textcolor>
+					</control>
 
-							<control type="label">
-								<posx>21-col</posx>
-								<posy>0</posy>
-								<width>8-col</width>
-								<font>pageTitle</font>
-								<align>right</align>
-								<label>$INFO[listitem.tvshowTitle]</label>
-								<textcolor>selected</textcolor>
-							</control>
+					<!--source subtitle-->
+					<control type="label">
+						<posx>0</posx>
+						<posy>45</posy>
+						<width>auto</width>
+						<font>regular</font>
+						<label>$VAR[listSubTitle]</label>
+						<textcolor>selected</textcolor>
+					</control>
+					
+				</control>
+				
+				<!--tvshow name and season details (TVShows only)-->
+				<control type="group">
+					<visible>[container.content(episodes) | container.content(seasons)] + !Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentVideoItems),false)</visible>
+					<posx>1824</posx>
+					<posy>row-2-begin</posy>
+					
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>8-col</width>
+						<font>pageTitle</font>
+						<align>right</align>
+						<label>$INFO[listitem.tvshowTitle]</label>
+						<textcolor>selected</textcolor>
+					</control>
 
-							<control type="label">
-								<visible>container.content(episodes)</visible>
-								<posx>21-col</posx>
-								<posy>45</posy>
-								<width>24-col</width>
-								<font>regular</font>
-								<align>right</align>
-								<label fallback="30341">$INFO[ListItem.season,Season ,]</label>
-								<textcolor>selected</textcolor>
-							</control>
+					<control type="label">
+						<visible>container.content(episodes)</visible>
+						<posx>0</posx>
+						<posy>45</posy>
+						<width>8-col</width>
+						<font>regular</font>
+						<align>right</align>
+						<label fallback="30341">$INFO[ListItem.season,Season ,]</label>
+						<textcolor>selected</textcolor>
+					</control>
 
-							<control type="label">
-								<visible>container.content(seasons)</visible>
-								<posx>21-col</posx>
-								<posy>45</posy>
-								<width>24-col</width>
-								<font>regular</font>
-								<align>right</align>
-								<label fallback="30342">$INFO[ListItem.genre]</label>
-								<textcolor>selected</textcolor>
-							</control>
-						</control>
+					<control type="label">
+						<visible>container.content(seasons)</visible>
+						<posx>0</posx>
+						<posy>45</posy>
+						<width>8-col</width>
+						<font>regular</font>
+						<align>right</align>
+						<label>$INFO[ListItem.genre]</label>
+						<textcolor>selected</textcolor>
+					</control>
+				</control>
 
-						<!--addons-->
-						<control type="group">
-							<visible>container.content(episodes) + Substring(Container.folderpath,plugin)</visible>
+				<!--addons-->
+				<control type="group">
+					<visible>container.content(episodes) + Substring(Container.folderpath,plugin)</visible>
+					<posx>1824</posx>
+					<posy>row-2-begin</posy>
+					
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>8-col</width>
+						<font>pageTitle</font>
+						<align>right</align>
+						<label>$INFO[listitem.tvshowtitle]</label>
+						<textcolor>selected</textcolor>
+					</control>
 
-							<control type="label">
-								<posx>21-col</posx>
-								<posy>0</posy>
-								<width>8-col</width>
-								<font>pageTitle</font>
-								<align>right</align>
-								<label>$INFO[listitem.tvshowtitle]</label>
-								<textcolor>selected</textcolor>
-							</control>
-
-							<control type="label">
-								<posx>21-col</posx>
-								<posy>45</posy>
-								<width>24-col</width>
-								<font>regular</font>
-								<align>right</align>
-								<label>$INFO[ListItem.season,Season ,]</label>
-								<textcolor>selected</textcolor>
-							</control>
-
-						</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>45</posy>
+						<width>24-col</width>
+						<font>regular</font>
+						<align>right</align>
+						<label>$INFO[ListItem.season,Season ,]</label>
+						<textcolor>selected</textcolor>
 					</control>
 
 				</control>
@@ -447,7 +445,7 @@
 									<control type="label">
 										<posx>12</posx>
 										<posy>-8</posy>
-										<width>252</width>
+										<width>339</width>
 										<font>itemTitleSmall</font>
 										<textcolor>selected</textcolor>
 										<label>$INFO[ListItem.Label]</label>
@@ -506,12 +504,13 @@
 									<control type="label">
 										<posx>12</posx>
 										<posy>-8</posy>
-										<width>252</width>
+										<width>339</width>
 										<font>itemTitleSmall</font>
 										<textcolor>black</textcolor>
 										<shadowcolor>-</shadowcolor>
 										<label>$INFO[ListItem.Label]</label>
 										<shadowcolor>-</shadowcolor>
+										<scroll>true</scroll>
 									</control>
 
 									<control type="label">

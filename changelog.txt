@@ -2,7 +2,6 @@
 - [NEW] Video bookmarks (videoOSDBookmarks.xml)
 - [MODIFIED] Sidebar options menu reworked
 - [MODIFIED] custom menu item selection / deletion system revised
-- [NEW] Tentative Gotham support for subtitles added.
 - [MODIFIED] PVR views and dialogs.
 - Numerous miscellaneous tweaks, fixes and general tidying up
 
