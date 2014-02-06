@@ -570,6 +570,34 @@
 						<onclick>ActivateWindow(MusicFiles,root)</onclick>
 						<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 					</control>
+					
+					<!--shuffle and party mode-->
+					<control type="button" id="105">
+						<description>Shuffle</description>
+						<height>54</height>
+						<width>4-col</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<focusedcolor>selected</focusedcolor>
+						<texturefocus>colors/black.png</texturefocus>
+						<texturenofocus>colors/unselected.png</texturenofocus>
+						<textoffsetx>12</textoffsetx>
+						<label>191</label>
+						<onclick>right</onclick>
+						<onclick>PlayerControl(random)</onclick>
+					</control>
+					
+					<control type="radiobutton" id="16">
+						<description>Party Mode!!</description>
+						<label>589</label>
+						<height>54</height>
+						<width>4-col</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<focusedcolor>selected</focusedcolor>
+						<texturefocus>colors/black.png</texturefocus>
+						<texturenofocus>colors/unselected.png</texturenofocus>
+					</control>
 
 				</control>
 			</control>

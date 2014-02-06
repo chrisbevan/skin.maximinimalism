@@ -396,6 +396,7 @@
 				<posy>-56</posy>
 				<width>21-col</width>
 				<height>11-row</height>
+				<progresstexture border="0,32,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>
 				<timeblocks>40</timeblocks>
 				<rulerunit>12</rulerunit>
 				<onleft>9000</onleft>

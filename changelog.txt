@@ -1,3 +1,7 @@
+[B]1.0.0[/B]
+- [MODIFIED] Various PVR tweaking
+- [NEW] Music / video scan progress indicator (thanks zznh)
+
 [B]0.9.0[/B]
 - [NEW] Video bookmarks (videoOSDBookmarks.xml)
 - [MODIFIED] Sidebar options menu reworked
