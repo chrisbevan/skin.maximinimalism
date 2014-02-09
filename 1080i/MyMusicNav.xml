@@ -719,6 +719,22 @@
 					<itemgap>0</itemgap>
 					<onright>9000</onright>
 
+					<control type="button" id="106">
+						<description>current playlist (if available)</description>
+						<enable>MusicPlayer.Offset(0).Exists</enable>
+						<height>54</height>
+						<width>4-col</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<focusedcolor>selected</focusedcolor>
+						<texturefocus>colors/black.png</texturefocus>
+						<texturenofocus>colors/unselected.png</texturenofocus>
+						<textoffsetx>12</textoffsetx>
+						<label>30351</label>
+						<onclick>right</onclick>
+						<onclick>activateWindow(musicplaylist)</onclick>
+					</control>
+					
 					<control type="button" id="101">
 						<description>Search</description>
 						<visible>System.HasAddon(script.globalsearch)</visible>

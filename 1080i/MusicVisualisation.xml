@@ -98,9 +98,10 @@
 					<description>Player Times + Next up</description>
 					<posx>4-col</posx>
 					<posy>184</posy>
-					<width>8-col</width>
+					<width>12-col</width>
 					<label>[B]$INFO[MusicPlayer.Time][/B] / [B]$INFO[MusicPlayer.Duration][/B]  [B]$LOCALIZE[19031][/B] $INFO[MusicPlayer.offset(1).Artist] : $INFO[MusicPlayer.offset(1).Title]</label>
 					<font>smallMedium</font>
+					<scroll>true</scroll>
 				</control>			
 
 			</control>
