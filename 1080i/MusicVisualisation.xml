@@ -53,7 +53,7 @@
 		
 			<control type="group">
 				<posx>col-1-begin</posx>
-				<posy>row-12-begin</posy>
+				<posy>678</posy>
 			
 				<control type="image">
 					<description>Music cover image</description>
@@ -95,14 +95,32 @@
 				</control>
 			
 				<control type="label">
-					<description>Player Times + Next up</description>
+					<description>playback time</description>
 					<posx>4-col</posx>
 					<posy>184</posy>
 					<width>12-col</width>
-					<label>[B]$INFO[MusicPlayer.Time][/B] / [B]$INFO[MusicPlayer.Duration][/B]  [B]$LOCALIZE[19031][/B] $INFO[MusicPlayer.offset(1).Artist] : $INFO[MusicPlayer.offset(1).Title]</label>
+					<label>[B]$INFO[MusicPlayer.Time][/B]</label>
 					<font>smallMedium</font>
 					<scroll>true</scroll>
-				</control>			
+				</control>
+				
+				<control type="progress">
+					<description>Progress Bar</description>
+					<posx>5-col</posx>
+					<posy>200</posy>
+					<width>6-col-gutter</width>				
+					<info>Player.Progress</info>
+				</control>	
+				
+				<control type="label">
+					<description>Duration</description>
+					<posx>11-col</posx>
+					<posy>184</posy>
+					<width>12-col</width>
+					<label>[B]$INFO[MusicPlayer.Duration][/B] | [B]$LOCALIZE[19031][/B] $INFO[MusicPlayer.offset(1).Artist] : $INFO[MusicPlayer.offset(1).Title]</label>
+					<font>smallMedium</font>
+					<scroll>true</scroll>
+				</control>		
 
 			</control>
 		</control>

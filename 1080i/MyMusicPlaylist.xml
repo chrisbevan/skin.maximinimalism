@@ -96,6 +96,7 @@
 							<item id="1">
 								<label>31005</label>
 								<label2></label2>
+								<onclick>ActivateWindow(musiclibrary)</onclick>
 								<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
 							</item>
 
@@ -543,6 +544,37 @@
 						<label>31003</label>
 						<onclick>right</onclick>
 						<onclick>ActivateWindow(programs,addons,return)</onclick>
+					</control>
+					
+					<!-- Refresh library (Gotham only) -->
+					<control type="radiobutton" id="20">
+						<visible>SubString(System.BuildVersion,13,left)</visible>
+						<description>Refresh Library</description>
+						<label>653</label>
+						<height>54</height>
+						<width>4-col</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<focusedcolor>selected</focusedcolor>
+						<texturefocus>colors/black.png</texturefocus>
+						<texturenofocus>colors/unselected.png</texturenofocus>
+					</control>
+
+					<!--refresh library (Frodo)-->
+					<control type="button" id="107">
+						<visible>SubString(System.BuildVersion,12,left)</visible>
+						<height>54</height>
+						<width>4-col</width>
+						<font>menuTitle</font>
+						<textcolor>black</textcolor>
+						<focusedcolor>selected</focusedcolor>
+						<texturefocus>colors/black.png</texturefocus>
+						<texturenofocus>colors/unselected.png</texturenofocus>
+						<textoffsetx>12</textoffsetx>
+						<label>653</label>
+						<onclick>UpdateLibrary(music)</onclick>
+						<onclick>Notification(Updating Library,Searching for new content)</onclick>
+						<onclick>right</onclick>
 					</control>
 
 					<control type="button" id="104">
