@@ -9,6 +9,7 @@
 
 		<include>fadeInOut</include>
 		<include>globalBackground</include>
+		<include>nowRecording</include>
 		
 		<!--loading indicator-->
 		<control type="group">
@@ -821,6 +822,8 @@
 						<focusedcolor>selected</focusedcolor>
 						<texturefocus>colors/black.png</texturefocus>
 						<texturenofocus>colors/unselected.png</texturenofocus>
+						<textureradiofocus>-</textureradiofocus>
+						<textureradionofocus>-</textureradionofocus>
 					</control>
 
 					<!--refresh library (Frodo)-->
