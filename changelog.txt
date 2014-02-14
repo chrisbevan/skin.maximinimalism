@@ -1,4 +1,4 @@
-[B]1.0.0[/B]
+[B]0.9.5[/B]
 - [MODIFIED] Various PVR tweaking
 - [NEW] Music / video scan progress indicator (thanks zznh)
 - [NEW] View current music playlist (accessible from options menu in music section)
