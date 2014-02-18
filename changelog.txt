@@ -1,3 +1,6 @@
+[B]0.1.0[/B]
+- [NEW] Unwatched / new tvshow episode flag (thanks postdeath)
+
 [B]0.9.5[/B]
 - [MODIFIED] Various PVR tweaking
 - [NEW] Music / video scan progress indicator (thanks zznh)

@@ -75,12 +75,12 @@
 	<string id="31008">Recording</string>
 	<string id="31009">No plot info available</string>
 	<string id="31010">All Addons</string>
-	
+	<string id="31011">Season</string>
 	<string id="31012">Movies and TVShows</string>
 	<string id="31013">Latest content</string>
 	<string id="31014">title(s)</string>
 	<string id="31017">Channels</string>
-	
+	<string id="31018">mins</string>
 	<string id="31019">Open playlist</string>
 	<string id="31020">Save playlist</string>
 	<string id="31021">Clear playlist</string>
@@ -98,7 +98,7 @@
 	<string id="31037">Albums</string>
 	<string id="31038">Page</string>
 	<string id="31039">Shortcuts</string>
-	
+	<string id="31040">Episode</string>
 	<string id="31041">Menu Shortcuts</string>
 			
 	<string id="31049">track(s)</string>

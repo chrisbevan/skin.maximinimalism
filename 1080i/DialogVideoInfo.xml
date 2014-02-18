@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="2003">
 	<defaultcontrol always="true">8000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
@@ -102,7 +103,7 @@
 					<align>left</align>
 					<font>itemTitleSmall</font>
 					<textcolor>selected</textcolor>
-					<label>[B]$INFO[ListItem.year,,]$INFO[listitem.director, • Dir. ,]$INFO[listitem.genre, • ,][/B]</label>
+					<label>[B]$INFO[ListItem.year,,]$INFO[listitem.director, / Dir. ,]$INFO[listitem.MPAA, / ,][/B]</label>
 				</control>
 						
 				<!--synopsis-->			
@@ -110,7 +111,7 @@
 					<posx>0</posx>
 					<posy>122</posy>
 					<font>small</font>
-					<width>18-col-gutter</width>
+					<width>15-col</width>
 					<align>left</align>
 					<textcolor>selected</textcolor>
 					<height>174</height>
