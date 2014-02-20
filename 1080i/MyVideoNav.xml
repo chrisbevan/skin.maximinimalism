@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="6">
 	<defaultcontrol always="false">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
@@ -531,28 +532,28 @@
 							<content>
 								<item id="1">
 									<label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
-									<label2>$INFO[Window(Home).Property(RecentMovie.1.Year),, •] $INFO[Window(Home).Property(RecentMovie.1.Runtime),, mins]</label2>
+									<label2>$INFO[Window(Home).Property(RecentMovie.1.Year),, •] $INFO[Window(Home).Property(RecentMovie.1.Runtime),, $LOCALIZE[31018]]</label2>
 									<thumb>$INFO[Window(Home).Property(RecentMovie.1.art(fanart))]</thumb>
 									<onclick>$INFO[Window(Home).Property(RecentMovie.1.Play)]</onclick>
 								</item>
 								<item id="2">
 									<visible>!isempty(Window(Home).Property(RecentMovie.2.Title))</visible>
 									<label>$INFO[Window(Home).Property(RecentMovie.2.Title)]</label>
-									<label2>$INFO[Window(Home).Property(RecentMovie.2.Year),, •] $INFO[Window(Home).Property(RecentMovie.2.Runtime),, mins]</label2>
+									<label2>$INFO[Window(Home).Property(RecentMovie.2.Year),, •] $INFO[Window(Home).Property(RecentMovie.2.Runtime),, $LOCALIZE[31018]]</label2>
 									<thumb>$INFO[Window(Home).Property(RecentMovie.2.art(fanart))]</thumb>
 									<onclick>$INFO[Window(Home).Property(RecentMovie.2.Play)]</onclick>
 								</item>
 								<item id="3">
 									<visible>!isempty(Window(Home).Property(RecentMovie.3.Title))</visible>
 									<label>$INFO[Window(Home).Property(RecentMovie.3.Title)]</label>
-									<label2>$INFO[Window(Home).Property(RecentMovie.3.Year),, •] $INFO[Window(Home).Property(RecentMovie.3.Runtime),, mins]</label2>
+									<label2>$INFO[Window(Home).Property(RecentMovie.3.Year),, •] $INFO[Window(Home).Property(RecentMovie.3.Runtime),, $LOCALIZE[31018]]</label2>
 									<thumb>$INFO[Window(Home).Property(RecentMovie.3.art(fanart))]</thumb>
 									<onclick>$INFO[Window(Home).Property(RecentMovie.3.Play)]</onclick>
 								</item>
 								<item id="4">
 									<visible>!isempty(Window(Home).Property(RecentMovie.4.Title))</visible>
 									<label>$INFO[Window(Home).Property(RecentMovie.4.Title)]</label>
-									<label2>$INFO[Window(Home).Property(RecentMovie.4.Year),, •] $INFO[Window(Home).Property(RecentMovie.4.Runtime),, mins]</label2>
+									<label2>$INFO[Window(Home).Property(RecentMovie.4.Year),, •] $INFO[Window(Home).Property(RecentMovie.4.Runtime),, $LOCALIZE[31018]]</label2>
 									<thumb>$INFO[Window(Home).Property(RecentMovie.4.art(fanart))]</thumb>
 									<onclick>$INFO[Window(Home).Property(RecentMovie.4.Play)]</onclick>
 								</item>
@@ -561,28 +562,28 @@
 								<item id="10">
 									<visible>!isempty(Window(Home).Property(RecentEpisode.1.Title))</visible>
 									<label>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)]</label>
-									<label2>$INFO[Window(Home).Property(RecentEpisode.1.Season),Season , •] $INFO[Window(Home).Property(RecentEpisode.1.Episode),Episode ,]</label2>
+									<label2>$INFO[Window(Home).Property(RecentEpisode.1.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.1.Episode),$LOCALIZE[31040] ,]</label2>
 									<thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(thumb))]</thumb>
 									<onclick>$INFO[Window(Home).Property(RecentEpisode.1.Play)]</onclick>
 								</item>
 								<item id="11">
 									<visible>!isempty(Window(Home).Property(RecentEpisode.2.Title))</visible>
 									<label>$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle)]</label>
-									<label2>$INFO[Window(Home).Property(RecentEpisode.2.Season),Season , •] $INFO[Window(Home).Property(RecentEpisode.2.Episode),Episode ,]</label2>
+									<label2>$INFO[Window(Home).Property(RecentEpisode.2.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.2.Episode),$LOCALIZE[31040] ,]</label2>
 									<thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(thumb))]</thumb>
 									<onclick>$INFO[Window(Home).Property(RecentEpisode.2.Play)]</onclick>
 								</item>
 								<item id="12">
 									<visible>!isempty(Window(Home).Property(RecentEpisode.3.Title))</visible>
 									<label>$INFO[Window(Home).Property(RecentEpisode.3.TVshowTitle)]</label>
-									<label2>$INFO[Window(Home).Property(RecentEpisode.3.Season),Season , •] $INFO[Window(Home).Property(RecentEpisode.3.Episode),Episode ,]</label2>
+									<label2>$INFO[Window(Home).Property(RecentEpisode.3.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.3.Episode),$LOCALIZE[31040] ,]</label2>
 									<thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(thumb))]</thumb>
 									<onclick>$INFO[Window(Home).Property(RecentEpisode.3.Play)]</onclick>
 								</item>
 								<item id="13">
 									<visible>!isempty(Window(Home).Property(RecentEpisode.4.Title))</visible>
 									<label>$INFO[Window(Home).Property(RecentEpisode.4.TVshowTitle)]</label>
-									<label2>$INFO[Window(Home).Property(RecentEpisode.4.Season),Season , •] $INFO[Window(Home).Property(RecentEpisode.4.Episode),Episode ,]</label2>
+									<label2>$INFO[Window(Home).Property(RecentEpisode.4.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.4.Episode),$LOCALIZE[31040] ,]</label2>
 									<thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(thumb))]</thumb>
 									<onclick>$INFO[Window(Home).Property(RecentEpisode.4.Play)]</onclick>
 								</item>
@@ -926,7 +927,6 @@
 						<textoffsetx>12</textoffsetx>
 						<label>653</label>
 						<onclick>UpdateLibrary(video)</onclick>
-						<onclick>Notification(Updating Library,Searching for new content)</onclick>
 						<onclick>right</onclick>
 					</control>
 					

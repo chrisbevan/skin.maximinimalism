@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="false">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
@@ -635,7 +636,6 @@
 						<textoffsetx>12</textoffsetx>
 						<label>653</label>
 						<onclick>UpdateLibrary(video)</onclick>
-						<onclick>Notification(Updating Library,Searching for new content)</onclick>
 						<onclick>right</onclick>
 					</control>
 					

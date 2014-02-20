@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	
 	<!--two col list (as per music artist view)-->
@@ -262,6 +263,18 @@
 						<label>$VAR[itemDetail]</label>
 					</control>
 					
+					<!--new episodes available flag (tvshows only)-->
+					<control type="label">
+						<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+						<posx>36r</posx>
+						<posy>-2</posy>
+						<width>40</width>
+						<font>symbol</font>
+						<textcolor>selected</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label></label>
+					</control>
+										
 					<control type="label">
 						<visible>!isempty(ListItem.playcount)</visible>
 						<posx>36r</posx>
@@ -318,6 +331,18 @@
 						<textcolor>black</textcolor>
 						<shadowcolor>-</shadowcolor>
 						<label>$VAR[itemDetail]</label>
+					</control>
+					
+					<!--new episodes available flag (tvshows only)-->
+					<control type="label">
+						<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+						<posx>36r</posx>
+						<posy>-2</posy>
+						<width>40</width>
+						<font>symbol</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label></label>
 					</control>
 					
 					<control type="label">
