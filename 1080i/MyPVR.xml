@@ -511,7 +511,7 @@
 						<texturenofocus>colors/unselected.png</texturenofocus>
 						<textoffsetx>12</textoffsetx>
 						<label>103</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</control>
 
 					<control type="togglebutton" id="102">
@@ -529,7 +529,7 @@
 						<alttexturefocus>colors/black.png</alttexturefocus>
 						<texturenofocus>colors/unselected.png</texturenofocus>
 						<textoffsetx>12</textoffsetx>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</control>
 					
 					<control type="button" id="103">

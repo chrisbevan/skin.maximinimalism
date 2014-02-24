@@ -63,6 +63,38 @@
 				<textcolor>black</textcolor>
 				<shadowcolor>-</shadowcolor>
 			</control>
+			
+			<!--settings level button (Gotham only)-->
+			<control type="group">
+				<visible>SubString(System.BuildVersion,13,left)</visible>
+				
+				<control type="label">
+					<posx>300</posx>
+					<posy>47</posy>
+					<width>5-col</width>
+					<font>pageTitle</font>
+					<label>$LOCALIZE[30356]:</label>
+					<textcolor>black</textcolor>
+					<shadowcolor>-</shadowcolor>
+				</control>
+			
+				<control type="button" id="20">
+					<posx>600</posx>
+					<posy>47</posy>
+					<align>left</align>
+					<aligny>top</aligny>
+					<height>50</height>
+					<font>pageTitle</font>
+					<label>$LOCALIZE[10037]</label>
+					<textcolor>black</textcolor>
+					<focusedcolor>selected</focusedcolor>
+					<texturefocus>colors/black.png</texturefocus>
+					<textoffsetx>12</textoffsetx>
+					<textoffsety>-6</textoffsety>
+					<onclick>SettingsLevelChange</onclick>
+					<ondown>5</ondown>
+				</control>	
+			</control>
 									
 			<!--Category submenu-->		
 			<control type="grouplist" id="3">
@@ -73,8 +105,7 @@
 				<height>14-row</height>
 				<onleft>9000</onleft>
 				<onright>5</onright>
-				<onup>3</onup>
-				<ondown>20</ondown>
+				<onup>20</onup>
 				<orientation>vertical</orientation>
 			</control>
 					
@@ -86,7 +117,7 @@
 				<height>11-row</height>
 				<onleft>3</onleft>
 				<onright>3</onright>
-				<onup>5</onup>
+				<onup>20</onup>
 				<ondown>5</ondown>
 				<orientation>vertical</orientation>
 				<itemgap>3</itemgap>
@@ -125,39 +156,7 @@
 				<textoffsetx>12</textoffsetx>
 				<textoffsety>8</textoffsety>
 			</control>
-			
-			<!--settings level button (Gotham only)-->
-			<control type="group">
-				<visible>SubString(System.BuildVersion,13,left)</visible>
-				
-				<control type="label">
-					<posx>12</posx>
-					<posy>11-row</posy>
-					<width>4-col</width>
-					<font>smallMedium</font>
-					<label>30356</label>
-					<textcolor>selected</textcolor>
-					<shadowcolor>-</shadowcolor>
-				</control>
-			
-				<control type="button" id="20">
-					<posx>0</posx>
-					<posy>672</posy>
-					<align>left</align>
-					<aligny>top</aligny>
-					<height>54</height>
-					<font>menuTitle</font>
-					<label>10037</label>
-					<textcolor>selected</textcolor>
-					<focusedcolor>black</focusedcolor>
-					<texturefocus>colors/selected.png</texturefocus>
-					<textoffsetx>12</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onclick>SettingsLevelChange</onclick>
-					<onup>3</onup>
-				</control>	
-			</control>	
-			
+						
 		</control>
 
 		<!--debugging-->

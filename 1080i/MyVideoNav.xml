@@ -790,7 +790,7 @@
 						<texturenofocus>colors/unselected.png</texturenofocus>
 						<textoffsetx>12</textoffsetx>
 						<label>137</label>
-						<onclick>RunScript(script.globalsearch,movies=true&tvshows=true&episodes=true)</onclick>
+						<onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true)</onclick>
 						<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
 					</control>
 

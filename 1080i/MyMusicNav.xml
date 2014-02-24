@@ -118,11 +118,19 @@
 								<label2></label2>
 								<onclick>XBMC.PlayDVD()</onclick>
 							</item>
-							
+														
 							<item id="1">
 								<label>31005</label>
 								<label2></label2>
 								<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
+							</item>
+							
+							<!--radio (PVR only)-->
+							<item id="27">
+								<visible>System.GetBool(pvrmanager.enabled)</visible>
+								<label>19021</label>
+								<label2></label2>
+								<onclick>noop</onclick>
 							</item>
 
 							<item id="2">
@@ -749,7 +757,7 @@
 						<texturenofocus>colors/unselected.png</texturenofocus>
 						<textoffsetx>12</textoffsetx>
 						<label>137</label>
-						<onclick>RunScript(script.globalsearch,artists=true&albums=true)</onclick>
+						<onclick>RunScript(script.globalsearch,artists=true&amp;albums=true)</onclick>
 						<onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
 					</control>
 
