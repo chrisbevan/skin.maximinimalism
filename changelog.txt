@@ -1,5 +1,6 @@
 [B]0.1.0[/B]
 - [NEW] Unwatched / new tvshow episode flag (thanks postdeath)
+- [MODIFIED] Settings level indicator (Gotham builds) adjusted
 
 [B]0.9.5[/B]
 - [MODIFIED] Various PVR tweaking

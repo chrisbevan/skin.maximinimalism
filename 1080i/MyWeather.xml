@@ -182,7 +182,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day0.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day0.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 					<item id="2">
@@ -194,7 +194,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day1.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day1.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 					<item id="3">
@@ -206,7 +206,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day2.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day2.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 					<item id="4">
@@ -218,7 +218,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day3.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day3.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 					<item id="5">
@@ -230,7 +230,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day4.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day4.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 				</content>

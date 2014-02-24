@@ -120,7 +120,7 @@
 						<label2>V. $INFO[System.BuildVersion][CR]$INFO[System.BuildDate]</label2>
 						<property name="itemIcon">></property>
 						<thumb>-</thumb>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 					<item id="2">
@@ -129,7 +129,7 @@
 						<label2>$INFO[System.InternetState][CR]IP $INFO[Network.IPAddress][CR]MAC $INFO[Network.MacAddress]</label2>
 						<property name="itemIcon">></property>
 						<thumb>-</thumb>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 					<item id="3">
@@ -138,7 +138,7 @@
 						<label2>$INFO[System.TotalSpace] Total[CR]$INFO[System.FreeSpace] Free[CR]Temp $INFO[System.HddTemperature]$INFO[System.TemperatureUnits]</label2>
 						<property name="itemIcon">></property>
 						<thumb>-</thumb>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 					<item id="4">
@@ -147,7 +147,7 @@
 						<label2>$INFO[System.Memory(total)] Total[CR]$INFO[System.FreeMemory] / $INFO[System.Memory(free.percent)] free</label2>
 						<property name="itemIcon">></property>
 						<thumb>-</thumb>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 					<item id="5">
@@ -156,7 +156,7 @@
 						<label2>$INFO[System.CpuFrequency][CR]Temp $INFO[System.CPUTemperature]</label2>
 						<property name="itemIcon">></property>
 						<thumb>-</thumb>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 					<item id="6">
@@ -165,7 +165,7 @@
 						<label2>$INFO[System.ScreenWidth] x $INFO[System.ScreenHeight][CR]$INFO[System.FPS] FPS</label2>
 						<property name="itemIcon">></property>
 						<thumb>-</thumb>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 					<item id="7">
@@ -174,7 +174,7 @@
 						<label2>Movies: $INFO[Window(Home).Property(Movies.Count)][CR]TV Shows: $INFO[Window(Home).Property(TVShows.Count)][CR]Albums: $INFO[Window(Home).Property(Music.AlbumsCount)]</label2>
 						<property name="itemIcon">></property>
 						<thumb>-</thumb>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					
 					<item id="8">
@@ -183,7 +183,7 @@
 						<label2>$INFO[Pvr.BackendName][CR]$INFO[Pvr.BackendDiskSpace]</label2>
 						<property name="itemIcon">></property>
 						<thumb>-</thumb>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>	
 
 				</content>

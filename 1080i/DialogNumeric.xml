@@ -126,7 +126,7 @@
 				<font>buttonTitle</font>
 			</control>
 
-			<--row 2-->
+			<!--row 2-->
 			<control type="button" id="14">
 				<description>4 button</description>
 				<label>12314</label>

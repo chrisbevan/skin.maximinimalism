@@ -599,7 +599,7 @@
 						<visible>false</visible>
 					</control>
 										
-					<--found episodes-->
+					<!--found episodes-->
 					<control type="panel" id="141">
 						<posx>0</posx>
 						<posy>1-row</posy>
