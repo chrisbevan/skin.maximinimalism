@@ -83,22 +83,22 @@
     <!--custom addon handling-->
     <!--video-->
     <variable name="customAddonSourceSlot">
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon1)">video1</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon2)">video2</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon3)">video3</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon4)">video4</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon5)">video5</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon6)">video6</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon7)">video7</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon8)">video8</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon1)">audio1</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon2)">audio2</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon3)">audio3</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon4)">audio4</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon5)">audio5</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon6)">audio6</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon7)">audio7</value>
-        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon8)">audio8</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon1))">video1</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon2))">video2</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon3))">video3</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon4))">video4</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon5))">video5</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon6))">video6</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon7))">video7</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),video) + isempty(Skin.String(customVideoAddon8))">video8</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon1))">audio1</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon2))">audio2</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon3))">audio3</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon4))">audio4</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon5))">audio5</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon6))">audio6</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon7))">audio7</value>
+        <value condition="stringcompare(Skin.String(menuItemTypeFilter),audio) + isempty(Skin.String(customMusicAddon8))">audio8</value>
     </variable>
     <variable name="customVideoSourceAction">
         <value condition="stringcompare(Skin.String(currentAddonSourceSlot),video1) + stringcompare(Skin.String(menuItemType),videoAddon)">Skin.SetAddon(customVideoAddon1,xbmc.addon.video)</value>

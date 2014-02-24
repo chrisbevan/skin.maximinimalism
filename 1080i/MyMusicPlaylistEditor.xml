@@ -52,7 +52,6 @@
                     <posy>1-row</posy>
                     <width>10-col</width>
                     <height>12-row</height>
-                    <onleft>-</onleft>
                     <onright>100</onright>
                     <scrolltime>200</scrolltime>
                     <itemlayout height="1-row" width="10-col">
