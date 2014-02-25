@@ -227,7 +227,7 @@
                     <item id="3">
                         <visible>Control.IsEnabled(415)</visible>
                         <description>New Folder Button</description>
-                        <label>30207</label>
+                        <label>31048</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(126,415)</onclick>

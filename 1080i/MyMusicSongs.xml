@@ -417,7 +417,7 @@
                         <texturefocus>colors/black.png</texturefocus>
                         <texturenofocus>colors/unselected.png</texturenofocus>
                         <textoffsetx>12</textoffsetx>
-                        <label>30351</label>
+                        <label>31123</label>
                         <onclick>right</onclick>
                         <onclick>activateWindow(musicplaylist)</onclick>
                     </control>
@@ -450,8 +450,8 @@
                     </control>
                     <control type="togglebutton" id="4">
                         <description>Sort asc</description>
-                        <label>30336</label>
-                        <altlabel>30337</altlabel>
+                        <label>31109</label>
+                        <altlabel>31110</altlabel>
                         <align>left</align>
                         <height>54</height>
                         <width>4-col</width>

@@ -184,7 +184,7 @@
                         <onclick>sendclick(2003,8)</onclick>
                     </item>
                     <item id="3">
-                        <label>30213</label>
+                        <label>31074</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>Skin.SetString(showcast,true)</onclick>
@@ -384,7 +384,7 @@
                 <align>left</align>
                 <font>dialogTitle</font>
                 <textcolor>selected</textcolor>
-                <label>$INFO[ListItem.label] [COLOR accented]$LOCALIZE[30213][/COLOR]</label>
+                <label>$INFO[ListItem.label] [COLOR accented]$LOCALIZE[31074][/COLOR]</label>
             </control>
             <control type="panel" id="50">
                 <posx>col-1-begin</posx>
@@ -449,7 +449,7 @@
                 <texturefocus>colors/selected.png</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <textoffsetx>12</textoffsetx>
-                <label>◀  $LOCALIZE[30217]</label>
+                <label>◀  $LOCALIZE[31081]</label>
                 <onclick>Skin.SetString(showcast,false)</onclick>
                 <onclick>setfocus(8000)</onclick>
                 <onup>7000</onup>

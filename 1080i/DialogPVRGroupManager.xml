@@ -275,21 +275,21 @@
                 <content>
                     <item id="1">
                         <description>Add group</description>
-                        <label>30226</label>
+                        <label>31099</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(26)</onclick>
                     </item>
                     <item id="2">
                         <description>Rename Group</description>
-                        <label>30227</label>
+                        <label>31100</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(27)</onclick>
                     </item>
                     <item id="3">
                         <description>Delete Group</description>
-                        <label>30228</label>
+                        <label>31101</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(28)</onclick>

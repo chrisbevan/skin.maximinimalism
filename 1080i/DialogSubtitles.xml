@@ -116,7 +116,7 @@
                             <textcolor>selected</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>30349</label>
+                            <label>31121</label>
                         </control>
                         <!--sync icon-->
                         <control type="label">
@@ -128,7 +128,7 @@
                             <textcolor>selected</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>30350</label>
+                            <label>31122</label>
                         </control>
                     </itemlayout>
                     <focusedlayout width="16-col" height="1-row">
@@ -185,7 +185,7 @@
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>30349</label>
+                            <label>31121</label>
                         </control>
                         <!--sync icon-->
                         <control type="label">
@@ -197,7 +197,7 @@
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>30350</label>
+                            <label>31122</label>
                         </control>
                     </focusedlayout>
                 </control>

@@ -274,7 +274,7 @@
                     <height>1-row</height>
                     <font>itemTitle</font>
                     <textcolor>selected</textcolor>
-                    <label>30203</label>
+                    <label>31044</label>
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <control type="togglebutton" id="19">
@@ -300,7 +300,7 @@
                     <height>1-row</height>
                     <font>itemTitle</font>
                     <textcolor>black</textcolor>
-                    <label>30203</label>
+                    <label>31044</label>
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <control type="label">

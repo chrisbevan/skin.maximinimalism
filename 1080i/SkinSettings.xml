@@ -62,7 +62,7 @@
                     <align>left</align>
                     <textoffsetx>12</textoffsetx>
                     <font>itemTitle</font>
-                    <label>30194</label>
+                    <label>31025</label>
                     <label2>$INFO[Skin.String(SubtitlesPath)]</label2>
                     <textcolor>selected</textcolor>
                     <focusedcolor>black</focusedcolor>
@@ -79,7 +79,7 @@
                     <textcolor>selected</textcolor>
                     <focusedcolor>black</focusedcolor>
                     <texturefocus>colors/selected.png</texturefocus>
-                    <label>30219</label>
+                    <label>31084</label>
                     <label2>$INFO[Skin.String(globalBackground)]</label2>
                     <onclick>Skin.SetImage(globalBackground)</onclick>
                     <textwidth>8-col</textwidth>
@@ -94,7 +94,7 @@
                     <textcolor>selected</textcolor>
                     <focusedcolor>black</focusedcolor>
                     <texturefocus>colors/selected.png</texturefocus>
-                    <label>30195</label>
+                    <label>31026</label>
                     <label2>$INFO[Skin.String(videoFanartLocation)]</label2>
                     <onclick>Skin.SetPath(videoFanartLocation)</onclick>
                     <textwidth>8-col</textwidth>
@@ -109,7 +109,7 @@
                     <textcolor>selected</textcolor>
                     <focusedcolor>black</focusedcolor>
                     <texturefocus>colors/selected.png</texturefocus>
-                    <label>30196</label>
+                    <label>31027</label>
                     <label2>$INFO[Skin.String(tvshowFanartLocation)]</label2>
                     <onclick>Skin.SetPath(tvshowFanartLocation)</onclick>
                     <textwidth>8-col</textwidth>
@@ -124,7 +124,7 @@
                     <textcolor>selected</textcolor>
                     <focusedcolor>black</focusedcolor>
                     <texturefocus>colors/selected.png</texturefocus>
-                    <label>30198</label>
+                    <label>31030</label>
                     <label2>$INFO[Skin.String(musicFanartLocation)]</label2>
                     <onclick>Skin.SetPath(musicFanartLocation)</onclick>
                     <textwidth>8-col</textwidth>
@@ -139,7 +139,7 @@
                     <textcolor>selected</textcolor>
                     <focusedcolor>black</focusedcolor>
                     <texturefocus>colors/selected.png</texturefocus>
-                    <label>30197</label>
+                    <label>31028</label>
                     <label2>$INFO[Skin.String(gameFanartLocation)]</label2>
                     <onclick>Skin.SetPath(gameFanartLocation)</onclick>
                     <textwidth>8-col</textwidth>
@@ -147,7 +147,7 @@
                 <control type="radiobutton" id="6">
                     <description>Override global background with fanart slides</description>
                     <width>16-col</width>
-                    <label>30220</label>
+                    <label>31087</label>
                     <onclick>Skin.ToggleSetting(useGlobalFanartBackground)</onclick>
                     <selected>Skin.HasSetting(useGlobalFanartBackground)</selected>
                 </control>
@@ -176,7 +176,7 @@
                     <textcolor>selected</textcolor>
                     <focusedcolor>black</focusedcolor>
                     <texturefocus>colors/selected.png</texturefocus>
-                    <label>30224</label>
+                    <label>31097</label>
                     <onclick>Skin.Reset(globalBackground)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>

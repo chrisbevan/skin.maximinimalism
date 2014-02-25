@@ -103,7 +103,7 @@
                             </item>
                             <item id="3">
                                 <visible>System.GetBool(pvrmanager.enabled)</visible>
-                                <label>30339</label>
+                                <label>31112</label>
                                 <label2></label2>
                                 <onclick>ActivateWindowAndFocus(pvr, 31,0, 10,1)</onclick>
                                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -316,7 +316,7 @@
                             <visible>System.Setting(hidewatched)</visible>
                             <width>4-col</width>
                             <font>buttonTitle</font>
-                            <label>$LOCALIZE[30346]</label>
+                            <label>$LOCALIZE[31118]</label>
                             <textcolor>selected</textcolor>
                         </control>
                         <control type="label">
@@ -440,8 +440,8 @@
                     <control type="togglebutton" id="102">
                         <description>Sort asc (placeholder in PVR)</description>
                         <enable>false</enable>
-                        <label>30336</label>
-                        <altlabel>30337</altlabel>
+                        <label>31109</label>
+                        <altlabel>31110</altlabel>
                         <align>left</align>
                         <height>54</height>
                         <width>4-col</width>
@@ -465,7 +465,7 @@
                         <texturefocus>colors/black.png</texturefocus>
                         <texturenofocus>colors/unselected.png</texturenofocus>
                         <textoffsetx>12</textoffsetx>
-                        <label>$LOCALIZE[30212]  ◀ ▶</label>
+                        <label>$LOCALIZE[31073]  ◀ ▶</label>
                         <onclick>sendclick(32)</onclick>
                     </control>
                     <control type="button" id="104">
@@ -478,7 +478,7 @@
                         <texturefocus>colors/black.png</texturefocus>
                         <texturenofocus>colors/unselected.png</texturenofocus>
                         <textoffsetx>12</textoffsetx>
-                        <label>30347</label>
+                        <label>31119</label>
                         <onclick>ActivateWindowAndFocus(pvr, 35,0, 9999,1)</onclick>
                     </control>
                     <control type="button" id="105">

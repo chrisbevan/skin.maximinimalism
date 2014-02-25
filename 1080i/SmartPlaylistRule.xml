@@ -23,7 +23,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>8-col</width>
-                    <label>30205</label>
+                    <label>31046</label>
                     <ondown>16</ondown>
                 </control>
                 <control type="spincontrolex" id="16">
@@ -32,7 +32,7 @@
                     <posy>1-row</posy>
                     <width>8-col</width>
                     <font>itemTitle</font>
-                    <label>30206</label>
+                    <label>31047</label>
                     <onup>15</onup>
                     <ondown>17</ondown>
                 </control>

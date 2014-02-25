@@ -194,14 +194,14 @@
                         <description>Profiles</description>
                         <label>13200</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[30332] • $LOCALIZE[30333]</property>
+                        <property name="label3">$LOCALIZE[31105] • $LOCALIZE[31106]</property>
                         <onclick>activatewindow(34)</onclick>
                     </item>
                     <item id="10">
                         <description>File Manager</description>
                         <label>10003</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[30222] • $LOCALIZE[30338]</property>
+                        <property name="label3">$LOCALIZE[31095] • $LOCALIZE[31111]</property>
                         <onclick>activatewindow(3)</onclick>
                     </item>
                 </content>

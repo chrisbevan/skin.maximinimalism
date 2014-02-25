@@ -123,7 +123,7 @@
                     </item>
                     <item id="4">
                         <description>Memory</description>
-                        <label>30208</label>
+                        <label>31062</label>
                         <label2>$INFO[System.Memory(total)] Total[CR]$INFO[System.FreeMemory] / $INFO[System.Memory(free.percent)] free</label2>
                         <property name="itemIcon">&gt;</property>
                         <thumb>-</thumb>
@@ -131,7 +131,7 @@
                     </item>
                     <item id="5">
                         <description>CPU</description>
-                        <label>30209</label>
+                        <label>31064</label>
                         <label2>$INFO[System.CpuFrequency][CR]Temp $INFO[System.CPUTemperature]</label2>
                         <property name="itemIcon">&gt;</property>
                         <thumb>-</thumb>
@@ -139,7 +139,7 @@
                     </item>
                     <item id="6">
                         <description>Screen Resolution</description>
-                        <label>30210</label>
+                        <label>31070</label>
                         <label2>$INFO[System.ScreenWidth] x $INFO[System.ScreenHeight][CR]$INFO[System.FPS] FPS</label2>
                         <property name="itemIcon">&gt;</property>
                         <thumb>-</thumb>

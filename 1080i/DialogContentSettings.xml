@@ -40,7 +40,7 @@
                 <posy>47</posy>
                 <width>16-col</width>
                 <font>pageTitle</font>
-                <label>30200</label>
+                <label>31033</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
@@ -59,7 +59,7 @@
                 <posx>12</posx>
                 <posy>2-row</posy>
                 <width>12-col</width>
-                <label>30199</label>
+                <label>31031</label>
                 <font>itemTitle</font>
                 <textcolor>selected</textcolor>
                 <shadowcolor>-</shadowcolor>
@@ -70,7 +70,7 @@
                 <posx>12</posx>
                 <posy>2-row</posy>
                 <width>12-col</width>
-                <label>30199</label>
+                <label>31031</label>
                 <font>itemTitle</font>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
@@ -79,7 +79,7 @@
                 <posx>12</posx>
                 <posy>4-row</posy>
                 <width>6-col</width>
-                <label>30202</label>
+                <label>31043</label>
                 <font>itemTitle</font>
                 <textcolor>selected</textcolor>
                 <shadowcolor>-</shadowcolor>
@@ -146,7 +146,7 @@
                 <description>Specific media type settings</description>
                 <posx>0</posx>
                 <posy>9-row</posy>
-                <label>30201</label>
+                <label>31042</label>
                 <font>itemTitle</font>
                 <width>12-col</width>
                 <height>54</height>

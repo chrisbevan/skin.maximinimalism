@@ -356,7 +356,7 @@
                     <font>smallStrong</font>
                     <textcolor>selected</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label fallback="30342">$INFO[ListItem.Genre]</label>
+                    <label fallback="31114">$INFO[ListItem.Genre]</label>
                     <height>54</height>
                     <font>menuTitle</font>
                     <textcolor>black</textcolor>
@@ -369,7 +369,7 @@
                     <font>regularStrong</font>
                     <textcolor>selected</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label fallback="30343">$INFO[ListItem.Year]</label>
+                    <label fallback="31115">$INFO[ListItem.Year]</label>
                 </control>
             </control>
         </control>
