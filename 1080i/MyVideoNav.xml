@@ -2,9 +2,9 @@
 <window id="6">
     <defaultcontrol always="false">9000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <onload condition="substring(skin.string(showRecentVideoItems),false)">setFocus($VAR[videoViewFocus])</onload>
     <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <onload condition="window.previous(0)">setfocus(9000)</onload>
+	<previouswindow>home</previouswindow>
     <controls>
         <include>globalBackground</include>
         <include>nowRecording</include>
@@ -774,22 +774,7 @@
                         <onclick>ActivateWindow(Videos,files,return)</onclick>
                         <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
                     </control>
-                    <!-- Refresh library (Gotham only) -->
-                    <control type="radiobutton" id="20">
-                        <visible>SubString(System.BuildVersion,13,left)</visible>
-                        <description>Refresh Library</description>
-                        <label>653</label>
-                        <height>54</height>
-                        <width>4-col</width>
-                        <font>menuTitle</font>
-                        <textcolor>black</textcolor>
-                        <focusedcolor>selected</focusedcolor>
-                        <texturefocus>colors/black.png</texturefocus>
-                        <texturenofocus>colors/unselected.png</texturenofocus>
-                    </control>
-                    <!--refresh library (Frodo)-->
                     <control type="button" id="105">
-                        <visible>SubString(System.BuildVersion,12,left)</visible>
                         <height>54</height>
                         <width>4-col</width>
                         <font>menuTitle</font>

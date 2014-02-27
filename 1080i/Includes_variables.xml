@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Skin variables-->
 <includes>
-    <variable name="musicViewType">
-        <value>50</value>
-    </variable>
-    <variable name="videoViewFocus">
-        <value>9500</value>
-    </variable>
-    <variable name="musicViewFocus">
-        <value condition="container.content(artists) | container.content(genres)">53</value>
-        <value>9500</value>
-    </variable>
     <variable name="seekSpeed">
         <value condition="Player.Forwarding2x">FF 2x</value>
         <value condition="Player.Forwarding4x">FF 4x</value>
@@ -28,7 +18,8 @@
         <value condition="Window.IsActive(videolibrary)">$INFO[Skin.String(videoFanartLocation)]</value>
         <value condition="Window.IsActive(musiclibrary)">$INFO[Skin.String(musicFanartLocation)]</value>
         <value condition="Window.IsActive(musicfiles)">$INFO[Skin.String(musicFanartLocation)]</value>
-        <value condition="Window.IsActive(pvr)">$INFO[Skin.String(videoFanartLocation)]</value>
+        <value condition="Window.IsActive(pvr) + control.isvisible(12)">$INFO[Skin.String(musicFanartLocation)]</value>
+		<value condition="Window.IsActive(pvr)">$INFO[Skin.String(videoFanartLocation)]</value>
         <value condition="Window.IsActive(programs)">$INFO[Skin.String(videoFanartLocation)]</value>
         <!--default to video fanart-->
         <value>$INFO[Skin.String(videoFanartLocation)]</value>
@@ -47,10 +38,11 @@
         <value condition="Container.Content(addons)">$LOCALIZE[31055]</value>
         <value condition="Container.Content(albums)">$LOCALIZE[31037] [COLOR accented]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
         <value condition="Container.Content(songs)">$INFO[listitem.album] [COLOR accented]$INFO[listitem.artist][/COLOR]</value>
-        <value condition="Window.IsActive(pvr) + [Control.IsVisible(11) | Control.IsVisible(12)]">$LOCALIZE[31006] [COLOR accented]$LOCALIZE[31078][/COLOR]</value>
+        <value condition="Window.IsActive(pvr) + Control.IsVisible(11)">$LOCALIZE[31006] [COLOR accented]$LOCALIZE[31078][/COLOR]</value>
         <value condition="Window.IsActive(pvr) + [Control.IsVisible(11) | Control.IsVisible(10)]">$LOCALIZE[31006] [COLOR accented]$LOCALIZE[31080][/COLOR]</value>
         <value condition="Window.IsActive(pvr) + [Control.IsVisible(11) | Control.IsVisible(13)]">$LOCALIZE[31006] [COLOR accented]$LOCALIZE[19163][/COLOR]</value>
-        <value condition="!isEmpty(container.foldername)">$INFO[container.foldername]</value>
+		<value condition="Window.IsActive(pvr) + Control.IsVisible(12)">$LOCALIZE[19024] [COLOR accented]$LOCALIZE[31078][/COLOR]</value>        
+		<value condition="!isEmpty(container.foldername)">$INFO[container.foldername]</value>
     </variable>
     <variable name="listSubTitle">
         <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true)">$LOCALIZE[31013]</value>

@@ -1,6 +1,11 @@
-[B]0.1.0[/B]
+[B]0.9.9[/B]
 - [NEW] Unwatched / new tvshow episode flag (thanks postdeath)
-- [MODIFIED] Settings level indicator (Gotham builds) adjusted
+- [MODIFIED] Settings level indicator (Gotham builds) position and access adjusted
+- [NEW] Radio section from PVR now available in music section (thanks Ronie - totally missed that!) 
+- [FIXED] Music section menu navigation was not transferring focus correctly in some instances (thanks StfAL)
+- [MODIFIED] Cast and crew dialog behaves properly with back button (thanks StfAL)
+- [FIXED] debugging messaging system revised (pertinent to devs only)
+- [FIXED] Various tweaks and fixes to prepare for official skins release (thanks Ronie)
 
 [B]0.9.5[/B]
 - [MODIFIED] Various PVR tweaking

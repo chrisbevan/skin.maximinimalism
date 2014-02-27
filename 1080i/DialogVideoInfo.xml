@@ -2,8 +2,9 @@
 <window id="2003">
     <defaultcontrol always="true">8000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <include>fadeInOut</include>
+    <include condition="skin.string(showcast,false)">fadeInOut</include>
     <onunload>Skin.Reset(showcast)</onunload>
+	<onunload condition="skin.string(showcast,true)">action(info)</onunload>
     <controls>
         <control type="group">
             <!--background / fanart-->
@@ -187,9 +188,8 @@
                         <label>31074</label>
                         <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>Skin.SetString(showcast,true)</onclick>
-                        <onclick>setfocus(7000)</onclick>
-                    </item>
+						<onclick>Skin.SetString(showcast,true)</onclick>
+                   </item>
                     <item id="4">
                         <label>31076</label>
                         <label2></label2>
@@ -436,26 +436,6 @@
                         <shadowcolor>-</shadowcolor>
                     </control>
                 </focusedlayout>
-            </control>
-            <!--return button-->
-            <control type="button" id="7000">
-                <posx>0</posx>
-                <posy>row-1-begin</posy>
-                <align>left</align>
-                <height>54</height>
-                <font>itemTitle</font>
-                <textcolor>selected</textcolor>
-                <focusedcolor>black</focusedcolor>
-                <texturefocus>colors/selected.png</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <textoffsetx>12</textoffsetx>
-                <label>◀  $LOCALIZE[31081]</label>
-                <onclick>Skin.SetString(showcast,false)</onclick>
-                <onclick>setfocus(8000)</onclick>
-                <onup>7000</onup>
-                <ondown>7000</ondown>
-                <onleft>7000</onleft>
-                <onright>7000</onright>
             </control>
         </control>
         <!--buttons-->
