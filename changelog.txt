@@ -1,5 +1,7 @@
 [B]0.9.9[/B]
+- [INFO] Preparing for Gotham release. Frodo releases now discontinued.
 - [NEW] Unwatched / new tvshow episode flag (thanks postdeath)
+- [NEW] Player controls for video (access: OK / Info during playback)
 - [MODIFIED] Settings level indicator (Gotham builds) position and access adjusted
 - [NEW] Radio section from PVR now available in music section (thanks Ronie - totally missed that!) 
 - [FIXED] Music section menu navigation was not transferring focus correctly in some instances (thanks StfAL)

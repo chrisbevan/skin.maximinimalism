@@ -27,7 +27,7 @@
                 <colordiffuse>99FFFFFF</colordiffuse>
             </control>
             <control type="label">
-                <posx>300</posx>
+                <posx>3-col</posx>
                 <posy>-12</posy>
                 <width>16-col-gutter</width>
                 <font>smallStrong</font>
@@ -36,18 +36,18 @@
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="label">
-                <posx>395</posx>
+                <posx>308</posx>
                 <posy>-13</posy>
-                <width>16-col-gutter</width>
+                <width>18-col</width>
                 <font>smallMedium</font>
                 <textcolor>selected</textcolor>
                 <label>[UPPERCASE]$INFO[VideoPlayer.TVShowTitle][/UPPERCASE]</label>
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="label">
-                <posx>300</posx>
+                <posx>3-col</posx>
                 <posy>31</posy>
-                <width>16-col-gutter</width>
+                <width>18-col</width>
                 <font>dialogTitle</font>
                 <textcolor>selected</textcolor>
                 <label>[UPPERCASE]$INFO[Player.Title][/UPPERCASE]</label>
@@ -56,13 +56,13 @@
             </control>
             <control type="progress">
                 <description>Progress Bar</description>
-                <posx>300</posx>
+                <posx>3-col</posx>
                 <posy>92</posy>
-                <width>16-col-gutter</width>
+                <width>18-col</width>
                 <info>Player.Progress</info>
             </control>
             <control type="label">
-                <posx>300</posx>
+                <posx>3-col</posx>
                 <posy>110</posy>
                 <width>24-col</width>
                 <font>smallStrong</font>
@@ -71,7 +71,7 @@
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="label">
-                <posx>1428</posx>
+                <posx>1512</posx>
                 <posy>110</posy>
                 <width>24-col</width>
                 <font>smallStrong</font>
@@ -83,8 +83,8 @@
         </control>
         <!--ff / rw speed indicators-->
         <control type="group">
-            <posx>col-1-begin</posx>
-            <posy>row-15-begin</posy>
+            <posx>col-10-begin</posx>
+            <posy>row-2-begin</posy>
             <control type="label">
                 <visible>Player.Rewinding | Player.Forwarding</visible>
                 <posx>0</posx>

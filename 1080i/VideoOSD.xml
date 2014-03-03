@@ -4,7 +4,7 @@
 	<defaultcontrol always="true">8000</defaultcontrol>
 	<include>fadeInOut</include>
 
-	<controls>				
+	<controls>						
 		<control type="group">
 			
 			<!--fade out if audio / video menu active-->
@@ -93,13 +93,24 @@
 					<colordiffuse>ffffffff</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 				</control>
+				
+				<control type="image">
+					<posx>0</posx>
+					<posy>45</posy>
+					<width>fullscreenWidth</width>
+					<height>52</height>
+					<texture>colors/black.png</texture>
+					<colordiffuse>ccffffff</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
 			
-				<control type="list" id="8000">
+				<control type="panel" id="8000">
 					<posx>258</posx>
 					<posy>-10</posy>
 					<width>14-col</width>
 					<height>1-row</height>
 					<itemgap>0</itemgap>
+					<ondown>8001</ondown>
 					<orientation>horizontal</orientation>
 
 					<itemlayout width="160" height="43">
@@ -188,6 +199,89 @@
 					<scroll>false</scroll>
 					<shadowcolor>-</shadowcolor>
 				</control>
+				
+				<!--player controls-->
+				<control type="panel" id="8001">
+		            <posx>288</posx>
+		            <posy>35</posy>
+		            <width>24-col</width>
+	                <height>1-col</height>
+		            <itemgap>0</itemgap>
+		            <orientation>horizontal</orientation>
+					<onup>8000</onup>
+		            <itemlayout width="1-col" height="1-col">
+						<control type="label">
+	                        <posx>26</posx>
+	                        <posy>0</posy>
+	                        <width>1-col</width>
+	                        <height>1-col</height>
+	                        <font>symbol</font>
+	                        <textcolor>selected</textcolor>
+	                        <shadowcolor>-</shadowcolor>
+	                        <label>$INFO[ListItem.label]</label>
+	                    </control>
+	                </itemlayout>
+	                <focusedlayout width="1-col" height="1-col">
+	                    <control type="image">
+	                        <posx>19</posx>
+	                        <posy>18</posy>
+	                        <width>36</width>
+	                        <height>36</height>
+	                        <aspectratio scalediffuse="false">scale</aspectratio>
+	                        <texture diffuse="masks/circle.png" border="1">colors/selected.png</texture>
+	                        <bordersize>0</bordersize>
+	                        <colordiffuse>ffFFFFFF</colordiffuse>
+	                    </control>
+						<control type="label">
+	                        <posx>26</posx>
+	                        <posy>0</posy>
+	                        <width>1-col</width>
+	                        <height>1-col</height>
+	                        <font>symbol</font>
+	                        <textcolor>black</textcolor>
+	                        <shadowcolor>-</shadowcolor>
+	                        <label>$INFO[ListItem.label]</label>
+	                    </control>
+	                </focusedlayout>
+		            <content>
+		                <item id="1">
+				            <description>Previous</description>
+		                    <label></label>
+		                    <thumb>-</thumb>
+		                    <onclick>PlayerControl(previous)</onclick>
+		                </item>
+		                <item id="2">
+							<description>Rewind</description>
+		                    <label></label>
+		                    <thumb>-</thumb>
+		                    <onclick>PlayerControl(rewind)</onclick>
+		                </item>
+		                <item id="3">
+							<description>Stop</description>
+		                    <label></label>
+		                    <thumb>-</thumb>
+		                    <onclick>PlayerControl(stop)</onclick>
+		                </item>
+		                <item id="4">
+							<description>Play/Pause</description>
+		                    <label></label>
+		                    <thumb>-</thumb>
+		                    <onclick>PlayerControl(play)</onclick>
+		                </item>
+		                <item id="5">
+							<description>Fast forward</description>
+		                    <label></label>
+		                    <thumb>-</thumb>
+		                    <onclick>PlayerControl(forward)</onclick>
+		                </item>
+						<item id="6">
+							<description>Next Chapter</description>
+		                    <label></label>
+		                    <thumb>-</thumb>
+		                    <onclick>PlayerControl(next)</onclick>
+		                </item>
+		            </content>
+		        </control>
 			</control>			
 		
 		</control>
