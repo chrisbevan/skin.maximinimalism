@@ -103,7 +103,7 @@
 	<string id="31101">Delete Group</string>
 	<string id="31102">Current Scraper:</string>
 	<string id="31103">Profile Settings</string>
-	<string id="31104">Edit Profiles</string>	
+	<string id="31104">Available Profiles</string>	
 	<string id="31105">Login options</string>	
 	<string id="31106">Users</string>
 	<string id="31107">Active profile</string>
@@ -128,5 +128,9 @@
 	<string id="31126">Settings level</string>
 	<string id="31127">HD</string>
 	<string id="31128">SD</string>
-	<string id="31129">3D</string>	
+	<string id="31129">3D</string>
+	<string id="31130">Queue</string>
+	<string id="31131">Switch to this profile now</string>	
+	<string id="31132">Music Player</string>
+	<string id="31133">Playlist shuffled</string>
 </strings>

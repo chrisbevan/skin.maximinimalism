@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="2003">
+<window>
     <defaultcontrol always="true">8000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <include condition="skin.string(showcast,false)">fadeInOut</include>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="115">
+<window>
     <defaultcontrol always="true">901</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <visible>!Window.IsActive(DialogSubtitles.xml) + !Window.IsActive(script-XBMC-Subtitles-main.xml) + !Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen + !Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>

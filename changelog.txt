@@ -8,6 +8,8 @@
 - [MODIFIED] Cast and crew dialog behaves properly with back button (thanks StfAL)
 - [FIXED] debugging messaging system revised (pertinent to devs only)
 - [FIXED] Various tweaks and fixes to prepare for official skins release (thanks Ronie)
+- [NEW] Direct profile switching added to settings->profile (thanks picaresqu3)
+- [NEW] Player controls for music playback ('now playing' section)
 
 [B]0.9.5[/B]
 - [MODIFIED] Various PVR tweaking

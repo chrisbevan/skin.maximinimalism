@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="56">
+<window>
     <defaultcontrol always="true">200</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>

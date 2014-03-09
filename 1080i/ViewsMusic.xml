@@ -653,7 +653,7 @@
                         <posx>11-col-gutter</posx>
                         <posy>17</posy>
                         <width>4-col-gutter</width>
-                        <font>smallStrong</font>
+                        <font>itemTitle</font>
                         <align>right</align>
                         <height>24</height>
                         <textcolor>black</textcolor>

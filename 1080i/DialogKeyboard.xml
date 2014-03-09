@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="103">
+<window>
     <defaultcontrol always="true">300</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <coordinates>
@@ -244,6 +244,10 @@
                         <texturenofocus>colors/keyboardUnselected.png</texturenofocus>
                         <texturefocus>colors/keyboardSelected.png</texturefocus>
                         <textureradioon>-</textureradioon>
+						<textureradioonfocus>-</textureradioonfocus>
+						<textureradioonnofocus>-</textureradioonnofocus>
+						<textureradioofffocus>-</textureradioofffocus>
+						<textureradiooffnofocus>-</textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <radioposy>12</radioposy>
@@ -441,6 +445,10 @@
                         <texturenofocus>colors/keyboardUnselected.png</texturenofocus>
                         <texturefocus>colors/keyboardSelected.png</texturefocus>
                         <textureradioon>-</textureradioon>
+						<textureradioonfocus>-</textureradioonfocus>
+						<textureradioonnofocus>-</textureradioonnofocus>
+						<textureradioofffocus>-</textureradioofffocus>
+						<textureradiooffnofocus>-</textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <radioposy>12</radioposy>
@@ -639,6 +647,10 @@
                         <texturenofocus>colors/keyboardUnselected.png</texturenofocus>
                         <texturefocus>colors/keyboardSelected.png</texturefocus>
                         <textureradioon>-</textureradioon>
+						<textureradioonfocus>-</textureradioonfocus>
+						<textureradioonnofocus>-</textureradioonnofocus>
+						<textureradioofffocus>-</textureradioofffocus>
+						<textureradiooffnofocus>-</textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <textoffsetx>0</textoffsetx>

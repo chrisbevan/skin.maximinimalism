@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--power menu-->
-<window type="buttonMenu" id="111">
+<window type="buttonMenu">
     <defaultcontrol always="true">8000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <include>fadeInOut</include>

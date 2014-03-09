@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="130">
+<window>
     <defaultcontrol always="true">5</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
@@ -44,15 +44,34 @@
                 <font>itemTitleSmall</font>
                 <textcolor>accented</textcolor>
             </control>
-            <control type="grouplist" id="5">
+            <control type="button" id="6000">
+                <description>Profile switch</description>
+				<visible>!StringCompare(System.ProfileName,control.getlabel(1000))</visible>
+				<posx>2-col</posx>
+                <posy>7-row</posy>
+                <align>left</align>
+                <height>54</height>
+				<width>8-col</width>
+                <font>itemTitle</font>
+                <textcolor>selected</textcolor>
+                <focusedcolor>black</focusedcolor>
+                <texturefocus>colors/selected.png</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <textoffsetx>12</textoffsetx>
+				<label>31131</label>
+				<onclick>LoadProfile($INFO[control.getlabel(1000)])</onclick>
+				<ondown>5</ondown>
+            </control>
+			<control type="grouplist" id="5">
                 <description>Control Area</description>
                 <posx>2-col</posx>
-                <posy>7-row</posy>
+                <posy>8-row</posy>
                 <width>8-col</width>
                 <height>11-row</height>
                 <itemgap>3</itemgap>
                 <orientation>vertical</orientation>
                 <ondown>9001</ondown>
+				<onup>6000</onup>
             </control>
             <control type="button" id="7">
                 <description>button</description>
@@ -74,7 +93,7 @@
             <!--OK / Cancel-->
             <control type="panel" id="9001">
                 <posx>2-col</posx>
-                <posy>14-row</posy>
+                <posy>15-row</posy>
                 <width>8-col</width>
                 <height>1-row</height>
                 <itemgap>3</itemgap>

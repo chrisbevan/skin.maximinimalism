@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="502">
+<window>
     <defaultcontrol always="false">9000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <onload condition="window.previous(0)">setfocus(9000)</onload>

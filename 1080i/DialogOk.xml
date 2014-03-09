@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="2002">
+<window>
     <defaultcontrol always="true">9001</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <include>fadeInOut</include>
@@ -49,16 +49,16 @@
             <control type="panel" id="9001">
                 <posx>0</posx>
                 <posy>4-row</posy>
-                <width>10-col</width>
+                <width>5-col</width>
                 <height>5-row</height>
                 <itemgap>3</itemgap>
                 <orientation>vertical</orientation>
                 <onleft>2</onleft>
-                <itemlayout width="10-col" height="1-row">
+                <itemlayout width="5-col" height="1-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>2</posy>
-                        <width>10-col</width>
+                        <width>5-col</width>
                         <height>53</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/black.png</texture>
@@ -82,11 +82,11 @@
                         <shadowcolor>-</shadowcolor>
                     </control>
                 </itemlayout>
-                <focusedlayout width="10-col" height="1-row">
+                <focusedlayout width="5-col" height="1-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>2</posy>
-                        <width>10-col</width>
+                        <width>5-col</width>
                         <height>53</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/selected.png</texture>

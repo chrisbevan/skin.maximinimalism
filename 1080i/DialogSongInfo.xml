@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="135">
-    <onload>action(previousMenu)</onload>
-    <!--window removed-->
+<window>
+	<!--dialog considered redundant. Not used.-->
+	<onload>back</onload>
+	<controls></controls>
 </window>
