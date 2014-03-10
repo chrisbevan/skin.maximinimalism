@@ -25,7 +25,7 @@
 	<string id="31023">Change Sort</string>
 	<string id="31024">Disable Background Video</string>
 	<string id="31025">Subtitles Script:</string>
-	<string id="31026">Movie Fanart location: </string>	
+	<string id="31026">Video Fanart location: </string>	
 	<string id="31027">TV Show Fanart location: </string>
 	<string id="31028">Game Fanart location: </string>	
 	<string id="31029">Current playlist</string>
@@ -34,7 +34,7 @@
 	<string id="31032">Visualization Presets</string>
 	<string id="31033">Set Media Source Content</string>
 	<string id="31034">Enable Debug Grid</string>
-	<string id="31035">Disable Debug Info</string>
+	<string id="31035">Enable Debug Info</string>
 	<string id="31036">Refresh Library</string>
 	<string id="31037">Albums</string>
 	<string id="31038">Page</string>
@@ -96,7 +96,7 @@
 	<string id="31094">Subtitles search</string>	
 	<string id="31095">Transfer</string>	
 	<string id="31096">No items found</string>	
-	<string id="31097">Reset global background to default</string>	
+	<string id="31097">Playlist</string>	
 	<string id="31098">Volume Muted</string>	
 	<string id="31099">Add Group</string>	
 	<string id="31100">Rename Group</string>

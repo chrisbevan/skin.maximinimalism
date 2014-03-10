@@ -165,8 +165,7 @@
 							<label>24012</label>
 							<thumb>-</thumb>
 							<onclick>Close</onclick>
-							<onclick condition="SubString(System.BuildVersion,12,left)">XBMC.RunScript($INFO[Skin.String(SubtitlesPath)])</onclick>
-							<onclick condition="SubString(System.BuildVersion,13,left)">ActivateWindow(SubtitleSearch)</onclick>
+							<onclick>ActivateWindow(SubtitleSearch)</onclick>
 						</item>
 						<item id="5">
 							<label>298</label>

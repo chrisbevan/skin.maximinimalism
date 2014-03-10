@@ -1,5 +1,5 @@
 [B]0.9.9[/B]
-- [INFO] Preparing for Gotham release. Frodo releases now discontinued.
+- [INFO] Skin now preparing for Gotham release. Frodo support discontinued.
 - [NEW] Unwatched / new tvshow episode flag (thanks postdeath)
 - [NEW] Player controls for video (access: OK / Info during playback)
 - [MODIFIED] Settings level indicator (Gotham builds) position and access adjusted
@@ -10,6 +10,7 @@
 - [FIXED] Various tweaks and fixes to prepare for official skins release (thanks Ronie)
 - [NEW] Direct profile switching added to settings->profile (thanks picaresqu3)
 - [NEW] Player controls for music playback ('now playing' section)
+- [REVISED] Skin settings simplified (thanks bigheeed). 
 
 [B]0.9.5[/B]
 - [MODIFIED] Various PVR tweaking
