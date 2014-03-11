@@ -11,6 +11,7 @@
 - [NEW] Direct profile switching added to settings->profile (thanks picaresqu3)
 - [NEW] Player controls for music playback ('now playing' section)
 - [REVISED] Skin settings simplified (thanks bigheeed). 
+- [NEW] DialogFileStacking.xml
 
 [B]0.9.5[/B]
 - [MODIFIED] Various PVR tweaking

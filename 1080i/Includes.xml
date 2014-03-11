@@ -159,7 +159,7 @@
         <font>smallStrong</font>
         <textcolor>selected</textcolor>
         <align>left</align>
-        <visible>!Skin.HasSetting(HideDebugInfo)</visible>
+        <visible>Skin.HasSetting(DebugInfo)</visible>
     </include>
     <include name="WindowID">
         <posx>15</posx>
@@ -169,7 +169,7 @@
         <font>smallStrong</font>
         <textcolor>selected</textcolor>
         <align>left</align>
-        <visible>!Skin.HasSetting(HideDebugInfo)</visible>
+        <visible>Skin.HasSetting(DebugInfo)</visible>
     </include>
     <include name="Debug_Grid">
         <control type="image">

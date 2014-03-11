@@ -128,15 +128,14 @@
                     <width>16-col</width>
                     <label>31034</label>
                     <onclick>Skin.ToggleSetting(DebugGrid)</onclick>
-                    <onclick>XBMC.ReloadSkin()</onclick>
                     <selected>Skin.HasSetting(DebugGrid)</selected>
                 </control>
                 <control type="radiobutton" id="7">
                     <description>Disable Debug Info</description>
                     <width>16-col</width>
                     <label>31035</label>
-                    <onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
-                    <selected>!Skin.HasSetting(HideDebugInfo)</selected>
+                    <onclick>Skin.ToggleSetting(DebugInfo)</onclick>
+                    <selected>Skin.HasSetting(DebugInfo)</selected>
                 </control>
             </control>
 			<!--reset buttons-->
