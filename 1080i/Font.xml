@@ -157,6 +157,11 @@
             <size>96</size>
             <style></style>
         </font>
+		<font>
+			<name>symbolWeather</name>
+			<filename>weather.ttf</filename>
+			<size>200</size>
+		</font>
         <!-- Required for system -->
         <font>
             <name>font13</name>

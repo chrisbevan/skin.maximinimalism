@@ -8,24 +8,6 @@
     <controls>
         <include>globalBackground</include>
         <include>nowRecording</include>
-        <!--loading indicator-->
-        <control type="group">
-            <visible>!IntegerGreaterThan(container.numitems,0)</visible>
-            <posx>0</posx>
-            <posy>0</posy>
-            <!--animations-->
-            <include>fadeInOut</include>
-            <control type="image">
-                <description>Busy animation</description>
-                <posx>12-col</posx>
-                <posy>row-8-begin</posy>
-                <width>3-col-gutter</width>
-                <height>3-col-gutter</height>
-                <texture>UIControls/busy.png</texture>
-                <aspectratio>keep</aspectratio>
-                <animation effect="rotate" start="0" end="-360" center="auto" time="1200" loop="true" condition="true">conditional</animation>
-            </control>
-        </control>
         <!--page container group-->
         <control type="group">
             <!--window fader-->
@@ -89,6 +71,12 @@
                                 <label>341</label>
                                 <label2></label2>
                                 <onclick>XBMC.PlayDVD()</onclick>
+                            </item>
+							<item id="19">
+                                <visible>System.HasMediaDVD</visible>
+                                <label>31135</label>
+                                <label2></label2>
+                                <onclick>EjectTray()</onclick>
                             </item>
                             <item id="1">
                                 <label>31005</label>
@@ -265,13 +253,19 @@
                                 <visible>Player.HasAudio</visible>
                                 <label>13350</label>
                                 <label2></label2>
-                                <onclick>action(FullScreen)</onclick>
+                                <onclick>activateWindow(5001)</onclick>
                             </item>
                             <item id="25">
                                 <visible>System.HasMediaDVD</visible>
                                 <label>341</label>
                                 <label2></label2>
                                 <onclick>XBMC.PlayDVD()</onclick>
+                            </item>
+							<item id="27">
+                                <visible>System.HasMediaDVD</visible>
+                                <label>31135</label>
+                                <label2></label2>
+                                <onclick>EjectTray()</onclick>
                             </item>
                             <item id="1">
                                 <label>31005</label>
@@ -973,6 +967,8 @@
                 <description>Search</description>
             </control>
         </control>
+		<!--loading indicator-->
+        <include>loadingIndicator</include>
         <!--debugging-->
         <include>Debug_Grid</include>
         <control type="label">

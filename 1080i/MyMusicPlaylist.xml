@@ -66,13 +66,19 @@
                                 <visible>Player.HasAudio</visible>
                                 <label>13350</label>
                                 <label2></label2>
-                                <onclick>action(FullScreen)</onclick>
+								<onclick>activateWindow(5001)</onclick>
                             </item>
                             <item id="25">
                                 <visible>System.HasMediaDVD</visible>
                                 <label>341</label>
                                 <label2></label2>
                                 <onclick>XBMC.PlayDVD()</onclick>
+                            </item>
+							<item id="27">
+                                <visible>System.HasMediaDVD</visible>
+                                <label>31135</label>
+                                <label2></label2>
+                                <onclick>EjectTray()</onclick>
                             </item>
                             <item id="1">
                                 <label>31005</label>

@@ -267,4 +267,55 @@
         <value condition="stringcompare(skin.string(currentAddonSourceSlot),audio7)">$INFO[Skin.String(customMusicAddon7Name)]</value>
         <value condition="stringcompare(skin.string(currentAddonSourceSlot),audio8)">$INFO[Skin.String(customMusicAddon8Name)]</value>
     </variable>
+	<!--weather icons-->
+	<variable name="weatherIcon">
+	    <value condition="stringcompare(ListItem.Property(fanartCode),0)"> V</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),1)"> S</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),2)"> S</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),3)"> V</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),4)"> V</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),5)"> W</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),6)"> X</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),7)"> W</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),8)"> X</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),9)"> O</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),10)"> X</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),11)"> F</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),12)"> R</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),13)"> Z</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),14)"> Z</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),15)"> Z</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),16)"> Z</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),17)"> V</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),18)"> V</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),19)"> N</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),20)"> G</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),21)"> G</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),22)"> G</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),23)"> a</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),24)"> a</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),25)"> a</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),26)"> D</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),27)"> J</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),28)"> C</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),29)"> J</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),30)"> C</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),31)"> I</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),32)"> A</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),33)"> E</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),34)"> E</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),35)"> V</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),36)"> A</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),37)"> T</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),38)"> T</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),39)"> R</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),40)"> R</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),41)"> W</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),42)"> W</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),43)"> W</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),44)"> C</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),45)"> K</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),46)"> W</value>
+	    <value condition="stringcompare(ListItem.Property(fanartCode),47)"> V</value>
+	</variable>
 </includes>

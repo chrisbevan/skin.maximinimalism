@@ -12,6 +12,8 @@
 - [NEW] Player controls for music playback ('now playing' section)
 - [REVISED] Skin settings simplified (thanks bigheeed). 
 - [NEW] DialogFileStacking.xml
+- [REVISED] Weather icons revised.
+- Various misc additions, revisions and fixes
 
 [B]0.9.5[/B]
 - [MODIFIED] Various PVR tweaking

@@ -70,14 +70,13 @@
                 <width>24-col</width>
                 <height>18-row</height>
                 <itemlayout width="5-col-gutter" height="6-col">
-                    <control type="image">
-                        <posx>118</posx>
-                        <posy>0</posy>
-                        <width>3-col-gutter</width>
-                        <height>3-col-gutter</height>
-                        <aspectratio aligny="center">keep</aspectratio>
-                        <texture>$INFO[listitem.icon]</texture>
-                        <colordiffuse>99FFFFFF</colordiffuse>
+                    <control type="label">
+                        <posx>52</posx>
+                        <posy>92</posy>
+                        <width>5-col-gutter</width>
+                        <font>symbolWeather</font>
+                        <textcolor>selected</textcolor>
+                        <label>$VAR[weatherIcon]</label>
                     </control>
                     <control type="label">
                         <posx>204</posx>
@@ -110,14 +109,13 @@
                     </control>
                 </itemlayout>
                 <focusedlayout width="6-col" height="6-col">
-                    <control type="image">
-                        <posx>118</posx>
-                        <posy>0</posy>
-                        <width>3-col-gutter</width>
-                        <height>3-col-gutter</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[listitem.icon]</texture>
-                        <colordiffuse>99FFFFFF</colordiffuse>
+                    <control type="label">
+                        <posx>52</posx>
+                        <posy>92</posy>
+                        <width>5-col-gutter</width>
+                        <font>symbolWeather</font>
+                        <textcolor>selected</textcolor>
+                        <label>$VAR[weatherIcon]</label>
                     </control>
                     <control type="label">
                         <posx>204</posx>
@@ -153,8 +151,7 @@
                     <item id="1">
                         <description>Day 0</description>
                         <label>$INFO[Window.Property(Day0.Title)]</label>
-                        <icon>$INFO[Window.Property(Day0.OutlookIcon)]</icon>
-                        <property name="itemIcon">&gt;</property>
+                        <property name="fanartCode">$INFO[Window.Property(Day0.fanartCode)]</property>
                         <property name="HighTemp">$INFO[Window.Property(Day0.HighTemp)]</property>
                         <property name="LowTemp">$INFO[Window.Property(Day0.LowTemp)]</property>
                         <property name="Outlook">$INFO[Window.Property(Day0.Outlook)]</property>
@@ -164,8 +161,7 @@
                     <item id="2">
                         <description>Day 1</description>
                         <label>$INFO[Window.Property(Day1.Title)]</label>
-                        <icon>$INFO[Window.Property(Day1.OutlookIcon)]</icon>
-                        <property name="itemIcon">&gt;</property>
+						<property name="fanartCode">$INFO[Window.Property(Day1.fanartCode)]</property>
                         <property name="HighTemp">$INFO[Window.Property(Day1.HighTemp)]</property>
                         <property name="LowTemp">$INFO[Window.Property(Day1.LowTemp)]</property>
                         <property name="Outlook">$INFO[Window.Property(Day1.Outlook)]</property>
@@ -175,8 +171,7 @@
                     <item id="3">
                         <description>Day 2</description>
                         <label>$INFO[Window.Property(Day2.Title)]</label>
-                        <icon>$INFO[Window.Property(Day2.OutlookIcon)]</icon>
-                        <property name="itemIcon">&gt;</property>
+						<property name="fanartCode">$INFO[Window.Property(Day2.fanartCode)]</property>
                         <property name="HighTemp">$INFO[Window.Property(Day2.HighTemp)]</property>
                         <property name="LowTemp">$INFO[Window.Property(Day2.LowTemp)]</property>
                         <property name="Outlook">$INFO[Window.Property(Day2.Outlook)]</property>
@@ -186,8 +181,7 @@
                     <item id="4">
                         <description>Day 3</description>
                         <label>$INFO[Window.Property(Day3.Title)]</label>
-                        <icon>$INFO[Window.Property(Day3.OutlookIcon)]</icon>
-                        <property name="itemIcon">&gt;</property>
+						<property name="fanartCode">$INFO[Window.Property(Day3.fanartCode)]</property>
                         <property name="HighTemp">$INFO[Window.Property(Day3.HighTemp)]</property>
                         <property name="LowTemp">$INFO[Window.Property(Day3.LowTemp)]</property>
                         <property name="Outlook">$INFO[Window.Property(Day3.Outlook)]</property>
@@ -197,8 +191,7 @@
                     <item id="5">
                         <description>Day 4</description>
                         <label>$INFO[Window.Property(Day4.Title)]</label>
-                        <icon>$INFO[Window.Property(Day4.OutlookIcon)]</icon>
-                        <property name="itemIcon">&gt;</property>
+						<property name="fanartCode">$INFO[Window.Property(Day4.fanartCode)]</property>
                         <property name="HighTemp">$INFO[Window.Property(Day4.HighTemp)]</property>
                         <property name="LowTemp">$INFO[Window.Property(Day4.LowTemp)]</property>
                         <property name="Outlook">$INFO[Window.Property(Day4.Outlook)]</property>
