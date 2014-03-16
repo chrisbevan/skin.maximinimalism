@@ -27,12 +27,23 @@
                 <colordiffuse>99FFFFFF</colordiffuse>
             </control>
             <control type="label">
+				<visible>Player.Playing | player.seeking</visible>
                 <posx>3-col</posx>
                 <posy>-12</posy>
                 <width>16-col-gutter</width>
                 <font>smallStrong</font>
                 <textcolor>selected</textcolor>
                 <label>31120</label>
+                <shadowcolor>-</shadowcolor>
+            </control>
+			<control type="label">
+				<visible>Player.Paused</visible>
+                <posx>3-col</posx>
+                <posy>-12</posy>
+                <width>16-col-gutter</width>
+                <font>smallStrong</font>
+                <textcolor>selected</textcolor>
+                <label>112</label>
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="label">
@@ -92,7 +103,7 @@
                 <width>24-col</width>
                 <align>center</align>
                 <font>veryLarge</font>
-                <textcolor>11ffffff</textcolor>
+                <textcolor>44ffffff</textcolor>
                 <label>$VAR[seekSpeed]</label>
                 <shadowcolor>-</shadowcolor>
             </control>

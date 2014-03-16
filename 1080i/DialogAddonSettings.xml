@@ -187,6 +187,11 @@
             </control>
             <control type="image" id="6">
                 <description>Default Separator</description>
+				<width>1</width>
+                <height>1</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
             </control>
             <control type="sliderex" id="8">
                 <description>Default Slider</description>

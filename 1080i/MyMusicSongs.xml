@@ -65,7 +65,7 @@
                         <content>
                             <item id="26">
                                 <visible>Player.HasAudio</visible>
-                                <label>13350</label>
+                                <label>31136</label>
                                 <label2></label2>
                                 <onclick>activateWindow(5001)</onclick>
                             </item>

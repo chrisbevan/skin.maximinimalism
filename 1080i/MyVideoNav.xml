@@ -97,7 +97,7 @@
                                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
                             </item>
                             <item id="4">
-                                <visible>System.GetBool(pvrmanager.enabled)</visible>
+                                <visible>System.GetBool(pvrmanager.enabled) + IntegerGreaterThan(Pvr.BackendRecordings,0)</visible>
                                 <label>19163</label>
                                 <label2></label2>
                                 <onclick>ActivateWindowAndFocus(pvr, 34,0, 13,1)</onclick>
@@ -501,11 +501,11 @@
                         <animation type="windowopen">
                             <include>listSlideIn</include>
                         </animation>
+						<include>viewListTVCatchup</include>
                         <include>viewVideoList</include>
                         <include>viewGridList</include>
                         <include>viewSeasons</include>
                         <include>viewEpisodes</include>
-                        <include>viewListTVCatchup</include>
                     </control>
                 </control>
                 <!--page scrollbar-->

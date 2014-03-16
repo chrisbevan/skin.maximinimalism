@@ -705,7 +705,7 @@
                 <effect type="fade" start="100" end="0" time="200" />
             </animation>
             <control type="panel" id="54">
-                <visible>!container.content(episodes)</visible>
+                <visible>Substring(Container.foldername,TVCatchup)</visible>
                 <posx>0</posx>
                 <posy>4</posy>
                 <width>20-col</width>

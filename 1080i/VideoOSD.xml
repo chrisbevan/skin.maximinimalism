@@ -64,7 +64,7 @@
 				<control type="label">
 					<posx>3-col</posx>
 					<posy>50</posy>
-					<width>21-col-gutter</width>
+					<width>21-col</width>
 					<height>30</height>
 					<font>small</font>
 					<textcolor>selected</textcolor>
@@ -175,26 +175,15 @@
 					</content>
 
 				</control>
-				
+								
 				<control type="label">
-					<posx>1598</posx>
-					<posy>-13</posy>
-					<width>4-col</width>
-					<font>symbolLarge</font>
-					<textcolor>black</textcolor>
-					<label></label>
-					<align>right</align>
-					<scroll>false</scroll>
-					<shadowcolor>-</shadowcolor>
-				</control>
-				
-				<control type="label">
-					<posx>col-22-begin</posx>
+					<posx>1820</posx>
 					<posy>-10</posy>
-					<width>4-col</width>
+					<width>6-col</width>
 					<font>menutitle</font>
+					<align>right</align>
 					<textcolor>black</textcolor>
-					<label>$INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
+					<label>$LOCALIZE[180] $INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
 					<scroll>false</scroll>
 					<shadowcolor>-</shadowcolor>
 				</control>

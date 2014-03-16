@@ -56,7 +56,8 @@
         <textoffsetx>0</textoffsetx>
         <focusedcolor>black</focusedcolor>
         <textcolor>unselected</textcolor>
-        <disabledcolor>accented</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
+		<invalidcolor>disabled</invalidcolor>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="togglebutton">
@@ -73,7 +74,7 @@
         <font>itemTitle</font>
         <textcolor>unselected</textcolor>
         <focusedcolor>selected</focusedcolor>
-        <disabledcolor>unselected</disabledcolor>
+        <disabledcolor>disabled</disabledcolor>
         <pulseonselect>false</pulseonselect>
         <colordiffuse>ffFFFFFF</colordiffuse>
     </default>
