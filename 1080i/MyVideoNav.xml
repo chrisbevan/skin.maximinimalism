@@ -580,7 +580,7 @@
                             <visible>false</visible>
                             <width min="30" max="200">auto</width>
                             <font>buttonTitle</font>
-                            <label>$INFO[container.foldername]</label>
+                            <label>$INFO[Playlist.Length(video)]</label>
                             <textcolor>selected</textcolor>
                         </control>
                     </control>
@@ -647,10 +647,10 @@
                     <posx>-12</posx>
                     <posy>166</posy>
                     <width>4-col</width>
-                    <height>11-row</height>
+                    <height>12-row</height>
                     <itemgap>0</itemgap>
                     <onright>9000</onright>
-                    <control type="button" id="1">
+					<control type="button" id="1">
                         <description>Search</description>
                         <visible>System.HasAddon(script.globalsearch)</visible>
                         <height>54</height>
@@ -665,6 +665,21 @@
                         <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true)</onclick>
                         <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
                     </control>
+					<control type="button" id="107">
+						<description>Video Playlist</description>
+						<enable>IntegerGreaterThan(Playlist.Length(video),0)</enable>
+                        <height>54</height>
+                        <width>4-col</width>
+                        <font>menuTitle</font>
+                        <textcolor>black</textcolor>
+                        <focusedcolor>selected</focusedcolor>
+                        <texturefocus>colors/black.png</texturefocus>
+                        <texturenofocus>colors/unselected.png</texturenofocus>
+                        <textoffsetx>12</textoffsetx>
+                        <label>31123</label>
+						<onclick>right</onclick>
+						<onclick>ActivateWindow(videoplaylist)</onclick>
+					</control>
                     <control type="button" id="3">
                         <description>Sort by button</description>
                         <height>54</height>

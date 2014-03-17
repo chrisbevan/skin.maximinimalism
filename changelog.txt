@@ -13,6 +13,7 @@
 - [REVISED] Skin settings simplified (thanks bigheeed). 
 - [NEW] DialogFileStacking.xml
 - [REVISED] Weather icons revised.
+- [NEW] Video playlists
 - Various misc additions, revisions and fixes
 
 [B]0.9.5[/B]

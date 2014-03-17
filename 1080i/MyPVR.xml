@@ -586,7 +586,7 @@
                     <posx>-12</posx>
                     <posy>166</posy>
                     <width>4-col</width>
-                    <height>11-row</height>
+                    <height>12-row</height>
                     <itemgap>0</itemgap>
                     <onright>9000</onright>
                     <control type="button" id="100">
@@ -603,6 +603,21 @@
                         <onclick>right</onclick>
                         <onclick>activateWindow(pvrguidesearch)</onclick>
                     </control>
+					<control type="button" id="107">
+						<description>Video Playlist</description>
+						<enable>IntegerGreaterThan(Playlist.Length(video),0)</enable>
+                        <height>54</height>
+                        <width>4-col</width>
+                        <font>menuTitle</font>
+                        <textcolor>black</textcolor>
+                        <focusedcolor>selected</focusedcolor>
+                        <texturefocus>colors/black.png</texturefocus>
+                        <texturenofocus>colors/unselected.png</texturenofocus>
+                        <textoffsetx>12</textoffsetx>
+                        <label>31123</label>
+						<onclick>right</onclick>
+						<onclick>ActivateWindow(videoplaylist)</onclick>
+					</control>
                     <control type="button" id="101">
                         <description>Sort by button (placeholder in PVR)</description>
                         <enable>false</enable>
