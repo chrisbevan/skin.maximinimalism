@@ -1,6 +1,20 @@
-[B]0.1.0[/B]
+[B]0.9.9[/B]
+- [INFO] Skin now preparing for Gotham release. Frodo support discontinued.
 - [NEW] Unwatched / new tvshow episode flag (thanks postdeath)
-- [MODIFIED] Settings level indicator (Gotham builds) adjusted
+- [NEW] Player controls for video (access: OK / Info during playback)
+- [MODIFIED] Settings level indicator (Gotham builds) position and access adjusted
+- [NEW] Radio section from PVR now available in music section (thanks Ronie - totally missed that!) 
+- [FIXED] Music section menu navigation was not transferring focus correctly in some instances (thanks StfAL)
+- [MODIFIED] Cast and crew dialog behaves properly with back button (thanks StfAL)
+- [FIXED] debugging messaging system revised (pertinent to devs only)
+- [FIXED] Various tweaks and fixes to prepare for official skins release (thanks Ronie)
+- [NEW] Direct profile switching added to settings->profile (thanks picaresqu3)
+- [NEW] Player controls for music playback ('now playing' section)
+- [REVISED] Skin settings simplified (thanks bigheeed). 
+- [NEW] DialogFileStacking.xml
+- [REVISED] Weather icons revised.
+- [NEW] Video playlists
+- Various misc additions, revisions and fixes
 
 [B]0.9.5[/B]
 - [MODIFIED] Various PVR tweaking

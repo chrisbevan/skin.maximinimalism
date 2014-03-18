@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog" id="400">
-	<onload>action(back)</onload>
-	<!--removed: not used-->
+<window type="dialog">
+    <onload>action(back)</onload>
+    <!--removed: not used-->
 </window>

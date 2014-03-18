@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog" id="144">
-	<controls>		
-		<!--removed: not used-->
-	</controls>
+<window type="dialog">
+    <controls>
+        <!--removed: not used-->
+    </controls>
 </window>
