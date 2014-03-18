@@ -57,7 +57,7 @@
                     <posx>12</posx>
                     <posy>0</posy>
                     <width>16-col</width>
-                    <font>itemTitle</font>
+                    <font>itemTitleSmallCondensed</font>
                     <label>1021</label>
                     <textcolor>selected</textcolor>
                     <shadowcolor>-</shadowcolor>
@@ -68,11 +68,11 @@
                     <width>12-col-gutter</width>
                     <height>5-row</height>
                     <texture>colors/black.png</texture>
-                    <colordiffuse>99ffffff</colordiffuse>
+                    <colordiffuse>77ffffff</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <!--path list-->
-                <control type="list" id="10">
+                <control type="panel" id="10">
                     <posx>0</posx>
                     <posy>1-row</posy>
                     <width>12-col-gutter</width>
@@ -88,9 +88,9 @@
                             <width>12-col</width>
                             <height>53</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/black.png</texture>
+                            <texture>colors/offblack.png</texture>
                             <bordersize>0</bordersize>
-                            <colordiffuse>ffFFFFFF</colordiffuse>
+                            <colordiffuse>99FFFFFF</colordiffuse>
                         </control>
                         <control type="label">
                             <posx>12</posx>
@@ -111,7 +111,7 @@
                             <width>12-col</width>
                             <height>53</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/offblack.png</texture>
+                            <texture>colors/selected.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>ffFFFFFF</colordiffuse>
                         </control>
@@ -121,8 +121,8 @@
                             <width>12-col</width>
                             <height>1-row</height>
                             <font>itemTitle</font>
-                            <textcolor>selected</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <textcolor>black</textcolor>
+                            <selectedcolor>black</selectedcolor>
                             <info>ListItem.Label</info>
                             <shadowcolor>-</shadowcolor>
                         </control>

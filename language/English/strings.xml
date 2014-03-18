@@ -31,7 +31,7 @@
 	<string id="31029">Current playlist</string>
 	<string id="31030">Music Fanart location: </string>
 	<string id="31031">Content Type</string>
-	<string id="31032">Visualization Presets</string>
+	<string id="31032">Visualisation</string>
 	<string id="31033">Set Media Source Content</string>
 	<string id="31034">Enable Debug Grid</string>
 	<string id="31035">Enable Debug Info</string>
@@ -42,7 +42,7 @@
 	<string id="31040">Episode</string>
 	<string id="31041">Menu Shortcuts</string>
 	<string id="31042">Specific Content type settings</string>	
-	<string id="31043">Set Content Scraper:</string>
+	<string id="31043">Selected Content Scraper</string>
 	<string id="31044">Sort Order</string>
 	<string id="31045">Source name:</string>
 	<string id="31046">Field:</string>
@@ -136,4 +136,5 @@
 	<string id="31134">Manual search</string>
 	<string id="31135">Eject Disc</string>
 	<string id="31136">Now Playing</string>
+	<string id="31137">Available Content Scrapers:</string>
 </strings>

@@ -71,7 +71,7 @@
                 <height>18-row</height>
                 <itemlayout width="5-col-gutter" height="6-col">
                     <control type="label">
-                        <posx>52</posx>
+                        <posx>36</posx>
                         <posy>92</posy>
                         <width>5-col-gutter</width>
                         <font>symbolWeather</font>
@@ -110,7 +110,7 @@
                 </itemlayout>
                 <focusedlayout width="6-col" height="6-col">
                     <control type="label">
-                        <posx>52</posx>
+                        <posx>36</posx>
                         <posy>92</posy>
                         <width>5-col-gutter</width>
                         <font>symbolWeather</font>

@@ -301,6 +301,12 @@
 						<onclick>dialog.close(5001)</onclick>
 	                    <onclick>activateWindow(musicplaylist)</onclick>
 	                </item>
+					<item id="2">
+			            <description>Visualisation</description>
+	                    <label>31032</label>
+	                    <thumb>-</thumb>
+						<onclick>activateWindow(musicOSD)</onclick>
+	                </item>
 	            </content>
 	        </control>
 		</control>

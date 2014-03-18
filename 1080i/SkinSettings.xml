@@ -64,7 +64,7 @@
                     <texturefocus>colors/selected.png</texturefocus>
                     <label>31084</label>
                     <label2>$INFO[Skin.String(globalBackground)]</label2>
-                    <onclick>Skin.SetImage(globalBackground)</onclick>
+                    <onclick>Skin.SetFile(globalBackground,.png|.jpg|.gif,special://skin/extras/backgrounds/)</onclick>
                     <textwidth>8-col</textwidth>
 					<onright>501</onright>
                 </control>
