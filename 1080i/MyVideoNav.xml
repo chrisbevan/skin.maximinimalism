@@ -584,6 +584,7 @@
                             <textcolor>selected</textcolor>
                         </control>
                     </control>
+					<include>optionsIndicator</include>
                 </control>
             </control>
         </control>

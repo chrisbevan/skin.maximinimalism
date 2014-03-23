@@ -171,13 +171,6 @@
                     </control>
                 </focusedlayout>
                 <content>
-                    <item id="1">
-                        <visible>!IsEmpty(ListItem.Trailer)</visible>
-                        <label>20410</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>SendClick(2003,11)</onclick>
-                    </item>
                     <item id="2">
                         <label>31075</label>
                         <label2></label2>
@@ -190,6 +183,13 @@
                         <thumb>-</thumb>
 						<onclick>Skin.SetString(showcast,true)</onclick>
                    </item>
+					<item id="1">
+                        <visible>!IsEmpty(ListItem.Trailer)</visible>
+                        <label>20410</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>SendClick(2003,11)</onclick>
+                    </item>
                     <item id="4">
                         <label>31076</label>
                         <label2></label2>

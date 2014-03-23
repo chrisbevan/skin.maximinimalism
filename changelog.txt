@@ -1,3 +1,9 @@
+[B]1.0.0[/B]
+- [MODIFIED] Video info modified to default to 'play' (thanks Vustom)
+- [MODIFIED] Default background image changed (previous default retained, available from skin settings).
+- [NEW] Record option added to videoOSD.
+
+
 [B]0.9.9[/B]
 - [INFO] Skin now preparing for Gotham release. Frodo support discontinued.
 - [NEW] Unwatched / new tvshow episode flag (thanks postdeath)
