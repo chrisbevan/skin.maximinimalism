@@ -268,6 +268,13 @@
 		                    <thumb>-</thumb>
 		                    <onclick>PlayerControl(next)</onclick>
 		                </item>
+						<item id="7">
+							<description>Record (PVR only)</description>
+							<visible>Player.CanRecord</visible>
+		                    <label></label>
+		                    <thumb>-</thumb>
+		                    <onclick>PlayerControl(record)</onclick>
+		                </item>
 		            </content>
 		        </control>
 			</control>			

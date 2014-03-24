@@ -77,7 +77,6 @@
                     </item>
                     <item id="5">
                         <description>Exit to desktop</description>
-                        <visible>System.ShowExitButton</visible>
                         <label>13012</label>
                         <thumb>-</thumb>
                         <onclick>XBMC.Quit()</onclick>
