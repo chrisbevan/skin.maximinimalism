@@ -204,7 +204,7 @@
                             <item id="17">
                                 <label>1036</label>
                                 <onclick>ActivateWindow(favourites,return)</onclick>
-                                <onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
+                                <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
                             </item>
                         </content>
                     </control>
@@ -841,7 +841,8 @@
                         <textoffsetx>12</textoffsetx>
                         <label>137</label>
                         <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true)</onclick>
-                        <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
+						<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
+						<onclick>right</onclick>
                     </control>
                     <control type="button" id="103">
                         <description>Sort by button (placeholder in PVR)</description>

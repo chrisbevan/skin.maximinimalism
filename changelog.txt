@@ -2,6 +2,7 @@
 - [MODIFIED] Video info modified to default to 'play' (thanks Vustom)
 - [MODIFIED] Default background image changed (previous default retained, available from skin settings).
 - [NEW] Record option added to videoOSD.
+- Bugfixes to global search and favourites
 
 
 [B]0.9.9[/B]

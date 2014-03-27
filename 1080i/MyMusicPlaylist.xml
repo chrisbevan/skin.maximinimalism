@@ -206,7 +206,7 @@
                             </item>
                             <item id="24">
                                 <label>1036</label>
-                                <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
+                                <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                                 <onclick>ReplaceWindow(favourites)</onclick>
                             </item>
                         </content>
@@ -431,7 +431,8 @@
                         <textoffsetx>12</textoffsetx>
                         <label>137</label>
                         <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true)</onclick>
-                        <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
+						<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
+						<onclick>right</onclick>
                     </control>
                     <control type="button" id="3">
                         <description>Sort by button</description>
