@@ -5,7 +5,6 @@
 	<previouswindow>videolibrary</previouswindow>
     <controls>
         <include>globalBackground</include>
-        <include>nowRecording</include>
         <!--page container group-->
         <control type="group">
             <!--window fader-->

@@ -7,7 +7,6 @@
 	<previouswindow>home</previouswindow>
     <controls>
         <include>globalBackground</include>
-        <include>nowRecording</include>
         <!--page container group-->
         <control type="group">
             <!--window fader-->
@@ -431,7 +430,15 @@
                         <visible>False</visible>
                     </control>
                 </control>
-                <!--Main content listing-->
+                <!--Preview window-->
+				<control type="videowindow">
+					<visible>Player.HasVideo</visible>
+                    <posx>col-21-begin</posx>
+                    <posy>56</posy>
+                    <width>4-col</width>
+                    <height>162</height>
+                </control>
+				<!--Main content listing-->
                 <control type="group" id="9999">
                     <posx>col-4-begin</posx>
                     <posy>270</posy>
