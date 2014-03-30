@@ -124,24 +124,26 @@
     <!--now recording indicator-->
     <include name="nowRecording">
         <control type="group">
-            <posx>col-19-begin</posx>
-            <posy>994</posy>
+            <posx>col-1-begin</posx>
+            <posy>row-1-begin</posy>
             <visible>PVR.IsRecording</visible>
-            <control type="image">
-                <posx>0</posx>
-                <posy>1</posy>
-                <width>6-col</width>
-                <height>30</height>
-                <aspectratio>stretch</aspectratio>
-                <texture border="0">UIControls/listitemNF.png</texture>
-                <bordersize>0</bordersize>
-                <colordiffuse>66FFFFFF</colordiffuse>
-            </control>
             <control type="label">
-                <posx>24</posx>
+                <posx>0</posx>
+                <posy>-13</posy>
+                <width>30</width>
+                <font>symbol</font>
+                <align>left</align>
+                <textcolor>selected</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <scroll>true</scroll>
+                <label></label>
+				<animation effect="fade" start="0" end="100" time="1500" loop="true" condition="true">conditional</animation>
+            </control>
+			<control type="label">
+                <posx>28</posx>
                 <posy>-12</posy>
-                <width>384</width>
-                <font>smallMedium</font>
+                <width>11-col-gutter</width>
+                <font>itemTitle</font>
                 <align>left</align>
                 <textcolor>selected</textcolor>
                 <shadowcolor>-</shadowcolor>
