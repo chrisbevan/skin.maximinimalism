@@ -4,9 +4,9 @@
 - [NEW] Czech language support (thanks MarhyCZ)
 - [NEW] Record option added to videoOSD.
 - [NEW] DVD Menu added to videoOSD.
+- [NEW] Skin option to allow prioritising of exit (to desktop) over shutdown as default focus item in power menu.
 - Bugfixes to global search and favourites
 - Various revisions and fixes
-
 
 [B]0.9.9[/B]
 - [INFO] Skin now preparing for Gotham release. Frodo support discontinued.
