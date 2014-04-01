@@ -56,7 +56,7 @@ msgstr "Televize"
 
 msgctxt "#31007"
 msgid "Library Empty"
-msgstr "Prázdná Knihovna"
+msgstr "Nic tu není"
 
 msgctxt "#31008"
 msgid "Recording"
@@ -110,11 +110,11 @@ msgstr "Vyčistit playlist"
 
 msgctxt "#31022"
 msgid "Select Items"
-msgstr "Vybrat položky"
+msgstr "Vybrat Položky"
 
 msgctxt "#31023"
 msgid "Change Sort"
-msgstr "Změnit řazení"
+msgstr "Změnit Řazení"
 
 msgctxt "#31024"
 msgid "Disable Background Video"
@@ -122,7 +122,7 @@ msgstr "Zakázat Video na pozadí"
 
 msgctxt "#31025"
 msgid "Subtitles Script:"
-msgstr "Text titulků:"
+msgstr "Text Titulků:"
 
 msgctxt "#31026"
 msgid "Video Fanart location: "
@@ -150,7 +150,7 @@ msgstr "Typ Obsahu:"
 
 msgctxt "#31032"
 msgid "Visualisation"
-msgstr "Typ Obsahu:"
+msgstr "Vizualizace"
 
 msgctxt "#31033"
 msgid "Set Media Source Content"
@@ -198,7 +198,7 @@ msgstr "Poskytovatel metadat"
 
 msgctxt "#31044"
 msgid "Sort Order"
-msgstr "Pořadí řazení"
+msgstr "Pořadí Řazení"
 
 msgctxt "#31045"
 msgid "Source name:"
@@ -214,7 +214,7 @@ msgstr "Operátor:"
 
 msgctxt "#31048"
 msgid "Create Folder"
-msgstr "Vytvořit složku"
+msgstr "Vytvořit Složku"
 
 msgctxt "#31049"
 msgid "track(s)"
@@ -246,7 +246,7 @@ msgstr "Doplňky"
 
 msgctxt "#31056"
 msgid "Photo Library"
-msgstr "Knihovna obrázků"
+msgstr "Knihovna Obrázků"
 
 msgctxt "#31057"
 msgid "Create Music Playlist"
@@ -330,11 +330,11 @@ msgstr "Změnit Položku"
 
 msgctxt "#31077"
 msgid "Music Files"
-msgstr "Hudební souborys"
+msgstr "Hudební Soubory"
 
 msgctxt "#31078"
 msgid "Now and Next"
-msgstr "Nyní a další"
+msgstr "Nyní a Další"
 
 msgctxt "#31079"
 msgid "XBMC"
@@ -342,11 +342,11 @@ msgstr "XBMC"
 
 msgctxt "#31080"
 msgid "Programme Guide"
-msgstr "Průvodce programem"
+msgstr "Průvodce Programem"
 
 msgctxt "#31081"
 msgid "Return"
-msgstr "Potvrdit"
+msgstr "Zpět"
 
 msgctxt "#31082"
 msgid "Version"
@@ -374,15 +374,15 @@ msgstr "Povolit hlavní fanart pozadí: "
 
 msgctxt "#31088"
 msgid "Select Shortcut"
-msgstr "Vybrat zkratku"
+msgstr "Vybrat Zkratku"
 
 msgctxt "#31089"
 msgid "File Browser"
-msgstr "Prohlížeč souborů"
+msgstr "Prohlížeč Souborů"
 
 msgctxt "#31090"
 msgid "Set Shortcut Name"
-msgstr "Nastav jméno zkratky"
+msgstr "Nastav Jméno Zkratky"
 
 msgctxt "#31091"
 msgid "Add Video Playlist"
@@ -486,11 +486,11 @@ msgstr "Neznámý rok"
 
 msgctxt "#31116"
 msgid "Aspect"
-msgstr "Neznámý rok"
+msgstr "Aspekt"
 
 msgctxt "#31117"
 msgid "Launch addon"
-msgstr "Spustit Doplňek"
+msgstr "Spustit doplňek"
 
 msgctxt "#31118"
 msgid "Unwatched titles only"
@@ -570,7 +570,7 @@ msgstr "Nyní přehrávané"
 
 msgctxt "#31137"
 msgid "Available Content Scrapers:"
-msgstr "Nyní přehrávané"
+msgstr "Dostupní Poskytovatelé metadat:"
 
 msgctxt "#31138"
 msgid "Item Info"
@@ -578,7 +578,7 @@ msgstr "Info o položce"
 
 msgctxt "#31139"
 msgid "Item Options"
-msgstr "Možnosti položky"
+msgstr "Možnosti Položky"
 
 msgctxt "#31140"
 msgid "DVD Menu"
@@ -590,4 +590,4 @@ msgstr "Kapitola"
 
 msgctxt "#31142"
 msgid "Prioritise exit over shutdown in power menu"
-msgstr "??"
+msgstr "Upřednostnit ukončení před vypnutím v menu ukončení"
