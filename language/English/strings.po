@@ -586,3 +586,7 @@ msgstr ""
 msgctxt "#31141"
 msgid "Chapter"
 msgstr ""
+
+msgctxt "#31142"
+msgid "Prioritise exit over shutdown in power menu"
+msgstr ""

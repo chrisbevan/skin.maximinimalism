@@ -126,7 +126,7 @@
 				<control type="radiobutton" id="6">
                     <description>Reverse power down options</description>
                     <width>16-col</width>
-                    <label>Prioritise exit over shutdown in power menu</label>
+                    <label>31142</label>
                     <onclick>Skin.ToggleSetting(exitFirst)</onclick>
                     <selected>Skin.HasSetting(exitFirst)</selected>
                 </control>
