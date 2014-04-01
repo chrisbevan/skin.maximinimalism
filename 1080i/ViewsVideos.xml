@@ -375,7 +375,7 @@
                             <width>4-col-gutter</width>
                             <font>smallMedium</font>
                             <textcolor>selected</textcolor>
-                            <label>$VAR[itemdetail]</label>
+                            <label>$VAR[itemDetail]</label>
                         </control>
                     </control>
                 </itemlayout>
@@ -429,7 +429,7 @@
                             <font>smallMedium</font>
                             <textcolor>black</textcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>$VAR[itemdetail]</label>
+                            <label>$VAR[itemDetail]</label>
                         </control>
                     </control>
                 </focusedlayout>

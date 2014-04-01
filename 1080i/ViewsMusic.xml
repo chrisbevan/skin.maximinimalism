@@ -359,7 +359,6 @@
                     <label fallback="31114">$INFO[ListItem.Genre]</label>
                     <height>54</height>
                     <font>menuTitle</font>
-                    <textcolor>black</textcolor>
                     <textoffsetx>12</textoffsetx>
                 </control>
                 <control type="label">
