@@ -86,7 +86,7 @@ msgctxt "#31014"
 msgid "title(s)"
 msgstr "položka(y)"
 
-//#31015 - #31017 Empty strings
+//#31015 - #31016 Empty strings
 
 msgctxt "#31017"
 msgid "Channels"
