@@ -1,3 +1,6 @@
+[B]1.0.1[/B]
+- [FIXED] Logout option returned to shutdown menu (thanks karandras24)
+
 [B]1.0.0[/B]
 - [MODIFIED] Video info modified to default to 'play' (thanks Vustom)
 - [MODIFIED] Default background image changed (previous default retained, available from skin settings).

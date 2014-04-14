@@ -131,9 +131,9 @@
 					</control>
 					<control type="progress">
 						<description>Progress Bar</description>
-						<posx>5-col</posx>
+						<posx>396</posx>
 						<posy>200</posy>
-						<width>14-col-gutter</width>
+						<width>13-col</width>
 						<info>Player.Progress</info>
 					</control>
 					<control type="label">
@@ -211,7 +211,7 @@
 	                    <onclick>PlayerControl(stop)</onclick>
 	                </item>
 	                <item id="4">
-						<visible>Player.Playing</visible>
+						<visible>Player.Playing | player.forwarding | player.rewinding</visible>
 						<description>Play/Pause</description>
 	                    <label></label>
 	                    <thumb>-</thumb>
