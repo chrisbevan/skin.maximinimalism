@@ -1,5 +1,8 @@
 [B]1.0.1[/B]
 - [FIXED] Logout option returned to shutdown menu (thanks karandras24)
+- [MODIFIED] Progress bar for fullscreen music position tweaked
+- [NEW] PVR channel list OSD (thanks MagHie)
+- [MODIFIED] Video no longer stops on return to menu by default. Option to stop playback on menu is available in skin settings.
 
 [B]1.0.0[/B]
 - [MODIFIED] Video info modified to default to 'play' (thanks Vustom)

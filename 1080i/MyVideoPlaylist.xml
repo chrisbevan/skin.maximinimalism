@@ -62,7 +62,13 @@
                             </control>
                         </focusedlayout>
                         <content>
-                            <item id="18">
+                            <item id="20">
+                                <visible>Player.HasVideo</visible>
+                                <label>31136</label>
+                                <label2></label2>
+                                <onclick>action(fullscreen)</onclick>
+                            </item>
+							<item id="18">
                                 <visible>System.HasMediaDVD</visible>
                                 <label>341</label>
                                 <label2></label2>
