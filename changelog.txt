@@ -3,6 +3,7 @@
 - [MODIFIED] Progress bar for fullscreen music position tweaked
 - [NEW] PVR channel list OSD (thanks MagHie)
 - [MODIFIED] Video no longer stops on return to menu by default. Option to stop playback on menu is available in skin settings.
+- [NEW] Finish time added to video OSD (thanks Takoi)
 
 [B]1.0.0[/B]
 - [MODIFIED] Video info modified to default to 'play' (thanks Vustom)
