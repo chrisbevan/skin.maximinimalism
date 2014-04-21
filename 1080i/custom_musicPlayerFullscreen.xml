@@ -150,7 +150,8 @@
 		
 			<!--player controls-->
 			<control type="panel" id="8001">
-	            <posx>370</posx>
+	            <animation effect="slide" start="0,200" end="0" delay="300" time="200" tween="sine">WindowOpen</animation>
+				<posx>370</posx>
 	            <posy>926</posy>
 	            <width>24-col</width>
 	            <height>1-col</height>
@@ -209,6 +210,7 @@
 	                    <label></label>
 	                    <thumb>-</thumb>
 	                    <onclick>PlayerControl(stop)</onclick>
+						<onclick>action(back)</onclick>
 	                </item>
 	                <item id="4">
 						<visible>Player.Playing | player.forwarding | player.rewinding</visible>
