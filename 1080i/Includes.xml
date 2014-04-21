@@ -27,7 +27,27 @@
     </include>
     <!--Global background-->
     <include name="globalBackground">
-        <control type="group">
+        <!--Preview window-->
+		<control type="group">
+			<visible>Player.HasVideo</visible>
+			<control type="videowindow">
+	            <include>dimensionsFullscreen</include>
+	        </control>
+			<control type="image">
+	            <include>dimensionsFullscreen</include>
+	            <texture>colors/black.png</texture>
+	            <colordiffuse>77FFFFFF</colordiffuse>
+	            <aspectratio>stretch</aspectratio>
+	        </control>
+	        <control type="image">
+	            <include>dimensionsFullscreen</include>
+	            <texture>backgrounds/vignette.png</texture>
+	            <colordiffuse>ffffffff</colordiffuse>
+	            <aspectratio>stretch</aspectratio>
+	        </control>
+		</control>
+		<control type="group">
+			<visible>!Player.HasVideo</visible>
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <texture>colors/black.png</texture>

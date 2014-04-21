@@ -590,3 +590,7 @@ msgstr ""
 msgctxt "#31142"
 msgid "Prioritise exit over shutdown in power menu"
 msgstr ""
+
+msgctxt "#31143"
+msgid "Stop video on return to menu"
+msgstr ""
