@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
+    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <onload condition="window.previous(0)">setfocus(9000)</onload>
 	<previouswindow>home</previouswindow>
     <controls>
@@ -64,7 +64,13 @@
                             </control>
                         </focusedlayout>
                         <content>
-                            <item id="18">
+                            <item id="20">
+                                <visible>Player.HasVideo</visible>
+                                <label>31136</label>
+                                <label2></label2>
+                                <onclick>action(fullscreen)</onclick>
+                            </item>
+							<item id="18">
                                 <visible>System.HasMediaDVD</visible>
                                 <label>341</label>
                                 <label2></label2>

@@ -213,26 +213,6 @@
                         <onleft>120</onleft>
                     </control>
                 </control>
-                <control type="group" id="111">
-                    <control type="grouplist">
-                        <posx>0</posx>
-                        <posy>11-row</posy>
-                        <width>4-col</width>
-                        <height>2-row</height>
-                        <orientation>horizontal</orientation>
-                        <itemgap>0</itemgap>
-                        <control type="label">
-                            <visible>false</visible>
-                            <description>notification</description>
-                            <width>4-col-gutter</width>
-                            <height>2-row</height>
-                            <font>itemTitle</font>
-                            <textcolor>selected</textcolor>
-                            <label>$LOCALIZE[SCRIPT655]</label>
-                            <wrapmultiline>true</wrapmultiline>
-                        </control>
-                    </control>
-                </control>
             </control>
             <!--manual search button-->
 			<control type="button" id="160">

@@ -92,6 +92,15 @@
                 <label>$INFO[Player.Time]</label>
                 <shadowcolor>-</shadowcolor>
             </control>
+			<control type="label">
+                <posx>312</posx>
+                <posy>110</posy>
+                <width>24-col</width>
+                <font>smallStrong</font>
+                <textcolor>selected</textcolor>
+                <label>$INFO[Player.finishtime,| $LOCALIZE[19127]: ,]</label>
+                <shadowcolor>-</shadowcolor>
+            </control>
             <control type="label">
                 <posx>1512</posx>
                 <posy>110</posy>

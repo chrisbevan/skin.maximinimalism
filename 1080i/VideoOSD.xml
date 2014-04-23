@@ -8,8 +8,8 @@
 		<control type="group">
 			
 			<!--fade out if audio / video menu active-->
-			<animation type="Conditional" condition="Window.IsActive(123) | Window.IsActive(124)">
-				<effect type="fade" start="100" end="0" time="200" tween="sine" easing="in" reversible="false"  />
+			<animation type="Conditional" condition="Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)">
+				<effect type="fade" start="100" end="0" time="200" tween="sine" easing="in" />
 			</animation>
 											
 			<!--background-->
