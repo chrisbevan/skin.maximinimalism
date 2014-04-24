@@ -1,3 +1,7 @@
+[B]1.0.2[/B]
+- [NEW] Norwegian language support (thanks Takoi)
+- [FIXED] Several localisation issues (thanks Takoi)
+
 [B]1.0.1[/B]
 - [FIXED] Logout option returned to shutdown menu (thanks karandras24)
 - [MODIFIED] Progress bar for fullscreen music position tweaked
