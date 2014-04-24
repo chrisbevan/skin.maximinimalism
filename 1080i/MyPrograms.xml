@@ -36,7 +36,7 @@
                         <width>24-col</width>
                         <align>center</align>
                         <font>regular</font>
-                        <label>$INFO[container.Numitems,, Items]</label>
+                        <label>$INFO[container.Numitems,, $LOCALIZE[31145]]</label>
                         <textcolor>selected</textcolor>
                     </control>
                 </control>

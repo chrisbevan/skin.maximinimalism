@@ -497,7 +497,7 @@
                         </control>
                         <control type="label">
                             <visible>System.Setting(hidewatched)</visible>
-                            <width>4-col</width>
+                            <width>6-col</width>
                             <font>buttonTitle</font>
                             <label>$LOCALIZE[31118]</label>
                             <textcolor>selected</textcolor>
