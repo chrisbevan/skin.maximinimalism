@@ -14,25 +14,13 @@
             <onup>51</onup>
             <pagecontrol>60</pagecontrol>
             <itemlayout width="312" height="366">
-                <control type="label">
-                    <visible>listitem.isfolder</visible>
-					<posx>138</posx>
-                    <posy>0</posy>
-                    <width>276</width>
-                    <height>276</height>
-					<align>center</align>
-                    <font>symbolVeryLarge</font>
-                    <textcolor>selected</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label></label>
-                </control>
 				<control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>276</width>
                     <height>273</height>
                     <aspectratio>scale</aspectratio>
-                    <texture>$INFO[Listitem.icon]</texture>
+                    <texture fallback="colors/offblack.png">$INFO[Listitem.icon]</texture>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                 </control>
                 <control type="image">
@@ -76,25 +64,13 @@
                 </control>
             </itemlayout>
             <focusedlayout width="312" height="366">
-                <control type="label">
-                    <visible>listitem.isfolder</visible>
-					<posx>138</posx>
-                    <posy>0</posy>
-                    <width>276</width>
-                    <height>276</height>
-					<align>center</align>
-                    <font>symbolVeryLarge</font>
-                    <textcolor>selected</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label></label>
-                </control>
 				<control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>276</width>
                     <height>273</height>
 					<aspectratio>scale</aspectratio>
-                    <texture>$INFO[Listitem.icon]</texture>
+                    <texture fallback="colors/offblack.png">$INFO[Listitem.icon]</texture>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                 </control>
                 <control type="image">
@@ -137,7 +113,7 @@
                         <font>smallMedium</font>
                         <textcolor>black</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.artist] $INFO[ListItem.Year,• ,]</label>
+                        <label>$INFO[ListItem.PictureResolution,, • ]$INFO[ListItem.label2]</label>
                     </control>
                 </control>
             </focusedlayout>
