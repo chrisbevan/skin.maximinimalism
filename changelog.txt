@@ -3,6 +3,7 @@
 - [FIXED] Several localisation issues (thanks Takoi)
 - [MODIFIED] Code refactoring skinwide
 - [FIXED] Network location dialog navigation (thanks frankveltmans)
+- [MODIFIED] Pictures section revised
 - Various minor graphical tweaks
 
 [B]1.0.1[/B]
