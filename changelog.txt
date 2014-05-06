@@ -1,6 +1,9 @@
 [B]1.0.2[/B]
 - [NEW] Norwegian language support (thanks Takoi)
 - [FIXED] Several localisation issues (thanks Takoi)
+- [MODIFIED] Code refactoring skinwide
+- [FIXED] Network location dialog navigation (thanks frankveltmans)
+- Various minor graphical tweaks
 
 [B]1.0.1[/B]
 - [FIXED] Logout option returned to shutdown menu (thanks karandras24)

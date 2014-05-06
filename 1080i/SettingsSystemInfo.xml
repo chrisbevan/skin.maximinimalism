@@ -108,7 +108,7 @@
                     <item id="2">
                         <description>Connectivity</description>
                         <label>705</label>
-                        <label2>$INFO[System.InternetState][CR]$INFO[Network.IPAddress][CR]$INFO[Network.MacAddress]</label2>
+                        <label2>$INFO[Network.IPAddress][CR]$INFO[Network.MacAddress]</label2>
                         <property name="itemIcon">&gt;</property>
                         <thumb>-</thumb>
                         <onclick>noop</onclick>
@@ -165,7 +165,7 @@
             </control>
         </control>
         <!--debugging-->
-        <include>Debug_Grid</include>
+        <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
             <label>SettingsSystemInfo.xml</label>

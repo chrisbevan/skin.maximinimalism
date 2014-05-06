@@ -42,7 +42,7 @@
                 </control>
                 <!--Main content listing-->
                 <control type="group" id="9999">
-                    <posx>col-3-begin</posx>
+                    <posx>212</posx>
                     <posy>row-2-begin</posy>
                     <!--source content-->
                     <control type="group">
@@ -64,7 +64,7 @@
             </control>
         </control>
         <!--debugging-->
-        <include>Debug_Grid</include>
+        <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
             <label>MyPrograms.xml</label>
