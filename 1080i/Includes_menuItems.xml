@@ -43,13 +43,13 @@
         <content>
 			<!--Now Playing-->
 			<item id="1">
-			    <visible>Player.HasVideo + window.isactive(videolibrary) | window.isactive(videoplaylist) | [System.GetBool(pvrmanager.enabled) + window.isactive(pvr) + !control.isvisible(12)]</visible>
+			    <visible>Player.HasVideo + [window.isactive(videolibrary) | window.isactive(videoplaylist) | [System.GetBool(pvrmanager.enabled) + window.isactive(pvr) + !control.isvisible(12)]]</visible>
 			    <label>31136</label>
 			    <label2></label2>
 			    <onclick>action(fullscreen)</onclick>
 			</item>
 			<item id="2">
-				<visible>Player.HasAudio + [window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist)] | [System.GetBool(pvrmanager.enabled) + window.isactive(pvr) + control.isvisible(12)]</visible>
+				<visible>Player.HasAudio + [window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | [System.GetBool(pvrmanager.enabled) + window.isactive(pvr) + control.isvisible(12)]]</visible>
 			    <label>31136</label>
 			    <label2></label2>
 			    <onclick>activateWindow(5001)</onclick>
