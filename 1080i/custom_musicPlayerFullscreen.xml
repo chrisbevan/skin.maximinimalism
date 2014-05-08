@@ -98,7 +98,7 @@
 						<posx>4-col</posx>
 						<posy>48</posy>
 						<width>20-col-gutter</width>
-						<label>$INFO[MusicPlayer.TrackNumber,,.] $INFO[MusicPlayer.Title]</label>
+						<label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[MusicPlayer.Title]</label>
 						<scroll>true</scroll>
 						<align>left</align>
 						<font>pageTitle</font>
@@ -140,7 +140,7 @@
 						<posx>19-col</posx>
 						<posy>184</posy>
 						<width>5-col</width>
-						<label>[B]$INFO[MusicPlayer.Duration][/B] | [B]$LOCALIZE[19031][/B] $INFO[MusicPlayer.offset(1).Artist] : $INFO[MusicPlayer.offset(1).Title]</label>
+						<label>[B]$INFO[MusicPlayer.Duration][/B] $INFO[MusicPlayer.offset(1).Artist,| [B]$LOCALIZE[19031][/B] ,: ]$INFO[MusicPlayer.offset(1).Title]</label>
 						<font>smallMedium</font>
 						<scroll>false</scroll>
 					</control>
@@ -165,6 +165,16 @@
 		                    <shadowcolor>-</shadowcolor>
 		                    <label>$INFO[ListItem.label]</label>
 		                </control>
+						<control type="label">
+							<posx>26</posx>
+							<posy>0</posy>
+							<width>2-col</width>
+							<align>left</align>
+							<font>menuTitle</font>
+							<textcolor>black</textcolor>
+							<label>$INFO[ListItem.label2]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
 		            </itemlayout>
 		            <focusedlayout width="1-col" height="1-col">
 		                <control type="image">
@@ -187,6 +197,16 @@
 		                    <shadowcolor>-</shadowcolor>
 		                    <label>$INFO[ListItem.label]</label>
 		                </control>
+						<control type="label">
+							<posx>26</posx>
+							<posy>0</posy>
+							<width>2-col</width>
+							<align>left</align>
+							<font>menuTitle</font>
+							<textcolor>black</textcolor>
+							<label>$INFO[ListItem.label2]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
 		            </focusedlayout>
 		            <content>
 		                <item id="1">
@@ -234,33 +254,71 @@
 		                    <thumb>-</thumb>
 		                    <onclick>PlayerControl(next)</onclick>
 		                </item>
-						<item id="8">
-							<description>Repeat</description>
-		                    <label></label>
-		                    <thumb>-</thumb>
-		                    <onclick>PlayerControl(Repeat)</onclick>
-							<onclick condition="Playlist.IsRepeat">Notification($LOCALIZE[31132],$LOCALIZE[597])</onclick>
-							<onclick condition="Playlist.IsRepeatOne">Notification($LOCALIZE[31132],$LOCALIZE[596])</onclick>
-							<onclick condition="!Playlist.IsRepeat + !Playlist.IsRepeatOne">Notification($LOCALIZE[31132],$LOCALIZE[595])</onclick>
-		                </item>
-						<item id="9">
-							<description>Shuffle</description>
-		                    <label></label>
-		                    <thumb>-</thumb>
-		                    <onclick>PlayerControl(Random)</onclick>
-							<onclick>Notification($LOCALIZE[31132],$LOCALIZE[31133])</onclick>
-		                </item>
 		            </content>
-		        </control>		
-				<!--visualisation options etc-->
+		        </control>
+				<!--shuffle and repeat-->
 				<control type="panel" id="8002">
-		            <posx>1406</posx>
+					<posx>11-col</posx>
 		            <posy>934</posy>
 		            <width>24-col</width>
 		            <height>1-col</height>
 		            <itemgap>0</itemgap>
 		            <orientation>horizontal</orientation>
 					<onleft>8001</onleft>
+					<onright>8003</onright>
+		            <itemlayout width="184" height="43">
+						
+						<control type="label">
+							<posx>55</posx>
+							<posy>0</posy>
+							<width>184</width>
+							<align>left</align>
+							<font>menuTitle</font>
+							<textcolor>black</textcolor>
+							<label>$INFO[ListItem.label]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
+
+					</itemlayout>
+
+					<focusedlayout width="184" height="43">
+
+						<control type="label">
+							<posx>41</posx>
+							<posy>0</posy>
+							<width>184</width>
+							<align>left</align>
+							<font>menuTitle</font>
+							<textcolor>black</textcolor>
+							<label>[ $INFO[ListItem.label] ]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
+
+					</focusedlayout>
+		            <content>
+		                <item id="8">
+							<description>Repeat</description>
+							<label>$VAR[repeatState]</label>
+		                    <thumb>-</thumb>
+		                    <onclick>PlayerControl(Repeat)</onclick>
+		                </item>
+						<item id="9">
+							<description>Shuffle</description>
+							<label>$VAR[shuffleState]</label>
+		                    <thumb>-</thumb>
+		                    <onclick>PlayerControl(Random)</onclick>
+		                </item>
+		            </content>
+				</control>
+				<!--visualisation options etc-->
+				<control type="panel" id="8003">
+		            <posx>1406</posx>
+		            <posy>934</posy>
+		            <width>24-col</width>
+		            <height>1-col</height>
+		            <itemgap>0</itemgap>
+		            <orientation>horizontal</orientation>
+					<onleft>8002</onleft>
 		            <itemlayout width="184" height="43">
 						
 						<control type="label">

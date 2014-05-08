@@ -3,7 +3,9 @@
 - [FIXED] Several localisation issues (thanks Takoi)
 - [MODIFIED] Code refactoring skinwide
 - [FIXED] Network location dialog navigation (thanks frankveltmans)
-- [MODIFIED] Pictures section revised
+- [MODIFIED] Pictures section revised (wip)
+- [MODIFIED] Fullscreen music indicators revised (Keli)
+- [NEW] Music video menu item added to music section (thanks Keli)
 - Various minor graphical tweaks
 
 [B]1.0.1[/B]
