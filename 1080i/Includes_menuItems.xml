@@ -171,6 +171,14 @@
 				<onclick>Control.SetFocus(51)</onclick>
 			    <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 			</item>
+			<item id="101">
+				<visible>[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | [window.isactive(pvr) + System.GetBool(pvrmanager.enabled) + control.isvisible(12)]] + Library.HasContent(MusicVideos)</visible>
+			    <label>20389</label>
+			    <label2></label2>
+			    <onclick>activateWindow(Videos,MusicVideoTitles,return)</onclick>
+			    <onclick>control.setfocus(50)</onclick>
+			    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+			</item>
 			<item id="18">
 				<visible>[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | [window.isactive(pvr) + System.GetBool(pvrmanager.enabled) + control.isvisible(12)]]</visible>
 			    <label>136</label>
