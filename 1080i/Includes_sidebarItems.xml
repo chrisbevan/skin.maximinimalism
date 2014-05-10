@@ -282,8 +282,8 @@
             <onclick>ActivateWindow(MusicFiles,root)</onclick>
             <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
         </control>
-
-        <control type="button" id="516">
+        <!--
+		<control type="button" id="516">
             <description>Shuffle</description>
 			<visible>[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist)] | [System.GetBool(pvrmanager.enabled) + window.isactive(pvr) + control.isvisible(12)]</visible>
             <height>54</height>
@@ -297,6 +297,20 @@
             <label>191</label>
             <onclick>right</onclick>
             <onclick>PlayerControl(random)</onclick>
+        </control>
+		-->
+		<control type="radiobutton" id="20">
+            <description>Shuffle</description>
+			<visible>[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist)] | [System.GetBool(pvrmanager.enabled) + window.isactive(pvr) + control.isvisible(12)]</visible>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>191</label>
         </control>
         <control type="radiobutton" id="16">
             <description>Party Mode!!</description>

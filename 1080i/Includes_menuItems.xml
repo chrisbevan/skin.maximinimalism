@@ -43,13 +43,13 @@
         <content>
 			<!--Now Playing-->
 			<item id="1">
-			    <visible>Player.HasVideo + window.isactive(videolibrary) | window.isactive(videoplaylist) | [System.GetBool(pvrmanager.enabled) + window.isactive(pvr) + !control.isvisible(12)]</visible>
+			    <visible>Player.HasVideo + [window.isactive(videolibrary) | window.isactive(videoplaylist) | [System.GetBool(pvrmanager.enabled) + window.isactive(pvr) + !control.isvisible(12)]]</visible>
 			    <label>31136</label>
 			    <label2></label2>
 			    <onclick>action(fullscreen)</onclick>
 			</item>
 			<item id="2">
-				<visible>Player.HasAudio + [window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist)] | [System.GetBool(pvrmanager.enabled) + window.isactive(pvr) + control.isvisible(12)]</visible>
+				<visible>Player.HasAudio + [window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | [System.GetBool(pvrmanager.enabled) + window.isactive(pvr) + control.isvisible(12)]]</visible>
 			    <label>31136</label>
 			    <label2></label2>
 			    <onclick>activateWindow(5001)</onclick>
@@ -170,6 +170,14 @@
 			    <onclick>ReplaceWindow(MusicLibrary,Top100,return)</onclick>
 				<onclick>Control.SetFocus(51)</onclick>
 			    <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
+			</item>
+			<item id="101">
+				<visible>[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | [window.isactive(pvr) + System.GetBool(pvrmanager.enabled) + control.isvisible(12)]] + Library.HasContent(MusicVideos)</visible>
+			    <label>20389</label>
+			    <label2></label2>
+			    <onclick>activateWindow(Videos,MusicVideoTitles,return)</onclick>
+			    <onclick>control.setfocus(50)</onclick>
+			    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 			</item>
 			<item id="18">
 				<visible>[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | [window.isactive(pvr) + System.GetBool(pvrmanager.enabled) + control.isvisible(12)]]</visible>

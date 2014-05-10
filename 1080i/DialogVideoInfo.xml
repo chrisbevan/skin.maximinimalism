@@ -78,11 +78,12 @@
                 <control type="label">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>11-col</width>
+                    <width>15-col</width>
                     <align>left</align>
                     <font>dialogTitle</font>
                     <textcolor>selected</textcolor>
                     <label>$INFO[ListItem.label]</label>
+					<scroll>true</scroll>
                 </control>
                 <control type="label">
                     <posx>0</posx>
