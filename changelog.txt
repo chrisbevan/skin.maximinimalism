@@ -1,3 +1,7 @@
+[B]1.0.3[/B]
+- [FIXED] Media source dialog (thanks Keli)
+- [MODIFIED] Movie duration added to library lists (thanks solbero)
+
 [B]1.0.2[/B]
 - [NEW] Norwegian language support (thanks Takoi)
 - [FIXED] Several localisation issues (thanks Takoi)

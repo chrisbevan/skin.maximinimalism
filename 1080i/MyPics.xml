@@ -62,13 +62,8 @@
                                 <textcolor>unselected</textcolor>
                             </control>
                         </focusedlayout>
-                        <content>
-                            <!--final bits and bobs-->
-                            <item id="21">
-                                <label>31010</label>
-                                <onclick>ActivateWindow(pictures,addons,return)</onclick>
-                            </item>
-                        </content>
+                        <!--<content target="pictures">addons://sources/image/</content>-->
+						<content target="pictures">sources://pictures/</content>
                     </control>
                 </control>
                 <!--Folder titles-->
