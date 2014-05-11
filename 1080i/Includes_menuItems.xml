@@ -87,21 +87,21 @@
 			
 			<!--video-->
 			<item id="7">
-				<visible>window.isactive(videolibrary) | window.isactive(videoplaylist) | [window.isactive(pvr) + !control.isvisible(12)] + System.GetBool(pvrmanager.enabled)</visible>
+				<visible>System.GetBool(pvrmanager.enabled) + [window.isactive(videolibrary) | window.isactive(videoplaylist) | [window.isactive(pvr) + !control.isvisible(12)]]</visible>
 			    <label>31006</label>
 			    <label2></label2>
 			    <onclick>ActivateWindowAndFocus(pvr, 32,0, 9999,1)</onclick>
 			    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 			</item>
 			<item id="8">
-				<visible>window.isactive(videolibrary) | window.isactive(videoplaylist) | [window.isactive(pvr) + !control.isvisible(12)] + System.GetBool(pvrmanager.enabled)</visible>
+				<visible>System.GetBool(pvrmanager.enabled) + [window.isactive(videolibrary) | window.isactive(videoplaylist) | [window.isactive(pvr) + !control.isvisible(12)]]</visible>
 			    <label>31112</label>
 			    <label2></label2>
 			    <onclick>ActivateWindowAndFocus(pvr, 31,0, 10,1)</onclick>
 			    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 			</item>
 			<item id="9">
-			    <visible>[window.isactive(videolibrary) | window.isactive(videoplaylist) | [window.isactive(pvr) + !control.isvisible(12)]] + System.GetBool(pvrmanager.enabled) + IntegerGreaterThan(Pvr.BackendRecordings,0)</visible>
+			    <visible>System.GetBool(pvrmanager.enabled) + IntegerGreaterThan(Pvr.BackendRecordings,0) + [window.isactive(videolibrary) | window.isactive(videoplaylist) | [window.isactive(pvr) + !control.isvisible(12)]]</visible>
 			    <label>19163</label>
 			    <label2></label2>
 			    <onclick>ActivateWindowAndFocus(pvr, 34,0, 13,1)</onclick>
@@ -134,7 +134,7 @@
 		
 			<!--music-->
 			<item id="13">
-				<visible>[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | [window.isactive(pvr) + System.GetBool(pvrmanager.enabled) + control.isvisible(12)]] + System.GetBool(pvrmanager.enabled)</visible>
+				<visible>System.GetBool(pvrmanager.enabled) + [window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | [window.isactive(pvr) + control.isvisible(12)]]</visible>
 			    <label>19021</label>
 			    <label2></label2>
 			    <onclick>ActivateWindowAndFocus(pvr, 33,0, 9999,1)</onclick>
