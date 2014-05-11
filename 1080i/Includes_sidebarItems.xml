@@ -144,7 +144,7 @@
 
        	<control type="button" id="505">
             <description>Timers / scheduler</description>
-			<visible>window.isactive(videolibrary) | window.isactive(videoplaylist) | [window.isactive(pvr) + !control.isvisible(12)]</visible>
+			<visible>System.GetBool(pvrmanager.enabled) + [window.isactive(videolibrary) | window.isactive(videoplaylist) | [window.isactive(pvr) + !control.isvisible(12)]]</visible>
             <height>54</height>
             <width>4-col</width>
             <font>menuTitle</font>
