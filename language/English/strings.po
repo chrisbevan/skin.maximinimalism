@@ -534,3 +534,7 @@ msgstr ""
 msgctxt "#31145"
 msgid "Items"
 msgstr ""
+
+msgctxt "#31146"
+msgid "Director"
+msgstr ""
