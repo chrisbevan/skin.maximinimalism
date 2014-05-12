@@ -92,7 +92,7 @@
                     <align>left</align>
                     <font>itemTitleSmall</font>
                     <textcolor>selected</textcolor>
-                    <label>[B]$INFO[ListItem.year,,]$INFO[listitem.director, / Dir. ,]$INFO[listitem.MPAA, / ,][/B]</label>
+                    <label>[B]$INFO[ListItem.year,,.]$INFO[listitem.director, $LOCALIZE[31146] ,. ]$INFO[listitem.MPAA,,.][/B]</label>
                 </control>
                 <!--synopsis-->
                 <control type="textbox">
