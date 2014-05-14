@@ -48,14 +48,6 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<include>dimensionsFullscreen</include>
-				<texture>masks/videoGrid.png</texture>
-				<colordiffuse>ffffffff</colordiffuse>
-				<aspectratio>stretch</aspectratio>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<include>dimensionsFullscreen</include>
 				<texture>vignette.png</texture>
 				<colordiffuse>ffffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>

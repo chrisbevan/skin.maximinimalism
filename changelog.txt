@@ -2,6 +2,7 @@
 - [FIXED] Media source dialog (thanks Keli)
 - [MODIFIED] Movie duration added to library lists (thanks solbero)
 - [NEW] Global search added to homescreen (thanks mpschr)
+- [MODIFIED] Grid overlay removed from music visualisation
 
 [B]1.0.2[/B]
 - [NEW] Norwegian language support (thanks Takoi)
