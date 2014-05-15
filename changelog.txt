@@ -3,7 +3,8 @@
 - [MODIFIED] Movie duration added to library lists (thanks solbero)
 - [NEW] Global search added to homescreen (thanks mpschr)
 - [MODIFIED] Grid overlay removed from music visualisation
-
+- [NEW] Option to switch off various home menu items (see skin options)
+ 
 [B]1.0.2[/B]
 - [NEW] Norwegian language support (thanks Takoi)
 - [FIXED] Several localisation issues (thanks Takoi)

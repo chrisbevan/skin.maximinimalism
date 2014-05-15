@@ -404,7 +404,7 @@ msgstr "Dateien kopieren"
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr "EPG"
+msgstr "Fernsehprogramm"
 
 msgctxt "#31113"
 msgid "Unknown season"
