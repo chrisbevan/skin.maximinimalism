@@ -4,6 +4,8 @@
 - [NEW] Global search added to homescreen (thanks mpschr)
 - [MODIFIED] Grid overlay removed from music visualisation
 - [NEW] Option to switch off various home menu items (see skin options)
+- [MODIFIED] Video debugging OSD revised.
+- [MODIFIED] 'First aired' date added to episode info view (thanks Postdeath)
  
 [B]1.0.2[/B]
 - [NEW] Norwegian language support (thanks Takoi)
