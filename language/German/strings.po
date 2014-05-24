@@ -394,7 +394,7 @@ msgstr "Ausloggen"
 
 msgctxt "#31109"
 msgid "Order: Ascending"
-msgstr "Aufsteigend soriteren"
+msgstr "Aufsteigend sortieren"
 
 msgctxt "#31110"
 msgid "Order: Descending"
@@ -406,7 +406,7 @@ msgstr "Dateien kopieren"
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr "Frensehprogramm"
+msgstr "Fernsehprogramm"
 
 msgctxt "#31113"
 msgid "Unknown season"
@@ -522,5 +522,5 @@ msgstr "Kapitel"
 
 msgctxt "#31142"
 msgid "Prioritise exit over shutdown in power menu"
-msgstr "Priorisierung des Verlassens über Abschaltung im Power-Menü"
+msgstr "Im Power-Menu Verlassen vor Herunterfahren anzeigen"
 
