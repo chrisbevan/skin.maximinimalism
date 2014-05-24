@@ -394,7 +394,7 @@ msgstr "Ausloggen"
 
 msgctxt "#31109"
 msgid "Order: Ascending"
-msgstr "Aufsteigend soriteren"
+msgstr "Aufsteigend sortieren"
 
 msgctxt "#31110"
 msgid "Order: Descending"
@@ -406,7 +406,7 @@ msgstr "Dateien kopieren"
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr "Frensehprogramm"
+msgstr "Fernsehprogramm"
 
 msgctxt "#31113"
 msgid "Unknown season"
