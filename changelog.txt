@@ -7,6 +7,7 @@
 - [MODIFIED] Video debugging OSD revised.
 - [MODIFIED] 'First aired' date added to episode info view (thanks Postdeath)
 - [FIXED] Music videos and video-based music addons no longer redirect to video section.
+- Various minor tweaks
  
 [B]1.0.2[/B]
 - [NEW] Norwegian language support (thanks Takoi)
