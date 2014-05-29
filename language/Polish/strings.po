@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
-"Report-Msgid-Bugs-To: marhanmichal@gmail.com\n"
+"Report-Msgid-Bugs-To: pszmitkowski@gmail.com\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2014-05-29 22:42+0100\n"
 "Last-Translator: PiotrSzmitkowski\n"
