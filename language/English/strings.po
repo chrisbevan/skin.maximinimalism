@@ -550,3 +550,11 @@ msgstr ""
 msgctxt "#31149"
 msgid "Home: Hide Pictures"
 msgstr ""
+
+msgctxt "#31150"
+msgid "Home: Hide Search"
+msgstr ""
+
+msgctxt "#31151"
+msgid "Home: Hide Programs"
+msgstr ""
