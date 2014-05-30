@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.6.5\n"
 
 msgctxt "Addon Summary"
@@ -72,7 +72,7 @@ msgstr "Brak informacji"
 
 msgctxt "#31010"
 msgid "All Addons"
-msgstr "Wszystkie Dodatki"
+msgstr "Inne Dodatki"
 
 msgctxt "#31011"
 msgid "Season"
@@ -88,8 +88,11 @@ msgstr "Najnowsza zawartość"
 
 msgctxt "#31014"
 msgid "title(s)"
-msgstr "pozycja(e)"
-
+msgstr_plural "titles"
+msgstr[0] "pozycji"
+msgstr[1] "pozycje"
+msgstr[2] "pozycji"
+     
 msgctxt "#31017"
 msgid "Channels"
 msgstr "Kanały"
@@ -204,11 +207,11 @@ msgstr "Biblioteka Muzyki"
 
 msgctxt "#31054"
 msgid "by"
-msgstr "przez"
+msgstr "wg"
 
 msgctxt "#31055"
 msgid "Addons"
-msgstr "Dodatki"
+msgstr "Wtyczki"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -220,7 +223,7 @@ msgstr "Stwóz Listę Odtwarzania Muzyki"
 
 msgctxt "#31058"
 msgid "Music Addons"
-msgstr "Dodatki Muzyczne"
+msgstr "Wtyczki Muzyczne"
 
 msgctxt "#31060"
 msgid "PVR"
@@ -316,11 +319,11 @@ msgstr "Podstawowy obrazek tła: "
 
 msgctxt "#31085"
 msgid "Add Video Addon"
-msgstr "Dodaj Dodatek Wideo"
+msgstr "Dodatek Wideo"
 
 msgctxt "#31086"
 msgid "Add Music Addon"
-msgstr "Dodaj Dodatek Muzyczny"
+msgstr "Dodatek Muzyka"
 
 msgctxt "#31087"
 msgid "Enable global fanart background: "
@@ -332,11 +335,11 @@ msgstr "Przeglądanie Plików"
 
 msgctxt "#31091"
 msgid "Add Video Playlist"
-msgstr "Dodaj Listę Odtwarzania Wideo"
+msgstr "Dodaj Playlistę Wideo"
 
 msgctxt "#31092"
 msgid "Add Music Playlist"
-msgstr "Dodaj MuzycznąListę Odtwarzania"
+msgstr "Dodaj Playlistę Muzyczną"
 
 msgctxt "#31093"
 msgid "Favourite"
@@ -352,7 +355,7 @@ msgstr "Nie znaleziono elementów"
 
 msgctxt "#31097"
 msgid "Playlist"
-msgstr "Lista Odtwarzania"
+msgstr "Playlista"
 
 msgctxt "#31098"
 msgid "Volume Muted"
@@ -428,7 +431,7 @@ msgstr "Proporcje"
 
 msgctxt "#31117"
 msgid "Launch addon"
-msgstr "Uruchamianie dodatków"
+msgstr "Uruchamianie wtyczek"
 
 msgctxt "#31118"
 msgid "Unwatched titles only"
