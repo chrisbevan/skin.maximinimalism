@@ -13,7 +13,7 @@
         </control>
         <control type="group">
             <posx>col-5-begin</posx>
-            <posy>row-3-begin</posy>
+            <posy>row-2-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">

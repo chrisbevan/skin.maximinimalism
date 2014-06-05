@@ -3,6 +3,9 @@
 - [MODIFIED] TV show view now show unwatched episode count. Season view 0 episode count bug fixed (thanks Neroes, Mozillion) 
 - [NEW] Skin option to hide search (thanks Leefur)
 - [NEW] Programs option added to homescreen (thanks Destaroyah)
+- [NEW] Polish language support (thanks Jackalski)
+- [NEW] Peripheral support (thanks Neroes)
+- [FIXED] Logoff user (thanks CharredChar)
 
 [B]1.0.3[/B]
 - [FIXED] Media source dialog (thanks Keli)

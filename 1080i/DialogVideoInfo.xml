@@ -172,37 +172,44 @@
                     </control>
                 </focusedlayout>
                 <content>
-                    <item id="1">
+                    <item>
                         <label>31075</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>sendclick(2003,8)</onclick>
                     </item>
-                    <item id="2">
+                    <item>
                         <label>31074</label>
                         <label2></label2>
                         <thumb>-</thumb>
 						<onclick>Skin.SetString(showcast,true)</onclick>
                    </item>
-					<item id="3">
+					<item>
                         <visible>!IsEmpty(ListItem.Trailer)</visible>
                         <label>20410</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(2003,11)</onclick>
                     </item>
-                    <item id="4">
+                    <item>
                         <label>31076</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(2003,6)</onclick>
                     </item>
-                    <item id="5">
+                    <item>
                         <label>13511</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(2003,10)</onclick>
                     </item>
+					<item>
+				       <description>Get Artwork</description>
+				       <label>Artwork Downloader</label>
+					   <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+					   <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+				       <visible>[Container.Content(tvshows)|Container.Content(movies)]+system.hasaddon(script.artwork.downloader)</visible>
+				   	 </item>
                 </content>
             </control>
         </control>

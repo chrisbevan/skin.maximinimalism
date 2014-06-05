@@ -173,7 +173,6 @@
 
    	<control type="button" id="504">
         <description>Timers / scheduler</description>
-		<visible>window.isactive(pvr)</visible>
         <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>

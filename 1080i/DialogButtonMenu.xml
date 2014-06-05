@@ -13,7 +13,7 @@
             <include>modalDialogInOut</include>
             <control type="image">
                 <posx>0</posx>
-                <posy>-12</posy>
+                <posy>-13</posy>
                 <width>fullscreenWidth</width>
                 <height>1-row</height>
                 <texture>colors/selected.png</texture>
@@ -22,34 +22,52 @@
             </control>
             <control type="list" id="8000">
                 <posx>col-1-begin</posx>
-                <posy>-10</posy>
+                <posy>-12</posy>
                 <width>24-col</width>
                 <height>1-row</height>
                 <itemgap>0</itemgap>
                 <orientation>horizontal</orientation>
-                <itemlayout width="4-col-gutter" height="43">
+                <itemlayout width="5-col-gutter" height="1-row">
                     <control type="label">
-                        <posx>132</posx>
+                        <posx>32</posx>
                         <posy>0</posy>
                         <width>4-col-gutter</width>
-						<align>center</align>
+						<align>left</align>
                         <font>menuTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
+					<control type="image">
+		                <posx>0</posx>
+		                <posy>-2</posy>
+		                <width>3</width>
+		                <height>1-row</height>
+		                <texture>colors/black.png</texture>
+		                <colordiffuse>ffffffff</colordiffuse>
+		                <aspectratio>stretch</aspectratio>
+		            </control>
                 </itemlayout>
-                <focusedlayout width="4-col-gutter" height="43">
+                <focusedlayout width="5-col-gutter" height="1-row">
                     <control type="label">
-                        <posx>132</posx>
+                        <posx>18</posx>
                         <posy>0</posy>
                         <width>4-col-gutter</width>
-						<align>center</align>
+						<align>left</align>
                         <font>menuTitle</font>
                         <textcolor>black</textcolor>
                         <label>[ $INFO[ListItem.label] ]</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
+					<control type="image">
+		                <posx>0</posx>
+		                <posy>-2</posy>
+		                <width>3</width>
+		                <height>1-row</height>
+		                <texture>colors/black.png</texture>
+		                <colordiffuse>ffffffff</colordiffuse>
+		                <aspectratio>stretch</aspectratio>
+		            </control>
                 </focusedlayout>
                 <content>
                     <item id="1">
@@ -87,7 +105,8 @@
 						<visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
 						<visible>System.Loggedon</visible>
                         <thumb>-</thumb>
-                        <onclick>sendclick(9)</onclick>
+                        <onclick>System.LogOff</onclick>
+						<onclick>Dialog.Close(all,true)</onclick>
                     </item>
                     <item id="7">
                         <description>Exit to desktop</description>
@@ -103,13 +122,6 @@
                         <onclick>xbmc.powerdown()</onclick>
                     </item>
                 </content>
-            </control>
-        </control>
-		<!--error message fields (placeholders)-->
-        <control type="group">
-            <visible>false</visible>
-            <control type="button" id="9">
-                <description>Logoff user</description>
             </control>
         </control>
         <!--debugging-->
