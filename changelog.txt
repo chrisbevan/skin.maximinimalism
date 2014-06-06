@@ -6,6 +6,10 @@
 - [NEW] Polish language support (thanks Jackalski)
 - [NEW] Peripheral support (thanks Neroes)
 - [FIXED] Logoff user (thanks CharredChar)
+- [MODIFIED] Song info and ratings (thanks paulvt)
+- [MODIFIED] String change 'all addons' -> 'add-ons' (thanks solbero)
+- [NEW] Artwork downloader support (thanks gizmotoy)
+- [FIXED] UI freeze on Library updates: added cancel ability 'click ok to cancel' (thanks gizmotoy, Mozillion)
 
 [B]1.0.3[/B]
 - [FIXED] Media source dialog (thanks Keli)
