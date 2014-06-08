@@ -95,6 +95,7 @@
                         <align>center</align>
                         <font>itemTitle</font>
                         <textcolor>selected</textcolor>
+						<autoscroll delay="3000" time="1000" repeat="3000"></autoscroll>
                         <label>$INFO[ListItem.Property(Outlook)]</label>
                     </control>
                     <control type="textbox">

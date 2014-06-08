@@ -10,6 +10,9 @@
 - [MODIFIED] String change 'all addons' -> 'add-ons' (thanks solbero)
 - [NEW] Artwork downloader support (thanks gizmotoy)
 - [FIXED] UI freeze on Library updates: added cancel ability 'click ok to cancel' (thanks gizmotoy, Mozillion)
+- [MODIFIED] Recent videos / tvshows increased to 10 per category (thanks Leefur)
+- [MODIFIED] Contrast for selected / unselected increased slightly (thanks Leefur, Sp@ce_Boy)
+- [FIXED] Scrolling on weather labels (thanks PaulVT)
 
 [B]1.0.3[/B]
 - [FIXED] Media source dialog (thanks Keli)
