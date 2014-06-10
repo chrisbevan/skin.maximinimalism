@@ -562,3 +562,7 @@ msgstr ""
 msgctxt "#31152"
 msgid "Press OK to cancel"
 msgstr ""
+
+msgctxt "#31153"
+msgid "Playlist saved"
+msgstr ""

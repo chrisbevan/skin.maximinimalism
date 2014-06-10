@@ -7,76 +7,37 @@
     <controls>
         <include>modalDialog</include>
         <control type="group">
-            <posx>0</posx>
-            <posy>522</posy>
+            <posx>col-11-begin</posx>
+            <posy>6-row</posy>
             <!--animations-->
             <include>modalDialogInOut</include>
-            <control type="image">
-                <posx>0</posx>
-                <posy>-13</posy>
-                <width>fullscreenWidth</width>
-                <height>1-row</height>
-                <texture>colors/selected.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <control type="list" id="8000">
                 <posx>0</posx>
-                <posy>-12</posy>
-                <width>24-col</width>
-                <height>1-row</height>
+	            <posy>0</posy>
+                <width>6-col</width>
+                <height>6-row</height>
                 <itemgap>0</itemgap>
-                <orientation>horizontal</orientation>
-                <itemlayout width="5-col-gutter" height="1-row">
+                <itemlayout width="6-col" height="1-row">
                     <control type="label">
-                        <posx>168</posx>
+                        <posx>0</posx>
                         <posy>0</posy>
-                        <width>5-col-gutter</width>
-						<align>center</align>
-                        <font>menuTitle</font>
-                        <textcolor>black</textcolor>
+                        <width>6-col</width>
+						<align>left</align>
+                        <font>itemTitle</font>
+                        <textcolor>unselected</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
                     </control>
-					<control type="image">
-		                <posx>5-col-gutter</posx>
-		                <posy>-2</posy>
-		                <width>1</width>
-		                <height>1-row</height>
-		                <texture>colors/black.png</texture>
-		                <colordiffuse>ffffffff</colordiffuse>
-		                <aspectratio>stretch</aspectratio>
-		            </control>
                 </itemlayout>
-                <focusedlayout width="5-col-gutter" height="1-row">
-                    <control type="image">
-		                <posx>0</posx>
-		                <posy>0</posy>
-		                <width>5-col-gutter</width>
-		                <height>55</height>
-		                <texture>colors/black.png</texture>
-		                <colordiffuse>ffffffff</colordiffuse>
-		                <aspectratio>stretch</aspectratio>
-		            </control>
+                <focusedlayout width="6-col" height="1-row">
 					<control type="label">
-                        <posx>168</posx>
+                        <posx>0</posx>
                         <posy>0</posy>
-                        <width>5-col-gutter</width>
-						<align>center</align>
-                        <font>menuTitle</font>
+                        <width>6-col</width>
+						<align>left</align>
+                        <font>itemTitle</font>
                         <textcolor>selected</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
                     </control>
-					<control type="image">
-		                <posx>5-col-gutter</posx>
-		                <posy>-2</posy>
-		                <width>1</width>
-		                <height>1-row</height>
-		                <texture>colors/black.png</texture>
-		                <colordiffuse>ffffffff</colordiffuse>
-		                <aspectratio>stretch</aspectratio>
-		            </control>
                 </focusedlayout>
                 <content>
                     <item id="1">
