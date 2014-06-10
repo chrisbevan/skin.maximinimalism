@@ -16,6 +16,11 @@
 - [NEW] Buffering label added to progress bar (thanks CharredChar)
 - [MODIFIED] Notifications are suppressed if a video is playing (thanks PaulVT)
 - [FIXED] Some lists not wrapping properly (thanks PaulVT)
+- [MODIFIED] Shutdown menu simplified
+- [NEW] PVR recordings now indicate unwatched / unfinished content (thanks tnfenster)
+- [MODIFIED] Page scrollbar appearance revised (thanks Solbero)
+- [FIXED] Advanced launcher should now work (thanks Solbero)  
+- [MODIFIED] Subtitle offset function autohides audio settings menu (thanks @Marsup)
 
 [B]1.0.3[/B]
 - [FIXED] Media source dialog (thanks Keli)

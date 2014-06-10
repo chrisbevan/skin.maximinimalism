@@ -179,7 +179,8 @@
     </default>
     <default type="scrollbar">
         <width>12</width>
-        <texturesliderbackground>colors/black.png</texturesliderbackground>
+		<texturesliderbar>colors/inactive.png</texturesliderbar>
+        <texturesliderbackground>colors/offblack.png</texturesliderbackground>
         <texturesliderbarfocus>colors/selected.png</texturesliderbarfocus>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
