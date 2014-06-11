@@ -566,3 +566,11 @@ msgstr ""
 msgctxt "#31153"
 msgid "Playlist saved"
 msgstr ""
+
+msgctxt "#31154"
+msgid "Search for Subtitles"
+msgstr ""
+
+msgctxt "#31155"
+msgid "Adjust Subtitle Offset"
+msgstr ""
