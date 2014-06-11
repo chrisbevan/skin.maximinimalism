@@ -54,7 +54,7 @@
                 <align>center</align>
                 <font>regular</font>
                 <textcolor>selected</textcolor>
-                <label>$INFO[Weather.location] [B]$INFO[Weather.Temperature][/B] [LOWERCASE]$INFO[Weather.conditions][/LOWERCASE]</label>
+                <label>$INFO[Window(Weather).Property(location)] [B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B] [LOWERCASE]$INFO[Window(Weather).property(current.condition)][/LOWERCASE]</label>
             </control>
             <!--system info indicator-->
             <control type="label">

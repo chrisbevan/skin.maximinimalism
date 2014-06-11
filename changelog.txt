@@ -21,6 +21,7 @@
 - [MODIFIED] Page scrollbar appearance revised (thanks Solbero)
 - [FIXED] Advanced launcher should now work (thanks Solbero)  
 - [MODIFIED] Subtitle offset function autohides audio settings menu (thanks @Marsup)
+- [NEW] Subtitle handling improved and brought in line with recent changes in the Confluence skin
 
 [B]1.0.3[/B]
 - [FIXED] Media source dialog (thanks Keli)
