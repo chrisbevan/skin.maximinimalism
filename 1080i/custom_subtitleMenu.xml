@@ -25,7 +25,7 @@
 				<posx>col-10-begin</posx>
 	            <posy>row-7-begin</posy>
 	            <!--animations-->
-	            <include>modalDialogInOut</include>
+	            <include>modalDialogInOutVertical</include>
 
 	            <!--subtitle menu-->
 	            <control type="grouplist" id="5000">

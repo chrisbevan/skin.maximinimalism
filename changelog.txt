@@ -23,6 +23,7 @@
 - [MODIFIED] Subtitle offset function autohides audio settings menu (thanks @Marsup)
 - [NEW] Subtitle handling improved and brought in line with recent changes in the Confluence skin
 - [MODIFIED] Weather icon font changed and values adjusted (thanks PaulVT)
+- [MODIFIED] Extra highlighting on menu items (thanks Solbero)
 
 [B]1.0.3[/B]
 - [FIXED] Media source dialog (thanks Keli)
