@@ -243,7 +243,6 @@
                         <ondown>303</ondown>
                         <texturenofocus>colors/keyunselected.png</texturenofocus>
                         <texturefocus>colors/keyselected.png</texturefocus>
-                        <textureradioon>-</textureradioon>
 						<textureradioonfocus>-</textureradioonfocus>
 						<textureradioonnofocus>-</textureradioonnofocus>
 						<textureradioofffocus>-</textureradioofffocus>
@@ -444,7 +443,6 @@
                         <ondown>304</ondown>
                         <texturenofocus>colors/keyunselected.png</texturenofocus>
                         <texturefocus>colors/keyselected.png</texturefocus>
-                        <textureradioon>-</textureradioon>
 						<textureradioonfocus>-</textureradioonfocus>
 						<textureradioonnofocus>-</textureradioonnofocus>
 						<textureradioofffocus>-</textureradioofffocus>
@@ -646,7 +644,6 @@
                         <ondown>307</ondown>
                         <texturenofocus>colors/keyunselected.png</texturenofocus>
                         <texturefocus>colors/keyselected.png</texturefocus>
-                        <textureradioon>-</textureradioon>
 						<textureradioonfocus>-</textureradioonfocus>
 						<textureradioonnofocus>-</textureradioonnofocus>
 						<textureradioofffocus>-</textureradioofffocus>
