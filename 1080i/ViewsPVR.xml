@@ -39,7 +39,7 @@
                         <font>itemTitle</font>
                         <textcolor>selected</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.ChannelNumber]. $INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <posx>5-col</posx>
@@ -131,7 +131,7 @@
                         <textcolor>black</textcolor>
                         <selectedcolor>black</selectedcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.ChannelNumber]. $INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <posx>5-col</posx>
@@ -530,7 +530,7 @@
                 <posy>-56</posy>
                 <width>21-col</width>
                 <height>11-row</height>
-                <!--<progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>-->
+                <progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>
                 <timeblocks>40</timeblocks>
                 <rulerunit>12</rulerunit>
                 <onleft>9000</onleft>
@@ -574,7 +574,7 @@
                         <textcolor>selected</textcolor>
                         <selectedcolor>selected</selectedcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.ChannelName]</label>
+                        <label>$INFO[ListItem.ChannelNumber]. $INFO[ListItem.ChannelName]</label>
                         <scroll>false</scroll>
                     </control>
                 </channellayout>
@@ -605,7 +605,7 @@
                         <textcolor>black</textcolor>
                         <selectedcolor>black</selectedcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.ChannelName]</label>
+                        <label>$INFO[ListItem.ChannelNumber]. $INFO[ListItem.ChannelName]</label>
                         <scroll>false</scroll>
                     </control>
                 </focusedchannellayout>

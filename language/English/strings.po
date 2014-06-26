@@ -574,3 +574,11 @@ msgstr ""
 msgctxt "#31155"
 msgid "Adjust Subtitle Offset"
 msgstr ""
+
+msgctxt "#31156"
+msgid "Games"
+msgstr ""
+
+msgctxt "#31157"
+msgid "Home: Hide Games"
+msgstr ""

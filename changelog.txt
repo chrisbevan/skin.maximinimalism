@@ -1,3 +1,11 @@
+[B]1.0.5[/B]
+- [MODIFIED] VideoOSD revised
+- [NEW] Channel numbers added to PVR listings (thank Cyrils)
+- [NEW] Channel name and number added to videoOSD (thanks Cyrils)
+- [MODIFIED] Numeric keyboard now defaults to 'DONE' for benefit of remote control users (thanks Cyrils)
+- [NEW] Initial support for Rom Collection Browser. 
+- [MODIFIED] Grid listing for programs / addons reworked.
+
 [B]1.0.4[/B]
 - [FIXED] Removed executable bit on German strings.po (thanks Ronie)
 - [MODIFIED] TV show view now show unwatched episode count. Season view 0 episode count bug fixed (thanks Neroes, Mozillion) 
