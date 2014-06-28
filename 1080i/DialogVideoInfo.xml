@@ -46,84 +46,148 @@
         <!--content is movie or tvshow (from XBMC Library)-->
         <control type="group">
             <visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
-            <!--overlay-->
+			<posx>1263</posx>
+            <posy>0</posy>			
+			<!--overlay-->
             <control type="image">
-                <posx>0</posx>
-                <posy>710</posy>
-                <width>fullscreenWidth</width>
-                <height>7-row</height>
+                <posx>84</posx>
+                <posy>0</posy>
+                <width>573</width>
+                <height>835</height>
                 <texture>colors/black.png</texture>
-                <colordiffuse>99ffffff</colordiffuse>
+                <colordiffuse>ccffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--coverart-->
-            <control type="group">
-                <posx>col-1-begin</posx>
-                <posy>row-7-begin</posy>
-                <!--cover-->
-                <control type="image">
-                    <posx>-24</posx>
-                    <posy>36</posy>
-                    <width>6-col</width>
-                    <height>635</height>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture background="true" fallback="colors/black.png" border="0">$INFO[Listitem.art(poster)]</texture>
-                    <fadetime>200</fadetime>
-                </control>
+			<control type="image">
+                <posx>84</posx>
+                <posy>0</posy>
+                <width>573</width>
+                <height>198</height>
+                <texture>colors/selected.png</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+			<control type="image">
+                <posx>84</posx>
+                <posy>1009</posy>
+                <width>573</width>
+                <height>3-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>ccffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
             </control>
             <!--content-->
             <control type="group">
-                <posx>col-7-begin</posx>
-                <posy>row-13-begin</posy>
+                <posx>col-1-begin</posx>
+                <posy>row-2-begin</posy>
                 <control type="label">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>18-col</width>
+                    <width>8-col-gutter</width>
                     <align>left</align>
-                    <font>mediumStrong</font>
-                    <textcolor>selected</textcolor>
+                    <font>pageTitle</font>
+                    <textcolor>black</textcolor>
                     <label>$INFO[ListItem.label]</label>
 					<scroll>true</scroll>
+					<shadowcolor>-</shadowcolor>
                 </control>
                 <control type="label">
                     <posx>0</posx>
-                    <posy>60</posy>
-                    <width>18-col-gutter</width>
+                    <posy>42</posy>
+                    <width>8-col-gutter</width>
                     <align>left</align>
                     <font>itemTitleSmall</font>
-                    <textcolor>selected</textcolor>
-                    <label>[B]$INFO[ListItem.year,, • ]$INFO[listitem.director, $LOCALIZE[31146] ,]$INFO[listitem.MPAA, • ,][/B]</label>
+                    <textcolor>black</textcolor>
+                    <label>$INFO[ListItem.duration,, $LOCALIZE[31018]]</label>
+					<shadowcolor>-</shadowcolor>
                 </control>
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>122</posy>
+                    <posy>132</posy>
                     <font>textboxExtraLeading</font>
-                    <width>18-col</width>
+                    <width>8-col-gutter</width>
                     <align>left</align>
                     <textcolor>selected</textcolor>
-                    <height>188</height>
+                    <height>6-row</height>
                     <label>[B]$INFO[ListItem.plot][/B]</label>
                     <autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
+					<shadowcolor>-</shadowcolor>
                 </control>
             </control>
+			<!--meta-->
+			<control type="panel">
+                <posx>col-1-begin</posx>
+                <posy>row-11-begin</posy>
+                <width>8-col</width>
+                <height>6-row</height>
+				<enable>false</enable>
+                <itemlayout width="4-col" height="76">                  
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <font>itemTitleSmall</font>
+                        <textcolor>accented</textcolor>
+                        <label>$INFO[ListItem.label]</label>
+                        <shadowcolor>-</shadowcolor>
+                    </control>
+					<control type="label">
+                        <posx>0</posx>
+                        <posy>32</posy>
+                        <width>4-col-gutter</width>
+                        <font>itemTitleSmall</font>
+                        <textcolor>selected</textcolor>
+                        <label fallback="31159">$INFO[ListItem.label2]</label>
+                        <shadowcolor>-</shadowcolor>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="4-col" height="114">
+                </focusedlayout>
+                <content>
+                    <item>
+                        <label>$LOCALIZE[562]</label>
+                        <label2>$INFO[ListItem.year]</label2>
+                        <thumb>-</thumb>
+                        <onclick>noop</onclick>
+                    </item>
+					<item>
+                        <label>$LOCALIZE[31146]</label>
+                        <label2>$INFO[ListItem.director]</label2>
+                        <thumb>-</thumb>
+                        <onclick>noop</onclick>
+                    </item>
+					<item>
+                        <label>$LOCALIZE[515]</label>
+                        <label2>$INFO[ListItem.genre]</label2>
+                        <thumb>-</thumb>
+                        <onclick>noop</onclick>
+                    </item>					
+                    <item>
+                        <label>$LOCALIZE[563]</label>
+                        <label2>$INFO[listitem.MPAA]</label2>
+                        <thumb>-</thumb>
+                        <onclick>noop</onclick>
+                    </item>
+                </content>
+            </control>
             <!--dialog controls-->
-            <control type="list" id="8000">
-                <posx>col-21-begin</posx>
-                <posy>row-6-begin</posy>
+            <control type="panel" id="8000">
+                <posx>84</posx>
+                <posy>row-15-begin</posy>
                 <width>8-col</width>
                 <height>6-row</height>
                 <itemgap>3</itemgap>
                 <orientation>vertical</orientation>
-                <itemlayout width="8-col" height="1-row">
+                <itemlayout width="4-col" height="1-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>2</posy>
-                        <width>8-col</width>
-                        <height>53</height>
+                        <width>285</width>
+                        <height>55</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/black.png</texture>
-						<colordiffuse>77000000</colordiffuse>
+						<colordiffuse>cc000000</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>24</posx>
@@ -135,21 +199,21 @@
                         <shadowcolor>-</shadowcolor>
                     </control>
                     <control type="label">
-                        <posx>1-col</posx>
+                        <posx>64</posx>
                         <posy>2</posy>
-                        <width>6-col</width>
+                        <width>184</width>
                         <font>menuTitle</font>
                         <textcolor>selected</textcolor>
                         <label>$INFO[ListItem.label]</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
                 </itemlayout>
-                <focusedlayout width="8-col" height="1-row">
+                <focusedlayout width="4-col" height="1-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>2</posy>
-                        <width>8-col</width>
-                        <height>53</height>
+                        <width>285</width>
+                        <height>55</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/selected.png</texture>
                     </control>
@@ -163,9 +227,9 @@
                         <shadowcolor>-</shadowcolor>
                     </control>
                     <control type="label">
-                        <posx>1-col</posx>
+                        <posx>64</posx>
                         <posy>2</posy>
-                        <width>6-col</width>
+                        <width>184</width>
                         <font>menuTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
@@ -186,7 +250,7 @@
 						<onclick>Skin.SetString(showcast,true)</onclick>
                    </item>
 					<item>
-                        <visible>!IsEmpty(ListItem.Trailer)</visible>
+                        <enable>!IsEmpty(ListItem.Trailer)</enable>
                         <label>20410</label>
                         <label2></label2>
                         <thumb>-</thumb>

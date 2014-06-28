@@ -6,6 +6,8 @@
 - [NEW] PVR Channel name and number added to videoOSD (thanks Cyrils)
 - [MODIFIED] Numeric keyboard now defaults to 'DONE' for benefit of remote control users (thanks Cyrils)
 - [MODIFIED] Grid listing for programs / addons reworked.
+- [NEW] French language support (thanks Joel)
+- [MODIFIED] Artist / album and movie / tvshow info screens reworked.
 
 [B]1.0.4[/B]
 - [FIXED] Removed executable bit on German strings.po (thanks Ronie)
