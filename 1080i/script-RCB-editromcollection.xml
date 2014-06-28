@@ -1,30 +1,14 @@
 <window id="5200">
 	<defaultcontrol>7000</defaultcontrol>
-	<include>dialogeffect</include>
 	<coordinates>
 		<system>1</system>
-		<posx>220</posx>
-		<posy>60</posy>
+		<posx>0</posx>
+		<posy>0</posy>
 	</coordinates>
 	
 	<controls>
 		<!-- Window -->	
-		<control type="image">
-			<description>background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>920</width>
-			<height>600</height>
-			<texture border="45">rcb-DialogBack.png</texture>
-		</control>
-		<control type="image">
-			<description>background image</description>
-			<posx>240</posx>
-			<posy>10</posy>
-			<width>670</width>
-			<height>570</height>				
-			<texture border="0,0,0,0">rcb-floor.png</texture>
-		</control>
+		
 		<control type="label">
 			<posx>250</posx>
 			<posy>25</posy>
@@ -35,22 +19,6 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<label>$ADDON[script.games.rom.collection.browser 32999] - $ADDON[script.games.rom.collection.browser 32600]</label>
-		</control>
-		<control type="button" id="5101">
-			<description>Close Window button</description>
-			<posx>865</posx>
-			<posy>25</posy>
-			<width>40</width>
-			<height>25</height>
-			<label>-</label>
-			<font>-</font>
-			<texturefocus>rcb-DialogCloseButton-focus.png</texturefocus>
-			<texturenofocus>rcb-DialogCloseButton.png</texturenofocus>
-			<onleft>5211</onleft>
-			<onright>5211</onright>
-			<onup>6000</onup>
-			<ondown>5211</ondown>
-			<visible>system.getbool(input.enablemouse)</visible>
 		</control>
 		
 		<!-- Rom Collection List -->
@@ -184,13 +152,6 @@
 			<pagecontrol>-</pagecontrol>
 			<scrolltime>300</scrolltime>
 			<itemlayout height="40" width="150">
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>210</width>
-					<height>40</height>
-					<texture border="5">rcb-MenuItemNF.png</texture>
-				</control>
 				<control type="label">
 					<posx>220</posx>
 					<posy>5</posy>
@@ -204,14 +165,6 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="40" width="150">
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>210</width>
-					<height>40</height>
-					<texture border="5">rcb-MenuItemFO.png</texture>
-					<animation effect="fade" start="100" end="30" time="100" condition="!Control.HasFocus(7000)">Conditional</animation>
-				</control>
 				<control type="label">
 					<posx>220</posx>
 					<posy>5</posy>
