@@ -85,12 +85,24 @@
 					<scroll>false</scroll>
 				</control>
 				<control type="label">
+					<visible>Player.HasMedia</visible>
 	                <posx>2-col</posx>
 	                <posy>42</posy>
 	                <width>22-col</width>
 	                <font>dialogTitle</font>
 	                <textcolor>selected</textcolor>
-	                <label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
+	                <label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Title]</label>
+	                <shadowcolor>-</shadowcolor>
+	                <scroll>true</scroll>
+	            </control>
+				<control type="label">
+					<visible>!Player.HasMedia</visible>
+	                <posx>2-col</posx>
+	                <posy>42</posy>
+	                <width>22-col</width>
+	                <font>dialogTitle</font>
+	                <textcolor>selected</textcolor>
+	                <label>$LOCALIZE[31158]</label>
 	                <shadowcolor>-</shadowcolor>
 	                <scroll>true</scroll>
 	            </control>
@@ -124,7 +136,7 @@
 					<font>smallStrong</font>
 					<align>right</align>
 					<textcolor>selected</textcolor>
-					<label>$LOCALIZE[180] $INFO[MusicPlayer.time] / $INFO[MusicPlayer.duration]</label>
+					<label>$INFO[MusicPlayer.time,$LOCALIZE[180] , / ]$INFO[MusicPlayer.duration]</label>
 					<scroll>false</scroll>
 					<shadowcolor>-</shadowcolor>
 				</control>

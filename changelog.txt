@@ -1,10 +1,10 @@
 [B]1.0.5[/B]
+- [NEW] Full skinned support for Rom Collection Browser addon. 
 - [MODIFIED] VideoOSD revised
 - [MODIFIED] MusicOSD revised
-- [NEW] Channel numbers added to PVR listings (thank Cyrils)
-- [NEW] Channel name and number added to videoOSD (thanks Cyrils)
+- [NEW] PVR Channel numbers added to PVR listings (thank Cyrils)
+- [NEW] PVR Channel name and number added to videoOSD (thanks Cyrils)
 - [MODIFIED] Numeric keyboard now defaults to 'DONE' for benefit of remote control users (thanks Cyrils)
-- [NEW] Initial support for Rom Collection Browser. 
 - [MODIFIED] Grid listing for programs / addons reworked.
 
 [B]1.0.4[/B]
