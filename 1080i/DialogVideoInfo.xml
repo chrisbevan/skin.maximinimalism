@@ -316,7 +316,7 @@
                     <textcolor>selected</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <scroll>true</scroll>
-                    <label>$INFO[listitem.tvshowtitle,, ]$INFO[listitem.season,$LOCALIZE[31011] ]$INFO[listitem.duration, • , $LOCALIZE[31018]]$INFO[ListItem.Premiered, • $LOCALIZE[20416] ,]</label>
+                    <label>$INFO[listitem.tvshowtitle,, ]$INFO[listitem.season,• $LOCALIZE[31011], • ]$INFO[listitem.duration,, $LOCALIZE[31018]]$INFO[ListItem.Premiered, • $LOCALIZE[20416] ,]</label>
                 </control>
                 <control type="label">
                     <description>Episode title</description>
