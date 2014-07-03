@@ -530,14 +530,15 @@
 			    <posy>-44</posy>
 				<width>1750</width>
 			    <height>600</height>
-				<timeblocks>20</timeblocks>
+				<timeblocks>30</timeblocks>
 				<progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>
 				<rulerunit>6</rulerunit>
 				<onback>8000</onback>
 			    <rulerlayout height="60" width="60">
 					<control type="label" id="2">
-			            <posx>-2</posx>
-			            <posy>0</posy>
+						<visible>SubString(ListItem.Label,:)</visible>
+			            <posx>0</posx>
+			            <posy>20</posy>
 			            <width>60</width>
 			            <height>30</height>
 			            <font>itemTitleSmall</font>
@@ -602,12 +603,24 @@
 				</focusedchannellayout>
 			    <itemlayout height="60" width="120">
 			        <control type="image" id="2">
-			            <width>120</width>
+			            <visible>!ListItem.HasTimer</visible>
+						<width>120</width>
 			            <height>57</height>
 			            <aspectratio>stretch</aspectratio>
 			            <texture>colors/black.png</texture>
 						<colordiffuse>99FFFFFF</colordiffuse>
+						<bordersize>0,0,3,0</bordersize>
 			        </control>
+					<control type="image" id="2">
+			            <visible>ListItem.HasTimer</visible>
+						<width>120</width>
+			            <height>57</height>
+			            <aspectratio>stretch</aspectratio>
+			            <texture>colors/black.png</texture>
+						<colordiffuse>99FFFFFF</colordiffuse>
+						<animation effect="fade" start="75" end="100" time="1500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>			      
+			        	<bordersize>0,0,3,0</bordersize>
+					</control>
 					<control type="label" id="1">
 						<width>120</width>
 						<height>57</height>
@@ -624,7 +637,7 @@
 						<width>120</width>
 						<height>57</height>
 						<texture>colors/selected.png</texture>
-						<bordersize>2</bordersize>
+						<bordersize>0</bordersize>
 					</control>
 					<control type="image" id="2">
 						<width>120</width>

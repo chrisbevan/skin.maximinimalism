@@ -289,7 +289,7 @@
 						<control type="radiobutton" id="5590">
 							<label>$ADDON[script.games.rom.collection.browser 32708]</label>
 						</control>					
-						<!-- Remoce scraper -->
+						<!-- Remove scraper -->
 						<control type="button" id="5610"> 
 							<description>Remove scraper</description>
 							<align>left</align>
