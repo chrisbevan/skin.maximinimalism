@@ -113,7 +113,7 @@
 					<height>30</height>
 					<font>small</font>
 					<textcolor>selected</textcolor>
-					<label>$INFO[MusicPlayer.Album] $INFO[MusicPlayer.year,(,)] $INFO[MusicPlayer.offset(1).Artist,| [B]$LOCALIZE[19031][/B] ,- ]$INFO[MusicPlayer.offset(1).Title]</label>
+					<label>$INFO[MusicPlayer.Album,[B]$LOCALIZE[558][/B] ,] $INFO[MusicPlayer.year,(,)] $INFO[MusicPlayer.offset(1).Artist,| [B]$LOCALIZE[19031][/B] , - ]$INFO[MusicPlayer.offset(1).Title]</label>
 					<scroll>true</scroll>
 					<scrollspeed>60</scrollspeed>
 				</control>

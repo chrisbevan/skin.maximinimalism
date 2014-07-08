@@ -25,7 +25,17 @@
             <control type="group">
                 <posx>col-1-begin</posx>
                 <posy>row-1-begin</posy>
-                <control type="image">
+                <control type="label" id="311">
+					<description>header label</description>
+					<posx>0</posx>
+                    <posy>-62</posy>
+					<width>17-col-gutter</width>
+                    <height>1-row</height>
+                    <align>center</align>
+					<font>itemTitleSmall</font>
+					<textcolor>selected</textcolor>
+				</control>
+				<control type="image">
                     <posx>0</posx>
                     <posy>-12</posy>
                     <width>17-col</width>
