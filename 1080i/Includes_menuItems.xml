@@ -9,6 +9,7 @@
         <orientation>vertical</orientation>
         <onleft>62</onleft>
         <onright>9999</onright>
+		<onback>activateWindow(home)</onback>
         <itemlayout width="4-col" height="43">
             <control type="label">
                 <posx>14</posx>

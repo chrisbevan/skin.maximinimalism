@@ -8,6 +8,8 @@
 - [NEW] French language support (thanks Joel)
 - [MODIFIED] Artist / album and movie / tvshow info screens reworked.
 - [FIXED] PVR Guide view *should* now work on Windows PVR clients (big thanks to Bearhunter73 for help on this)
+- Various tweaks skinwide
+
 
 [B]1.0.4[/B]
 - [FIXED] Removed executable bit on German strings.po (thanks Ronie)
