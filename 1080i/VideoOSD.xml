@@ -91,9 +91,9 @@
 				</control>
 				
 				<control type="image">
-					<posx>1106</posx>
+					<posx>1683</posx>
 					<posy>28</posy>
-					<width>14-col</width>
+					<width>8-col</width>
 					<height>54</height>
 					<texture>colors/black.png</texture>
 					<colordiffuse>99ffffff</colordiffuse>
@@ -108,7 +108,7 @@
 	                <height>1-col</height>
 		            <itemgap>0</itemgap>
 		            <orientation>horizontal</orientation>
-					<onup>8000</onup>
+					<onright>8001</onright>
 		            <itemlayout width="1-col" height="1-col">
 						<control type="image">
 	                        <posx>19</posx>
@@ -203,33 +203,89 @@
 		                    <thumb>-</thumb>
 		                    <onclick>PlayerControl(ShowVideoMenu)</onclick>
 		                </item>
-						<item>
+		            </content>
+		        </control>
+				<!--subtitles etc-->
+				<control type="panel" id="8001">
+					<posx>819</posx>
+		            <posy>28</posy>
+		            <width>24-col</width>
+		            <height>1-col</height>
+		            <itemgap>0</itemgap>
+		            <orientation>horizontal</orientation>
+					<onleft>8000</onleft>
+		            <itemlayout width="3-col" height="1-col">
+						<control type="image">
+	                        <posx>0</posx>
+	                        <posy>0</posy>
+	                        <width>213</width>
+	                        <height>54</height>
+	                        <aspectratio scalediffuse="false">stretch</aspectratio>
+	                        <texture border="0">colors/offblack.png</texture>
+	                        <bordersize>0</bordersize>
+	                        <colordiffuse>99FFFFFF</colordiffuse>
+	                    </control>
+						<control type="label">
+							<posx>12</posx>
+							<posy>0</posy>
+							<width>184</width>
+							<align>left</align>
+							<font>menuTitle</font>
+							<textcolor>selected</textcolor>
+							<label>$INFO[ListItem.label]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
+					</itemlayout>
+					<focusedlayout width="3-col" height="1-col">
+						<control type="image">
+	                        <posx>0</posx>
+	                        <posy>0</posy>
+	                       	<width>213</width>
+	                        <height>54</height>
+	                        <aspectratio scalediffuse="false">stretch</aspectratio>
+	                        <texture border="0">colors/selected.png</texture>
+	                        <bordersize>0</bordersize>
+	                        <colordiffuse>ffFFFFFF</colordiffuse>
+	                    </control>
+						<control type="label">
+							<posx>12</posx>
+							<posy>0</posy>
+							<width>184</width>
+							<align>left</align>
+							<font>menuTitle</font>
+							<textcolor>black</textcolor>
+							<label>$INFO[ListItem.label]</label>
+							<shadowcolor>-</shadowcolor>
+						</control>
+					</focusedlayout>
+		            <content>
+		                <item>
 							<description>Subtitles</description>
-		                    <label></label>
+		                    <label>24012</label>
 		                    <thumb>-</thumb>
 		                    <onclick>Close</onclick>
 							<onclick>activateWindow(5100)</onclick>
-		                </item>
+		                </item>						
 						<item>
 							<description>Audio Settings</description>
-		                    <label></label>
+		                    <label>292</label>
 		                    <thumb>-</thumb>
 		                    <onclick>ActivateWindow(124)</onclick>
-		                </item>
+		                </item>						
 						<item>
 							<description>Video Settings</description>
-		                    <label></label>
+		                    <label>444</label>
 		                    <thumb>-</thumb>
 		                    <onclick>ActivateWindow(123)</onclick>
 		                </item>
 						<item>
 							<description>Bookmarks</description>
-		                    <label></label>
+		                    <label>298</label>
 		                    <thumb>-</thumb>
 		                    <onclick>ActivateWindow(125)</onclick>
-		                </item>
+		                </item>						
 		            </content>
-		        </control>
+				</control>
 			</control>			
 		
 		</control>
