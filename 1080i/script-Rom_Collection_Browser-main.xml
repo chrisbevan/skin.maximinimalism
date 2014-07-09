@@ -422,6 +422,19 @@
 				        <textoffsetx>12</textoffsetx>
 						<label>$ADDON[script.games.rom.collection.browser 32409]</label>
 					</control>
+					<control type="button" id="4500"> 
+						<description>Add / Edit rom collection</description>
+						<height>54</height>
+				        <width>4-col</width>
+				        <font>menuTitle</font>
+				        <textcolor>black</textcolor>
+				        <focusedcolor>selected</focusedcolor>
+				        <texturefocus>colors/black.png</texturefocus>
+				        <texturenofocus>colors/unselected.png</texturenofocus>
+				        <textoffsetx>12</textoffsetx>
+						<label>$ADDON[script.games.rom.collection.browser 32503]</label>
+						<onclick>activateWindow(5200)</onclick>
+					</control>
 			    </control>
             </control>
         </control>
