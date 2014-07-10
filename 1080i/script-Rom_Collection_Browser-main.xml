@@ -112,15 +112,6 @@
 		                            <posx>0</posx>
 		                            <posy>0</posy>
 		                            <width>6-col</width>
-		                            <height>324</height>
-		                            <aspectratio scalediffuse="false">stretch</aspectratio>
-		                            <texture background="true" fallback="colors/offblack.png" border="0">$INFO[ListItem.Property(gameinfobig)]</texture>
-		                            <fadetime>200</fadetime>
-		                        </control>
-								<control type="image">
-		                            <posx>0</posx>
-		                            <posy>372</posy>
-		                            <width>6-col</width>
 		                            <height>243</height>
 		                            <aspectratio scalediffuse="false">stretch</aspectratio>
 		                            <texture background="true" fallback="colors/offblack.png" border="0">$INFO[ListItem.thumb]</texture>
@@ -421,19 +412,6 @@
 				        <texturenofocus>colors/unselected.png</texturenofocus>
 				        <textoffsetx>12</textoffsetx>
 						<label>$ADDON[script.games.rom.collection.browser 32409]</label>
-					</control>
-					<control type="button" id="4500"> 
-						<description>Add / Edit rom collection</description>
-						<height>54</height>
-				        <width>4-col</width>
-				        <font>menuTitle</font>
-				        <textcolor>black</textcolor>
-				        <focusedcolor>selected</focusedcolor>
-				        <texturefocus>colors/black.png</texturefocus>
-				        <texturenofocus>colors/unselected.png</texturenofocus>
-				        <textoffsetx>12</textoffsetx>
-						<label>$ADDON[script.games.rom.collection.browser 32503]</label>
-						<onclick>activateWindow(5200)</onclick>
 					</control>
 			    </control>
             </control>

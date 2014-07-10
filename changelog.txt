@@ -1,5 +1,5 @@
 [B]1.0.5[/B]
-- [NEW] Full skinned support for Rom Collection Browser addon. 
+- [NEW] Skinned support for Rom Collection Browser addon (some RCB setup dialogs still need work). 
 - [MODIFIED] VideoOSD revised
 - [MODIFIED] MusicOSD revised
 - [NEW] PVR Channel numbers added to PVR listings (thank Cyrils)
