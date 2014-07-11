@@ -1,4 +1,5 @@
 [B]1.0.5[/B]
+- [NEW] Cyrillic font support
 - [NEW] Skinned support for Rom Collection Browser addon (some RCB setup dialogs still need work). 
 - [MODIFIED] VideoOSD revised
 - [MODIFIED] MusicOSD revised
@@ -8,6 +9,7 @@
 - [NEW] French language support (thanks Joel)
 - [MODIFIED] Artist / album and movie / tvshow info screens reworked.
 - [FIXED] PVR Guide view *should* now work on Windows PVR clients (big thanks to Bearhunter73 for help on this)
+- [NEW] 'Unlock sources' added to video side menu (thanks killrbluechickn)
 - Various tweaks skinwide
 
 
