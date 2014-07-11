@@ -2,11 +2,12 @@
 <includes>
     <!--default text list 1 row-->
     <include name="viewMusicList">
+		<visible></visible>
         <control type="group">
             <posx>0</posx>
             <posy>3-row</posy>
             <control type="panel" id="51">
-                <visible>!container.content(artists) + !container.content(genres) + !container.content(albums) + !container.content(songs) + !container.content(addons) + !SubString(skin.string(showRecentMusicItems),true)</visible>
+                <visible>!control.isvisible(9998) + !container.content(artists) + !container.content(genres) + !container.content(albums) + !container.content(songs) + !container.content(addons)</visible>
                 <posx>0</posx>
                 <posy>4</posy>
                 <width>12-col</width>

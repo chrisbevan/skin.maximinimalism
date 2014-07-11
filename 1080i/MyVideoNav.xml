@@ -142,7 +142,7 @@
                             <width>21-col</width>
                             <height>6-row</height>
                             <onleft>9000</onleft>
-							<ondown>9997</ondown>
+							<ondown>control.setfocus(9997,$INFO[Container(9998).Position])</ondown>
 							<orientation>horizontal</orientation>
 							<onback>activateWindow(home)</onback>
                             <animation type="windowopen">
@@ -370,7 +370,7 @@
                             <width>21-col</width>
                             <height>6-row</height>
                             <onleft>9000</onleft>
-							<onup>9998</onup>
+							<onup>control.setfocus(9998,$INFO[Container(9997).Position])</onup>
 							<orientation>horizontal</orientation>
                             <animation type="windowopen">
                                 <include>listSlideIn</include>

@@ -676,7 +676,7 @@
 					<posx>0</posx>
 					<posy>50</posy>
 					<width>21-col-gutter</width>
-					<height>76</height>
+					<height>112</height>
 					<font>textboxExtraLeading</font>
 					<textcolor>selected</textcolor>
 					<selectedcolor>selected</selectedcolor>
