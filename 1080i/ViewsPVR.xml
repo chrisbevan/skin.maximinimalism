@@ -531,7 +531,7 @@
 				<width>1750</width>
 				<height>600</height>
 				<pagecontrol>10</pagecontrol>
-				<timeblocks>20</timeblocks>
+				<timeblocks>40</timeblocks>
 				<progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>
 				<rulerunit>6</rulerunit>
 				<onback>8000</onback>
