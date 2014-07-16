@@ -1,5 +1,5 @@
 <window>
-	<onload>control.setfocus(1000)</onload>
+	<onload>control.setfocus(3000)</onload>
 	<allowoverlay>no</allowoverlay>
 	<coordinates>
 		<system>1</system>
@@ -30,7 +30,7 @@
             <!--thumbnail if available-->
             <control type="group">
                 <posx>col-7-begin</posx>
-                <posy>row-1-begin</posy>
+                <posy>row-2-begin</posy>
                 <control type="image">
                     <posx>0</posx>
                     <posy>12</posy>
@@ -43,7 +43,7 @@
             <!--content-->
             <control type="group">
                 <posx>col-7-begin</posx>
-                <posy>row-10-begin</posy>
+                <posy>row-11-begin</posy>
                 <!--titles-->
                 <control type="label">
                     <posx>0</posx>
@@ -162,6 +162,7 @@
                 <!--dialog controls-->
 				<control type="button" id="3000">
 					<description>Play Game</description>
+					<visible>false</visible>
 					<posx>0</posx>
                     <posy>426</posy>
 					<width>6-col</width>

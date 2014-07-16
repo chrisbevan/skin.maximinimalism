@@ -5,7 +5,7 @@
 	<controls>						
 		<control type="group">
 			<!--fade out if audio / video menu active-->
-			<animation type="Conditional" condition="Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Player.Paused">
+			<animation type="Conditional" condition="Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)">
 				<effect type="fade" start="100" end="0" time="200" tween="sine" easing="in" />
 			</animation>
 			<!--title info-->
@@ -83,9 +83,9 @@
 				</control>
 				
 				<control type="image">
-					<posx>1683</posx>
+					<posx>1827</posx>
 					<posy>28</posy>
-					<width>8-col</width>
+					<width>3-col</width>
 					<height>54</height>
 					<texture>colors/black.png</texture>
 					<colordiffuse>99ffffff</colordiffuse>
@@ -188,18 +188,11 @@
 		                    <thumb>-</thumb>
 		                    <onclick>PlayerControl(record)</onclick>
 		                </item>
-						<item>
-							<description>DVD Menu</description>
-							<enable>System.HasMediaDVD + VideoPlayer.HasMenu</enable>
-		                    <label></label>
-		                    <thumb>-</thumb>
-		                    <onclick>PlayerControl(ShowVideoMenu)</onclick>
-		                </item>
 		            </content>
 		        </control>
 				<!--subtitles etc-->
 				<control type="panel" id="8001">
-					<posx>819</posx>
+					<posx>747</posx>
 		            <posy>28</posy>
 		            <width>24-col</width>
 		            <height>1-col</height>
@@ -252,6 +245,20 @@
 					</focusedlayout>
 		            <content>
 		                <item>
+							<visible>!VideoPlayer.HasMenu</visible>
+							<description>Guide</description>
+		                    <label>22020</label>
+		                    <thumb>-</thumb>
+							<onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
+		                </item>
+						<item>
+							<visible>VideoPlayer.HasMenu</visible>
+							<description>DVD Menu</description>
+		                    <label>31140</label>
+		                    <thumb>-</thumb>
+							<onclick>PlayerControl(ShowVideoMenu)</onclick>
+		                </item>
+						<item>
 							<description>Subtitles</description>
 		                    <label>24012</label>
 		                    <thumb>-</thumb>

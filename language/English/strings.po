@@ -590,3 +590,15 @@ msgstr ""
 msgctxt "#31159"
 msgid "Unknown"
 msgstr ""
+
+msgctxt "#31160"
+msgid "Home: Hide Favourites"
+msgstr ""
+
+msgctxt "#31161"
+msgid "Hide Info"
+msgstr ""
+
+msgctxt "#31162"
+msgid "Home menu items"
+msgstr ""
