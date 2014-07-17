@@ -164,7 +164,7 @@
                             <width>6-col</width>
                             <height>635</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
-                            <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(poster)]</texture>
+                            <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
                             <fadetime>200</fadetime>
                         </control>
                     </control>

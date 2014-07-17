@@ -46,7 +46,7 @@
 			<!--left column-->
 			<control type="group">
 				<posx>0</posx>
-				<posy>119</posy>
+				<posy>118</posy>
 				<!-- Category buttons -->
 				<control type="list" id="7000">
 					<posx>0</posx>
@@ -84,7 +84,7 @@
 	                        <posx>0</posx>
 	                        <posy>2</posy>
 	                        <width>4-col</width>
-	                        <height>53</height>
+	                        <height>55</height>
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>colors/selected.png</texture>
 							<colordiffuse>77FFFFFF</colordiffuse>
@@ -94,7 +94,7 @@
 	                        <posx>0</posx>
 	                        <posy>2</posy>
 	                        <width>4-col</width>
-	                        <height>53</height>
+	                        <height>55</height>
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>colors/selected.png</texture>
 	                    </control>
@@ -228,7 +228,7 @@
 					<texturefocus>UIControls/arrow-up-fo.png</texturefocus>
 					<onclick>Control.Move(5210,-1)</onclick>
 					<onleft>5211</onleft>
-					<onright>6000</onright>
+					<onright>8542</onright>
 					<ondown>control.setfocus(7010,1)</ondown>
 				</control>
 				
@@ -244,12 +244,15 @@
 			                <height>11-row</height>
 							<onup>5211</onup>
 							<onleft>7000</onleft>
+							<onright>8542</onright>
+							<itemgap>3</itemgap>
 														
 							<control type="button" id="5240"> 
 								<description>Rom Path</description>						
 								<align>right</align>
 				                <height>54</height>
 								<width>12-col</width>
+								<textwidth>6-col</textwidth>
 				                <font>itemTitle</font>
 				                <textcolor>selected</textcolor>
 				                <focusedcolor>black</focusedcolor>
@@ -264,6 +267,7 @@
 								<align>right</align>
 				                <height>54</height>
 								<width>12-col</width>
+								<textwidth>6-col</textwidth>
 				                <font>itemTitle</font>
 				                <textcolor>selected</textcolor>
 				                <focusedcolor>black</focusedcolor>
@@ -289,13 +293,14 @@
 								<align>right</align>
 				                <height>54</height>
 								<width>12-col</width>
+								<textwidth>6-col</textwidth>
 				                <font>itemTitle</font>
 				                <textcolor>selected</textcolor>
 				                <focusedcolor>black</focusedcolor>
 				                <texturefocus>colors/selected.png</texturefocus>
 				                <texturenofocus>-</texturenofocus>
 				                <textoffsetx>12</textoffsetx>
-								<label2>$ADDON[script.games.rom.collection.browser 32610]</label2>
+								<label>$ADDON[script.games.rom.collection.browser 32610]</label>
 							</control>
 							
 							<control type="button" id="5420"> 
@@ -305,16 +310,106 @@
 								<width>12-col</width>
 				                <font>itemTitle</font>
 				                <textcolor>selected</textcolor>
+								<textwidth>6-col</textwidth>
 				                <focusedcolor>black</focusedcolor>
 				                <texturefocus>colors/selected.png</texturefocus>
 				                <texturenofocus>-</texturenofocus>
 				                <textoffsetx>12</textoffsetx>
-								<label2>$ADDON[script.games.rom.collection.browser 32611]</label2>
+								<label>$ADDON[script.games.rom.collection.browser 32611]</label>
 							</control>
 							
 							<control type="radiobutton" id="5430">
 								<label>$ADDON[script.games.rom.collection.browser 32612]</label>
 							</control>
+						</control>
+						<!--extra button labels-->
+						<control type="label">
+							<visible>!control.hasfocus(5240)</visible>
+							<posx>12</posx>
+							<posy>1-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32606]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5240)</visible>
+							<posx>12</posx>
+							<posy>1-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32606]</label>
+						</control>						
+						<control type="label">
+							<visible>!control.hasfocus(5250)</visible>
+							<posx>12</posx>
+							<posy>2-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32607]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5250)</visible>
+							<posx>12</posx>
+							<posy>2-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32607]</label>
+						</control>						
+						<control type="label">
+							<visible>!control.hasfocus(5410)</visible>
+							<posx>12</posx>
+							<posy>5-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32610]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5410)</visible>
+							<posx>12</posx>
+							<posy>5-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32610]</label>
+						</control>
+						<control type="label">
+							<visible>!control.hasfocus(5420)</visible>
+							<posx>12</posx>
+							<posy>6-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32611]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5420)</visible>
+							<posx>12</posx>
+							<posy>6-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32611]</label>
 						</control>
 					</control>
 						
@@ -414,7 +509,7 @@
 							<texturefocus>UIControls/arrow-up-fo.png</texturefocus>
 							<onclick>Control.Move(5290,-1)</onclick>
 							<onleft>5291</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<onup>5212</onup>
 							<ondown>5302</ondown>
 						</control>					
@@ -512,7 +607,7 @@
 							<texturefocus>UIControls/arrow-up-fo.png</texturefocus>
 							<onclick>Control.Move(5300,-1)</onclick>
 							<onleft>5301</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<onup>5292</onup>
 							<ondown>5312</ondown>
 						</control>						
@@ -609,7 +704,7 @@
 							<texturefocus>UIControls/arrow-up-fo.png</texturefocus>
 							<onclick>Control.Move(5310,-1)</onclick>
 							<onleft>5311</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<onup>5302</onup>
 							<ondown>5262</ondown>
 						</control>
@@ -708,7 +803,7 @@
 								<texturefocus>UIControls/arrow-up-fo.png</texturefocus>
 								<onclick>Control.Move(5260,-1)</onclick>
 								<onleft>5261</onleft>
-								<onright>6000</onright>
+								<onright>8542</onright>
 								<onup>5312</onup>
 								<ondown>5270</ondown>
 							</control>							
@@ -718,6 +813,8 @@
 								<width>12-col</width>
 				                <height>11-row</height>
 								<onup>5261</onup>
+								<onright>8542</onright>
+								<onleft>7000</onleft>
 								<!-- Media Path -->						
 								<control type="button" id="5270"> 
 									<description>Media Path</description>
@@ -728,6 +825,7 @@
 					                <textcolor>selected</textcolor>
 					                <focusedcolor>black</focusedcolor>
 					                <texturefocus>colors/selected.png</texturefocus>
+									<textwidth>6-col</textwidth>
 					                <texturenofocus>-</texturenofocus>
 					                <textoffsetx>12</textoffsetx>
 									<label>$ADDON[script.games.rom.collection.browser 32617]</label>
@@ -743,6 +841,7 @@
 					                <focusedcolor>black</focusedcolor>
 					                <texturefocus>colors/selected.png</texturefocus>
 					                <texturenofocus>-</texturenofocus>
+									<textwidth>6-col</textwidth>
 					                <textoffsetx>12</textoffsetx>
 									<label>$ADDON[script.games.rom.collection.browser 32618]</label>
 								</control>
@@ -773,6 +872,51 @@
 									<label>$ADDON[script.games.rom.collection.browser 32620]</label>
 								</control>
 							</control>
+						</control>
+						<!--extra button labels-->
+						<control type="label">
+							<visible>!control.hasfocus(5270)</visible>
+							<posx>12</posx>
+							<posy>5-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32617]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5270)</visible>
+							<posx>12</posx>
+							<posy>5-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32617]</label>
+						</control>
+						<control type="label">
+							<visible>!control.hasfocus(5280)</visible>
+							<posx>12</posx>
+							<posy>6-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32618]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5280)</visible>
+							<posx>12</posx>
+							<posy>6-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32618]</label>
 						</control>
 					</control>				
 
@@ -871,7 +1015,7 @@
 							<texturefocus>UIControls/arrow-up-fo.png</texturefocus>
 							<onclick>Control.Move(5320,-1)</onclick>
 							<onleft>5321</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<onup>5212</onup>
 							<ondown>5342</ondown>
 						</control>
@@ -969,7 +1113,7 @@
 							<texturefocus>UIControls/arrow-up-fo.png</texturefocus>
 							<onclick>Control.Move(5340,-1)</onclick>
 							<onleft>5341</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<onup>5322</onup>
 							<ondown>5350</ondown>
 						</control>
@@ -980,6 +1124,7 @@
 							<width>12-col</width>
 			                <height>11-row</height>
 							<onup>5261</onup>
+							<onright>8542</onright>
 							<!-- Autoplay Main -->
 							<control type="radiobutton" id="5350">
 								<label>$ADDON[script.games.rom.collection.browser 32623]</label>
@@ -1229,7 +1374,7 @@
 	            <height>5-row</height>
 	            <itemgap>3</itemgap>
 	            <orientation>vertical</orientation>
-	            <onleft>5550</onleft>
+	            <onleft>5212</onleft>
 	            <itemlayout width="6-col" height="1-row">
 	                <control type="label">
 	                    <posx>24</posx>
