@@ -5,8 +5,8 @@
 		<include>modalDialog</include>
 		<control type="grouplist" id="7000">
             <posx>col-10-begin</posx>
-            <posy>4-row</posy>
-			<height>11-row</height>
+            <posy>2-row</posy>
+			<height>15-row</height>
             <itemgap>0</itemgap>						
 			<control type="button" id="5110">
 				<description>button import games</description>

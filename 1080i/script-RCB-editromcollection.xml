@@ -930,6 +930,7 @@
 							<height>1-row</height>
 							<pagecontrol>-</pagecontrol>
 							<scrolltime>0</scrolltime>
+							<enable>false</enable>
 							<onleft>5320</onleft>
 							<onright>5320</onright>
 							<onup>5320</onup>
@@ -1123,7 +1124,7 @@
 							<posy>3-row</posy>
 							<width>12-col</width>
 			                <height>11-row</height>
-							<onup>5261</onup>
+							<onup>5342</onup>
 							<onright>8542</onright>
 							<!-- Autoplay Main -->
 							<control type="radiobutton" id="5350">
@@ -1145,12 +1146,13 @@
 
 						<!-- Emulator Cmd -->
 						<control type="button" id="5220"> 
-							<description>EmuCmd</description>
+							<description>EmuCmd (5540 = use retroplayer)</description>
 							<posx>0</posx>
 							<posy>1-row</posy>
 							<align>right</align>
 			                <height>54</height>
 							<width>12-col</width>
+							<textwidth>6-col</textwidth>
 			                <font>itemTitle</font>
 			                <textcolor>selected</textcolor>
 			                <focusedcolor>black</focusedcolor>
@@ -1173,6 +1175,7 @@
 							<align>right</align>
 			                <height>54</height>
 							<width>12-col</width>
+							<textwidth>6-col</textwidth>
 			                <font>itemTitle</font>
 			                <textcolor>selected</textcolor>
 			                <focusedcolor>black</focusedcolor>
@@ -1182,7 +1185,7 @@
 							<onup>5220</onup>
 							<ondown>5440</ondown>
 							<onleft>7000</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
 						</control>
 
@@ -1193,7 +1196,7 @@
 							<width>12-col</width>
 							<label>$ADDON[script.games.rom.collection.browser 32626]</label>
 							<onleft>7000</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<onup>5230</onup>
 							<ondown>5530</ondown>
 							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
@@ -1206,7 +1209,7 @@
 							<width>12-col</width>
 							<label>$ADDON[script.games.rom.collection.browser 32627]</label>
 							<onleft>7000</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<onup>5440</onup>
 							<ondown>5460</ondown>
 							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
@@ -1229,7 +1232,7 @@
 							<onup>5530</onup>
 							<ondown>5470</ondown>
 							<onleft>7000</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
 						</control>
 						
@@ -1250,7 +1253,7 @@
 							<onup>5460</onup>
 							<ondown>5480</ondown>
 							<onleft>7000</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
 						</control>
 
@@ -1271,7 +1274,7 @@
 							<onup>5470</onup>
 							<ondown>5510</ondown>
 							<onleft>7000</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
 						</control>
 
@@ -1292,7 +1295,7 @@
 							<onup>5480</onup>
 							<ondown>5520</ondown>
 							<onleft>7000</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
 						</control>
 						
@@ -1313,7 +1316,7 @@
 							<onup>5510</onup>
 							<ondown>5450</ondown>
 							<onleft>7000</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
 						</control>
 
@@ -1324,7 +1327,7 @@
 							<width>12-col</width>
 							<label>$ADDON[script.games.rom.collection.browser 32628]</label>
 							<onleft>7000</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<onup>5520</onup>
 							<ondown>5540</ondown>
 						</control>
@@ -1336,7 +1339,7 @@
 							<width>12-col</width>
 							<label>$ADDON[script.games.rom.collection.browser 32637]</label>
 							<onleft>7000</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 							<onup>5450</onup>
 							<ondown>5550</ondown>
 						</control>
@@ -1344,6 +1347,7 @@
 						<!-- Game Client -->
 						<control type="button" id="5550">
 							<description>Game client</description>
+							<enable>SubString(Control.GetLabel(5540),*)</enable>
 							<posx>0</posx>
 							<posy>12-row</posy>
 							<align>right</align>
@@ -1359,13 +1363,207 @@
 							<onup>5540</onup>
 							<ondown>6000</ondown>
 							<onleft>7000</onleft>
-							<onright>6000</onright>
+							<onright>8542</onright>
 						</control>
-					</control>
-
+						
+						<!--extra button labels-->
+						<control type="label">
+							<visible>!control.hasfocus(5220)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>1-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32624]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5220)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>1-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32624]</label>
+						</control>	
+						<control type="label">
+							<visible>!control.hasfocus(5230)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>2-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32625]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5230)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>2-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32625]</label>
+						</control>					
+						<control type="label">
+							<visible>!control.hasfocus(5460)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>5-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32629]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5460)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>5-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32629]</label>
+						</control>
+						<control type="label">
+							<visible>!control.hasfocus(5470)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>6-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32630]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5470)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>6-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32630]</label>
+						</control>
+						<control type="label">
+							<visible>!control.hasfocus(5480)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>7-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32631]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5480)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>7-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32631]</label>
+						</control>
+						<control type="label">
+							<visible>!control.hasfocus(5510)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>8-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32632]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5510)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>8-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32632]</label>
+						</control>
+						<control type="label">
+							<visible>!control.hasfocus(5520)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>9-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32633]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5520)</visible>
+							<enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
+							<posx>12</posx>
+							<posy>9-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32633]</label>
+						</control>
+						<control type="label">
+							<visible>!control.hasfocus(5550)</visible>
+							<enable>SubString(Control.GetLabel(5540),*)</enable> 
+							<posx>12</posx>
+							<posy>12-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>selected</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32638]</label>
+						</control>
+						<control type="label">
+							<visible>control.hasfocus(5550)</visible>
+							<enable>SubString(Control.GetLabel(5540),*)</enable>
+							<posx>12</posx>
+							<posy>12-row</posy>
+							<width>10-col</width>
+							<height>1-row</height>
+							<font>itemTitle</font>
+							<textcolor>black</textcolor>
+							<shadowcolor>-</shadowcolor>
+							<label>$ADDON[script.games.rom.collection.browser 32638]</label>
+						</control>
+					</control>				
+					
 				</control>				
 			</control>
-			
+					
 			<!--OK / Cancel-->
 	        <control type="panel" id="8542">
 	            <posx>1164</posx>
