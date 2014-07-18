@@ -574,3 +574,31 @@ msgstr ""
 msgctxt "#31155"
 msgid "Adjust Subtitle Offset"
 msgstr ""
+
+msgctxt "#31156"
+msgid "Games"
+msgstr ""
+
+msgctxt "#31157"
+msgid "Home: Hide Games"
+msgstr ""
+
+msgctxt "#31158"
+msgid "Playback stopped. Press [Back] to return."
+msgstr ""
+
+msgctxt "#31159"
+msgid "Unknown"
+msgstr ""
+
+msgctxt "#31160"
+msgid "Home: Hide Favourites"
+msgstr ""
+
+msgctxt "#31161"
+msgid "Hide Info"
+msgstr ""
+
+msgctxt "#31162"
+msgid "Home menu items"
+msgstr ""
