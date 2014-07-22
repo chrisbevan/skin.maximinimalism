@@ -53,7 +53,7 @@
 					<posy>0</posy>
 					<width>276</width>
 					<height>6-row</height>
-					<onleft>-</onleft>
+					<onleft>noop</onleft>
 					<onright>200</onright>
 					<pagecontrol>-</pagecontrol>
 					<itemgap>3</itemgap>
