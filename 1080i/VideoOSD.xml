@@ -36,7 +36,7 @@
 				</control>
 				<control type="label">
 	                <posx>2-col</posx>
-	                <posy>42</posy>
+	                <posy>40</posy>
 	                <width>22-col</width>
 	                <font>dialogTitle</font>
 	                <textcolor>selected</textcolor>

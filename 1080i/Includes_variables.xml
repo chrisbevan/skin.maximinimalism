@@ -21,6 +21,7 @@
         <value condition="Window.IsActive(pvr) + control.isvisible(12)">$INFO[Skin.String(musicFanartLocation)]</value>
 		<value condition="Window.IsActive(pvr)">$INFO[Skin.String(videoFanartLocation)]</value>
         <value condition="Window.IsActive(programs)">$INFO[Skin.String(videoFanartLocation)]</value>
+		<value condition="Substring(Window.Property(xmlfile),script-Rom_Collection_Browser-main)">$INFO[Skin.String(gameFanartLocation)]</value>
         <!--default to video fanart-->
         <value>$INFO[Skin.String(videoFanartLocation)]</value>
     </variable>
