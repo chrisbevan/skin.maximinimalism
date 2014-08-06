@@ -23,7 +23,7 @@
 				<fadetime>200</fadetime>
 				<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 				<aspectratio align="left" aligny="top">stretch</aspectratio>
-				<include>kenBurnsey</include>
+				<include condition="!Skin.HasSetting(disableAnimateFanart)">kenBurnsey</include>
 			</control>
 			<control type="multiimage">
 				<visible>!isempty(Window(Visualisation).Property(ArtistSlideshow))</visible>
@@ -35,7 +35,7 @@
 				<timeperimage>10000</timeperimage>
 				<fadetime>1000</fadetime>
 				<randomize>true</randomize>
-				<include>kenBurnsey</include>
+				<include condition="!Skin.HasSetting(disableAnimateFanart)">kenBurnsey</include>
 			</control>
 			<!--visualisation-->
 			<control type="visualisation" id="2">
@@ -131,7 +131,7 @@
 						<font>smallStrong</font>
 						<align>right</align>
 						<textcolor>selected</textcolor>
-						<label>$INFO[MusicPlayer.time,$LOCALIZE[180] , / ]$INFO[MusicPlayer.duration]</label>
+						<label>$INFO[system.time] • $INFO[MusicPlayer.time,$LOCALIZE[180] , / ]$INFO[MusicPlayer.duration]</label>
 						<scroll>false</scroll>
 						<shadowcolor>-</shadowcolor>
 					</control>
@@ -235,14 +235,14 @@
 			                <item>
 								<visible>Player.Playing | player.forwarding | player.rewinding</visible>
 								<description>Play/Pause</description>
-			                    <label></label>
+								<label></label>			                    
 			                    <thumb>-</thumb>
 			                    <onclick>PlayerControl(play)</onclick>
 			                </item>
 							<item>
 								<visible>Player.Paused</visible>
 								<description>Pause</description>
-			                    <label></label>
+			                    <label></label>
 			                    <thumb>-</thumb>
 			                    <onclick>PlayerControl(play)</onclick>
 			                </item>
@@ -401,12 +401,11 @@
 				<control type="label">
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>21-col</width>
+					<width>22-col</width>
 					<font>itemTitleSmall</font>
 					<textcolor>selected</textcolor>
+					<scroll>false</scroll>
 					<label>[B]$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration][/B] $INFO[MusicPlayer.Title]$INFO[MusicPlayer.artist, - ,]$INFO[MusicPlayer.Album, (,)] $INFO[MusicPlayer.offset(1).Artist,| [B]$LOCALIZE[19031][/B] , - ]$INFO[MusicPlayer.offset(1).Title]</label>
-					<scroll>true</scroll>
-					<scrollspeed>60</scrollspeed>
 				</control>
 				
 			</control>

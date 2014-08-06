@@ -62,7 +62,7 @@
 					<font>smallStrong</font>
 					<align>right</align>
 					<textcolor>selected</textcolor>
-					<label>$LOCALIZE[180] $INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
+					<label>$INFO[system.time] • $LOCALIZE[180] $INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
 					<scroll>false</scroll>
 					<shadowcolor>-</shadowcolor>
 				</control>
@@ -164,12 +164,21 @@
 		                    <thumb>-</thumb>
 		                    <onclick>PlayerControl(stop)</onclick>
 		                </item>
-		                <item>
+						<item>
+							<visible>Player.Playing | player.forwarding | player.rewinding</visible>
 							<description>Play/Pause</description>
+							<label></label>		                    
+		                    <thumb>-</thumb>
+		                    <onclick>PlayerControl(play)</onclick>
+		                </item>
+						<item>
+							<visible>Player.Paused</visible>
+							<description>Pause</description>
 		                    <label></label>
 		                    <thumb>-</thumb>
 		                    <onclick>PlayerControl(play)</onclick>
 		                </item>
+		
 		                <item>
 							<description>Fast forward</description>
 		                    <label></label>
