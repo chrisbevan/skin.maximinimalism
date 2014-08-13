@@ -58,7 +58,7 @@
 				<visible>!skin.string(hideInfo,true)</visible>
 				<control type="group">	
 					<posx>col-1-begin</posx>
-					<posy>856</posy>						
+					<posy>881</posy>						
 					<!--overlay-->
 					<control type="image">
 						<posx>-96</posx>
@@ -103,12 +103,24 @@
 		            </control>
 					<control type="label">
 						<posx>2-col</posx>
-						<posy>98</posy>
-						<width>22-col</width>
+						<posy>102</posy>
+						<width>12-col-gutter</width>
 						<height>30</height>
 						<font>small</font>
 						<textcolor>selected</textcolor>
-						<label>$INFO[MusicPlayer.Album,[B]$LOCALIZE[558][/B] ,] $INFO[MusicPlayer.year,(,)] $INFO[MusicPlayer.offset(1).Artist,| [B]$LOCALIZE[19031][/B] , - ]$INFO[MusicPlayer.offset(1).Title]</label>
+						<label>$INFO[MusicPlayer.Album,[B]$LOCALIZE[558][/B] ,] $INFO[MusicPlayer.year,(,)]</label>
+						<scroll>true</scroll>
+						<scrollspeed>60</scrollspeed>
+					</control>
+					<control type="label">
+						<posx>24-col</posx>
+						<posy>102</posy>
+						<width>10-col</width>
+						<height>30</height>
+						<align>right</align>
+						<font>small</font>
+						<textcolor>selected</textcolor>
+						<label>$INFO[MusicPlayer.offset(1).Artist,[B]$LOCALIZE[19031]:[/B] , - ]$INFO[MusicPlayer.offset(1).Title]</label>
 						<scroll>true</scroll>
 						<scrollspeed>60</scrollspeed>
 					</control>
@@ -139,7 +151,7 @@
 				<!--dialog controls-->
 				<control type="group">
 					<posx>0</posx>
-					<posy>971</posy>
+					<posy>996</posy>
 					<control type="image">
 						<posx>0</posx>
 						<posy>28</posy>
@@ -351,7 +363,7 @@
 				</control>			
 				<control type="image">
                 	<posx>24</posx>
-	                <posy>861</posy>
+	                <posy>887</posy>
 	                <width>191</width>
 	                <height>191</height>
 	                <aspectratio scalediffuse="false">scale</aspectratio>
@@ -401,11 +413,21 @@
 				<control type="label">
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>22-col</width>
+					<width>12-col</width>
 					<font>itemTitleSmall</font>
 					<textcolor>selected</textcolor>
 					<scroll>false</scroll>
-					<label>[B]$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration][/B] $INFO[MusicPlayer.Title]$INFO[MusicPlayer.artist, - ,]$INFO[MusicPlayer.Album, (,)] $INFO[MusicPlayer.offset(1).Artist,| [B]$LOCALIZE[19031][/B] , - ]$INFO[MusicPlayer.offset(1).Title]</label>
+					<label>[B]$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration][/B] $INFO[MusicPlayer.Title]$INFO[MusicPlayer.artist, - ,]$INFO[MusicPlayer.Album, (,)]</label>
+				</control>
+				<control type="label">
+					<posx>1820</posx>
+					<posy>0</posy>
+					<width>10-col</width>
+					<font>itemTitleSmall</font>
+					<align>right</align>
+					<textcolor>selected</textcolor>
+					<scroll>false</scroll>
+					<label>$INFO[MusicPlayer.offset(1).Artist,[B]$LOCALIZE[19031][/B]: , - ]$INFO[MusicPlayer.offset(1).Title]</label>
 				</control>
 				
 			</control>

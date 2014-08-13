@@ -344,8 +344,6 @@
                 <include>sideBarMenuItems</include>
             </control>
         </control>
-		<!--loading indicator-->
-        <include>loadingIndicator</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

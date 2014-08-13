@@ -330,7 +330,9 @@
                     <width>5-col</width>
                     <height>5-col</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
+                    <texture fallback="colors/offblack.png" border="0">$INFO[ListItem.art(thumb)]</texture>
+					<bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
+					<bordersize>3</bordersize>
                     <fadetime>500</fadetime>
                 </control>
                 <control type="label">

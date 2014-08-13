@@ -6,6 +6,7 @@
 - [FIXED] Issue where selecting recent content sometimes failed to focus menu
 - [MODIFIED] Aspect ratio for addon images adjusted for better flexibility
 - [MODIFIED] Busy graphic replaced for less CPU usage
+- Various tweaks and tidying up
 
 [B]1.0.5[/B]
 - [NEW] Cyrillic font support

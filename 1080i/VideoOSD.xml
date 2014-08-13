@@ -11,7 +11,7 @@
 			<!--title info-->
 			<control type="group">	
 				<posx>col-1-begin</posx>
-				<posy>856</posy>
+				<posy>881</posy>
 				
 				<!--overlay-->
 				<control type="image">
@@ -70,7 +70,7 @@
 			<!--dialog controls-->
 			<control type="group">
 				<posx>0</posx>
-				<posy>971</posy>
+				<posy>996</posy>
 				
 				<control type="image">
 					<posx>0</posx>
@@ -178,7 +178,6 @@
 		                    <thumb>-</thumb>
 		                    <onclick>PlayerControl(play)</onclick>
 		                </item>
-		
 		                <item>
 							<description>Fast forward</description>
 		                    <label></label>
@@ -296,8 +295,8 @@
 				</control>
 			</control>
 			<control type="image">
-                <posx>24</posx>
-                <posy>861</posy>
+                <posx>36</posx>
+                <posy>887</posy>
                 <width>191</width>
                 <height>191</height>
                 <aspectratio scalediffuse="false">scale</aspectratio>
