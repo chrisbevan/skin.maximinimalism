@@ -2,7 +2,7 @@
 <includes>
     <!--list-->
     <include name="viewDialogList">
-        <control type="panel" id="50">
+        <control type="panel" id="57">
             <posx>0</posx>
             <posy>3-row</posy>
             <width>16-col</width>

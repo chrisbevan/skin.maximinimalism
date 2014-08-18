@@ -91,6 +91,29 @@
 					<colordiffuse>99ffffff</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 				</control>
+				
+				<control type="image">
+					<visible>!Player.CanRecord</visible>
+					<posx>675</posx>
+					<posy>28</posy>
+					<width>69</width>
+					<height>54</height>
+					<texture>colors/black.png</texture>
+					<colordiffuse>99ffffff</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				
+				<control type="label">
+					<visible>!Player.CanRecord</visible>
+                    <posx>700</posx>
+                    <posy>18</posy>
+                    <width>1-col</width>
+                    <height>1-col</height>
+                    <font>symbol</font>
+                    <textcolor>unselected</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label></label>
+                </control>
 
 				<!--player controls-->
 				<control type="panel" id="8000">
@@ -191,6 +214,7 @@
 		                    <onclick>PlayerControl(next)</onclick>
 		                </item>
 						<item>
+							<visible>System.GetBool(pvrmanager.enabled) + Player.CanRecord</visible>
 							<description>Record (PVR only)</description>
 		                    <label></label>
 		                    <thumb>-</thumb>
@@ -252,15 +276,7 @@
 						</control>
 					</focusedlayout>
 		            <content>
-		                <item>
-							<visible>!VideoPlayer.HasMenu</visible>
-							<description>Guide</description>
-		                    <label>22020</label>
-		                    <thumb>-</thumb>
-							<onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
-		                </item>
 						<item>
-							<visible>VideoPlayer.HasMenu</visible>
 							<description>DVD Menu</description>
 		                    <label>31140</label>
 		                    <thumb>-</thumb>
