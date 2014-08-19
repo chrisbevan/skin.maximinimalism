@@ -43,7 +43,7 @@
                         <posy>45</posy>
                         <width>14-col</width>
                         <font>regular</font>
-                        <label>$INFO[control.getlabel(30),, • ]$INFO[Pvr.BackendChannels] $LOCALIZE[31017]</label>
+                        <label>$INFO[control.getlabel(30),, ][COLOR accented]$INFO[Pvr.BackendChannels] $LOCALIZE[31017][/COLOR]</label>
                         <textcolor>selected</textcolor>
                     </control>
                     <control type="label" id="30">
