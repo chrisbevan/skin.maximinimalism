@@ -125,81 +125,81 @@
 		<!--custom video addons-->
 		<item>
 			<visible>!isempty(Skin.String(customVideoAddon1))</visible>
-		    <label>$VAR[customVideoAddon1Title]</label>
-			<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+		    <label>$VAR[customVideoAddon1Title]</label>			
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon1Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon1)])</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon1Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon1)],return)</onclick>	    	    
+			<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 			<onclick>Control.SetFocus(52)</onclick>
 		</item>
 		<item>
 			<visible>!isempty(Skin.String(customVideoAddon2))</visible>
 		    <label>$VAR[customVideoAddon2Title]</label>
-			<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon2Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon2)])</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon2Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon2)],return)</onclick>
-		    <onclick>Control.SetFocus(52)</onclick>		    
+		    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+			<onclick>Control.SetFocus(52)</onclick>		    
 		</item>
 		<item>
 			<visible>!isempty(Skin.String(customVideoAddon3))</visible>
-		    <label>$VAR[customVideoAddon3Title]</label>
-			<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+		    <label>$VAR[customVideoAddon3Title]</label>			
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon3Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon3)])</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon3Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon3)],return)</onclick>
-		    <onclick>Control.SetFocus(52)</onclick>		    
+		    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+			<onclick>Control.SetFocus(52)</onclick>		    
 		</item>
 		<item>
 			<visible>!isempty(Skin.String(customVideoAddon4))</visible>
-		    <label>$VAR[customVideoAddon4Title]</label>
-			<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+		    <label>$VAR[customVideoAddon4Title]</label>		
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon4Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon4)])</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon4Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon4)],return)</onclick>
-		    <onclick>Control.SetFocus(52)</onclick>		   
+		    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+			<onclick>Control.SetFocus(52)</onclick>		   
 		</item>
 		<item>
 			<visible>!isempty(Skin.String(customVideoAddon5))</visible>
-		    <label>$VAR[customVideoAddon5Title]</label>
-			<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+		    <label>$VAR[customVideoAddon5Title]</label>			
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon5Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon5)])</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon5Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon5)],return)</onclick>
-		    <onclick>Control.SetFocus(52)</onclick>		    
+		    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+			<onclick>Control.SetFocus(52)</onclick>		    
 		</item>
 		<item>
 			<visible>!isempty(Skin.String(customVideoAddon6))</visible>
 		    <label>$VAR[customVideoAddon6Title]</label>
-			<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon6Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon6)])</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon6Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon6)],return)</onclick>
-		    <onclick>Control.SetFocus(52)</onclick>		    
+		    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+			<onclick>Control.SetFocus(52)</onclick>		    
 		</item>
 		<item>
 			<visible>!isempty(Skin.String(customVideoAddon7))</visible>
 		    <label>$VAR[customVideoAddon7Title]</label>
-			<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon7Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon7)])</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon7Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon7)],return)</onclick>
-		    <onclick>Control.SetFocus(52)</onclick>		    
+		    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+			<onclick>Control.SetFocus(52)</onclick>		    
 		</item>
 		<item>
 			<visible>!isempty(Skin.String(customVideoAddon8))</visible>
 		    <label>$VAR[customVideoAddon8Title]</label>
-			<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon8Type),videoAddon)">RunAddon($INFO[Skin.String(customVideoAddon8)])</onclick>
 		    <onclick condition="StringCompare(Skin.String(customVideoAddon8Type),videoPlaylist)">ActivateWindow(Videos,$INFO[Skin.String(customVideoAddon8)],return)</onclick>
-		    <onclick>Control.SetFocus(52)</onclick>		    
+		    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+			<onclick>Control.SetFocus(52)</onclick>		    
 		</item>		
 		<!--final bits and bobs-->
 		<item>
 			<visible></visible>
 		    <label>31010</label>
-			<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-		    <onclick>ActivateWindow(Videos,addons,return)</onclick>		    
+		    <onclick>ActivateWindow(Videos,addons,return)</onclick>		  
+		  	<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 		    <onclick>Control.SetFocus(59)</onclick>
 		</item>
 		<item>
 			<visible></visible>
 		    <label>1036</label>
+		    <onclick>ActivateWindow(favourites,return)</onclick>
 			<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-		    <onclick>ActivateWindow(favourites,return)</onclick>		    
 		</item>
     </content>
 </include>
@@ -269,7 +269,7 @@
 			<visible>Library.HasContent(Music)</visible>
 		    <label>271</label>
 		    <label2></label2>
-		    <onclick>ReplaceWindow(MusicLibrary,Top100,return)</onclick>
+		    <onclick>replaceWindow(MusicLibrary,top100,return)</onclick>
 			<onclick>Control.SetFocus(51)</onclick>
 		    <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 		</item>
