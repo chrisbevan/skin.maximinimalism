@@ -345,7 +345,7 @@
                     <align>left</align>
                     <textcolor>selected</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <height>208</height>
+                    <height>228</height>
                     <label>[B]$INFO[ListItem.plot][/B]</label>
                     <autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
                 </control>

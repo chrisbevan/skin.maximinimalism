@@ -66,7 +66,7 @@
 						<width>fullscreenWidth</width>
 						<height>134</height>
 						<texture>colors/black.png</texture>
-						<colordiffuse>99ffffff</colordiffuse>
+						<colordiffuse>ccffffff</colordiffuse>
 						<aspectratio>stretch</aspectratio>
 					</control>				
 					<!--content description-->
@@ -158,7 +158,7 @@
 						<width>240</width>
 						<height>54</height>
 						<texture>colors/black.png</texture>
-						<colordiffuse>99ffffff</colordiffuse>
+						<colordiffuse>ccffffff</colordiffuse>
 						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="image">
@@ -167,18 +167,19 @@
 						<width>8-col</width>
 						<height>54</height>
 						<texture>colors/black.png</texture>
-						<colordiffuse>99ffffff</colordiffuse>
+						<colordiffuse>ccffffff</colordiffuse>
 						<aspectratio>stretch</aspectratio>
 					</control>
 					<!--player controls-->
-					<control type="panel" id="8000">
+					<control type="list" id="8000">
 			            <posx>222</posx>
 			            <posy>10</posy>
 			            <width>24-col</width>
 		                <height>1-col</height>
 			            <itemgap>0</itemgap>
 			            <orientation>horizontal</orientation>
-						<onright>8002</onright>
+						<onright>control.setfocus(8002,0)</onright>
+						<onleft>control.setfocus(8002,4)</onleft>
 			            <itemlayout width="1-col" height="1-col">
 							<control type="image">
 		                        <posx>19</posx>
@@ -188,7 +189,7 @@
 		                        <aspectratio scalediffuse="false">stretch</aspectratio>
 		                        <texture border="0">colors/black.png</texture>
 		                        <bordersize>0</bordersize>
-		                        <colordiffuse>99FFFFFF</colordiffuse>
+		                        <colordiffuse>ccFFFFFF</colordiffuse>
 		                    </control>
 							<control type="label">
 		                        <posx>42</posx>
@@ -203,6 +204,7 @@
 		                </itemlayout>
 		                <focusedlayout width="1-col" height="1-col">
 		                    <control type="image">
+								<visible>control.hasfocus(8000)</visible>
 		                        <posx>19</posx>
 		                        <posy>18</posy>
 		                       	<width>69</width>
@@ -210,15 +212,38 @@
 		                        <aspectratio scalediffuse="false">stretch</aspectratio>
 		                        <texture border="0">colors/selected.png</texture>
 		                        <bordersize>0</bordersize>
-		                        <colordiffuse>ffFFFFFF</colordiffuse>
+		                        <colordiffuse>ccFFFFFF</colordiffuse>
+		                    </control>
+							<control type="image">
+								<visible>!control.hasfocus(8000)</visible>
+		                        <posx>19</posx>
+		                        <posy>18</posy>
+		                       	<width>69</width>
+		                        <height>69</height>
+		                        <aspectratio scalediffuse="false">stretch</aspectratio>
+		                        <texture border="0">colors/black.png</texture>
+		                        <bordersize>0</bordersize>
+		                        <colordiffuse>ccFFFFFF</colordiffuse>
 		                    </control>
 							<control type="label">
+								<visible>control.hasfocus(8000)</visible>
 		                        <posx>42</posx>
 		                        <posy>10</posy>
 		                        <width>1-col</width>
 		                        <height>1-col</height>
 		                        <font>symbol</font>
 		                        <textcolor>black</textcolor>
+		                        <shadowcolor>-</shadowcolor>
+		                        <label>$INFO[ListItem.label]</label>
+		                    </control>
+							<control type="label">
+								<visible>!control.hasfocus(8000)</visible>
+		                        <posx>42</posx>
+		                        <posy>10</posy>
+		                        <width>1-col</width>
+		                        <height>1-col</height>
+		                        <font>symbol</font>
+		                        <textcolor>selected</textcolor>
 		                        <shadowcolor>-</shadowcolor>
 		                        <label>$INFO[ListItem.label]</label>
 		                    </control>
@@ -273,14 +298,15 @@
 			            </content>
 			        </control>
 					<!--shuffle and repeat / vis options-->
-					<control type="panel" id="8002">
+					<control type="list" id="8002">
 						<posx>673</posx>
 			            <posy>28</posy>
 			            <width>24-col</width>
 			            <height>1-col</height>
 			            <itemgap>0</itemgap>
 			            <orientation>horizontal</orientation>
-						<onleft>8000</onleft>
+						<onleft>control.setfocus(8000,5)</onleft>
+						<onright>control.setfocus(8000,0)</onright>
 			            <itemlayout width="3-col" height="1-col">
 							<control type="image">
 		                        <posx>0</posx>
@@ -290,7 +316,7 @@
 		                        <aspectratio scalediffuse="false">stretch</aspectratio>
 		                        <texture border="0">colors/black.png</texture>
 		                        <bordersize>0</bordersize>
-		                        <colordiffuse>99FFFFFF</colordiffuse>
+		                        <colordiffuse>ccFFFFFF</colordiffuse>
 		                    </control>
 							<control type="label">
 								<posx>12</posx>
@@ -305,6 +331,7 @@
 						</itemlayout>
 						<focusedlayout width="3-col" height="1-col">
 							<control type="image">
+								<visible>control.hasfocus(8002)</visible>
 		                        <posx>0</posx>
 		                        <posy>0</posy>
 		                       	<width>213</width>
@@ -314,13 +341,36 @@
 		                        <bordersize>0</bordersize>
 		                        <colordiffuse>ffFFFFFF</colordiffuse>
 		                    </control>
+							<control type="image">
+								<visible>!control.hasfocus(8002)</visible>
+		                        <posx>0</posx>
+		                        <posy>0</posy>
+		                       	<width>213</width>
+		                        <height>54</height>
+		                        <aspectratio scalediffuse="false">stretch</aspectratio>
+		                        <texture border="0">colors/black.png</texture>
+		                        <bordersize>0</bordersize>
+		                        <colordiffuse>ccFFFFFF</colordiffuse>
+		                    </control>
 							<control type="label">
+								<visible>control.hasfocus(8002)</visible>
 								<posx>12</posx>
 								<posy>0</posy>
 								<width>184</width>
 								<align>left</align>
 								<font>menuTitle</font>
 								<textcolor>black</textcolor>
+								<label>$INFO[ListItem.label]</label>
+								<shadowcolor>-</shadowcolor>
+							</control>
+							<control type="label">
+								<visible>!control.hasfocus(8002)</visible>
+								<posx>12</posx>
+								<posy>0</posy>
+								<width>184</width>
+								<align>left</align>
+								<font>menuTitle</font>
+								<textcolor>selected</textcolor>
 								<label>$INFO[ListItem.label]</label>
 								<shadowcolor>-</shadowcolor>
 							</control>
