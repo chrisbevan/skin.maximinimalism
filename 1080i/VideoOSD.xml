@@ -11,8 +11,7 @@
 			<!--title info-->
 			<control type="group">	
 				<posx>col-1-begin</posx>
-				<posy>881</posy>
-				
+				<posy>881</posy>				
 				<!--overlay-->
 				<control type="image">
 					<posx>-96</posx>
@@ -22,22 +21,21 @@
 					<texture>colors/black.png</texture>
 					<colordiffuse>ccffffff</colordiffuse>
 					<aspectratio>stretch</aspectratio>
-				</control>
-				
+				</control>				
 				<!--content description-->
 				<control type="label" id="20">
-					<posx>2-col</posx>
+					<posx>0</posx>
 					<posy>0</posy>
-					<width>22-col</width>
+					<width>24-col</width>
 					<font>smallStrong</font>
 					<textcolor>selected</textcolor>
 					<label fallback="31136">$INFO[VideoPlayer.ChannelNumber,,]$INFO[VideoPlayer.ChannelName,. ,]$INFO[Videoplayer.tvshowTitle]$INFO[Videoplayer.season, • $LOCALIZE[31011] ]$INFO[Videoplayer.episode, • $LOCALIZE[31040] ]</label>
 					<scroll>false</scroll>
 				</control>
 				<control type="label">
-	                <posx>2-col</posx>
+	                <posx>0</posx>
 	                <posy>40</posy>
-	                <width>22-col</width>
+	                <width>24-col</width>
 	                <font>dialogTitle</font>
 	                <textcolor>selected</textcolor>
 	                <label>[UPPERCASE]$INFO[videoplayer.Title][/UPPERCASE]</label>
@@ -45,9 +43,9 @@
 	                <scroll>true</scroll>
 	            </control>
 				<control type="label">
-					<posx>2-col</posx>
+					<posx>0</posx>
 					<posy>98</posy>
-					<width>22-col</width>
+					<width>24-col</width>
 					<height>30</height>
 					<font>small</font>
 					<textcolor>selected</textcolor>
@@ -70,42 +68,38 @@
 			<!--dialog controls-->
 			<control type="group">
 				<posx>0</posx>
-				<posy>996</posy>
-				
+				<posy>996</posy>				
 				<control type="image">
 					<posx>0</posx>
 					<posy>28</posy>
-					<width>240</width>
+					<width>91</width>
 					<height>54</height>
 					<texture>colors/black.png</texture>
 					<colordiffuse>ccffffff</colordiffuse>
 					<aspectratio>stretch</aspectratio>
-				</control>
-				
+				</control>				
 				<control type="image">
-					<posx>1827</posx>
+					<posx>1679</posx>
 					<posy>28</posy>
-					<width>3-col</width>
+					<width>4-col</width>
 					<height>54</height>
 					<texture>colors/black.png</texture>
 					<colordiffuse>ccffffff</colordiffuse>
 					<aspectratio>stretch</aspectratio>
-				</control>
-				
+				</control>				
 				<control type="image">
 					<visible>!Player.CanRecord</visible>
-					<posx>675</posx>
+					<posx>526</posx>
 					<posy>28</posy>
 					<width>69</width>
 					<height>54</height>
 					<texture>colors/black.png</texture>
 					<colordiffuse>ccffffff</colordiffuse>
 					<aspectratio>stretch</aspectratio>
-				</control>
-				
+				</control>				
 				<control type="label">
 					<visible>!Player.CanRecord</visible>
-                    <posx>700</posx>
+                    <posx>550</posx>
                     <posy>20</posy>
                     <width>1-col</width>
                     <height>1-col</height>
@@ -114,10 +108,9 @@
                     <shadowcolor>-</shadowcolor>
                     <label></label>
                 </control>
-
 				<!--player controls-->
 				<control type="list" id="8000">
-		            <posx>224</posx>
+		            <posx>75</posx>
 		            <posy>10</posy>
 		            <width>24-col</width>
 	                <height>1-col</height>
@@ -249,7 +242,7 @@
 		        </control>
 				<!--subtitles etc-->
 				<control type="list" id="8001">
-					<posx>747</posx>
+					<posx>599</posx>
 		            <posy>28</posy>
 		            <width>24-col</width>
 		            <height>1-col</height>
@@ -359,23 +352,13 @@
 		                </item>						
 		            </content>
 				</control>
-			</control>
-			<control type="image">
-                <posx>36</posx>
-                <posy>887</posy>
-                <width>191</width>
-                <height>191</height>
-                <aspectratio scalediffuse="false">scale</aspectratio>
-                <texture fallback="colors/offblack.png" border="0">$INFO[Player.Art(thumb)]</texture>
-            </control>			
-		</control>
-				
+			</control>			
+		</control>				
 		<!--debugging-->
 		<include>DebugGrid</include>
 		<control type="label">
 			<include>DialogID</include>
 			<label>VideoOSD.xml</label>
 		</control>
-
 	</controls>
 </window>
