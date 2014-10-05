@@ -203,13 +203,6 @@ msgctxt "#31054"
 msgid "by"
 msgstr "etter"
 
-<<<<<<< HEAD
-=======
-msgctxt "#31055"
-msgid "Add-ons"
-msgstr "Utvidelser"
-
->>>>>>> FETCH_HEAD
 msgctxt "#31056"
 msgid "Photo Library"
 msgstr "Bildebiblioteker"
@@ -609,4 +602,3 @@ msgstr "Hjem"
 msgctxt "#31163"
 msgid "Disable Fanart Animations (for low powered devices)"
 msgstr "Deaktiver animasjon av bakgrunnsbilder"
-
