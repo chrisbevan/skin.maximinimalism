@@ -40,7 +40,7 @@
                 <posy>44</posy>
                 <width>16-col</width>
                 <font>pageTitle</font>
-                <label>$LOCALIZE[31055]</label>
+                <label>$LOCALIZE[31010]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>

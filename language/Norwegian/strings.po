@@ -203,10 +203,6 @@ msgctxt "#31054"
 msgid "by"
 msgstr "etter"
 
-msgctxt "#31055"
-msgid "Addons"
-msgstr "Utvidelser"
-
 msgctxt "#31056"
 msgid "Photo Library"
 msgstr "Bildebiblioteker"
