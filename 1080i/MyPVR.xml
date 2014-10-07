@@ -9,7 +9,7 @@
         <!--page container group-->
         <control type="group">
             <!--window fader-->
-            <animation type="conditional" condition="window.next(0) | window.next(1)">
+            <animation type="conditional" condition="window.next(0) | window.next(1) | player.hasvideo">
                 <effect type="fade" start="100" end="0" time="300" />
             </animation>
             <!--shift page for certain modal dialogs-->
