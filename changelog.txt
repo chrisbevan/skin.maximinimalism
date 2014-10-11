@@ -1,5 +1,6 @@
 [B]1.0.8[/B]
-- Tweaks
+- Reworked song rating screen
+- Various little tweaks
 
 [B]1.0.7[/B]
 - EPG grid fixed (thanks JurialMunkey)
