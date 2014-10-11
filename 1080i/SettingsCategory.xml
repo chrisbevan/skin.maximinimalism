@@ -68,7 +68,6 @@
                 </control>
                 <control type="button" id="20">
 					<align>left</align>
-                    <aligny>center</aligny>
                     <height>54</height>
 					<width>4-col</width>
                     <font>pageTitle</font>
@@ -124,6 +123,9 @@
             <control type="spincontrolex" id="9">
                 <description>Default Spin Control</description>
             </control>
+			<control type="sliderex" id="13">
+				<description>Default Slider</description>
+			</control>
             <!--subcat menu buttons-->
             <control type="button" id="10">
                 <description>Default Category Button</description>

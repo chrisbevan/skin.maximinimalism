@@ -10,7 +10,7 @@
             <onleft>9000</onleft>
             <onright>60</onright>
             <ondown>50</ondown>
-            <onup>50</onup>
+            <onup>5</onup>
             <pagecontrol>60</pagecontrol>
             <itemlayout height="1-row" width="11-col">
                 <control type="image">
@@ -31,7 +31,7 @@
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label">
-                    <posx>11-col-gutter</posx>
+                    <right>48</right>
                     <posy>0</posy>
                     <width>4-col</width>
                     <align>right</align>
@@ -40,7 +40,6 @@
                     <textcolor>selected</textcolor>
                     <selectedcolor>selected</selectedcolor>
                     <shadowcolor>-</shadowcolor>
-                    <textoffsetx>24</textoffsetx>
                 </control>
             </itemlayout>
             <focusedlayout height="1-row" width="11-col">
@@ -73,7 +72,7 @@
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label">
-                    <posx>11-col-gutter</posx>
+                    <right>48</right>
                     <posy>0</posy>
                     <width>4-col</width>
                     <align>right</align>
@@ -82,7 +81,6 @@
                     <textcolor>black</textcolor>
                     <selectedcolor>black</selectedcolor>
                     <shadowcolor>-</shadowcolor>
-                    <textoffsetx>24</textoffsetx>
                 </control>
             </focusedlayout>
         </control>

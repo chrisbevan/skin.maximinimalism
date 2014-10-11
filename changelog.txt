@@ -1,3 +1,26 @@
+[B]1.1.0[/B]
+****Kodi Helix builds only****
+- [UPDATED] addonbrowser.xml
+- [UPDATED] DialogAddonInfo.xml
+- [UPDATED] DialogContentSettings.xml
+- [UPDATED] DialogMediaFilter.xml
+- [UPDATED] DialogMediaSource.xml
+- [UPDATED] DialogNetworkSetup.xml
+- [UPDATED] DialogPeripheralSettings.xml
+- [UPDATED] DialogPVRTimerSettings.xml
+- [UPDATED] Font.xml
+- [UPDATED] SmartPlaylistEditor.xml
+- [UPDATED] SmartPlaylistRule.xml
+- [UPDATED] VideoOSDSettings.xml 
+- [UPDATED] DialogKeyboard.xml
+- [UPDATED] DialogNumeric.xml
+- [UPDATED] SettingsCategory.xml
+- [UPDATED] VideoFullScreen.xml
+
+- [PENDING] LockSettings.xml
+- [PENDING] ProfileSettings.xml
+- [PENDING] PVR changes
+
 [B]1.0.8[/B]
 - Reworked song rating screen
 - Various little tweaks
