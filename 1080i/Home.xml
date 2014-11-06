@@ -17,18 +17,6 @@
                 <effect type="slide" start="0,200" end="0" tween="sine" easing="out" time="400" delay="1000" />
             </animation>
 			<control type="label">
-                <visible>PVR.IsRecording</visible>
-				<posx>28</posx>
-                <posy>-114</posy>
-                <width>24-col-gutter</width>
-                <font>itemTitle</font>
-                <align>center</align>
-                <textcolor>selected</textcolor>
-                <shadowcolor>-</shadowcolor>
-                <scroll>true</scroll>
-                <label>[B][UPPERCASE]$LOCALIZE[31008][/UPPERCASE]:[/B] $INFO[PVR.NowRecordingTitle] $INFO[PVR.NowRecordingChannel,(,)]</label>
-            </control>
-			<control type="label">
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>24-col</width>
@@ -47,7 +35,7 @@
                 <label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
             </control>
             <control type="label">
-                <visible>!IsEmpty(Weather.location)</visible>
+                <visible>!IsEmpty(Weather.Location)</visible>
                 <posx>0</posx>
                 <posy>172</posy>
                 <width>24-col</width>
@@ -183,7 +171,7 @@
 					<item>
 						<visible>!Skin.HasSetting(hideFavourites)</visible>
                         <label>1036</label>
-                        <label2></label2>
+                        <label2></label2>
                         <thumb>-</thumb>
                         <onclick>ReplaceWindow(favourites)</onclick>
                     </item>

@@ -43,7 +43,7 @@
                         <posy>45</posy>
                         <width>14-col</width>
                         <font>regular</font>
-                        <label>$INFO[control.getlabel(30),, ][COLOR accented]$INFO[Pvr.BackendChannels] $LOCALIZE[31017][/COLOR]</label>
+                        <label>$INFO[Pvr.BackendChannels] $LOCALIZE[31017]</label>
                         <textcolor>selected</textcolor>
                     </control>
                 </control>
@@ -218,7 +218,7 @@
                 </control>
                 <!--page scrollbar-->
                 <control type="group" id="9400">
-                    <visible>Control.IsVisible(60) + !control.isvisible(10)</visible>
+                    <visible>Control.IsVisible(60)</visible>
                     <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(9400).hasfocus">conditional</animation>
 					<control type="scrollbar" id="60">
                         <posx>108r</posx>

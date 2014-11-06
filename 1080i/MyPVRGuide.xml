@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<views>10</views>
     <defaultcontrol always="false">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
@@ -43,7 +44,7 @@
                         <posy>45</posy>
                         <width>14-col</width>
                         <font>regular</font>
-                        <label>$INFO[control.getlabel(30),, ][COLOR accented]$INFO[Pvr.BackendChannels] $LOCALIZE[31017][/COLOR]</label>
+                        <label>$INFO[Pvr.BackendChannels] $LOCALIZE[31017]</label>
                         <textcolor>selected</textcolor>
                     </control>
                 </control>
@@ -54,8 +55,8 @@
                     <!--animations-->
                     <animation type="windowopen">
                         <include>listSlideIn</include>
-                    </animation>
-                    <control type="epggrid" id="10">
+                    </animation>                   
+					<control type="epggrid" id="10">
 						<description>EPG Grid</description>
 						<posx>-12</posx>
 						<posy>-56</posy>
@@ -66,7 +67,7 @@
 						<progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>
 						<rulerunit>6</rulerunit>
 						<onback>8000</onback>
-						<rulerlayout height="60" width="60">
+						<rulerlayout height="60" width="139">
 							<control type="label" id="2">
 								<visible>SubString(ListItem.Label,:)</visible>
 								<posx>0</posx>
@@ -80,7 +81,7 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</rulerlayout>
-						<channellayout height="60" width="359">
+						<channellayout height="60" width="360">
 							<control type="image">
 								<width>356</width>
 								<height>57</height>
@@ -107,7 +108,7 @@
 								<label>$INFO[ListItem.ChannelNumber]. $INFO[ListItem.ChannelName]</label>
 							</control>
 						</channellayout>
-						<focusedchannellayout height="60" width="359">
+						<focusedchannellayout height="60" width="360">
 							<control type="image">
 								<width>356</width>
 								<height>57</height>
@@ -133,25 +134,25 @@
 								<label>$INFO[ListItem.ChannelNumber]. $INFO[ListItem.ChannelName]</label>
 							</control>
 						</focusedchannellayout>
-						<itemlayout height="60" width="120">
+						<itemlayout height="60" width="139">
 							<control type="image" id="2">
 								<visible>!ListItem.HasTimer</visible>
-								<width>120</width>
+								<width>139</width>
 								<height>57</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>colors/black.png</texture>
 								<colordiffuse>99FFFFFF</colordiffuse>
-								<bordersize>0,0,3,0</bordersize>
+								<bordersize>0,0,2,0</bordersize>
 							</control>
 							<control type="image" id="2">
 								<visible>ListItem.HasTimer</visible>
-								<width>120</width>
+								<width>139</width>
 								<height>57</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>colors/black.png</texture>
 								<colordiffuse>99FFFFFF</colordiffuse>
 								<animation effect="fade" start="75" end="100" time="1500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
-								<bordersize>0,0,3,0</bordersize>
+								<bordersize>0,0,2,0</bordersize>
 							</control>
 							<control type="label" id="1">
 								<width>120</width>
@@ -164,12 +165,12 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</itemlayout>
-						<focusedlayout height="60" width="120">
+						<focusedlayout height="60" width="139">
 							<control type="image" id="14">
-								<width>120</width>
+								<width>139</width>
 								<height>57</height>
 								<texture>colors/selected.png</texture>
-								<bordersize>0</bordersize>
+								<bordersize>0,0,2,0</bordersize>
 							</control>
 							<control type="image" id="2">
 								<width>120</width>
@@ -188,7 +189,7 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</focusedlayout>
-					</control>
+					</control>			
 					<!--focussed item-->
 					<control type="group">
 						<posx>0</posx>
@@ -207,7 +208,7 @@
 							<posx>0</posx>
 							<posy>50</posy>
 							<width>21-col-gutter</width>
-							<height>112</height>
+							<height>80</height>
 							<font>textboxExtraLeading</font>
 							<textcolor>selected</textcolor>
 							<selectedcolor>selected</selectedcolor>
