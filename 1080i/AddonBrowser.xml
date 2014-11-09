@@ -39,21 +39,20 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>16-col</width>
-                <font>pageTitle</font>
-                <label>$LOCALIZE[31055]</label>
+                <font>dialogTitle</font>
+                <label>$LOCALIZE[24001]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
 			<control type="grouplist">
-				<posx>10-col</posx>
-                <posy>46</posy>
+				<posx>18-col-gutter</posx>
+                <posy>44</posy>
 				<orientation>horizontal</orientation>
                 <control type="button" id="5">
-					<align>center</align>
                     <aligny>center</aligny>
-                    <height>54</height>
-					<width>8-col</width>
-                    <font>pageTitle</font>
+                    <height>57</height>
+					<width>6-col</width>
+                    <font>regular</font>
                     <label>24063</label>
                     <textcolor>black</textcolor>
                     <focusedcolor>selected</focusedcolor>

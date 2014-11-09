@@ -31,7 +31,7 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>16-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>10003</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>

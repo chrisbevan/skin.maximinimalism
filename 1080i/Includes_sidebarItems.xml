@@ -72,8 +72,8 @@
         <onright>9000</onright>
 		<onup>62</onup>
 		<ondown>62</ondown>
-		<include condition="!Skin.String(keepMusicMenuActive)">videoSideMenu</include>
-		<include condition="Skin.String(keepMusicMenuActive)]">musicSideMenu</include>
+		<include condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoSideMenu</include>
+		<include condition="window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
 		<include condition="window.isactive(pictures)">picturesSideMenu</include>
     </control>
 </include>
@@ -208,6 +208,7 @@
         <label>1214</label>
         <onclick>right</onclick>
         <onclick>ActivateWindow(Videos,files,return)</onclick>
+		<onclick>Control.SetFocus(50)</onclick>
         <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
     </control>
 

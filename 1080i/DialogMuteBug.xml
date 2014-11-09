@@ -55,7 +55,7 @@
                 <posx>72</posx>
                 <posy>34</posy>
                 <width>4-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <label>31098</label>
                 <shadowcolor>-</shadowcolor>

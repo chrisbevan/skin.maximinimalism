@@ -84,7 +84,7 @@
 		                <posx>0</posx>
 		                <posy>42</posy>
 		                <width>24-col</width>
-		                <font>dialogTitle</font>
+		                <font>largeTitle</font>
 		                <textcolor>selected</textcolor>
 		                <label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Title]</label>
 		                <shadowcolor>-</shadowcolor>
@@ -95,7 +95,7 @@
 		                <posx>0</posx>
 		                <posy>42</posy>
 		                <width>24-col</width>
-		                <font>dialogTitle</font>
+		                <font>largeTitle</font>
 		                <textcolor>selected</textcolor>
 		                <label>$LOCALIZE[31158]</label>
 		                <shadowcolor>-</shadowcolor>

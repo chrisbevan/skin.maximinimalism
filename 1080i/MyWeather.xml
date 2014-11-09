@@ -36,7 +36,7 @@
                 <posy>44</posy>
                 <label>-</label>
                 <label2>-</label2>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>selected</textcolor>
                 <width>1-col</width>
                 <align>right</align>
@@ -48,7 +48,7 @@
                 <posx>84</posx>
                 <posy>44</posy>
                 <width>18-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>$INFO[Window.Property(Location)]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>

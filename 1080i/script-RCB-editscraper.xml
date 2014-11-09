@@ -38,7 +38,7 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>16-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>$ADDON[script.games.rom.collection.browser 32999] - $ADDON[script.games.rom.collection.browser 32600]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>

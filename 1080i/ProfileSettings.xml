@@ -30,7 +30,7 @@
                 <posy>4-row</posy>
                 <width>12-col</width>
                 <align>center</align>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>31103</label>
                 <textcolor>white</textcolor>
                 <shadowcolor>-</shadowcolor>

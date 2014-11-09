@@ -47,7 +47,7 @@
                 <posy>44</posy>
                 <width>16-col-gutter</width>
                 <height>1-row</height>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
                 <wrapmultiline>false</wrapmultiline>

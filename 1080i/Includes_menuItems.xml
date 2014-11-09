@@ -40,10 +40,8 @@
                 <textcolor>unselected</textcolor>
             </control>
         </focusedlayout>
-		<include condition="[window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)] + !Skin.String(keepMusicMenuActive)">videoMenu</include>
-		<include condition="window.isactive(radiochannels) + Skin.String(keepMusicMenuActive)">musicMenu</include>
-		<include condition="[Window.isactive(videolibrary) | window.isactive(videoplaylist)] + !Skin.String(keepMusicMenuActive)">videoMenu</include>
-		<include condition="[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist)] | [[Window.isactive(videolibrary) | window.isactive(videoplaylist)] + Skin.String(keepMusicMenuActive)]">musicMenu</include>
+		<include condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoMenu</include>
+		<include condition="window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicMenu</include>
 	</control>
 </include>
 <!--video menu items-->

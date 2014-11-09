@@ -602,3 +602,7 @@ msgstr ""
 msgctxt "#31163"
 msgid "Disable Fanart Animations (for low powered devices)"
 msgstr ""
+
+msgctxt "#31164"
+msgid "Radio"
+msgstr ""

@@ -58,7 +58,7 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>16-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>$INFO[ListItem.Property(Addon.Type)]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
@@ -78,7 +78,7 @@
                     <posx>0</posx>
                     <posy>3-row</posy>
                     <width>10-col-gutter</width>
-                    <font>dialogTitle</font>
+                    <font>mediumStrong</font>
                     <label>$INFO[ListItem.Property(Addon.Name)]</label>
                 </control>
                 <control type="label">

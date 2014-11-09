@@ -9,13 +9,13 @@
             <posy>row-9-begin</posy>
             <!--animations-->
             <animation type="Windowopen">
-                <effect type="fade" start="0" end="100" time="300" />
-                <effect type="rotatex" start="90,0" end="0,0" center="540,0" tween="cubic" easing="out" time="400" />
+                <effect type="fade" start="0" end="100" delay="100" time="200" />
+                <effect type="slide" start="0,-50" end="0,0" tween="cubic" easing="out" time="400" />
             </animation>
             <animation type="Windowclose">
-                <effect type="fade" start="100" end="0" delay="500" time="300" />
-                <effect type="rotatex" start="0,0" end="-90,0" center="540,0" tween="cubic" easing="out" delay="500" time="400" />
-            </animation>
+                <effect type="fade" start="100" end="0" delay="0" time="200" />
+				<effect type="slide" start="0,0" end="0,50" tween="cubic" easing="out" time="300" />            
+			</animation>
             <!--background-->
             <control type="image">
                 <posx>-200</posx>
@@ -81,9 +81,9 @@
                 <posx>3-col</posx>
                 <posy>31</posy>
                 <width>18-col</width>
-                <font>dialogTitle</font>
+                <font>largeTitle</font>
                 <textcolor>selected</textcolor>
-                <label>[UPPERCASE]$INFO[Player.Title][/UPPERCASE]</label>
+                <label>$INFO[Player.Title]</label>
                 <shadowcolor>-</shadowcolor>
                 <scroll>true</scroll>
             </control>

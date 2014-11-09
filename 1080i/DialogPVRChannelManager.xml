@@ -53,7 +53,7 @@
                     <posx>12</posx>
                     <posy>44</posy>
                     <width>16-col</width>
-                    <font>pageTitle</font>
+                    <font>dialogTitle</font>
                     <label>$LOCALIZE[19199] - $LOCALIZE[19023]</label>
                     <textcolor>black</textcolor>
                     <shadowcolor>-</shadowcolor>
@@ -63,7 +63,7 @@
                     <posx>12</posx>
                     <posy>44</posy>
                     <width>16-col</width>
-                    <font>pageTitle</font>
+                    <font>dialogTitle</font>
                     <label>$LOCALIZE[19199] - $LOCALIZE[19024]</label>
                     <textcolor>black</textcolor>
                     <shadowcolor>-</shadowcolor>

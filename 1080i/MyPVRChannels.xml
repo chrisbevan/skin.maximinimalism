@@ -31,11 +31,21 @@
                     <posy>row-2-begin</posy>
                     <!--source title-->
                     <control type="label">
+						<visible>window.isactive(tvchannels)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>14-col</width>
                         <font>pageTitle</font>
                         <label>$LOCALIZE[31006] [COLOR accented]$LOCALIZE[31078][/COLOR]</label>
+                        <textcolor>selected</textcolor>
+                    </control>
+					<control type="label">
+						<visible>window.isactive(radiochannels)</visible>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>14-col</width>
+                        <font>pageTitle</font>
+                        <label>$LOCALIZE[31164] [COLOR accented]$LOCALIZE[31078][/COLOR]</label>
                         <textcolor>selected</textcolor>
                     </control>
                     <control type="label">

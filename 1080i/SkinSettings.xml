@@ -38,7 +38,7 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>8-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>$LOCALIZE[20077]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
@@ -376,7 +376,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>DialogID</include>
-            <label>CustomSettings.xml</label>
+            <label>SkinSettings.xml</label>
         </control>
     </controls>
 </window>
