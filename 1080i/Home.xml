@@ -35,14 +35,14 @@
                 <label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
             </control>
             <control type="label">
-                <visible>!IsEmpty(Weather.Location)</visible>
+                <visible></visible>
                 <posx>0</posx>
                 <posy>172</posy>
                 <width>24-col</width>
                 <align>center</align>
                 <font>regular</font>
                 <textcolor>selected</textcolor>
-                <label>$INFO[Window(Weather).Property(location)] [B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B] [LOWERCASE]$INFO[Window(Weather).property(current.condition)][/LOWERCASE]</label>
+                <label>$INFO[weather.location] [B]$INFO[weather.temperature][/B] [LOWERCASE]$INFO[weather.conditions][/LOWERCASE]</label>
             </control>
             <!--system info indicator-->
             <control type="label">

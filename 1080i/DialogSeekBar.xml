@@ -9,8 +9,7 @@
             <posy>row-9-begin</posy>
             <!--animations-->
             <animation type="Windowopen">
-                <effect type="fade" start="0" end="100" delay="100" time="200" />
-                <effect type="slide" start="0,-50" end="0,0" tween="cubic" easing="out" time="400" />
+                <effect type="fade" start="0" end="100" delay="0" time="200" />
             </animation>
             <animation type="Windowclose">
                 <effect type="fade" start="100" end="0" delay="0" time="200" />

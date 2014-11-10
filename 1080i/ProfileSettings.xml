@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">5</defaultcontrol>
+    <defaultcontrol always="true">6000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
         <!--background-->
@@ -16,7 +16,7 @@
             <posy>row-2-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
-            <control type="image" id="2">
+            <control type="image" id="101">
                 <description>profile image</description>
                 <posx>324</posx>
                 <posy>0</posy>
@@ -25,7 +25,7 @@
                 <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">colors/offblack.png</texture>
                 <aspectratio>keep</aspectratio>
             </control>
-            <control type="label" id="1000">
+            <control type="label" id="102">
                 <posx>0</posx>
                 <posy>4-row</posy>
                 <width>12-col</width>
@@ -35,7 +35,7 @@
                 <textcolor>white</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
-            <control type="label" id="1001">
+            <control type="label" id="103">
                 <description>Profile Directory</description>
                 <posx>0</posx>
                 <posy>5-row</posy>

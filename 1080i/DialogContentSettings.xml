@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">3</defaultcontrol>
+    <defaultcontrol always="true">20</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
         <!--background-->
@@ -50,11 +50,11 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>12-col</width>
-                <ondown>4</ondown>
+                <ondown>21</ondown>
                 <onright>9001</onright>
             </control>
             <control type="label">
-                <visible>!control.hasfocus(3)</visible>
+                <visible>!control.hasfocus(20)</visible>
                 <description>Content type label unfocussed</description>
                 <posx>12</posx>
                 <posy>2-row</posy>
@@ -65,7 +65,7 @@
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="label">
-                <visible>control.hasfocus(3)</visible>
+                <visible>control.hasfocus(20)</visible>
                 <description>Content type label focussed</description>
                 <posx>12</posx>
                 <posy>2-row</posy>
@@ -99,8 +99,8 @@
                 <posy>256</posy>
                 <width>12-col</width>
                 <height>4-row</height>
-                <onup>3</onup>
-                <ondown>6</ondown>
+                <onup>20</onup>
+                <ondown>22</ondown>
                 <onright>9001</onright>
                 <itemlayout width="12-col" height="1-row">
                     <control type="image">
@@ -195,7 +195,7 @@
                 <texturefocus>colors/selected.png</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <textoffsetx>12</textoffsetx>
-                <onup>4</onup>
+                <onup>21</onup>
                 <ondown>5</ondown>
                 <onright>9001</onright>
             </control>
@@ -207,7 +207,7 @@
                 <width>12-col</width>
                 <height>6-row</height>
                 <itemgap>0</itemgap>
-                <onup>6</onup>
+                <onup>22</onup>
                 <onright>9001</onright>
                 <orientation>vertical</orientation>
             </control>
@@ -225,7 +225,7 @@
                 <height>5-row</height>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
-                <onleft>3</onleft>
+                <onleft>20</onleft>
                 <itemlayout width="4-col" height="1-row">
                     <control type="image">
                         <posx>0</posx>

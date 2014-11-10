@@ -424,8 +424,9 @@
 				<posx>0</posx>
 				<posy>row-14-begin</posy>						
 				<control type="button" id="5432">
-			        <posx>col-1-begin</posx>
-			        <posy>-780</posy>
+					<visible>true</visible>
+			        <posx>-90</posx>
+			        <posy>0</posy>
 			        <width>69</width>
 			        <height>1-row</height>
 			        <font>symbolLarge</font>
@@ -469,7 +470,7 @@
 				</control>
 				<control type="label">
 					<posx>col-1-begin</posx>
-					<posy>168</posy>
+					<posy>164</posy>
 					<width>12-col</width>
 					<font>itemTitleSmall</font>
 					<align>left</align>

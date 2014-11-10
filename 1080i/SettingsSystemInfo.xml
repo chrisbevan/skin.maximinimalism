@@ -156,7 +156,7 @@
                     <item id="8">
                         <description>PVR</description>
                         <label>24019</label>
-                        <label2>$INFO[Pvr.BackendName][CR]$INFO[Pvr.BackendDiskSpace]</label2>
+                        <label2>$INFO[Pvr.BackendName][CR]$INFO[PVR.BackendDiskspace]</label2>
                         <property name="itemIcon">&gt;</property>
                         <thumb>-</thumb>
                         <onclick>noop</onclick>

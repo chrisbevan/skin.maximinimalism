@@ -16,10 +16,11 @@
 - [UPDATED] DialogNumeric.xml
 - [UPDATED] SettingsCategory.xml
 - [UPDATED] VideoFullScreen.xml
+- [UPDATED] LockSettings.xml
+- [UPDATED] ProfileSettings.xml
+- [UPDATED] PVR
 
-- [PENDING] LockSettings.xml
-- [PENDING] ProfileSettings.xml
-- [PENDING] PVR changes
+- Various tweaks and fixings
 
 [B]1.0.8[/B]
 - Reworked song rating screen
