@@ -100,7 +100,7 @@
 								<font>itemTitle</font>
 								<textcolor>selected</textcolor>
 								<shadowcolor>-</shadowcolor>
-								<label>$INFO[ListItem.ChannelNumber]. $INFO[ListItem.Label]</label>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>5-col</posx>
@@ -192,7 +192,7 @@
 								<textcolor>black</textcolor>
 								<selectedcolor>black</selectedcolor>
 								<shadowcolor>-</shadowcolor>
-								<label>$INFO[ListItem.ChannelNumber]. $INFO[ListItem.Label]</label>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
 								<posx>5-col</posx>

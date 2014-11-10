@@ -105,7 +105,7 @@
 								<textcolor>selected</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<shadowcolor>-</shadowcolor>
-								<label>$INFO[ListItem.ChannelNumber]. $INFO[ListItem.ChannelName]</label>
+								<label>$INFO[ListItem.ChannelName]</label>
 							</control>
 						</channellayout>
 						<focusedchannellayout height="60" width="360">
@@ -131,7 +131,7 @@
 								<textoffsetx>15</textoffsetx>
 								<selectedcolor>black</selectedcolor>
 								<shadowcolor>-</shadowcolor>
-								<label>$INFO[ListItem.ChannelNumber]. $INFO[ListItem.ChannelName]</label>
+								<label>$INFO[ListItem.ChannelName]</label>
 							</control>
 						</focusedchannellayout>
 						<itemlayout height="60" width="139">

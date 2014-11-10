@@ -55,7 +55,7 @@
 			</control>			
 			<!--title info-->
 			<control type="group">
-				<visible>!skin.string(hideInfo,true)</visible>
+				<visible>!skin.string(hideInfo,true) | !player.hasmedia</visible>
 				<control type="group">	
 					<posx>col-1-begin</posx>
 					<posy>881</posy>						
@@ -420,7 +420,7 @@
 				<animation type="windowClose">
 					<effect type="fade" start="100" end="0" time="300" />
 				</animation>
-				<visible>skin.string(hideInfo,true)</visible>
+				<visible>skin.string(hideInfo,true) + player.hasmedia</visible>
 				<posx>0</posx>
 				<posy>row-14-begin</posy>						
 				<control type="button" id="5432">
@@ -453,7 +453,7 @@
 					<posx>col-1-begin</posx>
 					<posy>1-row</posy>
 					<width>24-col</width>
-					<font>mediumStrong</font>
+					<font>medium</font>
 					<textcolor>selected</textcolor>
 					<scroll>false</scroll>
 					<label>$INFO[MusicPlayer.artist]</label>
