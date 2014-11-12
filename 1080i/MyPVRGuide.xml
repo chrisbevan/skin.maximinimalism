@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<views>10</views>
-    <defaultcontrol always="false">9000</defaultcontrol>
+    <defaultcontrol always="false">9999</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
 	<onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
@@ -60,10 +60,10 @@
 						<description>EPG Grid</description>
 						<posx>-12</posx>
 						<posy>-56</posy>
-						<width>1750</width>
+						<width>1758</width>
 						<height>600</height>
 						<pagecontrol>10</pagecontrol>
-						<timeblocks>40</timeblocks>
+						<timeblocks>30</timeblocks>
 						<!--<progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>-->
 						<rulerunit>6</rulerunit>
 						<onback>8000</onback>
@@ -81,9 +81,9 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</rulerlayout>
-						<channellayout height="60" width="360">
+						<channellayout height="60" width="288">
 							<control type="image">
-								<width>356</width>
+								<width>284</width>
 								<height>57</height>
 								<texture border="24,0,-24,0">UIControls/listitemNF.png</texture>
 								<colordiffuse>99FFFFFF</colordiffuse>
@@ -98,7 +98,7 @@
 							</control>
 							<control type="label">
 								<posx>60</posx>
-								<width>310</width>
+								<width>3-col</width>
 								<height>57</height>
 								<font>itemTitleSmallCondensed</font>
 								<textoffsetx>12</textoffsetx>
@@ -110,7 +110,7 @@
 						</channellayout>
 						<focusedchannellayout height="60" width="360">
 							<control type="image">
-								<width>356</width>
+								<width>284</width>
 								<height>57</height>
 								<texture border="24,0,-24,0">UIControls/listitemFO.png</texture>
 							</control>
@@ -124,7 +124,7 @@
 							</control>
 							<control type="label" id="1">
 								<posx>60</posx>
-								<width>308</width>
+								<width>3-col</width>
 								<height>57</height>
 								<font>itemTitleSmallCondensed</font>
 								<textcolor>black</textcolor>

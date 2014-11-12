@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="false">9000</defaultcontrol>
+    <defaultcontrol always="false">9999</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
 	<onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
@@ -96,14 +96,14 @@
 							<control type="label">
 								<posx>1-col</posx>
 								<posy>0</posy>
-								<width>4-col-gutter</width>
+								<width>3-col-gutter</width>
 								<font>itemTitle</font>
 								<textcolor>selected</textcolor>
 								<shadowcolor>-</shadowcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>5-col</posx>
+								<posx>4-col</posx>
 								<posy>0</posy>
 								<width>84</width>
 								<font>itemTitle</font>
@@ -113,7 +113,7 @@
 							</control>
 							<control type="image">
 								<visible>ListItem.HasTimer</visible>
-								<posx>438</posx>
+								<posx>366</posx>
 								<posy>2</posy>
 								<width>414</width>
 								<height>53</height>
@@ -125,7 +125,7 @@
 								<animation effect="fade" start="75" end="100" time="1500" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
 							</control>
 							<control type="label">
-								<posx>444</posx>
+								<posx>372</posx>
 								<posy>0</posy>
 								<width>6-col-gutter</width>
 								<font>itemTitle</font>
@@ -187,7 +187,7 @@
 							<control type="label">
 								<posx>1-col</posx>
 								<posy>0</posy>
-								<width>4-col-gutter</width>
+								<width>3-col-gutter</width>
 								<font>itemTitle</font>
 								<textcolor>black</textcolor>
 								<selectedcolor>black</selectedcolor>
@@ -195,7 +195,7 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>5-col</posx>
+								<posx>4-col</posx>
 								<posy>0</posy>
 								<width>84</width>
 								<font>itemTitle</font>
@@ -205,7 +205,7 @@
 								<label>$INFO[ListItem.starttime]</label>
 							</control>
 							<control type="label">
-								<posx>444</posx>
+								<posx>372</posx>
 								<posy>0</posy>
 								<width>6-col-gutter</width>
 								<font>itemTitle</font>

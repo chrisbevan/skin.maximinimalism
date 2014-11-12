@@ -38,13 +38,25 @@
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="label" id="2">
+            <control type="label">
+				<visible>Window.IsVisible(123)</visible>
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>12-col</width>
                 <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
+				<label>$LOCALIZE[3] $LOCALIZE[5]</label>
+            </control>
+			<control type="label">
+				<visible>Window.IsVisible(124)</visible>
+                <posx>12</posx>
+                <posy>44</posy>
+                <width>12-col</width>
+                <font>dialogTitle</font>
+                <textcolor>black</textcolor>
+                <shadowcolor>-</shadowcolor>
+				<label>$LOCALIZE[292] $LOCALIZE[5]</label>
             </control>
             <control type="grouplist" id="5">
                 <description>Control Area</description>
