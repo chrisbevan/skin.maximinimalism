@@ -5,12 +5,7 @@
     <include>fadeInOut</include>
     <controls>
         <!--background-->
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>ffffffff</colordiffuse>
-        </control>
+        <include>globalBackground</include>
         <!--fanart (if available)-->
         <control type="image">
             <visible>SubString(ListItem.label,fanart)</visible>

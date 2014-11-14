@@ -20,7 +20,7 @@
 - [UPDATED] ProfileSettings.xml
 - [UPDATED] PVR
 
-- Various tweaks and fixings
+- Various tweaks and fixes
 - Skin widgets addon dependency replaced with library data provider
 
 [B]1.0.8[/B]

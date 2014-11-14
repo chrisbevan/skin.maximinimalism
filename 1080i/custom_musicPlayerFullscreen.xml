@@ -440,9 +440,20 @@
 					<texturenofocus>colors/black.png</texturenofocus>
 					<onclick>Skin.SetString(hideInfo,false)</onclick>
 					<onclick>control.setfocus(8002)</onclick>
-			    </control>						
+			    </control>
+				<control type="image">
+					<posx>72</posx>
+					<posy>0</posy>
+					<width>3-col</width>
+			        <height>3-col</height>
+					<aspectratio>scale</aspectratio>
+                    <texture fallback="colors/black.png" border="0">$INFO[musicplayer.cover]</texture>
+                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
+					<bordersize>3</bordersize>
+                    <colordiffuse>ffFFFFFF</colordiffuse>
+				</control>
 				<control type="label">
-					<posx>col-1-begin</posx>
+					<posx>col-4-begin</posx>
 					<posy>-4</posy>
 					<width>24-col</width>
 					<font>largeBlack</font>
@@ -451,7 +462,7 @@
 					<label>$INFO[MusicPlayer.Title]</label>
 				</control>
 				<control type="label">
-					<posx>col-1-begin</posx>
+					<posx>col-4-begin</posx>
 					<posy>1-row</posy>
 					<width>24-col</width>
 					<font>medium</font>
@@ -460,7 +471,7 @@
 					<label>$INFO[MusicPlayer.artist]</label>
 				</control>
 				<control type="label">
-					<posx>col-1-begin</posx>
+					<posx>col-4-begin</posx>
 					<posy>118</posy>
 					<width>24-col</width>
 					<font>regularStrong</font>
@@ -469,7 +480,7 @@
 					<label>$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
 				</control>
 				<control type="label">
-					<posx>col-1-begin</posx>
+					<posx>col-4-begin</posx>
 					<posy>164</posy>
 					<width>12-col</width>
 					<font>itemTitleSmall</font>
