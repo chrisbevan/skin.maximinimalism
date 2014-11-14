@@ -145,6 +145,7 @@
 							<ondown>control.setfocus(9997,$INFO[Container(9998).Position])</ondown>
 							<orientation>horizontal</orientation>
 							<onback>activateWindow(home)</onback>
+							<content>plugin://service.library.data.provider?type=recentmovies&amp;reload=$INFO[Window.Property(recentmovies)]</content>
                             <animation type="windowopen">
                                 <include>listSlideIn</include>
                             </animation>
@@ -158,7 +159,7 @@
                                     <width>363</width>
                                     <height>269</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+                                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(fanart)]</texture>
                                     <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
 									<bordersize>3</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
@@ -182,7 +183,7 @@
                                         <width>339</width>
                                         <font>itemTitleSmallCondensed</font>
                                         <textcolor>selected</textcolor>
-                                        <label>$INFO[ListItem.Label]</label>
+                                        <label>$INFO[ListItem.title]</label>
                                     </control>
                                     <control type="label">
                                         <posx>12</posx>
@@ -190,7 +191,7 @@
                                         <width>252</width>
                                         <font>smallMedium</font>
                                         <textcolor>selected</textcolor>
-                                        <label>$INFO[ListItem.Label2]</label>
+                                        <label>$INFO[listitem.year,, •] $INFO[listitem.duration,, $LOCALIZE[31018]]</label>
                                     </control>
                                 </control>
                             </itemlayout>
@@ -202,7 +203,7 @@
                                     <width>363</width>
                                     <height>269</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+                                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(fanart)]</texture>
                                     <bordertexture border="3" colordiffuse="ffFFFFFF">colors/selected.png</bordertexture>
 									<bordersize>3</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
@@ -214,7 +215,7 @@
                                     <width>363</width>
                                     <height>269</height>
                                     <aspectratio>scale</aspectratio>
-                                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+                                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(fanart)]</texture>
                                     <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
 									<bordersize>3</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
@@ -252,7 +253,7 @@
                                         <font>itemTitleSmallCondensed</font>
                                         <textcolor>black</textcolor>
                                         <shadowcolor>-</shadowcolor>
-                                        <label>$INFO[ListItem.Label]</label>
+                                        <label>$INFO[ListItem.title]</label>
                                         <scroll>true</scroll>
                                     </control>
                                     <control type="label">
@@ -263,7 +264,7 @@
                                         <font>smallMedium</font>
                                         <textcolor>black</textcolor>
                                         <shadowcolor>-</shadowcolor>
-                                        <label>$INFO[ListItem.Label2]</label>
+                                        <label>$INFO[listitem.year,, •] $INFO[listitem.duration,, $LOCALIZE[31018]]</label>
                                     </control>
 									<control type="label">
 										<visible>!control.hasfocus(9998)</visible>
@@ -273,7 +274,7 @@
                                         <font>itemTitleSmallCondensed</font>
                                         <textcolor>selected</textcolor>
                                         <shadowcolor>-</shadowcolor>
-                                        <label>$INFO[ListItem.Label]</label>
+                                        <label>$INFO[ListItem.title]</label>
                                         <scroll>true</scroll>
                                     </control>
                                     <control type="label">
@@ -284,81 +285,10 @@
                                         <font>smallMedium</font>
                                         <textcolor>selected</textcolor>
                                         <shadowcolor>-</shadowcolor>
-                                        <label>$INFO[ListItem.Label2]</label>
+                                        <label>$INFO[listitem.year,, •] $INFO[listitem.duration,, $LOCALIZE[31018]]</label>
                                     </control>
                                 </control>
                             </focusedlayout>
-                            <content>
-                                <item>
-                                    <label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentMovie.1.Year),, •] $INFO[Window(Home).Property(RecentMovie.1.Runtime),, $LOCALIZE[31018]]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentMovie.1.art(fanart))]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentMovie.1.Play)]</onclick>
-                                </item>
-        						<item>
-                                    <visible>!isempty(Window(Home).Property(RecentMovie.2.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentMovie.2.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentMovie.2.Year),, •] $INFO[Window(Home).Property(RecentMovie.2.Runtime),, $LOCALIZE[31018]]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentMovie.2.art(fanart))]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentMovie.2.Play)]</onclick>
-                                </item>
-                                <item>
-                                    <visible>!isempty(Window(Home).Property(RecentMovie.3.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentMovie.3.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentMovie.3.Year),, •] $INFO[Window(Home).Property(RecentMovie.3.Runtime),, $LOCALIZE[31018]]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentMovie.3.art(fanart))]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentMovie.3.Play)]</onclick>
-                                </item>
-                                <item>
-                                    <visible>!isempty(Window(Home).Property(RecentMovie.4.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentMovie.4.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentMovie.4.Year),, •] $INFO[Window(Home).Property(RecentMovie.4.Runtime),, $LOCALIZE[31018]]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentMovie.4.art(fanart))]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentMovie.4.Play)]</onclick>
-                                </item>
-								<item>
-                                    <visible>!isempty(Window(Home).Property(RecentMovie.5.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentMovie.5.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentMovie.5.Year),, •] $INFO[Window(Home).Property(RecentMovie.5.Runtime),, $LOCALIZE[31018]]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentMovie.5.art(fanart))]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentMovie.5.Play)]</onclick>
-                                </item>
-								<item>
-                                    <visible>!isempty(Window(Home).Property(RecentMovie.6.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentMovie.6.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentMovie.6.Year),, •] $INFO[Window(Home).Property(RecentMovie.6.Runtime),, $LOCALIZE[31018]]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentMovie.6.art(fanart))]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentMovie.6.Play)]</onclick>
-                                </item>
-								<item>
-                                    <visible>!isempty(Window(Home).Property(RecentMovie.7.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentMovie.7.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentMovie.7.Year),, •] $INFO[Window(Home).Property(RecentMovie.7.Runtime),, $LOCALIZE[31018]]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentMovie.7.art(fanart))]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentMovie.7.Play)]</onclick>
-                                </item>
-								<item>
-                                    <visible>!isempty(Window(Home).Property(RecentMovie.8.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentMovie.8.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentMovie.8.Year),, •] $INFO[Window(Home).Property(RecentMovie.8.Runtime),, $LOCALIZE[31018]]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentMovie.8.art(fanart))]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentMovie.8.Play)]</onclick>
-                                </item>
-								<item>
-                                    <visible>!isempty(Window(Home).Property(RecentMovie.9.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentMovie.9.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentMovie.9.Year),, •] $INFO[Window(Home).Property(RecentMovie.9.Runtime),, $LOCALIZE[31018]]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentMovie.9.art(fanart))]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentMovie.9.Play)]</onclick>
-                                </item>
-								<item>
-                                    <visible>!isempty(Window(Home).Property(RecentMovie.10.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentMovie.10.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentMovie.10.Year),, •] $INFO[Window(Home).Property(RecentMovie.10.Runtime),, $LOCALIZE[31018]]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentMovie.10.art(fanart))]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentMovie.10.Play)]</onclick>
-                                </item>
-                            </content>
                         </control>
 						<!--content (tvshows)-->
                         <control type="list" id="9997">
@@ -369,6 +299,7 @@
                             <onleft>9000</onleft>
 							<onup>control.setfocus(9998,$INFO[Container(9997).Position])</onup>
 							<orientation>horizontal</orientation>
+							<content>plugin://service.library.data.provider?type=recentepisodes&amp;reload=$INFO[Window.Property(recentepisodes)]</content>
                             <animation type="windowopen">
                                 <include>listSlideIn</include>
                             </animation>
@@ -406,7 +337,7 @@
                                         <width>339</width>
                                         <font>itemTitleSmallCondensed</font>
                                         <textcolor>selected</textcolor>
-                                        <label>$INFO[ListItem.Label]</label>
+                                        <label>$INFO[listitem.TVshowTitle]</label>
                                     </control>
                                     <control type="label">
                                         <posx>12</posx>
@@ -414,7 +345,7 @@
                                         <width>252</width>
                                         <font>smallMedium</font>
                                         <textcolor>selected</textcolor>
-                                        <label>$INFO[ListItem.Label2]</label>
+                                        <label>$INFO[listitem.Season,$LOCALIZE[31011] , •] $INFO[listitem.Episode,$LOCALIZE[31040] ,]</label>
                                     </control>
                                 </control>
                             </itemlayout>
@@ -476,7 +407,7 @@
                                         <font>itemTitleSmallCondensed</font>
                                         <textcolor>black</textcolor>
                                         <shadowcolor>-</shadowcolor>
-                                        <label>$INFO[ListItem.Label]</label>
+                                        <label>$INFO[ListItem.tvshowtitle]</label>
                                         <scroll>true</scroll>
                                     </control>
                                     <control type="label">
@@ -487,7 +418,7 @@
                                         <font>smallMedium</font>
                                         <textcolor>black</textcolor>
                                         <shadowcolor>-</shadowcolor>
-                                        <label>$INFO[ListItem.Label2]</label>
+                                        <label>$INFO[listitem.Season,$LOCALIZE[31011] , •] $INFO[listitem.Episode,$LOCALIZE[31040] ,]</label>
                                     </control>
 									<control type="label">
 										<visible>!control.hasfocus(9997)</visible>
@@ -497,7 +428,7 @@
                                         <font>itemTitleSmallCondensed</font>
                                         <textcolor>selected</textcolor>
                                         <shadowcolor>-</shadowcolor>
-                                        <label>$INFO[ListItem.Label]</label>
+                                        <label>$INFO[ListItem.tvshowtitle]</label>
                                         <scroll>true</scroll>
                                     </control>
                                     <control type="label">
@@ -508,83 +439,10 @@
                                         <font>smallMedium</font>
                                         <textcolor>selected</textcolor>
                                         <shadowcolor>-</shadowcolor>
-                                        <label>$INFO[ListItem.Label2]</label>
+                                        <label>$INFO[listitem.Season,$LOCALIZE[31011] , •] $INFO[listitem.Episode,$LOCALIZE[31040] ,]</label>
                                     </control>
                                 </control>
                             </focusedlayout>
-                            <content>
-                                <!--tv shows-->
-								<item>
-								    <visible>!isempty(Window(Home).Property(RecentEpisode.1.Title))</visible>
-								    <label>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)]</label>
-								    <label2>$INFO[Window(Home).Property(RecentEpisode.1.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.1.Episode),$LOCALIZE[31040] ,]</label2>
-								    <thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(thumb))]</thumb>
-								    <onclick>$INFO[Window(Home).Property(RecentEpisode.1.Play)]</onclick>
-								</item>
-								<item>
-								    <visible>!isempty(Window(Home).Property(RecentEpisode.2.Title))</visible>
-								    <label>$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle)]</label>
-								    <label2>$INFO[Window(Home).Property(RecentEpisode.2.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.2.Episode),$LOCALIZE[31040] ,]</label2>
-								    <thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(thumb))]</thumb>
-								    <onclick>$INFO[Window(Home).Property(RecentEpisode.2.Play)]</onclick>
-								</item>
-								<item>
-								    <visible>!isempty(Window(Home).Property(RecentEpisode.3.Title))</visible>
-								    <label>$INFO[Window(Home).Property(RecentEpisode.3.TVshowTitle)]</label>
-								    <label2>$INFO[Window(Home).Property(RecentEpisode.3.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.3.Episode),$LOCALIZE[31040] ,]</label2>
-								    <thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(thumb))]</thumb>
-								    <onclick>$INFO[Window(Home).Property(RecentEpisode.3.Play)]</onclick>
-								</item>
-								<item>
-								    <visible>!isempty(Window(Home).Property(RecentEpisode.4.Title))</visible>
-								    <label>$INFO[Window(Home).Property(RecentEpisode.4.TVshowTitle)]</label>
-								    <label2>$INFO[Window(Home).Property(RecentEpisode.4.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.4.Episode),$LOCALIZE[31040] ,]</label2>
-								    <thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(thumb))]</thumb>
-								    <onclick>$INFO[Window(Home).Property(RecentEpisode.4.Play)]</onclick>
-								</item>
-								<item>
-								    <visible>!isempty(Window(Home).Property(RecentEpisode.5.Title))</visible>
-								    <label>$INFO[Window(Home).Property(RecentEpisode.5.TVshowTitle)]</label>
-								    <label2>$INFO[Window(Home).Property(RecentEpisode.5.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.5.Episode),$LOCALIZE[31040] ,]</label2>
-								    <thumb>$INFO[Window(Home).Property(RecentEpisode.5.Art(thumb))]</thumb>
-								    <onclick>$INFO[Window(Home).Property(RecentEpisode.5.Play)]</onclick>
-								</item>
-								<item>
-								    <visible>!isempty(Window(Home).Property(RecentEpisode.6.Title))</visible>
-								    <label>$INFO[Window(Home).Property(RecentEpisode.6.TVshowTitle)]</label>
-								    <label2>$INFO[Window(Home).Property(RecentEpisode.6.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.6.Episode),$LOCALIZE[31040] ,]</label2>
-								    <thumb>$INFO[Window(Home).Property(RecentEpisode.6.Art(thumb))]</thumb>
-								    <onclick>$INFO[Window(Home).Property(RecentEpisode.6.Play)]</onclick>
-								</item>
-								<item>
-								    <visible>!isempty(Window(Home).Property(RecentEpisode.7.Title))</visible>
-								    <label>$INFO[Window(Home).Property(RecentEpisode.7.TVshowTitle)]</label>
-								    <label2>$INFO[Window(Home).Property(RecentEpisode.7.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.7.Episode),$LOCALIZE[31040] ,]</label2>
-								    <thumb>$INFO[Window(Home).Property(RecentEpisode.7.Art(thumb))]</thumb>
-								    <onclick>$INFO[Window(Home).Property(RecentEpisode.7.Play)]</onclick>
-								</item>
-								<item>
-								    <visible>!isempty(Window(Home).Property(RecentEpisode.8.Title))</visible>
-								    <label>$INFO[Window(Home).Property(RecentEpisode.8.TVshowTitle)]</label>
-								    <label2>$INFO[Window(Home).Property(RecentEpisode.8.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.8.Episode),$LOCALIZE[31040] ,]</label2>
-								    <thumb>$INFO[Window(Home).Property(RecentEpisode.8.Art(thumb))]</thumb>
-								    <onclick>$INFO[Window(Home).Property(RecentEpisode.8.Play)]</onclick>
-								</item>
-								<item>
-								    <visible>!isempty(Window(Home).Property(RecentEpisode.9.Title))</visible>
-								    <label>$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle)]</label>
-								    <label2>$INFO[Window(Home).Property(RecentEpisode.9.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.9.Episode),$LOCALIZE[31040] ,]</label2>
-								    <thumb>$INFO[Window(Home).Property(RecentEpisode.9.Art(thumb))]</thumb>
-								    <onclick>$INFO[Window(Home).Property(RecentEpisode.9.Play)]</onclick>
-								</item>
-								<item>
-								    <visible>!isempty(Window(Home).Property(RecentEpisode.10.Title))</visible>
-								    <label>$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle)]</label>
-								    <label2>$INFO[Window(Home).Property(RecentEpisode.10.Season),$LOCALIZE[31011] , •] $INFO[Window(Home).Property(RecentEpisode.10.Episode),$LOCALIZE[31040] ,]</label2>
-								    <thumb>$INFO[Window(Home).Property(RecentEpisode.10.Art(thumb))]</thumb>
-								    <onclick>$INFO[Window(Home).Property(RecentEpisode.10.Play)]</onclick>
-								</item>
-                            </content>
                         </control>
                     </control>
                     <!--source content-->
