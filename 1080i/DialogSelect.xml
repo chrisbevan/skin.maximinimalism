@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
-    <defaultcontrol always="true">9999</defaultcontrol>
+    <defaultcontrol always="false">9999</defaultcontrol>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
@@ -9,27 +9,8 @@
 	<zorder>2</zorder>
     <include>fadeInOut</include>
     <controls>
-        <!--background-->
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>ffffffff</colordiffuse>
-        </control>
-		<!--image (if available)-->
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>$INFO[container(6).listitem.icon]</texture>
-            <colordiffuse>6affffff</colordiffuse>
-			<aspectratio align="left" aligny="center">keep</aspectratio>
-            <fadetime>400</fadetime>
-        </control>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>99ffffff</colordiffuse>
-        </control>
+		<!--background-->
+        <include>globalBackground</include>
         <control type="group">
             <!--animations-->
             <include>modalDialogInOutVertical</include>
