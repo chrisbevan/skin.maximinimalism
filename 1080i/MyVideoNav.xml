@@ -73,7 +73,7 @@
                         <width>8-col</width>
                         <font>regular</font>
                         <align>right</align>
-                        <label fallback="31113">$INFO[ListItem.season,Season ,]</label>
+                        <label fallback="31113">$INFO[ListItem.season,$LOCALIZE[31011] ,]</label>
                         <textcolor>selected</textcolor>
                     </control>
                     <control type="label">

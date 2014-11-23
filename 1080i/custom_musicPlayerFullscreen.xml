@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="5001">
-	<defaultcontrol always="true">5432</defaultcontrol>
+	<defaultcontrol always="true">8000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<onload>RunScript(script.artistslideshow)</onload>
-	<onload>Skin.SetString(hideInfo,true)</onload>
 	<onunload>activateWindow(MusicLibrary)</onunload>
 	<controls>
 		<control type="image">
@@ -53,101 +52,78 @@
 				<colordiffuse>ffffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>			
-			<!--title info-->
+			<!--info-->
 			<control type="group">
-				<visible>!skin.string(hideInfo,true) | !player.hasmedia</visible>
-				<control type="group">	
-					<posx>col-1-begin</posx>
-					<posy>881</posy>						
-					<!--overlay-->
+				<!--track info-->
+				<control type="group">
+					<animation type="windowOpen">
+						<effect type="fade" start="0" end="100" time="500" delay="1000"/>
+					</animation>
+					<animation type="windowClose">
+						<effect type="fade" start="100" end="0" time="300" />
+					</animation>
+					<posx>0</posx>
+					<posy>row-14-begin</posy>						
 					<control type="image">
-						<posx>-96</posx>
-						<posy>6</posy>
-						<width>fullscreenWidth</width>
-						<height>134</height>
-						<texture>colors/black.png</texture>
-						<colordiffuse>ccffffff</colordiffuse>
-						<aspectratio>stretch</aspectratio>
-					</control>				
-					<!--content description-->
-					<control type="label" id="20">
-						<posx>0</posx>
+						<posx>72</posx>
 						<posy>0</posy>
+						<width>3-col</width>
+				        <height>3-col</height>
+						<aspectratio>scale</aspectratio>
+	                    <texture fallback="colors/black.png" border="0">$INFO[musicplayer.cover]</texture>
+	                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
+						<bordersize>3</bordersize>
+	                    <colordiffuse>ffFFFFFF</colordiffuse>
+					</control>
+					<control type="label">
+						<posx>col-4-begin</posx>
+						<posy>-4</posy>
 						<width>24-col</width>
-						<font>smallStrong</font>
+						<font>largeBlack</font>
 						<textcolor>selected</textcolor>
-						<label>$LOCALIZE[31136]</label>
 						<scroll>false</scroll>
+						<label>$INFO[MusicPlayer.Title]</label>
 					</control>
 					<control type="label">
-						<visible>Player.HasMedia</visible>
-		                <posx>0</posx>
-		                <posy>42</posy>
-		                <width>24-col</width>
-		                <font>largeTitle</font>
-		                <textcolor>selected</textcolor>
-		                <label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Title]</label>
-		                <shadowcolor>-</shadowcolor>
-		                <scroll>true</scroll>
-		            </control>
-					<control type="label">
-						<visible>!Player.HasMedia</visible>
-		                <posx>0</posx>
-		                <posy>42</posy>
-		                <width>24-col</width>
-		                <font>largeTitle</font>
-		                <textcolor>selected</textcolor>
-		                <label>$LOCALIZE[31158]</label>
-		                <shadowcolor>-</shadowcolor>
-		                <scroll>true</scroll>
-		            </control>
-					<control type="label">
-						<posx>0</posx>
-						<posy>102</posy>
-						<width>12-col-gutter</width>
-						<height>30</height>
-						<font>small</font>
+						<visible>!Pvr.IsPlayingRadio</visible>
+						<posx>col-4-begin</posx>
+						<posy>1-row</posy>
+						<width>24-col</width>
+						<font>medium</font>
 						<textcolor>selected</textcolor>
-						<label>$INFO[MusicPlayer.Album,,] $INFO[MusicPlayer.year,(,)]</label>
-						<scroll>true</scroll>
-						<scrollspeed>60</scrollspeed>
-					</control>
-					<control type="label">
-						<posx>24-col</posx>
-						<posy>102</posy>
-						<width>10-col</width>
-						<height>30</height>
-						<align>right</align>
-						<font>small</font>
-						<textcolor>selected</textcolor>
-						<label>$INFO[MusicPlayer.offset(1).Artist,[B]$LOCALIZE[19031]:[/B] , - ]$INFO[MusicPlayer.offset(1).Title]</label>
-						<scroll>true</scroll>
-						<scrollspeed>60</scrollspeed>
+						<scroll>false</scroll>
+						<label>$INFO[MusicPlayer.artist]</label>
 					</control>
 					<control type="label">
 						<visible>Pvr.IsPlayingRadio</visible>
-						<label>$INFO[VideoPlayer.Plot]</label>
-						<posx>0</posx>
-						<posy>98</posy>
+						<posx>col-4-begin</posx>
+						<posy>1-row</posy>
 						<width>24-col</width>
-						<height>30</height>
-						<font>small</font>
+						<font>medium</font>
 						<textcolor>selected</textcolor>
-						<scroll>true</scroll>
-						<scrollspeed>60</scrollspeed>
+						<scroll>false</scroll>
+						<label>$INFO[VideoPlayer.Plot]</label>
 					</control>
 					<control type="label">
-						<posx>24-col</posx>
-						<posy>0</posy>
-						<width>6-col</width>
-						<font>smallStrong</font>
-						<align>right</align>
+						<posx>col-4-begin</posx>
+						<posy>118</posy>
+						<width>24-col</width>
+						<font>regularStrong</font>
 						<textcolor>selected</textcolor>
-						<label>$INFO[system.time] • $INFO[MusicPlayer.time,$LOCALIZE[180] , / ]$INFO[MusicPlayer.duration]</label>
 						<scroll>false</scroll>
-						<shadowcolor>-</shadowcolor>
+						<label>$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
 					</control>
-				</control>		
+					<control type="label">
+						<posx>col-4-begin</posx>
+						<posy>164</posy>
+						<width>12-col</width>
+						<font>itemTitleSmall</font>
+						<align>left</align>
+						<textcolor>selected</textcolor>
+						<scroll>false</scroll>
+						<label>[B]$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration][/B]     $INFO[MusicPlayer.offset(1).Artist,[B]$LOCALIZE[19031][/B]: , - ]$INFO[MusicPlayer.offset(1).Title]</label>
+					</control>				
+				</control>	
 				<!--dialog controls-->
 				<control type="group">
 					<posx>0</posx>
@@ -162,7 +138,7 @@
 						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="image">
-						<posx>1607</posx>
+						<posx>1391</posx>
 						<posy>28</posy>
 						<width>8-col</width>
 						<height>54</height>
@@ -270,7 +246,7 @@
 								<onclick>Dialog.Close(all,true)</onclick>
 			                </item>
 			                <item>
-								<visible>Player.Playing | player.forwarding | player.rewinding</visible>
+								<visible>!Player.Paused</visible>
 								<description>Play/Pause</description>
 								<label></label>			                    
 			                    <thumb>-</thumb>
@@ -376,13 +352,6 @@
 							</control>
 						</focusedlayout>
 			            <content>
-			                <item>
-								<description>Hide</description>
-								<label>31161</label>
-			                    <thumb>-</thumb>
-			                    <onclick>Skin.SetString(hideInfo,true)</onclick>
-								<onclick>control.setfocus(5432)</onclick>
-			                </item>
 							<item>
 								<description>Repeat</description>
 								<label>$VAR[repeatState]</label>
@@ -411,84 +380,6 @@
 			            </content>
 					</control>
 				</control>			
-			</control>
-			<!--minimised info-->
-			<control type="group">
-				<animation type="windowOpen">
-					<effect type="fade" start="0" end="100" time="500" delay="1000"/>
-				</animation>
-				<animation type="windowClose">
-					<effect type="fade" start="100" end="0" time="300" />
-				</animation>
-				<visible>skin.string(hideInfo,true) + player.hasmedia</visible>
-				<posx>0</posx>
-				<posy>row-14-begin</posy>						
-				<control type="button" id="5432">
-					<visible>true</visible>
-			        <posx>-90</posx>
-			        <posy>0</posy>
-			        <width>69</width>
-			        <height>1-row</height>
-			        <font>symbolLarge</font>
-			        <aligny>center</aligny>
-			        <align>center</align>
-			        <textoffsetx>0</textoffsetx>
-			        <focusedcolor>black</focusedcolor>
-			        <textcolor>selected</textcolor>
-			      	<label></label>
-					<texturefocus>colors/selected.png</texturefocus>
-					<texturenofocus>colors/black.png</texturenofocus>
-					<onclick>Skin.SetString(hideInfo,false)</onclick>
-					<onclick>control.setfocus(8002)</onclick>
-			    </control>
-				<control type="image">
-					<posx>72</posx>
-					<posy>0</posy>
-					<width>3-col</width>
-			        <height>3-col</height>
-					<aspectratio>scale</aspectratio>
-                    <texture fallback="colors/black.png" border="0">$INFO[musicplayer.cover]</texture>
-                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
-					<bordersize>3</bordersize>
-                    <colordiffuse>ffFFFFFF</colordiffuse>
-				</control>
-				<control type="label">
-					<posx>col-4-begin</posx>
-					<posy>-4</posy>
-					<width>24-col</width>
-					<font>largeBlack</font>
-					<textcolor>selected</textcolor>
-					<scroll>false</scroll>
-					<label>$INFO[MusicPlayer.Title]</label>
-				</control>
-				<control type="label">
-					<posx>col-4-begin</posx>
-					<posy>1-row</posy>
-					<width>24-col</width>
-					<font>medium</font>
-					<textcolor>selected</textcolor>
-					<scroll>false</scroll>
-					<label>$INFO[MusicPlayer.artist]</label>
-				</control>
-				<control type="label">
-					<posx>col-4-begin</posx>
-					<posy>118</posy>
-					<width>24-col</width>
-					<font>regularStrong</font>
-					<textcolor>selected</textcolor>
-					<scroll>false</scroll>
-					<label>$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
-				</control>
-				<control type="label">
-					<posx>col-4-begin</posx>
-					<posy>164</posy>
-					<width>12-col</width>
-					<font>itemTitleSmall</font>
-					<align>left</align>
-					<textcolor>selected</textcolor>
-					<scroll>false</scroll>
-					<label>[B]$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration][/B]     $INFO[MusicPlayer.offset(1).Artist,[B]$LOCALIZE[19031][/B]: , - ]$INFO[MusicPlayer.offset(1).Title]</label>
-				</control>				
 			</control>
 		</control>
 		<!--debugging-->

@@ -28,7 +28,7 @@
             <control type="label">
 				<visible>Player.Playing | player.seeking</visible>
                 <posx>3-col</posx>
-                <posy>-12</posy>
+                <posy>-13</posy>
                 <width>16-col-gutter</width>
                 <font>smallStrong</font>
                 <textcolor>selected</textcolor>
@@ -38,7 +38,7 @@
 			<control type="label">
 				<visible>Player.Paused + !Player.Caching</visible>
                 <posx>3-col</posx>
-                <posy>-12</posy>
+                <posy>-13</posy>
                 <width>16-col-gutter</width>
                 <font>smallStrong</font>
                 <textcolor>selected</textcolor>
@@ -48,7 +48,7 @@
 			<control type="label">
 				<description>buffering</description>
 				<posx>3-col</posx>
-                <posy>-12</posy>
+                <posy>-13</posy>
 				<width>16-col-gutter</width>
                 <font>smallStrong</font>
                 <textcolor>selected</textcolor>
@@ -58,7 +58,7 @@
 			<control type="label">
 				<visible>System.HasMediaDVD</visible>
                 <posx>21-col</posx>
-                <posy>-12</posy>
+                <posy>-13</posy>
                 <width>4-col-gutter</width>
                 <font>smallStrong</font>
 				<align>right</align>
@@ -68,7 +68,7 @@
             </control>
             <control type="label">
 				<visible>!Player.Caching</visible>
-                <posx>308</posx>
+                <posx>5-col</posx>
                 <posy>-13</posy>
                 <width>12-col</width>
                 <font>smallMedium</font>
@@ -103,7 +103,7 @@
                 <shadowcolor>-</shadowcolor>
             </control>
 			<control type="label">
-                <posx>312</posx>
+                <posx>350</posx>
                 <posy>110</posy>
                 <width>24-col</width>
                 <font>smallStrong</font>
