@@ -82,7 +82,7 @@
 						<font>largeBlack</font>
 						<textcolor>selected</textcolor>
 						<scroll>false</scroll>
-						<label>$INFO[MusicPlayer.Title]</label>
+						<label fallback="31158">$INFO[MusicPlayer.Title]</label>
 					</control>
 					<control type="label">
 						<visible>!Pvr.IsPlayingRadio</visible>
@@ -103,6 +103,16 @@
 						<textcolor>selected</textcolor>
 						<scroll>false</scroll>
 						<label>$INFO[VideoPlayer.Plot]</label>
+					</control>
+					<control type="label">
+						<visible>!player.hasmedia</visible>
+						<posx>col-4-begin</posx>
+						<posy>1-row</posy>
+						<width>24-col</width>
+						<font>medium</font>
+						<textcolor>selected</textcolor>
+						<scroll>false</scroll>
+						<label>$LOCALIZE[31167]</label>
 					</control>
 					<control type="label">
 						<posx>col-4-begin</posx>
@@ -128,6 +138,15 @@
 				<control type="group">
 					<posx>0</posx>
 					<posy>996</posy>
+					
+					<animation type="windowOpen">
+						<effect type="slide" start="0,50" end="0,0" tween="cubic" easing="out" delay="1000" time="300" />  
+						<effect type="fade" start="0" end="100" time="500" delay="1000"/>
+					</animation>
+					<animation type="windowClose">
+						<effect type="fade" start="100" end="0" time="300" />
+					</animation>
+					
 					<control type="image">
 						<posx>0</posx>
 						<posy>28</posy>

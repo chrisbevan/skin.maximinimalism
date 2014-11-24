@@ -580,7 +580,7 @@ msgid "Home: Hide Games"
 msgstr ""
 
 msgctxt "#31158"
-msgid "Playback stopped. Press [Back] to return."
+msgid "No items in Playlist"
 msgstr ""
 
 msgctxt "#31159"
@@ -609,4 +609,8 @@ msgstr ""
 
 msgctxt "#31165"
 msgid "Recordings"
+msgstr ""
+
+msgctxt "#31167"
+msgid "Press [back] to return."
 msgstr ""
