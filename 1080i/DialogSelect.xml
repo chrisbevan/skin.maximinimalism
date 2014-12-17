@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog">
-    <defaultcontrol always="false">9999</defaultcontrol>
+<window>
+    <defaultcontrol always="true">9000</defaultcontrol>
+	<onload condition="!IntegerGreaterThan(container(3).numitems,0) + !IntegerGreaterThan(container(6).numitems,0)">control.SetFocus(9999)</onload>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>

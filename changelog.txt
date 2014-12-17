@@ -1,3 +1,7 @@
+[B]1.1.1[/B]
+- [BUGFIX] default focussed item fixed for certain select dialogs (blu-ray & subtitles etc)
+- [UPDATED] Additional toggle options for the addon browser
+
 [B]1.1.0[/B]
 ****Kodi Helix builds only****
 - [UPDATED] addonbrowser.xml
