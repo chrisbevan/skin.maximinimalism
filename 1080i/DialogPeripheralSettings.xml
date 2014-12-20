@@ -39,21 +39,12 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>8-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>$LOCALIZE[5]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
-		
-			<control type="label" id="3">
-				<description>No Settings Label</description>
-				<posx>12</posx>
-				<posy>120</posy>
-				<width>12-col-gutter</width>
-				<label>35004</label>
-				<font>itemTitle</font>
-			</control>
-		
+			
 			<control type="grouplist" id="5">
 				<posx>0</posx>
                 <posy>120</posy>
@@ -86,7 +77,7 @@
 				<description>Default SpinControlex</description>
 			</control>
 		
-			<control type="sliderex" id="10">
+			<control type="sliderex" id="13">
 				<description>Default Slider</description>
 			</control>
 		

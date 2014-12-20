@@ -38,12 +38,11 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>8-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>$LOCALIZE[35000]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>			
-
 			<control type="panel" id="20">
 				<posx>0</posx>
 				<posy>120</posy>

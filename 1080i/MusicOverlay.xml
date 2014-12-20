@@ -38,7 +38,7 @@
             <control type="label">
                 <description>message</description>
                 <posx>24</posx>
-                <posy>30</posy>
+                <posy>26</posy>
                 <font>pageTitle</font>
                 <textcolor>black</textcolor>
                 <width>468</width>

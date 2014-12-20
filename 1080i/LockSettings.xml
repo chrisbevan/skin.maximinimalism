@@ -12,12 +12,12 @@
             <colordiffuse>99ffffff</colordiffuse>
         </control>
         <control type="group">
-            <posx>col-7-begin</posx>
+            <posx>col-5-begin</posx>
             <posy>row-3-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
-                <posx>-528</posx>
+                <posx>-384</posx>
                 <posy>44</posy>
                 <width>fullscreenWidth</width>
                 <height>1-row</height>
@@ -34,12 +34,12 @@
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="label">
+            <control type="label" id="2">
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>16-col</width>
-                <font>pageTitle</font>
-                <label>20043</label>
+                <font>dialogTitle</font>
+                <label>-</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
@@ -50,7 +50,7 @@
                 <width>12-col</width>
                 <itemgap>3</itemgap>
                 <height>14-row</height>
-                <ondown>9001</ondown>
+                <onright>9001</onright>
                 <orientation>vertical</orientation>
             </control>
             <control type="button" id="7">
@@ -75,13 +75,13 @@
             </control>
             <!--OK / Cancel-->
             <control type="panel" id="9001">
-                <posx>0</posx>
-                <posy>11-row</posy>
-                <width>12-col</width>
-                <height>1-row</height>
+                <posx>12-col</posx>
+                <posy>112</posy>
+                <width>4-col</width>
+                <height>5-row</height>
                 <itemgap>3</itemgap>
-                <orientation>horizontal</orientation>
-                <onup>5</onup>
+                <orientation>vertical</orientation>
+                <onleft>5</onleft>
                 <itemlayout width="6-col" height="1-row">
                     <control type="image">
                         <posx>0</posx>

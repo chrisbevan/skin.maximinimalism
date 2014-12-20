@@ -2,615 +2,615 @@
 # Addon Name: Maximinimalism
 # Addon id: skin.maximinimalism
 # Addon Provider: chrisbevan
+# dhead666 <myfoolishgames@gmail.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: marhanmichal@gmail.com\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: chrisbevan\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2014-12-17 05:29+0300\n"
+"Last-Translator: dhead666 <myfoolishgames@gmail.com>\n"
+"Language-Team: Hebrew"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
+"Language: he\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for XBMC from theDeadman"
-msgstr ""
+msgstr "מעטפת עבור Kodi של theDeadman"
 
 msgctxt "Addon Description"
-msgid ""
-"Maximinimalism is a lightweight, clean and simple XBMC experience designed for maximum usability and minimum fuss."
-msgstr ""
+msgid "Maximinimalism is a lightweight, clean and simple XBMC experience designed for maximum usability and minimum fuss."
+msgstr "המעטפת Maximinimalism מספקת חוויית Kodi קלילה, נקיה ופשוטה, מעוצבת לשימושיות מירבית ומינימום רעש."
 
 msgctxt "#31000"
 msgid "Watch"
-msgstr ""
+msgstr "צפיה"
 
 msgctxt "#31001"
 msgid "Listen"
-msgstr ""
+msgstr "האזנה"
 
 msgctxt "#31002"
 msgid "Play"
-msgstr ""
+msgstr "ניגון"
 
 msgctxt "#31003"
 msgid "Program Addons"
-msgstr ""
+msgstr "הרחבות תוכנה"
 
 msgctxt "#31004"
 msgid "Power"
-msgstr ""
+msgstr "כיבוי"
 
 msgctxt "#31005"
 msgid "Latest"
-msgstr ""
+msgstr "אחרונים"
 
 msgctxt "#31006"
 msgid "Live TV"
-msgstr ""
+msgstr "טלוויזיה חיה"
 
 msgctxt "#31007"
 msgid "Library Empty"
-msgstr ""
+msgstr "ספריה ריקה"
 
 msgctxt "#31008"
 msgid "Recording"
-msgstr ""
+msgstr "הקלטה"
 
 msgctxt "#31009"
 msgid "No plot info available"
-msgstr ""
+msgstr "אין פרטי עלילה זמינים"
 
 msgctxt "#31010"
 msgid "Add-ons"
-msgstr ""
+msgstr "הרחבות"
 
 msgctxt "#31011"
 msgid "Season"
-msgstr ""
+msgstr "עונה"
 
 msgctxt "#31012"
 msgid "Movies and TVShows"
-msgstr ""
+msgstr "סרטים וסדרות"
 
 msgctxt "#31013"
 msgid "Latest content"
-msgstr ""
+msgstr "תוכן אחרון"
 
 msgctxt "#31014"
 msgid "title(s)"
-msgstr ""
+msgstr "כותרת/ות"
 
 //#31015 - #31016 Empty strings
 
 msgctxt "#31017"
 msgid "Channels"
-msgstr ""
+msgstr "ערוצים"
 
 msgctxt "#31018"
 msgid "mins"
-msgstr ""
+msgstr "דק'"
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "פתיחת רשימת ניגון"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "שמירת רשימת ניגון"
 
 msgctxt "#31021"
 msgid "Clear playlist"
-msgstr ""
+msgstr "ניקוי רשימת ניגון"
 
 msgctxt "#31022"
 msgid "Select Items"
-msgstr ""
+msgstr "בחירת פריטים"
 
 msgctxt "#31026"
 msgid "Video Fanart location: "
-msgstr ""
+msgstr "מיקום פאנארט וידאו: "
 
 msgctxt "#31028"
 msgid "Game Fanart location: "
-msgstr ""
+msgstr "מיקום פאנארט משחק: "
 
 msgctxt "#31029"
 msgid "Current playlist"
-msgstr ""
+msgstr "רשימת ניגון נוכחית"
 
 msgctxt "#31030"
 msgid "Music Fanart location: "
-msgstr ""
+msgstr "מיקום פאנארט מוזיקה: "
 
 msgctxt "#31031"
 msgid "Content Type"
-msgstr ""
+msgstr "סוג תוכן"
 
 msgctxt "#31032"
 msgid "Visualisation"
-msgstr ""
+msgstr "חיזוי"
 
 msgctxt "#31033"
 msgid "Set Media Source Content"
-msgstr ""
+msgstr "קביעת תוכן מקור מדיה"
 
 msgctxt "#31034"
 msgid "Enable Debug Grid"
-msgstr ""
+msgstr "אפשר רשת ניפוי שגיאות"
 
 msgctxt "#31035"
 msgid "Enable Debug Info"
-msgstr ""
+msgstr "אפשר פרטי ניפוי שגיאות"
 
 msgctxt "#31037"
 msgid "Albums"
-msgstr ""
+msgstr "אלבומים"
 
 msgctxt "#31038"
 msgid "Page"
-msgstr ""
+msgstr "עמוד"
 
 msgctxt "#31039"
 msgid "Shortcuts"
-msgstr ""
+msgstr "קיצורים"
 
 msgctxt "#31040"
 msgid "Episode"
-msgstr ""
+msgstr "פרק"
 
 msgctxt "#31041"
 msgid "Menu Shortcuts"
-msgstr ""
+msgstr "קיצורי תפריט"
 
 msgctxt "#31042"
 msgid "Specific Content type settings"
-msgstr ""
+msgstr "הגדרות סוג תוכן ספציפי"
 
 msgctxt "#31044"
 msgid "Sort Order"
-msgstr ""
+msgstr "סדר מיון"
 
 msgctxt "#31045"
 msgid "Source name:"
-msgstr ""
+msgstr "שם מקור:"
 
 msgctxt "#31046"
 msgid "Field:"
-msgstr ""
+msgstr "שדה:"
 
 msgctxt "#31047"
 msgid "Operator:"
-msgstr ""
+msgstr "אופרטור:"
 
 msgctxt "#31048"
 msgid "Create Folder"
-msgstr ""
+msgstr "יצירת תיקיה"
 
 msgctxt "#31050"
 msgid "shot(s)"
-msgstr ""
+msgstr "תמונה/ות"
 
 msgctxt "#31053"
 msgid "Music Library"
-msgstr ""
+msgstr "ספריית מוזיקה"
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "לפי"
 
 msgctxt "#31056"
 msgid "Photo Library"
-msgstr ""
+msgstr "ספריית תמונות"
 
 msgctxt "#31057"
 msgid "Create Music Playlist"
-msgstr ""
+msgstr "יצירת רשימת ניגון מוזיקה"
 
 msgctxt "#31058"
 msgid "Music Addons"
-msgstr ""
+msgstr "הרחבות מוזיקה"
 
 msgctxt "#31060"
 msgid "PVR"
-msgstr ""
+msgstr "טלוויזיה חיה"
 
 msgctxt "#31061"
 msgid "Skin"
-msgstr ""
+msgstr "מעטפת"
 
 msgctxt "#31062"
 msgid "Memory"
-msgstr ""
+msgstr "זיכרון"
 
 msgctxt "#31063"
 msgid "File Lists"
-msgstr ""
+msgstr "רשימת קבצים"
 
 msgctxt "#31064"
 msgid "CPU"
-msgstr ""
+msgstr "מעבד כללי"
 
 msgctxt "#31065"
 msgid "EPG"
-msgstr ""
+msgstr "לוח שידורים"
 
 msgctxt "#31066"
 msgid "Audio CDs"
-msgstr ""
+msgstr "דיסק שמע"
 
 msgctxt "#31067"
 msgid "System extensions"
-msgstr ""
+msgstr "הרחבות מערכת"
 
 msgctxt "#31068"
 msgid "Slideshows"
-msgstr ""
+msgstr "מצגות"
 
 msgctxt "#31069"
 msgid "Locations"
-msgstr ""
+msgstr "מיקומים"
 
 msgctxt "#31070"
 msgid "Screen"
-msgstr ""
+msgstr "מסך"
 
 msgctxt "#31071"
 msgid "Networking"
-msgstr ""
+msgstr "רשת"
 
 msgctxt "#31072"
 msgid "Play now"
-msgstr ""
+msgstr "ניגון כעת"
 
 msgctxt "#31073"
 msgid "Channel Group"
-msgstr ""
+msgstr "קבוצת ערוצים"
 
 msgctxt "#31074"
 msgid "Cast and Crew"
-msgstr ""
+msgstr "צוות"
 
 msgctxt "#31075"
 msgid "Play Title"
-msgstr ""
+msgstr "ניגון כותר"
 
 msgctxt "#31076"
 msgid "Change Title"
-msgstr ""
+msgstr "שינוי כותרת"
 
 msgctxt "#31077"
 msgid "Music Files"
-msgstr ""
+msgstr "קבצי מוזיקה"
 
 msgctxt "#31078"
 msgid "Now and Next"
-msgstr ""
+msgstr "כעת והבא"
 
 msgctxt "#31079"
 msgid "XBMC"
-msgstr ""
+msgstr "Kodi"
 
 msgctxt "#31080"
 msgid "Programme Guide"
-msgstr ""
+msgstr "מדריך שידורים"
 
 msgctxt "#31082"
 msgid "Version"
-msgstr ""
+msgstr "גרסה"
 
 msgctxt "#31084"
 msgid "Global background image: "
-msgstr ""
+msgstr "תמונת רקע כללי: "
 
 msgctxt "#31085"
 msgid "Add Video Addon"
-msgstr ""
+msgstr "הוספת הרחבת וידאו"
 
 msgctxt "#31086"
 msgid "Add Music Addon"
-msgstr ""
+msgstr "הוספת הרחבת מוזיקה"
 
 msgctxt "#31087"
 msgid "Enable global fanart background: "
-msgstr ""
+msgstr "אפשר פאנארט רקע כללי: "
 
 msgctxt "#31089"
 msgid "File Browser"
-msgstr ""
+msgstr "מנהל קבצים"
 
 msgctxt "#31091"
 msgid "Add Video Playlist"
-msgstr ""
+msgstr "הוספת רשימת ניגון וידאו"
 
 msgctxt "#31092"
 msgid "Add Music Playlist"
-msgstr ""
+msgstr "הוספת רשימת ניגון וידאו"
 
 msgctxt "#31093"
 msgid "Favourite"
-msgstr ""
+msgstr "מועדף"
 
 msgctxt "#31095"
 msgid "Transfer"
-msgstr ""
+msgstr "העברה"
 
 msgctxt "#31096"
 msgid "No items found"
-msgstr ""
+msgstr "לא נמצאו פריטים"
 
 msgctxt "#31097"
 msgid "Playlist"
-msgstr ""
+msgstr "רשימת ניגון"
 
 msgctxt "#31098"
 msgid "Volume Muted"
-msgstr ""
+msgstr "מושתק"
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "הוספת קבוצה"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "שינוי שם קבוצה"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "מחיקת קבוצה"
 
 msgctxt "#31103"
 msgid "Profile Settings"
-msgstr ""
+msgstr "הגדרות משתמש"
 
 msgctxt "#31104"
 msgid "Available Profiles"
-msgstr ""
+msgstr "משתמשים זמינים"
 
 msgctxt "#31105"
 msgid "Login options"
-msgstr ""
+msgstr "אפשרויות כניסה"
 
 msgctxt "#31106"
 msgid "Users"
-msgstr ""
+msgstr "משתמשים"
 
 msgctxt "#31107"
 msgid "Active profile"
-msgstr ""
+msgstr "משתמש פעיל"
 
 msgctxt "#31108"
 msgid "Log out"
-msgstr ""
+msgstr "ניתוק"
 
 msgctxt "#31109"
 msgid "Order: Ascending"
-msgstr ""
+msgstr "סדר מיון: עולה"
 
 msgctxt "#31110"
 msgid "Order: Descending"
-msgstr ""
+msgstr "סדר מיון: יורד"
 
 msgctxt "#31111"
 msgid "Copy files"
-msgstr ""
+msgstr "העתקת קבצים"
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "מדריך שידורים"
 
 msgctxt "#31113"
 msgid "Unknown season"
-msgstr ""
+msgstr "עונה לא ידועה"
 
 msgctxt "#31114"
 msgid "Unknown genre"
-msgstr ""
+msgstr "סגנון לא ידוע"
 
 msgctxt "#31115"
 msgid "Unknown year"
-msgstr ""
+msgstr "שנה לא ידועה"
 
 msgctxt "#31116"
 msgid "Aspect"
-msgstr ""
+msgstr "יחס"
 
 msgctxt "#31117"
 msgid "Launch addon"
-msgstr ""
+msgstr "פתיחת הרחבה"
 
 msgctxt "#31118"
 msgid "Unwatched titles only"
-msgstr ""
+msgstr "כותרים שלא נצפו בלבד"
 
 msgctxt "#31119"
 msgid "PVR Scheduler"
-msgstr ""
+msgstr "תזמון הקלטה"
 
 msgctxt "#31120"
 msgid "Playing"
-msgstr ""
+msgstr "מנגן"
 
 msgctxt "#31121"
 msgid "CC"
-msgstr ""
+msgstr "CC"
 
 msgctxt "#31122"
 msgid "Sync"
-msgstr ""
+msgstr "סנכרון"
 
 msgctxt "#31123"
 msgid "Current Playlist"
-msgstr ""
+msgstr "רשימת ניגון נוכחית"
 
 msgctxt "#31124"
 msgid "Search Library"
-msgstr ""
+msgstr "חיפוש בספריה"
 
 msgctxt "#31125"
 msgid "Aspect Ratio"
-msgstr ""
+msgstr "יחס תצוגה"
 
 msgctxt "#31126"
 msgid "Settings level"
-msgstr ""
+msgstr "רמת הגדרות"
 
 msgctxt "#31127"
 msgid "HD"
-msgstr ""
+msgstr "HD"
 
 msgctxt "#31128"
 msgid "SD"
-msgstr ""
+msgstr "SD"
 
 msgctxt "#31129"
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 msgctxt "#31131"
 msgid "Switch to this profile now"
-msgstr ""
+msgstr "מעבר למשתמש זה כעת"
 
 msgctxt "#31132"
 msgid "Music Player"
-msgstr ""
+msgstr "נגן מוזיקה"
 
 msgctxt "#31133"
 msgid "Playlist shuffled"
-msgstr ""
+msgstr "רשימת ניגון מעורבבת"
 
 msgctxt "#31134"
 msgid "Manual search"
-msgstr ""
+msgstr "חיפוש ידני"
 
 msgctxt "#31135"
 msgid "Eject Disc"
-msgstr ""
+msgstr "הוצאת דיסק"
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "מנגן כעת"
 
 msgctxt "#31137"
 msgid "Available Content Scrapers:"
-msgstr ""
+msgstr "סקרייפרי תוכן זמינים:"
 
 msgctxt "#31138"
 msgid "Item Info"
-msgstr ""
+msgstr "פרטי פריט"
 
 msgctxt "#31139"
 msgid "Item Options"
-msgstr ""
+msgstr "אפשרויות פריט"
 
 msgctxt "#31140"
 msgid "DVD Menu"
-msgstr ""
+msgstr "תפריט DVD"
 
 msgctxt "#31141"
 msgid "Chapter"
-msgstr ""
+msgstr "פרק"
 
 msgctxt "#31142"
 msgid "Prioritise exit over shutdown in power menu"
-msgstr ""
+msgstr "העדף יציאה על פני כיבוי בתפריט כיבוי"
 
 msgctxt "#31143"
 msgid "Stop video on return to menu"
-msgstr ""
+msgstr "עצור וידאו בעת חזרה לתפריט"
 
 msgctxt "#31144"
 msgid "FPS"
-msgstr ""
+msgstr "FPS"
 
 msgctxt "#31145"
 msgid "Items"
-msgstr ""
+msgstr "פריטים"
 
 msgctxt "#31146"
 msgid "Director"
-msgstr ""
+msgstr "במאי"
 
 msgctxt "#31147"
 msgid "Home: Hide Video"
-msgstr ""
+msgstr "מסך הבית: הסתר וידאו"
 
 msgctxt "#31148"
 msgid "Home: Hide Music"
-msgstr ""
+msgstr "מסך הבית: הסתר מוזיקה"
 
 msgctxt "#31149"
 msgid "Home: Hide Pictures"
-msgstr ""
+msgstr "מסך הבית: הסתר תמונות"
 
 msgctxt "#31150"
 msgid "Home: Hide Search"
-msgstr ""
+msgstr "מסך הבית: הסתר חיפוש"
 
 msgctxt "#31151"
 msgid "Home: Hide Programs"
-msgstr ""
+msgstr "מסך הבית: הסתר תוכנות"
 
 msgctxt "#31152"
 msgid "Press OK to cancel"
-msgstr ""
+msgstr "יש ללחוץ על אישור לביטול"
 
 msgctxt "#31153"
 msgid "Playlist saved"
-msgstr ""
+msgstr "רשימת ניגון נשמרה"
 
 msgctxt "#31154"
 msgid "Search for Subtitles"
-msgstr ""
+msgstr "חיפוש כתוביות"
 
 msgctxt "#31155"
 msgid "Adjust Subtitle Offset"
-msgstr ""
+msgstr "שינוי השהיית כתוביות"
 
 msgctxt "#31156"
 msgid "Games"
-msgstr ""
+msgstr "משחקים"
 
 msgctxt "#31157"
 msgid "Home: Hide Games"
-msgstr ""
+msgstr "מסך הבית: הסתר משחקים"
 
 msgctxt "#31158"
 msgid "No items in Playlist"
-msgstr ""
+msgstr "אין פריטים ברשימת ניגון"
 
 msgctxt "#31159"
 msgid "Unknown"
-msgstr ""
+msgstr "לא ידוע"
 
 msgctxt "#31160"
 msgid "Home: Hide Favourites"
-msgstr ""
+msgstr "מסך הבית: הסתר מועדפים"
 
 msgctxt "#31161"
 msgid "Hide Info"
-msgstr ""
+msgstr "הסתר פרטים"
 
 msgctxt "#31162"
 msgid "Home menu items"
-msgstr ""
+msgstr "פריטי תפריט הבית"
 
 msgctxt "#31163"
 msgid "Disable Fanart Animations (for low powered devices)"
-msgstr ""
+msgstr "נטרל הנפשות פאנארט (עבור מכשירים חלשים)"
 
 msgctxt "#31164"
 msgid "Radio"
-msgstr ""
+msgstr "רדיו"
 
 msgctxt "#31165"
 msgid "Recordings"
-msgstr ""
+msgstr "הקלטות"
 
 msgctxt "#31167"
 msgid "Press [back] to return."
-msgstr ""
+msgstr "לחיצה [אחורה] לחזרה"

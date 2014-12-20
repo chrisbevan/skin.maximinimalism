@@ -1,3 +1,34 @@
+[B]1.1.1[/B]
+- [BUGFIX] default focussed item fixed for certain select dialogs (blu-ray & subtitles etc)
+- [UPDATED] Additional toggle options for the addon browser
+- [NEW] Hebrew translation (thanks dhead666)
+- [CHANGED] Fullscreen music screen now autohides player controls. Extra fade animations now used to reduce potential for plasma screen burn problems
+
+[B]1.1.0[/B]
+****Kodi Helix builds only****
+- [UPDATED] addonbrowser.xml
+- [UPDATED] DialogAddonInfo.xml
+- [UPDATED] DialogContentSettings.xml
+- [UPDATED] DialogMediaFilter.xml
+- [UPDATED] DialogMediaSource.xml
+- [UPDATED] DialogNetworkSetup.xml
+- [UPDATED] DialogPeripheralSettings.xml
+- [UPDATED] DialogPVRTimerSettings.xml
+- [UPDATED] Font.xml
+- [UPDATED] SmartPlaylistEditor.xml
+- [UPDATED] SmartPlaylistRule.xml
+- [UPDATED] VideoOSDSettings.xml 
+- [UPDATED] DialogKeyboard.xml
+- [UPDATED] DialogNumeric.xml
+- [UPDATED] SettingsCategory.xml
+- [UPDATED] VideoFullScreen.xml
+- [UPDATED] LockSettings.xml
+- [UPDATED] ProfileSettings.xml
+- [UPDATED] PVR
+
+- Various tweaks and fixes
+- Skin widgets addon dependency replaced with library data provider
+
 [B]1.0.8[/B]
 - Reworked song rating screen
 - Various little tweaks

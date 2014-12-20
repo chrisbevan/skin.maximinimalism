@@ -90,6 +90,7 @@
                             <width>22-col</width>
                             <height>13-row</height>
                             <onleft>9000</onleft>
+							<content>plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]</content>
                             <itemlayout width="312" height="366">
                                 <control type="image">
                                     <posx>0</posx>
@@ -97,7 +98,7 @@
                                     <width>276</width>
                                     <height>273</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+                                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(thumb)]</texture>
                                     <bordertexture border="3" colordiffuse="22FFFFFF">colors/selected.png</bordertexture>
 									<bordersize>3</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
@@ -121,7 +122,7 @@
                                         <width>252</width>
                                         <font>itemTitleSmallCondensed</font>
                                         <textcolor>selected</textcolor>
-                                        <label>$INFO[ListItem.Label]</label>
+                                        <label>$INFO[ListItem.title]</label>
                                     </control>
                                     <control type="label">
                                         <posx>12</posx>
@@ -129,7 +130,7 @@
                                         <width>252</width>
                                         <font>smallMedium</font>
                                         <textcolor>selected</textcolor>
-                                        <label>$INFO[ListItem.Label2]</label>
+                                        <label>$INFO[ListItem.artist]</label>
                                     </control>
                                 </control>
                             </itemlayout>
@@ -140,7 +141,7 @@
                                     <width>276</width>
                                     <height>273</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+                                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(thumb)]</texture>
                                     <bordertexture border="3" colordiffuse="ffFFFFFF">colors/selected.png</bordertexture>
 									<bordersize>3</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
@@ -166,7 +167,7 @@
                                         <scroll>true</scroll>
                                         <textcolor>black</textcolor>
                                         <shadowcolor>-</shadowcolor>
-                                        <label>$INFO[ListItem.Label]</label>
+                                        <label>$INFO[ListItem.title]</label>
                                     </control>
                                     <control type="label">
                                         <posx>12</posx>
@@ -175,81 +176,10 @@
                                         <font>smallMedium</font>
                                         <textcolor>black</textcolor>
                                         <shadowcolor>-</shadowcolor>
-                                        <label>$INFO[ListItem.Label2]</label>
+                                        <label>$INFO[ListItem.artist]</label>
                                     </control>
                                 </control>
                             </focusedlayout>
-                            <content>
-                                <item id="1">
-                                    <label>$INFO[Window(Home).Property(RecentAlbum.1.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentAlbum.1.Artist)] $INFO[Window(Home).Property(RecentAlbum.1.Year),• ,]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentAlbum.1.thumb)]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentAlbum.1.Play)]</onclick>
-                                </item>
-                                <item id="2">
-                                    <visible>!isempty(Window(Home).Property(RecentAlbum.2.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentAlbum.2.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentAlbum.2.Artist)] $INFO[Window(Home).Property(RecentAlbum.2.Year),• ,]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentAlbum.2.thumb)]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentAlbum.2.Play)]</onclick>
-                                </item>
-                                <item id="3">
-                                    <visible>!isempty(Window(Home).Property(RecentAlbum.3.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentAlbum.3.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentAlbum.3.Artist)] $INFO[Window(Home).Property(RecentAlbum.3.Year),• ,]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentAlbum.3.thumb)]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentAlbum.3.Play)]</onclick>
-                                </item>
-                                <item id="4">
-                                    <visible>!isempty(Window(Home).Property(RecentAlbum.4.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentAlbum.4.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentAlbum.4.Artist)] $INFO[Window(Home).Property(RecentAlbum.4.Year),• ,]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentAlbum.4.thumb)]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentAlbum.4.Play)]</onclick>
-                                </item>
-                                <item id="5">
-                                    <visible>!isempty(Window(Home).Property(RecentAlbum.5.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentAlbum.5.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentAlbum.5.Artist)] $INFO[Window(Home).Property(RecentAlbum.5.Year),• ,]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentAlbum.5.thumb)]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentAlbum.5.Play)]</onclick>
-                                </item>
-                                <item id="6">
-                                    <visible>!isempty(Window(Home).Property(RecentAlbum.6.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentAlbum.6.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentAlbum.6.Artist)] $INFO[Window(Home).Property(RecentAlbum.6.Year),• ,]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentAlbum.6.thumb)]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentAlbum.6.Play)]</onclick>
-                                </item>
-                                <item id="7">
-                                    <visible>!isempty(Window(Home).Property(RecentAlbum.7.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentAlbum.7.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentAlbum.7.Artist)] $INFO[Window(Home).Property(RecentAlbum.7.Year),• ,]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentAlbum.7.thumb)]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentAlbum.7.Play)]</onclick>
-                                </item>
-                                <item id="8">
-                                    <visible>!isempty(Window(Home).Property(RecentAlbum.8.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentAlbum.8.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentAlbum.8.Artist)] $INFO[Window(Home).Property(RecentAlbum.8.Year),• ,]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentAlbum.8.thumb)]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentAlbum.8.Play)]</onclick>
-                                </item>
-                                <item id="9">
-                                    <visible>!isempty(Window(Home).Property(RecentAlbum.9.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentAlbum.9.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentAlbum.9.Artist)] $INFO[Window(Home).Property(RecentAlbum.9.Year),• ,]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentAlbum.9.thumb)]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentAlbum.9.Play)]</onclick>
-                                </item>
-                                <item id="10">
-                                    <visible>!isempty(Window(Home).Property(RecentAlbum.10.Title))</visible>
-                                    <label>$INFO[Window(Home).Property(RecentAlbum.10.Title)]</label>
-                                    <label2>$INFO[Window(Home).Property(RecentAlbum.10.Artist)] $INFO[Window(Home).Property(RecentAlbum.10.Year),• ,]</label2>
-                                    <thumb>$INFO[Window(Home).Property(RecentAlbum.10.thumb)]</thumb>
-                                    <onclick>$INFO[Window(Home).Property(RecentAlbum.10.Play)]</onclick>
-                                </item>
-                            </content>
                         </control>
                     </control>
                     <!--source content-->

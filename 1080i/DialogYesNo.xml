@@ -101,14 +101,14 @@
                 <content>
                     <item id="1">
                         <description>Yes Button</description>
-                        <label>107</label>
+                        <label>$INFO[control.getlabel(11)]</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(100,11)</onclick>
                     </item>
                     <item id="2">
                         <description>No Button</description>
-                        <label>106</label>
+                        <label>$INFO[control.getlabel(10)]</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(100,10)</onclick>
@@ -131,9 +131,11 @@
             <!--selection buttons-->
             <control type="button" id="10">
                 <description>No</description>
+				<label>106</label>
             </control>
             <control type="button" id="11">
                 <description>Yes</description>
+				<label>107</label>
             </control>
         </control>
         <!--debugging-->

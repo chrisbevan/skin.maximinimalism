@@ -28,7 +28,7 @@
                         <colordiffuse>99FFFFFF</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>204</posx>
+                        <posx>0</posx>
                         <posy>60</posy>
                         <width>6-col-gutter</width>
                         <align>center</align>
@@ -37,18 +37,18 @@
                         <label>$INFO[ListItem.property(itemIcon)]</label>
                     </control>
                     <control type="label">
-                        <posx>204</posx>
+                        <posx>12</posx>
                         <posy>3-row</posy>
-                        <width>5-col</width>
+                        <width>6-col-gutter</width>
                         <align>center</align>
                         <font>pageTitle</font>
                         <textcolor>selected</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="textbox">
-                        <posx>24</posx>
+                        <posx>1-col-gutter</posx>
                         <posy>4-row</posy>
-                        <width>5-col</width>
+                        <width>5-col-gutter</width>
                         <align>center</align>
                         <height>3-row</height>
                         <font>itemTitleSmall</font>
@@ -68,7 +68,7 @@
                         <colordiffuse>99FFFFFF</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>204</posx>
+                        <posx>0</posx>
                         <posy>60</posy>
                         <width>6-col-gutter</width>
                         <align>center</align>
@@ -77,18 +77,18 @@
                         <label>$INFO[ListItem.property(itemIcon)]</label>
                     </control>
                     <control type="label">
-                        <posx>204</posx>
+                        <posx>12</posx>
                         <posy>3-row</posy>
-                        <width>5-col</width>
+                        <width>6-col-gutter</width>
                         <align>center</align>
                         <font>pageTitle</font>
                         <textcolor>selected</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="textbox">
-                        <posx>24</posx>
+                        <posx>1-col-gutter</posx>
                         <posy>4-row</posy>
-                        <width>5-col</width>
+                        <width>5-col-gutter</width>
                         <align>center</align>
                         <height>3-row</height>
                         <font>itemTitleSmall</font>
@@ -156,7 +156,7 @@
                     <item id="8">
                         <description>PVR</description>
                         <label>24019</label>
-                        <label2>$INFO[Pvr.BackendName][CR]$INFO[Pvr.BackendDiskSpace]</label2>
+                        <label2>$INFO[Pvr.BackendName][CR]$INFO[PVR.BackendDiskspace]</label2>
                         <property name="itemIcon">&gt;</property>
                         <thumb>-</thumb>
                         <onclick>noop</onclick>

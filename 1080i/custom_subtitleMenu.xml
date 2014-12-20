@@ -35,7 +35,20 @@
 	                <height>11-row</height>
 	                <itemgap>0</itemgap>
                 
-	                <control type="button" id="5001">
+	                <control type="radiobutton" id="5004">
+						<description>Enable subtitles</description>
+						<enable>VideoPlayer.HasSubtitles</enable>
+						<textoffsetx>0</textoffsetx>
+						<textcolor>unselected</textcolor>
+				        <focusedcolor>selected</focusedcolor>
+						<texturefocus>-</texturefocus>
+						<width>6-col</width>
+						<label>449</label>
+						<onclick>ShowSubtitles</onclick>
+						<selected>VideoPlayer.SubtitlesEnabled</selected>
+					</control>
+											
+					<control type="button" id="5001">
 	                    <description>Download Subtitle</description>
 	                    <height>1-row</height>
 	                    <width>6-col</width>
@@ -49,52 +62,7 @@
 	                    <onclick>Dialog.Close(VideoOSD)</onclick>
 						<onclick>ActivateWindow(SubtitleSearch)</onclick>
 	                </control>
-
-					<control type="button" id="5002">
-	                    <description>Subtitle Offset</description>
-						<enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
-	                    <height>1-row</height>
-	                    <width>6-col</width>
-	                    <font>itemTitle</font>
-	                    <textcolor>unselected</textcolor>
-	                    <focusedcolor>selected</focusedcolor>
-	                    <texturefocus>-</texturefocus>
-	                    <texturenofocus>-</texturenofocus>
-	                    <textoffsetx>0</textoffsetx>
-	                    <label>31155</label>
-	                    <onclick>SubtitleDelay</onclick>
-	                </control>
-
-					<!--
-					<control type="button" id="5003">
-	                    <description>Select next subtitle</description>
-						<enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
-	                    <height>1-row</height>
-	                    <width>6-col</width>
-	                    <font>itemTitle</font>
-	                    <textcolor>unselected</textcolor>
-	                    <focusedcolor>selected</focusedcolor>
-	                    <texturefocus>-</texturefocus>
-	                    <texturenofocus>-</texturenofocus>
-	                    <textoffsetx>0</textoffsetx>
-	                    <label>Next subtitle</label>
-	                    <onclick>NextSubtitle</onclick>
-	                </control>
-					-->
-
-					<control type="radiobutton" id="5004">
-						<description>Enable subtitles</description>
-						<enable>VideoPlayer.HasSubtitles</enable>
-						<textoffsetx>0</textoffsetx>
-						<textcolor>unselected</textcolor>
-				        <focusedcolor>selected</focusedcolor>
-						<texturefocus>-</texturefocus>
-						<width>6-col</width>
-						<label>449</label>
-						<onclick>ShowSubtitles</onclick>
-						<selected>VideoPlayer.SubtitlesEnabled</selected>
-					</control>
-                
+				                
 	            </control>
 	        </control>
 		</control>

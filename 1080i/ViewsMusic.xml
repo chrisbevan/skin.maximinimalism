@@ -422,7 +422,7 @@
                         <label>$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
-                        <posx>13-col-gutter</posx>
+                        <right>88</right>
                         <posy>0</posy>
                         <width>2-col-gutter</width>
                         <align>right</align>
@@ -482,7 +482,7 @@
                         <label>$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
-                        <posx>13-col-gutter</posx>
+                        <right>88</right>
                         <posy>0</posy>
                         <width>2-col-gutter</width>
                         <align>right</align>
@@ -634,14 +634,14 @@
                         <label>$INFO[ListItem.Artist] - $INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
-                        <posx>11-col-gutter</posx>
+                        <right>195</right>
                         <posy>17</posy>
                         <width>4-col-gutter</width>
                         <font>itemTitle</font>
-                        <align>right</align>
+                        <align>left</align>
                         <height>24</height>
                         <textcolor>black</textcolor>
-                        <selectedcolor>black</selectedcolor>
+						<selectedcolor>black</selectedcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[listitem.duration]</label>
                     </control>

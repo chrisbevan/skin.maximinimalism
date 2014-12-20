@@ -41,32 +41,32 @@
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--query results-->
-            <control type="label" id="100">
+            <control type="label">
                 <posx>12</posx>
                 <posy>44</posy>
-                <width>16-col-gutter</width>
+                <width>18-col-gutter</width>
                 <height>1-row</height>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
+				<label>$LOCALIZE[31154] - $INFO[Player.Filename]</label>
                 <wrapmultiline>false</wrapmultiline>
-            </control>
-            <control type="image" id="110">
-                <description>Service Logo</description>
-                <visible>false</visible>
-                <posx>0</posx>
-                <posy>3-row</posy>
-                <width>2-col</width>
-                <height>1-row</height>
-                <aspectratio>keep</aspectratio>
-            </control>
+            </control>		
+			<control type="label" id="140">
+				<posx>300</posx>
+                <posy>86</posy>
+				<width>12-col</width>
+				<height>2-row</height>
+				<font>itemTitle</font>
+				<textcolor>accented</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+			</control>			
             <!-- ** Required ** Do not change <id>or<type>-->
             <control type="group">
                 <!--subtitle file selection-->
                 <control type="panel" id="120">
                     <posx>4-col</posx>
-                    <posy>120</posy>
+                    <posy>177</posy>
                     <width>16-col</width>
                     <height>13-row</height>
                     <onleft>150</onleft>

@@ -34,16 +34,11 @@
         <value condition="Window.IsActive(musicfiles) + !Substring(Container.folderpath,plugin)">$LOCALIZE[31077]</value>
         <value condition="Substring(Container.folderpath,plugin)">$INFO[container.foldername]</value>
         <value condition="Container.Content(movies)">$LOCALIZE[20342] [COLOR accented]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
-        <value condition="Container.Content(livetv)">31006</value>
         <value condition="Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes)">$LOCALIZE[20343] [COLOR accented]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
         <value condition="Container.Content(addons)">$LOCALIZE[31010]</value>
         <value condition="Container.Content(albums)">$LOCALIZE[31037] [COLOR accented]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
         <value condition="Container.Content(songs)">$INFO[listitem.album] [COLOR accented]$INFO[listitem.artist][/COLOR]</value>
-        <value condition="Window.IsActive(pvr) + Control.IsVisible(11)">$LOCALIZE[31006] [COLOR accented]$LOCALIZE[31078][/COLOR]</value>
-        <value condition="Window.IsActive(pvr) + [Control.IsVisible(11) | Control.IsVisible(10)]">$LOCALIZE[31006] [COLOR accented]$LOCALIZE[31080][/COLOR]</value>
-        <value condition="Window.IsActive(pvr) + [Control.IsVisible(11) | Control.IsVisible(13)]">$LOCALIZE[31006] [COLOR accented]$LOCALIZE[19163][/COLOR]</value>
-		<value condition="Window.IsActive(pvr) + Control.IsVisible(12)">$LOCALIZE[19024] [COLOR accented]$LOCALIZE[31078][/COLOR]</value>        
-		<value condition="!isEmpty(container.foldername)">$INFO[container.foldername]</value>
+  		<value condition="!isEmpty(container.foldername)">$INFO[container.foldername]</value>
 		<value>$LOCALIZE[14022]</value>
     </variable>
     <variable name="listSubTitle">

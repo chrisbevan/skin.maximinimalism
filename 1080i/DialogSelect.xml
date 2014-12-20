@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog">
+<window>
     <defaultcontrol always="true">9000</defaultcontrol>
+	<onload condition="!IntegerGreaterThan(container(3).numitems,0) + !IntegerGreaterThan(container(6).numitems,0)">control.SetFocus(9999)</onload>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
@@ -9,27 +10,8 @@
 	<zorder>2</zorder>
     <include>fadeInOut</include>
     <controls>
-        <!--background-->
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>ffffffff</colordiffuse>
-        </control>
-		<!--image (if available)-->
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>$INFO[container(6).listitem.icon]</texture>
-            <colordiffuse>6affffff</colordiffuse>
-			<aspectratio align="left" aligny="center">keep</aspectratio>
-            <fadetime>400</fadetime>
-        </control>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>99ffffff</colordiffuse>
-        </control>
+		<!--background-->
+        <include>globalBackground</include>
         <control type="group">
             <!--animations-->
             <include>modalDialogInOutVertical</include>
@@ -60,7 +42,7 @@
                     <posx>12</posx>
                     <posy>44</posy>
                     <width>16-col</width>
-                    <font>pageTitle</font>
+                    <font>dialogTitle</font>
                     <label>-</label>
                     <textcolor>black</textcolor>
                     <shadowcolor>-</shadowcolor>

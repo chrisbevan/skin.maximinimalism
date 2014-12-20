@@ -199,7 +199,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <posx>48r</posx>
+                        <right>48</right>
                         <posy>17</posy>
                         <width>4-col-gutter</width>
                         <font>smallStrong</font>
@@ -261,7 +261,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <posx>48r</posx>
+                        <right>48</right>
                         <posy>17</posy>
                         <width>4-col-gutter</width>
                         <font>smallStrong</font>
@@ -428,7 +428,7 @@
                 <posx>0</posx>
                 <posy>8</posy>
                 <width>6-col</width>
-                <height>635</height>
+                <height>576</height>
                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                 <texture border="0">$INFO[ListItem.Art(tvshow.poster)]</texture>
 				<bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>

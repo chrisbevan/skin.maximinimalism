@@ -43,8 +43,8 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>16-col</width>
-                <font>pageTitle</font>
-                <label>1026</label>
+                <font>dialogTitle</font>
+                <label>$LOCALIZE[1026]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
@@ -139,17 +139,12 @@
                     <textcolor>selected</textcolor>
                     <shadowcolor>-</shadowcolor>
                 </control>
-                <control type="button" id="12">
+                <control type="edit" id="12">
                     <description>Name Button</description>
                     <posx>3-col</posx>
                     <posy>7-row</posy>
-                    <width>9-col-gutter</width>
-                    <height>1-row</height>
+                    <width>9-col-gutter</width>                    
                     <label>-</label>
-                    <font>itemTitle</font>
-                    <textoffsetx>12</textoffsetx>
-                    <texturefocus>colors/selected.png</texturefocus>
-                    <texturenofocus>colors/black.png</texturenofocus>
                     <onup>10</onup>
                     <onright>8000</onright>
                     <ondown>10</ondown>

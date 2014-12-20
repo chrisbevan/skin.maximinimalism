@@ -39,7 +39,7 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>12-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
 				<label>$LOCALIZE[24010]</label>
@@ -49,7 +49,7 @@
                 <posx>12</posx>
                 <posy>120</posy>
                 <width>12-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
 				<label>13389</label>

@@ -120,7 +120,7 @@
                     <posy>0</posy>
                     <width>11-col</width>
                     <align>left</align>
-                    <font>dialogTitle</font>
+                    <font>largeTitle</font>
                     <textcolor>selected</textcolor>
                     <label>$INFO[Container(100).ListItem.Label]</label>
                 </control>
@@ -510,7 +510,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>12-col</width>
-                    <font>dialogTitle</font>
+                    <font>largeTitle</font>
                     <textcolor>selected</textcolor>
                     <label>$INFO[container(100).Listitem.label]</label>
                     <scroll>false</scroll>

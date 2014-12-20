@@ -5,18 +5,21 @@
     <include>fadeInOut</include>
     <controls>
         <!--background-->
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>ffffffff</colordiffuse>
-        </control>
+        <include>globalBackground</include>
         <!--fanart (if available)-->
         <control type="image">
             <visible>SubString(ListItem.label,fanart)</visible>
             <include>dimensionsFullscreen</include>
             <texture>$INFO[listitem.thumb]</texture>
             <colordiffuse>6affffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+            <fadetime>400</fadetime>
+        </control>
+		<control type="image">
+			<visible>!SubString(ListItem.label,fanart)</visible>
+            <include>dimensionsFullscreen</include>
+            <texture>$INFO[listitem.FileNameAndPath]</texture>
+            <colordiffuse>ffffffff</colordiffuse>
             <aspectratio>stretch</aspectratio>
             <fadetime>400</fadetime>
         </control>
@@ -63,7 +66,7 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>16-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>31089</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>

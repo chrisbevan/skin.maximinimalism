@@ -2,6 +2,14 @@
 <includes>
 <include name="sideBarMenuItems">
 	<control type="image">
+		<posx>col-2-begin</posx>
+        <posy>-111</posy>
+        <include>dimensionsFullscreen</include>
+        <texture>colors/black.png</texture>
+        <colordiffuse>66FFFFFF</colordiffuse>
+        <aspectratio>stretch</aspectratio>
+    </control>
+	<control type="image">
         <posx>-96</posx>
         <posy>-111</posy>
         <width>col-5-begin</width>
@@ -14,7 +22,7 @@
 	<!--titles-->
 	<control type="label">
 		<description>video</description>
-		<visible>[Window.isactive(videolibrary) | window.isactive(videoplaylist) | Window.isactive(pvr)] + !Skin.String(keepMusicMenuActive)</visible>
+		<visible>[Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)] + !Skin.String(keepMusicMenuActive)</visible>
         <posx>0</posx>
         <posy>0</posy>
         <width>14-col</width>
@@ -25,7 +33,7 @@
     </control>
 	<control type="label">
 		<description>music</description>
-		<visible>[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist)] | [[Window.isactive(pvr) | Window.isactive(videolibrary) | window.isactive(videoplaylist)] + Skin.String(keepMusicMenuActive)]</visible>
+		<visible>[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)]</visible>
         <posx>0</posx>
         <posy>0</posy>
         <width>14-col</width>
@@ -53,8 +61,7 @@
         <label>33063</label>
         <textcolor>black</textcolor>
         <shadowcolor>-</shadowcolor>
-    </control>
-	
+    </control>	
 	<!--menu items-->
 	<control type="grouplist" id="62">
         <posx>-12</posx>
@@ -65,29 +72,14 @@
         <onright>9000</onright>
 		<onup>62</onup>
 		<ondown>62</ondown>
-		<include condition="[Window.isactive(videolibrary) | window.isactive(videoplaylist) | Window.isactive(pvr)] + !Skin.String(keepMusicMenuActive)">videoSideMenu</include>
-		<include condition="[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist)] | [[Window.isactive(pvr) | Window.isactive(videolibrary) | window.isactive(videoplaylist)] + Skin.String(keepMusicMenuActive)]">musicSideMenu</include>
+		<include condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoSideMenu</include>
+		<include condition="window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
 		<include condition="window.isactive(pictures)">picturesSideMenu</include>
     </control>
 </include>
 
 <!--video menu items-->
 <include name="videoSideMenu">
-	<!--PVR videos only-->
-	<control type="button" id="500">
-        <description>Change Channel Group (PVR only)</description>
-        <visible>window.isactive(pvr) + [Control.IsVisible(11) | Control.IsVisible(10)]</visible>
-        <height>54</height>
-        <width>4-col</width>
-        <font>menuTitle</font>
-        <textcolor>black</textcolor>
-        <focusedcolor>selected</focusedcolor>
-        <texturefocus>colors/black.png</texturefocus>
-        <texturenofocus>colors/unselected.png</texturenofocus>
-        <textoffsetx>12</textoffsetx>
-        <label>$LOCALIZE[31073]  ◀ ▶</label>
-        <onclick>sendclick(32)</onclick>
-    </control>
 
 	<!--current playlist-->
 	<control type="button" id="501">
@@ -182,7 +174,8 @@
         <texturenofocus>colors/unselected.png</texturenofocus>
         <textoffsetx>12</textoffsetx>
         <label>31119</label>
-        <onclick>ActivateWindowAndFocus(pvr, 35,0, 9999,1)</onclick>
+        <onclick>ActivateWindow(tvtimers)</onclick>
+		<onclick>Control.SetFocus(50)</onclick>
     </control>
 
     <control type="button" id="505">
@@ -215,6 +208,7 @@
         <label>1214</label>
         <onclick>right</onclick>
         <onclick>ActivateWindow(Videos,files,return)</onclick>
+		<onclick>Control.SetFocus(50)</onclick>
         <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
     </control>
 

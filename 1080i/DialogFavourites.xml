@@ -27,7 +27,7 @@
                 <width>8-col</width>
                 <font>pageTitle</font>
                 <textcolor>selected</textcolor>
-                <label>1036</label>
+                <label>$LOCALIZE[1036]</label>
             </control>
             <control type="label">
                 <visible>!IntegerGreaterThan(Container(450).NumItems,0)</visible>

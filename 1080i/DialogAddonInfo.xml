@@ -58,7 +58,7 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>16-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>$INFO[ListItem.Property(Addon.Type)]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
@@ -78,7 +78,7 @@
                     <posx>0</posx>
                     <posy>3-row</posy>
                     <width>10-col-gutter</width>
-                    <font>dialogTitle</font>
+                    <font>mediumStrong</font>
                     <label>$INFO[ListItem.Property(Addon.Name)]</label>
                 </control>
                 <control type="label">
@@ -172,8 +172,7 @@
                             <label>31117</label>
                             <label2></label2>
                             <thumb>-</thumb>
-                            <onclick>RunAddon($INFO[ListItem.Property(Addon.id)])</onclick>
-                            <onclick>action(back)</onclick>
+                            <onclick>sendclick(12)</onclick>
                         </item>
                         <item id="2">
                             <label>$INFO[Control.GetLabel(6)]</label>
@@ -245,6 +244,9 @@
             <control type="button" id="11">
                 <description>Rollback button</description>
                 <label>24048</label>
+            </control>
+			<control type="button" id="12">
+                <description>Launch addon</description>
             </control>
         </control>
         <!--debugging-->
