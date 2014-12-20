@@ -3,6 +3,7 @@
 	<defaultcontrol always="true">8000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<onload>RunScript(script.artistslideshow)</onload>
+	<onload>AlarmClock(controlDialog,setfocus(9876),00:05,silent)</onload>
 	<onunload>activateWindow(MusicLibrary)</onunload>
 	<controls>
 		<control type="image">
@@ -10,7 +11,7 @@
             <texture>colors/black.png</texture>
             <colordiffuse>ffFFFFFF</colordiffuse>
             <aspectratio>stretch</aspectratio>
-        </control>
+        </control>		
 		<control type="group">
 			<include>fadeInOut</include>
 			<!--fanart-->
@@ -62,6 +63,12 @@
 					<animation type="windowClose">
 						<effect type="fade" start="100" end="0" time="300" />
 					</animation>
+					
+					<!--Screen burn protection-->
+					<animation type="conditional" condition="true" pulse="true">
+						<effect type="fade" start="100" end="0" time="2500" delay="20000"/>
+					</animation>
+					
 					<posx>0</posx>
 					<posy>row-14-begin</posy>						
 					<control type="image">
@@ -135,13 +142,13 @@
 					</control>				
 				</control>	
 				<!--dialog controls-->
-				<control type="group">
+				<control type="group" id="8765">
 					<posx>0</posx>
 					<posy>996</posy>
-					
-					<animation type="windowOpen">
-						<effect type="slide" start="0,50" end="0,0" tween="cubic" easing="out" delay="1000" time="300" />  
-						<effect type="fade" start="0" end="100" time="500" delay="1000"/>
+															
+					<animation type="conditional" condition="!Controlgroup(8765).HasFocus">
+						<effect type="slide" start="0,0" end="0,50" tween="cubic" easing="out" delay="500" time="300" />  
+						<effect type="fade" start="100" end="0" time="500" delay="500"/>
 					</animation>
 					<animation type="windowClose">
 						<effect type="fade" start="100" end="0" time="300" />
@@ -175,6 +182,8 @@
 			            <orientation>horizontal</orientation>
 						<onright>control.setfocus(8002,0)</onright>
 						<onleft>control.setfocus(8002,4)</onleft>
+						<onup>9876</onup>
+						<ondown>9876</ondown>
 			            <itemlayout width="1-col" height="1-col">
 							<control type="image">
 		                        <posx>19</posx>
@@ -302,6 +311,8 @@
 			            <orientation>horizontal</orientation>
 						<onleft>control.setfocus(8000,5)</onleft>
 						<onright>control.setfocus(8000,0)</onright>
+						<onup>9876</onup>
+						<ondown>9876</ondown>
 			            <itemlayout width="3-col" height="1-col">
 							<control type="image">
 		                        <posx>0</posx>
@@ -401,6 +412,20 @@
 				</control>			
 			</control>
 		</control>
+		
+		<!--hidden button to handle dialog autohide-->
+		<control type="button" id="9876">
+			<posx>0</posx>
+			<posy>0</posy>
+            <height>1-col</height>
+			<width>1-col</width>
+			<onup>8000</onup>
+			<ondown>8000</ondown>
+			<onleft>8000</onleft>
+			<onright>8000</onright>
+			<onclick>control.setfocus(8000)</onclick>
+        </control>
+		
 		<!--debugging-->
 		<include>DebugGrid</include>
 		<control type="label">
