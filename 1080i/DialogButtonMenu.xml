@@ -68,7 +68,7 @@
                     <item id="5">
                         <label>13013</label>
                         <thumb>-</thumb>
-                        <onclick>XBMC.Reset()</onclick>
+                        <onclick>XBMC.Reboot()</onclick>
                     </item>
 					<item id="6">
                         <label>$LOCALIZE[20126] $INFO[system.profilename]</label>

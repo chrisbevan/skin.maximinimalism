@@ -40,7 +40,7 @@
                     </control>
                     <control type="label">
                         <posx>12</posx>
-                        <posy>-12</posy>
+                        <posy>-11</posy>
                         <width>252</width>
                         <font>itemTitleSmallCondensed</font>
                         <textcolor>selected</textcolor>
@@ -83,7 +83,7 @@
                     </control>
                     <control type="label">
                         <posx>12</posx>
-                        <posy>-12</posy>
+                        <posy>-11</posy>
                         <width>252</width>
                         <font>itemTitleSmallCondensed</font>
                         <textcolor>black</textcolor>

@@ -27,7 +27,7 @@
             </control>
             <control type="label">
                 <posx>0</posx>
-                <posy>106</posy>
+                <posy>112</posy>
                 <width>24-col</width>
                 <align>center</align>
                 <font>Large</font>
@@ -127,7 +127,7 @@
                         <label>31000</label>
                         <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>activateWindow(videolibrary)</onclick>
+                        <onclick>activateWindow(Videos,videodb://)</onclick>
                         <onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
                     </item>
                     <item>

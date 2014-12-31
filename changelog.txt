@@ -1,8 +1,9 @@
 [B]1.1.1[/B]
 - [BUGFIX] default focussed item fixed for certain select dialogs (blu-ray & subtitles etc)
-- [UPDATED] Additional toggle options for the addon browser
+- [UPDATED] Additional toggle options added for the addon browser
 - [NEW] Hebrew translation (thanks dhead666)
-- [CHANGED] Fullscreen music screen now autohides player controls. Extra fade animations now used to reduce potential for plasma screen burn problems
+- [CHANGED] Fullscreen music screen now autohides player controls. Extra fade animations now used to reduce potential for plasma screen burn problems (more work probably required to refine)
+- Misc tweaks, fixes and minor layout adjustments
 
 [B]1.1.0[/B]
 ****Kodi Helix builds only****

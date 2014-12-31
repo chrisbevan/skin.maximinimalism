@@ -74,7 +74,7 @@
                 <description>buffering label</description>
                 <posx>24</posx>
                 <posy>30</posy>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <width>468</width>
                 <height>1-row</height>

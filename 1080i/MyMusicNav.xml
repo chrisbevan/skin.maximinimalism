@@ -62,7 +62,7 @@
                     <control type="group">
                         <visible>SubString(skin.string(showRecentMusicItems),true) | isEmpty(container.foldername)</visible>
                         <posx>0</posx>
-                        <posy>183</posy>
+                        <posy>158</posy>
                         <onleft>9000</onleft>
 						<onback>activateWindow(home)</onback>
                         <animation type="conditional" condition="window.Next(0)">
@@ -71,26 +71,14 @@
                         <animation type="windowclose">
                             <effect type="fade" start="100" end="0" time="300" />
                         </animation>
-                        <!--no recent items-->
-                        <control type="label">
-                            <visible>isEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
-                            <posx>1-col</posx>
-                            <posy>4-row</posy>
-                            <width>21-col</width>
-                            <font>veryLarge</font>
-                            <textcolor>22FFFFFF</textcolor>
-                            <shadowcolor>-</shadowcolor>
-                            <label>31007</label>
-                        </control>
                         <!--content-->
                         <control type="panel" id="9998">
-                            <visible>!isEmpty(Window(Home).Property(RecentAlbum.1.Title)) + !SubString(skin.string(showRecentMusicItems),false)</visible>
                             <posx>-12</posx>
                             <posy>0</posy>
                             <width>22-col</width>
-                            <height>13-row</height>
+                            <height>744</height>
                             <onleft>9000</onleft>
-							<content>plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]</content>
+							<content>plugin://service.library.data.provider?type=recentalbums&amp;reload=]</content>
                             <itemlayout width="312" height="366">
                                 <control type="image">
                                     <posx>0</posx>
@@ -118,7 +106,7 @@
                                     </control>
                                     <control type="label">
                                         <posx>12</posx>
-                                        <posy>-12</posy>
+                                        <posy>-11</posy>
                                         <width>252</width>
                                         <font>itemTitleSmallCondensed</font>
                                         <textcolor>selected</textcolor>
@@ -161,7 +149,7 @@
                                     </control>
                                     <control type="label">
                                         <posx>12</posx>
-                                        <posy>-12</posy>
+                                        <posy>-11</posy>
                                         <width>252</width>
                                         <font>itemTitleSmallCondensed</font>
                                         <scroll>true</scroll>
@@ -213,63 +201,18 @@
         </control>
         <!--sorting and misc controls-->
         <control type="group" id="61">
-            <!--animations-->
-            <animation type="Conditional" condition="!controlgroup(61).hasfocus">
-                <effect type="fade" start="100" end="0" time="200" />
-            </animation>
-            <animation type="Conditional" condition="controlgroup(61).hasfocus">
-                <effect type="fade" start="0" end="100" time="200" />
-            </animation>
-            <animation type="conditional" condition="window.next(1)">
-                <effect type="fade" start="100" end="0" time="300" />
-            </animation>
-            <!--overlay-->
-            <control type="image">
-                <include>dimensionsFullscreen</include>
-                <texture>backgrounds/vignette.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <!--titles-->
             <control type="group">
                 <posx>24</posx>
                 <posy>111</posy>
                 <animation type="Conditional" condition="controlgroup(62).hasfocus">
                     <effect type="fade" start="0" end="100" time="300" />
-                    <effect type="slide" start="-100" end="0" tween="sine" easing="out" time="400" />
+                    <effect type="slide" start="-200" end="0" tween="sine" easing="out" time="400" />
                 </animation>
                 <animation type="Conditional" condition="!controlgroup(62).hasfocus | Window.IsActive(5000)">
-                    <effect type="fade" start="100" end="0" time="300" />
-                    <effect type="slide" start="0" end="-100" tween="sine" easing="out" time="400" />
+                    <effect type="fade" start="100" end="0" time="400" />
+                    <effect type="slide" start="0" end="-200" tween="sine" easing="out" time="400" />
                 </animation>
-                <control type="image">
-                    <posx>-96</posx>
-                    <posy>-111</posy>
-                    <width>col-5-begin</width>
-                    <height>fullscreenHeight</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture>colors/selected.png</texture>
-                    <colordiffuse>ffffffff</colordiffuse>
-                    <bordersize>0</bordersize>
-                </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>14-col</width>
-                    <font>pageTitle</font>
-                    <label>249</label>
-                    <textcolor>black</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>45</posy>
-                    <width>24-col</width>
-                    <font>regular</font>
-                    <label>33063</label>
-                    <textcolor>black</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                </control>
                 <!--menu-->
                 <include>sideBarMenuItems</include>
             </control>

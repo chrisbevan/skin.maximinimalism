@@ -85,7 +85,7 @@
 					<control type="label">
 						<posx>col-4-begin</posx>
 						<posy>-4</posy>
-						<width>24-col</width>
+						<width>20-col</width>
 						<font>largeBlack</font>
 						<textcolor>selected</textcolor>
 						<scroll>false</scroll>
@@ -95,7 +95,7 @@
 						<visible>!Pvr.IsPlayingRadio</visible>
 						<posx>col-4-begin</posx>
 						<posy>1-row</posy>
-						<width>24-col</width>
+						<width>20-col</width>
 						<font>medium</font>
 						<textcolor>selected</textcolor>
 						<scroll>false</scroll>
@@ -105,7 +105,7 @@
 						<visible>Pvr.IsPlayingRadio</visible>
 						<posx>col-4-begin</posx>
 						<posy>1-row</posy>
-						<width>24-col</width>
+						<width>20-col</width>
 						<font>medium</font>
 						<textcolor>selected</textcolor>
 						<scroll>false</scroll>
@@ -115,7 +115,7 @@
 						<visible>!player.hasmedia</visible>
 						<posx>col-4-begin</posx>
 						<posy>1-row</posy>
-						<width>24-col</width>
+						<width>20-col</width>
 						<font>medium</font>
 						<textcolor>selected</textcolor>
 						<scroll>false</scroll>
@@ -124,7 +124,7 @@
 					<control type="label">
 						<posx>col-4-begin</posx>
 						<posy>118</posy>
-						<width>24-col</width>
+						<width>20-col</width>
 						<font>regularStrong</font>
 						<textcolor>selected</textcolor>
 						<scroll>false</scroll>

@@ -71,7 +71,7 @@
 		<item>
 		    <label>31005</label>
 		    <label2></label2>
-			<onclick>ActivateWindow(videolibrary)</onclick>
+			<onclick>activateWindow(Videos,videodb://recentlyaddedmovies/)</onclick>
 		    <onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
 		    <onclick>Control.SetFocus(9000)</onclick>
 		</item>
@@ -192,7 +192,7 @@
 		<item>
 			<visible></visible>
 		    <label>31010</label>
-		    <onclick>ActivateWindow(Videos,addons,return)</onclick>		  
+		    <onclick>ActivateWindow(Videos,addons://sources/video/)</onclick>		  
 		  	<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 		    <onclick>Control.SetFocus(59)</onclick>
 		</item>
@@ -247,7 +247,7 @@
 			<visible>Library.HasContent(Music)</visible>
 		    <label>133</label>
 		    <label2></label2>
-		    <onclick>ReplaceWindow(MusicLibrary,Artists,return)</onclick>
+		    <onclick>replaceWindow(musiclibrary,musicdb://artists)</onclick>
 			<onclick>Control.SetFocus(53)</onclick>
 		    <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 		</item>
@@ -255,7 +255,7 @@
 			<visible>Library.HasContent(Music)</visible>
 		    <label>132</label>
 		    <label2></label2>
-		    <onclick>ReplaceWindow(MusicLibrary,Albums,return)</onclick>
+		    <onclick>replaceWindow(musiclibrary,musicdb://albums)</onclick>
 			<onclick>Control.SetFocus(55)</onclick>
 		    <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 		</item>
@@ -263,7 +263,7 @@
 			<visible>Library.HasContent(Music)</visible>
 		    <label>135</label>
 		    <label2></label2>
-		    <onclick>ReplaceWindow(MusicLibrary,Genres,return)</onclick>
+		    <onclick>ReplaceWindow(MusicLibrary,musicdb://genres)</onclick>
 			<onclick>Control.SetFocus(53)</onclick>
 		    <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 		</item>  
@@ -271,7 +271,7 @@
 			<visible>Library.HasContent(Music)</visible>
 		    <label>271</label>
 		    <label2></label2>
-		    <onclick>replaceWindow(MusicLibrary,top100,return)</onclick>
+		    <onclick>replaceWindow(MusicLibrary,musicdb://top100/)</onclick>
 			<onclick>Control.SetFocus(51)</onclick>
 		    <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 		</item>
@@ -280,7 +280,7 @@
 		    <label>20389</label>
 		    <label2></label2>
 			<onclick>Skin.SetString(keepMusicMenuActive,true)</onclick>
-		    <onclick>activateWindow(Videos,MusicVideoTitles,return)</onclick>
+		    <onclick>activateWindow(Videolibrary,videodb://musicvideos/titles/)</onclick>
 		    <onclick>control.setfocus(50)</onclick>
 		    <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
 		</item>
@@ -288,7 +288,7 @@
 			<visible></visible>
 		    <label>136</label>
 		    <label2></label2>
-		    <onclick>ReplaceWindow(MusicFiles,Playlists,return)</onclick>
+		    <onclick>ReplaceWindow(MusicFiles,special://musicplaylists/)</onclick>
 			<onclick>Control.SetFocus(51)</onclick>
 		    <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 		</item>		

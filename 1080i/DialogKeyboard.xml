@@ -20,7 +20,7 @@
                 <width>fullscreenWidth</width>
                 <height>15-row</height>
                 <texture>colors/black.png</texture>
-                <colordiffuse>ccffffff</colordiffuse>
+                <colordiffuse>ddffffff</colordiffuse>
             </control>
             <!--headers-->
             <control type="group">
@@ -38,7 +38,7 @@
 				</control> 
                 <control type="edit" id="312">
                     <description>Edit Text</description>
-                    <posx>0</posx>
+                    <posx>12</posx>
                     <posy>-12</posy>
                     <width>17-col</width>
                     <align>center</align>

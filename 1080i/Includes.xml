@@ -89,7 +89,7 @@
             </control>
             <!--show media fanart in relevant sections-->
             <control type="group">
-                <visible>container.content(seasons) | container.content(songs) | [container.content(episodes) + !Substring(Container.folderpath,iplayer)]</visible>
+                <visible>container.content(seasons) | [!window.isactive(musicplaylist) + container.content(songs)] | [container.content(episodes) + !Substring(Container.folderpath,iplayer)]</visible>
                 <animation type="visible" reversible="false">
                     <effect type="fade" start="0" end="100" time="500" delay="400" />
                 </animation>

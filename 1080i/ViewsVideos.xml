@@ -5,7 +5,7 @@
         <control type="group">
             <visible>container.content(addons)</visible>
             <posx>0</posx>
-            <posy>3-row</posy>
+            <posy>158</posy>
             <animation type="windowopen">
                 <include>listSlideIn</include>
             </animation>
@@ -14,10 +14,10 @@
             </animation>
             <control type="panel" id="59">
                 <visible>container.content(addons)</visible>
-                <posx>-12</posx>
+                <posx>0</posx>
                 <posy>0</posy>
                 <width>$VAR[gridWidth]</width>
-                <height>720</height>
+                <height>744</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <ondown>53</ondown>
@@ -51,7 +51,7 @@
                         </control>
                         <control type="label">
                             <posx>12</posx>
-                            <posy>-12</posy>
+                            <posy>-11</posy>
                             <width>252</width>
                             <font>itemTitleSmall</font>
                             <textcolor>selected</textcolor>
@@ -94,7 +94,7 @@
                         </control>
                         <control type="label">
                             <posx>12</posx>
-                            <posy>-12</posy>
+                            <posy>-11</posy>
                             <width>252</width>
                             <font>itemTitleSmall</font>
                             <textcolor>black</textcolor>
@@ -301,7 +301,7 @@
         <control type="group">
             <visible>container.content(seasons)</visible>
             <posx>0</posx>
-            <posy>3-row</posy>
+            <posy>156</posy>
             <animation type="hidden">
                 <effect type="fade" start="100" end="0" time="300" />
             </animation>
@@ -314,7 +314,7 @@
                 <posx>0</posx>
                 <posy>4</posy>
 				<width>21-col</width>
-                <height>12-row</height>
+                <height>744</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <ondown>50</ondown>
@@ -349,7 +349,7 @@
                         </control>
                         <control type="label">
                             <posx>12</posx>
-                            <posy>-12</posy>
+                            <posy>-11</posy>
                             <width>4-col-gutter</width>
                             <font>itemTitleSmall</font>
                             <textcolor>selected</textcolor>
@@ -392,7 +392,7 @@
                         </control>
                         <control type="label">
                             <posx>12</posx>
-                            <posy>-12</posy>
+                            <posy>-11</posy>
                             <width>4-col-gutter</width>
                             <font>itemTitleSmall</font>
                             <textcolor>black</textcolor>
@@ -439,7 +439,7 @@
                 <visible>Substring(Container.folderpath,plugin)</visible>
                 <posx>12-col</posx>
                 <posy>8</posy>
-                <width>9-col-gutter</width>
+                <width>7-col</width>
                 <height>-</height>
                 <aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
                 <texture border="0">$INFO[ListItem.thumb]</texture>
@@ -669,137 +669,6 @@
                         <selectedcolor>black</selectedcolor>
                         <shadowcolor>-</shadowcolor>
                         <label></label>
-                    </control>
-                </focusedlayout>
-            </control>
-        </control>
-    </include>
-    <!--TVCatchup optimised text list-->
-    <include name="viewListTVCatchup">
-        <control type="group">
-            <posx>0</posx>
-            <posy>3-row</posy>
-            <animation type="windowopen">
-                <include>listSlideIn</include>
-            </animation>
-            <animation type="windowclose">
-                <effect type="fade" start="100" end="0" time="200" />
-            </animation>
-            <control type="panel" id="54">
-                <visible>Substring(Container.foldername,TVCatchup)</visible>
-                <posx>0</posx>
-                <posy>4</posy>
-                <width>20-col</width>
-                <height>12-row</height>
-                <onleft>9000</onleft>
-                <onright>60</onright>
-                <ondown>54</ondown>
-                <onup>54</onup>
-                <focusposition>4</focusposition>
-                <movement>4</movement>
-                <pagecontrol>60</pagecontrol>
-                <scrolltime tween="sine" easing="inout">300</scrolltime>
-                <itemlayout width="20-col" height="1-row">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>2</posy>
-                        <width>20-col</width>
-                        <height>53</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="24,0,24,0">UIControls/listitemNF.png</texture>
-                        <bordersize>0</bordersize>
-                        <colordiffuse>99FFFFFF</colordiffuse>
-                    </control>
-                    <control type="image">
-                        <posx>3</posx>
-                        <posy>4</posy>
-                        <width>48</width>
-                        <height>48</height>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-                    </control>
-                    <control type="label">
-                        <posx>60</posx>
-                        <posy>0</posy>
-                        <width>3-col-gutter</width>
-                        <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.director]</label>
-                        <scroll>false</scroll>
-                    </control>
-                    <control type="label">
-                        <posx>4-col</posx>
-                        <posy>0</posy>
-                        <width>7-col</width>
-                        <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.label]</label>
-                        <scroll>false</scroll>
-                    </control>
-                    <control type="label">
-                        <posx>12-col</posx>
-                        <posy>0</posy>
-                        <width>7-col</width>
-                        <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.genre]</label>
-                        <scroll>false</scroll>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="20-col" height="1-row">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>2</posy>
-                        <width>20-col</width>
-                        <height>53</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="24,0,24,0">UIControls/listitemFO.png</texture>
-                        <bordersize>0</bordersize>
-                        <colordiffuse>FFFFFFFF</colordiffuse>
-                    </control>
-                    <control type="image">
-                        <posx>3</posx>
-                        <posy>4</posy>
-                        <width>48</width>
-                        <height>48</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-                    </control>
-                    <control type="label">
-                        <posx>60</posx>
-                        <posy>0</posy>
-                        <width>3-col-gutter</width>
-                        <font>itemTitle</font>
-                        <textcolor>black</textcolor>
-                        <selectedcolor>black</selectedcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.director]</label>
-                        <scroll>false</scroll>
-                    </control>
-                    <control type="label">
-                        <posx>4-col</posx>
-                        <posy>0</posy>
-                        <width>7-col</width>
-                        <font>itemTitle</font>
-                        <textcolor>black</textcolor>
-                        <selectedcolor>black</selectedcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.label]</label>
-                        <scroll>false</scroll>
-                    </control>
-                    <control type="label">
-                        <posx>12-col</posx>
-                        <posy>0</posy>
-                        <width>7-col</width>
-                        <font>itemTitle</font>
-                        <textcolor>black</textcolor>
-                        <selectedcolor>black</selectedcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.genre]</label>
-                        <scroll>false</scroll>
                     </control>
                 </focusedlayout>
             </control>

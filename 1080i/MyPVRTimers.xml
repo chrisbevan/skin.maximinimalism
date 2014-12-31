@@ -83,11 +83,11 @@
 								<texture diffuse="masks/circle.png" border="0">colors/offblack.png</texture>
 							</control>
 							<control type="label">
-								<visible>!isempty(ListItem.playcount) + !ListItem.IsResumable</visible>
-								<posx>18</posx>
-								<posy>0</posy>
-								<width>30</width>
-								<font>symbol</font>
+								<visible>ListItem.HasTimer</visible>
+								<posx>11</posx>
+	                            <posy>-2</posy>
+	                            <width>38</width>
+	                            <font>symbolLarge</font>
 								<textcolor>selected</textcolor>
 								<shadowcolor>-</shadowcolor>
 								<label></label>
@@ -95,39 +95,30 @@
 							<control type="label">
 								<posx>1-col</posx>
 								<posy>0</posy>
-								<width>10-col-gutter</width>
+								<width>6-col-gutter</width>
 								<font>itemTitle</font>
 								<textcolor>selected</textcolor>
 								<shadowcolor>-</shadowcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>13-col</posx>
+								<posx>8-col</posx>
 								<posy>0</posy>
-								<width>4-col-gutter</width>
+								<width>8-col-gutter</width>
 								<font>itemTitle</font>
 								<textcolor>selected</textcolor>
 								<shadowcolor>-</shadowcolor>
 								<label>$INFO[ListItem.Date]</label>
 							</control>
 							<control type="label">
-								<posx>17-col</posx>
+								<posx>16-col</posx>
 								<posy>0</posy>
-								<width>30</width>
-								<font>symbol</font>
-								<textcolor>selected</textcolor>
-								<shadowcolor>-</shadowcolor>
-								<label></label>
-							</control>
-							<control type="label">
-								<posx>1260</posx>
-								<posy>0</posy>
-								<width>2-col</width>
+								<width>4-col-gutter</width>
 								<font>itemTitle</font>
 								<textcolor>selected</textcolor>
 								<shadowcolor>-</shadowcolor>
-								<label>$INFO[ListItem.Duration]</label>
-							</control>
+								<label>$INFO[ListItem.Comment]</label>
+							</control>		
 						</itemlayout>
 						<focusedlayout width="20-col" height="1-row">
 							<control type="image">
@@ -150,10 +141,10 @@
 							</control>
 							<control type="label">
 								<visible>!isempty(ListItem.playcount) + !ListItem.IsResumable</visible>
-								<posx>18</posx>
-								<posy>0</posy>
-								<width>30</width>
-								<font>symbol</font>
+								<posx>11</posx>
+	                            <posy>-2</posy>
+	                            <width>38</width>
+	                            <font>symbolLarge</font>
 								<textcolor>selected</textcolor>
 								<shadowcolor>-</shadowcolor>
 								<label></label>
@@ -161,7 +152,7 @@
 							<control type="label">
 								<posx>1-col</posx>
 								<posy>0</posy>
-								<width>10-col-gutter</width>
+								<width>6-col-gutter</width>
 								<font>itemTitle</font>
 								<textcolor>black</textcolor>
 								<selectedcolor>black</selectedcolor>
@@ -169,9 +160,9 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>13-col</posx>
+								<posx>8-col</posx>
 								<posy>0</posy>
-								<width>4-col-gutter</width>
+								<width>8-col-gutter</width>
 								<font>itemTitle</font>
 								<textcolor>black</textcolor>
 								<selectedcolor>black</selectedcolor>
@@ -179,24 +170,14 @@
 								<label>$INFO[ListItem.Date]</label>
 							</control>
 							<control type="label">
-								<posx>17-col</posx>
+								<posx>16-col</posx>
 								<posy>0</posy>
-								<width>30</width>
-								<font>symbol</font>
-								<textcolor>black</textcolor>
-								<selectedcolor>black</selectedcolor>
-								<shadowcolor>-</shadowcolor>
-								<label></label>
-							</control>
-							<control type="label">
-								<posx>1260</posx>
-								<posy>0</posy>
-								<width>2-col</width>
+								<width>4-col-gutter</width>
 								<font>itemTitle</font>
 								<textcolor>black</textcolor>
 								<selectedcolor>black</selectedcolor>
 								<shadowcolor>-</shadowcolor>
-								<label>$INFO[ListItem.Duration]</label>
+								<label>$INFO[ListItem.Comment]</label>
 							</control>
 						</focusedlayout>
 					</control>
@@ -237,31 +218,17 @@
         </control>
         <!--sorting and misc controls-->
         <control type="group" id="61">
-            <!--animations-->
-            <animation type="Conditional" condition="!controlgroup(61).hasfocus">
-                <effect type="fade" start="100" end="0" time="200" />
-            </animation>
-            <animation type="Conditional" condition="controlgroup(61).hasfocus">
-                <effect type="fade" start="0" end="100" time="200" />
-            </animation>
-            <!--overlay-->
-            <control type="image">
-                <include>dimensionsFullscreen</include>
-                <texture>backgrounds/vignette.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <!--Options-->
             <control type="group">
 				<posx>24</posx>
                 <posy>111</posy>
                 <animation type="Conditional" condition="controlgroup(62).hasfocus">
                     <effect type="fade" start="0" end="100" time="300" />
-                    <effect type="slide" start="-100" end="0" tween="sine" easing="out" time="400" />
+                    <effect type="slide" start="-200" end="0" tween="sine" easing="out" time="400" />
                 </animation>
                 <animation type="Conditional" condition="!controlgroup(62).hasfocus | Window.IsActive(5000)">
-                    <effect type="fade" start="100" end="0" time="300" />
-                    <effect type="slide" start="0" end="-100" tween="sine" easing="out" time="400" />
+                    <effect type="fade" start="100" end="0" time="400" />
+                    <effect type="slide" start="0" end="-200" tween="sine" easing="out" time="400" />
                 </animation>
                 <!--menu-->
                 <include>sideBarMenuItems</include>

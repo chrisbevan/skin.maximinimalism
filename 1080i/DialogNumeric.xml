@@ -14,7 +14,7 @@
             <width>fullscreenWidth</width>
             <height>10-row</height>
             <texture>colors/black.png</texture>
-            <colordiffuse>ccffffff</colordiffuse>
+            <colordiffuse>ddffffff</colordiffuse>
         </control>
         <!--headers-->
         <control type="group">
@@ -36,7 +36,7 @@
                 <width>8-col</width>
                 <height>1-row</height>
                 <aspectratio>stretch</aspectratio>
-                <texture>colors/keyselected.png</texture>
+                <texture>colors/offblack.png</texture>
             </control>
             <control type="label" id="4">
                 <description>Edit Text</description>

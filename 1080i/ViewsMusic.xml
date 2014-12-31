@@ -2,12 +2,11 @@
 <includes>
     <!--default text list 1 row-->
     <include name="viewMusicList">
-		<visible></visible>
         <control type="group">
             <posx>0</posx>
             <posy>3-row</posy>
             <control type="panel" id="51">
-                <visible>!container.content(artists) + !container.content(genres) + !container.content(albums) + !container.content(songs) + !container.content(addons)</visible>
+                <visible>!control.isvisible(9998) + !container.content(artists) + !container.content(genres) + !container.content(albums) + !container.content(songs) + !container.content(addons)</visible>
                 <posx>0</posx>
                 <posy>4</posy>
                 <width>12-col</width>
@@ -183,15 +182,16 @@
     </include>
     <!--Grid View-->
     <include name="viewMusicGrid">
+		<visible></visible>
         <control type="group">
             <posx>0</posx>
-            <posy>3-row</posy>
+            <posy>154</posy>
             <control type="panel" id="55">
                 <visible>container.content(albums) | container.content(addons)</visible>
                 <posx>-12</posx>
                 <posy>4</posy>
                 <width>22-col</width>
-                <height>706</height>
+                <height>744</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <ondown>55</ondown>
@@ -226,7 +226,7 @@
                         </control>
                         <control type="label">
                             <posx>12</posx>
-                            <posy>-12</posy>
+                            <posy>-11</posy>
                             <width>252</width>
                             <font>itemTitleSmallCondensed</font>
                             <textcolor>selected</textcolor>
@@ -278,7 +278,7 @@
                         </control>
                         <control type="label">
                             <posx>12</posx>
-                            <posy>-12</posy>
+                            <posy>-11</posy>
                             <width>252</width>
                             <font>itemTitleSmallCondensed</font>
                             <textcolor>black</textcolor>
