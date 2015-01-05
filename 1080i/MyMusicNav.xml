@@ -4,6 +4,8 @@
     <allowoverlay>yes</allowoverlay>
     <onload condition="window.previous(0)">setfocus(9000)</onload>
 	<previouswindow>home</previouswindow>
+	<onload>ClearProperty(recentalbums,10000)</onload>
+	<onload>ClearProperty(recentalbums-data,10000)</onload>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
@@ -78,7 +80,7 @@
                             <width>22-col</width>
                             <height>744</height>
                             <onleft>9000</onleft>
-							<content>plugin://service.library.data.provider?type=recentalbums&amp;reload=]</content>
+							<content>plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]]</content>
                             <itemlayout width="312" height="366">
                                 <control type="image">
                                     <posx>0</posx>

@@ -73,6 +73,7 @@
 		    <label2></label2>
 			<onclick>activateWindow(Videos,videodb://recentlyaddedmovies/)</onclick>
 		    <onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
+			<onclick>ReloadSkin()</onclick>
 		    <onclick>Control.SetFocus(9000)</onclick>
 		</item>
 		<item>
@@ -232,6 +233,7 @@
 		    <label>31005</label>
 		    <label2></label2>
 		    <onclick>ActivateWindow(MusicLibrary)</onclick>
+			<onclick>ReloadSkin()</onclick>
 		    <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
 		</item>
 		<!--music-->
@@ -271,7 +273,7 @@
 			<visible>Library.HasContent(Music)</visible>
 		    <label>271</label>
 		    <label2></label2>
-		    <onclick>replaceWindow(MusicLibrary,musicdb://top100/)</onclick>
+		    <onclick>replaceWindow(MusicLibrary,musicdb://top100/songs)</onclick>
 			<onclick>Control.SetFocus(51)</onclick>
 		    <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
 		</item>

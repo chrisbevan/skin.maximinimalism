@@ -4,6 +4,11 @@
     <allowoverlay>yes</allowoverlay>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <onload condition="window.previous(0)">setfocus(9000)</onload>
+	<onload>ClearProperty(recentvideos,10000)</onload>
+	<onload>ClearProperty(recentepisodes,10000)</onload>
+	<onload>ClearProperty(recentmovies,10000)</onload>
+	<onload>ClearProperty(recentepisodes-data,10000)</onload>
+	<onload>ClearProperty(recentmovies-data,10000)</onload>
 	<previouswindow>home</previouswindow>
     <controls>
         <include>globalBackground</include>
@@ -130,7 +135,7 @@
                             <onleft>9000</onleft>
 							<ondown>9998</ondown>
 							<onback>activateWindow(home)</onback>
-							<content>plugin://service.library.data.provider?type=recentvideos&amp;reload=true]</content>
+							<content>plugin://service.library.data.provider?type=recentvideos&amp;reload=$INFO[Window.Property(recentvideos)]</content>
                             <animation type="windowopen">
                                 <include>listSlideIn</include>
                             </animation>

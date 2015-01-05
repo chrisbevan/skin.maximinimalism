@@ -562,11 +562,11 @@
                         <label>$INFO[ListItem.Artist] - $INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
-                        <posx>11-col-gutter</posx>
+                        <posx>17-col-gutter</posx>
                         <posy>17</posy>
                         <width>4-col-gutter</width>
                         <font>itemTitle</font>
-                        <align>right</align>
+                        <align>left</align>
                         <height>24</height>
                         <textcolor>selected</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -634,7 +634,7 @@
                         <label>$INFO[ListItem.Artist] - $INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
-                        <right>195</right>
+                        <posx>17-col-gutter</posx>
                         <posy>17</posy>
                         <width>4-col-gutter</width>
                         <font>itemTitle</font>

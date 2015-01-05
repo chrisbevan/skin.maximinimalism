@@ -239,7 +239,7 @@
                 <font>buttonTitle</font>
                 <textcolor>selected</textcolor>
                 <label>$INFO[ListItem.FileName]</label>
-            </control>
+            </control>	
         </control>
 	</include>	
     <!--debugging-->
