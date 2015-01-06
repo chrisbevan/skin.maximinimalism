@@ -189,7 +189,7 @@
                     </item>
                 </content>
             </control>
-        </control>        
+        </control>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

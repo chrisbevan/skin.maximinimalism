@@ -148,7 +148,7 @@
             </animation>
             <animation type="hidden">
                 <effect type="fade" start="100" end="0" time="200" />
-            </animation>    
+            </animation>
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <texture>colors/black.png</texture>
@@ -239,9 +239,9 @@
                 <font>buttonTitle</font>
                 <textcolor>selected</textcolor>
                 <label>$INFO[ListItem.FileName]</label>
-            </control>    
+            </control>
         </control>
-    </include>    
+    </include>
     <!--debugging-->
     <include name="DialogID">
         <posx>15</posx>

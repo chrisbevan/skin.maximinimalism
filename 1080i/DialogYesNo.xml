@@ -69,7 +69,7 @@
                     <texturenofocus>colors/black.png</texturenofocus>
                 </control>
             </control>
-        </control>     
+        </control>
         <!--error message fields (placeholders)-->
         <control type="group">
             <visible>false</visible>

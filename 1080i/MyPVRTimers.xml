@@ -4,7 +4,7 @@
     <allowoverlay>no</allowoverlay>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
-    <controls>                
+    <controls>
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">
@@ -118,7 +118,7 @@
                                 <textcolor>selected</textcolor>
                                 <shadowcolor>-</shadowcolor>
                                 <label>$INFO[ListItem.Comment]</label>
-                            </control>        
+                            </control>
                         </itemlayout>
                         <focusedlayout width="20-col" height="1-row">
                             <control type="image">

@@ -4,7 +4,7 @@
     <allowoverlay>no</allowoverlay>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
-    <controls>                
+    <controls>
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">

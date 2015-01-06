@@ -154,7 +154,7 @@
                                     <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
                                     <bordersize>3</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
-                                </control> 
+                                </control>
                                 <control type="image">
                                     <visible>!isempty(listitem.Episode)</visible>
                                     <posx>0</posx>
@@ -230,7 +230,7 @@
                                     <bordertexture border="3" colordiffuse="ffFFFFFF">colors/selected.png</bordertexture>
                                     <bordersize>3</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
-                                </control> 
+                                </control>
                                 <control type="image">
                                     <visible>!isempty(listitem.Episode)</visible>
                                     <posx>0</posx>

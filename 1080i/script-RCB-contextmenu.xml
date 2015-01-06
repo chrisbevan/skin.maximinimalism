@@ -7,7 +7,7 @@
             <posx>col-10-begin</posx>
             <posy>2-row</posy>
             <height>15-row</height>
-            <itemgap>0</itemgap>                        
+            <itemgap>0</itemgap>
             <control type="button" id="5110">
                 <description>button import games</description>
                 <label>$ADDON[script.games.rom.collection.browser 32500]</label>
@@ -17,7 +17,7 @@
                 <font>itemTitle</font>
                 <textoffsetx>12</textoffsetx>
                 <texturefocus>UIControls/textButtonFO.png</texturefocus>
-            </control>        
+            </control>
             <control type="button" id="5121">
                 <description>button rescrape game</description>
                 <label>$ADDON[script.games.rom.collection.browser 32501]</label>

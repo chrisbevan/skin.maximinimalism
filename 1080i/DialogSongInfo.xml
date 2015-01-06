@@ -4,11 +4,11 @@
     <include>fadeInOut</include>
     <controls>
         <include>modalDialog</include>
-        
+
         <control type="group">
             <posx>col-8-begin</posx>
             <posy>row-8-begin</posy>
-            
+
             <!--animations-->
             <include>modalDialogInOut</include>
 
@@ -40,10 +40,10 @@
                 <textcolor>selected</textcolor>
                 <scroll>true</scroll>
             </control>
-            
+
             <!--song ratings-->
             <control type="group">
-                
+
                 <control type="image">
                     <posx>3-col</posx>
                     <posy>134</posy>
@@ -62,7 +62,7 @@
                     <label fallback="0.0*">$INFO[ListItem.Rating,,.0*]</label>
                     <shadowcolor>-</shadowcolor>
                 </control>
-                                            
+
                 <control type="panel" id="8000">
                     <posx>6-col</posx>
                     <posy>132</posy>
@@ -133,7 +133,7 @@
                     </content>
                 </control>
             </control>
-            <!--album info / thumb download-->            
+            <!--album info / thumb download-->
             <control type="panel" id="9000">
                 <posx>3-col</posx>
                 <posy>4-row</posy>
@@ -215,9 +215,9 @@
                     </item>
                 </content>
             </control>
-               
+
         </control>
-        
+
         <control type="group">
             <visible>false</visible>
             <!--selection buttons-->
@@ -240,6 +240,6 @@
             <include>DialogID</include>
             <label>DialogSongInfo.xml</label>
         </control>
-        
+
     </controls>
 </window>

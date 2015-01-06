@@ -46,7 +46,7 @@
             <control type="group">
                 <posx>0</posx>
                 <posy>120</posy>
-                
+
                 <control type="list" id="5210">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -144,8 +144,8 @@
                     <onup>5101</onup>
                     <ondown>5223</ondown>
                 </control>
-                
-                <!-- Scraping mode -->        
+
+                <!-- Scraping mode -->
                 <control type="list" id="5220">
                     <posx>0</posx>
                     <posy>1-row</posy>
@@ -243,7 +243,7 @@
                     <onup>5212</onup>
                     <ondown>5330</ondown>
                 </control>
-                        
+
                 <control type="radiobutton" id="5330">
                     <posx>0</posx>
                     <posy>2-row</posy>
@@ -254,8 +254,8 @@
                     <onup>5223</onup>
                     <ondown>5271</ondown>
                     <onclick>Skin.ToggleSetting(rcb_overwriteImportOptions)</onclick>
-                </control>    
-                                            
+                </control>
+
                 <!-- Scraper 1 -->
                 <control type="list" id="5270">
                     <posx>0</posx>
@@ -356,7 +356,7 @@
                     <ondown>5282</ondown>
                     <enable>Skin.HasSetting(rcb_overwriteImportOptions)</enable>
                 </control>
-                
+
                 <!-- Scraper 2 -->
                 <control type="list" id="5280">
                     <posx>0</posx>
@@ -457,7 +457,7 @@
                     <ondown>5292</ondown>
                     <enable>Skin.HasSetting(rcb_overwriteImportOptions)</enable>
                 </control>
-                
+
                 <control type="list" id="5290">
                     <posx>0</posx>
                     <posy>5-row</posy>
@@ -556,7 +556,7 @@
                     <onup>5282</onup>
                     <ondown>5300</ondown>
                     <enable>Skin.HasSetting(rcb_overwriteImportOptions)</enable>
-                </control>        
+                </control>
             </control>
             <!--dialog buttons-->
             <control type="panel" id="8542">
@@ -633,18 +633,18 @@
                 </content>
             </control>
         </control>
-        
+
         <!--ok, cancel etc buttons-->
         <control type="group">
             <visible>false</visible>
-            <control type="button" id="5300"> 
+            <control type="button" id="5300">
                 <description>Import</description>
             </control>
-            <control type="button" id="5310"> 
+            <control type="button" id="5310">
                 <description>Cancel</description>
             </control>
         </control>
-        
+
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

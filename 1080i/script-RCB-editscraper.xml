@@ -1,6 +1,6 @@
 <window id="5200">
     <defaultcontrol>7000</defaultcontrol>
-    
+
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -42,7 +42,7 @@
                 <label>$ADDON[script.games.rom.collection.browser 32999] - $ADDON[script.games.rom.collection.browser 32600]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
-            </control>           
+            </control>
             <!-- Category buttons -->
             <control type="panel" id="7000">
                 <posx>0</posx>
@@ -91,10 +91,10 @@
                         <onclick>noop</onclick>
                     </item>
                 </content>
-            </control>            
+            </control>
             <control type="group" id="7010">
                 <!-- Offline scrapers -->
-                <control type="group" id="7004">                
+                <control type="group" id="7004">
                     <posx>4-col</posx>
                     <posy>120</posy>
                     <!-- Scraper List -->
@@ -186,7 +186,7 @@
                         </focusedlayout>
                     </control>
                     <control type="button" id="5601">
-                        <description>Menu Item Next Button</description>                    
+                        <description>Menu Item Next Button</description>
                         <posx>11-col</posx>
                         <posy>13</posy>
                         <width>30</width>
@@ -199,7 +199,7 @@
                         <ondown>5550</ondown>
                     </control>
                     <control type="button" id="5602">
-                        <description>Menu Item Prev Button</description>                    
+                        <description>Menu Item Prev Button</description>
                         <posx>822</posx>
                         <posy>13</posy>
                         <width>30</width>
@@ -210,7 +210,7 @@
                         <onleft>5601</onleft>
                         <onright>8542</onright>
                         <ondown>5550</ondown>
-                    </control>                
+                    </control>
                     <control type="grouplist">
                         <posx>0</posx>
                         <posy>1-row</posy>
@@ -218,7 +218,7 @@
                         <height>11-row</height>
                         <onleft>7000</onleft>
                         <onright>8542</onright>
-                        <onup>5602</onup>                        
+                        <onup>5602</onup>
                         <!-- descfile per game -->
                         <control type="radiobutton" id="5550">
                             <posx>0</posx>
@@ -226,8 +226,8 @@
                             <width>12-col</width>
                             <label>$ADDON[script.games.rom.collection.browser 32702]</label>
                             <onclick>Skin.ToggleSetting(rcb_editScraper_descFilePerGame)</onclick>
-                        </control>                        
-                        <control type="button" id="5520"> 
+                        </control>
+                        <control type="button" id="5520">
                             <description>Path game desc</description>
                             <align>left</align>
                             <height>54</height>
@@ -240,7 +240,7 @@
                             <textoffsetx>12</textoffsetx>
                             <label>$ADDON[script.games.rom.collection.browser 32703]</label>
                             <label2>$INFO[ListItem.Label]</label2>
-                        </control>                        
+                        </control>
                         <control type="button" id="5530">
                             <enable>Skin.HasSetting(rcb_editScraper_descFilePerGame)</enable>
                             <description>Game desc file mask</description>
@@ -254,9 +254,9 @@
                             <texturenofocus>-</texturenofocus>
                             <textoffsetx>12</textoffsetx>
                             <label>$ADDON[script.games.rom.collection.browser 32704]</label>
-                            <label2>$INFO[ListItem.Label]</label2>                            
-                        </control>                        
-                        <control type="button" id="5540"> 
+                            <label2>$INFO[ListItem.Label]</label2>
+                        </control>
+                        <control type="button" id="5540">
                             <description>Parse instruction</description>
                             <align>left</align>
                             <height>54</height>
@@ -266,23 +266,23 @@
                             <focusedcolor>black</focusedcolor>
                             <texturefocus>colors/selected.png</texturefocus>
                             <texturenofocus>-</texturenofocus>
-                            <textoffsetx>12</textoffsetx>                        
-                            <label>$ADDON[script.games.rom.collection.browser 32705,, - ]$INFO[ListItem.Label]</label>                            
-                        </control>                    
+                            <textoffsetx>12</textoffsetx>
+                            <label>$ADDON[script.games.rom.collection.browser 32705,, - ]$INFO[ListItem.Label]</label>
+                        </control>
                         <!-- Search by crc -->
-                        <control type="radiobutton" id="5560">                            
-                            <label>$ADDON[script.games.rom.collection.browser 32706]</label>                            
-                        </control>                    
+                        <control type="radiobutton" id="5560">
+                            <label>$ADDON[script.games.rom.collection.browser 32706]</label>
+                        </control>
                         <!-- Use foldername as crc -->
                         <control type="radiobutton" id="5580">
                             <label>$ADDON[script.games.rom.collection.browser 32707]</label>
-                        </control>                    
+                        </control>
                         <!-- Use filename as crc -->
                         <control type="radiobutton" id="5590">
                             <label>$ADDON[script.games.rom.collection.browser 32708]</label>
-                        </control>                    
+                        </control>
                         <!-- Remove scraper -->
-                        <control type="button" id="5610"> 
+                        <control type="button" id="5610">
                             <description>Remove scraper</description>
                             <align>left</align>
                             <height>54</height>
@@ -294,9 +294,9 @@
                             <texturenofocus>-</texturenofocus>
                             <textoffsetx>12</textoffsetx>
                             <label>$ADDON[script.games.rom.collection.browser 32709]</label>
-                        </control>                    
+                        </control>
                         <!-- Add scraper -->
-                        <control type="button" id="5620"> 
+                        <control type="button" id="5620">
                             <description>Add scraper</description>
                             <align>left</align>
                             <height>54</height>
@@ -311,7 +311,7 @@
                         </control>
                     </control>
                 </control>
-            </control>            
+            </control>
             <!--OK / Cancel-->
             <control type="panel" id="8542">
                 <posx>1164</posx>
@@ -402,6 +402,6 @@
         <control type="label">
             <include>WindowID</include>
             <label>script-RCB-editscraper.xml</label>
-        </control>        
+        </control>
     </controls>
 </window>

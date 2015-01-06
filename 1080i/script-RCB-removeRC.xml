@@ -6,7 +6,7 @@
         <posy>250</posy>
     </coordinates>
     <controls>
-        
+
         <!-- Window -->
         <control type="image">
             <description>background top image</description>
@@ -49,14 +49,14 @@
             <posy>0</posy>
             <width>720</width>
             <height>120</height>
-            <texture border="45,0,45,0">rcb-DialogContextMiddle.png</texture>                
+            <texture border="45,0,45,0">rcb-DialogContextMiddle.png</texture>
         </control>
         <control type="image">
             <description>background image</description>
             <posx>35</posx>
             <posy>0</posy>
             <width>640</width>
-            <height>120</height>                
+            <height>120</height>
             <texture border="0,0,0,0">rcb-floor.png</texture>
         </control>
         <control type="image">
@@ -66,7 +66,7 @@
             <width>720</width>
             <texture border="45,0,45,49">rcb-DialogContextBottom.png</texture>
         </control>
-        
+
         <!-- Rom Collection List -->
         <control type="list" id="5410">
             <hitrect x="0" y="0" w="0" h="0" />
@@ -181,7 +181,7 @@
             <onup>5101</onup>
             <ondown>5492</ondown>
         </control>
-        
+
         <!-- Delete Options -->
         <control type="list" id="5490">
             <hitrect x="0" y="0" w="0" h="0" />
@@ -296,10 +296,10 @@
             <onup>5412</onup>
             <ondown>6000</ondown>
         </control>
-            
+
         <!-- Save and Cancel -->
-            
-        <control type="button" id="6000"> 
+
+        <control type="button" id="6000">
             <description>Delete</description>
             <posx>150</posx>
             <posy>100</posy>
@@ -323,7 +323,7 @@
             <onleft>6010</onleft>
             <onright>6010</onright>
         </control>
-        <control type="button" id="6010"> 
+        <control type="button" id="6010">
             <description>Cancel</description>
             <posx>370</posx>
             <posy>100</posy>
@@ -346,6 +346,6 @@
             <ondown>5101</ondown>
             <onleft>6000</onleft>
             <onright>6000</onright>
-        </control>        
+        </control>
     </controls>
 </window>

@@ -5,7 +5,7 @@
         <posx>280</posx>
         <posy>75</posy>
     </coordinates>
-    
+
     <controls>
         <!-- Window -->
         <control type="image">
@@ -49,14 +49,14 @@
             <posy>0</posy>
             <width>720</width>
             <height>550</height>
-            <texture border="45,0,45,0">rcb-DialogContextMiddle.png</texture>                
+            <texture border="45,0,45,0">rcb-DialogContextMiddle.png</texture>
         </control>
         <control type="image">
             <description>background image</description>
             <posx>35</posx>
             <posy>0</posy>
             <width>640</width>
-            <height>550</height>                
+            <height>550</height>
             <texture border="0,0,0,0">rcb-floor.png</texture>
         </control>
         <control type="image">
@@ -65,8 +65,8 @@
             <posy>550</posy>
             <width>720</width>
             <texture border="45,0,45,49">rcb-DialogContextBottom.png</texture>
-        </control>                
-        
+        </control>
+
         <!-- Show/Hide missing info list -->
         <control type="list" id="5200">
             <hitrect x="0" y="0" w="0" h="0" />
@@ -180,7 +180,7 @@
             <onup>5101</onup>
             <ondown>5230</ondown>
         </control>
-            
+
         <!-- Artwork -->
         <control type="group">
             <posx>40</posx>
@@ -221,12 +221,12 @@
                     <aligny>center</aligny>
                     <label>$ADDON[script.games.rom.collection.browser 32854]</label>
                 </control>
-                <control type="button" id="5230"> 
+                <control type="button" id="5230">
                     <description>Add item</description>
                     <posx>15</posx>
                     <posy>25</posy>
                     <width>613</width>
-                    <height>30</height>                
+                    <height>30</height>
                     <font>font13</font>
                     <colordiffuse>DDFFFFFF</colordiffuse>
                     <texturefocus>rcb-MenuItemFO.png</texturefocus>
@@ -242,12 +242,12 @@
                     <onleft>6000</onleft>
                     <onright>6000</onright>
                 </control>
-                <control type="button" id="5240"> 
+                <control type="button" id="5240">
                     <description>Remove item</description>
                     <posx>15</posx>
                     <posy>50</posy>
                     <width>613</width>
-                    <height>30</height>                
+                    <height>30</height>
                     <font>font13</font>
                     <colordiffuse>DDFFFFFF</colordiffuse>
                     <texturefocus>rcb-MenuItemFO.png</texturefocus>
@@ -289,12 +289,12 @@
                     <aligny>center</aligny>
                     <label>$ADDON[script.games.rom.collection.browser 32854]</label>
                 </control>
-                <control type="button" id="5260"> 
+                <control type="button" id="5260">
                     <description>Add item</description>
                     <posx>15</posx>
                     <posy>25</posy>
                     <width>613</width>
-                    <height>30</height>                
+                    <height>30</height>
                     <font>font13</font>
                     <colordiffuse>DDFFFFFF</colordiffuse>
                     <texturefocus>rcb-MenuItemFO.png</texturefocus>
@@ -310,12 +310,12 @@
                     <onleft>6000</onleft>
                     <onright>6000</onright>
                 </control>
-                <control type="button" id="5270"> 
+                <control type="button" id="5270">
                     <description>Remove item</description>
                     <posx>15</posx>
                     <posy>50</posy>
                     <width>613</width>
-                    <height>30</height>                
+                    <height>30</height>
                     <font>font13</font>
                     <colordiffuse>DDFFFFFF</colordiffuse>
                     <texturefocus>rcb-MenuItemFO.png</texturefocus>
@@ -333,7 +333,7 @@
                 </control>
             </control>
         </control>
-        
+
         <!-- Info -->
         <control type="group">
             <posx>40</posx>
@@ -374,12 +374,12 @@
                     <aligny>center</aligny>
                     <label>$ADDON[script.games.rom.collection.browser 32854]</label>
                 </control>
-                <control type="button" id="5290"> 
+                <control type="button" id="5290">
                     <description>Add item</description>
                     <posx>15</posx>
                     <posy>25</posy>
                     <width>613</width>
-                    <height>30</height>                
+                    <height>30</height>
                     <font>font13</font>
                     <colordiffuse>DDFFFFFF</colordiffuse>
                     <texturefocus>rcb-MenuItemFO.png</texturefocus>
@@ -395,12 +395,12 @@
                     <onleft>6000</onleft>
                     <onright>6000</onright>
                 </control>
-                <control type="button" id="5300"> 
+                <control type="button" id="5300">
                     <description>Remove item</description>
                     <posx>15</posx>
                     <posy>50</posy>
                     <width>613</width>
-                    <height>30</height>                
+                    <height>30</height>
                     <font>font13</font>
                     <colordiffuse>DDFFFFFF</colordiffuse>
                     <texturefocus>rcb-MenuItemFO.png</texturefocus>
@@ -442,12 +442,12 @@
                     <aligny>center</aligny>
                     <label>$ADDON[script.games.rom.collection.browser 32854]</label>
                 </control>
-                <control type="button" id="5320"> 
+                <control type="button" id="5320">
                     <description>Add item</description>
                     <posx>15</posx>
                     <posy>25</posy>
                     <width>613</width>
-                    <height>30</height>                
+                    <height>30</height>
                     <font>font13</font>
                     <colordiffuse>DDFFFFFF</colordiffuse>
                     <texturefocus>rcb-MenuItemFO.png</texturefocus>
@@ -463,12 +463,12 @@
                     <onleft>6000</onleft>
                     <onright>6000</onright>
                 </control>
-                <control type="button" id="5330"> 
+                <control type="button" id="5330">
                     <description>Remove item</description>
                     <posx>15</posx>
                     <posy>50</posy>
                     <width>613</width>
-                    <height>30</height>                
+                    <height>30</height>
                     <font>font13</font>
                     <colordiffuse>DDFFFFFF</colordiffuse>
                     <texturefocus>rcb-MenuItemFO.png</texturefocus>
@@ -486,9 +486,9 @@
                 </control>
             </control>
         </control>
-            
+
         <!-- Save and Cancel -->
-        <control type="button" id="6000"> 
+        <control type="button" id="6000">
             <description>Delete</description>
             <posx>150</posx>
             <posy>540</posy>
@@ -512,7 +512,7 @@
             <onleft>6010</onleft>
             <onright>6010</onright>
         </control>
-        <control type="button" id="6010"> 
+        <control type="button" id="6010">
             <description>Cancel</description>
             <posx>370</posx>
             <posy>540</posy>
@@ -523,7 +523,7 @@
             <colordiffuse>DDFFFFFF</colordiffuse>
             <texturefocus>rcb-button-focus.png</texturefocus>
             <texturenofocus>rcb-button-nofocus.png</texturenofocus>
-            <label>$ADDON[script.games.rom.collection.browser 32635]</label>            
+            <label>$ADDON[script.games.rom.collection.browser 32635]</label>
             <textcolor>88FFFFFF</textcolor>
             <disabledcolor>80FFFFFF</disabledcolor>
             <align>center</align>
@@ -535,6 +535,6 @@
             <ondown>5101</ondown>
             <onleft>6000</onleft>
             <onright>6000</onright>
-        </control>        
+        </control>
     </controls>
 </window>

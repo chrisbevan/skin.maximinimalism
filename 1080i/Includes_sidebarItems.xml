@@ -61,7 +61,7 @@
         <label>33063</label>
         <textcolor>black</textcolor>
         <shadowcolor>-</shadowcolor>
-    </control>    
+    </control>
     <!--menu items-->
     <control type="grouplist" id="62">
         <posx>-12</posx>
@@ -97,7 +97,7 @@
         <onclick>right</onclick>
         <onclick>ActivateWindow(videoplaylist)</onclick>
     </control>
-        
+
     <!--search-->
     <control type="button" id="502">
         <description>Search (videos)</description>
@@ -116,7 +116,7 @@
         <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true)</onclick>
         <onclick>right</onclick>
     </control>
-    
+
     <control type="button" id="503">
         <description>Search (PVR)</description>
         <visible>window.isactive(pvr)</visible>
@@ -132,7 +132,7 @@
         <onclick>right</onclick>
         <onclick>activateWindow(pvrguidesearch)</onclick>
     </control>
-    
+
     <!--sorting-->
     <control type="button" id="3">
         <description>Sort by</description>
@@ -292,7 +292,7 @@
         <onclick>right</onclick>
         <onclick>activateWindow(musicplaylist)</onclick>
     </control>
-    
+
     <control type="button" id="502">
         <description>Search (music)</description>
         <visible>System.HasAddon(script.globalsearch)</visible>

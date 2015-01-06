@@ -1,7 +1,7 @@
-<window>        
+<window>
     <allowoverlay>no</allowoverlay>
     <defaultcontrol always="true">500</defaultcontrol>
-    <controls>        
+    <controls>
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">
@@ -10,7 +10,7 @@
                 <effect type="fade" start="100" end="0" time="300" />
             </animation>
             <!--shift page for certain modal dialogs-->
-            <include>modalDialogContentShift</include>                
+            <include>modalDialogContentShift</include>
             <!--content provider-->
             <control type="group" id="200">
                 <posx>0</posx>
@@ -21,7 +21,7 @@
                     <posy>row-2-begin</posy>
                     <include>dateTime</include>
                     <include>menuItems</include>
-                    <!-- Console menu-->                        
+                    <!-- Console menu-->
                     <control type="list" id="500">
                         <posx>-14</posx>
                         <posy>180</posy>
@@ -61,12 +61,12 @@
                                 <textcolor>unselected</textcolor>
                             </control>
                         </focusedlayout>
-                    </control>    
+                    </control>
                 </control>
                 <!--Folder titles-->
                 <control type="group">
                     <posx>col-4-begin</posx>
-                    <posy>row-2-begin</posy>          
+                    <posy>row-2-begin</posy>
                     <!--source title-->
                     <control type="label">
                         <posx>0</posx>
@@ -203,7 +203,7 @@
                                 <selectedcolor>black</selectedcolor>
                                 <shadowcolor>-</shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
-                            </control>                        
+                            </control>
                             <control type="label">
                                 <visible>!IsEmpty(ListItem.Property(isfavorite))</visible>
                                 <posx>36r</posx>
@@ -233,12 +233,12 @@
                         <posy>row-13-begin</posy>
                         <include>mediaListFooter</include>
                     </control>
-                </control>        
+                </control>
             </control>
-        </control>        
+        </control>
          <!--sorting and misc controls-->
          <control type="group" id="61">
-            <!--animations-->            
+            <!--animations-->
             <animation type="Conditional" condition="!controlgroup(61).hasfocus">
                 <effect type="fade" start="100" end="0" time="200" />
             </animation>
@@ -303,8 +303,8 @@
                     <itemgap>0</itemgap>
                     <onright>9000</onright>
                     <onup>62</onup>
-                    <ondown>62</ondown>            
-                    <control type="button" id="1100"> 
+                    <ondown>62</ondown>
+                    <control type="button" id="1100">
                         <description>Search</description>
                         <label>31124</label>
                         <height>54</height>
@@ -315,8 +315,8 @@
                         <texturefocus>colors/black.png</texturefocus>
                         <texturenofocus>colors/unselected.png</texturenofocus>
                         <textoffsetx>12</textoffsetx>
-                    </control>                    
-                    <control type="button" id="2000"> 
+                    </control>
+                    <control type="button" id="2000">
                         <description>Genre</description>
                         <label>$ADDON[script.games.rom.collection.browser 32401]: $INFO[control.getlabel(600)] </label>
                         <height>54</height>
@@ -328,8 +328,8 @@
                         <texturenofocus>colors/unselected.png</texturenofocus>
                         <textoffsetx>12</textoffsetx>
                         <onclick>control.setfocus(600)</onclick>
-                    </control>                    
-                    <control type="button" id="2001"> 
+                    </control>
+                    <control type="button" id="2001">
                         <description>Year</description>
                         <label>$ADDON[script.games.rom.collection.browser 32400]: $INFO[control.getlabel(700)] </label>
                         <height>54</height>
@@ -341,8 +341,8 @@
                         <texturenofocus>colors/unselected.png</texturenofocus>
                         <textoffsetx>12</textoffsetx>
                         <onclick>control.setfocus(700)</onclick>
-                    </control>                    
-                    <control type="button" id="2002"> 
+                    </control>
+                    <control type="button" id="2002">
                         <description>Publisher</description>
                         <label>$ADDON[script.games.rom.collection.browser 32402]: $INFO[control.getlabel(800)] </label>
                         <height>54</height>
@@ -354,8 +354,8 @@
                         <texturenofocus>colors/unselected.png</texturenofocus>
                         <textoffsetx>12</textoffsetx>
                         <onclick>control.setfocus(800)</onclick>
-                    </control>                    
-                    <control type="button" id="2003"> 
+                    </control>
+                    <control type="button" id="2003">
                         <description>Character</description>
                         <label>$ADDON[script.games.rom.collection.browser 32407]: $INFO[control.getlabel(900)] </label>
                         <height>54</height>
@@ -367,7 +367,7 @@
                         <texturenofocus>colors/unselected.png</texturenofocus>
                         <textoffsetx>12</textoffsetx>
                         <onclick>control.setfocus(900)</onclick>
-                    </control>                    
+                    </control>
                     <control type="radiobutton" id="1000">
                         <description>Favourites filter</description>
                         <height>54</height>
@@ -380,7 +380,7 @@
                         <textoffsetx>12</textoffsetx>
                         <label>$ADDON[script.games.rom.collection.browser 32404]:</label>
                     </control>
-                    <control type="button" id="4001"> 
+                    <control type="button" id="4001">
                         <description>Missing info filter</description>
                         <height>54</height>
                         <width>4-col</width>
@@ -397,7 +397,7 @@
         </control>
         <!-- filter controls -->
         <control type="group" id="100">
-            <!--animations-->            
+            <!--animations-->
             <animation type="Conditional" condition="!control.hasfocus(600) + !control.hasfocus(700) + !control.hasfocus(800) + !control.hasfocus(900)">
                 <effect type="fade" start="100" end="0" time="300" />
                 <effect type="slide" start="0" end="-100" tween="sine" easing="out" time="400" />
@@ -505,7 +505,7 @@
                         </control>
                     </focusedlayout>
                 </control>
-                <!-- Year filter -->                        
+                <!-- Year filter -->
                 <control type="list" id="700">
                     <visible allowhiddenfocus="true">Control.HasFocus(700)</visible>
                     <posx>-12</posx>
@@ -551,8 +551,8 @@
                             <shadowcolor>-</shadowcolor>
                         </control>
                     </focusedlayout>
-                </control>        
-                <!-- Publisher filter -->                        
+                </control>
+                <!-- Publisher filter -->
                 <control type="list" id="800">
                     <visible allowhiddenfocus="true">Control.HasFocus(800)</visible>
                     <posx>-12</posx>
@@ -599,7 +599,7 @@
                         </control>
                     </focusedlayout>
                 </control>
-                <!-- Character filter-->                
+                <!-- Character filter-->
                 <control type="list" id="900">
                     <visible allowhiddenfocus="true">Control.HasFocus(900)</visible>
                     <posx>-12</posx>
@@ -659,7 +659,7 @@
             </animation>
             <animation type="hidden">
                 <effect type="fade" start="100" end="0" time="200" />
-            </animation>    
+            </animation>
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <texture>colors/black.png</texture>
@@ -693,6 +693,6 @@
         <control type="label">
             <include>WindowID</include>
             <label>script-Rom_Collection_Browser-main.xml</label>
-        </control>        
+        </control>
     </controls>
 </window>

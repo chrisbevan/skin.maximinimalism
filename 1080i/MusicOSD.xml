@@ -4,7 +4,7 @@
     <onload condition="!window.isactive(5001)">back</onload>
     <onload>sendclick(10120,500)</onload>
     <onload>back</onload>
-    <controls>    
+    <controls>
         <!--buttons-->
         <control type="group">
             <visible>false</visible>

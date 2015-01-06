@@ -6,7 +6,7 @@
         <left>0</left>
         <top>0</top>
     </coordinates>
-    <controls>    
+    <controls>
         <control type="group">
             <posx>col-19-begin</posx>
             <posy>row-2-begin</posy>

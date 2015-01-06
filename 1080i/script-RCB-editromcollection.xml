@@ -1,5 +1,5 @@
 <window id="5200">
-    <defaultcontrol>7000</defaultcontrol>    
+    <defaultcontrol>7000</defaultcontrol>
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -120,7 +120,7 @@
                     </content>
                 </control>
             </control>
-            
+
             <!--right panel-->
             <control type="group">
                 <posx>4-col</posx>
@@ -137,7 +137,7 @@
                     <onleft>7000</onleft>
                     <onright>5210</onright>
                     <ondown>7010</ondown>
-                    <enable>false</enable>                    
+                    <enable>false</enable>
                     <itemlayout height="1-row" width="12-col">
                     </itemlayout>
                     <focusedlayout height="1-row" width="12-col">
@@ -223,12 +223,12 @@
                     <onright>8542</onright>
                     <ondown>control.setfocus(7010,1)</ondown>
                 </control>
-                
+
                 <control type="group" id="7010">
                     <!-- Game Import -->
                     <control type="group" id="7001">
                         <visible>Container(7000).Hasfocus(1)</visible>
-                        
+
                         <control type="grouplist">
                             <posx>0</posx>
                             <posy>1-row</posy>
@@ -238,9 +238,9 @@
                             <onleft>7000</onleft>
                             <onright>8542</onright>
                             <itemgap>3</itemgap>
-                                                        
-                            <control type="button" id="5240"> 
-                                <description>Rom Path</description>                        
+
+                            <control type="button" id="5240">
+                                <description>Rom Path</description>
                                 <align>right</align>
                                 <height>54</height>
                                 <width>12-col</width>
@@ -253,8 +253,8 @@
                                 <textoffsetx>12</textoffsetx>
                                 <label>$ADDON[script.games.rom.collection.browser 32606]</label>
                             </control>
-                            
-                            <control type="button" id="5250"> 
+
+                            <control type="button" id="5250">
                                 <description>Rom file mask</description>
                                 <align>right</align>
                                 <height>54</height>
@@ -268,19 +268,19 @@
                                 <textoffsetx>12</textoffsetx>
                                 <label>$ADDON[script.games.rom.collection.browser 32607]</label>
                             </control>
-                            
+
                             <!-- Ignore on scan -->
                             <control type="radiobutton" id="5330">
                                 <label>$ADDON[script.games.rom.collection.browser 32608]</label>
                             </control>
-                            
+
                             <!-- Allow update -->
                             <control type="radiobutton" id="5400">
                                 <label>$ADDON[script.games.rom.collection.browser 32609]</label>
                             </control>
-                            
+
                             <!-- Max folder depth -->
-                            <control type="button" id="5410"> 
+                            <control type="button" id="5410">
                                 <description>Max folder depth</description>
                                 <align>right</align>
                                 <height>54</height>
@@ -294,8 +294,8 @@
                                 <textoffsetx>12</textoffsetx>
                                 <label>$ADDON[script.games.rom.collection.browser 32610]</label>
                             </control>
-                            
-                            <control type="button" id="5420"> 
+
+                            <control type="button" id="5420">
                                 <description>Disk indicator</description>
                                 <align>right</align>
                                 <height>54</height>
@@ -309,7 +309,7 @@
                                 <textoffsetx>12</textoffsetx>
                                 <label>$ADDON[script.games.rom.collection.browser 32611]</label>
                             </control>
-                            
+
                             <control type="radiobutton" id="5430">
                                 <label>$ADDON[script.games.rom.collection.browser 32612]</label>
                             </control>
@@ -336,7 +336,7 @@
                             <textcolor>black</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>$ADDON[script.games.rom.collection.browser 32606]</label>
-                        </control>                        
+                        </control>
                         <control type="label">
                             <visible>!control.hasfocus(5250)</visible>
                             <posx>12</posx>
@@ -358,7 +358,7 @@
                             <textcolor>black</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>$ADDON[script.games.rom.collection.browser 32607]</label>
-                        </control>                        
+                        </control>
                         <control type="label">
                             <visible>!control.hasfocus(5410)</visible>
                             <posx>12</posx>
@@ -404,11 +404,11 @@
                             <label>$ADDON[script.games.rom.collection.browser 32611]</label>
                         </control>
                     </control>
-                        
+
                     <!-- Import Game data -->
                     <control type="group" id="7002">
                         <visible>Container(7000).Hasfocus(2)</visible>
-                        <!-- Scraper 1 -->                
+                        <!-- Scraper 1 -->
                         <control type="list" id="5290">
                             <posx>0</posx>
                             <posy>1-row</posy>
@@ -421,7 +421,7 @@
                             <onup>5280</onup>
                             <ondown>5280</ondown>
                             <enable>false</enable>
-                            <itemlayout height="1-row" width="12-col"></itemlayout>                        
+                            <itemlayout height="1-row" width="12-col"></itemlayout>
                             <focusedlayout height="1-row" width="12-col">
                                 <control type="image">
                                     <posx>0</posx>
@@ -430,7 +430,7 @@
                                     <height>54</height>
                                     <texture>colors/selected.png</texture>
                                     <visible>Control.HasFocus(5291) | Control.HasFocus(5292)</visible>
-                                </control>                                
+                                </control>
                                 <control type="label">
                                     <posx>12</posx>
                                     <posy>0</posy>
@@ -440,7 +440,7 @@
                                     <textcolor>selected</textcolor>
                                     <shadowcolor>-</shadowcolor>
                                     <label>$ADDON[script.games.rom.collection.browser 32613]</label>
-                                </control>                                
+                                </control>
                                 <control type="label">
                                     <posx>11-col-gutter</posx>
                                     <posy>0</posy>
@@ -451,7 +451,7 @@
                                     <shadowcolor>-</shadowcolor>
                                     <align>right</align>
                                     <label>$INFO[ListItem.Label]</label>
-                                </control>                                
+                                </control>
                                 <control type="label">
                                     <posx>12</posx>
                                     <posy>0</posy>
@@ -474,9 +474,9 @@
                                     <align>right</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <visible>Control.HasFocus(5291) | Control.HasFocus(5292)</visible>
-                                </control>                                
+                                </control>
                         </focusedlayout>
-                        </control>    
+                        </control>
                         <control type="button" id="5291">
                             <description>Menu Item Next Button</description>
                             <posx>11-col</posx>
@@ -504,7 +504,7 @@
                             <onright>8542</onright>
                             <onup>5212</onup>
                             <ondown>5302</ondown>
-                        </control>                    
+                        </control>
                         <!-- Scraper 2 -->
                         <control type="list" id="5300">
                             <posx>0</posx>
@@ -528,7 +528,7 @@
                                     <height>54</height>
                                     <texture>colors/selected.png</texture>
                                     <visible>Control.HasFocus(5301) | Control.HasFocus(5302)</visible>
-                                </control>                                
+                                </control>
                                 <control type="label">
                                     <posx>12</posx>
                                     <posy>0</posy>
@@ -538,7 +538,7 @@
                                     <textcolor>selected</textcolor>
                                     <shadowcolor>-</shadowcolor>
                                     <label>$ADDON[script.games.rom.collection.browser 32614]</label>
-                                </control>                                
+                                </control>
                                 <control type="label">
                                     <posx>11-col-gutter</posx>
                                     <posy>0</posy>
@@ -549,7 +549,7 @@
                                     <shadowcolor>-</shadowcolor>
                                     <align>right</align>
                                     <label>$INFO[ListItem.Label]</label>
-                                </control>                                
+                                </control>
                                 <control type="label">
                                     <posx>12</posx>
                                     <posy>0</posy>
@@ -572,7 +572,7 @@
                                     <align>right</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <visible>Control.HasFocus(5301) | Control.HasFocus(5302)</visible>
-                                </control>                            
+                                </control>
                             </focusedlayout>
                         </control>
                         <control type="button" id="5301">
@@ -602,7 +602,7 @@
                             <onright>8542</onright>
                             <onup>5292</onup>
                             <ondown>5312</ondown>
-                        </control>                        
+                        </control>
                         <!-- Scraper 3 -->
                         <control type="list" id="5310">
                             <posx>0</posx>
@@ -625,7 +625,7 @@
                                     <height>54</height>
                                     <texture>colors/selected.png</texture>
                                     <visible>Control.HasFocus(5311) | Control.HasFocus(5312)</visible>
-                                </control>                                
+                                </control>
                                 <control type="label">
                                     <posx>12</posx>
                                     <posy>0</posy>
@@ -635,7 +635,7 @@
                                     <textcolor>selected</textcolor>
                                     <shadowcolor>-</shadowcolor>
                                     <label>$ADDON[script.games.rom.collection.browser 32615]</label>
-                                </control>                                
+                                </control>
                                 <control type="label">
                                     <posx>11-col-gutter</posx>
                                     <posy>0</posy>
@@ -646,7 +646,7 @@
                                     <shadowcolor>-</shadowcolor>
                                     <align>right</align>
                                     <label>$INFO[ListItem.Label]</label>
-                                </control>                                
+                                </control>
                                 <control type="label">
                                     <posx>12</posx>
                                     <posy>0</posy>
@@ -724,7 +724,7 @@
                                         <height>54</height>
                                         <texture>colors/selected.png</texture>
                                         <visible>Control.HasFocus(5261) | Control.HasFocus(5262)</visible>
-                                    </control>                                
+                                    </control>
                                     <control type="label">
                                         <posx>12</posx>
                                         <posy>0</posy>
@@ -734,7 +734,7 @@
                                         <textcolor>selected</textcolor>
                                         <shadowcolor>-</shadowcolor>
                                         <label>$ADDON[script.games.rom.collection.browser 32616]</label>
-                                    </control>                                
+                                    </control>
                                     <control type="label">
                                         <posx>11-col-gutter</posx>
                                         <posy>0</posy>
@@ -745,7 +745,7 @@
                                         <shadowcolor>-</shadowcolor>
                                         <align>right</align>
                                         <label>$INFO[ListItem.Label]</label>
-                                    </control>                                
+                                    </control>
                                     <control type="label">
                                         <posx>12</posx>
                                         <posy>0</posy>
@@ -768,7 +768,7 @@
                                         <align>right</align>
                                         <label>$INFO[ListItem.Label]</label>
                                         <visible>Control.HasFocus(5261) | Control.HasFocus(5262)</visible>
-                                    </control>                                
+                                    </control>
                                 </focusedlayout>
                             </control>
                             <control type="button" id="5261">
@@ -798,7 +798,7 @@
                                 <onright>8542</onright>
                                 <onup>5312</onup>
                                 <ondown>5270</ondown>
-                            </control>                            
+                            </control>
                             <control type="grouplist">
                                 <posx>0</posx>
                                 <posy>5-row</posy>
@@ -807,8 +807,8 @@
                                 <onup>5261</onup>
                                 <onright>8542</onright>
                                 <onleft>7000</onleft>
-                                <!-- Media Path -->                        
-                                <control type="button" id="5270"> 
+                                <!-- Media Path -->
+                                <control type="button" id="5270">
                                     <description>Media Path</description>
                                     <align>right</align>
                                     <height>54</height>
@@ -821,9 +821,9 @@
                                     <texturenofocus>-</texturenofocus>
                                     <textoffsetx>12</textoffsetx>
                                     <label>$ADDON[script.games.rom.collection.browser 32617]</label>
-                                </control>                            
+                                </control>
                                 <!-- File Mask -->
-                                <control type="button" id="5280"> 
+                                <control type="button" id="5280">
                                     <description>Media File Mask</description>
                                     <align>right</align>
                                     <height>54</height>
@@ -837,7 +837,7 @@
                                     <textoffsetx>12</textoffsetx>
                                     <label>$ADDON[script.games.rom.collection.browser 32618]</label>
                                 </control>
-                                <control type="button" id="5490"> 
+                                <control type="button" id="5490">
                                     <description>Remove Media path</description>
                                     <align>left</align>
                                     <height>54</height>
@@ -850,7 +850,7 @@
                                     <textoffsetx>12</textoffsetx>
                                     <label>$ADDON[script.games.rom.collection.browser 32619]</label>
                                 </control>
-                                <control type="button" id="5500"> 
+                                <control type="button" id="5500">
                                     <description>Add Media path</description>
                                     <align>left</align>
                                     <height>54</height>
@@ -910,7 +910,7 @@
                             <shadowcolor>-</shadowcolor>
                             <label>$ADDON[script.games.rom.collection.browser 32618]</label>
                         </control>
-                    </control>                
+                    </control>
 
                     <!-- Game Browsing -->
                     <control type="group" id="7002">
@@ -1079,7 +1079,7 @@
                                     <align>right</align>
                                     <label>$INFO[ListItem.Label]</label>
                                     <visible>Control.HasFocus(5341) | Control.HasFocus(5342)</visible>
-                                </control>                                
+                                </control>
                             </focusedlayout>
                         </control>
                         <control type="button" id="5341">
@@ -1110,7 +1110,7 @@
                             <onup>5322</onup>
                             <ondown>5350</ondown>
                         </control>
-                        
+
                         <control type="grouplist">
                             <posx>0</posx>
                             <posy>3-row</posy>
@@ -1127,7 +1127,7 @@
                                 <label>$ADDON[script.games.rom.collection.browser 32636]</label>
                             </control>
                         </control>
-                    
+
                     </control>
 
                     <!-- Game Launching -->
@@ -1137,7 +1137,7 @@
                         <posy>0</posy>
 
                         <!-- Emulator Cmd -->
-                        <control type="button" id="5220"> 
+                        <control type="button" id="5220">
                             <description>EmuCmd (5540 = use retroplayer)</description>
                             <posx>0</posx>
                             <posy>1-row</posy>
@@ -1160,7 +1160,7 @@
                         </control>
 
                         <!-- Emulator Params -->
-                        <control type="button" id="5230"> 
+                        <control type="button" id="5230">
                             <description>EmuParams</description>
                             <posx>0</posx>
                             <posy>2-row</posy>
@@ -1208,7 +1208,7 @@
                         </control>
 
                         <!-- Savestate path -->
-                        <control type="button" id="5460"> 
+                        <control type="button" id="5460">
                             <description>Savestates</description>
                             <posx>0</posx>
                             <posy>5-row</posy>
@@ -1227,9 +1227,9 @@
                             <onright>8542</onright>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
                         </control>
-                        
+
                         <!-- Savestate file mask -->
-                        <control type="button" id="5470"> 
+                        <control type="button" id="5470">
                             <description>Savestates</description>
                             <posx>0</posx>
                             <posy>6-row</posy>
@@ -1250,7 +1250,7 @@
                         </control>
 
                         <!-- Savestate params -->
-                        <control type="button" id="5480"> 
+                        <control type="button" id="5480">
                             <description>Savestates</description>
                             <posx>0</posx>
                             <posy>7-row</posy>
@@ -1271,7 +1271,7 @@
                         </control>
 
                         <!-- PreCmd -->
-                        <control type="button" id="5510"> 
+                        <control type="button" id="5510">
                             <description>Pre-Launch Command</description>
                             <posx>0</posx>
                             <posy>8-row</posy>
@@ -1290,9 +1290,9 @@
                             <onright>8542</onright>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
                         </control>
-                        
+
                         <!-- PostCmd -->
-                        <control type="button" id="5520"> 
+                        <control type="button" id="5520">
                             <description>Post-Launch Command</description>
                             <posx>0</posx>
                             <posy>9-row</posy>
@@ -1335,7 +1335,7 @@
                             <onup>5450</onup>
                             <ondown>5550</ondown>
                         </control>
-                        
+
                         <!-- Game Client -->
                         <control type="button" id="5550">
                             <description>Game client</description>
@@ -1357,7 +1357,7 @@
                             <onleft>7000</onleft>
                             <onright>8542</onright>
                         </control>
-                        
+
                         <!--extra button labels-->
                         <control type="label">
                             <visible>!control.hasfocus(5220)</visible>
@@ -1382,7 +1382,7 @@
                             <textcolor>black</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>$ADDON[script.games.rom.collection.browser 32624]</label>
-                        </control>    
+                        </control>
                         <control type="label">
                             <visible>!control.hasfocus(5230)</visible>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
@@ -1406,7 +1406,7 @@
                             <textcolor>black</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>$ADDON[script.games.rom.collection.browser 32625]</label>
-                        </control>                    
+                        </control>
                         <control type="label">
                             <visible>!control.hasfocus(5460)</visible>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
@@ -1529,7 +1529,7 @@
                         </control>
                         <control type="label">
                             <visible>!control.hasfocus(5550)</visible>
-                            <enable>SubString(Control.GetLabel(5540),*)</enable> 
+                            <enable>SubString(Control.GetLabel(5540),*)</enable>
                             <posx>12</posx>
                             <posy>12-row</posy>
                             <width>10-col</width>
@@ -1551,11 +1551,11 @@
                             <shadowcolor>-</shadowcolor>
                             <label>$ADDON[script.games.rom.collection.browser 32638]</label>
                         </control>
-                    </control>                
-                    
-                </control>                
+                    </control>
+
+                </control>
             </control>
-                    
+
             <!--OK / Cancel-->
             <control type="panel" id="8542">
                 <posx>1164</posx>
@@ -1631,23 +1631,23 @@
                 </content>
             </control>
         </control>
-        
+
         <!--ok, cancel etc buttons-->
         <control type="group">
             <visible>false</visible>
-            <control type="button" id="6000"> 
+            <control type="button" id="6000">
                 <description>Save</description>
             </control>
-            <control type="button" id="6010"> 
+            <control type="button" id="6010">
                 <description>Cancel</description>
             </control>
         </control>
-        
+
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
             <label>script-RCB-editromcollection.xml</label>
-        </control>        
+        </control>
     </controls>
 </window>

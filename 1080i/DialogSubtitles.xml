@@ -51,7 +51,7 @@
                 <shadowcolor>-</shadowcolor>
                 <label>$LOCALIZE[31154] - $INFO[Player.Filename]</label>
                 <wrapmultiline>false</wrapmultiline>
-            </control>        
+            </control>
             <control type="label" id="140">
                 <posx>300</posx>
                 <posy>86</posy>
@@ -60,7 +60,7 @@
                 <font>itemTitle</font>
                 <textcolor>accented</textcolor>
                 <wrapmultiline>true</wrapmultiline>
-            </control>            
+            </control>
             <!-- ** Required ** Do not change <id>or<type>-->
             <control type="group">
                 <!--subtitle file selection-->

@@ -34,7 +34,7 @@
                     <width>6-col</width>
                     <height>11-row</height>
                     <itemgap>0</itemgap>
-                
+
                     <control type="radiobutton" id="5004">
                         <description>Enable subtitles</description>
                         <enable>VideoPlayer.HasSubtitles</enable>
@@ -47,7 +47,7 @@
                         <onclick>ShowSubtitles</onclick>
                         <selected>VideoPlayer.SubtitlesEnabled</selected>
                     </control>
-                                            
+
 
                     <control type="button" id="5005">
                         <description>Adjust Subtitle Offset</description>
@@ -78,7 +78,7 @@
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                         <onclick>ActivateWindow(SubtitleSearch)</onclick>
                     </control>
-                                
+
                 </control>
             </control>
         </control>

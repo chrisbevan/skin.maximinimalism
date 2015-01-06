@@ -93,7 +93,7 @@
                     <posy>3-row</posy>
                     <width>12-col-gutter</width>
                     <align>left</align>
-                    <height>54</height>                   
+                    <height>54</height>
                     <ondown>13</ondown>
                     <onup>12</onup>
                     <onright>9011</onright>
@@ -132,7 +132,7 @@
                     <height>54</height>
                     <onup>14</onup>
                     <onright>9011</onright>
-                </control> 
+                </control>
             </control>
             <!--OK / Cancel-->
             <control type="panel" id="9011">

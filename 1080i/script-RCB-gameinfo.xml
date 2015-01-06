@@ -76,7 +76,7 @@
                     <posy>120</posy>
                     <width>12-col</width>
                     <height>6-row</height>
-                    <itemlayout width="6-col" height="45">                  
+                    <itemlayout width="6-col" height="45">
                         <control type="label">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -122,7 +122,7 @@
                             <label2>$INFO[ListItem.Property(developer)]</label2>
                             <thumb>-</thumb>
                             <onclick>noop</onclick>
-                        </item>    
+                        </item>
                         <item>
                             <label>$ADDON[script.games.rom.collection.browser 32750]:</label>
                             <label2>$INFO[ListItem.Property(region)]</label2>
@@ -184,13 +184,13 @@
                         <height>0</height>
                         <scrolltime>200</scrolltime>
                         <itemlayout height="0" width="0"/>
-                        <focusedlayout height="0" width="0">                        
+                        <focusedlayout height="0" width="0">
                         </focusedlayout>
                     </control>
-                </control>  
+                </control>
                 <control type="label" id="4000">
                     <description>Messages</description>
-                </control>    
+                </control>
                 <control type="button" id="3001">
                     <description>autoplay video</description>
                     <onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplayinfo)],1)</onfocus>
@@ -202,6 +202,6 @@
         <control type="label">
             <include>DialogID</include>
             <label>script-RCB-gameinfo.xml</label>
-        </control>    
+        </control>
     </controls>
 </window>

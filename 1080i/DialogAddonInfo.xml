@@ -24,7 +24,7 @@
                 <aspectratio aligny="top">scale</aspectratio>
             </control>
         </control>
-        
+
         <control type="group">
             <visible>isEmpty(ListItem.art(fanart))</visible>
             <include>globalBackground</include>

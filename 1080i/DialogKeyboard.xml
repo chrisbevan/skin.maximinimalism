@@ -35,7 +35,7 @@
                     <align>center</align>
                     <font>itemTitleSmall</font>
                     <textcolor>selected</textcolor>
-                </control> 
+                </control>
                 <control type="edit" id="312">
                     <description>Edit Text</description>
                     <posx>12</posx>
@@ -936,7 +936,7 @@
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>selected</textcolor>
                         <align>center</align>
-                    </control>        
+                    </control>
                 </control>
                 <!--row 5-->
                 <control type="group">
@@ -1032,7 +1032,7 @@
                         <onright>8</onright>
                         <onup>167</onup>
                         <ondown>312</ondown>
-                    </control>                    
+                    </control>
                 </control>
             </control>
         </control>

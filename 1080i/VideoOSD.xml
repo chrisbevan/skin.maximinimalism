@@ -2,16 +2,16 @@
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
     <include>fadeInOut</include>
-    <controls>                        
+    <controls>
         <control type="group">
             <!--fade out if audio / video menu active-->
             <animation type="Conditional" condition="Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)">
                 <effect type="fade" start="100" end="0" time="200" tween="sine" easing="in" />
             </animation>
             <!--title info-->
-            <control type="group">    
+            <control type="group">
                 <posx>col-1-begin</posx>
-                <posy>881</posy>                
+                <posy>881</posy>
                 <!--overlay-->
                 <control type="image">
                     <posx>-96</posx>
@@ -21,7 +21,7 @@
                     <texture>colors/black.png</texture>
                     <colordiffuse>ccffffff</colordiffuse>
                     <aspectratio>stretch</aspectratio>
-                </control>                
+                </control>
                 <!--content description-->
                 <control type="label" id="20">
                     <posx>0</posx>
@@ -64,11 +64,11 @@
                     <scroll>false</scroll>
                     <shadowcolor>-</shadowcolor>
                 </control>
-            </control>        
+            </control>
             <!--dialog controls-->
             <control type="group">
                 <posx>0</posx>
-                <posy>996</posy>                
+                <posy>996</posy>
                 <control type="image">
                     <posx>0</posx>
                     <posy>28</posy>
@@ -77,7 +77,7 @@
                     <texture>colors/black.png</texture>
                     <colordiffuse>ccffffff</colordiffuse>
                     <aspectratio>stretch</aspectratio>
-                </control>                
+                </control>
                 <control type="image">
                     <posx>1679</posx>
                     <posy>28</posy>
@@ -86,7 +86,7 @@
                     <texture>colors/black.png</texture>
                     <colordiffuse>ccffffff</colordiffuse>
                     <aspectratio>stretch</aspectratio>
-                </control>                
+                </control>
                 <control type="image">
                     <visible>!Player.CanRecord</visible>
                     <posx>526</posx>
@@ -96,7 +96,7 @@
                     <texture>colors/black.png</texture>
                     <colordiffuse>ccffffff</colordiffuse>
                     <aspectratio>stretch</aspectratio>
-                </control>                
+                </control>
                 <control type="label">
                     <visible>!Player.CanRecord</visible>
                     <posx>550</posx>
@@ -208,7 +208,7 @@
                         <item>
                             <visible>Player.Playing | player.forwarding | player.rewinding</visible>
                             <description>Play/Pause</description>
-                            <label></label>                            
+                            <label></label>
                             <thumb>-</thumb>
                             <onclick>PlayerControl(play)</onclick>
                         </item>
@@ -331,13 +331,13 @@
                             <thumb>-</thumb>
                             <onclick>Close</onclick>
                             <onclick>activateWindow(5100)</onclick>
-                        </item>                        
+                        </item>
                         <item>
                             <description>Audio Settings</description>
                             <label>292</label>
                             <thumb>-</thumb>
                             <onclick>ActivateWindow(124)</onclick>
-                        </item>                        
+                        </item>
                         <item>
                             <description>Video Settings</description>
                             <label>444</label>
@@ -349,11 +349,11 @@
                             <label>298</label>
                             <thumb>-</thumb>
                             <onclick>ActivateWindow(125)</onclick>
-                        </item>                        
+                        </item>
                     </content>
                 </control>
-            </control>            
-        </control>                
+            </control>
+        </control>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

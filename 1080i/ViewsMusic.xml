@@ -582,7 +582,7 @@
                         <textcolor>selected</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Album] $INFO[listItem.year,(,)]</label>
-                    </control>                    
+                    </control>
                     <control type="image">
                         <visible>ListItem.IsPlaying</visible>
                         <posx>52r</posx>

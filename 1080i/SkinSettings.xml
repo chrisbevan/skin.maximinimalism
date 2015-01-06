@@ -10,7 +10,7 @@
             <texture>colors/black.png</texture>
             <aspectratio>stretch</aspectratio>
             <colordiffuse>99ffffff</colordiffuse>
-        </control>    
+        </control>
         <control type="group">
             <posx>col-3-begin</posx>
             <posy>row-2-begin</posy>
@@ -42,7 +42,7 @@
                 <label>$LOCALIZE[20077]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
-            </control>            
+            </control>
             <!--sub menu-->
             <control type="group">
                 <posx>0</posx>
@@ -113,7 +113,7 @@
                         </item>
                     </content>
                 </control>
-            </control>            
+            </control>
             <!--options-->
             <control type="grouplist" id="200">
                 <posx>4-col</posx>
@@ -299,7 +299,7 @@
             <!--reset buttons-->
             <control type="group">
                 <posx>19-col</posx>
-                        
+
                 <control type="button" id="501">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <posy>120</posy>

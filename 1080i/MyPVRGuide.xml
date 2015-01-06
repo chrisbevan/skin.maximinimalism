@@ -5,7 +5,7 @@
     <allowoverlay>no</allowoverlay>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
-    <controls>                
+    <controls>
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">
@@ -55,7 +55,7 @@
                     <!--animations-->
                     <animation type="windowopen">
                         <include>listSlideIn</include>
-                    </animation>                   
+                    </animation>
                     <control type="epggrid" id="10">
                         <description>EPG Grid</description>
                         <posx>-12</posx>
@@ -186,7 +186,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
-                    </control>            
+                    </control>
                     <!--focussed item-->
                     <control type="group">
                         <posx>0</posx>
