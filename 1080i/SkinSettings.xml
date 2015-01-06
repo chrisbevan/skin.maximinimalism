@@ -299,7 +299,6 @@
             <!--reset buttons-->
             <control type="group">
                 <posx>19-col</posx>
-
                 <control type="button" id="501">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <posy>120</posy>
@@ -316,7 +315,6 @@
                     <ondown>502</ondown>
                     <onclick>Skin.Reset(globalBackground)</onclick>
                 </control>
-
                 <control type="button" id="502">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <posy>177</posy>
@@ -334,7 +332,6 @@
                     <onup>501</onup>
                     <onclick>Skin.Reset(videoFanartLocation)</onclick>
                 </control>
-
                 <control type="button" id="503">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <posy>234</posy>
@@ -352,7 +349,6 @@
                     <onup>502</onup>
                     <onclick>Skin.Reset(musicFanartLocation)</onclick>
                 </control>
-
                 <control type="button" id="504">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <posy>291</posy>

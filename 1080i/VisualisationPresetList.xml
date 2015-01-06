@@ -44,7 +44,6 @@
                 <shadowcolor>-</shadowcolor>
                 <label>$LOCALIZE[24010]</label>
             </control>
-
             <control type="label" id="4">
                 <posx>12</posx>
                 <posy>120</posy>
@@ -54,7 +53,6 @@
                 <shadowcolor>-</shadowcolor>
                 <label>13389</label>
             </control>
-
             <!--visualisation list-->
             <control type="list" id="2">
                 <posx>0</posx>

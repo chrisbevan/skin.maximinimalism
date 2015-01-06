@@ -55,7 +55,7 @@
             <posy>row-2-begin</posy>
             <animation type="Windowopen">
                 <effect type="fade" start="0" end="100" time="300" delay="300"/>
-                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="300" />
+                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="300"/>
             </animation>
             <!--overlay-->
             <control type="image">
@@ -97,16 +97,16 @@
                 <scroll>true</scroll>
                 <shadowcolor>-</shadowcolor>
             </control>
-             <control type="label">
-                    <posx>0</posx>
-                    <posy>42</posy>
-                    <width>8-col-gutter</width>
-                    <align>left</align>
-                    <font>itemTitleSmall</font>
-                    <textcolor>black</textcolor>
-                    <label>$INFO[ListItem.genre]</label>
-                    <shadowcolor>-</shadowcolor>
-                </control>
+            <control type="label">
+                <posx>0</posx>
+                <posy>42</posy>
+                <width>8-col-gutter</width>
+                <align>left</align>
+                <font>itemTitleSmall</font>
+                <textcolor>black</textcolor>
+                <label>$INFO[ListItem.genre]</label>
+                <shadowcolor>-</shadowcolor>
+            </control>
             <!--synopsis-->
             <control type="textbox">
                 <posx>0</posx>
@@ -117,7 +117,7 @@
                 <textcolor>selected</textcolor>
                 <height>528</height>
                 <label>[B]$INFO[ListItem.Property(Artist_Description)][/B]</label>
-                <autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
+                <autoscroll delay="10000" time="1000" repeat="10000"/>
                 <shadowcolor>-</shadowcolor>
             </control>
             <!--dialog controls-->
@@ -205,9 +205,9 @@
                         <onclick>SendClick(12)</onclick>
                     </item>
                     <item>
-                        <label></label>
-                        <label2></label2>
-                        <thumb></thumb>
+                        <label/>
+                        <label2/>
+                        <thumb/>
                         <onclick>noop</onclick>
                     </item>
                 </content>
@@ -220,7 +220,7 @@
             <posy>row-2-begin</posy>
             <animation type="Windowopen">
                 <effect type="fade" start="0" end="100" time="300" delay="300"/>
-                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="300" />
+                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="300"/>
             </animation>
             <!--overlay-->
             <control type="image">
@@ -285,7 +285,7 @@
                     <textcolor>selected</textcolor>
                     <height>528</height>
                     <label>[B]$INFO[ListItem.Property(Album_Description)][/B]</label>
-                    <autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
+                    <autoscroll delay="10000" time="1000" repeat="10000"/>
                     <shadowcolor>-</shadowcolor>
                 </control>
             </control>
@@ -374,9 +374,9 @@
                         <onclick>SendClick(12)</onclick>
                     </item>
                     <item>
-                        <label></label>
-                        <label2></label2>
-                        <thumb></thumb>
+                        <label/>
+                        <label2/>
+                        <thumb/>
                         <onclick>noop</onclick>
                     </item>
                 </content>

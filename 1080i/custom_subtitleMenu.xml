@@ -2,7 +2,7 @@
 <window type="dialog" id="5100">
     <defaultcontrol always="true">5000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-      <controls>
+    <controls>
         <include>fadeInOut</include>
         <control type="group">
             <visible>!Window.IsVisible(SliderDialog)</visible>
@@ -26,7 +26,6 @@
                 <posy>row-7-begin</posy>
                 <!--animations-->
                 <include>modalDialogInOutVertical</include>
-
                 <!--subtitle menu-->
                 <control type="grouplist" id="5000">
                     <posx>0</posx>
@@ -34,7 +33,6 @@
                     <width>6-col</width>
                     <height>11-row</height>
                     <itemgap>0</itemgap>
-
                     <control type="radiobutton" id="5004">
                         <description>Enable subtitles</description>
                         <enable>VideoPlayer.HasSubtitles</enable>
@@ -47,8 +45,6 @@
                         <onclick>ShowSubtitles</onclick>
                         <selected>VideoPlayer.SubtitlesEnabled</selected>
                     </control>
-
-
                     <control type="button" id="5005">
                         <description>Adjust Subtitle Offset</description>
                         <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
@@ -63,7 +59,6 @@
                         <label>22006</label>
                         <onclick>SubtitleDelay</onclick>
                     </control>
-
                     <control type="button" id="5001">
                         <description>Download Subtitle</description>
                         <height>1-row</height>
@@ -78,7 +73,6 @@
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                         <onclick>ActivateWindow(SubtitleSearch)</onclick>
                     </control>
-
                 </control>
             </control>
         </control>

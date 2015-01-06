@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <window id="5600">
     <defaultcontrol>5201</defaultcontrol>
     <coordinates>
@@ -5,7 +6,6 @@
         <posx>280</posx>
         <posy>75</posy>
     </coordinates>
-
     <controls>
         <!-- Window -->
         <control type="image">
@@ -66,10 +66,9 @@
             <width>720</width>
             <texture border="45,0,45,49">rcb-DialogContextBottom.png</texture>
         </control>
-
         <!-- Show/Hide missing info list -->
         <control type="list" id="5200">
-            <hitrect x="0" y="0" w="0" h="0" />
+            <hitrect x="0" y="0" w="0" h="0"/>
             <posx>40</posx>
             <posy>50</posy>
             <width>630</width>
@@ -80,7 +79,7 @@
             <ondown>5200</ondown>
             <pagecontrol>-</pagecontrol>
             <scrolltime>0</scrolltime>
-            <itemlayout height="1" width="750"></itemlayout>
+            <itemlayout height="1" width="750"/>
             <focusedlayout height="30" width="670">
                 <control type="image">
                     <posx>0</posx>
@@ -180,7 +179,6 @@
             <onup>5101</onup>
             <ondown>5230</ondown>
         </control>
-
         <!-- Artwork -->
         <control type="group">
             <posx>40</posx>
@@ -333,7 +331,6 @@
                 </control>
             </control>
         </control>
-
         <!-- Info -->
         <control type="group">
             <posx>40</posx>
@@ -486,7 +483,6 @@
                 </control>
             </control>
         </control>
-
         <!-- Save and Cancel -->
         <control type="button" id="6000">
             <description>Delete</description>
@@ -504,9 +500,9 @@
             <disabledcolor>80FFFFFF</disabledcolor>
             <align>center</align>
             <aligny>center</aligny>
-            <textoffsetx></textoffsetx>
-            <textoffsety></textoffsety>
-            <pulseonselect></pulseonselect>
+            <textoffsetx/>
+            <textoffsety/>
+            <pulseonselect/>
             <onup>5330</onup>
             <ondown>5101</ondown>
             <onleft>6010</onleft>
@@ -528,9 +524,9 @@
             <disabledcolor>80FFFFFF</disabledcolor>
             <align>center</align>
             <aligny>center</aligny>
-            <textoffsetx></textoffsetx>
-            <textoffsety></textoffsety>
-            <pulseonselect></pulseonselect>
+            <textoffsetx/>
+            <textoffsety/>
+            <pulseonselect/>
             <onup>5330</onup>
             <ondown>5101</ondown>
             <onleft>6000</onleft>

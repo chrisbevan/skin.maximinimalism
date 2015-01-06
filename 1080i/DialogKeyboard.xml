@@ -4,7 +4,7 @@
     <allowoverlay>yes</allowoverlay>
     <coordinates>
         <system>2</system>
-        <origin x="0" y="540" />
+        <origin x="0" y="540"/>
     </coordinates>
     <controls>
         <control type="group">
@@ -250,7 +250,7 @@
                         <textcolor>selected</textcolor>
                         <align>center</align>
                     </control>
-              </control>
+                </control>
                 <!--row 2-->
                 <control type="group">
                     <posy>78</posy>

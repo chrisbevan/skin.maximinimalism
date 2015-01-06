@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <window id="5200">
     <defaultcontrol>5211</defaultcontrol>
     <controls>
@@ -42,11 +43,9 @@
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
-
             <control type="group">
                 <posx>0</posx>
                 <posy>120</posy>
-
                 <control type="list" id="5210">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -144,7 +143,6 @@
                     <onup>5101</onup>
                     <ondown>5223</ondown>
                 </control>
-
                 <!-- Scraping mode -->
                 <control type="list" id="5220">
                     <posx>0</posx>
@@ -243,7 +241,6 @@
                     <onup>5212</onup>
                     <ondown>5330</ondown>
                 </control>
-
                 <control type="radiobutton" id="5330">
                     <posx>0</posx>
                     <posy>2-row</posy>
@@ -255,7 +252,6 @@
                     <ondown>5271</ondown>
                     <onclick>Skin.ToggleSetting(rcb_overwriteImportOptions)</onclick>
                 </control>
-
                 <!-- Scraper 1 -->
                 <control type="list" id="5270">
                     <posx>0</posx>
@@ -356,7 +352,6 @@
                     <ondown>5282</ondown>
                     <enable>Skin.HasSetting(rcb_overwriteImportOptions)</enable>
                 </control>
-
                 <!-- Scraper 2 -->
                 <control type="list" id="5280">
                     <posx>0</posx>
@@ -457,7 +452,6 @@
                     <ondown>5292</ondown>
                     <enable>Skin.HasSetting(rcb_overwriteImportOptions)</enable>
                 </control>
-
                 <control type="list" id="5290">
                     <posx>0</posx>
                     <posy>5-row</posy>
@@ -619,21 +613,20 @@
                     <item id="1">
                         <description>Ok Button</description>
                         <label>$ADDON[script.games.rom.collection.browser 32800]</label>
-                        <label2></label2>
+                        <label2>&#xF479;</label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(5300)</onclick>
                     </item>
                     <item id="2">
                         <description>Cancel Button</description>
                         <label>$ADDON[script.games.rom.collection.browser 32635]</label>
-                        <label2></label2>
+                        <label2>&#xF478;</label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(5310)</onclick>
                     </item>
                 </content>
             </control>
         </control>
-
         <!--ok, cancel etc buttons-->
         <control type="group">
             <visible>false</visible>
@@ -644,7 +637,6 @@
                 <description>Cancel</description>
             </control>
         </control>
-
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

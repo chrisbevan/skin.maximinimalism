@@ -9,11 +9,11 @@
             <posy>row-9-begin</posy>
             <!--animations-->
             <animation type="Windowopen">
-                <effect type="fade" start="0" end="100" delay="0" time="200" />
+                <effect type="fade" start="0" end="100" delay="0" time="200"/>
             </animation>
             <animation type="Windowclose">
-                <effect type="fade" start="100" end="0" delay="0" time="200" />
-                <effect type="slide" start="0,0" end="0,50" tween="cubic" easing="out" time="300" />
+                <effect type="fade" start="100" end="0" delay="0" time="200"/>
+                <effect type="slide" start="0,0" end="0,50" tween="cubic" easing="out" time="300"/>
             </animation>
             <!--background-->
             <control type="image">

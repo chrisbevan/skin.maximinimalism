@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <window id="5200">
     <defaultcontrol>7000</defaultcontrol>
     <controls>
@@ -42,7 +43,6 @@
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
-
             <!--left column-->
             <control type="group">
                 <posx>0</posx>
@@ -120,7 +120,6 @@
                     </content>
                 </control>
             </control>
-
             <!--right panel-->
             <control type="group">
                 <posx>4-col</posx>
@@ -223,12 +222,10 @@
                     <onright>8542</onright>
                     <ondown>control.setfocus(7010,1)</ondown>
                 </control>
-
                 <control type="group" id="7010">
                     <!-- Game Import -->
                     <control type="group" id="7001">
                         <visible>Container(7000).Hasfocus(1)</visible>
-
                         <control type="grouplist">
                             <posx>0</posx>
                             <posy>1-row</posy>
@@ -238,7 +235,6 @@
                             <onleft>7000</onleft>
                             <onright>8542</onright>
                             <itemgap>3</itemgap>
-
                             <control type="button" id="5240">
                                 <description>Rom Path</description>
                                 <align>right</align>
@@ -253,7 +249,6 @@
                                 <textoffsetx>12</textoffsetx>
                                 <label>$ADDON[script.games.rom.collection.browser 32606]</label>
                             </control>
-
                             <control type="button" id="5250">
                                 <description>Rom file mask</description>
                                 <align>right</align>
@@ -268,17 +263,14 @@
                                 <textoffsetx>12</textoffsetx>
                                 <label>$ADDON[script.games.rom.collection.browser 32607]</label>
                             </control>
-
                             <!-- Ignore on scan -->
                             <control type="radiobutton" id="5330">
                                 <label>$ADDON[script.games.rom.collection.browser 32608]</label>
                             </control>
-
                             <!-- Allow update -->
                             <control type="radiobutton" id="5400">
                                 <label>$ADDON[script.games.rom.collection.browser 32609]</label>
                             </control>
-
                             <!-- Max folder depth -->
                             <control type="button" id="5410">
                                 <description>Max folder depth</description>
@@ -294,7 +286,6 @@
                                 <textoffsetx>12</textoffsetx>
                                 <label>$ADDON[script.games.rom.collection.browser 32610]</label>
                             </control>
-
                             <control type="button" id="5420">
                                 <description>Disk indicator</description>
                                 <align>right</align>
@@ -309,7 +300,6 @@
                                 <textoffsetx>12</textoffsetx>
                                 <label>$ADDON[script.games.rom.collection.browser 32611]</label>
                             </control>
-
                             <control type="radiobutton" id="5430">
                                 <label>$ADDON[script.games.rom.collection.browser 32612]</label>
                             </control>
@@ -404,7 +394,6 @@
                             <label>$ADDON[script.games.rom.collection.browser 32611]</label>
                         </control>
                     </control>
-
                     <!-- Import Game data -->
                     <control type="group" id="7002">
                         <visible>Container(7000).Hasfocus(2)</visible>
@@ -421,7 +410,7 @@
                             <onup>5280</onup>
                             <ondown>5280</ondown>
                             <enable>false</enable>
-                            <itemlayout height="1-row" width="12-col"></itemlayout>
+                            <itemlayout height="1-row" width="12-col"/>
                             <focusedlayout height="1-row" width="12-col">
                                 <control type="image">
                                     <posx>0</posx>
@@ -475,7 +464,7 @@
                                     <label>$INFO[ListItem.Label]</label>
                                     <visible>Control.HasFocus(5291) | Control.HasFocus(5292)</visible>
                                 </control>
-                        </focusedlayout>
+                            </focusedlayout>
                         </control>
                         <control type="button" id="5291">
                             <description>Menu Item Next Button</description>
@@ -616,7 +605,7 @@
                             <onup>5301</onup>
                             <ondown>5320</ondown>
                             <enable>false</enable>
-                            <itemlayout height="1-row" width="12-col"></itemlayout>
+                            <itemlayout height="1-row" width="12-col"/>
                             <focusedlayout height="1-row" width="12-col">
                                 <control type="image">
                                     <posx>0</posx>
@@ -911,7 +900,6 @@
                             <label>$ADDON[script.games.rom.collection.browser 32618]</label>
                         </control>
                     </control>
-
                     <!-- Game Browsing -->
                     <control type="group" id="7002">
                         <visible>Container(7000).Hasfocus(3)</visible>
@@ -1012,7 +1000,6 @@
                             <onup>5212</onup>
                             <ondown>5342</ondown>
                         </control>
-
                         <control type="list" id="5340">
                             <enable>false</enable>
                             <posx>0</posx>
@@ -1110,7 +1097,6 @@
                             <onup>5322</onup>
                             <ondown>5350</ondown>
                         </control>
-
                         <control type="grouplist">
                             <posx>0</posx>
                             <posy>3-row</posy>
@@ -1127,15 +1113,12 @@
                                 <label>$ADDON[script.games.rom.collection.browser 32636]</label>
                             </control>
                         </control>
-
                     </control>
-
                     <!-- Game Launching -->
                     <control type="group" id="7003">
                         <visible>Container(7000).Hasfocus(4)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
-
                         <!-- Emulator Cmd -->
                         <control type="button" id="5220">
                             <description>EmuCmd (5540 = use retroplayer)</description>
@@ -1158,7 +1141,6 @@
                             <onright>6000</onright>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
                         </control>
-
                         <!-- Emulator Params -->
                         <control type="button" id="5230">
                             <description>EmuParams</description>
@@ -1180,7 +1162,6 @@
                             <onright>8542</onright>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
                         </control>
-
                         <!-- Use emu solo -->
                         <control type="radiobutton" id="5440">
                             <posx>0</posx>
@@ -1193,7 +1174,6 @@
                             <ondown>5530</ondown>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
                         </control>
-
                         <!-- Use Popen -->
                         <control type="radiobutton" id="5530">
                             <posx>0</posx>
@@ -1206,7 +1186,6 @@
                             <ondown>5460</ondown>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
                         </control>
-
                         <!-- Savestate path -->
                         <control type="button" id="5460">
                             <description>Savestates</description>
@@ -1227,7 +1206,6 @@
                             <onright>8542</onright>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
                         </control>
-
                         <!-- Savestate file mask -->
                         <control type="button" id="5470">
                             <description>Savestates</description>
@@ -1248,7 +1226,6 @@
                             <onright>8542</onright>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
                         </control>
-
                         <!-- Savestate params -->
                         <control type="button" id="5480">
                             <description>Savestates</description>
@@ -1269,7 +1246,6 @@
                             <onright>8542</onright>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
                         </control>
-
                         <!-- PreCmd -->
                         <control type="button" id="5510">
                             <description>Pre-Launch Command</description>
@@ -1290,7 +1266,6 @@
                             <onright>8542</onright>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
                         </control>
-
                         <!-- PostCmd -->
                         <control type="button" id="5520">
                             <description>Post-Launch Command</description>
@@ -1311,7 +1286,6 @@
                             <onright>8542</onright>
                             <enable>!SubString(Control.GetLabel(5540),*) | !Control.IsVisible(5540)</enable>
                         </control>
-
                         <!-- Do not extract zip files -->
                         <control type="radiobutton" id="5450">
                             <posx>0</posx>
@@ -1323,7 +1297,6 @@
                             <onup>5520</onup>
                             <ondown>5540</ondown>
                         </control>
-
                         <!-- Use RetroPlayer -->
                         <control type="radiobutton" id="5540">
                             <posx>0</posx>
@@ -1335,7 +1308,6 @@
                             <onup>5450</onup>
                             <ondown>5550</ondown>
                         </control>
-
                         <!-- Game Client -->
                         <control type="button" id="5550">
                             <description>Game client</description>
@@ -1357,7 +1329,6 @@
                             <onleft>7000</onleft>
                             <onright>8542</onright>
                         </control>
-
                         <!--extra button labels-->
                         <control type="label">
                             <visible>!control.hasfocus(5220)</visible>
@@ -1552,10 +1523,8 @@
                             <label>$ADDON[script.games.rom.collection.browser 32638]</label>
                         </control>
                     </control>
-
                 </control>
             </control>
-
             <!--OK / Cancel-->
             <control type="panel" id="8542">
                 <posx>1164</posx>
@@ -1617,21 +1586,20 @@
                     <item id="1">
                         <description>Ok Button</description>
                         <label>186</label>
-                        <label2></label2>
+                        <label2>&#xF479;</label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(6000)</onclick>
                     </item>
                     <item id="2">
                         <description>Cancel Button</description>
                         <label>222</label>
-                        <label2></label2>
+                        <label2>&#xF478;</label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(6010)</onclick>
                     </item>
                 </content>
             </control>
         </control>
-
         <!--ok, cancel etc buttons-->
         <control type="group">
             <visible>false</visible>
@@ -1642,7 +1610,6 @@
                 <description>Cancel</description>
             </control>
         </control>
-
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

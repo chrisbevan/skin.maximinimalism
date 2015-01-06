@@ -45,7 +45,6 @@
                 <shadowcolor>-</shadowcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-
             <control type="list" id="450">
                 <posx>0</posx>
                 <posy>120</posy>

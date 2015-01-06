@@ -94,8 +94,8 @@
         <disabledcolor>disabled</disabledcolor>
         <radiowidth>64</radiowidth>
         <radioheight>64</radioheight>
-        <radioposx></radioposx>
-        <radioposy></radioposy>
+        <radioposx/>
+        <radioposy/>
         <texturefocus>colors/selected.png</texturefocus>
         <texturenofocus>-</texturenofocus>
         <textureradiofocus>UIControls/radio-button-fo.png</textureradiofocus>

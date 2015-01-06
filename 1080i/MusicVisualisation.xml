@@ -2,5 +2,5 @@
 <window>
     <!--content moved to custom_musicPlayerFullscreen.xml-->
     <onload>activateWindow(5001)</onload>
-    <controls></controls>
+    <controls/>
 </window>

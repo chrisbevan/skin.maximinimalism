@@ -1,6 +1,6 @@
+<?xml version="1.0"?>
 <window id="5200">
     <defaultcontrol>7000</defaultcontrol>
-
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -49,7 +49,7 @@
                 <posy>120</posy>
                 <width>276</width>
                 <height>6-row</height>
-                <onleft></onleft>
+                <onleft/>
                 <onright>7010</onright>
                 <onup>7000</onup>
                 <ondown>7000</ondown>
@@ -373,14 +373,14 @@
                     <item id="1">
                         <description>Ok Button</description>
                         <label>186</label>
-                        <label2></label2>
+                        <label2>&#xF479;</label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(6000)</onclick>
                     </item>
                     <item id="2">
                         <description>Cancel Button</description>
                         <label>222</label>
-                        <label2></label2>
+                        <label2>&#xF478;</label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(6010)</onclick>
                     </item>

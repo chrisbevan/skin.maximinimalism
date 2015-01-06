@@ -3,7 +3,7 @@
     <defaultcontrol always="true">21</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <coordinates>
-        <origin x="0" y="540" />
+        <origin x="0" y="540"/>
     </coordinates>
     <controls>
         <posx>col-3-begin</posx>

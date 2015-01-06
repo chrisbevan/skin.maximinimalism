@@ -48,7 +48,7 @@
                         <bordersize>0</bordersize>
                         <colordiffuse>FFFFFFFF</colordiffuse>
                         <animation type="focus">
-                             <effect type="zoom" end="110" center="auto" time="200" delay="0"/>
+                            <effect type="zoom" end="110" center="auto" time="200" delay="0"/>
                         </animation>
                     </control>
                     <control type="label">

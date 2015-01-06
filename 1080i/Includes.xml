@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <include file="Defaults.xml" />
-    <include file="Includes_grid.xml" />
-    <include file="Includes_variables.xml" />
-    <include file="Includes_animations.xml" />
-    <include file="Includes_animations.xml" />
-    <include file="Includes_menuItems.xml" />
-    <include file="Includes_sidebarItems.xml" />
-    <include file="ViewsVideos.xml" />
-    <include file="ViewsDialogs.xml" />
-    <include file="ViewsMusic.xml" />
-    <include file="ViewsPictures.xml" />
+    <include file="Defaults.xml"/>
+    <include file="Includes_grid.xml"/>
+    <include file="Includes_variables.xml"/>
+    <include file="Includes_animations.xml"/>
+    <include file="Includes_animations.xml"/>
+    <include file="Includes_menuItems.xml"/>
+    <include file="Includes_sidebarItems.xml"/>
+    <include file="ViewsVideos.xml"/>
+    <include file="ViewsDialogs.xml"/>
+    <include file="ViewsMusic.xml"/>
+    <include file="ViewsPictures.xml"/>
     <!--modal dialogs-->
     <include name="modalDialog">
         <control type="image">
@@ -81,17 +81,17 @@
                 <aspectratio>stretch</aspectratio>
                 <colordiffuse>6affffff</colordiffuse>
                 <animation type="windowopen">
-                    <effect type="fade" start="0" end="100" time="500" delay="400" />
+                    <effect type="fade" start="0" end="100" time="500" delay="400"/>
                 </animation>
                 <animation type="windowclose">
-                    <effect type="fade" start="100" end="0" time="300" />
+                    <effect type="fade" start="100" end="0" time="300"/>
                 </animation>
             </control>
             <!--show media fanart in relevant sections-->
             <control type="group">
                 <visible>container.content(seasons) | [!window.isactive(musicplaylist) + container.content(songs)] | [container.content(episodes) + !Substring(Container.folderpath,iplayer)]</visible>
                 <animation type="visible" reversible="false">
-                    <effect type="fade" start="0" end="100" time="500" delay="400" />
+                    <effect type="fade" start="0" end="100" time="500" delay="400"/>
                 </animation>
                 <control type="image">
                     <include>dimensionsFullscreen</include>
@@ -144,10 +144,10 @@
             <posy>0</posy>
             <!--animations-->
             <animation type="visible">
-                <effect type="fade" start="0" end="100" time="400" />
+                <effect type="fade" start="0" end="100" time="400"/>
             </animation>
             <animation type="hidden">
-                <effect type="fade" start="100" end="0" time="200" />
+                <effect type="fade" start="100" end="0" time="200"/>
             </animation>
             <control type="image">
                 <include>dimensionsFullscreen</include>

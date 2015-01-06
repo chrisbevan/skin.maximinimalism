@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <window id="5400">
     <defaultcontrol>5411</defaultcontrol>
     <coordinates>
@@ -6,7 +7,6 @@
         <posy>250</posy>
     </coordinates>
     <controls>
-
         <!-- Window -->
         <control type="image">
             <description>background top image</description>
@@ -66,10 +66,9 @@
             <width>720</width>
             <texture border="45,0,45,49">rcb-DialogContextBottom.png</texture>
         </control>
-
         <!-- Rom Collection List -->
         <control type="list" id="5410">
-            <hitrect x="0" y="0" w="0" h="0" />
+            <hitrect x="0" y="0" w="0" h="0"/>
             <posx>40</posx>
             <posy>15</posy>
             <width>630</width>
@@ -181,10 +180,9 @@
             <onup>5101</onup>
             <ondown>5492</ondown>
         </control>
-
         <!-- Delete Options -->
         <control type="list" id="5490">
-            <hitrect x="0" y="0" w="0" h="0" />
+            <hitrect x="0" y="0" w="0" h="0"/>
             <posx>40</posx>
             <posy>50</posy>
             <width>630</width>
@@ -296,9 +294,7 @@
             <onup>5412</onup>
             <ondown>6000</ondown>
         </control>
-
         <!-- Save and Cancel -->
-
         <control type="button" id="6000">
             <description>Delete</description>
             <posx>150</posx>
@@ -315,9 +311,9 @@
             <disabledcolor>80FFFFFF</disabledcolor>
             <align>center</align>
             <aligny>center</aligny>
-            <textoffsetx></textoffsetx>
-            <textoffsety></textoffsety>
-            <pulseonselect></pulseonselect>
+            <textoffsetx/>
+            <textoffsety/>
+            <pulseonselect/>
             <onup>5491</onup>
             <ondown>5101</ondown>
             <onleft>6010</onleft>
@@ -339,9 +335,9 @@
             <disabledcolor>80FFFFFF</disabledcolor>
             <align>center</align>
             <aligny>center</aligny>
-            <textoffsetx></textoffsetx>
-            <textoffsety></textoffsety>
-            <pulseonselect></pulseonselect>
+            <textoffsetx/>
+            <textoffsety/>
+            <pulseonselect/>
             <onup>5491</onup>
             <ondown>5101</ondown>
             <onleft>6000</onleft>

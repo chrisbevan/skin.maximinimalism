@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <window>
     <allowoverlay>no</allowoverlay>
     <defaultcontrol always="true">500</defaultcontrol>
@@ -7,7 +8,7 @@
         <control type="group">
             <!--window fader-->
             <animation type="conditional" condition="window.next(0) | window.next(1)">
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation>
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
@@ -97,12 +98,12 @@
                         <!--content is movies / tvshows / seasons: show larger thumbnail-->
                         <control type="group">
                             <animation type="windowopen">
-                                <effect type="fade" start="0" end="100" time="300" delay="700" />
-                                <effect type="slide" start="3-col" end="0" center="auto" tween="cubic" easing="out" time="400" delay="700" />
+                                <effect type="fade" start="0" end="100" time="300" delay="700"/>
+                                <effect type="slide" start="3-col" end="0" center="auto" tween="cubic" easing="out" time="400" delay="700"/>
                             </animation>
                             <animation type="windowclose">
-                                <effect type="fade" start="100" end="0" time="300" delay="300" />
-                                <effect type="slide" start="0" end="3-col" tween="cubic" easing="out" time="400" delay="300" />
+                                <effect type="fade" start="100" end="0" time="300" delay="300"/>
+                                <effect type="slide" start="0" end="3-col" tween="cubic" easing="out" time="400" delay="300"/>
                             </animation>
                             <animation type="visible">
                                 <include>listSlideIn</include>
@@ -124,7 +125,7 @@
                     </control>
                     <control type="panel" id="50">
                         <animation type="windowclose">
-                            <effect type="fade" start="100" end="0" time="200" />
+                            <effect type="fade" start="100" end="0" time="200"/>
                         </animation>
                         <posx>0</posx>
                         <posy>4</posy>
@@ -172,7 +173,7 @@
                                 <font>symbol</font>
                                 <textcolor>selected</textcolor>
                                 <shadowcolor>-</shadowcolor>
-                                <label></label>
+                                <label>&#xF2E0;</label>
                             </control>
                         </itemlayout>
                         <focusedlayout width="13-col" height="1-row">
@@ -212,7 +213,7 @@
                                 <font>symbol</font>
                                 <textcolor>black</textcolor>
                                 <shadowcolor>-</shadowcolor>
-                                <label></label>
+                                <label>&#xF2E0;</label>
                             </control>
                         </focusedlayout>
                     </control>
@@ -236,14 +237,14 @@
                 </control>
             </control>
         </control>
-         <!--sorting and misc controls-->
-         <control type="group" id="61">
+        <!--sorting and misc controls-->
+        <control type="group" id="61">
             <!--animations-->
             <animation type="Conditional" condition="!controlgroup(61).hasfocus">
-                <effect type="fade" start="100" end="0" time="200" />
+                <effect type="fade" start="100" end="0" time="200"/>
             </animation>
             <animation type="Conditional" condition="controlgroup(61).hasfocus">
-                <effect type="fade" start="0" end="100" time="200" />
+                <effect type="fade" start="0" end="100" time="200"/>
             </animation>
             <!--overlay-->
             <control type="image">
@@ -257,12 +258,12 @@
                 <posx>24</posx>
                 <posy>111</posy>
                 <animation type="Conditional" condition="controlgroup(62).hasfocus">
-                    <effect type="fade" start="0" end="100" time="300" />
-                    <effect type="slide" start="-100" end="0" tween="sine" easing="out" time="400" />
+                    <effect type="fade" start="0" end="100" time="300"/>
+                    <effect type="slide" start="-100" end="0" tween="sine" easing="out" time="400"/>
                 </animation>
                 <animation type="Conditional" condition="!controlgroup(62).hasfocus">
-                    <effect type="fade" start="100" end="0" time="300" />
-                    <effect type="slide" start="0" end="-100" tween="sine" easing="out" time="400" />
+                    <effect type="fade" start="100" end="0" time="300"/>
+                    <effect type="slide" start="0" end="-100" tween="sine" easing="out" time="400"/>
                 </animation>
                 <!--menu-->
                 <control type="image">
@@ -399,12 +400,12 @@
         <control type="group" id="100">
             <!--animations-->
             <animation type="Conditional" condition="!control.hasfocus(600) + !control.hasfocus(700) + !control.hasfocus(800) + !control.hasfocus(900)">
-                <effect type="fade" start="100" end="0" time="300" />
-                <effect type="slide" start="0" end="-100" tween="sine" easing="out" time="400" />
+                <effect type="fade" start="100" end="0" time="300"/>
+                <effect type="slide" start="0" end="-100" tween="sine" easing="out" time="400"/>
             </animation>
             <animation type="Conditional" condition="control.hasfocus(600) | control.hasfocus(700) | control.hasfocus(800) | control.hasfocus(900)">
-                <effect type="fade" start="0" end="100" time="300" />
-                <effect type="slide" start="-100" end="0" tween="sine" easing="out" time="400" />
+                <effect type="fade" start="0" end="100" time="300"/>
+                <effect type="slide" start="-100" end="0" tween="sine" easing="out" time="400"/>
             </animation>
             <!--overlay-->
             <control type="image">
@@ -485,7 +486,7 @@
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                               <width>4-col</width>
+                            <width>4-col</width>
                             <height>54</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="0">colors/black.png</texture>
@@ -532,7 +533,7 @@
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                               <width>4-col</width>
+                            <width>4-col</width>
                             <height>54</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="0">colors/black.png</texture>
@@ -579,7 +580,7 @@
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                               <width>4-col</width>
+                            <width>4-col</width>
                             <height>54</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="0">colors/black.png</texture>
@@ -626,7 +627,7 @@
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                               <width>4-col</width>
+                            <width>4-col</width>
                             <height>54</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="0">colors/black.png</texture>
@@ -655,10 +656,10 @@
             <posy>0</posy>
             <!--animations-->
             <animation type="visible">
-                <effect type="fade" start="0" end="100" time="400" />
+                <effect type="fade" start="0" end="100" time="400"/>
             </animation>
             <animation type="hidden">
-                <effect type="fade" start="100" end="0" time="200" />
+                <effect type="fade" start="100" end="0" time="200"/>
             </animation>
             <control type="image">
                 <include>dimensionsFullscreen</include>

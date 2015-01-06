@@ -2,12 +2,10 @@
 <window>
     <defaultcontrol always="true">11</defaultcontrol>
     <include>fadeInOut</include>
-
     <controls>
         <control type="group">
             <posx>0</posx>
             <posy>0</posy>
-
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -18,7 +16,6 @@
                 <bordersize>0</bordersize>
                 <colordiffuse>99FFFFFF</colordiffuse>
             </control>
-
             <control type="label">
                 <posx>24</posx>
                 <posy>1-row</posy>
@@ -28,7 +25,6 @@
                 <shadowcolor>-</shadowcolor>
                 <label>[UPPERCASE]$INFO[VideoPlayer.ChannelGroup][/UPPERCASE]</label>
             </control>
-
             <control type="list" id="11">
                 <posx>0</posx>
                 <posy>140</posy>
@@ -95,10 +91,8 @@
                         <shadowcolor>-</shadowcolor>
                         <label>$LOCALIZE[19031]: $INFO[ListItem.nextstarttime] - $INFO[ListItem.nextTitle]</label>
                     </control>
-
                 </focusedlayout>
             </control>
-
             <!--page scrollbar-->
             <control type="group" id="8000">
                 <visible>Control.IsVisible(60)</visible>
@@ -111,7 +105,6 @@
                 </control>
             </control>
         </control>
-
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

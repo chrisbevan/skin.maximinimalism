@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>5</defaultcontrol>
-
     <controls>
-
         <!--background-->
         <include>globalBackground</include>
         <control type="image">
@@ -44,7 +42,6 @@
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
-
             <control type="grouplist" id="5">
                 <posx>0</posx>
                 <posy>120</posy>
@@ -56,7 +53,6 @@
                 <orientation>vertical</orientation>
                 <itemgap>3</itemgap>
             </control>
-
             <control type="button" id="7">
                 <description>Default Button</description>
                 <align>left</align>
@@ -68,19 +64,15 @@
                 <texturenofocus>-</texturenofocus>
                 <textoffsetx>12</textoffsetx>
             </control>
-
             <control type="radiobutton" id="8">
                 <description>Default RadioButton</description>
             </control>
-
             <control type="spincontrolex" id="9">
                 <description>Default SpinControlex</description>
             </control>
-
             <control type="sliderex" id="13">
                 <description>Default Slider</description>
             </control>
-
             <!--buttons-->
             <control type="panel" id="9000">
                 <posx>12-col</posx>
@@ -171,7 +163,6 @@
                 </content>
             </control>
         </control>
-
         <!--buttons-->
         <control type="group">
             <visible>false</visible>
@@ -179,11 +170,9 @@
                 <description>Cancel Button</description>
                 <label>222</label>
             </control>
-
             <control type="button" id="28">
                 <description>OK Button</description>
             </control>
-
             <control type="button" id="50">
                 <description>Defaults Button</description>
                 <label>409</label>

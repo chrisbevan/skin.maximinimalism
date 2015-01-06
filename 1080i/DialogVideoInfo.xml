@@ -50,10 +50,10 @@
             <posy>0</posy>
             <animation type="Windowopen">
                 <effect type="fade" start="0" end="100" time="300" delay="300"/>
-                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="300" />
+                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="300"/>
             </animation>
             <animation type="conditional" condition="skin.string(showcast,true)">
-                <effect type="slide" start="0" end="-578" tween="cubic" easing="out" time="400" delay="0" />
+                <effect type="slide" start="0" end="-578" tween="cubic" easing="out" time="400" delay="0"/>
             </animation>
             <!--overlay-->
             <control type="image">
@@ -118,7 +118,7 @@
                     <textcolor>selected</textcolor>
                     <height>6-row</height>
                     <label>[B]$INFO[ListItem.plot][/B]</label>
-                    <autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
+                    <autoscroll delay="10000" time="1000" repeat="10000"/>
                     <shadowcolor>-</shadowcolor>
                 </control>
             </control>
@@ -256,7 +256,7 @@
                         <thumb>-</thumb>
                         <onclick>Skin.SetString(showcast,true)</onclick>
                         <onclick>control.setfocus(50)</onclick>
-                   </item>
+                    </item>
                     <item>
                         <label>20410</label>
                         <label2></label2>
@@ -276,13 +276,13 @@
                         <onclick>SendClick(2003,10)</onclick>
                     </item>
                     <item>
-                           <description>Get Artwork</description>
+                        <description>Get Artwork</description>
                         <label2></label2>
-                           <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+                        <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
                         <onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader,mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
                         <label>$INFO[System.AddonTitle(script.artwork.downloader)]</label>
                         <visible>System.HasAddon(script.artwork.downloader)</visible>
-                        </item>
+                    </item>
                 </content>
             </control>
             <!--empty image if no artwork downloader installed-->
@@ -356,7 +356,7 @@
                     <shadowcolor>-</shadowcolor>
                     <height>228</height>
                     <label>[B]$INFO[ListItem.plot][/B]</label>
-                    <autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
+                    <autoscroll delay="10000" time="1000" repeat="10000"/>
                 </control>
                 <!--dialog controls-->
                 <control type="list" id="8000">
@@ -446,7 +446,7 @@
             <posx>1263</posx>
             <posy>0</posy>
             <animation type="conditional" condition="skin.string(showcast,true)">
-                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="100" />
+                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="100"/>
             </animation>
             <!--overlay-->
             <control type="image">

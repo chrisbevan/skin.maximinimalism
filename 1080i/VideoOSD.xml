@@ -6,7 +6,7 @@
         <control type="group">
             <!--fade out if audio / video menu active-->
             <animation type="Conditional" condition="Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)">
-                <effect type="fade" start="100" end="0" time="200" tween="sine" easing="in" />
+                <effect type="fade" start="100" end="0" time="200" tween="sine" easing="in"/>
             </animation>
             <!--title info-->
             <control type="group">
@@ -145,7 +145,7 @@
                             <visible>control.hasfocus(8000)</visible>
                             <posx>19</posx>
                             <posy>18</posy>
-                               <width>69</width>
+                            <width>69</width>
                             <height>69</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture border="0">colors/selected.png</texture>
@@ -156,7 +156,7 @@
                             <visible>!control.hasfocus(8000)</visible>
                             <posx>19</posx>
                             <posy>18</posy>
-                               <width>69</width>
+                            <width>69</width>
                             <height>69</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture border="0">colors/black.png</texture>
@@ -277,7 +277,7 @@
                             <visible>control.hasfocus(8001)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
-                               <width>213</width>
+                            <width>213</width>
                             <height>54</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture border="0">colors/selected.png</texture>
@@ -288,7 +288,7 @@
                             <visible>!control.hasfocus(8001)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
-                               <width>213</width>
+                            <width>213</width>
                             <height>54</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture border="0">colors/black.png</texture>
