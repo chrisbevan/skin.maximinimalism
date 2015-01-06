@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">9500</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-	<previouswindow>home</previouswindow>
+    <previouswindow>home</previouswindow>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
@@ -30,26 +30,26 @@
                     <posy>row-2-begin</posy>
                     <!--source title-->
                     <control type="grouplist">
-						<posx>0</posx>
+                        <posx>0</posx>
                         <posy>0</posy>
-						<width>12-col</width>
-						<height>1-row</height>
-						<itemgap>0</itemgap>
-						<orientation>horizontal</orientation>
-						<control type="label">
-	                        <width>auto</width>
-	                        <font>pageTitle</font>
-	                        <label>31123</label>
-	                        <textcolor>selected</textcolor>
-	                    </control>
-						<control type="label">
-							<visible>Playlist.IsRandom</visible>
-	                        <width>auto</width>
-	                        <font>pageTitle</font>
-	                        <label> ($LOCALIZE[31133])</label>
-	                        <textcolor>accented</textcolor>
-	                    </control>
-					</control>
+                        <width>12-col</width>
+                        <height>1-row</height>
+                        <itemgap>0</itemgap>
+                        <orientation>horizontal</orientation>
+                        <control type="label">
+                            <width>auto</width>
+                            <font>pageTitle</font>
+                            <label>31123</label>
+                            <textcolor>selected</textcolor>
+                        </control>
+                        <control type="label">
+                            <visible>Playlist.IsRandom</visible>
+                            <width>auto</width>
+                            <font>pageTitle</font>
+                            <label> ($LOCALIZE[31133])</label>
+                            <textcolor>accented</textcolor>
+                        </control>
+                    </control>
                     <!--source subtitle-->
                     <control type="label">
                         <posx>0</posx>
@@ -79,7 +79,7 @@
                 <control type="group" id="8000">
                     <visible>Control.IsVisible(60)</visible>
                     <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
- 					<control type="scrollbar" id="60">
+                     <control type="scrollbar" id="60">
                         <posx>84r</posx>
                         <posy>276</posy>
                         <height>672</height>

@@ -24,11 +24,11 @@
                 <aspectratio aligny="top">scale</aspectratio>
             </control>
         </control>
-		
-		<control type="group">
-			<visible>isEmpty(ListItem.art(fanart))</visible>
-			<include>globalBackground</include>
-		</control>
+        
+        <control type="group">
+            <visible>isEmpty(ListItem.art(fanart))</visible>
+            <include>globalBackground</include>
+        </control>
 
         <!--About this addon-->
         <control type="group">
@@ -245,7 +245,7 @@
                 <description>Rollback button</description>
                 <label>24048</label>
             </control>
-			<control type="button" id="12">
+            <control type="button" id="12">
                 <description>Launch addon</description>
             </control>
         </control>

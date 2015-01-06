@@ -46,7 +46,7 @@
                     <posy>row-2-begin</posy>
                     <!--source content-->
                     <control type="group">
-						<include>viewGridList</include>
+                        <include>viewGridList</include>
                         <include>viewDialogList</include>
                     </control>
                 </control>

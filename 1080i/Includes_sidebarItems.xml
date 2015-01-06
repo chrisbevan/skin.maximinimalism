@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 <include name="sideBarMenuItems">
-	<control type="image">
-		<posx>col-2-begin</posx>
+    <control type="image">
+        <posx>col-2-begin</posx>
         <posy>-111</posy>
         <include>dimensionsFullscreen</include>
         <texture>colors/black.png</texture>
         <colordiffuse>66FFFFFF</colordiffuse>
         <aspectratio>stretch</aspectratio>
     </control>
-	<control type="image">
+    <control type="image">
         <posx>-96</posx>
         <posy>-111</posy>
         <width>col-5-begin</width>
@@ -19,10 +19,10 @@
         <colordiffuse>ffffffff</colordiffuse>
         <bordersize>0</bordersize>
     </control>
-	<!--titles-->
-	<control type="label">
-		<description>video</description>
-		<visible>[Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)] + !Skin.String(keepMusicMenuActive)</visible>
+    <!--titles-->
+    <control type="label">
+        <description>video</description>
+        <visible>[Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)] + !Skin.String(keepMusicMenuActive)</visible>
         <posx>0</posx>
         <posy>0</posy>
         <width>14-col</width>
@@ -31,9 +31,9 @@
         <textcolor>black</textcolor>
         <shadowcolor>-</shadowcolor>
     </control>
-	<control type="label">
-		<description>music</description>
-		<visible>[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)]</visible>
+    <control type="label">
+        <description>music</description>
+        <visible>[window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)]</visible>
         <posx>0</posx>
         <posy>0</posy>
         <width>14-col</width>
@@ -42,9 +42,9 @@
         <textcolor>black</textcolor>
         <shadowcolor>-</shadowcolor>
     </control>
-	<control type="label">
-		<description>pictures</description>
-		<visible>window.isactive(pictures)</visible>
+    <control type="label">
+        <description>pictures</description>
+        <visible>window.isactive(pictures)</visible>
         <posx>0</posx>
         <posy>0</posy>
         <width>14-col</width>
@@ -61,30 +61,30 @@
         <label>33063</label>
         <textcolor>black</textcolor>
         <shadowcolor>-</shadowcolor>
-    </control>	
-	<!--menu items-->
-	<control type="grouplist" id="62">
+    </control>    
+    <!--menu items-->
+    <control type="grouplist" id="62">
         <posx>-12</posx>
         <posy>166</posy>
         <width>4-col</width>
         <height>12-row</height>
         <itemgap>0</itemgap>
         <onright>9000</onright>
-		<onup>62</onup>
-		<ondown>62</ondown>
-		<include condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoSideMenu</include>
-		<include condition="window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
-		<include condition="window.isactive(pictures)">picturesSideMenu</include>
+        <onup>62</onup>
+        <ondown>62</ondown>
+        <include condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoSideMenu</include>
+        <include condition="window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
+        <include condition="window.isactive(pictures)">picturesSideMenu</include>
     </control>
 </include>
 
 <!--video menu items-->
 <include name="videoSideMenu">
 
-	<!--current playlist-->
-	<control type="button" id="501">
-		<description>Video Playlist</description>
-		<visible>[window.isactive(videolibrary) | window.isactive(videoplaylist)] + IntegerGreaterThan(Playlist.Length(video),0)</visible>
+    <!--current playlist-->
+    <control type="button" id="501">
+        <description>Video Playlist</description>
+        <visible>[window.isactive(videolibrary) | window.isactive(videoplaylist)] + IntegerGreaterThan(Playlist.Length(video),0)</visible>
         <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>
@@ -94,12 +94,12 @@
         <texturenofocus>colors/unselected.png</texturenofocus>
         <textoffsetx>12</textoffsetx>
         <label>31123</label>
-		<onclick>right</onclick>
-		<onclick>ActivateWindow(videoplaylist)</onclick>
-	</control>
-		
-	<!--search-->
-	<control type="button" id="502">
+        <onclick>right</onclick>
+        <onclick>ActivateWindow(videoplaylist)</onclick>
+    </control>
+        
+    <!--search-->
+    <control type="button" id="502">
         <description>Search (videos)</description>
         <visible>[window.isactive(videolibrary) | window.isactive(videoplaylist)] + System.HasAddon(script.globalsearch)</visible>
         <height>54</height>
@@ -111,15 +111,15 @@
         <texturenofocus>colors/unselected.png</texturenofocus>
         <textoffsetx>12</textoffsetx>
         <label>137</label>
-		<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-		<onclick>activateWindow(videos,movietitles)</onclick>
+        <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+        <onclick>activateWindow(videos,movietitles)</onclick>
         <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true)</onclick>
         <onclick>right</onclick>
     </control>
-	
-	<control type="button" id="503">
+    
+    <control type="button" id="503">
         <description>Search (PVR)</description>
-		<visible>window.isactive(pvr)</visible>
+        <visible>window.isactive(pvr)</visible>
         <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>
@@ -132,8 +132,8 @@
         <onclick>right</onclick>
         <onclick>activateWindow(pvrguidesearch)</onclick>
     </control>
-	
-	<!--sorting-->
+    
+    <!--sorting-->
     <control type="button" id="3">
         <description>Sort by</description>
         <height>54</height>
@@ -163,7 +163,7 @@
         <textoffsetx>12</textoffsetx>
     </control>
 
-   	<control type="button" id="504">
+       <control type="button" id="504">
         <description>Timers / scheduler</description>
         <height>54</height>
         <width>4-col</width>
@@ -175,12 +175,12 @@
         <textoffsetx>12</textoffsetx>
         <label>31119</label>
         <onclick>ActivateWindow(tvtimers)</onclick>
-		<onclick>Control.SetFocus(50)</onclick>
+        <onclick>Control.SetFocus(50)</onclick>
     </control>
 
     <control type="button" id="505">
         <description>Menu shortcuts (video)</description>
-		<visible></visible>
+        <visible></visible>
         <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>
@@ -196,7 +196,7 @@
 
     <control type="button" id="506">
         <description>Files menu (video)</description>
-		<visible></visible>
+        <visible></visible>
         <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>
@@ -208,12 +208,12 @@
         <label>1214</label>
         <onclick>right</onclick>
         <onclick>ActivateWindow(Videos,files,return)</onclick>
-		<onclick>Control.SetFocus(50)</onclick>
+        <onclick>Control.SetFocus(50)</onclick>
         <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
     </control>
 
     <control type="button" id="507">
-		<visible></visible>
+        <visible></visible>
         <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>
@@ -229,7 +229,7 @@
 
     <control type="radiobutton" id="14">
         <description>Watched Toggle</description>
-		<visible></visible>
+        <visible></visible>
         <label>20367</label>
         <height>54</height>
         <width>4-col</width>
@@ -257,10 +257,10 @@
         <onclick>Filter</onclick>
     </control>
 
-	<control type="radiobutton" id="11">
-		<description>Unlock Shares</description>
-		<label>20336</label>
-		<height>54</height>
+    <control type="radiobutton" id="11">
+        <description>Unlock Shares</description>
+        <label>20336</label>
+        <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>
         <textoffsetx>12</textoffsetx>
@@ -269,15 +269,15 @@
         <texturefocus>colors/black.png</texturefocus>
         <texturenofocus>colors/unselected.png</texturenofocus>
         <onclick>right</onclick>
-		<onclick>xbmc.mastermode</onclick>
-		<selected>system.ismaster</selected>
-		<visible>system.haslocks</visible>
-	</control>
+        <onclick>xbmc.mastermode</onclick>
+        <selected>system.ismaster</selected>
+        <visible>system.haslocks</visible>
+    </control>
 </include>
 
 <!--music menu items-->
 <include name="musicSideMenu">
-	<control type="button" id="501">
+    <control type="button" id="501">
         <description>current music playlist (if available)</description>
         <visible>MusicPlayer.Offset(0).Exists</visible>
         <height>54</height>
@@ -292,10 +292,10 @@
         <onclick>right</onclick>
         <onclick>activateWindow(musicplaylist)</onclick>
     </control>
-	
-	<control type="button" id="502">
+    
+    <control type="button" id="502">
         <description>Search (music)</description>
-		<visible>System.HasAddon(script.globalsearch)</visible>
+        <visible>System.HasAddon(script.globalsearch)</visible>
         <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>
@@ -306,11 +306,11 @@
         <textoffsetx>12</textoffsetx>
         <label>137</label>
         <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true)</onclick>
-		<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
-		<onclick>right</onclick>
+        <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
+        <onclick>right</onclick>
     </control>
 
-	<!--sorting-->
+    <!--sorting-->
     <control type="button" id="3">
         <description>Sort by</description>
         <height>54</height>
@@ -340,9 +340,9 @@
         <textoffsetx>12</textoffsetx>
     </control>
 
-	<!--music section-->
+    <!--music section-->
     <control type="button" id="503">
-		<visible></visible>
+        <visible></visible>
         <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>
@@ -357,7 +357,7 @@
     </control>
 
     <control type="button" id="504">
-		<visible></visible>
+        <visible></visible>
         <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>
@@ -373,7 +373,7 @@
 
     <control type="button" id="505">
         <description>Files menu (music)</description>
-		<visible></visible>
+        <visible></visible>
         <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>
@@ -386,12 +386,12 @@
         <onclick>right</onclick>
         <onclick>ActivateWindow(MusicFiles,root)</onclick>
         <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
-		<onclick>Control.SetFocus(51)</onclick>
+        <onclick>Control.SetFocus(51)</onclick>
     </control>
 
-	<control type="radiobutton" id="20">
+    <control type="radiobutton" id="20">
         <description>Shuffle</description>
-		<visible></visible>
+        <visible></visible>
         <height>54</height>
         <width>4-col</width>
         <font>menuTitle</font>
@@ -405,7 +405,7 @@
 
     <control type="radiobutton" id="16">
         <description>Party Mode!!</description>
-		<visible></visible>
+        <visible></visible>
         <label>589</label>
         <height>54</height>
         <width>4-col</width>
@@ -419,7 +419,7 @@
 
 <!--pictures menu items-->
 <include name="picturesSideMenu">
-	<!--sorting-->
+    <!--sorting-->
     <control type="button" id="3">
         <description>Sort by</description>
         <height>54</height>
@@ -449,7 +449,7 @@
         <textoffsetx>12</textoffsetx>
     </control>
 
-	<control type="button" id="500">
+    <control type="button" id="500">
         <description>Files (pictures)</description>
         <height>54</height>
         <width>4-col</width>
@@ -460,7 +460,7 @@
         <texturenofocus>colors/unselected.png</texturenofocus>
         <textoffsetx>12</textoffsetx>
         <label>1214</label>
-		<onclick>right</onclick>
+        <onclick>right</onclick>
         <onclick>ActivateWindow(pictures,root)</onclick>
     </control>
 </include>

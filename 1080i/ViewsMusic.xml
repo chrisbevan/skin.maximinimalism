@@ -182,7 +182,7 @@
     </include>
     <!--Grid View-->
     <include name="viewMusicGrid">
-		<visible></visible>
+        <visible></visible>
         <control type="group">
             <posx>0</posx>
             <posy>154</posy>
@@ -207,8 +207,8 @@
                         <height>273</height>
                         <aspectratio>stretch</aspectratio>
                         <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-						<bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
-						<bordersize>3</bordersize>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
+                        <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
                     <control type="group">
@@ -259,8 +259,8 @@
                         <height>273</height>
                         <aspectratio>stretch</aspectratio>
                         <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-						<bordertexture border="3" colordiffuse="ffFFFFFF">colors/selected.png</bordertexture>
-						<bordersize>3</bordersize>
+                        <bordertexture border="3" colordiffuse="ffFFFFFF">colors/selected.png</bordertexture>
+                        <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
                     <control type="group">
@@ -331,8 +331,8 @@
                     <height>5-col</height>
                     <aspectratio>stretch</aspectratio>
                     <texture fallback="colors/offblack.png" border="0">$INFO[ListItem.art(thumb)]</texture>
-					<bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
-					<bordersize>3</bordersize>
+                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
+                    <bordersize>3</bordersize>
                     <fadetime>500</fadetime>
                 </control>
                 <control type="label">
@@ -572,7 +572,7 @@
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[listitem.duration]</label>
                     </control>
-					<control type="label">
+                    <control type="label">
                         <posx>11-col</posx>
                         <posy>17</posy>
                         <width>9-col-gutter</width>
@@ -641,11 +641,11 @@
                         <align>left</align>
                         <height>24</height>
                         <textcolor>black</textcolor>
-						<selectedcolor>black</selectedcolor>
+                        <selectedcolor>black</selectedcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[listitem.duration]</label>
                     </control>
-					<control type="label">
+                    <control type="label">
                         <posx>11-col</posx>
                         <posy>17</posy>
                         <width>9-col-gutter</width>

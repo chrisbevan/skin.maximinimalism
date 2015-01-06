@@ -20,16 +20,16 @@
         <control type="group">
             <posx>col-1-begin</posx>
             <posy>row-1-begin</posy>
-			<control type="label" id="1">
-				<description>header label</description>
-				<posx>0</posx>
+            <control type="label" id="1">
+                <description>header label</description>
+                <posx>0</posx>
                 <posy>-64</posy>
-				<width>24-col-gutter</width>
+                <width>24-col-gutter</width>
                 <height>1-row</height>
                 <align>center</align>
-				<font>itemTitleSmall</font>
-				<textcolor>selected</textcolor>
-			</control>
+                <font>itemTitleSmall</font>
+                <textcolor>selected</textcolor>
+            </control>
             <control type="image">
                 <posx>8-col</posx>
                 <posy>-12</posy>
@@ -45,8 +45,8 @@
                 <width>8-col</width>
                 <height>1-row</height>
                 <align>center</align>
-				<textcolor>selected</textcolor>
-				<font>itemTitle</font>
+                <textcolor>selected</textcolor>
+                <font>itemTitle</font>
             </control>
         </control>
         <!--keyboard-->

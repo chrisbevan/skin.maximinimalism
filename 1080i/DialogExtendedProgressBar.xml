@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol/>
-	<controls>
-		<control type="group">
+    <defaultcontrol/>
+    <controls>
+        <control type="group">
             <posx>col-19-begin</posx>
             <posy>row-2-begin</posy>
             <!--animations-->
@@ -29,7 +29,7 @@
                 <width>468</width>
                 <height>1-row</height>
                 <textcolor>black</textcolor>
-				<scroll>true</scroll>
+                <scroll>true</scroll>
                 <shadowcolor>-</shadowcolor>
                 <!--animations-->
                 <animation type="Windowopen">
@@ -53,5 +53,5 @@
                 </animation>
             </control>
         </control>
-	</controls>
+    </controls>
 </window>

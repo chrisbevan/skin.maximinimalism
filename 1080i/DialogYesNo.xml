@@ -34,55 +34,55 @@
                 </control>
             </control>
             <!--Yes / No-->
-			<control type="grouplist" id="9001">
-	            <posx>col-9-begin</posx>
-	            <posy>4-row</posy>
-	            <width>8-col</width>
-	            <height>1-row</height>
-	            <itemgap>0</itemgap>
-	            <onleft>50</onleft>
-	            <onright>50</onright>
-	            <onup>9999</onup>
-	            <ondown>9999</ondown>
-	            <orientation>horizontal</orientation>
-	            <!--selection buttons-->
-	            <control type="button" id="10">
-	                <description>No</description>
-					<label>106</label>
-					<font>menuTitle</font>
-					<align>left</align>
-					<textoffsetx>24</textoffsetx>
-			        <focusedcolor>black</focusedcolor>
-			        <textcolor>selected</textcolor>
-					<texturefocus>colors/selected.png</texturefocus>
-					<texturenofocus>colors/black.png</texturenofocus>
-	            </control>
-	            <control type="button" id="11">
-	                <description>Yes</description>
-					<label>107</label>
-					<font>menuTitle</font>
-					<align>left</align>
-					<textoffsetx>24</textoffsetx>
-			        <focusedcolor>black</focusedcolor>
-			        <textcolor>selected</textcolor>
-					<texturefocus>colors/selected.png</texturefocus>
-					<texturenofocus>colors/black.png</texturenofocus>
-	            </control>
-	        </control>
+            <control type="grouplist" id="9001">
+                <posx>col-9-begin</posx>
+                <posy>4-row</posy>
+                <width>8-col</width>
+                <height>1-row</height>
+                <itemgap>0</itemgap>
+                <onleft>50</onleft>
+                <onright>50</onright>
+                <onup>9999</onup>
+                <ondown>9999</ondown>
+                <orientation>horizontal</orientation>
+                <!--selection buttons-->
+                <control type="button" id="10">
+                    <description>No</description>
+                    <label>106</label>
+                    <font>menuTitle</font>
+                    <align>left</align>
+                    <textoffsetx>24</textoffsetx>
+                    <focusedcolor>black</focusedcolor>
+                    <textcolor>selected</textcolor>
+                    <texturefocus>colors/selected.png</texturefocus>
+                    <texturenofocus>colors/black.png</texturenofocus>
+                </control>
+                <control type="button" id="11">
+                    <description>Yes</description>
+                    <label>107</label>
+                    <font>menuTitle</font>
+                    <align>left</align>
+                    <textoffsetx>24</textoffsetx>
+                    <focusedcolor>black</focusedcolor>
+                    <textcolor>selected</textcolor>
+                    <texturefocus>colors/selected.png</texturefocus>
+                    <texturenofocus>colors/black.png</texturenofocus>
+                </control>
+            </control>
         </control>     
-		<!--error message fields (placeholders)-->
-		<control type="group">
-			<visible>false</visible>
-			<control type="label" id="2">
-	            <description>Line 1</description>
-	        </control>
-	        <control type="label" id="3">
-	            <description>Line 2</description>
-	        </control>
-	        <control type="label" id="4">
-	            <description>Line 3</description>
-	        </control>
-		</control>
+        <!--error message fields (placeholders)-->
+        <control type="group">
+            <visible>false</visible>
+            <control type="label" id="2">
+                <description>Line 1</description>
+            </control>
+            <control type="label" id="3">
+                <description>Line 2</description>
+            </control>
+            <control type="label" id="4">
+                <description>Line 3</description>
+            </control>
+        </control>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

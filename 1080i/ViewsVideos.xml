@@ -25,15 +25,15 @@
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="sine" easing="inout">200</scrolltime>
                 <itemlayout width="312" height="366">
-				    <control type="image">
+                    <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>276</width>
                         <height>273</height>
                         <aspectratio>stretch</aspectratio>
                         <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-						<bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
-						<bordersize>3</bordersize>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
+                        <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
                     <control type="group">
@@ -75,8 +75,8 @@
                         <height>273</height>
                         <aspectratio>stretch</aspectratio>
                         <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-						<bordertexture border="3" colordiffuse="ffFFFFFF">colors/selected.png</bordertexture>
-						<bordersize>3</bordersize>
+                        <bordertexture border="3" colordiffuse="ffFFFFFF">colors/selected.png</bordertexture>
+                        <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
                     <control type="group">
@@ -117,7 +117,7 @@
     </include>
     <!--simple text list 1 row-->
     <include name="viewVideoList">
-		<visible>!isEmpty(container.foldername)</visible>
+        <visible>!isEmpty(container.foldername)</visible>
         <control type="group">
             <posx>0</posx>
             <posy>3-row</posy>
@@ -141,15 +141,15 @@
                     </animation>
                     <control type="group">
                         <visible>!Substring(Container.folderpath,plugin) + SubString(skin.string(showRecentVideoItems),false) + !isempty(listitem.art(poster))</visible>
-						<control type="image">
+                        <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>6-col</width>
                             <height>576</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(poster)]</texture>
-							<bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
-							<bordersize>3</bordersize>
+                            <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
+                            <bordersize>3</bordersize>
                             <fadetime>200</fadetime>
                         </control>
                     </control>
@@ -268,7 +268,7 @@
                         <align>right</align>
                         <height>24</height>
                         <textcolor>black</textcolor>
-						<selectedcolor>black</selectedcolor>
+                        <selectedcolor>black</selectedcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$VAR[itemDetail]</label>
                     </control>
@@ -314,7 +314,7 @@
                 <visible>!container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
                 <posx>0</posx>
                 <posy>4</posy>
-				<width>21-col</width>
+                <width>21-col</width>
                 <height>744</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
@@ -332,7 +332,7 @@
                         <aspectratio aligny="top">scale</aspectratio>
                         <texture fallback="colors/black.png" border="0">$INFO[ListItem.thumb]</texture>
                         <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
-						<bordersize>3</bordersize>
+                        <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
                     <control type="group">
@@ -375,7 +375,7 @@
                         <aspectratio aligny="top">scale</aspectratio>
                         <texture fallback="colors/black.png" border="0">$INFO[ListItem.thumb]</texture>
                         <bordertexture border="3" colordiffuse="ffFFFFFF">colors/selected.png</bordertexture>
-						<bordersize>3</bordersize>
+                        <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
                     <control type="group">
@@ -432,8 +432,8 @@
                 <height>576</height>
                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                 <texture border="0">$INFO[ListItem.Art(tvshow.poster)]</texture>
-				<bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
-				<bordersize>3</bordersize>
+                <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
+                <bordersize>3</bordersize>
                 <fadetime>200</fadetime>
             </control>
             <control type="image">
@@ -444,8 +444,8 @@
                 <height>-</height>
                 <aspectratio aligny="top" align="center" scalediffuse="false">keep</aspectratio>
                 <texture border="0">$INFO[ListItem.thumb]</texture>
-				<bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
-				<bordersize>3</bordersize>
+                <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
+                <bordersize>3</bordersize>
                 <fadetime>200</fadetime>
             </control>
         </control>

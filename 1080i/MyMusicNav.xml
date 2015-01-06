@@ -3,9 +3,9 @@
     <defaultcontrol always="false">9000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <onload condition="window.previous(0)">setfocus(9000)</onload>
-	<previouswindow>home</previouswindow>
-	<onload>ClearProperty(recentalbums,10000)</onload>
-	<onload>ClearProperty(recentalbums-data,10000)</onload>
+    <previouswindow>home</previouswindow>
+    <onload>ClearProperty(recentalbums,10000)</onload>
+    <onload>ClearProperty(recentalbums-data,10000)</onload>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
@@ -66,7 +66,7 @@
                         <posx>0</posx>
                         <posy>158</posy>
                         <onleft>9000</onleft>
-						<onback>activateWindow(home)</onback>
+                        <onback>activateWindow(home)</onback>
                         <animation type="conditional" condition="window.Next(0)">
                             <effect type="fade" start="100" end="0" time="300" delay="300" />
                         </animation>
@@ -80,7 +80,7 @@
                             <width>22-col</width>
                             <height>744</height>
                             <onleft>9000</onleft>
-							<content>plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]]</content>
+                            <content>plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]]</content>
                             <itemlayout width="312" height="366">
                                 <control type="image">
                                     <posx>0</posx>
@@ -90,7 +90,7 @@
                                     <aspectratio>stretch</aspectratio>
                                     <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(thumb)]</texture>
                                     <bordertexture border="3" colordiffuse="22FFFFFF">colors/selected.png</bordertexture>
-									<bordersize>3</bordersize>
+                                    <bordersize>3</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
                                 </control>
                                 <control type="group">
@@ -133,7 +133,7 @@
                                     <aspectratio>stretch</aspectratio>
                                     <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(thumb)]</texture>
                                     <bordertexture border="3" colordiffuse="ffFFFFFF">colors/selected.png</bordertexture>
-									<bordersize>3</bordersize>
+                                    <bordersize>3</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
                                 </control>
                                 <control type="group">
@@ -185,7 +185,7 @@
                 <control type="group" id="8000">
                     <visible>Control.IsVisible(60) + SubString(skin.string(showRecentMusicItems),false)</visible>
                     <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
-					<control type="scrollbar" id="60">
+                    <control type="scrollbar" id="60">
                         <posx>84r</posx>
                         <posy>272</posy>
                         <height>672</height>
@@ -197,7 +197,7 @@
                     <visible>SubString(skin.string(showRecentMusicItems),false)</visible>
                     <posx>col-4-begin</posx>
                     <posy>row-18-begin</posy>
-					<include>mediaListFooter</include>
+                    <include>mediaListFooter</include>
                 </control>
             </control>
         </control>

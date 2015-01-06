@@ -12,7 +12,7 @@
                 <posy>0</posy>
                 <width>16-col-gutter</width>
                 <height>-</height>
-				<aspectratio align="left" aligny="top">keep</aspectratio>
+                <aspectratio align="left" aligny="top">keep</aspectratio>
                 <texture>$INFO[listitem.thumb]</texture>
             </control>
             <control type="panel" id="5">

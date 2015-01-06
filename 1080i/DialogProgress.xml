@@ -2,11 +2,11 @@
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
     <coordinates>
-		<system>1</system>
-		<left>0</left>
-		<top>0</top>
-	</coordinates>
-    <controls>	
+        <system>1</system>
+        <left>0</left>
+        <top>0</top>
+    </coordinates>
+    <controls>    
         <control type="group">
             <posx>col-19-begin</posx>
             <posy>row-2-begin</posy>
@@ -35,7 +35,7 @@
                 <height>1-row</height>
                 <label>$INFO[Control.GetLabel(1)] $INFO[System.Progressbar,- ,%] ($LOCALIZE[31152])</label>
                 <textcolor>black</textcolor>
-				<scroll>true</scroll>
+                <scroll>true</scroll>
                 <shadowcolor>-</shadowcolor>
                 <!--animations-->
                 <animation type="Windowopen">
@@ -65,9 +65,9 @@
             <control type="label" id="1">
                 <description>fake heading label</description>
             </control>
-			<control type="button" id="10">
-				<description>Cancel button</description>
-			</control>
+            <control type="button" id="10">
+                <description>Cancel button</description>
+            </control>
         </control>
     </controls>
 </window>
