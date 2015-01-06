@@ -48,6 +48,22 @@
 						<selected>VideoPlayer.SubtitlesEnabled</selected>
 					</control>
 											
+
+                    <control type="button" id="5005">
+                        <description>Adjust Subtitle Offset</description>
+                        <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
+                        <height>1-row</height>
+                        <width>6-col</width>
+                        <font>itemTitle</font>
+                        <textcolor>unselected</textcolor>
+                        <focusedcolor>selected</focusedcolor>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                        <textoffsetx>0</textoffsetx>
+                        <label>22006</label>
+                        <onclick>SubtitleDelay</onclick>
+                    </control>
+
 					<control type="button" id="5001">
 	                    <description>Download Subtitle</description>
 	                    <height>1-row</height>
