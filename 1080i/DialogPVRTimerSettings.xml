@@ -168,10 +168,10 @@
                 </control>
                 <control type="edit" id="12">
                     <description>Default Edit</description>
-					<texturenofocus>-</texturenofocus>
-					<texturefocus>colors/selected.png</texturefocus>
-					<textcolor>selected</textcolor>
-					<focusedcolor>black</focusedcolor>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>colors/selected.png</texturefocus>
+                    <textcolor>selected</textcolor>
+                    <focusedcolor>black</focusedcolor>
                 </control>
             </control>
             <control type="group">
