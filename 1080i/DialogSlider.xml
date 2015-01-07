@@ -56,7 +56,7 @@
             </control>
             <control type="label" id="12">
                 <description>message</description>
-                <posx>96</posx>
+                <posx>108</posx>
                 <posy>30</posy>
                 <font>dialogTitle</font>
                 <textcolor>black</textcolor>
