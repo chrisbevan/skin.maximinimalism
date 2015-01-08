@@ -3,7 +3,12 @@
 - [UPDATED] Additional toggle options added for the addon browser
 - [NEW] Hebrew translation (thanks dhead666)
 - [CHANGED] Fullscreen music screen now autohides player controls. Extra fade animations now used to reduce potential for plasma screen burn problems (more work probably required to refine)
-- Misc tweaks, fixes and minor layout adjustments
+- [UPDATED] Code cleaning (thanks andreineculau)
+- [NEW] Basic font support for CJK languages
+- [UPDATED] French language translation (thanks geogiraux)
+- [UPDATED] XBMC strings in translations files renamed properly to Kodi (thanks geogiraux)
+- [UPDATED] Recent items should now refresh content better. More work needed to perfect this
+- Misc tweaks, fixes and minor layout adjustments skinwide
 
 [B]1.1.0[/B]
 ****Kodi Helix builds only****
