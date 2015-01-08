@@ -203,6 +203,13 @@
                 <onclick>ActivateWindow(favourites,return)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
             </item>
+			<item>
+                <visible/>
+                <label>1214</label>
+                <onclick>ActivateWindow(Videos,files,return)</onclick>
+	            <onclick>Control.SetFocus(50)</onclick>
+	            <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+            </item>
         </content>
     </include>
     <!--music menu items-->
@@ -388,6 +395,13 @@
                 <label>1036</label>
                 <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
                 <onclick>ReplaceWindow(favourites)</onclick>
+            </item>
+			<item>
+                <visible/>
+                <label>1214</label>
+                <onclick>ActivateWindow(MusicFiles,root)</onclick>
+	            <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
+	            <onclick>Control.SetFocus(51)</onclick>
             </item>
         </content>
     </include>

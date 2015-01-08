@@ -4,10 +4,10 @@
     <include name="viewPictureGrid">
         <control type="panel" id="52">
             <visible>true</visible>
-            <posx>-12</posx>
-            <posy>0</posy>
+            <posx>0</posx>
+            <posy>-12</posy>
             <width>22-col</width>
-            <height>708</height>
+            <height>744</height>
             <onleft>9000</onleft>
             <onright>60</onright>
             <ondown>51</ondown>

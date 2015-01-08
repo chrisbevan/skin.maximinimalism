@@ -185,23 +185,6 @@
             <onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
             <onclick>ActivateWindow(5000)</onclick>
         </control>
-        <control type="button" id="506">
-            <description>Files menu (video)</description>
-            <visible/>
-            <height>54</height>
-            <width>4-col</width>
-            <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
-            <label>1214</label>
-            <onclick>right</onclick>
-            <onclick>ActivateWindow(Videos,files,return)</onclick>
-            <onclick>Control.SetFocus(50)</onclick>
-            <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-        </control>
         <control type="button" id="507">
             <visible/>
             <height>54</height>
@@ -350,23 +333,6 @@
             <label>653</label>
             <onclick>UpdateLibrary(music)</onclick>
             <onclick>right</onclick>
-        </control>
-        <control type="button" id="505">
-            <description>Files menu (music)</description>
-            <visible/>
-            <height>54</height>
-            <width>4-col</width>
-            <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
-            <label>1214</label>
-            <onclick>right</onclick>
-            <onclick>ActivateWindow(MusicFiles,root)</onclick>
-            <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
-            <onclick>Control.SetFocus(51)</onclick>
         </control>
         <control type="radiobutton" id="20">
             <description>Shuffle</description>

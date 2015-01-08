@@ -8,6 +8,9 @@
 - [UPDATED] French language translation (thanks geogiraux)
 - [UPDATED] XBMC strings in translations files renamed properly to Kodi (thanks geogiraux)
 - [UPDATED] Recent items should now refresh content better. More work needed to perfect this
+- [NEW] Cancel button added to keyboard dialog (thanks geogiraux)
+- [MODIFIED] Files menu moved to main source menus (thanks andreineculau)
+- [UPDATED] Visualisation settings enabled for fullscreenmusic screen (thanks rytmask)
 - Misc tweaks, fixes and minor layout adjustments skinwide
 
 [B]1.1.0[/B]

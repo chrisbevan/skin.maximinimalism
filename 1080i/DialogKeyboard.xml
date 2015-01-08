@@ -52,15 +52,15 @@
                 <posy>2-row</posy>
                 <!--row 1-->
                 <control type="group">
-                    <control type="button" id="309">
-                        <description>Layout button</description>
+                    <control type="button" id="300">
+                        <description>Done</description>
                         <posx>-72</posx>
                         <posy>0</posy>
-                        <width>4-col</width>
+                        <width>136</width>
                         <height>1-col</height>
                         <label>20177</label>
                         <onleft>111</onleft>
-                        <onright>100</onright>
+                        <onright>500</onright>
                         <onup>312</onup>
                         <ondown>302</ondown>
                         <texturenofocus>colors/keyunselected.png</texturenofocus>
@@ -70,12 +70,31 @@
                         <align>center</align>
                         <font>buttonTitle</font>
                     </control>
+					<control type="button" id="500">
+                        <description>Cancel</description>
+                        <posx>70</posx>
+                        <posy>0</posy>
+                        <width>2-col</width>
+                        <height>1-col</height>
+                        <label>222</label>
+                        <onleft>300</onleft>
+                        <onright>100</onright>
+                        <onup>312</onup>
+                        <ondown>302</ondown>
+                        <texturenofocus>colors/keyunselected.png</texturenofocus>
+                        <texturefocus>colors/keyaccent.png</texturefocus>
+                        <focusedcolor>selected</focusedcolor>
+                        <textcolor>selected</textcolor>
+                        <align>center</align>
+                        <font>buttonTitle</font>
+						<onclick>action(close)</onclick>
+                    </control>
                     <control type="button" id="100">
                         <posx>222</posx>
                         <posy>0</posy>
                         <width>1-col</width>
                         <height>1-col</height>
-                        <onleft>309</onleft>
+                        <onleft>500</onleft>
                         <onright>101</onright>
                         <onup>312</onup>
                         <ondown>120</ondown>
@@ -241,7 +260,7 @@
                         <width>1-col</width>
                         <height>1-col</height>
                         <onleft>110</onleft>
-                        <onright>309</onright>
+                        <onright>300</onright>
                         <onup>312</onup>
                         <ondown>131</ondown>
                         <texturenofocus>colors/keyselected.png</texturenofocus>
@@ -263,7 +282,7 @@
                         <label>20178</label>
                         <onleft>131</onleft>
                         <onright>120</onright>
-                        <onup>309</onup>
+                        <onup>300</onup>
                         <ondown>303</ondown>
                         <texturenofocus>colors/keyunselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
@@ -709,7 +728,7 @@
                         <onleft>171</onleft>
                         <onright>307</onright>
                         <onup>303</onup>
-                        <ondown>300</ondown>
+                        <ondown>309</ondown>
                         <texturenofocus>colors/keyunselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textureradioonfocus>-</textureradioonfocus>
@@ -739,7 +758,7 @@
                         <onleft>304</onleft>
                         <onright>160</onright>
                         <onup>303</onup>
-                        <ondown>300</ondown>
+                        <ondown>309</ondown>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>selected</textcolor>
                         <align>center</align>
@@ -941,8 +960,8 @@
                 <!--row 5-->
                 <control type="group">
                     <posy>312</posy>
-                    <control type="button" id="300">
-                        <description>Done button</description>
+                    <control type="button" id="309">
+                        <description>Layout</description>
                         <posx>-72</posx>
                         <posy>0</posy>
                         <width>4-col</width>
@@ -972,7 +991,7 @@
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>selected</textcolor>
                         <align>center</align>
-                        <onleft>300</onleft>
+                        <onleft>309</onleft>
                         <onright>305</onright>
                         <onup>160</onup>
                         <ondown>312</ondown>
@@ -986,7 +1005,7 @@
                         <height>1-col</height>
                         <label>20181</label>
                         <onleft>306</onleft>
-                        <onright>300</onright>
+                        <onright>309</onright>
                         <onup>171</onup>
                         <ondown>312</ondown>
                         <texturenofocus>colors/keyselected.png</texturenofocus>

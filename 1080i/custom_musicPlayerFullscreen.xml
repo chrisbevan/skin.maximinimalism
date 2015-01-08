@@ -403,6 +403,13 @@
                                 <thumb>-</thumb>
                                 <onclick>activateWindow(musicOSD)</onclick>
                             </item>
+							<item>
+								<visible>Visualisation.Enabled</visible>
+                                <description>Visualisation Settings</description>
+                                <label>$LOCALIZE[21417]</label>
+                                <thumb>-</thumb>
+                                <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
+                            </item>
                         </content>
                     </control>
                 </control>
