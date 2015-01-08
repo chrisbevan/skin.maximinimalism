@@ -20,15 +20,13 @@ msgstr ""
 
 msgctxt "Addon Summary"
 msgid "A skin for XBMC from theDeadman"
-msgstr "Un thème pour XBMC par theDeadman"
+msgstr "Un thème pour Kodi par theDeadman"
 
 msgctxt "Addon Description"
 msgid ""
-"Addon BeschreibungMaximinimalism is a lightweight, clean and simple XBMC "
-"experience designed for maximum usability and minimum fuss."
+"Maximinimalism is a lightweight, clean and simple XBMC experience designed for maximum usability and minimum fuss."
 msgstr ""
-"Maximinimalism propose une expérience XBMC simple, épurée et légère avec "
-"une ergonomie maximum et une frustration minimum"
+"Maximinimalism propose une expérience Kodi simple, épurée et légère avec une ergonomie maximum et une frustration minimum."
 
 msgctxt "#31000"
 msgid "Watch"
@@ -48,7 +46,11 @@ msgstr "Extensions Programmes"
 
 msgctxt "#31004"
 msgid "Power"
-msgstr "Power"
+msgstr "Alimentation"
+
+msgctxt "#31005"
+msgid "Latest"
+msgstr "Récent"
 
 msgctxt "#31006"
 msgid "Live TV"
@@ -67,8 +69,8 @@ msgid "No plot info available"
 msgstr "Pas de synopsis disponible"
 
 msgctxt "#31010"
-msgid "All Addons"
-msgstr "Toutes les extensions"
+msgid "Add-ons"
+msgstr "Extensions"
 
 msgctxt "#31011"
 msgid "Season"
@@ -84,7 +86,7 @@ msgstr "Ajoutés dernièrement"
 
 msgctxt "#31014"
 msgid "title(s)"
-msgstr "Titre(s)"
+msgstr "entrée(s)"
 
 msgctxt "#31017"
 msgid "Channels"
@@ -96,15 +98,15 @@ msgstr "Minutes"
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr "Ouvrir une liste de lecture"
+msgstr "Ouvrir une playlist"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr "Enregistrer la liste"
+msgstr "Enregistrer la playlist"
 
 msgctxt "#31021"
 msgid "Clear playlist"
-msgstr "Vider la liste"
+msgstr "Vider la playlist"
 
 msgctxt "#31022"
 msgid "Select Items"
@@ -120,7 +122,7 @@ msgstr "Source Fanart du jeu:"
 
 msgctxt "#31029"
 msgid "Current playlist"
-msgstr "Liste de lecture actuelle"
+msgstr "Playlist actuelle"
 
 msgctxt "#31030"
 msgid "Music Fanart location: "
@@ -192,7 +194,7 @@ msgstr "Créer un dossier"
 
 msgctxt "#31050"
 msgid "shot(s)"
-msgstr "Image(s)"
+msgstr "image(s)"
 
 msgctxt "#31053"
 msgid "Music Library"
@@ -204,11 +206,11 @@ msgstr "par"
 
 msgctxt "#31056"
 msgid "Photo Library"
-msgstr "Bibliothèque Photo"
+msgstr "Bibliothèque photographique"
 
 msgctxt "#31057"
 msgid "Create Music Playlist"
-msgstr "Créer une liste de lecture musicale"
+msgstr "Créer une playlist musicale"
 
 msgctxt "#31058"
 msgid "Music Addons"
@@ -228,7 +230,7 @@ msgstr "Mémoire"
 
 msgctxt "#31063"
 msgid "File Lists"
-msgstr "Liste des fichiers"
+msgstr "Listes des fichiers"
 
 msgctxt "#31064"
 msgid "CPU"
@@ -292,7 +294,7 @@ msgstr "Maintenant et à suivre"
 
 msgctxt "#31079"
 msgid "XBMC"
-msgstr "XBMC"
+msgstr "Kodi"
 
 msgctxt "#31080"
 msgid "Programme Guide"
@@ -324,11 +326,11 @@ msgstr "Explorateur de fichiers"
 
 msgctxt "#31091"
 msgid "Add Video Playlist"
-msgstr "Ajouter une liste de lecture Vidéo"
+msgstr "Ajouter une playlist Vidéo"
 
 msgctxt "#31092"
 msgid "Add Music Playlist"
-msgstr "Ajouter une liste de lecture Musique"
+msgstr "Ajouter une playlist musicale"
 
 msgctxt "#31093"
 msgid "Favourite"
@@ -340,11 +342,11 @@ msgstr "Transférer"
 
 msgctxt "#31096"
 msgid "No items found"
-msgstr "Aucun objet trouvé"
+msgstr "Aucune entrée trouvé"
 
 msgctxt "#31097"
 msgid "Playlist"
-msgstr "Liste de lecture"
+msgstr "Playlist"
 
 msgctxt "#31098"
 msgid "Volume Muted"
@@ -420,7 +422,7 @@ msgstr "Aspect"
 
 msgctxt "#31117"
 msgid "Launch addon"
-msgstr "Démarrer extension"
+msgstr "Démarrer l'extension"
 
 msgctxt "#31118"
 msgid "Unwatched titles only"
@@ -444,7 +446,7 @@ msgstr "Synchronisation"
 
 msgctxt "#31123"
 msgid "Current Playlist"
-msgstr "Liste de lecture actuelle"
+msgstr "Playlist actuelle"
 
 msgctxt "#31124"
 msgid "Search Library"
@@ -528,7 +530,7 @@ msgstr "FPS"
 
 msgctxt "#31145"
 msgid "Items"
-msgstr "Objets"
+msgstr "Entrées"
 
 msgctxt "#31146"
 msgid "Director"
@@ -560,7 +562,7 @@ msgstr "Appuyer sur OK pour annuler"
 
 msgctxt "#31153"
 msgid "Playlist saved"
-msgstr "Liste de lecture sauvegardée"
+msgstr "Playlist sauvegardée"
 
 msgctxt "#31154"
 msgid "Search for Subtitles"
@@ -580,7 +582,7 @@ msgstr "Accueil : masquer le menu Jeux"
 
 msgctxt "#31158"
 msgid "No items in Playlist"
-msgstr "Pas d'entrée dans la liste de lecture"
+msgstr "Pas d'entrée dans la playlist"
 
 msgctxt "#31159"
 msgid "Unknown"
