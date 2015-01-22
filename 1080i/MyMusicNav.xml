@@ -78,7 +78,7 @@
                             <posx>-12</posx>
                             <posy>0</posy>
                             <width>22-col</width>
-                            <height>744</height>
+                            <height>768</height>
                             <onleft>9000</onleft>
                             <content>plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]]</content>
                             <itemlayout width="312" height="366">

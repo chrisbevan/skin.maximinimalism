@@ -8,7 +8,8 @@
     <controls>
         <control type="group">
             <posx>col-19-begin</posx>
-            <posy>83</posy>
+            <include condition="!window.isactive(progressdialog)">progressPosition1</include>
+            <include condition="window.isactive(progressdialog)">progressPosition2</include>
             <!--<visible>!Window.IsActive(fullscreenvideo)</visible>-->
             <!--animations-->
             <animation type="Windowclose">
@@ -63,7 +64,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
-            <label>DialogKaiToast.xml </label>
+            <label>DialogKaiToast.xml</label>
         </control>
     </controls>
 </window>

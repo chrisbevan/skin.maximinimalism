@@ -160,7 +160,18 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
+                        <visible>!Visualisation.Enabled</visible>
                         <posx>1391</posx>
+                        <posy>28</posy>
+                        <width>8-col</width>
+                        <height>54</height>
+                        <texture>colors/black.png</texture>
+                        <colordiffuse>ccffffff</colordiffuse>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="image">
+                        <visible>Visualisation.Enabled</visible>
+                        <posx>1607</posx>
                         <posy>28</posy>
                         <width>8-col</width>
                         <height>54</height>
@@ -403,8 +414,8 @@
                                 <thumb>-</thumb>
                                 <onclick>activateWindow(musicOSD)</onclick>
                             </item>
-							<item>
-								<visible>Visualisation.Enabled</visible>
+                            <item>
+                                <visible>Visualisation.Enabled</visible>
                                 <description>Visualisation Settings</description>
                                 <label>$LOCALIZE[21417]</label>
                                 <thumb>-</thumb>

@@ -9,7 +9,8 @@
     <controls>
         <control type="group">
             <posx>col-19-begin</posx>
-            <posy>row-2-begin</posy>
+            <include condition="!window.isactive(infodialog)">progressPosition1</include>
+            <include condition="window.isactive(infodialog)">progressPosition2</include>
             <!--animations-->
             <animation type="Windowclose">
                 <effect type="fade" start="100" end="0" time="400" tween="sine"/>
@@ -68,6 +69,13 @@
             <control type="button" id="10">
                 <description>Cancel button</description>
             </control>
+        </control>
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <posy>0</posy>
+            <include>DialogID</include>
+            <label>DialogProgress.xml</label>
         </control>
     </controls>
 </window>

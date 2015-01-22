@@ -126,12 +126,12 @@
                         <posx>0</posx>
                         <posy>158</posy>
                         <onleft>9000</onleft>
-                        <!--content (movies)-->
+                        <!--content-->
                         <control type="panel" id="9998">
                             <posx>-12</posx>
                             <posy>0</posy>
                             <width>22-col</width>
-                            <height>744</height>
+                            <height>768</height>
                             <onleft>9000</onleft>
                             <ondown>9998</ondown>
                             <onback>activateWindow(home)</onback>
@@ -153,7 +153,7 @@
                                     <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(fanart)]</texture>
                                     <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
                                     <bordersize>3</bordersize>
-                                    <colordiffuse>ffFFFFFF</colordiffuse>
+                                    <colordiffuse>ffffffff</colordiffuse>
                                 </control>
                                 <control type="image">
                                     <visible>!isempty(listitem.Episode)</visible>

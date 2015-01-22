@@ -242,6 +242,9 @@
             </control>
         </control>
     </include>
+    <!--conditional positioning for progress dialogs (avoid overlaps)-->
+    <include name="progressPosition1"><posy>row-2-begin</posy></include>
+    <include name="progressPosition2"><posy>row-4-begin</posy></include>
     <!--debugging-->
     <include name="DialogID">
         <posx>15</posx>
