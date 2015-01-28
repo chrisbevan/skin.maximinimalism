@@ -37,7 +37,6 @@
                 <width>468</width>
                 <height>1-row</height>
                 <label>$INFO[player.volume]</label>
-                <scroll>true</scroll>
                 <shadowcolor>-</shadowcolor>
             </control>
         </control>

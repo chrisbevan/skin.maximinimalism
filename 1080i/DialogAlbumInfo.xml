@@ -24,7 +24,7 @@
                 <include>dimensionsFullscreen</include>
                 <aspectratio align="center" aligny="top">stretch</aspectratio>
                 <texture fallback="colors/black.png">$INFO[Listitem.art(fanart)]</texture>
-                <include condition="!Skin.HasSetting(disableAnimateFanart)">kenBurnsey</include>
+                <include condition="!Skin.HasSetting(lowPowerMode)">kenBurnsey</include>
             </control>
             <!--coverart-->
             <control type="image">
@@ -94,7 +94,8 @@
                 <font>pageTitle</font>
                 <textcolor>black</textcolor>
                 <label>$INFO[ListItem.Artist]</label>
-                <scroll>true</scroll>
+                
+                
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="label">
@@ -262,7 +263,8 @@
                     <font>pageTitle</font>
                     <textcolor>black</textcolor>
                     <label>$INFO[ListItem.album]</label>
-                    <scroll>true</scroll>
+                    
+                
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <control type="label">

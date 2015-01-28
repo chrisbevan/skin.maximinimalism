@@ -2,9 +2,15 @@
 - [NEW] Italian Translation (thanks Shiba89)
 - [MODIFIED] Info dialogs reworked to minimise incidence of overlapping (not perfect, but it's a start)
 - [BUGFIX] Problem with RCB plugin launch from homescreen fixed (thanks fipm)
+- [MODIFIED] New skin option 'Low CPU power mode' disables scrolling and fanart animations for devices like Raspberry PI (thanks jbman)
+- [NEW] Star rating for music tracks on fullscreen music view (thanks geogiraux) Use left or right to increase / decrease rating (when navigation bar is hidden)
+- [NEW] Skin option: Hide all background imagery in fullscreen music view
+- [FIXED] broken text alignment in RCB dialogs
+- [FIXED] Video navigation window not rendering correctly on video playback (thanks _omega)
+
 
 [B]1.1.1[/B]
-- [BUGFIX] default focussed item fixed for certain select dialogs (blu-ray & subtitles etc)
+- [BUGFIX] default focussed item fixed for certain select dialogs (blu-ray, subtitles etc)
 - [UPDATED] Additional toggle options added for the addon browser
 - [NEW] Hebrew translation (thanks dhead666)
 - [CHANGED] Fullscreen music screen now autohides player controls. Extra fade animations now used to reduce potential for plasma screen burn problems (more work probably required to refine)

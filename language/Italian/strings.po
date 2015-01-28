@@ -610,8 +610,8 @@ msgid "Home menu items"
 msgstr "Elementi Home"
 
 msgctxt "#31163"
-msgid "Disable Fanart Animations (for low powered devices)"
-msgstr "Disabilita animazioni Fanart (per dispositivi poco potenti)"
+msgid "Low CPU power mode"
+msgstr "Modalità a basso consumo della CPU"
 
 msgctxt "#31164"
 msgid "Radio"

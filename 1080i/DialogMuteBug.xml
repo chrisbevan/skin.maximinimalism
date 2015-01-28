@@ -33,7 +33,6 @@
                 <width>4-col</width>
                 <height>1-row</height>
                 <label>772</label>
-                <scroll>true</scroll>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
                 <!--animations-->

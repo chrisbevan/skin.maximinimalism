@@ -35,7 +35,8 @@
                 <width>468</width>
                 <height>1-row</height>
                 <label>-</label>
-                <scroll>true</scroll>
+
+
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
                 <!--animations-->
@@ -52,7 +53,8 @@
                 <width>468</width>
                 <height>1-row</height>
                 <label>-</label>
-                <scroll>true</scroll>
+                <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
+                <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
                 <shadowcolor>-</shadowcolor>
                 <!--animations-->
                 <animation type="Windowopen">

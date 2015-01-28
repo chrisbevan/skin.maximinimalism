@@ -36,7 +36,8 @@
                 <height>1-row</height>
                 <label>$INFO[Control.GetLabel(1)] $INFO[System.Progressbar,- ,%] ($LOCALIZE[31152])</label>
                 <textcolor>black</textcolor>
-                <scroll>true</scroll>
+                <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
+                <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
                 <shadowcolor>-</shadowcolor>
                 <!--animations-->
                 <animation type="Windowopen">
@@ -52,7 +53,8 @@
                 <width>468</width>
                 <height>1-row</height>
                 <label>-</label>
-                <scroll>true</scroll>
+
+
                 <shadowcolor>-</shadowcolor>
                 <!--animations-->
                 <animation type="Windowopen">

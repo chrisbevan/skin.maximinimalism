@@ -587,3 +587,7 @@ msgstr "Přehrávní zastaveno. Stiskněte [Zpět] pro návrat."
 msgctxt "#31159"
 msgid "Unknown"
 msgstr "Neznámý"
+
+msgctxt "#31163"
+msgid "Low CPU power mode"
+msgstr "Napájecí režim Low CPU"
