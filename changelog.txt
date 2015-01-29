@@ -6,7 +6,9 @@
 - [NEW] Star rating for music tracks on fullscreen music view (thanks geogiraux) Use left or right to increase / decrease rating (when navigation bar is hidden)
 - [NEW] Skin option: Hide all background imagery in fullscreen music view
 - [FIXED] broken text alignment in RCB dialogs
+- [NEW] Final dialog skinning for RCB complete
 - [FIXED] Video navigation window not rendering correctly on video playback (thanks _omega)
+- [FIXED] Custom startup windows now honoured correctly (thanks berkhornet)
 
 
 [B]1.1.1[/B]
