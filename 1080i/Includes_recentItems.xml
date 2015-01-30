@@ -154,6 +154,13 @@
             </focusedlayout>
             <content>
                 <item>
+                    <visible>isempty(Window(Home).Property(RecentMovie.1.Title))</visible>
+                    <label>$LOCALIZE[342] - $LOCALIZE[31170]</label>
+                    <label2>[$LOCALIZE[31171]]</label2>
+                    <thumb></thumb>
+                    <onclick>UpdateLibrary(video)</onclick>
+                </item>
+                <item>
                     <visible>!isempty(Window(Home).Property(RecentMovie.1.Title))</visible>
                     <label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
                     <label2>$INFO[Window(Home).Property(RecentMovie.1.Year),, •] $INFO[Window(Home).Property(RecentMovie.1.Runtime),, $LOCALIZE[31018]]</label2>
@@ -381,6 +388,13 @@
             </focusedlayout>
             <content>
                 <item>
+                    <visible>isempty(Window(Home).Property(RecentEpisode.1.TVshowTitle))</visible>
+                    <label>$LOCALIZE[20343] - $LOCALIZE[31170]</label>
+                    <label2>[$LOCALIZE[31171]]</label2>
+                    <thumb></thumb>
+                    <onclick>UpdateLibrary(video)</onclick>
+                </item>
+                <item>
                     <visible>!isempty(Window(Home).Property(RecentEpisode.1.TVshowTitle))</visible>
                     <label>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)]</label>
                     <label2>$INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo)]$INFO[Window(Home).Property(RecentEpisode.1.Title), • ,]</label2>
@@ -550,6 +564,13 @@
                 </control>
             </focusedlayout>
             <content>
+                <item>
+                    <visible>isempty(Window(Home).Property(RecentAlbum.1.Title))</visible>
+                    <label>$LOCALIZE[132] - $LOCALIZE[31170]</label>
+                    <label2>[$LOCALIZE[31171]]</label2>
+                    <thumb></thumb>
+                    <onclick>UpdateLibrary(video)</onclick>
+                </item>
                 <item>
                     <visible>!isempty(Window(Home).Property(RecentAlbum.1.Title))</visible>
                     <label>$INFO[Window(Home).Property(RecentAlbum.1.Title)]</label>

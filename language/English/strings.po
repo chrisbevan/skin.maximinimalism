@@ -622,3 +622,11 @@ msgstr ""
 msgctxt "#31169"
 msgid "Disable all background imagery in fullscreen music view"
 msgstr ""
+
+msgctxt "#31170"
+msgid "No recent items found"
+msgstr ""
+
+msgctxt "#31171"
+msgid "Select me to update library"
+msgstr ""
