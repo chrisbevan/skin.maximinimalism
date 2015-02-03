@@ -2,14 +2,15 @@
 <includes>
     <!--movies-->
     <include name="movieRecentItems">
-        <control type="list" id="9998">
+        <control type="panel" id="9998">
+            <visible>!stringcompare(Window(Home).Property(Movies.UnWatched),0)</visible>
             <posx>-12</posx>
             <posy>0</posy>
-            <width>1524</width>
-            <height>6-row</height>
+            <width>1548</width>
+            <include condition="!stringcompare(Window(Home).Property(Episodes.UnWatched),0)">recentItemsHalfHeight</include>
+            <include condition="stringcompare(Window(Home).Property(Episodes.UnWatched),0)">recentItemsFullHeight</include>
             <onleft>9000</onleft>
             <ondown>control.setfocus(9997,$INFO[Container(9998).Position])</ondown>
-            <orientation>horizontal</orientation>
             <onback>activateWindow(home)</onback>
             <animation type="windowopen">
                 <include>listSlideIn</include>
@@ -62,7 +63,6 @@
             </itemlayout>
             <focusedlayout width="387" height="362">
                 <control type="image">
-                    <visible>control.hasfocus(9998)</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>363</width>
@@ -73,23 +73,10 @@
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                 </control>
-                <control type="image">
-                    <visible>!control.hasfocus(9998)</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>363</width>
-                    <height>269</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
-                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
-                    <bordersize>3</bordersize>
-                    <colordiffuse>ffFFFFFF</colordiffuse>
-                </control>
                 <control type="group">
                     <posx>0</posx>
                     <posy>272</posy>
                     <control type="image">
-                        <visible>control.hasfocus(9998)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>363</width>
@@ -99,19 +86,7 @@
                         <bordersize>0</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
-                    <control type="image">
-                        <visible>!control.hasfocus(9998)</visible>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>363</width>
-                        <height>64</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <bordersize>0</bordersize>
-                        <colordiffuse>77FFFFFF</colordiffuse>
-                    </control>
                     <control type="label">
-                        <visible>control.hasfocus(9998)</visible>
                         <posx>12</posx>
                         <posy>-11</posy>
                         <width>339</width>
@@ -121,32 +96,11 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>control.hasfocus(9998)</visible>
                         <posx>12</posx>
                         <posy>18</posy>
                         <width>339</width>
                         <font>smallMedium</font>
                         <textcolor>black</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Label2]</label>
-                    </control>
-                    <control type="label">
-                        <visible>!control.hasfocus(9998)</visible>
-                        <posx>12</posx>
-                        <posy>-11</posy>
-                        <width>339</width>
-                        <font>itemTitleSmallCondensed</font>
-                        <textcolor>selected</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label">
-                        <visible>!control.hasfocus(9998)</visible>
-                        <posx>12</posx>
-                        <posy>18</posy>
-                        <width>339</width>
-                        <font>smallMedium</font>
-                        <textcolor>selected</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
@@ -154,77 +108,70 @@
             </focusedlayout>
             <content>
                 <item>
-                    <visible>isempty(Window(Home).Property(RecentMovie.1.Title))</visible>
-                    <label>$LOCALIZE[342] - $LOCALIZE[31170]</label>
-                    <label2>[$LOCALIZE[31171]]</label2>
-                    <thumb></thumb>
-                    <onclick>UpdateLibrary(video)</onclick>
-                </item>
-                <item>
-                    <visible>!isempty(Window(Home).Property(RecentMovie.1.Title))</visible>
+                    <visible>substring(Window(Home).Property(RecentMovie.1.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
                     <label2>$INFO[Window(Home).Property(RecentMovie.1.Year),, •] $INFO[Window(Home).Property(RecentMovie.1.Runtime),, $LOCALIZE[31018]]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentMovie.1.Art(fanart))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentMovie.1.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentMovie.2.Title))</visible>
+                    <visible>substring(Window(Home).Property(RecentMovie.2.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentMovie.2.Title)]</label>
                     <label2>$INFO[Window(Home).Property(RecentMovie.2.Year),, •] $INFO[Window(Home).Property(RecentMovie.2.Runtime),, $LOCALIZE[31018]]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentMovie.2.Art(fanart))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentMovie.2.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentMovie.3.Title))</visible>
+                    <visible>substring(Window(Home).Property(RecentMovie.3.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentMovie.3.Title)]</label>
                     <label2>$INFO[Window(Home).Property(RecentMovie.3.Year),, •] $INFO[Window(Home).Property(RecentMovie.3.Runtime),, $LOCALIZE[31018]]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentMovie.3.Art(fanart))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentMovie.3.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentMovie.4.Title))</visible>
+                    <visible>substring(Window(Home).Property(RecentMovie.4.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentMovie.4.Title)]</label>
                     <label2>$INFO[Window(Home).Property(RecentMovie.4.Year),, •] $INFO[Window(Home).Property(RecentMovie.4.Runtime),, $LOCALIZE[31018]]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentMovie.4.Art(fanart))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentMovie.4.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentMovie.5.Title))</visible>
+                    <visible>substring(Window(Home).Property(RecentMovie.5.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentMovie.5.Title)]</label>
                     <label2>$INFO[Window(Home).Property(RecentMovie.5.Year),, •] $INFO[Window(Home).Property(RecentMovie.5.Runtime),, $LOCALIZE[31018]]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentMovie.5.Art(fanart))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentMovie.5.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentMovie.6.Title))</visible>
+                    <visible>substring(Window(Home).Property(RecentMovie.6.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentMovie.6.Title)]</label>
                     <label2>$INFO[Window(Home).Property(RecentMovie.6.Year),, •] $INFO[Window(Home).Property(RecentMovie.6.Runtime),, $LOCALIZE[31018]]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentMovie.6.Art(fanart))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentMovie.6.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentMovie.7.Title))</visible>
+                    <visible>substring(Window(Home).Property(RecentMovie.7.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentMovie.7.Title)]</label>
                     <label2>$INFO[Window(Home).Property(RecentMovie.7.Year),, •] $INFO[Window(Home).Property(RecentMovie.7.Runtime),, $LOCALIZE[31018]]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentMovie.7.Art(fanart))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentMovie.7.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentMovie.8.Title))</visible>
+                    <visible>substring(Window(Home).Property(RecentMovie.8.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentMovie.8.Title)]</label>
                     <label2>$INFO[Window(Home).Property(RecentMovie.8.Year),, •] $INFO[Window(Home).Property(RecentMovie.8.Runtime),, $LOCALIZE[31018]]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentMovie.8.Art(fanart))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentMovie.8.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentMovie.9.Title))</visible>
+                    <visible>substring(Window(Home).Property(RecentMovie.9.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentMovie.9.Title)]</label>
                     <label2>$INFO[Window(Home).Property(RecentMovie.9.Year),, •] $INFO[Window(Home).Property(RecentMovie.9.Runtime),, $LOCALIZE[31018]]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentMovie.9.Art(fanart))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentMovie.9.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentMovie.10.Title))</visible>
+                    <visible>substring(Window(Home).Property(RecentMovie.10.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentMovie.10.Title)]</label>
                     <label2>$INFO[Window(Home).Property(RecentMovie.10.Year),, •] $INFO[Window(Home).Property(RecentMovie.10.Runtime),, $LOCALIZE[31018]]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentMovie.10.Art(fanart))]</thumb>
@@ -235,15 +182,17 @@
     </include>
     <!--tvshows-->
     <include name="tvRecentItems">
-        <control type="list" id="9997">
+        <control type="panel" id="9997">
+            <visible>!stringcompare(Window(Home).Property(Episodes.UnWatched),0)</visible>
             <posx>-12</posx>
-            <posy>7-row</posy>
-            <width>1524</width>
-            <height>6-row</height>
+            <include condition="stringcompare(Window(Home).Property(Movies.UnWatched),0)">recentItemsPosition1</include>
+            <include condition="!stringcompare(Window(Home).Property(Movies.UnWatched),0)">recentItemsPosition2</include>
+            <width>1548</width>
+            <include condition="!stringcompare(Window(Home).Property(Movies.UnWatched),0)">recentItemsHalfHeight</include>
+            <include condition="stringcompare(Window(Home).Property(Movies.UnWatched),0)">recentItemsFullHeight</include>
             <onleft>9000</onleft>
             <ondown>control.setfocus(9998,$INFO[Container(9997).Position])</ondown>
             <onup>control.setfocus(9998,$INFO[Container(9997).Position])</onup>
-            <orientation>horizontal</orientation>
             <onback>activateWindow(home)</onback>
             <animation type="windowopen">
                 <include>listSlideIn</include>
@@ -296,7 +245,6 @@
             </itemlayout>
             <focusedlayout width="387" height="362">
                 <control type="image">
-                    <visible>control.hasfocus(9997)</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>363</width>
@@ -307,23 +255,10 @@
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                 </control>
-                <control type="image">
-                    <visible>!control.hasfocus(9997)</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>363</width>
-                    <height>269</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
-                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
-                    <bordersize>3</bordersize>
-                    <colordiffuse>ffFFFFFF</colordiffuse>
-                </control>
                 <control type="group">
                     <posx>0</posx>
                     <posy>272</posy>
                     <control type="image">
-                        <visible>control.hasfocus(9997)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>363</width>
@@ -333,19 +268,7 @@
                         <bordersize>0</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
-                    <control type="image">
-                        <visible>!control.hasfocus(9997)</visible>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>363</width>
-                        <height>64</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <bordersize>0</bordersize>
-                        <colordiffuse>77FFFFFF</colordiffuse>
-                    </control>
                     <control type="label">
-                        <visible>control.hasfocus(9997)</visible>
                         <posx>12</posx>
                         <posy>-11</posy>
                         <width>339</width>
@@ -355,32 +278,11 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>control.hasfocus(9997)</visible>
                         <posx>12</posx>
                         <posy>18</posy>
                         <width>339</width>
                         <font>smallMedium</font>
                         <textcolor>black</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Label2]</label>
-                    </control>
-                    <control type="label">
-                        <visible>!control.hasfocus(9997)</visible>
-                        <posx>12</posx>
-                        <posy>-11</posy>
-                        <width>339</width>
-                        <font>itemTitleSmallCondensed</font>
-                        <textcolor>selected</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label">
-                        <visible>!control.hasfocus(9997)</visible>
-                        <posx>12</posx>
-                        <posy>18</posy>
-                        <width>339</width>
-                        <font>smallMedium</font>
-                        <textcolor>selected</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
@@ -388,77 +290,70 @@
             </focusedlayout>
             <content>
                 <item>
-                    <visible>isempty(Window(Home).Property(RecentEpisode.1.TVshowTitle))</visible>
-                    <label>$LOCALIZE[20343] - $LOCALIZE[31170]</label>
-                    <label2>[$LOCALIZE[31171]]</label2>
-                    <thumb></thumb>
-                    <onclick>UpdateLibrary(video)</onclick>
-                </item>
-                <item>
-                    <visible>!isempty(Window(Home).Property(RecentEpisode.1.TVshowTitle))</visible>
+                    <visible>substring(Window(Home).Property(RecentEpisode.1.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)]</label>
                     <label2>$INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo)]$INFO[Window(Home).Property(RecentEpisode.1.Title), • ,]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(thumb))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentEpisode.1.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentEpisode.2.TVshowTitle))</visible>
+                    <visible>substring(Window(Home).Property(RecentEpisode.2.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle)]</label>
                     <label2>$INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo)] $INFO[Window(Home).Property(RecentEpisode.2.Title), • ,]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(thumb))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentEpisode.2.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentEpisode.3.TVshowTitle))</visible>
+                    <visible>substring(Window(Home).Property(RecentEpisode.3.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentEpisode.3.TVshowTitle)]</label>
                     <label2>$INFO[Window(Home).Property(RecentEpisode.3.EpisodeNo)]$INFO[Window(Home).Property(RecentEpisode.3.Title), • ,]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(thumb))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentEpisode.3.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentEpisode.4.TVshowTitle))</visible>
+                    <visible>substring(Window(Home).Property(RecentEpisode.4.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentEpisode.4.TVshowTitle)]</label>
                     <label2>$INFO[Window(Home).Property(RecentEpisode.4.EpisodeNo)]$INFO[Window(Home).Property(RecentEpisode.4.Title), • ,]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(thumb))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentEpisode.4.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentEpisode.5.TVshowTitle))</visible>
+                    <visible>substring(Window(Home).Property(RecentEpisode.5.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentEpisode.5.TVshowTitle)]</label>
                     <label2>$INFO[Window(Home).Property(RecentEpisode.5.EpisodeNo)]$INFO[Window(Home).Property(RecentEpisode.5.Title), • ,]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentEpisode.5.Art(thumb))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentEpisode.5.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentEpisode.6.TVshowTitle))</visible>
+                    <visible>substring(Window(Home).Property(RecentEpisode.6.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentEpisode.6.TVshowTitle)]</label>
                     <label2>$INFO[Window(Home).Property(RecentEpisode.6.EpisodeNo)]$INFO[Window(Home).Property(RecentEpisode.6.Title), • ,]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentEpisode.6.Art(thumb))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentEpisode.6.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentEpisode.7.TVshowTitle))</visible>
+                    <visible>substring(Window(Home).Property(RecentEpisode.7.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentEpisode.7.TVshowTitle)]</label>
                     <label2>$INFO[Window(Home).Property(RecentEpisode.7.EpisodeNo)]$INFO[Window(Home).Property(RecentEpisode.7.Title), • ,]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentEpisode.7.Art(thumb))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentEpisode.7.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentEpisode.8.TVshowTitle))</visible>
+                    <visible>substring(Window(Home).Property(RecentEpisode.8.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentEpisode.8.TVshowTitle)]</label>
                     <label2>$INFO[Window(Home).Property(RecentEpisode.8.EpisodeNo)]$INFO[Window(Home).Property(RecentEpisode.8.Title), • ,]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentEpisode.8.Art(thumb))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentEpisode.8.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentEpisode.9.TVshowTitle))</visible>
+                    <visible>substring(Window(Home).Property(RecentEpisode.9.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle)]</label>
                     <label2>$INFO[Window(Home).Property(RecentEpisode.9.EpisodeNo)]$INFO[Window(Home).Property(RecentEpisode.9.Title), • ,]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentEpisode.9.Art(thumb))]</thumb>
                     <onclick>$INFO[Window(Home).Property(RecentEpisode.9.Play)]</onclick>
                 </item>
                 <item>
-                    <visible>!isempty(Window(Home).Property(RecentEpisode.10.TVshowTitle))</visible>
+                    <visible>substring(Window(Home).Property(RecentEpisode.10.watched),False)</visible>
                     <label>$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle)]</label>
                     <label2>$INFO[Window(Home).Property(RecentEpisode.10.EpisodeNo)]$INFO[Window(Home).Property(RecentEpisode.10.Title), • ,]</label2>
                     <thumb>$INFO[Window(Home).Property(RecentEpisode.10.Art(thumb))]</thumb>

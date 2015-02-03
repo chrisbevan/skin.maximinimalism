@@ -94,8 +94,6 @@
                 <font>pageTitle</font>
                 <textcolor>black</textcolor>
                 <label>$INFO[ListItem.Artist]</label>
-
-
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="label">

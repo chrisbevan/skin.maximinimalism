@@ -1,6 +1,9 @@
+[B]1.3.0[/B]
+
+
 [B]1.2.0[/B]
 - [NEW] Italian Translation (thanks Shiba89)
-- [MODIFIED] Info dialogs reworked to minimise incidence of overlapping (not perfect, but it's a start)
+- [MODIFIED] Info dialogs reworked to minimise incidence of overlapping
 - [BUGFIX] Problem with RCB plugin launch from homescreen fixed (thanks fipm)
 - [MODIFIED] New skin option 'Low CPU power mode' disables scrolling and fanart animations for devices like Raspberry PI (thanks jbman)
 - [NEW] Star rating for music tracks on fullscreen music view (thanks geogiraux) Use left or right to increase / decrease rating (when navigation bar is hidden)

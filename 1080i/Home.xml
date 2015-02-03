@@ -127,16 +127,20 @@
                         <label>31000</label>
                         <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>activateWindow(Videos,videodb://)</onclick>
-                        <onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
+                        <onclick condition="!Library.HasContent(Video)">ActivateWindow(Videos,files)</onclick>
+                        <onclick condition="!Library.HasContent(Video)">Skin.SetString(showRecentVideoItems,false)</onclick>
+                        <onclick condition="Library.HasContent(Video)">ActivateWindow(Videos,videodb://)</onclick>
+                        <onclick condition="Library.HasContent(Video)">Skin.SetString(showRecentVideoItems,true)</onclick>
                     </item>
                     <item>
                         <visible>!Skin.HasSetting(hideMusic)</visible>
                         <label>31001</label>
                         <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>ActivateWindow(musiclibrary)</onclick>
-                        <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
+                        <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,root)</onclick>
+                        <onclick condition="!Library.HasContent(Music)">Skin.SetString(showRecentMusicItems,false)</onclick>
+                        <onclick condition="Library.HasContent(Music)">ActivateWindow(musiclibrary)</onclick>
+                        <onclick condition="Library.HasContent(Music)">Skin.SetString(showRecentMusicItems,true)</onclick>
                     </item>
                     <item>
                         <visible>!Skin.HasSetting(hidePictures)</visible>
