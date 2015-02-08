@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">9001</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
+    <include>dataProviderRefresh</include>
     <include>fadeInOut</include>
     <controls>
         <include>modalDialog</include>
@@ -21,8 +22,8 @@
                     <width>9-col</width>
                     <font>pageTitle</font>
                     <textcolor>selected</textcolor>
-                    
-                
+
+
                 </control>
                 <control type="textbox">
                     <posx>0</posx>

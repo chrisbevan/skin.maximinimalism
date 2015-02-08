@@ -71,8 +71,7 @@
             <item>
                 <label>31005</label>
                 <label2/>
-                <onclick>ClearProperty(SkinWidgets_Running,10000)</onclick>
-                <onclick>ClearProperty(SkinWidgets_RecentItems,10000)</onclick>
+                <onclick>reloadskin()</onclick>
                 <onclick>activateWindow(VideoLibrary)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
                 <onclick>Control.SetFocus(9000)</onclick>
@@ -240,6 +239,7 @@
             <item>
                 <label>31005</label>
                 <label2/>
+                <onclick>reloadskin()</onclick>
                 <onclick>ActivateWindow(MusicLibrary)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
             </item>

@@ -66,8 +66,6 @@
                 <width>468</width>
                 <height>1-row</height>
                 <label>20186</label>
-                
-                
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
@@ -80,8 +78,6 @@
                 <width>468</width>
                 <height>1-row</height>
                 <label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
-                
-                
                 <shadowcolor>-</shadowcolor>
             </control>
         </control>

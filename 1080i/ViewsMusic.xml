@@ -284,8 +284,6 @@
                             <textcolor>black</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>$INFO[ListItem.Label]</label>
-                            
-                
                         </control>
                         <control type="label">
                             <posx>12</posx>

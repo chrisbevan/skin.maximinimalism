@@ -3,6 +3,7 @@
     <defaultcontrol always="false">9000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <onload condition="window.previous(0)">setfocus(9000)</onload>
+    <include>dataProviderRefresh</include>
     <previouswindow>home</previouswindow>
     <controls>
         <include>globalBackground</include>
