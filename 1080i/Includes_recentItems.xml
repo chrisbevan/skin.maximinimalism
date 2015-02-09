@@ -114,8 +114,10 @@
         <control type="panel" id="9997">
             <visible>!stringcompare(Window(Home).Property(Episodes.UnWatched),0)</visible>
             <posx>-12</posx>
-            <include condition="stringcompare(Window(Home).Property(Movies.UnWatched),0)">recentItemsPosition1</include>
-            <include condition="!stringcompare(Window(Home).Property(Movies.UnWatched),0)">recentItemsPosition2</include>
+            <posy>7-row</posy>
+            <animation type="conditional" condition="stringcompare(Window(Home).Property(Movies.UnWatched),0)">
+                <effect type="slide" start="0,0" end="0,-399" time="0"/>
+            </animation>
             <width>1548</width>
             <include condition="!stringcompare(Window(Home).Property(Movies.UnWatched),0)">recentItemsHalfHeight</include>
             <include condition="stringcompare(Window(Home).Property(Movies.UnWatched),0)">recentItemsFullHeight</include>

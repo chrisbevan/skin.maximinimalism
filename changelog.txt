@@ -1,5 +1,6 @@
 [B]1.3.0[/B]
 - [NEW] Better support for 'parent folder items' (fanart not disappearing etc)
+- [MODIFIED] Initial setup process / support for users without libraries improved (thanks Sp@ceboy)
 
 [B]1.2.0[/B]
 - [NEW] Italian Translation (thanks Shiba89)

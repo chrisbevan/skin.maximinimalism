@@ -259,8 +259,6 @@
     <include name="scrollSuppressionActive"><scroll>False</scroll></include>
     <include name="scrollSuppressionInactive"><scroll>True</scroll></include>
     <!--conditional positioning for recent video / movie items-->
-    <include name="recentItemsPosition1"><posy>0</posy></include>
-    <include name="recentItemsPosition2"><posy>7-row</posy></include>
     <include name="recentItemsFullHeight"><height>720</height><orientation>vertical</orientation></include>
     <include name="recentItemsHalfHeight"><height>6-row</height><orientation>horizontal</orientation></include>
     <!--recent items refresh-->
