@@ -579,10 +579,6 @@ msgctxt "#31157"
 msgid "Home: Hide Games"
 msgstr ""
 
-msgctxt "#31158"
-msgid "No items in Playlist"
-msgstr ""
-
 msgctxt "#31159"
 msgid "Unknown"
 msgstr ""
@@ -611,10 +607,6 @@ msgctxt "#31165"
 msgid "Recordings"
 msgstr ""
 
-msgctxt "#31167"
-msgid "Press [back] to return."
-msgstr ""
-
 msgctxt "#31168"
 msgid "Subtitle Language:"
 msgstr ""
@@ -628,5 +620,5 @@ msgid "No recent items found"
 msgstr ""
 
 msgctxt "#31171"
-msgid "Select me to update library"
+msgid "Start music visualisation immediately upon playback"
 msgstr ""

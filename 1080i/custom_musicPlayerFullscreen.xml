@@ -101,7 +101,7 @@
                         <font>largeBlack</font>
                         <textcolor>selected</textcolor>
                         <scroll>false</scroll>
-                        <label fallback="31158">$INFO[MusicPlayer.Title]</label>
+                        <label>$INFO[MusicPlayer.Title]</label>
                         <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
                         <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
                     </control>
@@ -128,16 +128,6 @@
                         <label>$INFO[VideoPlayer.Plot]</label>
                         <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
                         <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
-                    </control>
-                    <control type="label">
-                        <visible>!player.hasmedia</visible>
-                        <posx>col-4-begin</posx>
-                        <posy>1-row</posy>
-                        <width>20-col</width>
-                        <font>medium</font>
-                        <textcolor>selected</textcolor>
-                        <scroll>false</scroll>
-                        <label>$LOCALIZE[31167]</label>
                     </control>
                     <control type="label">
                         <posx>col-4-begin</posx>

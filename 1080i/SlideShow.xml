@@ -12,6 +12,7 @@
         <control type="group">
             <posx>col-5-begin</posx>
             <posy>row-18-begin</posy>
+            <visible>false</visible>
             <!--background-->
             <control type="image">
                 <posx>0</posx>
@@ -51,7 +52,7 @@
                 <shadowcolor>-</shadowcolor>
                 <label>$INFO[Slideshow.Filedate]</label>
             </control>
-        </control>		
+        </control>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

@@ -304,6 +304,14 @@
                     <onclick>Skin.ToggleSetting(disableFullscreenMusicBackground)</onclick>
                     <selected>Skin.HasSetting(disableFullscreenMusicBackground)</selected>
                 </control>
+                <control type="radiobutton" id="19">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Autostart music visualisation on playback</description>
+                    <width>16-col</width>
+                    <label>31171</label>
+                    <onclick>Skin.ToggleSetting(startVisualiserOnPlayback)</onclick>
+                    <selected>Skin.HasSetting(startVisualiserOnPlayback)</selected>
+                </control>
             </control>
             <!--reset buttons-->
             <control type="group">

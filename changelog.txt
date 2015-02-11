@@ -1,6 +1,9 @@
 [B]1.3.0[/B]
-- [NEW] Better support for 'parent folder items' (fanart not disappearing etc)
+- [NEW] Better skin support if 'parent folder items' option is active (fixes fanart not disappearing etc)
 - [MODIFIED] Initial setup process / support for users without libraries improved (thanks Sp@ceboy)
+- [NEW] Skin option - 'start music visualisation on playback' (thanks WilderKaiser)
+- [MODIFIED] Title overlay removed from slideshow in pictures section (thanks ReDraw)
+- [NEW] Music fullscreen now handles the stopping of playback cleanly (no more 'press back')
 
 [B]1.2.0[/B]
 - [NEW] Italian Translation (thanks Shiba89)
@@ -14,7 +17,6 @@
 - [FIXED] Video navigation window not rendering correctly on video playback (thanks _omega)
 - [FIXED] Custom startup windows now honoured correctly (thanks berkhornet)
 - [REVERTED] Recent items returned to using skin-widgets addon as supporting script. Movies and tvshows in separate lists.
-
 
 [B]1.1.1[/B]
 - [BUGFIX] default focussed item fixed for certain select dialogs (blu-ray, subtitles etc)
