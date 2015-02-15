@@ -108,6 +108,13 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
+                    <visible>Substring(Container.folderpath,plugin)</visible>
+                    <include>dimensionsFullscreen</include>
+                    <texture>$INFO[listitem.art(fanart)]</texture>
+                    <colordiffuse>6affffff</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image">
                     <visible>container.content(songs)</visible>
                     <include>dimensionsFullscreen</include>
                     <texture>$INFO[ListItem.Art(fanart)]</texture>

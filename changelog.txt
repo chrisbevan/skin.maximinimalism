@@ -4,6 +4,8 @@
 - [NEW] Skin option - 'start music visualisation on playback' (thanks WilderKaiser)
 - [MODIFIED] Title overlay removed from slideshow in pictures section (thanks ReDraw)
 - [NEW] Music fullscreen now handles the stopping of playback cleanly (no more 'press back')
+- [MODIFIED] VideoOSD now includes buttons for EPG, DVD menu and telextext (thanks WilderKaiser)
+- [MODIFIED] VideoOSD PVR channel selection menu improved
 
 [B]1.2.0[/B]
 - [NEW] Italian Translation (thanks Shiba89)
