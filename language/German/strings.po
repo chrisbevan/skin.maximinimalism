@@ -200,7 +200,7 @@ msgstr "Musik Bibliothek"
 
 msgctxt "#31054"
 msgid "by"
-msgstr "bei"
+msgstr "nach"
 
 msgctxt "#31005"
 msgid "Latest"
