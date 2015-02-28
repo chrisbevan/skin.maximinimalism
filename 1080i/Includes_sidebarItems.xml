@@ -185,6 +185,21 @@
             <onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
             <onclick>ActivateWindow(5000)</onclick>
         </control>
+        <control type="button" id="506">
+            <description>Set recent content</description>
+            <visible/>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>31175</label>
+            <onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
+            <onclick>ActivateWindow(5900)</onclick>
+        </control>
         <control type="button" id="507">
             <visible/>
             <height>54</height>
@@ -319,6 +334,21 @@
             <label>31041</label>
             <onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
             <onclick>ActivateWindow(5000)</onclick>
+        </control>
+        <control type="button" id="505">
+            <description>Set recent content</description>
+            <visible/>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>31175</label>
+            <onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
+            <onclick>ActivateWindow(5900)</onclick>
         </control>
         <control type="button" id="504">
             <visible/>

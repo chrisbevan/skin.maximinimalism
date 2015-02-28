@@ -95,8 +95,6 @@
                     <font>pageTitle</font>
                     <textcolor>black</textcolor>
                     <label>$INFO[ListItem.label]</label>
-                    
-                
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <control type="label">
@@ -312,7 +310,7 @@
                     <posy>12</posy>
                     <width>12-col</width>
                     <height>486</height>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
+                    <aspectratio scalediffuse="false" aligny="bottom">scale</aspectratio>
                     <texture background="true" fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
                     <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
                     <bordersize>3</bordersize>
@@ -331,9 +329,7 @@
                     <font>itemTitleSmall</font>
                     <textcolor>selected</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    
-                
-                    <label>$INFO[listitem.tvshowtitle,, ]$INFO[listitem.season,• $LOCALIZE[31011], • ]$INFO[listitem.duration,, $LOCALIZE[31018] • ]$INFO[ListItem.Premiered,$LOCALIZE[20416] ,]</label>
+                    <label>$INFO[listitem.genre,,  |  ]$INFO[listitem.duration,, $LOCALIZE[31018]  |  ]$INFO[ListItem.Premiered,$LOCALIZE[20416] ,,]$INFO[listitem.mpaa,  |  $LOCALIZE[31174] ,]</label>
                 </control>
                 <control type="label">
                     <description>Episode title</description>
@@ -342,8 +338,6 @@
                     <width>12-col</width>
                     <align>left</align>
                     <font>mediumStrong</font>
-                    
-                
                     <textcolor>selected</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.Label]</label>

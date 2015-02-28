@@ -18,7 +18,7 @@
             <animation type="windowclose">
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>
-            <content target="video">plugin://service.library.data.provider?type=recentmovies&amp;reload=$INFO[Window.Property(recentmovies)]</content>
+            <content>plugin://script.maximinimalism.functions?type=$INFO[skin.string(videoHomeItemsMoviesSource)]</content>
             <itemlayout width="387" height="362">
                 <control type="image">
                     <posx>0</posx>
@@ -131,7 +131,7 @@
             <animation type="windowclose">
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>
-            <content target="video">plugin://service.library.data.provider?type=recentepisodes&amp;reload=$INFO[Window.Property(recentepisodes)]</content>
+            <content>plugin://script.maximinimalism.functions?type=$INFO[skin.string(videoHomeItemsEpisodesSource)]</content>
             <itemlayout width="387" height="362">
                 <control type="image">
                     <posx>0</posx>
@@ -139,7 +139,7 @@
                     <width>363</width>
                     <height>269</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="colors/black.png" border="0">$INFO[ListItem.Art(thumb)]</texture>
+                    <texture fallback="colors/black.png" border="0">$INFO[ListItem.Art(fanart)]</texture>
                     <bordertexture border="3" colordiffuse="33FFFFFF">colors/selected.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffffffff</colordiffuse>
@@ -171,7 +171,7 @@
                         <width>339</width>
                         <font>smallMedium</font>
                         <textcolor>selected</textcolor>
-                        <label>$INFO[ListItem.Property(episodeno)]</label>
+                        <label>$INFO[ListItem.season,$LOCALIZE[31011] , •] $INFO[listitem.property(episodecount),, $LOCALIZE[16101]]</label>
                     </control>
                 </control>
             </itemlayout>
@@ -182,7 +182,7 @@
                     <width>363</width>
                     <height>269</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="colors/black.png" border="0">$INFO[ListItem.Art(thumb)]</texture>
+                    <texture fallback="colors/black.png" border="0">$INFO[ListItem.Art(fanart)]</texture>
                     <bordertexture border="3" colordiffuse="ffFFFFFF">colors/selected.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
@@ -216,7 +216,7 @@
                         <font>smallMedium</font>
                         <textcolor>black</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Property(episodeno)]</label>
+                        <label>$INFO[ListItem.season,$LOCALIZE[31011], •] $INFO[listitem.property(episodecount),, $LOCALIZE[16101]]</label>
                     </control>
                 </control>
             </focusedlayout>
@@ -230,7 +230,7 @@
             <width>22-col</width>
             <height>768</height>
             <onleft>9000</onleft>
-            <content target="video">plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]</content>
+            <content>plugin://script.maximinimalism.functions?type=$INFO[skin.string(musicHomeItemsSource)]</content>
             <itemlayout width="312" height="366">
                 <control type="image">
                     <posx>0</posx>

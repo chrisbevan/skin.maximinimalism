@@ -2,7 +2,6 @@
 <window>
     <defaultcontrol always="true">9001</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <include>dataProviderRefresh</include>
     <include>fadeInOut</include>
     <controls>
         <include>modalDialog</include>

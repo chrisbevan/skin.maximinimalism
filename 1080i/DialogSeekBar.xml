@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">901</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <visible>!Window.IsActive(5100) + !Window.IsActive(DialogSubtitles.xml) + !Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen + !Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
+    <visible>!Window.IsActive(5901) + !Window.IsActive(DialogSubtitles.xml) + !Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen + !Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
     <controls>
         <control type="group">
             <posx>col-1-begin</posx>
@@ -84,8 +84,8 @@
                 <textcolor>selected</textcolor>
                 <label>$INFO[Player.Title]</label>
                 <shadowcolor>-</shadowcolor>
-                
-                
+
+
             </control>
             <control type="progress">
                 <description>Progress Bar</description>

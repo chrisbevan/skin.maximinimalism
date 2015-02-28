@@ -91,6 +91,7 @@
                         <font>symbolLarge</font>
                         <textcolor>selected</textcolor>
                         <label>$VAR[starRating]</label>
+                        <shadowcolor>00000000</shadowcolor>
                         <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
                         <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
                     </control>
@@ -102,6 +103,7 @@
                         <textcolor>selected</textcolor>
                         <scroll>false</scroll>
                         <label>$INFO[MusicPlayer.Title]</label>
+                        <shadowcolor>00000000</shadowcolor>
                         <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
                         <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
                     </control>
@@ -114,6 +116,7 @@
                         <textcolor>selected</textcolor>
                         <scroll>false</scroll>
                         <label>$INFO[MusicPlayer.artist]</label>
+                        <shadowcolor>00000000</shadowcolor>
                         <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
                         <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
                     </control>
@@ -126,6 +129,7 @@
                         <textcolor>selected</textcolor>
                         <scroll>false</scroll>
                         <label>$INFO[VideoPlayer.Plot]</label>
+                        <shadowcolor>00000000</shadowcolor>
                         <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
                         <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
                     </control>
@@ -137,6 +141,7 @@
                         <textcolor>selected</textcolor>
                         <scroll>false</scroll>
                         <label>$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
+                        <shadowcolor>00000000</shadowcolor>
                         <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
                         <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
                     </control>
@@ -148,6 +153,7 @@
                         <align>left</align>
                         <textcolor>selected</textcolor>
                         <scroll>false</scroll>
+                        <shadowcolor>00000000</shadowcolor>
                         <label>[B]$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration][/B]     $INFO[MusicPlayer.offset(1).Artist,[B]$LOCALIZE[19031][/B]: , - ]$INFO[MusicPlayer.offset(1).Title]</label>
                         <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
                         <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>

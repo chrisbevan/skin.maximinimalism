@@ -85,7 +85,13 @@ msgctxt "#31014"
 msgid "title(s)"
 msgstr ""
 
-//#31015 - #31016 Empty strings
+msgctxt "#31015"
+msgid "Random Selection"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Recommended Items"
+msgstr ""
 
 msgctxt "#31017"
 msgid "Channels"
@@ -621,4 +627,36 @@ msgstr ""
 
 msgctxt "#31171"
 msgid "Start music visualisation immediately upon playback"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Content Guide"
+msgstr ""
+
+msgctxt "#31173"
+msgid "No content guide available"
+msgstr ""
+
+msgctxt "#31174"
+msgid "Rated"
+msgstr ""
+
+msgctxt "#31175"
+msgid "Set Latest Content"
+msgstr ""
+
+msgctxt "#31176"
+msgid "Recent Movies / Recent TVshows"
+msgstr ""
+
+msgctxt "#31177"
+msgid "Recent Movies / Random TVshows"
+msgstr ""
+
+msgctxt "#31178"
+msgid "Random Movies / Recent TVshows"
+msgstr ""
+
+msgctxt "#31179"
+msgid "Random Movies / Random TVshows"
 msgstr ""

@@ -268,15 +268,6 @@
     <!--conditional positioning for recent video / movie items-->
     <include name="recentItemsFullHeight"><height>720</height><orientation>vertical</orientation></include>
     <include name="recentItemsHalfHeight"><height>6-row</height><orientation>horizontal</orientation></include>
-    <!--recent items refresh-->
-    <include name="dataProviderRefresh">
-        <onload>ClearProperty(recentepisodes,10000)</onload>
-        <onload>ClearProperty(recentmovies,10000)</onload>
-        <onload>ClearProperty(recentepisodes-data,10000)</onload>
-        <onload>ClearProperty(recentmovies-data,10000)</onload>
-        <onload>ClearProperty(recentalbums,10000)</onload>
-        <onload>ClearProperty(recentalbums-data,10000)</onload>
-    </include>
     <!--debugging-->
     <include name="DialogID">
         <posx>15</posx>

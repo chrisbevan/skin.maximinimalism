@@ -183,6 +183,7 @@
                             <thumb>-</thumb>
                             <onclick condition="System.HasMediaDVD + !Pvr.IsPlayingTv">PlayerControl(ShowVideoMenu)</onclick>
                             <onclick condition="Pvr.IsPlayingTv">ActivateWindow(PVROSDChannels)</onclick>
+                            <onclick condition="!System.HasMediaDVD + !Pvr.IsPlayingTv">Notification($LOCALIZE[31172],$LOCALIZE[31173])</onclick>
                         </item>
                         <item>
                             <description>Previous</description>
@@ -329,7 +330,7 @@
                             <label>24012</label>
                             <thumb>-</thumb>
                             <onclick>Close</onclick>
-                            <onclick>activateWindow(5100)</onclick>
+                            <onclick>activateWindow(5901)</onclick>
                         </item>
                         <item>
                             <description>Audio Settings</description>
