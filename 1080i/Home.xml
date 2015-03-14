@@ -123,6 +123,27 @@
                 </focusedlayout>
                 <content>
                     <item>
+                         <label>31006</label>
+                         <label2></label2>
+                         <thumb>-</thumb>
+                         <onclick>ActivateWindow(tvchannels)</onclick>
+                         <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+                     </item>
+                     <item>
+                         <label>31112</label>
+                         <label2></label2>
+                         <thumb>-</thumb>
+                         <onclick>ActivateWindow(tvguide)</onclick>
+                         <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+                     </item>
+                     <item>
+                         <label>19163</label>
+                         <label2></label2>
+                         <thumb>-</thumb>
+                         <onclick>ActivateWindow(tvrecordings)</onclick>
+                         <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+                     </item>
+                    <item>
                         <visible>!Skin.HasSetting(hideVideo)</visible>
                         <label>31000</label>
                         <label2></label2>
@@ -175,7 +196,7 @@
                     <item>
                         <visible>!Skin.HasSetting(hideFavourites)</visible>
                         <label>1036</label>
-                        <label2></label2>
+                        <label2></label2>
                         <thumb>-</thumb>
                         <onclick>ReplaceWindow(favourites)</onclick>
                     </item>
