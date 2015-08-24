@@ -188,6 +188,14 @@
             <filename>sourceSansPro/regular.ttf</filename>
             <size>30</size>
         </font>
+        <font>
+            <name>Clock</name>
+            <filename>sourceSansPro/bold.ttf</filename>
+            <size>120</size>
+            <linespacing>1.0</linespacing>
+            <aspect>0.8</aspect>
+            <style>uppercase</style>
+        </font>    
     </fontset>
 	<fontset id="CJK">
         <!--Source Sans Pro fontset-->
@@ -210,7 +218,7 @@
             <size>60</size>
             <linespacing>0.8</linespacing>
         </font>
-		<font>
+	<font>
             <name>largeStrong</name>
             <filename>sourceSansProCJK/regular.ttf</filename>
             <size>60</size>
@@ -269,7 +277,7 @@
             <filename>sourceSansProCJK/regular.ttf</filename>
             <size>22</size>
             <linespacing>1.0</linespacing>
-			<style>uppercase</style>
+	    <style>uppercase</style>
         </font>
         <font>
             <name>smallMedium</name>
@@ -284,20 +292,20 @@
             <size>30</size>
             <linespacing>1</linespacing>
         </font>
-		<font>
+	<font>
             <name>pageTitle</name>
             <filename>sourceSansProCJK/regular.ttf</filename>
             <size>48</size>
             <linespacing>1.0</linespacing>
             <aspect>0.8</aspect>
         </font>
-		<font>
+	<font>
             <name>dialogTitle</name>
             <filename>sourceSansProCJK/regular.ttf</filename>
             <size>48</size>
             <linespacing>1.0</linespacing>
             <aspect>0.8</aspect>
-			<style>uppercase</style>
+	    <style>uppercase</style>
         </font>
         <font>
             <name>largeTitle</name>
@@ -305,7 +313,7 @@
             <size>60</size>
             <linespacing>1.0</linespacing>
             <aspect>0.8</aspect>
-			<style>uppercase</style>
+	    <style>uppercase</style>
         </font>
         <font>
             <name>itemTitle</name>
@@ -333,13 +341,13 @@
             <size>28</size>
             <linespacing>1.0</linespacing>
             <aspect>0.8</aspect>
-			<style>uppercase</style>
+	    <style>uppercase</style>
         </font>
         <font>
             <name>buttonTitle</name>
             <filename>sourceSansProCJK/regular.ttf</filename>
             <size>24</size>
-			<style>uppercase</style>
+	    <style>uppercase</style>
         </font>
         <font>
             <name>symbol</name>
@@ -365,16 +373,24 @@
             <size>96</size>
             <style></style>
         </font>
-		<font>
-			<name>symbolWeather</name>
-			<filename>weather.ttf</filename>
-			<size>180</size>
-		</font>
+	<font>
+	    <name>symbolWeather</name>
+	    <filename>weather.ttf</filename>
+	    <size>180</size>
+	</font>
         <!-- Required for system -->
         <font>
             <name>font13</name>
             <filename>sourceSansProCJK/regular.ttf</filename>
             <size>30</size>
         </font>
+        <font>
+            <name>Clock</name>
+            <filename>sourceSansProCJK/regular.ttf</filename>
+            <size>120</size>
+            <linespacing>1.0</linespacing>
+            <aspect>0.8</aspect>
+	    <style>uppercase</style>
+        </font>           
     </fontset>
 </fonts>
