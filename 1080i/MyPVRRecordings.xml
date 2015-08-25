@@ -92,6 +92,16 @@
                                 <shadowcolor>-</shadowcolor>
                                 <label></label>
                             </control>
+                            <control type="label">                                                          
+                                <visible>ListItem.IsResumable</visible>                         
+                                <posx>11</posx>                                                
+                                <posy>-2</posy>                                                        
+                                <width>38</width>                    
+                                <font>symbolLarge</font>                             
+                                <textcolor>selected</textcolor>                                             
+                                <shadowcolor>-</shadowcolor>           
+                                <label></label>                                             
+                            </control>
                             <control type="label">
                                 <posx>1-col</posx>
                                 <posy>0</posy>
@@ -158,6 +168,16 @@
                                 <textcolor>selected</textcolor>
                                 <shadowcolor>-</shadowcolor>
                                 <label></label>
+                            </control>
+                            <control type="label">
+                                <visible>ListItem.IsResumable</visible>
+                                <posx>11</posx>
+                                <posy>-2</posy>
+                                <width>38</width>
+                                <font>symbolLarge</font>
+                                <textcolor>selected</textcolor>
+                                <shadowcolor>-</shadowcolor>
+                                <label></label>
                             </control>
                             <control type="label">
                                 <posx>1-col</posx>
