@@ -43,6 +43,7 @@
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
+
             <!--control area-->
             <control type="grouplist" id="5">
                 <posx>0</posx>
@@ -73,6 +74,14 @@
             <control type="sliderex" id="10">
                 <description>slider</description>
             </control>
+            <control type="label" id="14">
+                <description>button</description>
+                <align>left</align>
+                <height>54</height>
+                <font>itemTitle</font>
+                <textcolor>selected</textcolor>
+            </control>
+
             <!--OK / Cancel-->
             <control type="panel" id="9001">
                 <posx>12-col</posx>

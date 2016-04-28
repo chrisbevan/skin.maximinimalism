@@ -173,6 +173,13 @@
                     <textcolor>selected</textcolor>
                     <focusedcolor>black</focusedcolor>
                 </control>
+                <control type="label" id="14">
+                    <description>Default label</description>
+                    <align>left</align>
+                    <height>54</height>
+                    <font>itemTitle</font>
+                    <textcolor>selected</textcolor>
+                </control>
             </control>
             <control type="group">
                 <visible>false</visible>

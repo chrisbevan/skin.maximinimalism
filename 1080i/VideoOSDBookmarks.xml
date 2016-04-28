@@ -169,7 +169,7 @@
                         <width>6-col-gutter</width>
                         <font>itemTitle</font>
                         <textcolor>selected</textcolor>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
                 <focusedlayout width="6-col" height="314">
@@ -209,7 +209,7 @@
                         <width>6-col-gutter</width>
                         <font>itemTitle</font>
                         <textcolor>black</textcolor>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
                 </focusedlayout>

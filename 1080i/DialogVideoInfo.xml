@@ -503,7 +503,7 @@
                         <height>68</height>
                         <font>itemTitleSmall</font>
                         <textcolor>selected</textcolor>
-                        <label>$INFO[ListItem.label]</label>
+                        <label>$INFO[ListItem.label] ($INFO[ListItem.label2])</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
                 </itemlayout>
@@ -534,7 +534,7 @@
                         <height>68</height>
                         <font>itemTitleSmall</font>
                         <textcolor>black</textcolor>
-                        <label>$INFO[ListItem.label]</label>
+                        <label>$INFO[ListItem.label] ($INFO[listitem.label2])</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
                 </focusedlayout>
