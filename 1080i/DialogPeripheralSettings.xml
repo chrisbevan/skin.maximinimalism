@@ -73,6 +73,13 @@
             <control type="sliderex" id="13">
                 <description>Default Slider</description>
             </control>
+            <control type="label" id="14">
+                <description>Default label</description>
+                <align>left</align>
+                <height>54</height>
+                <font>itemTitle</font>
+                <textcolor>selected</textcolor>
+            </control>
             <!--buttons-->
             <control type="panel" id="9000">
                 <posx>12-col</posx>

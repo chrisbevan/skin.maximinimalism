@@ -90,6 +90,13 @@
                 <align>left</align>
                 <height>54</height>
             </control>
+            <control type="label" id="14">
+                <description>Default label</description>
+                <align>left</align>
+                <font>itemTitle</font>
+                <height>54</height>
+                <textcolor>selected</textcolor>
+            </control>
         </control>
         <!--debugging-->
         <include>DebugGrid</include>
