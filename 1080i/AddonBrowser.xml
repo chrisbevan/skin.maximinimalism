@@ -101,6 +101,19 @@
                     <textoffsety>-6</textoffsety>
                     <ondown>9999</ondown>
                 </control>
+                <control type="button" id="9">
+                    <aligny>center</aligny>
+                    <height>57</height>
+                    <width>5-col</width>
+                    <font>smallStrong</font>
+                    <label>24034</label>
+                    <textcolor>black</textcolor>
+                    <focusedcolor>selected</focusedcolor>
+                    <texturefocus>colors/black.png</texturefocus>
+                    <textoffsetx>12</textoffsetx>
+                    <textoffsety>-6</textoffsety>
+                    <ondown>9999</ondown>
+                </control>
             </control>
             <!--content listing-->
             <control type="group" id="9999">

@@ -301,12 +301,22 @@
                         <thumb>-</thumb>
                         <onclick>SendClick(29)</onclick>
                     </item>
+                    <item id="5">
+                        <description>Show/Hide</description>
+                        <label>19289</label>
+                        <thumb>-</thumb>
+                        <onclick>SendClick(25)</onclick>
+                    </item>
+
                 </content>
             </control>
         </control>
         <!--hidden dialog controls-->
         <control type="group">
             <visible>false</visible>
+            <control type="radiobutton" id="25">
+                <description>Show/hide group</description>
+            </control>
             <control type="button" id="26">
                 <description>Add Group</description>
             </control>
